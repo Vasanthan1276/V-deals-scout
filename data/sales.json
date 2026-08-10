@@ -1,0 +1,35 @@
+{
+  "updated_at": "2026-08-10T11:59:29+08:00",
+  "items": [
+    {
+      "id": "sale-demo-01",
+      "category": "sale",
+      "name": "Outlet Additional Discount",
+      "location": "IMM / Singapore",
+      "description": "Illustrative outlet deal used to test the sales section.",
+      "discount_percent": 40,
+      "quality_score": 8,
+      "relevance_score": 8.5,
+      "source": "Demo data",
+      "url": "",
+      "is_demo": true,
+      "deal_score": 81.0,
+      "observed_at": "2026-08-10T11:59:29+08:00"
+    },
+    {
+      "id": "sale-demo-02",
+      "category": "sale",
+      "name": "Travel & Luggage Sale",
+      "location": "Singapore",
+      "description": "Illustrative travel-related sale.",
+      "discount_percent": 35,
+      "quality_score": 7.5,
+      "relevance_score": 8,
+      "source": "Demo data",
+      "url": "",
+      "is_demo": true,
+      "deal_score": 73.0,
+      "observed_at": "2026-08-10T11:59:29+08:00"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "provider_mode": "demo",
+  "watchlist": [
+    {
+      "name": "Pan Pacific Singapore",
+      "destination": "Singapore",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "PARKROYAL COLLECTION Marina Bay",
+      "destination": "Singapore",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "Pan Pacific Orchard",
+      "destination": "Singapore",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "Shangri-La Singapore",
+      "destination": "Singapore",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "Conrad Singapore Orchard",
+      "destination": "Singapore",
+      "stars": 5,
+      "priority": 4
+    },
+    {
+      "name": "Eastern & Oriental Hotel",
+      "destination": "Penang",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "The RuMa Hotel and Residences",
+      "destination": "Kuala Lumpur",
+      "stars": 5,
+      "priority": 4
+    },
+    {
+      "name": "Dusit Thani Laguna Singapore",
+      "destination": "Singapore",
+      "stars": 5,
+      "priority": 4
+    },
+    {
+      "name": "Sindhorn Kempinski Hotel Bangkok",
+      "destination": "Bangkok",
+      "stars": 5,
+      "priority": 4
+    },
+    {
+      "name": "The Apurva Kempinski Bali",
+      "destination": "Bali",
+      "stars": 5,
+      "priority": 4
+    }
+  ]
+}

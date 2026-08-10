@@ -1,0 +1,46 @@
+{
+  "food_sources": [
+    {
+      "name": "Chope Singapore Promotions",
+      "url": "https://www.chope.co/singapore-restaurants/pages/limited-time-specials",
+      "enabled": true,
+      "mode": "link_discovery"
+    },
+    {
+      "name": "Eatigo Singapore",
+      "url": "https://eatigo.com/en/regions/27/themes/14440",
+      "enabled": true,
+      "mode": "link_discovery"
+    }
+  ],
+  "sales_sources": [
+    {
+      "name": "IMM",
+      "url": "https://www.capitaland.com/sg/malls/imm/en/shopping.html",
+      "enabled": true,
+      "mode": "link_discovery"
+    }
+  ],
+  "keywords": {
+    "food": [
+      "1-for-1",
+      "1 for 1",
+      "50% off",
+      "40% off",
+      "30% off",
+      "buffet",
+      "promotion",
+      "special",
+      "discount"
+    ],
+    "sales": [
+      "sale",
+      "additional",
+      "clearance",
+      "outlet",
+      "% off",
+      "promotion",
+      "discount"
+    ]
+  }
+}

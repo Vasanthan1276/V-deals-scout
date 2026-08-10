@@ -1,0 +1,60 @@
+{
+  "project_name": "V&V Deals Scout",
+  "currency": "SGD",
+  "timezone": "Asia/Singapore",
+  "hotel_preferences": {
+    "minimum_stars": 4,
+    "preferred_stars": 5,
+    "singapore_budget_per_night": {
+      "preferred_max": 500,
+      "exceptional_deal_max": 600
+    },
+    "regional_budget_per_night": {
+      "preferred_max": 350,
+      "exceptional_deal_max": 450
+    },
+    "preferences": {
+      "breakfast": true,
+      "club_lounge": true,
+      "bathtub": true,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true
+    }
+  },
+  "search_settings": {
+    "lookahead_weeks": 8,
+    "minimum_deal_score": 70,
+    "excellent_deal_score": 85,
+    "maximum_results_per_category": 20
+  },
+  "staycation_lengths": [
+    1,
+    2
+  ],
+  "regional_trip_lengths": [
+    2,
+    3,
+    4
+  ],
+  "food_preferences": {
+    "minimum_discount_percent": 20,
+    "show_hotel_dining": true,
+    "show_buffets": true,
+    "show_restaurant_promotions": true,
+    "show_new_restaurants": true
+  },
+  "sales_preferences": {
+    "minimum_discount_percent": 25,
+    "categories": [
+      "fashion",
+      "sportswear",
+      "shoes",
+      "electronics",
+      "travel",
+      "luggage",
+      "outlet_sales"
+    ]
+  }
+}

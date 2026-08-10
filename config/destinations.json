@@ -1,0 +1,79 @@
+{
+  "staycations": [
+    {
+      "name": "Singapore",
+      "country": "Singapore",
+      "enabled": true
+    }
+  ],
+  "regional": [
+    {
+      "name": "Penang",
+      "country": "Malaysia",
+      "code": "PEN",
+      "enabled": true,
+      "typical_nights": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Kuala Lumpur",
+      "country": "Malaysia",
+      "code": "KUL",
+      "enabled": true,
+      "typical_nights": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Johor Bahru",
+      "country": "Malaysia",
+      "code": "JHB",
+      "enabled": true,
+      "typical_nights": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Bangkok",
+      "country": "Thailand",
+      "code": "BKK",
+      "enabled": true,
+      "typical_nights": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Bali",
+      "country": "Indonesia",
+      "code": "DPS",
+      "enabled": true,
+      "typical_nights": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Batam",
+      "country": "Indonesia",
+      "code": "BTH",
+      "enabled": true,
+      "typical_nights": [
+        2
+      ]
+    },
+    {
+      "name": "Bintan",
+      "country": "Indonesia",
+      "code": "TNJ",
+      "enabled": true,
+      "typical_nights": [
+        2
+      ]
+    }
+  ]
+}
