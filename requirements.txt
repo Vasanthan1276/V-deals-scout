@@ -1,0 +1,2 @@
+# V1 currently uses Python's standard library only.
+# Add provider-specific packages here when live APIs are connected.
