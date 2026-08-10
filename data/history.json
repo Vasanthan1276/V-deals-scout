@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T12:08:35+08:00",
+  "updated_at": "2026-08-10T12:09:11+08:00",
   "observations": [
     {
       "id": "hotel-pan-pacific-sg-01",
@@ -65,6 +65,39 @@
       "price": 285,
       "currency": "SGD",
       "observed_at": "2026-08-10T12:08:35+08:00",
+      "is_demo": true
+    },
+    {
+      "id": "hotel-pan-pacific-sg-01",
+      "name": "Pan Pacific Singapore",
+      "destination": "Singapore",
+      "check_in": "2026-08-22",
+      "check_out": "2026-08-23",
+      "price": 368,
+      "currency": "SGD",
+      "observed_at": "2026-08-10T12:09:11+08:00",
+      "is_demo": true
+    },
+    {
+      "id": "hotel-eo-penang-01",
+      "name": "Eastern & Oriental Hotel",
+      "destination": "Penang",
+      "check_in": "2026-09-04",
+      "check_out": "2026-09-07",
+      "price": 245,
+      "currency": "SGD",
+      "observed_at": "2026-08-10T12:09:11+08:00",
+      "is_demo": true
+    },
+    {
+      "id": "hotel-ruma-kl-01",
+      "name": "The RuMa Hotel and Residences",
+      "destination": "Kuala Lumpur",
+      "check_in": "2026-08-28",
+      "check_out": "2026-08-30",
+      "price": 285,
+      "currency": "SGD",
+      "observed_at": "2026-08-10T12:09:11+08:00",
       "is_demo": true
     }
   ]
