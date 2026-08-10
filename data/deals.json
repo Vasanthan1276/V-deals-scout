@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T11:59:29+08:00",
+  "updated_at": "2026-08-10T12:08:35+08:00",
   "demo_mode": true,
   "items": [
     {
@@ -15,7 +15,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 95.0,
-      "observed_at": "2026-08-10T11:59:29+08:00"
+      "observed_at": "2026-08-10T12:08:35+08:00"
     },
     {
       "id": "hotel-eo-penang-01",
@@ -42,7 +42,7 @@
       "source": "Demo data",
       "is_demo": true,
       "deal_score": 85.7,
-      "observed_at": "2026-08-10T11:59:29+08:00"
+      "observed_at": "2026-08-10T12:08:35+08:00"
     },
     {
       "id": "idea-regional-01",
@@ -80,7 +80,7 @@
       "source": "Demo data",
       "is_demo": true,
       "deal_score": 81.3,
-      "observed_at": "2026-08-10T11:59:29+08:00"
+      "observed_at": "2026-08-10T12:08:35+08:00"
     },
     {
       "id": "idea-staycation-01",
@@ -106,7 +106,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 81.0,
-      "observed_at": "2026-08-10T11:59:29+08:00"
+      "observed_at": "2026-08-10T12:08:35+08:00"
     },
     {
       "id": "hotel-ruma-kl-01",
@@ -133,7 +133,7 @@
       "source": "Demo data",
       "is_demo": true,
       "deal_score": 74.9,
-      "observed_at": "2026-08-10T11:59:29+08:00"
+      "observed_at": "2026-08-10T12:08:35+08:00"
     },
     {
       "id": "sale-demo-02",
@@ -148,7 +148,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 73.0,
-      "observed_at": "2026-08-10T11:59:29+08:00"
+      "observed_at": "2026-08-10T12:08:35+08:00"
     },
     {
       "id": "food-demo-01",
@@ -163,7 +163,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 71.0,
-      "observed_at": "2026-08-10T11:59:29+08:00"
+      "observed_at": "2026-08-10T12:08:35+08:00"
     }
   ]
 }
