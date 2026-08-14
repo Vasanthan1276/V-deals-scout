@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T07:43:21+08:00",
+  "updated_at": "2026-08-15T07:23:56+08:00",
   "items": [
     {
       "id": "hotel-pan-pacific-sg-01",
@@ -7,8 +7,8 @@
       "sub_category": "staycation",
       "name": "Pan Pacific Singapore",
       "destination": "Singapore",
-      "check_in": "2026-08-26",
-      "check_out": "2026-08-27",
+      "check_in": "2026-08-27",
+      "check_out": "2026-08-28",
       "nights": 1,
       "stars": 5,
       "current_price": 368,
@@ -26,7 +26,7 @@
       "source": "Demo data",
       "is_demo": true,
       "deal_score": 81.3,
-      "observed_at": "2026-08-14T07:43:21+08:00"
+      "observed_at": "2026-08-15T07:23:56+08:00"
     },
     {
       "id": "hotel-eo-penang-01",
@@ -34,8 +34,8 @@
       "sub_category": "regional",
       "name": "Eastern & Oriental Hotel",
       "destination": "Penang",
-      "check_in": "2026-09-08",
-      "check_out": "2026-09-11",
+      "check_in": "2026-09-09",
+      "check_out": "2026-09-12",
       "nights": 3,
       "stars": 5,
       "current_price": 245,
@@ -53,7 +53,7 @@
       "source": "Demo data",
       "is_demo": true,
       "deal_score": 85.7,
-      "observed_at": "2026-08-14T07:43:21+08:00"
+      "observed_at": "2026-08-15T07:23:56+08:00"
     },
     {
       "id": "hotel-ruma-kl-01",
@@ -61,8 +61,8 @@
       "sub_category": "regional",
       "name": "The RuMa Hotel and Residences",
       "destination": "Kuala Lumpur",
-      "check_in": "2026-09-01",
-      "check_out": "2026-09-03",
+      "check_in": "2026-09-02",
+      "check_out": "2026-09-04",
       "nights": 2,
       "stars": 5,
       "current_price": 285,
@@ -80,7 +80,7 @@
       "source": "Demo data",
       "is_demo": true,
       "deal_score": 74.9,
-      "observed_at": "2026-08-14T07:43:21+08:00"
+      "observed_at": "2026-08-15T07:23:56+08:00"
     }
   ]
 }
