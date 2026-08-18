@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T07:24:42+08:00",
+  "updated_at": "2026-08-19T07:23:42+08:00",
   "items": [
     {
       "id": "food-demo-01",
@@ -14,7 +14,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 71.0,
-      "observed_at": "2026-08-18T07:24:42+08:00"
+      "observed_at": "2026-08-19T07:23:42+08:00"
     },
     {
       "id": "food-demo-02",
@@ -29,7 +29,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 95.0,
-      "observed_at": "2026-08-18T07:24:42+08:00"
+      "observed_at": "2026-08-19T07:23:42+08:00"
     }
   ]
 }
