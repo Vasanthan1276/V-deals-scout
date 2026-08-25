@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T07:24:14+08:00",
+  "updated_at": "2026-08-26T07:26:22+08:00",
   "demo_mode": true,
   "items": [
     {
@@ -15,7 +15,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 95.0,
-      "observed_at": "2026-08-25T07:24:14+08:00"
+      "observed_at": "2026-08-26T07:26:22+08:00"
     },
     {
       "id": "hotel-eo-penang-01",
@@ -23,8 +23,8 @@
       "sub_category": "regional",
       "name": "Eastern & Oriental Hotel",
       "destination": "Penang",
-      "check_in": "2026-09-19",
-      "check_out": "2026-09-22",
+      "check_in": "2026-09-20",
+      "check_out": "2026-09-23",
       "nights": 3,
       "stars": 5,
       "current_price": 245,
@@ -42,7 +42,7 @@
       "source": "Demo data",
       "is_demo": true,
       "deal_score": 85.7,
-      "observed_at": "2026-08-25T07:24:14+08:00"
+      "observed_at": "2026-08-26T07:26:22+08:00"
     },
     {
       "id": "idea-regional-01",
@@ -61,8 +61,8 @@
       "sub_category": "staycation",
       "name": "Pan Pacific Singapore",
       "destination": "Singapore",
-      "check_in": "2026-09-06",
-      "check_out": "2026-09-07",
+      "check_in": "2026-09-07",
+      "check_out": "2026-09-08",
       "nights": 1,
       "stars": 5,
       "current_price": 368,
@@ -80,7 +80,7 @@
       "source": "Demo data",
       "is_demo": true,
       "deal_score": 81.3,
-      "observed_at": "2026-08-25T07:24:14+08:00"
+      "observed_at": "2026-08-26T07:26:22+08:00"
     },
     {
       "id": "idea-staycation-01",
@@ -106,7 +106,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 81.0,
-      "observed_at": "2026-08-25T07:24:14+08:00"
+      "observed_at": "2026-08-26T07:26:22+08:00"
     },
     {
       "id": "hotel-ruma-kl-01",
@@ -114,8 +114,8 @@
       "sub_category": "regional",
       "name": "The RuMa Hotel and Residences",
       "destination": "Kuala Lumpur",
-      "check_in": "2026-09-12",
-      "check_out": "2026-09-14",
+      "check_in": "2026-09-13",
+      "check_out": "2026-09-15",
       "nights": 2,
       "stars": 5,
       "current_price": 285,
@@ -133,7 +133,7 @@
       "source": "Demo data",
       "is_demo": true,
       "deal_score": 74.9,
-      "observed_at": "2026-08-25T07:24:14+08:00"
+      "observed_at": "2026-08-26T07:26:22+08:00"
     },
     {
       "id": "sale-demo-02",
@@ -148,7 +148,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 73.0,
-      "observed_at": "2026-08-25T07:24:14+08:00"
+      "observed_at": "2026-08-26T07:26:22+08:00"
     },
     {
       "id": "food-demo-01",
@@ -163,7 +163,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 71.0,
-      "observed_at": "2026-08-25T07:24:14+08:00"
+      "observed_at": "2026-08-26T07:26:22+08:00"
     }
   ]
 }
