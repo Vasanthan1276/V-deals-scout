@@ -56,8 +56,13 @@ function pctBelow(
   current,
   reference
 ) {
-  current = Number(current);
-  reference = Number(reference);
+  current = Number(
+    current
+  );
+
+  reference = Number(
+    reference
+  );
 
   if (
     !current ||
@@ -70,7 +75,10 @@ function pctBelow(
 
   return Math.round(
     (
-      (reference - current)
+      (
+        reference
+        - current
+      )
       / reference
     )
     * 100
@@ -78,10 +86,14 @@ function pctBelow(
 }
 
 
-function detailPills(item) {
+function detailPills(
+  item
+) {
   const parts = [];
 
-  if (item.current_price) {
+  if (
+    item.current_price
+  ) {
     parts.push(
       `Nightly ${
         money(
@@ -124,7 +136,9 @@ function detailPills(item) {
     );
   }
 
-  if (item.check_in) {
+  if (
+    item.check_in
+  ) {
     parts.push(
       `${
         formatDate(
@@ -138,7 +152,9 @@ function detailPills(item) {
     );
   }
 
-  if (item.nights) {
+  if (
+    item.nights
+  ) {
     parts.push(
       `${item.nights} night${
         item.nights > 1
@@ -148,13 +164,17 @@ function detailPills(item) {
     );
   }
 
-  if (item.discount_percent) {
+  if (
+    item.discount_percent
+  ) {
     parts.push(
       `${item.discount_percent}% off`
     );
   }
 
-  if (item.estimated_cost) {
+  if (
+    item.estimated_cost
+  ) {
     parts.push(
       `Est. ${
         money(
@@ -172,9 +192,12 @@ function detailPills(item) {
 }
 
 
-function description(item) {
+function description(
+  item
+) {
   if (
-    item.category === "hotel"
+    item.category
+    === "hotel"
   ) {
     if (
       item.reference_source
@@ -185,7 +208,9 @@ function description(item) {
         item.historical_median
       );
 
-      if (saving > 0) {
+      if (
+        saving > 0
+      ) {
         return (
           `${saving}% below the median ` +
           `price observed previously ` +
@@ -210,7 +235,9 @@ function description(item) {
         item.peer_median
       );
 
-      if (saving > 0) {
+      if (
+        saving > 0
+      ) {
         return (
           `Peer comparison: ${saving}% ` +
           `below the median of other ` +
@@ -221,25 +248,31 @@ function description(item) {
       }
 
       return (
-        "Peer comparison only. We do not " +
-        "yet have enough observations to " +
-        "call this a historical price drop."
+        "Peer comparison only. " +
+        "We do not yet have enough " +
+        "observations to call this " +
+        "a historical price drop."
       );
     }
 
     return (
       "Live Hotelbeds Evaluation " +
-      "availability. More daily observations " +
-      "are needed before historical " +
-      "deal scoring becomes available."
+      "availability. More daily " +
+      "observations are needed before " +
+      "historical deal scoring becomes " +
+      "available."
     );
   }
 
-  if (item.why) {
+  if (
+    item.why
+  ) {
     return item.why;
   }
 
-  if (item.description) {
+  if (
+    item.description
+  ) {
     return item.description;
   }
 
@@ -247,7 +280,9 @@ function description(item) {
 }
 
 
-function scoreCaption(item) {
+function scoreCaption(
+  item
+) {
   if (
     item.score_basis
     === "observed_history"
@@ -266,8 +301,12 @@ function scoreCaption(item) {
 }
 
 
-function dataNote(item) {
-  if (item.is_demo) {
+function dataNote(
+  item
+) {
+  if (
+    item.is_demo
+  ) {
     return (
       `<div class="demo-note">` +
       `Illustrative demo entry — ` +
@@ -277,7 +316,8 @@ function dataNote(item) {
   }
 
   if (
-    item.category === "hotel"
+    item.category
+    === "hotel"
     &&
     item.is_evaluation
   ) {
@@ -297,30 +337,38 @@ function dataNote(item) {
 function renderStatusBadges(
   payload
 ) {
-  const row = document.querySelector(
-    ".status-row"
-  );
+  const row =
+    document.querySelector(
+      ".status-row"
+    );
 
-  const old = row.querySelectorAll(
-    ".data-status-badge"
-  );
+  const old =
+    row.querySelectorAll(
+      ".data-status-badge"
+    );
 
   old.forEach(
-    node => node.remove()
+    node =>
+      node.remove()
   );
 
-  const legacy = document.querySelector(
-    "#demoBadge"
-  );
+  const legacy =
+    document.querySelector(
+      "#demoBadge"
+    );
 
-  if (legacy) {
+  if (
+    legacy
+  ) {
     legacy.hidden = true;
   }
 
   const status =
     payload.status || {};
 
-  function addBadge(text) {
+  function addBadge(
+    text
+  ) {
     const badge =
       document.createElement(
         "span"
@@ -329,7 +377,8 @@ function renderStatusBadges(
     badge.className =
       "badge warning data-status-badge";
 
-    badge.textContent = text;
+    badge.textContent =
+      text;
 
     row.appendChild(
       badge
@@ -365,26 +414,83 @@ function renderStatusBadges(
 }
 
 
+function updateEmptyMessage() {
+  const empty =
+    document.querySelector(
+      "#empty"
+    );
+
+  if (
+    !empty
+  ) {
+    return;
+  }
+
+  const heading =
+    empty.querySelector(
+      "h2"
+    );
+
+  const text =
+    empty.querySelector(
+      "p"
+    );
+
+  if (
+    activeFilter
+    === "all"
+  ) {
+    heading.textContent =
+      "No Best deals above your threshold yet.";
+
+    text.textContent =
+      "Current monitored availability is still available under the Hotels tab.";
+  }
+
+  else if (
+    activeFilter
+    === "hotel"
+  ) {
+    heading.textContent =
+      "No hotel availability in this view.";
+
+    text.textContent =
+      "The next successful daily scan will check again.";
+  }
+
+  else {
+    heading.textContent =
+      "No deals in this category yet.";
+
+    text.textContent =
+      "This section will update as live sources are added.";
+  }
+}
+
+
 function render() {
   let data;
 
   if (
-    activeFilter === "all"
+    activeFilter
+    === "all"
   ) {
-    data = allDeals.filter(
-      item =>
-        !item.exclude_from_best
-        &&
-        !item.is_demo
-    );
+    data =
+      allDeals.filter(
+        item =>
+          !item.exclude_from_best
+          &&
+          !item.is_demo
+      );
   }
 
   else {
-    data = allDeals.filter(
-      item =>
-        item.category
-        === activeFilter
-    );
+    data =
+      allDeals.filter(
+        item =>
+          item.category
+          === activeFilter
+      );
   }
 
   const root =
@@ -402,21 +508,31 @@ function render() {
   empty.hidden =
     data.length > 0;
 
-  for (const item of data) {
+  updateEmptyMessage();
+
+  for (
+    const item
+    of data
+  ) {
     const card =
       document.createElement(
         "article"
       );
 
-    card.className = "card";
+    card.className =
+      "card";
 
     const where =
       item.destination
-      || item.location
-      || "";
+      ||
+      item.location
+      ||
+      "";
 
     const pills =
-      detailPills(item)
+      detailPills(
+        item
+      )
       .map(
         text =>
           `<div class="pill">` +
@@ -427,17 +543,20 @@ function render() {
 
     const action =
       item.booking_url
-      || item.url;
+      ||
+      item.url;
 
     card.innerHTML = `
       <div class="card-top">
+
         <div>
           <div class="kind">
             ${
               categoryLabels[
                 item.category
               ]
-              || item.category
+              ||
+              item.category
             }
           </div>
 
@@ -451,20 +570,26 @@ function render() {
         </div>
 
         <div class="score">
+
           <strong>
             ${
               Math.round(
-                item.deal_score || 0
+                item.deal_score
+                || 0
               )
             }
           </strong>
 
           <span>
             ${
-              scoreCaption(item)
+              scoreCaption(
+                item
+              )
             }
           </span>
+
         </div>
+
       </div>
 
       <div class="details">
@@ -472,7 +597,11 @@ function render() {
       </div>
 
       <div class="desc">
-        ${description(item)}
+        ${
+          description(
+            item
+          )
+        }
       </div>
 
       ${
@@ -490,7 +619,11 @@ function render() {
           : ""
       }
 
-      ${dataNote(item)}
+      ${
+        dataNote(
+          item
+        )
+      }
     `;
 
     root.appendChild(
@@ -499,6 +632,8 @@ function render() {
   }
 
   const bestCount =
+    payloadStats.best_deals
+    ??
     allDeals.filter(
       item =>
         !item.exclude_from_best
@@ -506,16 +641,21 @@ function render() {
         !item.is_demo
     ).length;
 
-  const hotelCount =
+  const availabilityCount =
+    payloadStats.availability_results
+    ??
     payloadStats.hotel_results
-    ?? allDeals.filter(
+    ??
+    allDeals.filter(
       item =>
-        item.category === "hotel"
+        item.category
+        === "hotel"
     ).length;
 
   const historyReady =
     payloadStats.history_ready
-    ?? allDeals.filter(
+    ??
+    allDeals.filter(
       item =>
         item.score_basis
         === "observed_history"
@@ -524,20 +664,37 @@ function render() {
   document.querySelector(
     "#summary"
   ).innerHTML = `
+
     <div class="metric">
-      <b>${bestCount}</b>
-      <span>Best deals</span>
+      <b>
+        ${bestCount}
+      </b>
+
+      <span>
+        Best deals
+      </span>
     </div>
 
     <div class="metric">
-      <b>${historyReady}</b>
-      <span>History-ready</span>
+      <b>
+        ${historyReady}
+      </b>
+
+      <span>
+        History-ready
+      </span>
     </div>
 
     <div class="metric">
-      <b>${hotelCount}</b>
-      <span>Hotel results</span>
+      <b>
+        ${availabilityCount}
+      </b>
+
+      <span>
+        Availability results
+      </span>
     </div>
+
   `;
 }
 
@@ -570,7 +727,8 @@ async function load() {
         `Last scan: ${
           new Date(
             payload.updated_at
-          ).toLocaleString(
+          )
+          .toLocaleString(
             "en-SG"
           )
         }`;
@@ -588,7 +746,9 @@ async function load() {
     render();
   }
 
-  catch (error) {
+  catch (
+    error
+  ) {
     document.querySelector(
       "#updated"
     ).textContent =
@@ -596,7 +756,10 @@ async function load() {
 
     document.querySelector(
       "#empty"
-    ).hidden = false;
+    ).hidden =
+      false;
+
+    updateEmptyMessage();
 
     console.error(
       error
