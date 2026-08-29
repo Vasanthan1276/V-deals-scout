@@ -1,4 +1,4 @@
-name: Test Hotelbeds Connection
+name: Test Hotelbeds mTLS Connection
 
 on:
   workflow_dispatch:
@@ -8,10 +8,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Test Hotelbeds API credentials
+      - name: Rebuild Hotelbeds certificate and private key
+        env:
+          HOTELBEDS_CLIENT_CERT_B64: ${{ secrets.HOTELBEDS_CLIENT_CERT_B64 }}
+          HOTELBEDS_CLIENT_KEY_B64: ${{ secrets.HOTELBEDS_CLIENT_KEY_B64 }}
+        run: |
+          echo "$HOTELBEDS_CLIENT_CERT_B64" | base64 --decode > hotelbeds-client.pem
+          echo "$HOTELBEDS_CLIENT_KEY_B64" | base64 --decode > hotelbeds-client.key
+
+          chmod 600 hotelbeds-client.key
+
+          echo "Certificate and private key reconstructed successfully."
+
+      - name: Check client certificate
+        run: |
+          echo "Certificate details:"
+          openssl x509 \
+            -in hotelbeds-client.pem \
+            -noout \
+            -subject \
+            -issuer \
+            -dates
+
+      - name: Test Hotelbeds mTLS availability
         env:
           HOTELBEDS_API_KEY: ${{ secrets.HOTELBEDS_API_KEY }}
           HOTELBEDS_SECRET: ${{ secrets.HOTELBEDS_SECRET }}
+          HOTELBEDS_CLIENT_KEY_PASSWORD: ${{ secrets.HOTELBEDS_CLIENT_KEY_PASSWORD }}
         run: |
           TIMESTAMP=$(date +%s)
 
@@ -22,23 +45,112 @@ jobs:
             | sha256sum \
             | awk '{print $1}')
 
-          echo "Testing Hotelbeds Evaluation API..."
+          CHECKIN=$(date -u -d "+30 days" +%F)
+          CHECKOUT=$(date -u -d "+31 days" +%F)
 
-          HTTP_CODE=$(curl -sS \
-            -o response.json \
-            -w "%{http_code}" \
-            -H "Accept: application/json" \
-            -H "Api-key: $HOTELBEDS_API_KEY" \
-            -H "X-Signature: $SIGNATURE" \
-            "https://api.test.hotelbeds.com/hotel-api/1.0/status")
+          echo "Testing Hotelbeds mTLS availability..."
+          echo "Check-in:  $CHECKIN"
+          echo "Check-out: $CHECKOUT"
+
+          cat > request.json <<EOF
+          {
+            "stay": {
+              "checkIn": "$CHECKIN",
+              "checkOut": "$CHECKOUT"
+            },
+            "occupancies": [
+              {
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              }
+            ],
+            "hotels": {
+              "hotel": [
+                3424,
+                168
+              ]
+            }
+          }
+          EOF
+
+          HTTP_CODE=$(curl \
+            --silent \
+            --show-error \
+            --compressed \
+            --cert hotelbeds-client.pem \
+            --key hotelbeds-client.key \
+            --pass "$HOTELBEDS_CLIENT_KEY_PASSWORD" \
+            --output response.json \
+            --write-out "%{http_code}" \
+            --request POST \
+            --header "Accept: application/json" \
+            --header "Accept-Encoding: gzip" \
+            --header "Content-Type: application/json" \
+            --header "Api-key: $HOTELBEDS_API_KEY" \
+            --header "X-Signature: $SIGNATURE" \
+            --data @request.json \
+            "https://api-mtls.test.hotelbeds.com/hotel-api/1.0/hotels")
 
           echo "HTTP status: $HTTP_CODE"
 
-          if [ "$HTTP_CODE" = "200" ]; then
-            echo "✅ Hotelbeds API credentials are working."
-            cat response.json
-          else
-            echo "❌ Hotelbeds API connection failed."
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "Hotelbeds mTLS availability test failed."
+            echo "Response:"
             cat response.json
             exit 1
           fi
+
+          echo "✅ Hotelbeds mTLS authentication succeeded."
+
+      - name: Summarize availability response
+        run: |
+          python - <<'PY'
+          import json
+
+          with open("response.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          hotels_block = data.get("hotels", {})
+          hotels = hotels_block.get("hotels", []) or []
+
+          print("✅ Availability response successfully decoded.")
+          print(f"Hotels returned: {len(hotels)}")
+
+          for hotel in hotels:
+              code = hotel.get("code")
+              name = hotel.get("name", "Unknown hotel")
+
+              cheapest = None
+
+              for room in hotel.get("rooms", []) or []:
+                  for rate in room.get("rates", []) or []:
+                      net = rate.get("net")
+
+                      try:
+                          value = float(net)
+                      except (TypeError, ValueError):
+                          continue
+
+                      if cheapest is None or value < cheapest:
+                          cheapest = value
+
+              if cheapest is not None:
+                  print(f"- {name} ({code}) — lowest returned net price: {cheapest:.2f}")
+              else:
+                  print(f"- {name} ({code}) — availability returned")
+
+          if not hotels:
+              print(
+                  "No rooms were returned for the two test hotels/date, "
+                  "but HTTP 200 confirms the mTLS Hotel Availability call worked."
+              )
+          PY
+
+      - name: Remove temporary certificate files
+        if: always()
+        run: |
+          rm -f hotelbeds-client.pem
+          rm -f hotelbeds-client.key
+          rm -f request.json
+          rm -f response.json
