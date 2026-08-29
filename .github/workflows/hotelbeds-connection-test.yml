@@ -1,0 +1,44 @@
+name: Test Hotelbeds Connection
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test Hotelbeds API credentials
+        env:
+          HOTELBEDS_API_KEY: ${{ secrets.HOTELBEDS_API_KEY }}
+          HOTELBEDS_SECRET: ${{ secrets.HOTELBEDS_SECRET }}
+        run: |
+          TIMESTAMP=$(date +%s)
+
+          SIGNATURE=$(printf "%s%s%s" \
+            "$HOTELBEDS_API_KEY" \
+            "$HOTELBEDS_SECRET" \
+            "$TIMESTAMP" \
+            | sha256sum \
+            | awk '{print $1}')
+
+          echo "Testing Hotelbeds Evaluation API..."
+
+          HTTP_CODE=$(curl -sS \
+            -o response.json \
+            -w "%{http_code}" \
+            -H "Accept: application/json" \
+            -H "Api-key: $HOTELBEDS_API_KEY" \
+            -H "X-Signature: $SIGNATURE" \
+            "https://api.test.hotelbeds.com/hotel-api/1.0/status")
+
+          echo "HTTP status: $HTTP_CODE"
+
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "✅ Hotelbeds API credentials are working."
+            cat response.json
+          else
+            echo "❌ Hotelbeds API connection failed."
+            cat response.json
+            exit 1
+          fi
