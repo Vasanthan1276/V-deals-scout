@@ -1,15 +1,12 @@
 name: Daily Deals Scan
 
 on:
-  # Allows us to press "Run workflow" manually for testing
   workflow_dispatch:
 
-  # Automatic daily scan at 7:00 AM Singapore time
   schedule:
     - cron: "0 7 * * *"
       timezone: "Asia/Singapore"
 
-# Allows the workflow to update the JSON data files
 permissions:
   contents: write
 
@@ -18,25 +15,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Download the repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Install Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      # 3. Install Python requirements
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # 4. Run the V&V Deals Scout
-      - name: Run deals scout
+      - name: Run V&V Deals Scout
+        env:
+          HOTELBEDS_API_KEY: ${{ secrets.HOTELBEDS_API_KEY }}
+          HOTELBEDS_SECRET: ${{ secrets.HOTELBEDS_SECRET }}
+          HOTELBEDS_CLIENT_CERT_B64: ${{ secrets.HOTELBEDS_CLIENT_CERT_B64 }}
+          HOTELBEDS_CLIENT_KEY_B64: ${{ secrets.HOTELBEDS_CLIENT_KEY_B64 }}
+          HOTELBEDS_CLIENT_KEY_PASSWORD: ${{ secrets.HOTELBEDS_CLIENT_KEY_PASSWORD }}
         run: python scripts/main.py
 
-      # 5. Save the refreshed deal data back to GitHub
       - name: Commit refreshed deal data
         run: |
           git config user.name "github-actions[bot]"
