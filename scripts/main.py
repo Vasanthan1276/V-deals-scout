@@ -140,7 +140,9 @@ def update_history(hotels):
 
     history[
         "observations"
-    ] = observations[-5000:]
+    ] = observations[
+        -5000:
+    ]
 
     history[
         "updated_at"
@@ -160,34 +162,45 @@ def build_ideas(
 
     eligible = [
         hotel
+
         for hotel
         in hotels
+
         if hotel.get(
             "deal_score",
             0,
-        ) >= minimum_score
+        )
+        >= minimum_score
     ]
 
     regional = [
         hotel
+
         for hotel
         in eligible
+
         if hotel.get(
             "sub_category"
-        ) == "regional"
+        )
+        == "regional"
     ]
 
     staycations = [
         hotel
+
         for hotel
         in eligible
+
         if hotel.get(
             "sub_category"
-        ) == "staycation"
+        )
+        == "staycation"
     ]
 
     if regional:
-        hotel = regional[0]
+        hotel = (
+            regional[0]
+        )
 
         ideas.append(
             {
@@ -195,11 +208,13 @@ def build_ideas(
                     "idea-regional-01"
                 ),
 
-                "category": "idea",
+                "category": (
+                    "idea"
+                ),
 
                 "name": (
                     f"{hotel['destination']} "
-                    f"getaway"
+                    "getaway"
                 ),
 
                 "description": (
@@ -257,7 +272,9 @@ def build_ideas(
         )
 
     if staycations:
-        hotel = staycations[0]
+        hotel = (
+            staycations[0]
+        )
 
         ideas.append(
             {
@@ -265,7 +282,9 @@ def build_ideas(
                     "idea-staycation-01"
                 ),
 
-                "category": "idea",
+                "category": (
+                    "idea"
+                ),
 
                 "name": (
                     "Singapore staycation"
@@ -334,10 +353,6 @@ def mark_demo_items(
         if item.get(
             "is_demo"
         ):
-            # Demo records remain visible
-            # inside their own Food/Sales
-            # tabs, but never appear in
-            # Best Deals.
             item[
                 "exclude_from_best"
             ] = True
@@ -346,7 +361,22 @@ def mark_demo_items(
 
 
 def main():
+    #
+    # IMPORTANT:
+    #
+    # scan_hotels() runs BEFORE any
+    # JSON output is written.
+    #
+    # If Hotelbeds is incomplete,
+    # quota-limited, or errors out,
+    # hotel_scanner.py raises here.
+    #
+    # The program exits and yesterday's
+    # existing data files remain intact.
+    #
+
     hotels = scan_hotels()
+
     food = mark_demo_items(
         scan_food()
     )
@@ -375,16 +405,10 @@ def main():
         20,
     )
 
-    #
-    # Hotels
-    #
-    # Keep the top hotels available
-    # in the Hotels tab even if their
-    # score is below 70.
-    #
-
     hotel_items = (
-        hotels[:maximum]
+        hotels[
+            :maximum
+        ]
     )
 
     for hotel in hotel_items:
@@ -398,20 +422,16 @@ def main():
             < minimum
         )
 
-    #
-    # Demo Food/Sales
-    #
-    # Still useful to preview those
-    # tabs, but never rank against
-    # live Hotelbeds results.
-    #
-
     food_items = (
-        food[:maximum]
+        food[
+            :maximum
+        ]
     )
 
     sales_items = (
-        sales[:maximum]
+        sales[
+            :maximum
+        ]
     )
 
     ideas = build_ideas(
@@ -427,7 +447,8 @@ def main():
     )
 
     visible.sort(
-        key=lambda x: x.get(
+        key=lambda item:
+        item.get(
             "deal_score",
             0,
         ),
@@ -436,20 +457,45 @@ def main():
 
     history_ready = sum(
         1
+
         for hotel
         in hotels
+
         if hotel.get(
             "score_basis"
-        ) == "observed_history"
+        )
+        == "observed_history"
     )
 
     peer_only = sum(
         1
+
         for hotel
         in hotels
+
         if hotel.get(
             "score_basis"
-        ) == "peer_comparison"
+        )
+        == "peer_comparison"
+    )
+
+    best_deals = sum(
+        1
+
+        for item
+        in visible
+
+        if (
+            not item.get(
+                "exclude_from_best",
+                False,
+            )
+
+            and not item.get(
+                "is_demo",
+                False,
+            )
+        )
     )
 
     write_json(
@@ -467,7 +513,13 @@ def main():
                 "evaluation"
             ),
 
-            "items": hotels,
+            "availability_results": (
+                len(hotels)
+            ),
+
+            "items": (
+                hotels
+            ),
         },
     )
 
@@ -481,15 +533,19 @@ def main():
             "mode": (
                 "demo"
                 if any(
-                    x.get(
+                    item.get(
                         "is_demo"
                     )
-                    for x in food
+
+                    for item
+                    in food
                 )
                 else "live"
             ),
 
-            "items": food,
+            "items": (
+                food
+            ),
         },
     )
 
@@ -503,15 +559,19 @@ def main():
             "mode": (
                 "demo"
                 if any(
-                    x.get(
+                    item.get(
                         "is_demo"
                     )
-                    for x in sales
+
+                    for item
+                    in sales
                 )
                 else "live"
             ),
 
-            "items": sales,
+            "items": (
+                sales
+            ),
         },
     )
 
@@ -534,10 +594,12 @@ def main():
                 "food": (
                     "demo"
                     if any(
-                        x.get(
+                        item.get(
                             "is_demo"
                         )
-                        for x in food
+
+                        for item
+                        in food
                     )
                     else "live"
                 ),
@@ -545,16 +607,24 @@ def main():
                 "sales": (
                     "demo"
                     if any(
-                        x.get(
+                        item.get(
                             "is_demo"
                         )
-                        for x in sales
+
+                        for item
+                        in sales
                     )
                     else "live"
                 ),
             },
 
             "stats": {
+                "availability_results": (
+                    len(hotels)
+                ),
+
+                # Retained for compatibility
+                # with older app.js versions.
                 "hotel_results": (
                     len(hotels)
                 ),
@@ -568,25 +638,13 @@ def main():
                 ),
 
                 "best_deals": (
-                    sum(
-                        1
-                        for x
-                        in visible
-                        if (
-                            not x.get(
-                                "exclude_from_best",
-                                False,
-                            )
-                            and not x.get(
-                                "is_demo",
-                                False,
-                            )
-                        )
-                    )
+                    best_deals
                 ),
             },
 
-            "items": visible,
+            "items": (
+                visible
+            ),
         },
     )
 
@@ -594,27 +652,41 @@ def main():
         hotels
     )
 
+    print()
     print(
-        "Deals Scout updated:"
+        "=" * 70
     )
 
     print(
-        f"  Hotel availability "
-        f"results: {len(hotels)}"
+        "V&V DEALS SCOUT UPDATE COMPLETE"
     )
 
     print(
-        f"  History-ready hotel "
-        f"results: {history_ready}"
+        "=" * 70
     )
 
     print(
-        f"  Peer-comparison hotel "
-        f"results: {peer_only}"
+        "Availability results: "
+        f"{len(hotels)}"
     )
 
     print(
-        f"  Dashboard items: "
+        "History-ready: "
+        f"{history_ready}"
+    )
+
+    print(
+        "Peer-comparison: "
+        f"{peer_only}"
+    )
+
+    print(
+        "Best deals: "
+        f"{best_deals}"
+    )
+
+    print(
+        "Dashboard items: "
         f"{len(visible)}"
     )
 
