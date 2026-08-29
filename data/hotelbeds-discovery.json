@@ -1,312 +1,34 @@
 {
-  "generated_at": "2026-08-29T09:08:52.565458+00:00",
+  "generated_at": "2026-08-29T09:17:54.879216+00:00",
   "environment": "Hotelbeds Evaluation",
   "source": "Hotelbeds Content API",
   "destinations": [
     {
       "name": "Singapore",
-      "code": "SIN",
-      "http_status": 200,
-      "hotel_count": 457,
-      "preferred_matches": [
+      "country_code": "SG",
+      "resolved_destination_candidates": [
         {
-          "code": 74318,
-          "name": "Pan Pacific Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Raffles Boulevard, Marina Square, 7",
-          "watchlist_name": "Pan Pacific Singapore"
-        },
-        {
-          "code": 96024,
-          "name": "Re",
-          "stars": 3,
-          "category_code": "3EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "175A Chin Swee Road",
-          "watchlist_name": "Pan Pacific Singapore"
-        },
-        {
-          "code": 74304,
-          "name": "PARKROYAL COLLECTION Marina Bay, Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Raffles Boulevard, Marina Square, 6",
-          "watchlist_name": "PARKROYAL COLLECTION Marina Bay"
-        },
-        {
-          "code": 74305,
-          "name": "Pan Pacific Orchard",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Claymore Road, 10",
-          "watchlist_name": "Pan Pacific Orchard"
-        },
-        {
-          "code": 74312,
-          "name": "Shangri-la Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "22 Orange Grove Road, 22",
-          "watchlist_name": "Shangri-La Singapore"
-        },
-        {
-          "code": 74319,
-          "name": "Conrad Singapore Orchard",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "Singapore",
-          "address": "Cuscaden Road, 1",
-          "watchlist_name": "Conrad Singapore Orchard"
-        },
-        {
-          "code": 745684,
-          "name": "Dusit Thani Laguna Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "Singapore",
-          "address": "11 Laguna Golf Green",
-          "watchlist_name": "Dusit Thani Laguna Singapore"
+          "code": "SIN",
+          "name": "Singapore",
+          "country_code": "SG",
+          "match_score": 1.0
         }
       ],
-      "shortlist": [
-        {
-          "code": 1039300,
-          "name": "21 Carpenter, Singapore, a Member of Design Hotels",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "Singapore",
-          "address": "21 CARPENTER STREET"
-        },
-        {
-          "code": 80664,
-          "name": "Amara Sanctuary Sentosa",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Larkhill Road, Sentosa, 1"
-        },
-        {
-          "code": 74284,
-          "name": "Amara Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Tanjong Pagar Road, 165"
-        },
-        {
-          "code": 603342,
-          "name": "Andaz Singapore, By Hyatt",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "5 fraser street 5, 5"
-        },
-        {
-          "code": 1033924,
-          "name": "Artyzen Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "Singapore",
-          "address": "9 Cuscaden Rd"
-        },
-        {
-          "code": 558201,
-          "name": "Ascott Orchard Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Cairnhill Road, 11"
-        },
-        {
-          "code": 111355,
-          "name": "Ascott Raffles Place Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Finlayson Green, 2"
-        },
-        {
-          "code": 111357,
-          "name": "Capella Singapore",
-          "stars": 5,
-          "category_code": "5LUX",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "The Knolls, Sentosa Island, 1"
-        },
-        {
-          "code": 674936,
-          "name": "Capri by Fraser China Square Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "Singapore",
-          "address": "181 South Bridge Road, Singapore, 181"
-        },
-        {
-          "code": 1006542,
-          "name": "COMO Metropolitan Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "Singapore",
-          "address": "30 Bideford Rd"
-        },
-        {
-          "code": 69617,
-          "name": "Conrad Singapore Marina Bay",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "2 Temasek Boulevard"
-        },
+      "hotel_count_collected": 457,
+      "preferred_matches": [
         {
           "code": 74319,
           "name": "Conrad Singapore Orchard",
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "SIN",
-          "destination_name": "",
+          "country_code": "SG",
           "city": "Singapore",
-          "address": "Cuscaden Road, 1"
-        },
-        {
-          "code": 98032,
-          "name": "Crowne Plaza Changi Airport",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "75 Airport Boulevard"
-        },
-        {
-          "code": 592542,
-          "name": "DAO BY DORSETT AMTD SINGAPORE",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "Singapore",
-          "address": "Shenton Way, Oue Downtown 1, 6"
-        },
-        {
-          "code": 745684,
-          "name": "Dusit Thani Laguna Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "Singapore",
-          "address": "11 Laguna Golf Green"
-        },
-        {
-          "code": 69630,
-          "name": "Fairmont Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "80 Bras Basah Road 189560 Singapore, 80 26"
-        },
-        {
-          "code": 74289,
-          "name": "Four Seasons Hotel Singapore",
-          "stars": 5,
-          "category_code": "5LUX",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Orchard Boulevard, 190"
-        },
-        {
-          "code": 74300,
-          "name": "Frasers House, a Luxury Collection Hotel",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "80 Middle Road"
-        },
-        {
-          "code": 74294,
-          "name": "Goodwood Park",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "22 Scotts Road"
-        },
-        {
-          "code": 69621,
-          "name": "Grand Copthorne Waterfront Hotel Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Havelock Road, 392"
-        },
-        {
-          "code": 69622,
-          "name": "Grand Hyatt Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "10 Scotts Road"
-        },
-        {
-          "code": 74295,
-          "name": "Grand Park City Hall",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "10 Coleman Street"
+          "address": "Cuscaden Road, 1",
+          "postal_code": "249715",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Conrad Singapore Orchard",
+          "match_score": 1.0
         },
         {
           "code": 69626,
@@ -314,169 +36,83 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "SIN",
-          "destination_name": "",
+          "country_code": "SG",
           "city": "SINGAPORE",
-          "address": "333 Orchard Road, 333"
+          "address": "333 Orchard Road, 333",
+          "postal_code": "238867",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Conrad Singapore Orchard",
+          "match_score": 0.833
         },
         {
-          "code": 74292,
-          "name": "InterContinental Singapore Robertson Quay",
+          "code": 84512,
+          "name": "Pullman Singapore Orchard",
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "SIN",
-          "destination_name": "",
+          "country_code": "SG",
           "city": "SINGAPORE",
-          "address": "1 Nanson Road"
+          "address": "270 Orchard Road Singapore, 270",
+          "postal_code": "238857",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Conrad Singapore Orchard",
+          "match_score": 0.776
         },
         {
-          "code": 409512,
-          "name": "JW Marriott Hotel Singapore South Beach",
+          "code": 69617,
+          "name": "Conrad Singapore Marina Bay",
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "SIN",
-          "destination_name": "",
+          "country_code": "SG",
           "city": "SINGAPORE",
-          "address": "30 Beach Road, 634"
+          "address": "2 Temasek Boulevard",
+          "postal_code": "038982",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Conrad Singapore Orchard",
+          "match_score": 0.745
         },
         {
-          "code": 1081222,
-          "name": "Mandai Rainforest Resort By Banyan Tree",
+          "code": 74315,
+          "name": "Vibe Hotel Singapore Orchard",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "24 Mount Elizabeth",
+          "postal_code": "228518",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Conrad Singapore Orchard",
+          "match_score": 0.731
+        },
+        {
+          "code": 745684,
+          "name": "Dusit Thani Laguna Singapore",
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "SIN",
-          "destination_name": "",
+          "country_code": "SG",
           "city": "Singapore",
-          "address": "60 Mandai Lake Road"
+          "address": "11 Laguna Golf Green",
+          "postal_code": "488047",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Dusit Thani Laguna Singapore",
+          "match_score": 1.0
         },
         {
-          "code": 69634,
-          "name": "Mandarin Oriental Singapore",
+          "code": 74312,
+          "name": "Shangri-la Singapore",
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "SIN",
-          "destination_name": "",
+          "country_code": "SG",
           "city": "SINGAPORE",
-          "address": "Raffles Avenue, 5"
-        },
-        {
-          "code": 125839,
-          "name": "Marina Bay Sands",
-          "stars": 5,
-          "category_code": "5LUX",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Bayfront Avenue, 10"
-        },
-        {
-          "code": 142879,
-          "name": "METT Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Canning Walk, 11"
-        },
-        {
-          "code": 993543,
-          "name": "Mondrian Singapore Duxton",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "16A Duxton Hill 16A Duxton Hill 16A Duxton Hill, 12"
-        },
-        {
-          "code": 88943,
-          "name": "Naumi Hotel",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "41 Seah Street"
-        },
-        {
-          "code": 148173,
-          "name": "Oasia Resort Sentosa by Far East Hospitality",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "23 Beach View, Sentosa, ."
-        },
-        {
-          "code": 231463,
-          "name": "One 15 Marina Club",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "01-01, 11 Cove Drive Sentosa Cove"
-        },
-        {
-          "code": 363211,
-          "name": "One Farrer Hotel",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Farrer Park Station Road Singapore, 1"
-        },
-        {
-          "code": 69628,
-          "name": "Orchard Hotel Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Orchard Road, 442"
-        },
-        {
-          "code": 74305,
-          "name": "Pan Pacific Orchard",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Claymore Road, 10"
-        },
-        {
-          "code": 202628,
-          "name": "Pan Pacific Serviced Suites Beach Road",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Beach Road, 7500B"
-        },
-        {
-          "code": 74318,
-          "name": "Pan Pacific Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "Raffles Boulevard, Marina Square, 7"
-        },
-        {
-          "code": 69632,
-          "name": "Paradox Singapore",
-          "stars": 5,
-          "category_code": "5EST",
-          "destination_code": "SIN",
-          "destination_name": "",
-          "city": "SINGAPORE",
-          "address": "20 Merchant Road"
+          "address": "22 Orange Grove Road, 22",
+          "postal_code": "238350",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Dusit Thani Laguna Singapore",
+          "match_score": 0.75
         },
         {
           "code": 74304,
@@ -484,28 +120,854 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "SIN",
-          "destination_name": "",
+          "country_code": "SG",
           "city": "SINGAPORE",
-          "address": "Raffles Boulevard, Marina Square, 6"
+          "address": "Raffles Boulevard, Marina Square, 6",
+          "postal_code": "039594",
+          "source_destination_code": "SIN",
+          "watchlist_name": "PARKROYAL COLLECTION Marina Bay",
+          "match_score": 0.93
+        },
+        {
+          "code": 187473,
+          "name": "PARKROYAL COLLECTION Pickering",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "3 Upper Pickering Street",
+          "postal_code": "058289",
+          "source_destination_code": "SIN",
+          "watchlist_name": "PARKROYAL COLLECTION Marina Bay",
+          "match_score": 0.787
+        },
+        {
+          "code": 74305,
+          "name": "Pan Pacific Orchard",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Claymore Road, 10",
+          "postal_code": "229540",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Pan Pacific Orchard",
+          "match_score": 1.0
+        },
+        {
+          "code": 74318,
+          "name": "Pan Pacific Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Raffles Boulevard, Marina Square, 7",
+          "postal_code": "039595",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Pan Pacific Orchard",
+          "match_score": 0.7
+        },
+        {
+          "code": 74318,
+          "name": "Pan Pacific Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Raffles Boulevard, Marina Square, 7",
+          "postal_code": "039595",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Pan Pacific Singapore",
+          "match_score": 1.0
+        },
+        {
+          "code": 74283,
+          "name": "Grand Pacific Singapore",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "101 Victoria Street, 101",
+          "postal_code": "188018",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Pan Pacific Singapore",
+          "match_score": 0.909
+        },
+        {
+          "code": 74305,
+          "name": "Pan Pacific Orchard",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Claymore Road, 10",
+          "postal_code": "229540",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Pan Pacific Singapore",
+          "match_score": 0.7
+        },
+        {
+          "code": 69632,
+          "name": "Paradox Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "20 Merchant Road",
+          "postal_code": "058281",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Pan Pacific Singapore",
+          "match_score": 0.684
+        },
+        {
+          "code": 74312,
+          "name": "Shangri-la Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "22 Orange Grove Road, 22",
+          "postal_code": "238350",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Pan Pacific Singapore",
+          "match_score": 0.683
+        },
+        {
+          "code": 74312,
+          "name": "Shangri-la Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "22 Orange Grove Road, 22",
+          "postal_code": "238350",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Shangri-La Singapore",
+          "match_score": 1.0
+        },
+        {
+          "code": 343927,
+          "name": "Shangri-La Apartments Singapore",
+          "stars": 3,
+          "category_code": "3EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Anderson Road, 1",
+          "postal_code": "259983",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Shangri-La Singapore",
+          "match_score": 0.784
+        },
+        {
+          "code": 69631,
+          "name": "Shangri-La Rasa Sentosa, Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "101 Siloso Road, Sentosa",
+          "postal_code": "098970",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Shangri-La Singapore",
+          "match_score": 0.755
+        },
+        {
+          "code": 745684,
+          "name": "Dusit Thani Laguna Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "Singapore",
+          "address": "11 Laguna Golf Green",
+          "postal_code": "488047",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Shangri-La Singapore",
+          "match_score": 0.75
+        },
+        {
+          "code": 74284,
+          "name": "Amara Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Tanjong Pagar Road, 165",
+          "postal_code": "088539",
+          "source_destination_code": "SIN",
+          "watchlist_name": "Shangri-La Singapore",
+          "match_score": 0.743
+        }
+      ],
+      "luxury_shortlist": [
+        {
+          "code": 1039300,
+          "name": "21 Carpenter, Singapore, a Member of Design Hotels",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "Singapore",
+          "address": "21 CARPENTER STREET",
+          "postal_code": "059984",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 80664,
+          "name": "Amara Sanctuary Sentosa",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Larkhill Road, Sentosa, 1",
+          "postal_code": "099394",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 74284,
+          "name": "Amara Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Tanjong Pagar Road, 165",
+          "postal_code": "088539",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 603342,
+          "name": "Andaz Singapore, By Hyatt",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "5 fraser street 5, 5",
+          "postal_code": "189354",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 1033924,
+          "name": "Artyzen Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "Singapore",
+          "address": "9 Cuscaden Rd",
+          "postal_code": "249719",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 558201,
+          "name": "Ascott Orchard Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Cairnhill Road, 11",
+          "postal_code": "229724",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 111355,
+          "name": "Ascott Raffles Place Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Finlayson Green, 2",
+          "postal_code": "047947",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 111357,
+          "name": "Capella Singapore",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "The Knolls, Sentosa Island, 1",
+          "postal_code": "098297",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 674936,
+          "name": "Capri by Fraser China Square Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "Singapore",
+          "address": "181 South Bridge Road, Singapore, 181",
+          "postal_code": "058743",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 1006542,
+          "name": "COMO Metropolitan Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "Singapore",
+          "address": "30 Bideford Rd",
+          "postal_code": "229922",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 69617,
+          "name": "Conrad Singapore Marina Bay",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "2 Temasek Boulevard",
+          "postal_code": "038982",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 74319,
+          "name": "Conrad Singapore Orchard",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "Singapore",
+          "address": "Cuscaden Road, 1",
+          "postal_code": "249715",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 98032,
+          "name": "Crowne Plaza Changi Airport",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "75 Airport Boulevard",
+          "postal_code": "819664",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 592542,
+          "name": "DAO BY DORSETT AMTD SINGAPORE",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "Singapore",
+          "address": "Shenton Way, Oue Downtown 1, 6",
+          "postal_code": "068809",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 745684,
+          "name": "Dusit Thani Laguna Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "Singapore",
+          "address": "11 Laguna Golf Green",
+          "postal_code": "488047",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 69630,
+          "name": "Fairmont Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "80 Bras Basah Road 189560 Singapore, 80 26",
+          "postal_code": "189560",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 74289,
+          "name": "Four Seasons Hotel Singapore",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Orchard Boulevard, 190",
+          "postal_code": "248646",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 74300,
+          "name": "Frasers House, a Luxury Collection Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "80 Middle Road",
+          "postal_code": "188966",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 74294,
+          "name": "Goodwood Park",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "22 Scotts Road",
+          "postal_code": "228221",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 69621,
+          "name": "Grand Copthorne Waterfront Hotel Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Havelock Road, 392",
+          "postal_code": "169663",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 69622,
+          "name": "Grand Hyatt Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "10 Scotts Road",
+          "postal_code": "228211",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 74295,
+          "name": "Grand Park City Hall",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "10 Coleman Street",
+          "postal_code": "179809",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 69626,
+          "name": "Hilton Singapore Orchard",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "333 Orchard Road, 333",
+          "postal_code": "238867",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 74292,
+          "name": "InterContinental Singapore Robertson Quay",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "1 Nanson Road",
+          "postal_code": "238909",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 409512,
+          "name": "JW Marriott Hotel Singapore South Beach",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "30 Beach Road, 634",
+          "postal_code": "189763",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 1081222,
+          "name": "Mandai Rainforest Resort By Banyan Tree",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "Singapore",
+          "address": "60 Mandai Lake Road",
+          "postal_code": "729979",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 69634,
+          "name": "Mandarin Oriental Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Raffles Avenue, 5",
+          "postal_code": "039797",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 125839,
+          "name": "Marina Bay Sands",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Bayfront Avenue, 10",
+          "postal_code": "018956",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 142879,
+          "name": "METT Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Canning Walk, 11",
+          "postal_code": "178881",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 993543,
+          "name": "Mondrian Singapore Duxton",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "16A Duxton Hill 16A Duxton Hill 16A Duxton Hill, 12",
+          "postal_code": "089970",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 88943,
+          "name": "Naumi Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "41 Seah Street",
+          "postal_code": "188396",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 148173,
+          "name": "Oasia Resort Sentosa by Far East Hospitality",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "23 Beach View, Sentosa, .",
+          "postal_code": "098679",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 231463,
+          "name": "One 15 Marina Club",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "01-01, 11 Cove Drive Sentosa Cove",
+          "postal_code": "098497",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 363211,
+          "name": "One Farrer Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Farrer Park Station Road Singapore, 1",
+          "postal_code": "217562",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 69628,
+          "name": "Orchard Hotel Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Orchard Road, 442",
+          "postal_code": "238879",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 74305,
+          "name": "Pan Pacific Orchard",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Claymore Road, 10",
+          "postal_code": "229540",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 202628,
+          "name": "Pan Pacific Serviced Suites Beach Road",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Beach Road, 7500B",
+          "postal_code": "199592",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 74318,
+          "name": "Pan Pacific Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Raffles Boulevard, Marina Square, 7",
+          "postal_code": "039595",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 69632,
+          "name": "Paradox Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "20 Merchant Road",
+          "postal_code": "058281",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 74304,
+          "name": "PARKROYAL COLLECTION Marina Bay, Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Raffles Boulevard, Marina Square, 6",
+          "postal_code": "039594",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 187473,
+          "name": "PARKROYAL COLLECTION Pickering",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "3 Upper Pickering Street",
+          "postal_code": "058289",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 997453,
+          "name": "Pullman Singapore Hill Street",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "Singapore",
+          "address": "1 Hill Street, 1",
+          "postal_code": "179949",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 84512,
+          "name": "Pullman Singapore Orchard",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "270 Orchard Road Singapore, 270",
+          "postal_code": "238857",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 225914,
+          "name": "QT Singapore",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Robinson Road, 35",
+          "postal_code": "068876",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 69629,
+          "name": "Raffles Hotel Singapore",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "1 Beach Road",
+          "postal_code": "189673",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 1079808,
+          "name": "Raffles Sentosa Singapore (Opening March 2025)",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "Singapore",
+          "address": "4 Bukit Manis Road Sentosa",
+          "postal_code": "",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 345640,
+          "name": "Resorts World Sentosa - Crockfords Tower",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "8 Sentosa Gateway, Sentosa Island",
+          "postal_code": "098269",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 172532,
+          "name": "Resorts World Sentosa - Equarius Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Sentosa Gateway, Equarius Hotel, 16",
+          "postal_code": "098269",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 361376,
+          "name": "Resorts World Sentosa - Equarius Villas",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "8 Sentosa Gateway, Sentosa Island, 8",
+          "postal_code": "098269",
+          "source_destination_code": "SIN"
+        },
+        {
+          "code": 128679,
+          "name": "Resorts World Sentosa - Hotel Michael",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "country_code": "SG",
+          "city": "SINGAPORE",
+          "address": "Sentosa Gateway, 8",
+          "postal_code": "098269",
+          "source_destination_code": "SIN"
         }
       ]
     },
     {
       "name": "Penang",
-      "code": "PEN",
-      "http_status": 200,
-      "hotel_count": 344,
-      "preferred_matches": [],
-      "shortlist": [
+      "country_code": "MY",
+      "resolved_destination_candidates": [
+        {
+          "code": "PEN",
+          "name": "Penang",
+          "country_code": "MY",
+          "match_score": 1.0
+        }
+      ],
+      "hotel_count_collected": 344,
+      "preferred_matches": [
+        {
+          "code": 74248,
+          "name": "Eastern and Oriental Hotel Penang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "country_code": "MY",
+          "city": "PENANG",
+          "address": "Farquhar Street, 10",
+          "postal_code": "10200",
+          "source_destination_code": "PEN",
+          "watchlist_name": "Eastern & Oriental Hotel",
+          "match_score": 0.93
+        },
+        {
+          "code": 701814,
+          "name": "Seriental Hotel",
+          "stars": 3,
+          "category_code": "3EST",
+          "destination_code": "PEN",
+          "country_code": "MY",
+          "city": "PENANG",
+          "address": "101 Tanjong Tokong",
+          "postal_code": "10470",
+          "source_destination_code": "PEN",
+          "watchlist_name": "Eastern & Oriental Hotel",
+          "match_score": 0.683
+        }
+      ],
+      "luxury_shortlist": [
         {
           "code": 944674,
           "name": "Amari SPICE Penang",
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "2, Persiaran Mahsuri, Bayan Lepas"
+          "address": "2, Persiaran Mahsuri, Bayan Lepas",
+          "postal_code": "11900",
+          "source_destination_code": "PEN"
         },
         {
           "code": 737423,
@@ -513,9 +975,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "11, Jalan Teluk Bahang, 11050, Teluk Bahang"
+          "address": "11, Jalan Teluk Bahang, 11050, Teluk Bahang",
+          "postal_code": "11050",
+          "source_destination_code": "PEN"
         },
         {
           "code": 914120,
@@ -523,9 +987,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang, Georgetown",
-          "address": "No 18 Gurney Drive"
+          "address": "No 18 Gurney Drive",
+          "postal_code": "10250",
+          "source_destination_code": "PEN"
         },
         {
           "code": 211049,
@@ -533,9 +999,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "106 Lebuh Campbell, 106"
+          "address": "106 Lebuh Campbell, 106",
+          "postal_code": "10100",
+          "source_destination_code": "PEN"
         },
         {
           "code": 74248,
@@ -543,9 +1011,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "PENANG",
-          "address": "Farquhar Street, 10"
+          "address": "Farquhar Street, 10",
+          "postal_code": "10200",
+          "source_destination_code": "PEN"
         },
         {
           "code": 87117,
@@ -553,9 +1023,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "George Town",
-          "address": "Persiaran Gurney, 168A"
+          "address": "Persiaran Gurney, 168A",
+          "postal_code": "10250",
+          "source_destination_code": "PEN"
         },
         {
           "code": 393000,
@@ -563,9 +1035,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "GEORGE TOWN",
-          "address": "Persiaran Maktab, 2"
+          "address": "Persiaran Maktab, 2",
+          "postal_code": "10250",
+          "source_destination_code": "PEN"
         },
         {
           "code": 74250,
@@ -573,9 +1047,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "George Town",
-          "address": "Persiaran Gurney, 53"
+          "address": "Persiaran Gurney, 53",
+          "postal_code": "10250",
+          "source_destination_code": "PEN"
         },
         {
           "code": 121278,
@@ -583,9 +1059,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Batu Ferringhi",
-          "address": "Batu Ferringhi Beach, 1"
+          "address": "Batu Ferringhi Beach, 1",
+          "postal_code": "11100",
+          "source_destination_code": "PEN"
         },
         {
           "code": 478222,
@@ -593,9 +1071,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Pulau Pinang",
-          "address": "28 Jalan Teluk Kumbar, 221"
+          "address": "28 Jalan Teluk Kumbar, 221",
+          "postal_code": "11920",
+          "source_destination_code": "PEN"
         },
         {
           "code": 74253,
@@ -603,9 +1083,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Batu Ferringhi",
-          "address": "97 Batu Feringghi"
+          "address": "97 Batu Feringghi",
+          "postal_code": "11100",
+          "source_destination_code": "PEN"
         },
         {
           "code": 231395,
@@ -613,9 +1095,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "PENANG",
-          "address": "228 Macalister Road George Town"
+          "address": "228 Macalister Road George Town",
+          "postal_code": "10400",
+          "source_destination_code": "PEN"
         },
         {
           "code": 68079,
@@ -623,9 +1107,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "PENANG",
-          "address": "Batu Ferringhi Beach"
+          "address": "Batu Ferringhi Beach",
+          "postal_code": "11100",
+          "source_destination_code": "PEN"
         },
         {
           "code": 74610,
@@ -633,9 +1119,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Batu Feringgi",
-          "address": "Batu Feringgi Beach"
+          "address": "Batu Feringgi Beach",
+          "postal_code": "11100",
+          "source_destination_code": "PEN"
         },
         {
           "code": 1008159,
@@ -643,9 +1131,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "138, Jalan Penang , George Town 10100 Penang, 138"
+          "address": "138, Jalan Penang , George Town 10100 Penang, 138",
+          "postal_code": "10100",
+          "source_destination_code": "PEN"
         },
         {
           "code": 419418,
@@ -653,9 +1143,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "SEBERANG JAYA",
-          "address": "Lebuh Tenggiri 2,Bandar Seberang Jaya"
+          "address": "Lebuh Tenggiri 2,Bandar Seberang Jaya",
+          "postal_code": "13700",
+          "source_destination_code": "PEN"
         },
         {
           "code": 703960,
@@ -663,9 +1155,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "PENANG",
-          "address": "3406 Jalan Machang Bubok 2 Taman Machang Bubok"
+          "address": "3406 Jalan Machang Bubok 2 Taman Machang Bubok",
+          "postal_code": "14020",
+          "source_destination_code": "PEN"
         },
         {
           "code": 811059,
@@ -673,9 +1167,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "GEORGE TOWN",
-          "address": "88 90 Armenian Street"
+          "address": "88 90 Armenian Street",
+          "postal_code": "10200",
+          "source_destination_code": "PEN"
         },
         {
           "code": 81372,
@@ -683,9 +1179,11 @@
           "stars": 4,
           "category_code": "4LUX",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "BUKIT JAMBUL",
-          "address": "Jalan Bukit Gambir, Penang, 213"
+          "address": "Jalan Bukit Gambir, Penang, 213",
+          "postal_code": "11950",
+          "source_destination_code": "PEN"
         },
         {
           "code": 229714,
@@ -693,9 +1191,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Georgetown",
-          "address": "Jalan Sultan Ahmad Shah, 15"
+          "address": "Jalan Sultan Ahmad Shah, 15",
+          "postal_code": "10050",
+          "source_destination_code": "PEN"
         },
         {
           "code": 742024,
@@ -703,9 +1203,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "15, Jalan Teluk Bahang, Teluk Bahang"
+          "address": "15, Jalan Teluk Bahang, Teluk Bahang",
+          "postal_code": "11050",
+          "source_destination_code": "PEN"
         },
         {
           "code": 59463,
@@ -713,9 +1215,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Batu Ferringhi",
-          "address": "Batu Ferringhi Beach, Batu Ferringhi"
+          "address": "Batu Ferringhi Beach, Batu Ferringhi",
+          "postal_code": "11100",
+          "source_destination_code": "PEN"
         },
         {
           "code": 74243,
@@ -723,9 +1227,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "George Town",
-          "address": "Farquhar Street, 25-A"
+          "address": "Farquhar Street, 25-A",
+          "postal_code": "10200",
+          "source_destination_code": "PEN"
         },
         {
           "code": 74244,
@@ -733,9 +1239,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "George Town",
-          "address": "1-Stop Midlands Park, Burmah Road, ."
+          "address": "1-Stop Midlands Park, Burmah Road, .",
+          "postal_code": "10350",
+          "source_destination_code": "PEN"
         },
         {
           "code": 1021889,
@@ -743,9 +1251,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "No. 202 Lebuh Noordin"
+          "address": "No. 202 Lebuh Noordin",
+          "postal_code": "10300",
+          "source_destination_code": "PEN"
         },
         {
           "code": 893997,
@@ -753,9 +1263,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "G-01 Jalan Juru Sentral Bukit Mertajam, G-01"
+          "address": "G-01 Jalan Juru Sentral Bukit Mertajam, G-01",
+          "postal_code": "14000",
+          "source_destination_code": "PEN"
         },
         {
           "code": 74246,
@@ -763,9 +1275,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "George Town",
-          "address": "Jalan Penang, 66"
+          "address": "Jalan Penang, 66",
+          "postal_code": "10000",
+          "source_destination_code": "PEN"
         },
         {
           "code": 74606,
@@ -773,9 +1287,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "PENANG",
-          "address": "Jalan Tanjung Bungah, 1"
+          "address": "Jalan Tanjung Bungah, 1",
+          "postal_code": "11200",
+          "source_destination_code": "PEN"
         },
         {
           "code": 1025784,
@@ -783,9 +1299,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "4823 4824 2f Jalan Pantai Taman Selat Butterwort"
+          "address": "4823 4824 2f Jalan Pantai Taman Selat Butterwort",
+          "postal_code": "1200",
+          "source_destination_code": "PEN"
         },
         {
           "code": 486245,
@@ -793,9 +1311,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "Jalan Low Yat.Batu Ferringhi, 56"
+          "address": "Jalan Low Yat.Batu Ferringhi, 56",
+          "postal_code": "11100",
+          "source_destination_code": "PEN"
         },
         {
           "code": 697262,
@@ -803,9 +1323,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "PENANG",
-          "address": "No 25 Lebuh China World Heritage Zone"
+          "address": "No 25 Lebuh China World Heritage Zone",
+          "postal_code": "10200",
+          "source_destination_code": "PEN"
         },
         {
           "code": 127941,
@@ -813,9 +1335,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Bayan Lepas",
-          "address": "1, Solok Bayan Indah, Queensbay, Bayan Lepas, 328"
+          "address": "1, Solok Bayan Indah, Queensbay, Bayan Lepas, 328",
+          "postal_code": "11900",
+          "source_destination_code": "PEN"
         },
         {
           "code": 121997,
@@ -823,9 +1347,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Tanjung Bungah",
-          "address": "Jalan Tanjung Bungah"
+          "address": "Jalan Tanjung Bungah",
+          "postal_code": "11200",
+          "source_destination_code": "PEN"
         },
         {
           "code": 1052112,
@@ -833,9 +1359,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "1919 Menara Sentral, Jalan Juru Sentral"
+          "address": "1919 Menara Sentral, Jalan Juru Sentral",
+          "postal_code": "14000",
+          "source_destination_code": "PEN"
         },
         {
           "code": 653502,
@@ -843,9 +1371,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "No 533 Jalan C. M. Hashim"
+          "address": "No 533 Jalan C. M. Hashim",
+          "postal_code": "11200",
+          "source_destination_code": "PEN"
         },
         {
           "code": 539361,
@@ -853,9 +1383,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "PENANG",
-          "address": "Jalan Icon City, Icon City, 71"
+          "address": "Jalan Icon City, Icon City, 71",
+          "postal_code": "14000",
+          "source_destination_code": "PEN"
         },
         {
           "code": 1099806,
@@ -863,9 +1395,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "George Town",
-          "address": "239a Jalan Sultan Azlan Shah"
+          "address": "239a Jalan Sultan Azlan Shah",
+          "postal_code": "",
+          "source_destination_code": "PEN"
         },
         {
           "code": 197982,
@@ -873,9 +1407,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "3096, Jalan Baru, Bandar Perai Jaya, 3096 11"
+          "address": "3096, Jalan Baru, Bandar Perai Jaya, 3096 11",
+          "postal_code": "13600",
+          "source_destination_code": "PEN"
         },
         {
           "code": 652174,
@@ -883,9 +1419,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Penang",
-          "address": "No. 1, Jalan Seri Tanjung Pinang 1, 22"
+          "address": "No. 1, Jalan Seri Tanjung Pinang 1, 22",
+          "postal_code": "10470",
+          "source_destination_code": "PEN"
         },
         {
           "code": 74260,
@@ -893,17 +1431,146 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "PEN",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "George Town",
-          "address": "Magazine Road, George Town"
+          "address": "Magazine Road, George Town",
+          "postal_code": "10300",
+          "source_destination_code": "PEN"
+        },
+        {
+          "code": 450488,
+          "name": "Leisure Cove Hotel & Apartments",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "country_code": "MY",
+          "city": "Penang",
+          "address": "563 Jalan Wee Hien Tze, 50",
+          "postal_code": "11200",
+          "source_destination_code": "PEN"
+        },
+        {
+          "code": 686242,
+          "name": "Link Hotel",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "country_code": "MY",
+          "city": "Penang",
+          "address": "90 Jalan Rangoon",
+          "postal_code": "10400",
+          "source_destination_code": "PEN"
+        },
+        {
+          "code": 1054380,
+          "name": "M Social Resort Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "country_code": "MY",
+          "city": "Penang",
+          "address": "Jalan Tanjung Bungah, Tanjung Tokong, No.523",
+          "postal_code": "10470",
+          "source_destination_code": "PEN"
+        },
+        {
+          "code": 703789,
+          "name": "Maritime Luxury Suites",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "country_code": "MY",
+          "city": "PENANG",
+          "address": "29B 03 05 Persiaran Karpal Singh 2",
+          "postal_code": "11600",
+          "source_destination_code": "PEN"
+        },
+        {
+          "code": 218794,
+          "name": "Mercure Penang Beach",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "country_code": "MY",
+          "city": "Penang",
+          "address": "505 Jalan Tanjung Bungah Tanjung Bungah, 505",
+          "postal_code": "11200",
+          "source_destination_code": "PEN"
+        },
+        {
+          "code": 734305,
+          "name": "Modern Hotel Georgetown",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "country_code": "MY",
+          "city": "Penang",
+          "address": "179 C, Lebuh Muntri",
+          "postal_code": "10200",
+          "source_destination_code": "PEN"
+        },
+        {
+          "code": 211468,
+          "name": "Muntri Mews",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "country_code": "MY",
+          "city": "PENANG",
+          "address": "Jalan Muntri, 77",
+          "postal_code": "10200",
+          "source_destination_code": "PEN"
+        },
+        {
+          "code": 474481,
+          "name": "Olive Tree Hotel",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "country_code": "MY",
+          "city": "PENANG",
+          "address": "Jalan Mahsuri, Bayan Lepas, 76",
+          "postal_code": "10200",
+          "source_destination_code": "PEN"
+        },
+        {
+          "code": 74255,
+          "name": "Rainbow Paradise Beach Resort Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "country_code": "MY",
+          "city": "George Town",
+          "address": "527 Jalan Tanjung Bungah 11200 Penang, 527",
+          "postal_code": "11200",
+          "source_destination_code": "PEN"
+        },
+        {
+          "code": 374081,
+          "name": "Royale Chulan Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "country_code": "MY",
+          "city": "PENANG",
+          "address": "Pengkalan Weld, Georgetown, No 1 & 2",
+          "postal_code": "10300",
+          "source_destination_code": "PEN"
         }
       ]
     },
     {
       "name": "Kuala Lumpur",
-      "code": "KUL",
-      "http_status": 200,
-      "hotel_count": 981,
+      "country_code": "MY",
+      "resolved_destination_candidates": [
+        {
+          "code": "KUL",
+          "name": "Kuala Lumpur",
+          "country_code": "MY",
+          "match_score": 1.0
+        }
+      ],
+      "hotel_count_collected": 981,
       "preferred_matches": [
         {
           "code": 639905,
@@ -911,10 +1578,13 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Kuala Lumpur",
           "address": "7 Jalan Kia Peng, 7 5",
-          "watchlist_name": "The RuMa Hotel and Residences"
+          "postal_code": "50450",
+          "source_destination_code": "KUL",
+          "watchlist_name": "The RuMa Hotel and Residences",
+          "match_score": 1.0
         },
         {
           "code": 1143175,
@@ -922,22 +1592,69 @@
           "stars": null,
           "category_code": "SPC",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Malaysia",
           "address": "7 Jalan Kia Pengkuala Lumpur Malaysia",
-          "watchlist_name": "The RuMa Hotel and Residences"
+          "postal_code": "",
+          "source_destination_code": "KUL",
+          "watchlist_name": "The RuMa Hotel and Residences",
+          "match_score": 0.93
+        },
+        {
+          "code": 234003,
+          "name": "Duta Hotel & Residence",
+          "stars": 3,
+          "category_code": "3EST",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "KUALA LUMPUR",
+          "address": "B16-06, Putra Majestik, Jalan Kasipillay, 6",
+          "postal_code": "50200",
+          "source_destination_code": "KUL",
+          "watchlist_name": "The RuMa Hotel and Residences",
+          "match_score": 0.83
+        },
+        {
+          "code": 475662,
+          "name": "VE Hotel & Residence",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Kerinchi, 8",
+          "postal_code": "59200",
+          "source_destination_code": "KUL",
+          "watchlist_name": "The RuMa Hotel and Residences",
+          "match_score": 0.824
+        },
+        {
+          "code": 1103850,
+          "name": "Utm Hotel Residence",
+          "stars": null,
+          "category_code": "SPC",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "Kuala Lumpur",
+          "address": "No 8 Jalan Maktab Kampung Datuk Keramat",
+          "postal_code": "",
+          "source_destination_code": "KUL",
+          "watchlist_name": "The RuMa Hotel and Residences",
+          "match_score": 0.75
         }
       ],
-      "shortlist": [
+      "luxury_shortlist": [
         {
           "code": 1088404,
           "name": "188 Suites Klcc By Soulasia",
           "stars": 5,
           "category_code": "5LL",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Kuala Lumpur",
-          "address": "Jalan Cendana, 10"
+          "address": "Jalan Cendana, 10",
+          "postal_code": "50450",
+          "source_destination_code": "KUL"
         },
         {
           "code": 625247,
@@ -945,9 +1662,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "No. 58, Jalan Ang Seng"
+          "address": "No. 58, Jalan Ang Seng",
+          "postal_code": "50470",
+          "source_destination_code": "KUL"
         },
         {
           "code": 939004,
@@ -955,9 +1674,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Kuala Lumpur",
-          "address": "No.3, Jalan Bangsar, KL Eco City"
+          "address": "No.3, Jalan Bangsar, KL Eco City",
+          "postal_code": "59200",
+          "source_destination_code": "KUL"
         },
         {
           "code": 85118,
@@ -965,9 +1686,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan Pinang, 9"
+          "address": "Jalan Pinang, 9",
+          "postal_code": "50450",
+          "source_destination_code": "KUL"
         },
         {
           "code": 360927,
@@ -975,9 +1698,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "No.211, Jalan Tun Sambathan 50470 Kuala Lumpur"
+          "address": "No.211, Jalan Tun Sambathan 50470 Kuala Lumpur",
+          "postal_code": "50470",
+          "source_destination_code": "KUL"
         },
         {
           "code": 915243,
@@ -985,9 +1710,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Kuala Lumpur",
-          "address": "No.1, Jalan Yap Kwan Seng"
+          "address": "No.1, Jalan Yap Kwan Seng",
+          "postal_code": "50450",
+          "source_destination_code": "KUL"
         },
         {
           "code": 74105,
@@ -995,9 +1722,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Bandar Baru Bangi",
-          "address": "Off Persiaran Bandar, 43650 Bandar Baru Bangi, 256"
+          "address": "Off Persiaran Bandar, 43650 Bandar Baru Bangi, 256",
+          "postal_code": "43650",
+          "source_destination_code": "KUL"
         },
         {
           "code": 623303,
@@ -1005,9 +1734,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "02 Jalan Conlay, Bukit Bintang"
+          "address": "02 Jalan Conlay, Bukit Bintang",
+          "postal_code": "50450",
+          "source_destination_code": "KUL"
         },
         {
           "code": 74095,
@@ -1015,9 +1746,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "No.1 Jalan Imbi, 1"
+          "address": "No.1 Jalan Imbi, 1",
+          "postal_code": "55100",
+          "source_destination_code": "KUL"
         },
         {
           "code": 1116459,
@@ -1025,9 +1758,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Kuala Lumpur",
-          "address": "25, Jalan Sultan Ismail Wilayah Persekutuan"
+          "address": "25, Jalan Sultan Ismail Wilayah Persekutuan",
+          "postal_code": "50250",
+          "source_destination_code": "KUL"
         },
         {
           "code": 904196,
@@ -1035,9 +1770,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan Perak, 10"
+          "address": "Jalan Perak, 10",
+          "postal_code": "50450",
+          "source_destination_code": "KUL"
         },
         {
           "code": 85898,
@@ -1045,9 +1782,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "SELANGOR DARUL EHSAN",
-          "address": "Persiaran Multimedia, Cyberjaya, -"
+          "address": "Persiaran Multimedia, Cyberjaya, -",
+          "postal_code": "63000",
+          "source_destination_code": "KUL"
         },
         {
           "code": 1053403,
@@ -1055,9 +1794,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Kuala Lumpur",
-          "address": "Jalan Sultan Ismail Platinum Suites 2"
+          "address": "Jalan Sultan Ismail Platinum Suites 2",
+          "postal_code": "",
+          "source_destination_code": "KUL"
         },
         {
           "code": 74137,
@@ -1065,9 +1806,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan SS 12 1, 12/1"
+          "address": "Jalan SS 12 1, 12/1",
+          "postal_code": "47500",
+          "source_destination_code": "KUL"
         },
         {
           "code": 138639,
@@ -1075,9 +1818,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "The Intermark 348 Jalan Tun Razak"
+          "address": "The Intermark 348 Jalan Tun Razak",
+          "postal_code": "50400",
+          "source_destination_code": "KUL"
         },
         {
           "code": 939264,
@@ -1085,9 +1830,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "SHAH ALAM",
-          "address": "i-City Finance Avenue 40000 Shah Alam, Selangor"
+          "address": "i-City Finance Avenue 40000 Shah Alam, Selangor",
+          "postal_code": "40000",
+          "source_destination_code": "KUL"
         },
         {
           "code": 186787,
@@ -1095,9 +1842,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan Tengah Off Jalan Sultan Ismail, 1"
+          "address": "Jalan Tengah Off Jalan Sultan Ismail, 1",
+          "postal_code": "50450",
+          "source_destination_code": "KUL"
         },
         {
           "code": 691645,
@@ -1105,9 +1854,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "SEPANG",
-          "address": "No 1 Jalan Pju 5 23"
+          "address": "No 1 Jalan Pju 5 23",
+          "postal_code": "47810",
+          "source_destination_code": "KUL"
         },
         {
           "code": 74107,
@@ -1115,9 +1866,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan Sultan Ismail, 50250 Kuala Lumpur"
+          "address": "Jalan Sultan Ismail, 50250 Kuala Lumpur",
+          "postal_code": "50250",
+          "source_destination_code": "KUL"
         },
         {
           "code": 625967,
@@ -1125,9 +1878,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan Ampang, 145"
+          "address": "Jalan Ampang, 145",
+          "postal_code": "50450",
+          "source_destination_code": "KUL"
         },
         {
           "code": 133081,
@@ -1135,9 +1890,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Lot 163, Jalan Perak, 10"
+          "address": "Lot 163, Jalan Perak, 10",
+          "postal_code": "50450",
+          "source_destination_code": "KUL"
         },
         {
           "code": 386790,
@@ -1145,9 +1902,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan Cendana, Off, Jalan Sultan Ismail"
+          "address": "Jalan Cendana, Off, Jalan Sultan Ismail",
+          "postal_code": "50250",
+          "source_destination_code": "KUL"
         },
         {
           "code": 122786,
@@ -1155,9 +1914,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "SUNGAI PELEK, SELANGOR",
-          "address": "Jalan Pantai Bagan Lalang, Kg Bagan Lalang, 67"
+          "address": "Jalan Pantai Bagan Lalang, Kg Bagan Lalang, 67",
+          "postal_code": "43950",
+          "source_destination_code": "KUL"
         },
         {
           "code": 182807,
@@ -1165,9 +1926,11 @@
           "stars": 5,
           "category_code": "5LUX",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan Pinang, 12"
+          "address": "Jalan Pinang, 12",
+          "postal_code": "50450",
+          "source_destination_code": "KUL"
         },
         {
           "code": 59459,
@@ -1175,9 +1938,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan Pudu, 117 15"
+          "address": "Jalan Pudu, 117 15",
+          "postal_code": "55100",
+          "source_destination_code": "KUL"
         },
         {
           "code": 1094786,
@@ -1185,9 +1950,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "117 Jalan Pudu Kuala Lumpur"
+          "address": "117 Jalan Pudu Kuala Lumpur",
+          "postal_code": "55100",
+          "source_destination_code": "KUL"
         },
         {
           "code": 59458,
@@ -1195,9 +1962,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Kuala Lumpur",
-          "address": "Jalan Bukit Bintang, 160"
+          "address": "Jalan Bukit Bintang, 160",
+          "postal_code": "55100",
+          "source_destination_code": "KUL"
         },
         {
           "code": 69682,
@@ -1205,9 +1974,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan Stesen Sentral 5, 3"
+          "address": "Jalan Stesen Sentral 5, 3",
+          "postal_code": "50470",
+          "source_destination_code": "KUL"
         },
         {
           "code": 74111,
@@ -1215,9 +1986,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Petaling Jaya",
-          "address": "Jalan Barat, Petaling Jaya, 2"
+          "address": "Jalan Barat, Petaling Jaya, 2",
+          "postal_code": "46200",
+          "source_destination_code": "KUL"
         },
         {
           "code": 74124,
@@ -1225,9 +1998,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan Ampang, 138"
+          "address": "Jalan Ampang, 138",
+          "postal_code": "50450",
+          "source_destination_code": "KUL"
         },
         {
           "code": 1000031,
@@ -1235,9 +2010,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Kuala Lumpur",
-          "address": "17-21, Jalan Bukit Bintang"
+          "address": "17-21, Jalan Bukit Bintang",
+          "postal_code": "55100",
+          "source_destination_code": "KUL"
         },
         {
           "code": 1051693,
@@ -1245,9 +2022,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Kuala Lumpur",
-          "address": "17 Jalan Sultan Ismail"
+          "address": "17 Jalan Sultan Ismail",
+          "postal_code": "50250",
+          "source_destination_code": "KUL"
         },
         {
           "code": 1074862,
@@ -1255,9 +2034,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Wilayah Persekutuan",
-          "address": "Jalan Kia Peng, 15 53"
+          "address": "Jalan Kia Peng, 15 53",
+          "postal_code": "50450",
+          "source_destination_code": "KUL"
         },
         {
           "code": 74126,
@@ -1265,9 +2046,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan Ampang, 165"
+          "address": "Jalan Ampang, 165",
+          "postal_code": "50450",
+          "source_destination_code": "KUL"
         },
         {
           "code": 74118,
@@ -1275,9 +2058,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "Jalan Bukit Bintang, 183"
+          "address": "Jalan Bukit Bintang, 183",
+          "postal_code": "55100",
+          "source_destination_code": "KUL"
         },
         {
           "code": 1088220,
@@ -1285,9 +2070,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Kuala Lumpur",
-          "address": "Lingkaran Trx, Tun Razak Exchange"
+          "address": "Lingkaran Trx, Tun Razak Exchange",
+          "postal_code": "55188",
+          "source_destination_code": "KUL"
         },
         {
           "code": 217857,
@@ -1295,9 +2082,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "10, Jalan Ceylon, 50200 Kuala Lumpur"
+          "address": "10, Jalan Ceylon, 50200 Kuala Lumpur",
+          "postal_code": "50200",
+          "source_destination_code": "KUL"
         },
         {
           "code": 69683,
@@ -1305,9 +2094,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "KUALA LUMPUR",
-          "address": "2 Jalan Stesen Sentral, Kuala Lumpur Sentral, 2"
+          "address": "2 Jalan Stesen Sentral, Kuala Lumpur Sentral, 2",
+          "postal_code": "50470",
+          "source_destination_code": "KUL"
         },
         {
           "code": 625869,
@@ -1315,9 +2106,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "PETALING JAYA",
-          "address": "Paradigm, 1 Jalan, SS7/26A"
+          "address": "Paradigm, 1 Jalan, SS7/26A",
+          "postal_code": "47301",
+          "source_destination_code": "KUL"
         },
         {
           "code": 1030186,
@@ -1325,28 +2118,180 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "KUL",
-          "destination_name": "",
+          "country_code": "MY",
           "city": "Kuala Lumpur",
-          "address": "No 1 Jalan Damansara Bukit Kiara"
+          "address": "No 1 Jalan Damansara Bukit Kiara",
+          "postal_code": "",
+          "source_destination_code": "KUL"
+        },
+        {
+          "code": 914556,
+          "name": "M World Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "PETALING JAYA",
+          "address": "No. 1 Persiaran Bandar Utama",
+          "postal_code": "47800",
+          "source_destination_code": "KUL"
+        },
+        {
+          "code": 74122,
+          "name": "Mandarin Oriental Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "KUALA LUMPUR",
+          "address": "Kuala Lumpur City Centre, Po Box 10905",
+          "postal_code": "50088",
+          "source_destination_code": "KUL"
+        },
+        {
+          "code": 105803,
+          "name": "Mardhiyyah Hotel and Suites",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "SELANGOR DARUL EHSAN",
+          "address": "Persiaran Perbandaran, Seksyen 14, Shah Alam",
+          "postal_code": "40000",
+          "source_destination_code": "KUL"
+        },
+        {
+          "code": 74125,
+          "name": "MiCasa All Suites Hotel Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "KUALA LUMPUR",
+          "address": "368B, Jalan Tun Razak, 368",
+          "postal_code": "50400",
+          "source_destination_code": "KUL"
+        },
+        {
+          "code": 632363,
+          "name": "Movenpick Hotel & Convention Centre KLIA",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "SEPANG",
+          "address": "Kompleks TH Sepang, Jalan Masjid KLIA",
+          "postal_code": "64000",
+          "source_destination_code": "KUL"
+        },
+        {
+          "code": 90397,
+          "name": "One World Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "BANDAR UTAMA CITY CENTRE",
+          "address": "First Avenue, Bandar Utama City Centre",
+          "postal_code": "47800",
+          "source_destination_code": "KUL"
+        },
+        {
+          "code": 68083,
+          "name": "Pacific Regency Hotel Suites",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "KUALA LUMPUR",
+          "address": "Kh Tower, Jalan Punchak Off.Jalan P.Ramlee",
+          "postal_code": "50250",
+          "source_destination_code": "KUL"
+        },
+        {
+          "code": 949696,
+          "name": "Pan Pacific Serviced Suites Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "Kuala Lumpur",
+          "address": "Jalan Sultan Ismail, 5",
+          "postal_code": "50250",
+          "source_destination_code": "KUL"
+        },
+        {
+          "code": 1113741,
+          "name": "Park Hyatt Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "Kuala Lumpur",
+          "address": "Level 75 Menara Merdeka 118",
+          "postal_code": "",
+          "source_destination_code": "KUL"
+        },
+        {
+          "code": 69681,
+          "name": "PARKROYAL COLLECTION Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "country_code": "MY",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Sultan Ismail",
+          "postal_code": "50250",
+          "source_destination_code": "KUL"
         }
       ]
     },
     {
       "name": "Bangkok",
-      "code": "BKK",
-      "http_status": 200,
-      "hotel_count": 1000,
-      "preferred_matches": [],
-      "shortlist": [
+      "country_code": "TH",
+      "resolved_destination_candidates": [
+        {
+          "code": "BKK",
+          "name": "Bangkok",
+          "country_code": "TH",
+          "match_score": 1.0
+        },
+        {
+          "code": "75E",
+          "name": "Bang Pakong",
+          "country_code": "TH",
+          "match_score": 0.667
+        }
+      ],
+      "hotel_count_collected": 1000,
+      "preferred_matches": [
+        {
+          "code": 133164,
+          "name": "Siam Kempinski Hotel Bangkok",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "BKK",
+          "country_code": "TH",
+          "city": "BANGKOK",
+          "address": "Rama 1 Road, Pathumwan, 991/9",
+          "postal_code": "10330",
+          "source_destination_code": "BKK",
+          "watchlist_name": "Sindhorn Kempinski Hotel Bangkok",
+          "match_score": 0.867
+        }
+      ],
+      "luxury_shortlist": [
         {
           "code": 552121,
           "name": "137 Pillars Residences Bangkok",
           "stars": 5,
           "category_code": "5LUX",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "59/1 39,Khlong Toei Nuea,Watthana, 59/1"
+          "address": "59/1 39,Khlong Toei Nuea,Watthana, 59/1",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         },
         {
           "code": 637617,
@@ -1354,9 +2299,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "59/1 Soi Sukhumvit 39,Khlong Toei Nuea"
+          "address": "59/1 Soi Sukhumvit 39,Khlong Toei Nuea",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         },
         {
           "code": 175169,
@@ -1364,9 +2311,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Rama 4 Road Thungmahamek Sathorn, 1030/4"
+          "address": "Rama 4 Road Thungmahamek Sathorn, 1030/4",
+          "postal_code": "10120",
+          "source_destination_code": "BKK"
         },
         {
           "code": 629228,
@@ -1374,9 +2323,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "Bangkok",
-          "address": "372 Sri Ayuttaya Road, Phyathai, Rajthevi"
+          "address": "372 Sri Ayuttaya Road, Phyathai, Rajthevi",
+          "postal_code": "10400",
+          "source_destination_code": "BKK"
         },
         {
           "code": 628842,
@@ -1384,9 +2335,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "7 Sukhumvit 20 Alley,Khlong Toei"
+          "address": "7 Sukhumvit 20 Alley,Khlong Toei",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         },
         {
           "code": 425378,
@@ -1394,9 +2347,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Soi Ramkhamhaeng 5, Ramkhamhaeng Road, 4"
+          "address": "Soi Ramkhamhaeng 5, Ramkhamhaeng Road, 4",
+          "postal_code": "102250",
+          "source_destination_code": "BKK"
         },
         {
           "code": 416338,
@@ -1404,9 +2359,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "180/1 Surawong Road, Sipraya, Bangrak, 180/1"
+          "address": "180/1 Surawong Road, Sipraya, Bangrak, 180/1",
+          "postal_code": "10500",
+          "source_destination_code": "BKK"
         },
         {
           "code": 69638,
@@ -1414,9 +2371,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "New Petchburi Road, Ratchatewi, 847"
+          "address": "New Petchburi Road, Ratchatewi, 847",
+          "postal_code": "10400",
+          "source_destination_code": "BKK"
         },
         {
           "code": 480401,
@@ -1424,9 +2383,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "Bangkok",
-          "address": "88/5 Moo7, Rachathewa, Bangplee, Samutprakarn"
+          "address": "88/5 Moo7, Rachathewa, Bangplee, Samutprakarn",
+          "postal_code": "10540",
+          "source_destination_code": "BKK"
         },
         {
           "code": 72606,
@@ -1434,9 +2395,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Charoennakorn, Riverside, 257/1-3"
+          "address": "Charoennakorn, Riverside, 257/1-3",
+          "postal_code": "10600",
+          "source_destination_code": "BKK"
         },
         {
           "code": 79050,
@@ -1444,9 +2407,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Ratchadamri Road, 155"
+          "address": "Ratchadamri Road, 155",
+          "postal_code": "10330",
+          "source_destination_code": "BKK"
         },
         {
           "code": 80381,
@@ -1454,9 +2419,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "7 South Sathorn Road Yannawa Sathorn"
+          "address": "7 South Sathorn Road Yannawa Sathorn",
+          "postal_code": "10120",
+          "source_destination_code": "BKK"
         },
         {
           "code": 632653,
@@ -1464,9 +2431,11 @@
           "stars": 5,
           "category_code": "5LUX",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "Bangkok",
-          "address": "Soi To Sak"
+          "address": "Soi To Sak",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         },
         {
           "code": 657222,
@@ -1474,9 +2443,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "Bangkok",
-          "address": "2089 Sukhumvit Road, Phra Khnong nuea, Wattana"
+          "address": "2089 Sukhumvit Road, Phra Khnong nuea, Wattana",
+          "postal_code": "10260",
+          "source_destination_code": "BKK"
         },
         {
           "code": 435779,
@@ -1484,9 +2455,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "CHAROENNAKORN ROAD, Thonburi, 257"
+          "address": "CHAROENNAKORN ROAD, Thonburi, 257",
+          "postal_code": "10600",
+          "source_destination_code": "BKK"
         },
         {
           "code": 200868,
@@ -1494,9 +2467,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Soi 57 Sukhumvit Road, Klongton Nua Klongtoey, 2"
+          "address": "Soi 57 Sukhumvit Road, Klongton Nua Klongtoey, 2",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         },
         {
           "code": 25397,
@@ -1504,9 +2479,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "South Sathon Road, Sathon, 21/100"
+          "address": "South Sathon Road, Sathon, 21/100",
+          "postal_code": "10120",
+          "source_destination_code": "BKK"
         },
         {
           "code": 676167,
@@ -1514,9 +2491,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "Bangkok",
-          "address": "Sukhumvit, 491"
+          "address": "Sukhumvit, 491",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         },
         {
           "code": 78941,
@@ -1524,9 +2503,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Phaholyothin Road, Ladprao, Chatuchak, 1695"
+          "address": "Phaholyothin Road, Ladprao, Chatuchak, 1695",
+          "postal_code": "10900",
+          "source_destination_code": "BKK"
         },
         {
           "code": 96025,
@@ -1534,9 +2515,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Rama 1 Rd, Pathumwan, 999/99"
+          "address": "Rama 1 Rd, Pathumwan, 999/99",
+          "postal_code": "10330",
+          "source_destination_code": "BKK"
         },
         {
           "code": 105404,
@@ -1544,9 +2527,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Charoenkrung Rd., 28"
+          "address": "Charoenkrung Rd., 28",
+          "postal_code": "10120",
+          "source_destination_code": "BKK"
         },
         {
           "code": 130026,
@@ -1554,9 +2539,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Sukhumvit Soi 16, Klongtoey, 48"
+          "address": "Sukhumvit Soi 16, Klongtoey, 48",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         },
         {
           "code": 78948,
@@ -1564,9 +2551,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "27 South Sathorn Road Tungmahamek Sathorn"
+          "address": "27 South Sathorn Road Tungmahamek Sathorn",
+          "postal_code": "10120",
+          "source_destination_code": "BKK"
         },
         {
           "code": 79012,
@@ -1574,9 +2563,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "All Seasons Place 87/3 Wireless Rd Phatumwan"
+          "address": "All Seasons Place 87/3 Wireless Rd Phatumwan",
+          "postal_code": "10330",
+          "source_destination_code": "BKK"
         },
         {
           "code": 80455,
@@ -1584,9 +2575,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "All Seasons Place, 87 3 Wireless Fl. 8 - 15"
+          "address": "All Seasons Place, 87 3 Wireless Fl. 8 - 15",
+          "postal_code": "10330",
+          "source_destination_code": "BKK"
         },
         {
           "code": 129755,
@@ -1594,9 +2587,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "SAMUT PRAKARN",
-          "address": "88/8 Srivareenoi Rd.(Ladkrabang 54), 88/8"
+          "address": "88/8 Srivareenoi Rd.(Ladkrabang 54), 88/8",
+          "postal_code": "10570",
+          "source_destination_code": "BKK"
         },
         {
           "code": 538541,
@@ -1604,9 +2599,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "10 Sukhumvit soi 20, Sukhumvit Road"
+          "address": "10 Sukhumvit soi 20, Sukhumvit Road",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         },
         {
           "code": 662435,
@@ -1614,9 +2611,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "Bangkok",
-          "address": "88 Moo 3, Bang Sao Thong, 88"
+          "address": "88 Moo 3, Bang Sao Thong, 88",
+          "postal_code": "10570",
+          "source_destination_code": "BKK"
         },
         {
           "code": 661948,
@@ -1624,9 +2623,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "Bangkok",
-          "address": "3 Soi Mahardlekluang 3 Rajdamri Road Lumpinee Path, 3"
+          "address": "3 Soi Mahardlekluang 3 Rajdamri Road Lumpinee Path, 3",
+          "postal_code": "10330",
+          "source_destination_code": "BKK"
         },
         {
           "code": 157044,
@@ -1634,9 +2635,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "South Sathorn Road, Yannawa, Sathorn, 33/1"
+          "address": "South Sathorn Road, Yannawa, Sathorn, 33/1",
+          "postal_code": "10120",
+          "source_destination_code": "BKK"
         },
         {
           "code": 82200,
@@ -1644,9 +2647,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Sukhumvit Soi 24 Sukhumvit Road, Klongton, 622"
+          "address": "Sukhumvit Soi 24 Sukhumvit Road, Klongton, 622",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         },
         {
           "code": 276190,
@@ -1654,9 +2659,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Charoen Krung Road, 300"
+          "address": "Charoen Krung Road, 300",
+          "postal_code": "10120",
+          "source_destination_code": "BKK"
         },
         {
           "code": 87559,
@@ -1664,9 +2671,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Soi Sukhumvit 11, Sukhumvit Rd, Klongtoey N, 38/8"
+          "address": "Soi Sukhumvit 11, Sukhumvit Rd, Klongtoey N, 38/8",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         },
         {
           "code": 81531,
@@ -1674,9 +2683,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Rajdamri Road, Bangkok, 494"
+          "address": "Rajdamri Road, Bangkok, 494",
+          "postal_code": "10330",
+          "source_destination_code": "BKK"
         },
         {
           "code": 60692,
@@ -1684,9 +2695,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "New Petchburi Road, 1880"
+          "address": "New Petchburi Road, 1880",
+          "postal_code": "10310",
+          "source_destination_code": "BKK"
         },
         {
           "code": 539621,
@@ -1694,9 +2707,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Sukhumvit Soi 55 (Thonglo), Klongton Nua, Wattana, 300"
+          "address": "Sukhumvit Soi 55 (Thonglo), Klongton Nua, Wattana, 300",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         },
         {
           "code": 158882,
@@ -1704,9 +2719,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "KLONGTOEY NUA, WATTANA",
-          "address": "2 Sukhumvit Soi 19 (Wattana), Sukhumvit Road, ."
+          "address": "2 Sukhumvit Soi 19 (Wattana), Sukhumvit Road, .",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         },
         {
           "code": 81419,
@@ -1714,9 +2731,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Wireless Road, Lumpini, Patumwan, 100"
+          "address": "Wireless Road, Lumpini, Patumwan, 100",
+          "postal_code": "10330",
+          "source_destination_code": "BKK"
         },
         {
           "code": 89247,
@@ -1724,9 +2743,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Soi Mahatlek Luang 1, Ratchadamri Road, Pathumwan, 153/2"
+          "address": "Soi Mahatlek Luang 1, Ratchadamri Road, Pathumwan, 153/2",
+          "postal_code": "10330",
+          "source_destination_code": "BKK"
         },
         {
           "code": 147725,
@@ -1734,36 +2755,802 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BKK",
-          "destination_name": "",
+          "country_code": "TH",
           "city": "BANGKOK",
-          "address": "Soi Mahadlekluang 2 Rajdamri Road, 3/250"
+          "address": "Soi Mahadlekluang 2 Rajdamri Road, 3/250",
+          "postal_code": "10330",
+          "source_destination_code": "BKK"
+        },
+        {
+          "code": 364947,
+          "name": "Hilton Bangkok Suvarnabhumi Golf Resort & Spa",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "country_code": "TH",
+          "city": "Samut Prakan",
+          "address": "789 Moo 14, Bangna-Trad Road, Samut Prakan",
+          "postal_code": "10540",
+          "source_destination_code": "BKK"
+        },
+        {
+          "code": 640409,
+          "name": "Hotel Capella Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "country_code": "TH",
+          "city": "Bangkok",
+          "address": "Charoenkrung Rd., Yannawa, Sathorn, 300",
+          "postal_code": "10120",
+          "source_destination_code": "BKK"
+        },
+        {
+          "code": 390333,
+          "name": "Hotel Indigo Bangkok Wireless Road",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "country_code": "TH",
+          "city": "BANGKOK",
+          "address": "81 Wireless Road, Lumpini, Patumwan",
+          "postal_code": "10330",
+          "source_destination_code": "BKK"
+        },
+        {
+          "code": 155602,
+          "name": "Hotel Muse Bangkok, Autograph Collection",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "country_code": "TH",
+          "city": "BANGKOK",
+          "address": "Langsuan Rd, 55/555",
+          "postal_code": "10330",
+          "source_destination_code": "BKK"
+        },
+        {
+          "code": 647475,
+          "name": "Hotel Nikko Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "country_code": "TH",
+          "city": "BANGKOK",
+          "address": "27 Soi Sukhumvit 55 (Thonglor)",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
+        },
+        {
+          "code": 659390,
+          "name": "Hyatt Regency Bangkok Sukhumvit",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "country_code": "TH",
+          "city": "BANGKOK",
+          "address": "1 Sukhumvit Soi 13 Road, 30",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
+        },
+        {
+          "code": 26763,
+          "name": "InterContinental Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "country_code": "TH",
+          "city": "BANGKOK",
+          "address": "Phloen Chit Road, 973",
+          "postal_code": "10330",
+          "source_destination_code": "BKK"
+        },
+        {
+          "code": 644421,
+          "name": "Jasmine 59 Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "country_code": "TH",
+          "city": "Klongtan-Nua Watthana, Bangkok",
+          "address": "9 Sukhumvit 59(Boonchana Sukhumvit Rd",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
+        },
+        {
+          "code": 100673,
+          "name": "Jasmine City Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "country_code": "TH",
+          "city": "BANGKOK",
+          "address": "Sukhumvit 23, Klongtoey-Nua, Wattana, Sukhumvit Rd, 2",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
+        },
+        {
+          "code": 223074,
+          "name": "Jasmine Grande Residence",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "country_code": "TH",
+          "city": "BANGKOK",
+          "address": "Rama Iv Road, Phrakhanong, Klongtoey, 4338",
+          "postal_code": "10110",
+          "source_destination_code": "BKK"
         }
       ]
     },
     {
       "name": "Bali",
-      "code": "DPS",
-      "http_status": 200,
-      "hotel_count": 0,
-      "preferred_matches": [],
-      "shortlist": []
+      "country_code": "ID",
+      "resolved_destination_candidates": [
+        {
+          "code": "BAI",
+          "name": "Bali",
+          "country_code": "ID",
+          "match_score": 1.0
+        },
+        {
+          "code": "DPS",
+          "name": "Seed / previous code",
+          "country_code": "ID",
+          "match_score": 0.5
+        }
+      ],
+      "hotel_count_collected": 2000,
+      "preferred_matches": [
+        {
+          "code": 636394,
+          "name": "The Apurva Kempinski Bali",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "Bali",
+          "address": "Jalan Raya Nusa Dua Selatan Sawangan Nusa Dua Bali, 4",
+          "postal_code": "80361",
+          "source_destination_code": "BAI",
+          "watchlist_name": "The Apurva Kempinski Bali",
+          "match_score": 1.0
+        }
+      ],
+      "luxury_shortlist": [
+        {
+          "code": 553643,
+          "name": "Adiwana Resort Jembawan",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "UBUD",
+          "address": "Jalan Jembawan 1",
+          "postal_code": "80571",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 811252,
+          "name": "Adiwana Unagi Suites",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "UBUD",
+          "address": "Jl. Suweta No.88, Bentuyung Sakti, 28 3 3",
+          "postal_code": "80571",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 728707,
+          "name": "Aksari Resort Ubud by Ini Vie Hospitality",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jl. Raya Desa Kenderan No. 88x Ubud - Bali",
+          "postal_code": "80561",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 559682,
+          "name": "Aksari Villa Seminyak by Ini Vie Hospitality",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "SEMINYAK",
+          "address": "jalan sunset road gang baik baik II, 8",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 96667,
+          "name": "Alaya Dedaun Kuta",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jl. Raya Legian No. 123 B, No. 123B",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 198171,
+          "name": "Alaya Resort Ubud",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "UBUD",
+          "address": "Jalan Hanoman, Ubud",
+          "postal_code": "80571",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 558862,
+          "name": "Aleva Villa by Ini Vie Hospitality",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "SEMINYAK",
+          "address": "Jalan Dewi Saraswati No 8X, 8",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 414778,
+          "name": "Alila Seminyak Bali",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "Petitenget, Seminyak",
+          "address": "Jalan Taman Ganesha, 9",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 26848,
+          "name": "Alila Ubud",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "UBUD",
+          "address": "Desa Melinggih Kelod Payangan",
+          "postal_code": "80572",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 113846,
+          "name": "Alila Villas Uluwatu",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jl. Belimbing Sari",
+          "postal_code": "",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 96188,
+          "name": "Aman Villa Nusa Dua",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jalan Nusa Dua",
+          "postal_code": "80363",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 96185,
+          "name": "Amandari",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Amandari Kedewatan, Ubud",
+          "postal_code": "80571",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 96187,
+          "name": "Amankila",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Manggis",
+          "postal_code": "80871",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 215302,
+          "name": "AMARTERRA VILLAS RESORT BALI NUSA DUA",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Kawasan Pariwisata Nusa Dua-Btdc Resort Area",
+          "postal_code": "80363",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 144018,
+          "name": "Ametis Villa Bali",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jalan Pantai Batu Bolong Canggu",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 678187,
+          "name": "Amora Ubud Boutique Villas",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jalan Bangkiang Sidem Desa Keliki Tegallalang",
+          "postal_code": "80571",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 234558,
+          "name": "Amori Villa",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Bj Dukuh Pejeng Kawanubud",
+          "postal_code": "80552",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 145570,
+          "name": "Anantara Uluwatu Bali Resort",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "ULUWATU",
+          "address": "Jl. Pemutih - Labuhan Sait",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 645441,
+          "name": "Arkamara Dijiwa Ubud",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jl. Katik Lantang, Singakerta Kecamatan Ubud, S/N",
+          "postal_code": "80571",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 619782,
+          "name": "Aryaduta Bali",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "KUTA - BADUNG",
+          "address": "Jalan Kartika Plaza, Lingkungan Segara",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 93295,
+          "name": "AYANA Resort Bali",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jl. Karang Mas Sejahtera Jimbaran",
+          "postal_code": "80364",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 24204,
+          "name": "Ayodya Resort Bali",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "NUSA DUA",
+          "address": "Jl. Pantai Mengiat Nusa Dua, 5",
+          "postal_code": "80363",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 731801,
+          "name": "Ayona Villa Seminyak By Ini Vie Hospitality",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "SEMINYAK",
+          "address": "Batu Belig Street Gang Bayu No.8 Seminyak",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 233168,
+          "name": "Ayung Resort Ubud",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Banjar Begawan,Melinggih Kelod,Payangan",
+          "postal_code": "80572",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 234630,
+          "name": "Ayurvedagram Bali",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "Ubud",
+          "address": "Jl. Raya Kendran No. 1, Br. Kepitu",
+          "postal_code": "80561",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 95679,
+          "name": "Bali Dynasty Resort",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jl. Kartika Plaza Po Box 2047",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 487909,
+          "name": "Bali Emerald Villas",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "Bali",
+          "address": "Jl Karangsari No 5 Sanur Bali Indonesia, Bali",
+          "postal_code": "80228",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 24406,
+          "name": "Bali Mandira Beach Resort & Spa",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "LEGIAN",
+          "address": "Jl. Padma, 2",
+          "postal_code": "80362",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 366599,
+          "name": "Bali Nusa Dua Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "NUSA DUA",
+          "address": "Kawasan Terpadu ITDC NW/1",
+          "postal_code": "80363",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 147407,
+          "name": "Bambu Indah Resort",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "UBUD",
+          "address": "Banjar Baung Desa Sayan Ubud Gianyar Bali",
+          "postal_code": "80571",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 237091,
+          "name": "Berry Amour Villas",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jl. Batu Belig Kerobokan",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 253830,
+          "name": "Bidadari Private Villas & Retreat",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jl.Kelabang Moding",
+          "postal_code": "80571",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 441823,
+          "name": "Bisma Eight",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jalan Bisma, 68",
+          "postal_code": "80571",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 672543,
+          "name": "Buana Bali Villas & Spa",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "JIMBARAN",
+          "address": "Jl. Raya Puri Gading II",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 96365,
+          "name": "Bulgari Resort Bali",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jl. Goa Lempeh Banjar Dinas Kangin, Uluwatu",
+          "postal_code": "80364",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 802306,
+          "name": "Capella Ubud, Bali",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "Tegallalang",
+          "address": "Ji Raya Dalem Banjar Triwangsa Desa Keliki Ubud Gi",
+          "postal_code": "80561",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 275283,
+          "name": "Chapung Sebali Resort",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "UBUD",
+          "address": "Jl. Raya Sebali – 80561 Keliki, Ubud, Bali",
+          "postal_code": "80561",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 257040,
+          "name": "Cicada Luxury Townhouses",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jalan Pura Telaga Waja",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 690643,
+          "name": "Cloud Nine Estate",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jalan Rsi Markandya Ii",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 93198,
+          "name": "COMO Shambhala Estate",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Banjar Begawan, Desa Melinggih Kelod, Payangan",
+          "postal_code": "80571",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 678065,
+          "name": "COMO Uma Canggu",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "Badung Bali",
+          "address": "Jalan Pantai Batu Mejan Echo Beach Canggu",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 93203,
+          "name": "COMO Uma Ubud",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jl. Raya Sanggilingan Banjar Lungsiakan Kedewata",
+          "postal_code": "80571",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 24221,
+          "name": "Conrad Bali",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "NUSA DUA",
+          "address": "Jl. Pratama Raya 168 Tanjung Benoa",
+          "postal_code": "80363",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 367637,
+          "name": "Courtyard Bali Seminyak Resort",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "SEMINYAK",
+          "address": "Jl Camplumg Tanduk, Dhyana Pura, 103 SP 6",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 176472,
+          "name": "Courtyard by Marriott Bali Nusa Dua Resort",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "NUSA DUA",
+          "address": "Kawasan Pariwisata Lot SW1 Nusa Dua Bali, 4",
+          "postal_code": "80363",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 641151,
+          "name": "Cross Bali Breakers Resort",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "Bali",
+          "address": "Jalan Pantai Balangan no 10, Balangan, Jimbaran",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 163006,
+          "name": "Cross Paasha Bali Seminyak",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jl. Kayu Aya Seminyak, Kuta Utara, 78",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 177256,
+          "name": "Danoya Villa - Private Luxury Residence",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "SEMINYAK - BALI",
+          "address": "Jl. Batubelig, Kerobokan Bali, 559",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 234474,
+          "name": "De Ubud Villas  Spa",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "BALI",
+          "address": "Jl Monkey Forest No8 Ubud Gianyar",
+          "postal_code": "80571",
+          "source_destination_code": "BAI"
+        },
+        {
+          "code": 701281,
+          "name": "Del Cielo Villa Seminyak",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BAI",
+          "country_code": "ID",
+          "city": "Bali",
+          "address": "Cendrawasih, Seminyak",
+          "postal_code": "80361",
+          "source_destination_code": "BAI"
+        }
+      ]
     },
     {
       "name": "Batam",
-      "code": "BTH",
-      "http_status": 200,
-      "hotel_count": 216,
+      "country_code": "ID",
+      "resolved_destination_candidates": [
+        {
+          "code": "BTH",
+          "name": "Batam",
+          "country_code": "ID",
+          "match_score": 1.0
+        },
+        {
+          "code": "44X",
+          "name": "Batang",
+          "country_code": "ID",
+          "match_score": 0.727
+        }
+      ],
+      "hotel_count_collected": 221,
       "preferred_matches": [],
-      "shortlist": [
+      "luxury_shortlist": [
         {
           "code": 776566,
           "name": "Batam Marriott Hotel Harbour Bay",
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Harbour Bay Downtown Jalan Duyung Kel Sungai Jodoh"
+          "address": "Harbour Bay Downtown Jalan Duyung Kel Sungai Jodoh",
+          "postal_code": "29453",
+          "source_destination_code": "BTH"
         },
         {
           "code": 1088251,
@@ -1771,9 +3558,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Jalan Raja H Fisabilillah Teluk Tering Kecamatan B"
+          "address": "Jalan Raja H Fisabilillah Teluk Tering Kecamatan B",
+          "postal_code": "29461",
+          "source_destination_code": "BTH"
         },
         {
           "code": 189510,
@@ -1781,9 +3570,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Jl Hang Lekir, Nongsa"
+          "address": "Jl Hang Lekir, Nongsa",
+          "postal_code": "29465",
+          "source_destination_code": "BTH"
         },
         {
           "code": 560003,
@@ -1791,9 +3582,11 @@
           "stars": 5,
           "category_code": "5EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "jalan ahmad yani, muka kuning, na"
+          "address": "jalan ahmad yani, muka kuning, na",
+          "postal_code": "29433",
+          "source_destination_code": "BTH"
         },
         {
           "code": 234466,
@@ -1801,9 +3594,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM ISLAND",
-          "address": "Jl. Duyung, Sungai Jodoh, Kec. Batu Ampar"
+          "address": "Jl. Duyung, Sungai Jodoh, Kec. Batu Ampar",
+          "postal_code": "29458",
+          "source_destination_code": "BTH"
         },
         {
           "code": 1091085,
@@ -1811,9 +3606,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Batam",
-          "address": "Jl. Ahmad Yani, Komplek Batam Centre Park No.1"
+          "address": "Jl. Ahmad Yani, Komplek Batam Centre Park No.1",
+          "postal_code": "15811",
+          "source_destination_code": "BTH"
         },
         {
           "code": 234528,
@@ -1821,9 +3618,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM ISLAND",
-          "address": "Komplek Panorama Nagoya"
+          "address": "Komplek Panorama Nagoya",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 132504,
@@ -1831,9 +3630,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Jalan Duyung Sei Jodoh, Jodoh River, Batu Ampar"
+          "address": "Jalan Duyung Sei Jodoh, Jodoh River, Batu Ampar",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 617756,
@@ -1841,9 +3642,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Jl. Sriwijaya No. 1, Kp. Pelita, Riau"
+          "address": "Jl. Sriwijaya No. 1, Kp. Pelita, Riau",
+          "postal_code": "29444",
+          "source_destination_code": "BTH"
         },
         {
           "code": 1099166,
@@ -1851,9 +3654,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Mega Wisata Ocarina Batam, 00 2 1"
+          "address": "Mega Wisata Ocarina Batam, 00 2 1",
+          "postal_code": "29444",
+          "source_destination_code": "BTH"
         },
         {
           "code": 253873,
@@ -1861,9 +3666,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM ISLAND",
-          "address": "Hang Lekir Nongsa Batam"
+          "address": "Hang Lekir Nongsa Batam",
+          "postal_code": "49321",
+          "source_destination_code": "BTH"
         },
         {
           "code": 731818,
@@ -1871,9 +3678,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Komp.Pertokoan Tunas Regency BlokA2,Tanjung Uncang"
+          "address": "Komp.Pertokoan Tunas Regency BlokA2,Tanjung Uncang",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 1113179,
@@ -1881,9 +3690,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Batam",
-          "address": "Jl Sriwijaya, Ruko Suri Graha 11–12, Pelita, Batam"
+          "address": "Jl Sriwijaya, Ruko Suri Graha 11–12, Pelita, Batam",
+          "postal_code": "29311",
+          "source_destination_code": "BTH"
         },
         {
           "code": 1113172,
@@ -1891,9 +3702,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Batam",
-          "address": "Ruko Parisa Center B23, Kavling Lama, Sagulung"
+          "address": "Ruko Parisa Center B23, Kavling Lama, Sagulung",
+          "postal_code": "29425",
+          "source_destination_code": "BTH"
         },
         {
           "code": 237024,
@@ -1901,9 +3714,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM ISLAND",
-          "address": "Komplek Top View Garden"
+          "address": "Komplek Top View Garden",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 811304,
@@ -1911,9 +3726,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Batam",
-          "address": "Komplek Panorama Nagoya"
+          "address": "Komplek Panorama Nagoya",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 1126360,
@@ -1921,9 +3738,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Batam",
-          "address": "Jl. Pembangunan Blok H No.1, Lubuk Baja"
+          "address": "Jl. Pembangunan Blok H No.1, Lubuk Baja",
+          "postal_code": "29444",
+          "source_destination_code": "BTH"
         },
         {
           "code": 233163,
@@ -1931,9 +3750,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM ISLAND",
-          "address": "Jl. Bengkong Laut"
+          "address": "Jl. Bengkong Laut",
+          "postal_code": "29433",
+          "source_destination_code": "BTH"
         },
         {
           "code": 165401,
@@ -1941,9 +3762,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Jl. Teuku Umar Bukit Nagoya"
+          "address": "Jl. Teuku Umar Bukit Nagoya",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 357847,
@@ -1951,9 +3774,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Batam Island",
-          "address": "Jl. Batam"
+          "address": "Jl. Batam",
+          "postal_code": "29400",
+          "source_destination_code": "BTH"
         },
         {
           "code": 488053,
@@ -1961,9 +3786,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Batam",
-          "address": "Jl. Imam Bonjol"
+          "address": "Jl. Imam Bonjol",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 1093774,
@@ -1971,9 +3798,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Batam",
-          "address": "Jl. Nagoya Thamrin, Lubuk Baja Kota"
+          "address": "Jl. Nagoya Thamrin, Lubuk Baja Kota",
+          "postal_code": "29444",
+          "source_destination_code": "BTH"
         },
         {
           "code": 215416,
@@ -1981,9 +3810,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Jl. Engku Putri, Batam Center"
+          "address": "Jl. Engku Putri, Batam Center",
+          "postal_code": "29461",
+          "source_destination_code": "BTH"
         },
         {
           "code": 625245,
@@ -1991,9 +3822,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Jl. Trans Barelang"
+          "address": "Jl. Trans Barelang",
+          "postal_code": "29439",
+          "source_destination_code": "BTH"
         },
         {
           "code": 215409,
@@ -2001,9 +3834,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Waterfront City"
+          "address": "Waterfront City",
+          "postal_code": "29422",
+          "source_destination_code": "BTH"
         },
         {
           "code": 195734,
@@ -2011,9 +3846,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Waterfront City"
+          "address": "Waterfront City",
+          "postal_code": "29422",
+          "source_destination_code": "BTH"
         },
         {
           "code": 502925,
@@ -2021,9 +3858,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Batam",
-          "address": "komplek Baloi Kusuma Indah No 7"
+          "address": "komplek Baloi Kusuma Indah No 7",
+          "postal_code": "29411",
+          "source_destination_code": "BTH"
         },
         {
           "code": 592040,
@@ -2031,9 +3870,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Batam",
-          "address": "JL Yos Sudarso Bengkong Laut Batam Kepulauan"
+          "address": "JL Yos Sudarso Bengkong Laut Batam Kepulauan",
+          "postal_code": "29458",
+          "source_destination_code": "BTH"
         },
         {
           "code": 1030902,
@@ -2041,9 +3882,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Batam",
-          "address": "Pasir Gelam, Karas, Pulau Galang"
+          "address": "Pasir Gelam, Karas, Pulau Galang",
+          "postal_code": "29486",
+          "source_destination_code": "BTH"
         },
         {
           "code": 152703,
@@ -2051,9 +3894,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Jl. Kolonel Sugiono Tanjung Pinggir Sekupang"
+          "address": "Jl. Kolonel Sugiono Tanjung Pinggir Sekupang",
+          "postal_code": "",
+          "source_destination_code": "BTH"
         },
         {
           "code": 592036,
@@ -2061,9 +3906,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Batam",
-          "address": "Jl. Teuku Umar Superblock Nagoya Hill"
+          "address": "Jl. Teuku Umar Superblock Nagoya Hill",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 234569,
@@ -2071,9 +3918,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM ISLAND",
-          "address": "Jl. Raden Patah, Kampung Utama No.01 Batam"
+          "address": "Jl. Raden Patah, Kampung Utama No.01 Batam",
+          "postal_code": "29444",
+          "source_destination_code": "BTH"
         },
         {
           "code": 186775,
@@ -2081,9 +3930,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM ISLAND",
-          "address": "Jl. Hang Lekiu Nongsa"
+          "address": "Jl. Hang Lekiu Nongsa",
+          "postal_code": "29465",
+          "source_destination_code": "BTH"
         },
         {
           "code": 169146,
@@ -2091,9 +3942,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM KEPULAUAN RIAU",
-          "address": "Jl. Duyung Sei Jodoh"
+          "address": "Jl. Duyung Sei Jodoh",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 703803,
@@ -2101,9 +3954,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM ISLAND",
-          "address": "Jl Ahmad Yani Panbil Estate Muka Kuning Sei Beduk"
+          "address": "Jl Ahmad Yani Panbil Estate Muka Kuning Sei Beduk",
+          "postal_code": "29433",
+          "source_destination_code": "BTH"
         },
         {
           "code": 215396,
@@ -2111,9 +3966,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Jl. Raja Ali Haji Sei Jodoh"
+          "address": "Jl. Raja Ali Haji Sei Jodoh",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 549001,
@@ -2121,9 +3978,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Jl Jendral Sudirman"
+          "address": "Jl Jendral Sudirman",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 212518,
@@ -2131,9 +3990,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM",
-          "address": "Harbourbay Complex Jln Duyung Sei Jodoh"
+          "address": "Harbourbay Complex Jln Duyung Sei Jodoh",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 233347,
@@ -2141,9 +4002,11 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "BATAM ISLAND",
-          "address": "JL Bunga Mawar Baloi Kusuma"
+          "address": "JL Bunga Mawar Baloi Kusuma",
+          "postal_code": "29432",
+          "source_destination_code": "BTH"
         },
         {
           "code": 1099855,
@@ -2151,19 +4014,275 @@
           "stars": 4,
           "category_code": "4EST",
           "destination_code": "BTH",
-          "destination_name": "",
+          "country_code": "ID",
           "city": "Nirup Island",
-          "address": "Sekanak Raya Belakang Padang"
+          "address": "Sekanak Raya Belakang Padang",
+          "postal_code": "",
+          "source_destination_code": "BTH"
+        },
+        {
+          "code": 672732,
+          "name": "Townhouse Oak Batam near Grand Batam Mall",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "country_code": "ID",
+          "city": "BATAM",
+          "address": "Komplek Lucky Estate Blok B, No. 51, Jl",
+          "postal_code": "29444",
+          "source_destination_code": "BTH"
+        },
+        {
+          "code": 156252,
+          "name": "Turi Beach Resort",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "country_code": "ID",
+          "city": "BATAM",
+          "address": "Jl. Hang Lekiu, 140",
+          "postal_code": "29465",
+          "source_destination_code": "BTH"
         }
       ]
     },
     {
       "name": "Bintan",
-      "code": "TNJ",
-      "http_status": 200,
-      "hotel_count": 5,
+      "country_code": "ID",
+      "resolved_destination_candidates": [
+        {
+          "code": "NOB",
+          "name": "Bontang",
+          "country_code": "ID",
+          "match_score": 0.769
+        },
+        {
+          "code": "44X",
+          "name": "Batang",
+          "country_code": "ID",
+          "match_score": 0.667
+        },
+        {
+          "code": "BIN",
+          "name": "Bintan Island",
+          "country_code": "ID",
+          "match_score": 0.632
+        },
+        {
+          "code": "TNJ",
+          "name": "Seed / previous code",
+          "country_code": "ID",
+          "match_score": 0.5
+        }
+      ],
+      "hotel_count_collected": 62,
       "preferred_matches": [],
-      "shortlist": []
+      "luxury_shortlist": [
+        {
+          "code": 76449,
+          "name": "Banyan Tree Bintan",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "LAGOI",
+          "address": "Jl. Teluk Berembang Laguna Bintan Lagoi",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 98875,
+          "name": "Banyu Biru Villa",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "LAGOI BINTAN",
+          "address": "Jln Panglima Pantar Lagoi Lot A1-2-3",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 76450,
+          "name": "HOMM Laguna Bintan",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "LAGOI",
+          "address": "Jl. Teluk Berembang Laguna Bintan - Lagoi",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 1038783,
+          "name": "Hotel Indigo Bintan Lagoi Beach",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "Bintan",
+          "address": "Gurindam Street 12 Plot B3-01, Lagoi Tourism Area",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 76448,
+          "name": "Indra Maya Pool Villas",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "LAGOI",
+          "address": "Panglima Pantar, Lagoi",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 76447,
+          "name": "Mayang Sari Beach Resort",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "BITAN",
+          "address": "Jalan Panglima Pantar Lagoi 29155 Bintan Resorts",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 76445,
+          "name": "Movenpick Resort & Spa Bintan Lagoon",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "Bintan",
+          "address": "Jalan Indera Segara Site A12 Sebong Lagoi Teluk",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 76446,
+          "name": "Nirwana Resort Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "LAGOI",
+          "address": "Jalan Panglima Pantar Lagoi 29155 Bintan Resorts, 3",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 584465,
+          "name": "Pantai Indah Lagoi Bintan",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "Bintan",
+          "address": "Jl. Gurindam Duabelas Lagoi Bay",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 617323,
+          "name": "The Residence Bintan",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "INTAN KEPULAUAN RIAU",
+          "address": "kp galang batang rt.005 rw.003 gunung kijang kab",
+          "postal_code": "29151",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 403922,
+          "name": "The Sanchaya",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "Bintan",
+          "address": "Jalan Gurindam Duabelas Plot 5",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 162909,
+          "name": "Aston Tanjung Pinang Hotel & Conference Center",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "TANJUNG PINANG",
+          "address": "Jl Adisucipto Km.11",
+          "postal_code": "29125",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 615484,
+          "name": "Cassia Bintan",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "BINTAN",
+          "address": "Sebong Lagoi, Tlk. Sebong, Kabupaten Bintan, na",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 399358,
+          "name": "Grand Lagoi Hotel Bintan",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "BINTAN",
+          "address": "Grand Lagoi Jl. Gurindam Duabelas Plot 27-29 Lagoi, 27-29",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 1038785,
+          "name": "Holiday Inn Resort Bintan Lagoi Beach",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "Bintan",
+          "address": "Plot B3-02, Lagoi Tourism Area",
+          "postal_code": "29155",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 681301,
+          "name": "Kamuela Lagoi Bay Villas",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "ISLA DE BINTAN",
+          "address": "Jln Gurindam Duabelas Kav T30 32 Lagoi",
+          "postal_code": "29152",
+          "source_destination_code": "BIN"
+        },
+        {
+          "code": 1098969,
+          "name": "The Anmon Resort Bintan",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BIN",
+          "country_code": "ID",
+          "city": "BINTAN",
+          "address": "Jalan Raja Haji",
+          "postal_code": "29152",
+          "source_destination_code": "BIN"
+        }
+      ]
     }
   ]
 }
