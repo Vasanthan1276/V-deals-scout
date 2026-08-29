@@ -1,5 +1,6 @@
 {
-  "updated_at": "2026-08-29T17:26:59+08:00",
+  "updated_at": "2026-08-29T17:32:24+08:00",
+  "mode": "demo",
   "items": [
     {
       "id": "food-demo-01",
@@ -14,7 +15,8 @@
       "url": "",
       "is_demo": true,
       "deal_score": 71.0,
-      "observed_at": "2026-08-29T17:26:59+08:00"
+      "observed_at": "2026-08-29T17:32:24+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-demo-02",
@@ -29,7 +31,8 @@
       "url": "",
       "is_demo": true,
       "deal_score": 95.0,
-      "observed_at": "2026-08-29T17:26:59+08:00"
+      "observed_at": "2026-08-29T17:32:24+08:00",
+      "exclude_from_best": true
     }
   ]
 }
