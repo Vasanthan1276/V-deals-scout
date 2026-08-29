@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T14:48:14+08:00",
+  "updated_at": "2026-08-29T12:03:18+08:00",
   "items": [
     {
       "id": "sale-demo-01",
@@ -14,7 +14,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 81.0,
-      "observed_at": "2026-08-28T14:48:14+08:00"
+      "observed_at": "2026-08-29T12:03:18+08:00"
     },
     {
       "id": "sale-demo-02",
@@ -29,7 +29,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 73.0,
-      "observed_at": "2026-08-28T14:48:14+08:00"
+      "observed_at": "2026-08-29T12:03:18+08:00"
     }
   ]
 }
