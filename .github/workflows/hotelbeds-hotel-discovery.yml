@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Discover Hotelbeds hotel codes
+      - name: Run improved Hotelbeds discovery
         env:
           HOTELBEDS_API_KEY: ${{ secrets.HOTELBEDS_API_KEY }}
           HOTELBEDS_SECRET: ${{ secrets.HOTELBEDS_SECRET }}
@@ -29,40 +29,144 @@ jobs:
           import json
           import time
           import hashlib
+          import re
+          import unicodedata
           import urllib.parse
           import urllib.request
           import urllib.error
+          from difflib import SequenceMatcher
           from datetime import datetime, timezone
           from pathlib import Path
 
           API_KEY = os.environ["HOTELBEDS_API_KEY"]
           SECRET = os.environ["HOTELBEDS_SECRET"]
 
+          BASE = "https://api.test.hotelbeds.com/hotel-content-api/1.0"
           ROOT = Path(".")
-          CONFIG_HOTELS = ROOT / "config" / "hotels.json"
           OUTPUT = ROOT / "data" / "hotelbeds-discovery.json"
+          HOTEL_CONFIG = ROOT / "config" / "hotels.json"
 
-          # Initial destination codes used by Deals Scout.
-          destinations = [
-              {"name": "Singapore",       "code": "SIN"},
-              {"name": "Penang",          "code": "PEN"},
-              {"name": "Kuala Lumpur",    "code": "KUL"},
-              {"name": "Bangkok",         "code": "BKK"},
-              {"name": "Bali",            "code": "DPS"},
-              {"name": "Batam",           "code": "BTH"},
-              {"name": "Bintan",          "code": "TNJ"},
+          # Countries only need to be queried once for destination discovery.
+          COUNTRY_CODES = ["SG", "MY", "TH", "ID"]
+
+          DESTINATION_TARGETS = [
+              {
+                  "name": "Singapore",
+                  "country": "SG",
+                  "aliases": ["singapore"],
+                  "seed_codes": ["SIN"],
+              },
+              {
+                  "name": "Penang",
+                  "country": "MY",
+                  "aliases": [
+                      "penang",
+                      "pulau pinang",
+                      "george town"
+                  ],
+                  "seed_codes": ["PEN"],
+              },
+              {
+                  "name": "Kuala Lumpur",
+                  "country": "MY",
+                  "aliases": [
+                      "kuala lumpur"
+                  ],
+                  "seed_codes": ["KUL"],
+              },
+              {
+                  "name": "Bangkok",
+                  "country": "TH",
+                  "aliases": [
+                      "bangkok"
+                  ],
+                  "seed_codes": ["BKK"],
+              },
+              {
+                  "name": "Bali",
+                  "country": "ID",
+                  "aliases": [
+                      "bali",
+                      "denpasar",
+                      "nusa dua"
+                  ],
+                  "seed_codes": ["DPS"],
+              },
+              {
+                  "name": "Batam",
+                  "country": "ID",
+                  "aliases": [
+                      "batam"
+                  ],
+                  "seed_codes": ["BTH"],
+              },
+              {
+                  "name": "Bintan",
+                  "country": "ID",
+                  "aliases": [
+                      "bintan",
+                      "lagoi",
+                      "tanjung pinang"
+                  ],
+                  "seed_codes": ["TNJ"],
+              },
           ]
 
-          # Load our existing preferred hotel watchlist.
-          watchlist = []
+          def signature():
+              timestamp = str(int(time.time()))
+              return hashlib.sha256(
+                  f"{API_KEY}{SECRET}{timestamp}".encode("utf-8")
+              ).hexdigest()
 
-          if CONFIG_HOTELS.exists():
-              with open(CONFIG_HOTELS, "r", encoding="utf-8") as f:
-                  cfg = json.load(f)
+          def api_get(path, params):
+              url = (
+                  BASE
+                  + path
+                  + "?"
+                  + urllib.parse.urlencode(params)
+              )
 
-              watchlist = cfg.get("watchlist", [])
+              req = urllib.request.Request(
+                  url,
+                  headers={
+                      "Accept": "application/json",
+                      "Api-key": API_KEY,
+                      "X-Signature": signature(),
+                      "User-Agent": "V-deals-scout/1.0",
+                  },
+                  method="GET",
+              )
 
-          def normalise_text(value):
+              try:
+                  with urllib.request.urlopen(
+                      req,
+                      timeout=60
+                  ) as response:
+                      body = response.read().decode("utf-8")
+
+                      return (
+                          response.status,
+                          json.loads(body)
+                      )
+
+              except urllib.error.HTTPError as exc:
+                  body = exc.read().decode(
+                      "utf-8",
+                      errors="replace"
+                  )
+
+                  print(
+                      f"HTTP {exc.code}: "
+                      f"{body[:1000]}"
+                  )
+
+                  return exc.code, None
+
+              except Exception as exc:
+                  print(f"Request error: {exc}")
+                  return 0, None
+
+          def text(value):
               if value is None:
                   return ""
 
@@ -72,329 +176,730 @@ jobs:
               if isinstance(value, dict):
                   for key in (
                       "content",
-                      "description",
                       "name",
+                      "description",
                       "value",
-                      "text"
+                      "text",
                   ):
                       if key in value:
-                          return normalise_text(value[key])
+                          return text(value[key])
 
               return str(value).strip()
 
-          def hotel_stars(hotel):
-              category = (
-                  hotel.get("categoryCode")
-                  or hotel.get("category")
-                  or ""
+          def normalize(value):
+              value = text(value).lower()
+
+              value = unicodedata.normalize(
+                  "NFKD",
+                  value
               )
 
-              category = normalise_text(category)
+              value = "".join(
+                  c for c in value
+                  if not unicodedata.combining(c)
+              )
 
-              if category and category[0].isdigit():
-                  try:
-                      value = int(category[0])
-                      if 1 <= value <= 5:
-                          return value
-                  except ValueError:
-                      pass
+              value = value.replace("&", " and ")
 
-              category_name = normalise_text(
-                  hotel.get("categoryName")
-                  or hotel.get("categoryDescription")
-              ).lower()
+              value = re.sub(
+                  r"[^a-z0-9]+",
+                  " ",
+                  value
+              )
 
-              for stars in (5, 4, 3, 2, 1):
-                  if str(stars) in category_name:
-                      return stars
+              value = re.sub(
+                  r"\s+",
+                  " ",
+                  value
+              )
 
-              return None
+              return value.strip()
 
-          def extract_hotels(data):
-              # Hotelbeds responses can differ slightly between endpoints/
-              # versions. Handle the common structures safely.
+          def similarity(a, b):
+              a = normalize(a)
+              b = normalize(b)
 
-              if isinstance(data, list):
-                  return data
+              if not a or not b:
+                  return 0.0
 
+              if a == b:
+                  return 1.0
+
+              if a in b or b in a:
+                  shorter = min(
+                      len(a),
+                      len(b)
+                  )
+
+                  longer = max(
+                      len(a),
+                      len(b)
+                  )
+
+                  if shorter / longer >= 0.60:
+                      return 0.93
+
+              return SequenceMatcher(
+                  None,
+                  a,
+                  b
+              ).ratio()
+
+          def load_watchlist():
+              if not HOTEL_CONFIG.exists():
+                  return []
+
+              with open(
+                  HOTEL_CONFIG,
+                  "r",
+                  encoding="utf-8"
+              ) as f:
+                  data = json.load(f)
+
+              return data.get(
+                  "watchlist",
+                  []
+              )
+
+          WATCHLIST = load_watchlist()
+
+          def preferred_names(destination):
+              return [
+                  entry["name"]
+                  for entry in WATCHLIST
+                  if (
+                      entry.get(
+                          "destination",
+                          ""
+                      ).lower()
+                      == destination.lower()
+                  )
+                  and entry.get("name")
+              ]
+
+          def extract_destinations(data):
               if not isinstance(data, dict):
                   return []
 
-              block = data.get("hotels")
+              destinations = data.get(
+                  "destinations",
+                  []
+              )
 
-              if isinstance(block, list):
-                  return block
+              if isinstance(
+                  destinations,
+                  dict
+              ):
+                  destinations = destinations.get(
+                      "destinations",
+                      destinations.get(
+                          "destination",
+                          []
+                      )
+                  )
 
-              if isinstance(block, dict):
-                  nested = block.get("hotels")
+              if isinstance(
+                  destinations,
+                  dict
+              ):
+                  return [destinations]
 
-                  if isinstance(nested, list):
-                      return nested
-
-                  nested = block.get("hotel")
-
-                  if isinstance(nested, list):
-                      return nested
-
-                  if isinstance(nested, dict):
-                      return [nested]
-
-              hotel = data.get("hotel")
-
-              if isinstance(hotel, list):
-                  return hotel
-
-              if isinstance(hotel, dict):
-                  return [hotel]
+              if isinstance(
+                  destinations,
+                  list
+              ):
+                  return destinations
 
               return []
 
-          def request_hotels(destination_code):
-              timestamp = str(int(time.time()))
+          def extract_hotels(data):
+              if not isinstance(data, dict):
+                  return []
 
-              signature = hashlib.sha256(
-                  f"{API_KEY}{SECRET}{timestamp}".encode("utf-8")
-              ).hexdigest()
-
-              params = {
-                  "fields": "all",
-                  "language": "ENG",
-                  "destinationCode": destination_code,
-                  "from": 1,
-                  "to": 1000,
-                  "useSecondaryLanguage": "false",
-              }
-
-              url = (
-                  "https://api.test.hotelbeds.com/"
-                  "hotel-content-api/1.0/hotels?"
-                  + urllib.parse.urlencode(params)
+              hotels = data.get(
+                  "hotels",
+                  []
               )
 
-              request = urllib.request.Request(
-                  url,
-                  headers={
-                      "Accept": "application/json",
-                      "Api-key": API_KEY,
-                      "X-Signature": signature,
-                      "User-Agent": "V-deals-scout/1.0",
-                  },
-                  method="GET",
-              )
-
-              try:
-                  with urllib.request.urlopen(
-                      request,
-                      timeout=45
-                  ) as response:
-                      body = response.read().decode("utf-8")
-
-                      print(
-                          f"HTTP {response.status} "
-                          f"for destination {destination_code}"
+              if isinstance(hotels, dict):
+                  hotels = hotels.get(
+                      "hotels",
+                      hotels.get(
+                          "hotel",
+                          []
                       )
-
-                      return response.status, json.loads(body)
-
-              except urllib.error.HTTPError as exc:
-                  body = exc.read().decode(
-                      "utf-8",
-                      errors="replace"
                   )
 
-                  print(
-                      f"HTTP {exc.code} "
-                      f"for destination {destination_code}"
+              if isinstance(hotels, dict):
+                  return [hotels]
+
+              if isinstance(hotels, list):
+                  return hotels
+
+              return []
+
+          def star_value(hotel):
+              category = normalize(
+                  hotel.get(
+                      "categoryCode",
+                      hotel.get(
+                          "category",
+                          ""
+                      )
+                  )
+              )
+
+              match = re.match(
+                  r"([0-5])",
+                  category
+              )
+
+              if match:
+                  return int(
+                      match.group(1)
                   )
 
-                  print(body[:1500])
-
-                  return exc.code, None
-
-              except Exception as exc:
-                  print(
-                      f"Request failed for "
-                      f"{destination_code}: {exc}"
-                  )
-
-                  return 0, None
-
-          def preferred_names(destination_name):
-              names = []
-
-              for entry in watchlist:
-                  if (
-                      entry.get("destination", "").lower()
-                      == destination_name.lower()
-                  ):
-                      names.append(entry.get("name", ""))
-
-              return [x for x in names if x]
+              return None
 
           def simplify_hotel(hotel):
-              name = normalise_text(hotel.get("name"))
-
-              address = normalise_text(
-                  hotel.get("address")
-              )
-
-              destination_name = normalise_text(
-                  hotel.get("destinationName")
-              )
-
-              city = normalise_text(
-                  hotel.get("city")
-              )
-
               return {
                   "code": hotel.get("code"),
-                  "name": name,
-                  "stars": hotel_stars(hotel),
-                  "category_code": normalise_text(
-                      hotel.get("categoryCode")
-                      or hotel.get("category")
+                  "name": text(
+                      hotel.get("name")
                   ),
-                  "destination_code": normalise_text(
-                      hotel.get("destinationCode")
+                  "stars": star_value(
+                      hotel
                   ),
-                  "destination_name": destination_name,
-                  "city": city,
-                  "address": address,
+                  "category_code": text(
+                      hotel.get(
+                          "categoryCode",
+                          hotel.get(
+                              "category"
+                          )
+                      )
+                  ),
+                  "destination_code": text(
+                      hotel.get(
+                          "destinationCode"
+                      )
+                  ),
+                  "country_code": text(
+                      hotel.get(
+                          "countryCode"
+                      )
+                  ),
+                  "city": text(
+                      hotel.get("city")
+                  ),
+                  "address": text(
+                      hotel.get("address")
+                  ),
+                  "postal_code": text(
+                      hotel.get(
+                          "postalCode"
+                      )
+                  ),
               }
 
-          result = {
+          #
+          # STEP A
+          # Retrieve official Hotelbeds destination catalogue.
+          #
+
+          all_destinations = []
+
+          print()
+          print("=" * 72)
+          print("DISCOVERING OFFICIAL HOTELBEDS DESTINATIONS")
+          print("=" * 72)
+
+          for country in COUNTRY_CODES:
+              status, data = api_get(
+                  "/locations/destinations",
+                  {
+                      "fields": "all",
+                      "language": "ENG",
+                      "countryCodes": country,
+                      "from": 1,
+                      "to": 1000,
+                      "useSecondaryLanguage": "false",
+                  },
+              )
+
+              print(
+                  f"{country}: HTTP {status}"
+              )
+
+              if status == 200 and data:
+                  destinations = (
+                      extract_destinations(data)
+                  )
+
+                  for item in destinations:
+                      all_destinations.append(
+                          {
+                              "code": text(
+                                  item.get("code")
+                              ),
+                              "name": text(
+                                  item.get("name")
+                              ),
+                              "country_code": text(
+                                  item.get(
+                                      "countryCode"
+                                  )
+                              ),
+                          }
+                      )
+
+                  print(
+                      f"  destinations returned: "
+                      f"{len(destinations)}"
+                  )
+
+              time.sleep(1)
+
+          #
+          # Resolve candidate destination codes.
+          #
+
+          def destination_candidates(target):
+              ranked = []
+
+              for item in all_destinations:
+                  if (
+                      item["country_code"]
+                      != target["country"]
+                  ):
+                      continue
+
+                  scores = [
+                      similarity(
+                          item["name"],
+                          alias
+                      )
+                      for alias
+                      in target["aliases"]
+                  ]
+
+                  score = max(
+                      scores or [0]
+                  )
+
+                  if score >= 0.63:
+                      ranked.append(
+                          {
+                              **item,
+                              "match_score": round(
+                                  score,
+                                  3
+                              ),
+                          }
+                      )
+
+              ranked.sort(
+                  key=lambda x: (
+                      -x["match_score"],
+                      x["name"].lower()
+                  )
+              )
+
+              # Keep only top destination matches.
+              ranked = ranked[:6]
+
+              known_codes = {
+                  x["code"]
+                  for x in ranked
+              }
+
+              # Retain previously working/assumed codes as
+              # fallback candidates.
+              for code in target.get(
+                  "seed_codes",
+                  []
+              ):
+                  if code not in known_codes:
+                      ranked.append(
+                          {
+                              "code": code,
+                              "name": (
+                                  "Seed / previous code"
+                              ),
+                              "country_code": (
+                                  target["country"]
+                              ),
+                              "match_score": 0.50,
+                          }
+                      )
+
+              return ranked
+
+          #
+          # STEP B
+          # Retrieve hotel content for each destination.
+          #
+
+          results = {
               "generated_at": datetime.now(
                   timezone.utc
               ).isoformat(),
-              "environment": "Hotelbeds Evaluation",
-              "source": "Hotelbeds Content API",
+              "environment": (
+                  "Hotelbeds Evaluation"
+              ),
+              "source": (
+                  "Hotelbeds Content API"
+              ),
               "destinations": [],
           }
 
-          successful_requests = 0
+          total_hotel_requests = 0
+          MAX_HOTEL_REQUESTS = 25
 
-          for destination in destinations:
-              name = destination["name"]
-              code = destination["code"]
+          for target in DESTINATION_TARGETS:
+              destination_name = target["name"]
+              wanted_hotels = preferred_names(
+                  destination_name
+              )
+
+              candidates = (
+                  destination_candidates(target)
+              )
 
               print()
-              print("=" * 70)
-              print(f"Discovering hotels: {name} ({code})")
-              print("=" * 70)
+              print("=" * 72)
+              print(
+                  f"{destination_name} "
+                  f"— candidate destinations"
+              )
+              print("=" * 72)
 
-              status, data = request_hotels(code)
+              for candidate in candidates:
+                  print(
+                      f"{candidate['name']} "
+                      f"({candidate['code']}) "
+                      f"score="
+                      f"{candidate['match_score']}"
+                  )
 
-              if status != 200 or data is None:
-                  result["destinations"].append({
-                      "name": name,
-                      "code": code,
-                      "http_status": status,
-                      "hotel_count": 0,
-                      "preferred_matches": [],
-                      "shortlist": [],
-                  })
+              collected = []
+              preferred_matches = []
 
-                  # Avoid hammering the evaluation API.
-                  time.sleep(1)
-                  continue
-
-              successful_requests += 1
-
-              raw_hotels = extract_hotels(data)
-
-              hotels = [
-                  simplify_hotel(h)
-                  for h in raw_hotels
-                  if isinstance(h, dict)
-              ]
-
-              hotels = [
-                  h for h in hotels
-                  if h.get("code") and h.get("name")
-              ]
-
-              wanted_names = preferred_names(name)
-
-              matches = []
-
-              for target in wanted_names:
-                  target_lower = target.lower()
-
-                  possible = [
-                      h for h in hotels
-                      if (
-                          target_lower in h["name"].lower()
-                          or h["name"].lower()
-                          in target_lower
+              for candidate in candidates:
+                  if (
+                      total_hotel_requests
+                      >= MAX_HOTEL_REQUESTS
+                  ):
+                      print(
+                          "Hotel request safety "
+                          "limit reached."
                       )
-                  ]
+                      break
 
-                  for hotel in possible:
-                      item = dict(hotel)
-                      item["watchlist_name"] = target
+                  destination_code = (
+                      candidate["code"]
+                  )
 
-                      if not any(
-                          m.get("code") == item.get("code")
-                          for m in matches
+                  page_from = 1
+                  max_pages = 3
+
+                  for page in range(
+                      1,
+                      max_pages + 1
+                  ):
+                      if (
+                          total_hotel_requests
+                          >= MAX_HOTEL_REQUESTS
                       ):
-                          matches.append(item)
+                          break
 
-              # Prefer 5-star, then 4-star properties.
-              luxury = [
-                  h for h in hotels
-                  if (h.get("stars") or 0) >= 4
-              ]
+                      page_to = (
+                          page_from + 999
+                      )
 
-              luxury.sort(
-                  key=lambda h: (
-                      -(h.get("stars") or 0),
-                      h.get("name", "").lower(),
+                      status, data = api_get(
+                          "/hotels",
+                          {
+                              "fields": "all",
+                              "language": "ENG",
+                              "destinationCode": (
+                                  destination_code
+                              ),
+                              "from": page_from,
+                              "to": page_to,
+                              "useSecondaryLanguage": (
+                                  "false"
+                              ),
+                          },
+                      )
+
+                      total_hotel_requests += 1
+
+                      print(
+                          f"{destination_code} "
+                          f"page {page}: "
+                          f"HTTP {status}"
+                      )
+
+                      if (
+                          status != 200
+                          or not data
+                      ):
+                          break
+
+                      raw_hotels = (
+                          extract_hotels(data)
+                      )
+
+                      simplified = [
+                          simplify_hotel(h)
+                          for h in raw_hotels
+                          if isinstance(h, dict)
+                      ]
+
+                      simplified = [
+                          h for h in simplified
+                          if (
+                              h["code"]
+                              and h["name"]
+                          )
+                      ]
+
+                      print(
+                          f"  hotels returned: "
+                          f"{len(simplified)}"
+                      )
+
+                      for hotel in simplified:
+                          if not any(
+                              existing["code"]
+                              == hotel["code"]
+                              for existing
+                              in collected
+                          ):
+                              hotel[
+                                  "source_destination_code"
+                              ] = destination_code
+
+                              collected.append(
+                                  hotel
+                              )
+
+                      #
+                      # Check preferred hotels.
+                      #
+
+                      for target_hotel in wanted_hotels:
+                          scored = []
+
+                          for hotel in simplified:
+                              score = similarity(
+                                  target_hotel,
+                                  hotel["name"]
+                              )
+
+                              if score >= 0.68:
+                                  scored.append(
+                                      (
+                                          score,
+                                          hotel
+                                      )
+                                  )
+
+                          scored.sort(
+                              key=lambda x: -x[0]
+                          )
+
+                          # Keep multiple Hotelbeds codes
+                          # where the same property is mapped
+                          # more than once.
+                          for score, hotel in scored[:5]:
+                              match = dict(hotel)
+
+                              match[
+                                  "watchlist_name"
+                              ] = target_hotel
+
+                              match[
+                                  "match_score"
+                              ] = round(
+                                  score,
+                                  3
+                              )
+
+                              if not any(
+                                  existing[
+                                      "code"
+                                  ]
+                                  == match["code"]
+                                  and existing[
+                                      "watchlist_name"
+                                  ]
+                                  == target_hotel
+                                  for existing
+                                  in preferred_matches
+                              ):
+                                  preferred_matches.append(
+                                      match
+                                  )
+
+                      #
+                      # Stop paging early once every preferred
+                      # hotel has a strong candidate.
+                      #
+
+                      found_targets = {
+                          m["watchlist_name"]
+                          for m in preferred_matches
+                          if (
+                              m["match_score"]
+                              >= 0.80
+                          )
+                      }
+
+                      if (
+                          wanted_hotels
+                          and all(
+                              target_name
+                              in found_targets
+                              for target_name
+                              in wanted_hotels
+                          )
+                      ):
+                          break
+
+                      #
+                      # If fewer than 1000 records came back,
+                      # there is no next page.
+                      #
+
+                      if len(simplified) < 1000:
+                          break
+
+                      page_from += 1000
+
+                      time.sleep(1)
+
+                  #
+                  # If all preferred hotels are already found,
+                  # no need to try weaker destination candidates.
+                  #
+
+                  found_targets = {
+                      m["watchlist_name"]
+                      for m in preferred_matches
+                      if (
+                          m["match_score"]
+                          >= 0.80
+                      )
+                  }
+
+                  if (
+                      wanted_hotels
+                      and all(
+                          target_name
+                          in found_targets
+                          for target_name
+                          in wanted_hotels
+                      )
+                  ):
+                      break
+
+                  time.sleep(1)
+
+              #
+              # Sort matches by target then confidence.
+              #
+
+              preferred_matches.sort(
+                  key=lambda x: (
+                      x.get(
+                          "watchlist_name",
+                          ""
+                      ),
+                      -x.get(
+                          "match_score",
+                          0
+                      ),
                   )
               )
 
-              shortlist = luxury[:40]
+              #
+              # Build 4/5-star discovery shortlist.
+              #
 
-              result["destinations"].append({
-                  "name": name,
-                  "code": code,
-                  "http_status": status,
-                  "hotel_count": len(hotels),
-                  "preferred_matches": matches,
-                  "shortlist": shortlist,
-              })
+              shortlist = [
+                  hotel
+                  for hotel in collected
+                  if (
+                      hotel.get("stars")
+                      or 0
+                  ) >= 4
+              ]
 
-              print(f"Hotels returned: {len(hotels)}")
-              print(
-                  f"4/5-star shortlist: {len(shortlist)}"
+              shortlist.sort(
+                  key=lambda x: (
+                      -(x.get("stars") or 0),
+                      x["name"].lower()
+                  )
               )
-              print(
-                  f"Watchlist matches: {len(matches)}"
+
+              shortlist = shortlist[:50]
+
+              results[
+                  "destinations"
+              ].append(
+                  {
+                      "name": destination_name,
+                      "country_code": target[
+                          "country"
+                      ],
+                      "resolved_destination_candidates": (
+                          candidates
+                      ),
+                      "hotel_count_collected": len(
+                          collected
+                      ),
+                      "preferred_matches": (
+                          preferred_matches
+                      ),
+                      "luxury_shortlist": (
+                          shortlist
+                      ),
+                  }
               )
 
-              if matches:
-                  print()
-                  print("WATCHLIST MATCHES")
+              print()
+              print(
+                  f"{destination_name}: "
+                  f"{len(collected)} "
+                  f"unique hotels collected"
+              )
 
-                  for hotel in matches:
+              if preferred_matches:
+                  print(
+                      "PREFERRED HOTEL MATCHES"
+                  )
+
+                  for hotel in preferred_matches:
                       print(
-                          f"- {hotel['name']} "
-                          f"| code={hotel['code']} "
-                          f"| stars={hotel.get('stars')}"
+                          f"  "
+                          f"{hotel['watchlist_name']}"
+                          f" -> "
+                          f"{hotel['name']}"
+                          f" | code="
+                          f"{hotel['code']}"
+                          f" | score="
+                          f"{hotel['match_score']}"
+                          f" | city="
+                          f"{hotel.get('city','')}"
+                          f" | address="
+                          f"{hotel.get('address','')}"
                       )
-
-              if shortlist:
-                  print()
-                  print("TOP HOTELBED CONTENT RESULTS")
-
-                  for hotel in shortlist[:15]:
-                      print(
-                          f"- {hotel['name']} "
-                          f"| code={hotel['code']} "
-                          f"| stars={hotel.get('stars')}"
-                      )
-
-              # Protect the evaluation quota.
-              time.sleep(1)
+              elif wanted_hotels:
+                  print(
+                      "No preferred hotel "
+                      "matches found."
+                  )
 
           OUTPUT.parent.mkdir(
               parents=True,
@@ -407,32 +912,26 @@ jobs:
               encoding="utf-8"
           ) as f:
               json.dump(
-                  result,
+                  results,
                   f,
                   indent=2,
                   ensure_ascii=False
               )
 
           print()
-          print("=" * 70)
-          print("DISCOVERY COMPLETE")
-          print("=" * 70)
+          print("=" * 72)
+          print("DISCOVERY FINISHED")
+          print("=" * 72)
           print(
-              f"Successful destination requests: "
-              f"{successful_requests}"
+              f"Hotel requests made: "
+              f"{total_hotel_requests}"
           )
           print(
-              f"Results saved to: {OUTPUT}"
+              f"Output: {OUTPUT}"
           )
-
-          if successful_requests == 0:
-              raise SystemExit(
-                  "No Hotelbeds Content API "
-                  "destination requests succeeded."
-              )
           PY
 
-      - name: Show discovery summary
+      - name: Show preferred hotel summary
         run: |
           python - <<'PY'
           import json
@@ -445,25 +944,28 @@ jobs:
               data = json.load(f)
 
           print()
-          print("HOTELBEDS HOTEL DISCOVERY")
-          print("=" * 70)
+          print("=" * 76)
+          print("V&V DEALS SCOUT — HOTELBEDS DISCOVERY SUMMARY")
+          print("=" * 76)
 
           for destination in data["destinations"]:
               print()
-              print(
-                  f"{destination['name']} "
-                  f"({destination['code']})"
+              print(destination["name"].upper())
+
+              candidates = destination.get(
+                  "resolved_destination_candidates",
+                  []
               )
 
-              print(
-                  f"HTTP status: "
-                  f"{destination['http_status']}"
-              )
+              print("Destination candidates:")
 
-              print(
-                  f"Hotels returned: "
-                  f"{destination['hotel_count']}"
-              )
+              for candidate in candidates:
+                  print(
+                      f"  {candidate['name']} "
+                      f"→ {candidate['code']} "
+                      f"(score "
+                      f"{candidate['match_score']})"
+                  )
 
               matches = destination.get(
                   "preferred_matches",
@@ -471,18 +973,29 @@ jobs:
               )
 
               if matches:
-                  print("Preferred matches:")
+                  print("Preferred hotels:")
 
                   for hotel in matches:
                       print(
-                          f"  {hotel['name']} "
-                          f"→ HOTELBEDS CODE "
+                          f"  "
+                          f"{hotel['watchlist_name']}"
+                          f" → "
+                          f"{hotel['name']}"
+                          f" → CODE "
                           f"{hotel['code']}"
+                          f" → confidence "
+                          f"{hotel['match_score']}"
                       )
               else:
                   print(
-                      "Preferred matches: none"
+                      "Preferred hotels: "
+                      "none"
                   )
+
+              print(
+                  "Luxury shortlist count: "
+                  f"{len(destination.get('luxury_shortlist', []))}"
+              )
           PY
 
       - name: Commit discovery results
@@ -495,6 +1008,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No discovery changes to commit"
           else
-            git commit -m "Add Hotelbeds hotel discovery results"
+            git commit -m "Refine Hotelbeds hotel discovery"
             git push
           fi
