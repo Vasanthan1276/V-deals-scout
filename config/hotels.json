@@ -1,63 +1,245 @@
 {
-  "provider_mode": "demo",
+  "provider_mode": "hotelbeds",
+  "environment": "evaluation",
+  "search_weeks": 8,
+  "max_requests_per_run": 24,
+
+  "search_profiles": [
+    {
+      "name": "Singapore weekend staycation",
+      "sub_category": "staycation",
+      "checkin_weekday": 5,
+      "nights": 1,
+      "destinations": ["Singapore"]
+    },
+    {
+      "name": "Short regional weekend",
+      "sub_category": "regional",
+      "checkin_weekday": 4,
+      "nights": 2,
+      "destinations": [
+        "Kuala Lumpur",
+        "Batam",
+        "Bintan"
+      ]
+    },
+    {
+      "name": "Long regional weekend",
+      "sub_category": "regional",
+      "checkin_weekday": 4,
+      "nights": 3,
+      "destinations": [
+        "Penang",
+        "Bangkok",
+        "Bali"
+      ]
+    }
+  ],
+
   "watchlist": [
     {
       "name": "Pan Pacific Singapore",
+      "hotelbeds_code": 74318,
       "destination": "Singapore",
+      "destination_code": "SIN",
       "stars": 5,
       "priority": 5
     },
     {
       "name": "PARKROYAL COLLECTION Marina Bay",
+      "hotelbeds_code": 74304,
       "destination": "Singapore",
+      "destination_code": "SIN",
       "stars": 5,
       "priority": 5
     },
     {
       "name": "Pan Pacific Orchard",
+      "hotelbeds_code": 74305,
       "destination": "Singapore",
+      "destination_code": "SIN",
       "stars": 5,
       "priority": 5
     },
     {
       "name": "Shangri-La Singapore",
+      "hotelbeds_code": 74312,
       "destination": "Singapore",
+      "destination_code": "SIN",
       "stars": 5,
       "priority": 5
     },
     {
       "name": "Conrad Singapore Orchard",
+      "hotelbeds_code": 74319,
       "destination": "Singapore",
-      "stars": 5,
-      "priority": 4
-    },
-    {
-      "name": "Eastern & Oriental Hotel",
-      "destination": "Penang",
+      "destination_code": "SIN",
       "stars": 5,
       "priority": 5
     },
     {
-      "name": "The RuMa Hotel and Residences",
-      "destination": "Kuala Lumpur",
-      "stars": 5,
-      "priority": 4
-    },
-    {
       "name": "Dusit Thani Laguna Singapore",
+      "hotelbeds_code": 745684,
       "destination": "Singapore",
+      "destination_code": "SIN",
       "stars": 5,
       "priority": 4
     },
     {
-      "name": "Sindhorn Kempinski Hotel Bangkok",
-      "destination": "Bangkok",
+      "name": "Capella Singapore",
+      "hotelbeds_code": 111357,
+      "destination": "Singapore",
+      "destination_code": "SIN",
+      "stars": 5,
+      "priority": 5
+    },
+
+    {
+      "name": "Eastern & Oriental Hotel",
+      "hotelbeds_code": 74248,
+      "destination": "Penang",
+      "destination_code": "PEN",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "Angsana Teluk Bahang",
+      "hotelbeds_code": 737423,
+      "destination": "Penang",
+      "destination_code": "PEN",
       "stars": 5,
       "priority": 4
     },
+    {
+      "name": "Ascott Gurney Penang",
+      "hotelbeds_code": 914120,
+      "destination": "Penang",
+      "destination_code": "PEN",
+      "stars": 5,
+      "priority": 4
+    },
+
+    {
+      "name": "The RuMa Hotel and Residences",
+      "hotelbeds_code": 639905,
+      "destination": "Kuala Lumpur",
+      "destination_code": "KUL",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "Banyan Tree Kuala Lumpur",
+      "hotelbeds_code": 623303,
+      "destination": "Kuala Lumpur",
+      "destination_code": "KUL",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "EQ Kuala Lumpur",
+      "hotelbeds_code": 74107,
+      "destination": "Kuala Lumpur",
+      "destination_code": "KUL",
+      "stars": 5,
+      "priority": 5
+    },
+
+    {
+      "name": "Siam Kempinski Hotel Bangkok",
+      "hotelbeds_code": 133164,
+      "destination": "Bangkok",
+      "destination_code": "BKK",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "137 Pillars Suites Bangkok",
+      "hotelbeds_code": 637617,
+      "destination": "Bangkok",
+      "destination_code": "BKK",
+      "stars": 5,
+      "priority": 4
+    },
+    {
+      "name": "137 Pillars Residences Bangkok",
+      "hotelbeds_code": 552121,
+      "destination": "Bangkok",
+      "destination_code": "BKK",
+      "stars": 5,
+      "priority": 4
+    },
+
     {
       "name": "The Apurva Kempinski Bali",
+      "hotelbeds_code": 636394,
       "destination": "Bali",
+      "destination_code": "BAI",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "Bali Nusa Dua Hotel",
+      "hotelbeds_code": 366599,
+      "destination": "Bali",
+      "destination_code": "BAI",
+      "stars": 5,
+      "priority": 4
+    },
+    {
+      "name": "Adiwana Resort Jembawan",
+      "hotelbeds_code": 553643,
+      "destination": "Bali",
+      "destination_code": "BAI",
+      "stars": 5,
+      "priority": 4
+    },
+
+    {
+      "name": "Batam Marriott Hotel Harbour Bay",
+      "hotelbeds_code": 776566,
+      "destination": "Batam",
+      "destination_code": "BTH",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "Montigo Resorts Nongsa",
+      "hotelbeds_code": 189510,
+      "destination": "Batam",
+      "destination_code": "BTH",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "Grand Mercure Batam Centre",
+      "hotelbeds_code": 1088251,
+      "destination": "Batam",
+      "destination_code": "BTH",
+      "stars": 5,
+      "priority": 4
+    },
+
+    {
+      "name": "Banyan Tree Bintan",
+      "hotelbeds_code": 76449,
+      "destination": "Bintan",
+      "destination_code": "BIN",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "Hotel Indigo Bintan Lagoi Beach",
+      "hotelbeds_code": 1038783,
+      "destination": "Bintan",
+      "destination_code": "BIN",
+      "stars": 5,
+      "priority": 5
+    },
+    {
+      "name": "HOMM Laguna Bintan",
+      "hotelbeds_code": 76450,
+      "destination": "Bintan",
+      "destination_code": "BIN",
       "stars": 5,
       "priority": 4
     }
