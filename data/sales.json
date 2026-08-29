@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T17:32:24+08:00",
+  "updated_at": "2026-08-29T17:39:40+08:00",
   "mode": "demo",
   "items": [
     {
@@ -15,7 +15,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 81.0,
-      "observed_at": "2026-08-29T17:32:24+08:00",
+      "observed_at": "2026-08-29T17:39:40+08:00",
       "exclude_from_best": true
     },
     {
@@ -31,7 +31,7 @@
       "url": "",
       "is_demo": true,
       "deal_score": 73.0,
-      "observed_at": "2026-08-29T17:32:24+08:00",
+      "observed_at": "2026-08-29T17:39:40+08:00",
       "exclude_from_best": true
     }
   ]
