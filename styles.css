@@ -76,3 +76,7 @@ a.action{display:inline-block;margin-top:12px;text-decoration:none;font-weight:8
   .metric b{font-size:1.2rem}
   .cards{grid-template-columns:1fr}
 }
+
+[hidden] {
+  display: none !important;
+}
