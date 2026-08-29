@@ -27,8 +27,7 @@ def _require_secret(name):
 
     if not value:
         raise RuntimeError(
-            f"Required environment variable "
-            f"{name} is missing."
+            f"Required environment variable {name} is missing."
         )
 
     return value
@@ -58,15 +57,13 @@ def _build_ssl_context():
     context = ssl.create_default_context()
 
     with tempfile.TemporaryDirectory() as temp_dir:
-        cert_path = (
-            Path(temp_dir)
-            / "client.pem"
-        )
+        cert_path = Path(
+            temp_dir
+        ) / "client.pem"
 
-        key_path = (
-            Path(temp_dir)
-            / "client.key"
-        )
+        key_path = Path(
+            temp_dir
+        ) / "client.key"
 
         cert_path.write_bytes(
             cert_bytes
@@ -143,21 +140,31 @@ def _search_windows(
 
     windows = []
 
-    for week in range(weeks):
+    for week in range(
+        weeks
+    ):
         check_in = (
             first
-            + timedelta(weeks=week)
+            + timedelta(
+                weeks=week
+            )
         )
 
         check_out = (
             check_in
-            + timedelta(days=nights)
+            + timedelta(
+                days=nights
+            )
         )
 
         windows.append(
             {
-                "check_in": check_in,
-                "check_out": check_out,
+                "check_in": (
+                    check_in
+                ),
+                "check_out": (
+                    check_out
+                ),
                 "nights": nights,
             }
         )
@@ -184,6 +191,7 @@ def _availability_request(
                 check_out
             ),
         },
+
         "occupancies": [
             {
                 "rooms": 1,
@@ -191,6 +199,7 @@ def _availability_request(
                 "children": 0,
             }
         ],
+
         "hotels": {
             "hotel": hotel_codes
         },
@@ -198,7 +207,9 @@ def _availability_request(
 
     body = json.dumps(
         payload
-    ).encode("utf-8")
+    ).encode(
+        "utf-8"
+    )
 
     request = urllib.request.Request(
         API_URL,
@@ -207,14 +218,23 @@ def _availability_request(
             "Accept": (
                 "application/json"
             ),
-            "Accept-Encoding": "gzip",
+
+            "Accept-Encoding": (
+                "gzip"
+            ),
+
             "Content-Type": (
                 "application/json"
             ),
-            "Api-key": api_key,
+
+            "Api-key": (
+                api_key
+            ),
+
             "X-Signature": (
                 _signature()
             ),
+
             "User-Agent": (
                 "V-deals-scout/1.0"
             ),
@@ -229,7 +249,9 @@ def _availability_request(
             timeout=60,
         ) as response:
 
-            raw = response.read()
+            raw = (
+                response.read()
+            )
 
             if (
                 response.headers.get(
@@ -238,18 +260,25 @@ def _availability_request(
                 == "gzip"
             ):
                 import gzip
+
                 raw = gzip.decompress(
                     raw
                 )
 
             data = json.loads(
-                raw.decode("utf-8")
+                raw.decode(
+                    "utf-8"
+                )
             )
 
-            return (
-                response.status,
-                data,
-            )
+            return {
+                "ok": True,
+                "status": (
+                    response.status
+                ),
+                "data": data,
+                "error": None,
+            }
 
     except urllib.error.HTTPError as exc:
         message = (
@@ -263,10 +292,17 @@ def _availability_request(
         print(
             f"Hotelbeds HTTP "
             f"{exc.code}: "
-            f"{message[:1000]}"
+            f"{message[:1200]}"
         )
 
-        return exc.code, None
+        return {
+            "ok": False,
+            "status": (
+                exc.code
+            ),
+            "data": None,
+            "error": message,
+        }
 
     except Exception as exc:
         print(
@@ -274,10 +310,17 @@ def _availability_request(
             f"failed: {exc}"
         )
 
-        return 0, None
+        return {
+            "ok": False,
+            "status": 0,
+            "data": None,
+            "error": str(exc),
+        }
 
 
-def _extract_hotels(data):
+def _extract_hotels(
+    data,
+):
     if not isinstance(
         data,
         dict,
@@ -296,7 +339,9 @@ def _extract_hotels(data):
         dict,
     ):
         currency = (
-            block.get("currency")
+            block.get(
+                "currency"
+            )
             or currency
         )
 
@@ -309,19 +354,30 @@ def _extract_hotels(data):
             hotels,
             list,
         ):
-            return hotels, currency
+            return (
+                hotels,
+                currency,
+            )
 
     return [], currency
 
 
-def _rate_value(rate):
+def _rate_value(
+    rate,
+):
     raw = (
-        rate.get("sellingRate")
-        or rate.get("net")
+        rate.get(
+            "sellingRate"
+        )
+        or rate.get(
+            "net"
+        )
     )
 
     try:
-        return float(raw)
+        return float(
+            raw
+        )
 
     except (
         TypeError,
@@ -330,19 +386,29 @@ def _rate_value(rate):
         return None
 
 
-def _cheapest_rate(hotel):
+def _cheapest_rate(
+    hotel,
+):
     cheapest = None
 
     for room in (
-        hotel.get("rooms", [])
+        hotel.get(
+            "rooms",
+            [],
+        )
         or []
     ):
         for rate in (
-            room.get("rates", [])
+            room.get(
+                "rates",
+                [],
+            )
             or []
         ):
-            value = _rate_value(
-                rate
+            value = (
+                _rate_value(
+                    rate
+                )
             )
 
             if value is None:
@@ -351,17 +417,23 @@ def _cheapest_rate(hotel):
             if (
                 cheapest is None
                 or value
-                < cheapest["value"]
+                < cheapest[
+                    "value"
+                ]
             ):
                 cheapest = {
                     "value": value,
+
                     "room_name": (
-                        room.get("name")
+                        room.get(
+                            "name"
+                        )
                         or room.get(
                             "code"
                         )
                         or ""
                     ),
+
                     "board_name": (
                         rate.get(
                             "boardName"
@@ -371,24 +443,28 @@ def _cheapest_rate(hotel):
                         )
                         or ""
                     ),
+
                     "board_code": (
                         rate.get(
                             "boardCode"
                         )
                         or ""
                     ),
+
                     "rate_class": (
                         rate.get(
                             "rateClass"
                         )
                         or ""
                     ),
+
                     "rate_type": (
                         rate.get(
                             "rateType"
                         )
                         or ""
                     ),
+
                     "cancellation_policies": (
                         rate.get(
                             "cancellationPolicies"
@@ -400,11 +476,13 @@ def _cheapest_rate(hotel):
     return cheapest
 
 
-def _includes_breakfast(rate):
+def _includes_breakfast(
+    rate,
+):
     board = (
         rate.get(
             "board_name",
-            ""
+            "",
         )
         .upper()
     )
@@ -412,7 +490,7 @@ def _includes_breakfast(rate):
     board_code = (
         rate.get(
             "board_code",
-            ""
+            "",
         )
         .upper()
     )
@@ -428,11 +506,13 @@ def _includes_breakfast(rate):
     }
 
 
-def _flexible_cancellation(rate):
+def _flexible_cancellation(
+    rate,
+):
     rate_class = (
         rate.get(
             "rate_class",
-            ""
+            "",
         )
         .upper()
     )
@@ -445,7 +525,9 @@ def _flexible_cancellation(rate):
         [],
     )
 
-    return bool(policies)
+    return bool(
+        policies
+    )
 
 
 def _historical_reference(
@@ -454,18 +536,6 @@ def _historical_reference(
     check_out,
     currency,
 ):
-    """
-    Historical comparison is intentionally
-    strict.
-
-    We compare the same hotel AND the same
-    future stay window across previous daily
-    scans.
-
-    This prevents unrelated dates from
-    creating a misleading 'normal price'.
-    """
-
     history = read_json(
         "data/history.json",
         {
@@ -485,25 +555,33 @@ def _historical_reference(
             continue
 
         if (
-            observation.get("name")
+            observation.get(
+                "name"
+            )
             != hotel_name
         ):
             continue
 
         if (
-            observation.get("check_in")
+            observation.get(
+                "check_in"
+            )
             != check_in
         ):
             continue
 
         if (
-            observation.get("check_out")
+            observation.get(
+                "check_out"
+            )
             != check_out
         ):
             continue
 
         if (
-            observation.get("currency")
+            observation.get(
+                "currency"
+            )
             != currency
         ):
             continue
@@ -513,7 +591,9 @@ def _historical_reference(
         )
 
         try:
-            value = float(value)
+            value = float(
+                value
+            )
 
         except (
             TypeError,
@@ -522,13 +602,17 @@ def _historical_reference(
             continue
 
         if value > 0:
-            prices.append(value)
+            prices.append(
+                value
+            )
 
-    # We want at least three prior
-    # observations before calling
-    # something "historical".
-    if len(prices) < 3:
-        return None, len(prices)
+    if len(
+        prices
+    ) < 3:
+        return (
+            None,
+            len(prices),
+        )
 
     return (
         round(
@@ -541,52 +625,55 @@ def _historical_reference(
     )
 
 
-def _apply_reference_prices(items):
-    """
-    Three possible states:
-
-    1. observed_history
-       Same hotel / same stay dates have
-       >=3 earlier observations.
-
-    2. peer_comparison
-       Not enough history yet, but several
-       hotels exist for the same destination
-       and dates.
-
-    3. current_only
-       No useful benchmark yet.
-    """
-
+def _apply_reference_prices(
+    items,
+):
     groups = {}
 
     for item in items:
         key = (
-            item["destination"],
-            item["check_in"],
-            item["check_out"],
-            item["currency"],
+            item[
+                "destination"
+            ],
+            item[
+                "check_in"
+            ],
+            item[
+                "check_out"
+            ],
+            item[
+                "currency"
+            ],
         )
 
         groups.setdefault(
             key,
             [],
-        ).append(item)
+        ).append(
+            item
+        )
 
     for group in groups.values():
         peer_prices = [
             float(
-                x["current_price"]
+                item[
+                    "current_price"
+                ]
             )
-            for x in group
-            if x.get(
+
+            for item
+            in group
+
+            if item.get(
                 "current_price"
             )
         ]
 
         peer_median = None
 
-        if len(peer_prices) >= 2:
+        if len(
+            peer_prices
+        ) >= 2:
             peer_median = round(
                 statistics.median(
                     peer_prices
@@ -597,10 +684,18 @@ def _apply_reference_prices(items):
         for item in group:
             historical, count = (
                 _historical_reference(
-                    item["name"],
-                    item["check_in"],
-                    item["check_out"],
-                    item["currency"],
+                    item[
+                        "name"
+                    ],
+                    item[
+                        "check_in"
+                    ],
+                    item[
+                        "check_out"
+                    ],
+                    item[
+                        "currency"
+                    ],
                 )
             )
 
@@ -627,11 +722,11 @@ def _apply_reference_prices(items):
 
                 item[
                     "peer_median"
-                ] = peer_median
+                ] = (
+                    peer_median
+                )
 
             elif peer_median:
-                # Do NOT pretend peer prices
-                # are historical prices.
                 item[
                     "historical_median"
                 ] = item[
@@ -640,7 +735,9 @@ def _apply_reference_prices(items):
 
                 item[
                     "peer_median"
-                ] = peer_median
+                ] = (
+                    peer_median
+                )
 
                 item[
                     "reference_source"
@@ -678,32 +775,29 @@ def _apply_reference_prices(items):
                 )
 
 
-def _score_hotel(item):
-    """
-    Observed-history hotels can achieve
-    the full 100-point deal score.
-
-    Peer-only comparison is deliberately
-    conservative and capped below the
-    'excellent' threshold of 85.
-    """
-
+def _score_hotel(
+    item,
+):
     basis = item.get(
         "score_basis"
     )
 
-    if basis == "observed_history":
-        return hotel_score(item)
+    if (
+        basis
+        == "observed_history"
+    ):
+        return hotel_score(
+            item
+        )
 
-    # hotel_score sees no historical
-    # discount here because historical_median
-    # was intentionally set equal to the
-    # current price.
     base_score = hotel_score(
         item
     )
 
-    if basis == "peer_comparison":
+    if (
+        basis
+        == "peer_comparison"
+    ):
         current = float(
             item.get(
                 "current_price",
@@ -726,17 +820,13 @@ def _score_hotel(item):
             saving_pct = max(
                 0,
                 (
-                    peer - current
+                    peer
+                    - current
                 )
                 / peer
                 * 100,
             )
 
-        # Peer pricing can contribute at
-        # most 25 points.
-        #
-        # A 30%+ peer discount earns the
-        # maximum peer-value bonus.
         peer_bonus = min(
             25,
             (
@@ -751,8 +841,6 @@ def _score_hotel(item):
             + peer_bonus
         )
 
-        # Never label a peer-only result
-        # as "excellent".
         return round(
             min(
                 score,
@@ -761,13 +849,54 @@ def _score_hotel(item):
             1,
         )
 
-    # Current observation only.
     return round(
         min(
             base_score,
             69,
         ),
         1,
+    )
+
+
+def _planned_request_count(
+    profiles,
+    watchlist,
+    weeks,
+    max_requests,
+):
+    total = 0
+
+    for profile in profiles:
+        destinations = set(
+            profile.get(
+                "destinations",
+                [],
+            )
+        )
+
+        relevant = [
+            hotel
+            for hotel
+            in watchlist
+            if hotel.get(
+                "destination"
+            )
+            in destinations
+        ]
+
+        if not relevant:
+            continue
+
+        total += len(
+            _search_windows(
+                profile,
+                weeks,
+            )
+        )
+
+    return min(
+        total,
+        max_requests,
     )
 
 
@@ -801,6 +930,39 @@ def _scan_live():
         [],
     )
 
+    planned_requests = (
+        _planned_request_count(
+            profiles,
+            watchlist,
+            weeks,
+            max_requests,
+        )
+    )
+
+    print()
+    print(
+        "=" * 70
+    )
+
+    print(
+        "HOTELBEDS SCAN PLAN"
+    )
+
+    print(
+        "=" * 70
+    )
+
+    print(
+        "Planned API requests: "
+        f"{planned_requests}"
+    )
+
+    print(
+        "Maximum permitted by "
+        "Deals Scout: "
+        f"{max_requests}"
+    )
+
     by_code = {
         int(
             hotel[
@@ -824,6 +986,7 @@ def _scan_live():
 
     request_count = 0
     successful_requests = 0
+    failed_requests = []
 
     for profile in profiles:
         destinations = set(
@@ -835,7 +998,8 @@ def _scan_live():
 
         relevant = [
             hotel
-            for hotel in watchlist
+            for hotel
+            in watchlist
             if hotel.get(
                 "destination"
             )
@@ -848,6 +1012,7 @@ def _scan_live():
                     "hotelbeds_code"
                 ]
             )
+
             for hotel
             in relevant
         ]
@@ -867,23 +1032,22 @@ def _scan_live():
                 request_count
                 >= max_requests
             ):
-                print(
-                    "Hotelbeds request "
-                    "safety limit reached."
-                )
                 break
 
             print()
+
             print(
-                f"Scanning "
-                f"{profile['name']}: "
+                f"Request "
+                f"{request_count + 1}"
+                f"/{planned_requests}: "
+                f"{profile['name']} | "
                 f"{window['check_in']} "
                 f"→ "
-                f"{window['check_out']} "
-                f"({len(hotel_codes)} hotels)"
+                f"{window['check_out']} | "
+                f"{len(hotel_codes)} hotels"
             )
 
-            status, data = (
+            response = (
                 _availability_request(
                     context,
                     window[
@@ -898,23 +1062,64 @@ def _scan_live():
 
             request_count += 1
 
-            if (
-                status != 200
-                or not data
-            ):
-                continue
+            if not response[
+                "ok"
+            ]:
+                failed_requests.append(
+                    {
+                        "request": (
+                            request_count
+                        ),
+
+                        "profile": (
+                            profile[
+                                "name"
+                            ]
+                        ),
+
+                        "check_in": str(
+                            window[
+                                "check_in"
+                            ]
+                        ),
+
+                        "status": (
+                            response[
+                                "status"
+                            ]
+                        ),
+                    }
+                )
+
+                print(
+                    "❌ Request failed. "
+                    "The scan will not be "
+                    "published."
+                )
+
+                # Once one API request fails,
+                # stop immediately.
+                #
+                # This avoids wasting more
+                # quota and guarantees that
+                # partial scans never replace
+                # good historical data.
+                break
 
             successful_requests += 1
 
             hotels, currency = (
                 _extract_hotels(
-                    data
+                    response[
+                        "data"
+                    ]
                 )
             )
 
             print(
-                "Availability returned: "
-                f"{len(hotels)} hotels"
+                "✅ Request succeeded — "
+                f"{len(hotels)} hotels "
+                "available"
             )
 
             for hotel in hotels:
@@ -956,7 +1161,9 @@ def _scan_live():
                 )
 
                 total_price = round(
-                    rate["value"],
+                    rate[
+                        "value"
+                    ],
                     2,
                 )
 
@@ -973,7 +1180,9 @@ def _scan_live():
                         f"{window['check_in']}"
                     ),
 
-                    "category": "hotel",
+                    "category": (
+                        "hotel"
+                    ),
 
                     "sub_category": (
                         profile[
@@ -989,7 +1198,9 @@ def _scan_live():
                         "evaluation"
                     ),
 
-                    "hotelbeds_code": code,
+                    "hotelbeds_code": (
+                        code
+                    ),
 
                     "name": (
                         hotel.get(
@@ -1024,7 +1235,9 @@ def _scan_live():
                         ]
                     ),
 
-                    "nights": nights,
+                    "nights": (
+                        nights
+                    ),
 
                     "stars": (
                         config_hotel.get(
@@ -1041,7 +1254,9 @@ def _scan_live():
                         total_price
                     ),
 
-                    "currency": currency,
+                    "currency": (
+                        currency
+                    ),
 
                     "room_name": (
                         rate[
@@ -1104,31 +1319,145 @@ def _scan_live():
                     item
                 )
 
-            time.sleep(0.3)
+            time.sleep(
+                0.25
+            )
+
+        if failed_requests:
+            break
+
+        if (
+            request_count
+            >= max_requests
+        ):
+            break
 
     print()
     print(
-        "Hotelbeds requests: "
+        "=" * 70
+    )
+
+    print(
+        "HOTELBEDS SCAN INTEGRITY CHECK"
+    )
+
+    print(
+        "=" * 70
+    )
+
+    print(
+        f"Planned requests:   "
+        f"{planned_requests}"
+    )
+
+    print(
+        f"Requests attempted: "
         f"{request_count}"
     )
 
     print(
-        "Successful requests: "
+        f"Requests succeeded: "
         f"{successful_requests}"
     )
 
     print(
-        "Available hotel/date "
-        "combinations: "
+        f"Requests failed:    "
+        f"{len(failed_requests)}"
+    )
+
+    print(
+        "Availability results: "
         f"{len(results)}"
     )
 
-    if successful_requests == 0:
-        raise RuntimeError(
-            "All Hotelbeds "
-            "availability requests "
-            "failed."
+    #
+    # CRITICAL SAFETY CHECK
+    #
+    # If ANY planned API request fails,
+    # raise an exception BEFORE returning
+    # results to main.py.
+    #
+    # main.py therefore never writes new
+    # data files, and GitHub never commits
+    # a partial scan.
+    #
+
+    if failed_requests:
+        failure = (
+            failed_requests[0]
         )
+
+        raise RuntimeError(
+            "Hotelbeds scan incomplete. "
+            f"Request "
+            f"{failure['request']} "
+            f"failed with HTTP "
+            f"{failure['status']}. "
+            "Existing Deals Scout data "
+            "has been preserved."
+        )
+
+    if (
+        request_count
+        != planned_requests
+    ):
+        raise RuntimeError(
+            "Hotelbeds scan ended before "
+            "all planned requests were "
+            "completed. "
+            f"Completed "
+            f"{request_count}/"
+            f"{planned_requests}. "
+            "Existing data has been "
+            "preserved."
+        )
+
+    if (
+        successful_requests
+        != planned_requests
+    ):
+        raise RuntimeError(
+            "Hotelbeds scan integrity "
+            "check failed. "
+            f"Only "
+            f"{successful_requests}/"
+            f"{planned_requests} "
+            "requests succeeded. "
+            "Existing data has been "
+            "preserved."
+        )
+
+    #
+    # A completely empty 24-request scan
+    # would be extremely unusual across
+    # our full hotel watchlist.
+    #
+    # Treat it as suspicious rather than
+    # wiping yesterday's useful dataset.
+    #
+
+    if (
+        planned_requests > 0
+        and len(results) == 0
+    ):
+        raise RuntimeError(
+            "Hotelbeds completed all "
+            "requests but returned zero "
+            "availability across the "
+            "entire watchlist. "
+            "Existing data has been "
+            "preserved for safety."
+        )
+
+    print()
+    print(
+        "✅ SCAN PASSED INTEGRITY CHECK"
+    )
+
+    print(
+        "All planned Hotelbeds "
+        "requests succeeded."
+    )
 
     _apply_reference_prices(
         results
@@ -1142,12 +1471,13 @@ def _scan_live():
         )
 
     results.sort(
-        key=lambda x: (
-            -x.get(
+        key=lambda item: (
+            -item.get(
                 "deal_score",
                 0,
             ),
-            x.get(
+
+            item.get(
                 "current_price",
                 999999,
             ),
@@ -1171,9 +1501,8 @@ def scan_hotels():
     if mode != "hotelbeds":
         raise RuntimeError(
             "Hotel scanner is "
-            "configured for "
-            f"unsupported mode: "
-            f"{mode}"
+            "configured for unsupported "
+            f"mode: {mode}"
         )
 
     return _scan_live()
