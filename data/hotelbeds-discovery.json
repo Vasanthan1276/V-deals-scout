@@ -1,0 +1,2169 @@
+{
+  "generated_at": "2026-08-29T09:08:52.565458+00:00",
+  "environment": "Hotelbeds Evaluation",
+  "source": "Hotelbeds Content API",
+  "destinations": [
+    {
+      "name": "Singapore",
+      "code": "SIN",
+      "http_status": 200,
+      "hotel_count": 457,
+      "preferred_matches": [
+        {
+          "code": 74318,
+          "name": "Pan Pacific Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Raffles Boulevard, Marina Square, 7",
+          "watchlist_name": "Pan Pacific Singapore"
+        },
+        {
+          "code": 96024,
+          "name": "Re",
+          "stars": 3,
+          "category_code": "3EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "175A Chin Swee Road",
+          "watchlist_name": "Pan Pacific Singapore"
+        },
+        {
+          "code": 74304,
+          "name": "PARKROYAL COLLECTION Marina Bay, Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Raffles Boulevard, Marina Square, 6",
+          "watchlist_name": "PARKROYAL COLLECTION Marina Bay"
+        },
+        {
+          "code": 74305,
+          "name": "Pan Pacific Orchard",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Claymore Road, 10",
+          "watchlist_name": "Pan Pacific Orchard"
+        },
+        {
+          "code": 74312,
+          "name": "Shangri-la Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "22 Orange Grove Road, 22",
+          "watchlist_name": "Shangri-La Singapore"
+        },
+        {
+          "code": 74319,
+          "name": "Conrad Singapore Orchard",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "Singapore",
+          "address": "Cuscaden Road, 1",
+          "watchlist_name": "Conrad Singapore Orchard"
+        },
+        {
+          "code": 745684,
+          "name": "Dusit Thani Laguna Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "Singapore",
+          "address": "11 Laguna Golf Green",
+          "watchlist_name": "Dusit Thani Laguna Singapore"
+        }
+      ],
+      "shortlist": [
+        {
+          "code": 1039300,
+          "name": "21 Carpenter, Singapore, a Member of Design Hotels",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "Singapore",
+          "address": "21 CARPENTER STREET"
+        },
+        {
+          "code": 80664,
+          "name": "Amara Sanctuary Sentosa",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Larkhill Road, Sentosa, 1"
+        },
+        {
+          "code": 74284,
+          "name": "Amara Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Tanjong Pagar Road, 165"
+        },
+        {
+          "code": 603342,
+          "name": "Andaz Singapore, By Hyatt",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "5 fraser street 5, 5"
+        },
+        {
+          "code": 1033924,
+          "name": "Artyzen Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "Singapore",
+          "address": "9 Cuscaden Rd"
+        },
+        {
+          "code": 558201,
+          "name": "Ascott Orchard Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Cairnhill Road, 11"
+        },
+        {
+          "code": 111355,
+          "name": "Ascott Raffles Place Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Finlayson Green, 2"
+        },
+        {
+          "code": 111357,
+          "name": "Capella Singapore",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "The Knolls, Sentosa Island, 1"
+        },
+        {
+          "code": 674936,
+          "name": "Capri by Fraser China Square Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "Singapore",
+          "address": "181 South Bridge Road, Singapore, 181"
+        },
+        {
+          "code": 1006542,
+          "name": "COMO Metropolitan Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "Singapore",
+          "address": "30 Bideford Rd"
+        },
+        {
+          "code": 69617,
+          "name": "Conrad Singapore Marina Bay",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "2 Temasek Boulevard"
+        },
+        {
+          "code": 74319,
+          "name": "Conrad Singapore Orchard",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "Singapore",
+          "address": "Cuscaden Road, 1"
+        },
+        {
+          "code": 98032,
+          "name": "Crowne Plaza Changi Airport",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "75 Airport Boulevard"
+        },
+        {
+          "code": 592542,
+          "name": "DAO BY DORSETT AMTD SINGAPORE",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "Singapore",
+          "address": "Shenton Way, Oue Downtown 1, 6"
+        },
+        {
+          "code": 745684,
+          "name": "Dusit Thani Laguna Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "Singapore",
+          "address": "11 Laguna Golf Green"
+        },
+        {
+          "code": 69630,
+          "name": "Fairmont Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "80 Bras Basah Road 189560 Singapore, 80 26"
+        },
+        {
+          "code": 74289,
+          "name": "Four Seasons Hotel Singapore",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Orchard Boulevard, 190"
+        },
+        {
+          "code": 74300,
+          "name": "Frasers House, a Luxury Collection Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "80 Middle Road"
+        },
+        {
+          "code": 74294,
+          "name": "Goodwood Park",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "22 Scotts Road"
+        },
+        {
+          "code": 69621,
+          "name": "Grand Copthorne Waterfront Hotel Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Havelock Road, 392"
+        },
+        {
+          "code": 69622,
+          "name": "Grand Hyatt Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "10 Scotts Road"
+        },
+        {
+          "code": 74295,
+          "name": "Grand Park City Hall",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "10 Coleman Street"
+        },
+        {
+          "code": 69626,
+          "name": "Hilton Singapore Orchard",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "333 Orchard Road, 333"
+        },
+        {
+          "code": 74292,
+          "name": "InterContinental Singapore Robertson Quay",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "1 Nanson Road"
+        },
+        {
+          "code": 409512,
+          "name": "JW Marriott Hotel Singapore South Beach",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "30 Beach Road, 634"
+        },
+        {
+          "code": 1081222,
+          "name": "Mandai Rainforest Resort By Banyan Tree",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "Singapore",
+          "address": "60 Mandai Lake Road"
+        },
+        {
+          "code": 69634,
+          "name": "Mandarin Oriental Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Raffles Avenue, 5"
+        },
+        {
+          "code": 125839,
+          "name": "Marina Bay Sands",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Bayfront Avenue, 10"
+        },
+        {
+          "code": 142879,
+          "name": "METT Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Canning Walk, 11"
+        },
+        {
+          "code": 993543,
+          "name": "Mondrian Singapore Duxton",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "16A Duxton Hill 16A Duxton Hill 16A Duxton Hill, 12"
+        },
+        {
+          "code": 88943,
+          "name": "Naumi Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "41 Seah Street"
+        },
+        {
+          "code": 148173,
+          "name": "Oasia Resort Sentosa by Far East Hospitality",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "23 Beach View, Sentosa, ."
+        },
+        {
+          "code": 231463,
+          "name": "One 15 Marina Club",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "01-01, 11 Cove Drive Sentosa Cove"
+        },
+        {
+          "code": 363211,
+          "name": "One Farrer Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Farrer Park Station Road Singapore, 1"
+        },
+        {
+          "code": 69628,
+          "name": "Orchard Hotel Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Orchard Road, 442"
+        },
+        {
+          "code": 74305,
+          "name": "Pan Pacific Orchard",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Claymore Road, 10"
+        },
+        {
+          "code": 202628,
+          "name": "Pan Pacific Serviced Suites Beach Road",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Beach Road, 7500B"
+        },
+        {
+          "code": 74318,
+          "name": "Pan Pacific Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Raffles Boulevard, Marina Square, 7"
+        },
+        {
+          "code": 69632,
+          "name": "Paradox Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "20 Merchant Road"
+        },
+        {
+          "code": 74304,
+          "name": "PARKROYAL COLLECTION Marina Bay, Singapore",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "SIN",
+          "destination_name": "",
+          "city": "SINGAPORE",
+          "address": "Raffles Boulevard, Marina Square, 6"
+        }
+      ]
+    },
+    {
+      "name": "Penang",
+      "code": "PEN",
+      "http_status": 200,
+      "hotel_count": 344,
+      "preferred_matches": [],
+      "shortlist": [
+        {
+          "code": 944674,
+          "name": "Amari SPICE Penang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "2, Persiaran Mahsuri, Bayan Lepas"
+        },
+        {
+          "code": 737423,
+          "name": "Angsana Teluk Bahang, Penang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "11, Jalan Teluk Bahang, 11050, Teluk Bahang"
+        },
+        {
+          "code": 914120,
+          "name": "Ascott Gurney Penang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang, Georgetown",
+          "address": "No 18 Gurney Drive"
+        },
+        {
+          "code": 211049,
+          "name": "Campbell House Penang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "106 Lebuh Campbell, 106"
+        },
+        {
+          "code": 74248,
+          "name": "Eastern and Oriental Hotel Penang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "PENANG",
+          "address": "Farquhar Street, 10"
+        },
+        {
+          "code": 87117,
+          "name": "G Hotel Gurney",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "George Town",
+          "address": "Persiaran Gurney, 168A"
+        },
+        {
+          "code": 393000,
+          "name": "G Hotel Kelawai",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "GEORGE TOWN",
+          "address": "Persiaran Maktab, 2"
+        },
+        {
+          "code": 74250,
+          "name": "Gurney Bay Hotel, A PARKROYAL Partner Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "George Town",
+          "address": "Persiaran Gurney, 53"
+        },
+        {
+          "code": 121278,
+          "name": "Hard Rock Hotel Penang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Batu Ferringhi",
+          "address": "Batu Ferringhi Beach, 1"
+        },
+        {
+          "code": 478222,
+          "name": "Lexis Suites Penang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Pulau Pinang",
+          "address": "28 Jalan Teluk Kumbar, 221"
+        },
+        {
+          "code": 74253,
+          "name": "Lone Pine, Penang, a Tribute Portfolio Resort",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Batu Ferringhi",
+          "address": "97 Batu Feringghi"
+        },
+        {
+          "code": 231395,
+          "name": "Macalister Mansion",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "PENANG",
+          "address": "228 Macalister Road George Town"
+        },
+        {
+          "code": 68079,
+          "name": "PARKROYAL Penang Resort",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "PENANG",
+          "address": "Batu Ferringhi Beach"
+        },
+        {
+          "code": 74610,
+          "name": "Shangri-La Rasa Sayang, Penang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Batu Feringgi",
+          "address": "Batu Feringgi Beach"
+        },
+        {
+          "code": 1008159,
+          "name": "The George Penang By The Crest Collection",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "138, Jalan Penang , George Town 10100 Penang, 138"
+        },
+        {
+          "code": 419418,
+          "name": "The Light Hotel Penang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "SEBERANG JAYA",
+          "address": "Lebuh Tenggiri 2,Bandar Seberang Jaya"
+        },
+        {
+          "code": 703960,
+          "name": "Vangohh Eminent Hotel Spa",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "PENANG",
+          "address": "3406 Jalan Machang Bubok 2 Taman Machang Bubok"
+        },
+        {
+          "code": 811059,
+          "name": "88 Armenian",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "GEORGE TOWN",
+          "address": "88 90 Armenian Street"
+        },
+        {
+          "code": 81372,
+          "name": "AC Hotel Penang",
+          "stars": 4,
+          "category_code": "4LUX",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "BUKIT JAMBUL",
+          "address": "Jalan Bukit Gambir, Penang, 213"
+        },
+        {
+          "code": 229714,
+          "name": "Apple Heritage Hotel",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Georgetown",
+          "address": "Jalan Sultan Ahmad Shah, 15"
+        },
+        {
+          "code": 742024,
+          "name": "Bahang Bay Hotel",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "15, Jalan Teluk Bahang, Teluk Bahang"
+        },
+        {
+          "code": 59463,
+          "name": "Bayview Beach Resort Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Batu Ferringhi",
+          "address": "Batu Ferringhi Beach, Batu Ferringhi"
+        },
+        {
+          "code": 74243,
+          "name": "Bayview Hotel Georgetown Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "George Town",
+          "address": "Farquhar Street, 25-A"
+        },
+        {
+          "code": 74244,
+          "name": "Berjaya Penang Hotel",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "George Town",
+          "address": "1-Stop Midlands Park, Burmah Road, ."
+        },
+        {
+          "code": 1021889,
+          "name": "Citadines Connect Georgetown Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "No. 202 Lebuh Noordin"
+        },
+        {
+          "code": 893997,
+          "name": "CITADINES PRAI PENANG",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "G-01 Jalan Juru Sentral Bukit Mertajam, G-01"
+        },
+        {
+          "code": 74246,
+          "name": "Cititel Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "George Town",
+          "address": "Jalan Penang, 66"
+        },
+        {
+          "code": 74606,
+          "name": "Copthorne Orchid Hotel Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "PENANG",
+          "address": "Jalan Tanjung Bungah, 1"
+        },
+        {
+          "code": 1025784,
+          "name": "Crowne Plaza Penang Straits City",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "4823 4824 2f Jalan Pantai Taman Selat Butterwort"
+        },
+        {
+          "code": 486245,
+          "name": "Doubletree by Hilton Penang, Malaysia",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "Jalan Low Yat.Batu Ferringhi, 56"
+        },
+        {
+          "code": 697262,
+          "name": "East Indies Mansion",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "PENANG",
+          "address": "No 25 Lebuh China World Heritage Zone"
+        },
+        {
+          "code": 127941,
+          "name": "Eastin Hotel Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Bayan Lepas",
+          "address": "1, Solok Bayan Indah, Queensbay, Bayan Lepas, 328"
+        },
+        {
+          "code": 121997,
+          "name": "Flamingo By The Beach",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Tanjung Bungah",
+          "address": "Jalan Tanjung Bungah"
+        },
+        {
+          "code": 1052112,
+          "name": "Holiday Inn & Suites Penang Prai",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "1919 Menara Sentral, Jalan Juru Sentral"
+        },
+        {
+          "code": 653502,
+          "name": "Hompton by the Beach Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "No 533 Jalan C. M. Hashim"
+        },
+        {
+          "code": 539361,
+          "name": "Iconic Hotel Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "PENANG",
+          "address": "Jalan Icon City, Icon City, 71"
+        },
+        {
+          "code": 1099806,
+          "name": "Iconic Marjorie Hotel, Penang, A Tribute Portfol",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "George Town",
+          "address": "239a Jalan Sultan Azlan Shah"
+        },
+        {
+          "code": 197982,
+          "name": "Ixora Hotel Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "3096, Jalan Baru, Bandar Perai Jaya, 3096 11"
+        },
+        {
+          "code": 652174,
+          "name": "Jazz Hotel Penang",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "Penang",
+          "address": "No. 1, Jalan Seri Tanjung Pinang 1, 22"
+        },
+        {
+          "code": 74260,
+          "name": "Jen Penang Georgetown by Shangri-La",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "PEN",
+          "destination_name": "",
+          "city": "George Town",
+          "address": "Magazine Road, George Town"
+        }
+      ]
+    },
+    {
+      "name": "Kuala Lumpur",
+      "code": "KUL",
+      "http_status": 200,
+      "hotel_count": 981,
+      "preferred_matches": [
+        {
+          "code": 639905,
+          "name": "The RuMa Hotel and Residences",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Kuala Lumpur",
+          "address": "7 Jalan Kia Peng, 7 5",
+          "watchlist_name": "The RuMa Hotel and Residences"
+        },
+        {
+          "code": 1143175,
+          "name": "The Ruma Hotel And Residence",
+          "stars": null,
+          "category_code": "SPC",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Malaysia",
+          "address": "7 Jalan Kia Pengkuala Lumpur Malaysia",
+          "watchlist_name": "The RuMa Hotel and Residences"
+        }
+      ],
+      "shortlist": [
+        {
+          "code": 1088404,
+          "name": "188 Suites Klcc By Soulasia",
+          "stars": 5,
+          "category_code": "5LL",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Kuala Lumpur",
+          "address": "Jalan Cendana, 10"
+        },
+        {
+          "code": 625247,
+          "name": "Alila Bangsar, Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "No. 58, Jalan Ang Seng"
+        },
+        {
+          "code": 939004,
+          "name": "Amari Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Kuala Lumpur",
+          "address": "No.3, Jalan Bangsar, KL Eco City"
+        },
+        {
+          "code": 85118,
+          "name": "Ascott Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Pinang, 9"
+        },
+        {
+          "code": 360927,
+          "name": "Ascott Sentral Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "No.211, Jalan Tun Sambathan 50470 Kuala Lumpur"
+        },
+        {
+          "code": 915243,
+          "name": "Ascott Star KLCC Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Kuala Lumpur",
+          "address": "No.1, Jalan Yap Kwan Seng"
+        },
+        {
+          "code": 74105,
+          "name": "Bangi Resort Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Bandar Baru Bangi",
+          "address": "Off Persiaran Bandar, 43650 Bandar Baru Bangi, 256"
+        },
+        {
+          "code": 623303,
+          "name": "Banyan Tree Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "02 Jalan Conlay, Bukit Bintang"
+        },
+        {
+          "code": 74095,
+          "name": "Berjaya Times Square Hotel, Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "No.1 Jalan Imbi, 1"
+        },
+        {
+          "code": 1116459,
+          "name": "Conrad Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Kuala Lumpur",
+          "address": "25, Jalan Sultan Ismail Wilayah Persekutuan"
+        },
+        {
+          "code": 904196,
+          "name": "Cormar Suites Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Perak, 10"
+        },
+        {
+          "code": 85898,
+          "name": "Cyberview Resort & Spa",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "SELANGOR DARUL EHSAN",
+          "address": "Persiaran Multimedia, Cyberjaya, -"
+        },
+        {
+          "code": 1053403,
+          "name": "Deface Platinum 2 Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Kuala Lumpur",
+          "address": "Jalan Sultan Ismail Platinum Suites 2"
+        },
+        {
+          "code": 74137,
+          "name": "Dorsett Grand Subang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan SS 12 1, 12/1"
+        },
+        {
+          "code": 138639,
+          "name": "Doubletree By Hilton Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "The Intermark 348 Jalan Tun Razak"
+        },
+        {
+          "code": 939264,
+          "name": "DoubleTree by Hilton Shah Alam i-City",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "SHAH ALAM",
+          "address": "i-City Finance Avenue 40000 Shah Alam, Selangor"
+        },
+        {
+          "code": 186787,
+          "name": "E&O Residence Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Tengah Off Jalan Sultan Ismail, 1"
+        },
+        {
+          "code": 691645,
+          "name": "Encorp Strand Residence At Kota Damansara",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "SEPANG",
+          "address": "No 1 Jalan Pju 5 23"
+        },
+        {
+          "code": 74107,
+          "name": "EQ Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Sultan Ismail, 50250 Kuala Lumpur"
+        },
+        {
+          "code": 625967,
+          "name": "Four Seasons Hotel Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Ampang, 145"
+        },
+        {
+          "code": 133081,
+          "name": "Fraser Place Kuala Lumpur (closed)",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Lot 163, Jalan Perak, 10"
+        },
+        {
+          "code": 386790,
+          "name": "Fraser Residence Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Cendana, Off, Jalan Sultan Ismail"
+        },
+        {
+          "code": 122786,
+          "name": "Golden Palm Tree Malaysia",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "SUNGAI PELEK, SELANGOR",
+          "address": "Jalan Pantai Bagan Lalang, Kg Bagan Lalang, 67"
+        },
+        {
+          "code": 182807,
+          "name": "Grand Hyatt Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Pinang, 12"
+        },
+        {
+          "code": 59459,
+          "name": "Grand Mercure Kuala Lumpur Bukit Bintang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Pudu, 117 15"
+        },
+        {
+          "code": 1094786,
+          "name": "Grand Mercure Kuala Lumpur Bukit Bintang",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "117 Jalan Pudu Kuala Lumpur"
+        },
+        {
+          "code": 59458,
+          "name": "Grand Millennium Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Kuala Lumpur",
+          "address": "Jalan Bukit Bintang, 160"
+        },
+        {
+          "code": 69682,
+          "name": "Hilton Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Stesen Sentral 5, 3"
+        },
+        {
+          "code": 74111,
+          "name": "Hilton Petaling Jaya",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Petaling Jaya",
+          "address": "Jalan Barat, Petaling Jaya, 2"
+        },
+        {
+          "code": 74124,
+          "name": "Hotel Maya Kuala Lumpur City Centre",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Ampang, 138"
+        },
+        {
+          "code": 1000031,
+          "name": "Hotel Royal Signature",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Kuala Lumpur",
+          "address": "17-21, Jalan Bukit Bintang"
+        },
+        {
+          "code": 1051693,
+          "name": "Hyatt Centric City Centre Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Kuala Lumpur",
+          "address": "17 Jalan Sultan Ismail"
+        },
+        {
+          "code": 1074862,
+          "name": "Imperial Lexis Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Wilayah Persekutuan",
+          "address": "Jalan Kia Peng, 15 53"
+        },
+        {
+          "code": 74126,
+          "name": "InterContinental Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Ampang, 165"
+        },
+        {
+          "code": 74118,
+          "name": "JW Marriott Hotel Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "Jalan Bukit Bintang, 183"
+        },
+        {
+          "code": 1088220,
+          "name": "Kimpton Naluria Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Kuala Lumpur",
+          "address": "Lingkaran Trx, Tun Razak Exchange"
+        },
+        {
+          "code": 217857,
+          "name": "Lanson Place Bukit Ceylon",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "10, Jalan Ceylon, 50200 Kuala Lumpur"
+        },
+        {
+          "code": 69683,
+          "name": "Le Meridien Kuala Lumpur",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "KUALA LUMPUR",
+          "address": "2 Jalan Stesen Sentral, Kuala Lumpur Sentral, 2"
+        },
+        {
+          "code": 625869,
+          "name": "Le Méridien Petaling Jaya",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "PETALING JAYA",
+          "address": "Paradigm, 1 Jalan, SS7/26A"
+        },
+        {
+          "code": 1030186,
+          "name": "M Resort Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "KUL",
+          "destination_name": "",
+          "city": "Kuala Lumpur",
+          "address": "No 1 Jalan Damansara Bukit Kiara"
+        }
+      ]
+    },
+    {
+      "name": "Bangkok",
+      "code": "BKK",
+      "http_status": 200,
+      "hotel_count": 1000,
+      "preferred_matches": [],
+      "shortlist": [
+        {
+          "code": 552121,
+          "name": "137 Pillars Residences Bangkok",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "59/1 39,Khlong Toei Nuea,Watthana, 59/1"
+        },
+        {
+          "code": 637617,
+          "name": "137 Pillars Suites Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "59/1 Soi Sukhumvit 39,Khlong Toei Nuea"
+        },
+        {
+          "code": 175169,
+          "name": "Aetas Lumpini",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Rama 4 Road Thungmahamek Sathorn, 1030/4"
+        },
+        {
+          "code": 629228,
+          "name": "Akara Hotel Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "Bangkok",
+          "address": "372 Sri Ayuttaya Road, Phyathai, Rajthevi"
+        },
+        {
+          "code": 628842,
+          "name": "Akyra Sukhumvit Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "7 Sukhumvit 20 Alley,Khlong Toei"
+        },
+        {
+          "code": 425378,
+          "name": "Al Meroz Hotel Bangkok (SHA)",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Soi Ramkhamhaeng 5, Ramkhamhaeng Road, 4"
+        },
+        {
+          "code": 416338,
+          "name": "Amara Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "180/1 Surawong Road, Sipraya, Bangrak, 180/1"
+        },
+        {
+          "code": 69638,
+          "name": "Amari Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "New Petchburi Road, Ratchatewi, 847"
+        },
+        {
+          "code": 480401,
+          "name": "Ammata Lanta Resort Suvarnabhumi",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "Bangkok",
+          "address": "88/5 Moo7, Rachathewa, Bangplee, Samutprakarn"
+        },
+        {
+          "code": 72606,
+          "name": "Anantara Riverside Bangkok Resort",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Charoennakorn, Riverside, 257/1-3"
+        },
+        {
+          "code": 79050,
+          "name": "Anantara Siam Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Ratchadamri Road, 155"
+        },
+        {
+          "code": 80381,
+          "name": "Ascott Sathorn Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "7 South Sathorn Road Yannawa Sathorn"
+        },
+        {
+          "code": 632653,
+          "name": "Aspira Tropical Residence Thong Lor",
+          "stars": 5,
+          "category_code": "5LUX",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "Bangkok",
+          "address": "Soi To Sak"
+        },
+        {
+          "code": 657222,
+          "name": "Avani Sukhumvit Bangkok Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "Bangkok",
+          "address": "2089 Sukhumvit Road, Phra Khnong nuea, Wattana"
+        },
+        {
+          "code": 435779,
+          "name": "Avani+ Riverside Bangkok Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "CHAROENNAKORN ROAD, Thonburi, 257"
+        },
+        {
+          "code": 200868,
+          "name": "Bangkok Marriott Hotel Sukhumvit",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Soi 57 Sukhumvit Road, Klongton Nua Klongtoey, 2"
+        },
+        {
+          "code": 25397,
+          "name": "Banyan Tree Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "South Sathon Road, Sathon, 21/100"
+        },
+        {
+          "code": 676167,
+          "name": "Carlton Hotel Bangkok Sukhumvit",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "Bangkok",
+          "address": "Sukhumvit, 491"
+        },
+        {
+          "code": 78941,
+          "name": "Centara Grand at Central Plaza Ladprao Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Phaholyothin Road, Ladprao, Chatuchak, 1695"
+        },
+        {
+          "code": 96025,
+          "name": "Centara Grand at CentralWorld",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Rama 1 Rd, Pathumwan, 999/99"
+        },
+        {
+          "code": 105404,
+          "name": "Chatrium Hotel Riverside Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Charoenkrung Rd., 28"
+        },
+        {
+          "code": 130026,
+          "name": "Column Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Sukhumvit Soi 16, Klongtoey, 48"
+        },
+        {
+          "code": 78948,
+          "name": "COMO Metropolitan Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "27 South Sathorn Road Tungmahamek Sathorn"
+        },
+        {
+          "code": 79012,
+          "name": "Conrad Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "All Seasons Place 87/3 Wireless Rd Phatumwan"
+        },
+        {
+          "code": 80455,
+          "name": "Conrad Bangkok Residences",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "All Seasons Place, 87 3 Wireless Fl. 8 - 15"
+        },
+        {
+          "code": 129755,
+          "name": "Convenient Grand Hotel",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "SAMUT PRAKARN",
+          "address": "88/8 Srivareenoi Rd.(Ladkrabang 54), 88/8"
+        },
+        {
+          "code": 538541,
+          "name": "Courtyard Bangkok Sukhumvit 20",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "10 Sukhumvit soi 20, Sukhumvit Road"
+        },
+        {
+          "code": 662435,
+          "name": "Divalux Resort and Spa Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "Bangkok",
+          "address": "88 Moo 3, Bang Sao Thong, 88"
+        },
+        {
+          "code": 661948,
+          "name": "Dusit Suites Hotel Ratchadamri, Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "Bangkok",
+          "address": "3 Soi Mahardlekluang 3 Rajdamri Road Lumpinee Path, 3"
+        },
+        {
+          "code": 157044,
+          "name": "Eastin Grand Hotel Sathorn Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "South Sathorn Road, Yannawa, Sathorn, 33/1"
+        },
+        {
+          "code": 82200,
+          "name": "Emporium Suites by Chatrium",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Sukhumvit Soi 24 Sukhumvit Road, Klongton, 622"
+        },
+        {
+          "code": 276190,
+          "name": "Four Seasons Hotel Bangkok at Chao Praya River",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Charoen Krung Road, 300"
+        },
+        {
+          "code": 87559,
+          "name": "Fraser Suites Sukhumvit",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Soi Sukhumvit 11, Sukhumvit Rd, Klongtoey N, 38/8"
+        },
+        {
+          "code": 81531,
+          "name": "Grand Hyatt Erawan Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Rajdamri Road, Bangkok, 494"
+        },
+        {
+          "code": 60692,
+          "name": "Grand Mercure Bangkok Atrium",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "New Petchburi Road, 1880"
+        },
+        {
+          "code": 539621,
+          "name": "Grande Centre Point Hotel Sukhumvit 55",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Sukhumvit Soi 55 (Thonglo), Klongton Nua, Wattana, 300"
+        },
+        {
+          "code": 158882,
+          "name": "Grande Centre Point Hotel Terminal 21",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "KLONGTOEY NUA, WATTANA",
+          "address": "2 Sukhumvit Soi 19 (Wattana), Sukhumvit Road, ."
+        },
+        {
+          "code": 81419,
+          "name": "Grande Centre Point Ploenchit",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Wireless Road, Lumpini, Patumwan, 100"
+        },
+        {
+          "code": 89247,
+          "name": "Grande Centre Point Ratchadamri",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Soi Mahatlek Luang 1, Ratchadamri Road, Pathumwan, 153/2"
+        },
+        {
+          "code": 147725,
+          "name": "Hansar Bangkok",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BKK",
+          "destination_name": "",
+          "city": "BANGKOK",
+          "address": "Soi Mahadlekluang 2 Rajdamri Road, 3/250"
+        }
+      ]
+    },
+    {
+      "name": "Bali",
+      "code": "DPS",
+      "http_status": 200,
+      "hotel_count": 0,
+      "preferred_matches": [],
+      "shortlist": []
+    },
+    {
+      "name": "Batam",
+      "code": "BTH",
+      "http_status": 200,
+      "hotel_count": 216,
+      "preferred_matches": [],
+      "shortlist": [
+        {
+          "code": 776566,
+          "name": "Batam Marriott Hotel Harbour Bay",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Harbour Bay Downtown Jalan Duyung Kel Sungai Jodoh"
+        },
+        {
+          "code": 1088251,
+          "name": "Grand Mercure Batam Centre",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Jalan Raja H Fisabilillah Teluk Tering Kecamatan B"
+        },
+        {
+          "code": 189510,
+          "name": "Montigo Resorts Nongsa",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Jl Hang Lekir, Nongsa"
+        },
+        {
+          "code": 560003,
+          "name": "Wyndham Panbil Batam",
+          "stars": 5,
+          "category_code": "5EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "jalan ahmad yani, muka kuning, na"
+        },
+        {
+          "code": 234466,
+          "name": "AGlow Hotel Harbor Bay Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM ISLAND",
+          "address": "Jl. Duyung, Sungai Jodoh, Kec. Batu Ampar"
+        },
+        {
+          "code": 1091085,
+          "name": "Aglow Hotel Harbor Bay Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Batam",
+          "address": "Jl. Ahmad Yani, Komplek Batam Centre Park No.1"
+        },
+        {
+          "code": 234528,
+          "name": "Allium Panorama Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM ISLAND",
+          "address": "Komplek Panorama Nagoya"
+        },
+        {
+          "code": 132504,
+          "name": "AP Premier Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Jalan Duyung Sei Jodoh, Jodoh River, Batu Ampar"
+        },
+        {
+          "code": 617756,
+          "name": "Aston Batam Hotel and Residence",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Jl. Sriwijaya No. 1, Kp. Pelita, Riau"
+        },
+        {
+          "code": 1099166,
+          "name": "Ayola Signature Ocarina Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Mega Wisata Ocarina Batam, 00 2 1"
+        },
+        {
+          "code": 253873,
+          "name": "Batam View Beach Resort",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM ISLAND",
+          "address": "Hang Lekir Nongsa Batam"
+        },
+        {
+          "code": 731818,
+          "name": "Blitz Hotel Batam Near Sultan Mahmud Ri'ayat Shah",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Komp.Pertokoan Tunas Regency BlokA2,Tanjung Uncang"
+        },
+        {
+          "code": 1113179,
+          "name": "Collection O Nagoya Near Nagoya Hill Mall",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Batam",
+          "address": "Jl Sriwijaya, Ruko Suri Graha 11–12, Pelita, Batam"
+        },
+        {
+          "code": 1113172,
+          "name": "Collection O Near UNRIKA Formerly Dory Inn",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Batam",
+          "address": "Ruko Parisa Center B23, Kavling Lama, Sagulung"
+        },
+        {
+          "code": 237024,
+          "name": "Crown Vista Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM ISLAND",
+          "address": "Komplek Top View Garden"
+        },
+        {
+          "code": 811304,
+          "name": "Four Points By Sheraton Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Batam",
+          "address": "Komplek Panorama Nagoya"
+        },
+        {
+          "code": 1126360,
+          "name": "Fox Hotel Nagoya Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Batam",
+          "address": "Jl. Pembangunan Blok H No.1, Lubuk Baja"
+        },
+        {
+          "code": 233163,
+          "name": "Golden View",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM ISLAND",
+          "address": "Jl. Bengkong Laut"
+        },
+        {
+          "code": 165401,
+          "name": "Grand I Hotel Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Jl. Teuku Umar Bukit Nagoya"
+        },
+        {
+          "code": 357847,
+          "name": "Harmoni One Convention Hotel & Service Apartments",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Batam Island",
+          "address": "Jl. Batam"
+        },
+        {
+          "code": 488053,
+          "name": "Harmoni Suites",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Batam",
+          "address": "Jl. Imam Bonjol"
+        },
+        {
+          "code": 1093774,
+          "name": "Harris Hotel & Suites Nagoya Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Batam",
+          "address": "Jl. Nagoya Thamrin, Lubuk Baja Kota"
+        },
+        {
+          "code": 215416,
+          "name": "Harris Hotel Batam Center",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Jl. Engku Putri, Batam Center"
+        },
+        {
+          "code": 625245,
+          "name": "HARRIS Resort Barelang Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Jl. Trans Barelang"
+        },
+        {
+          "code": 215409,
+          "name": "Harris Resort Waterfront Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Waterfront City"
+        },
+        {
+          "code": 195734,
+          "name": "Holiday Inn Resort Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Waterfront City"
+        },
+        {
+          "code": 502925,
+          "name": "I Hotel Baloi Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Batam",
+          "address": "komplek Baloi Kusuma Indah No 7"
+        },
+        {
+          "code": 592040,
+          "name": "Ibis Styles Batam Nagoya",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Batam",
+          "address": "JL Yos Sudarso Bengkong Laut Batam Kepulauan"
+        },
+        {
+          "code": 1030902,
+          "name": "Kiki Beach Resort Batam By Zuzu",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Batam",
+          "address": "Pasir Gelam, Karas, Pulau Galang"
+        },
+        {
+          "code": 152703,
+          "name": "KTM Resort",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Jl. Kolonel Sugiono Tanjung Pinggir Sekupang"
+        },
+        {
+          "code": 592036,
+          "name": "Nagoya Hill Hotel Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Batam",
+          "address": "Jl. Teuku Umar Superblock Nagoya Hill"
+        },
+        {
+          "code": 234569,
+          "name": "Nagoya Mansion Hotel and Residence",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM ISLAND",
+          "address": "Jl. Raden Patah, Kampung Utama No.01 Batam"
+        },
+        {
+          "code": 186775,
+          "name": "Nongsa Point Marina & Resort",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM ISLAND",
+          "address": "Jl. Hang Lekiu Nongsa"
+        },
+        {
+          "code": 169146,
+          "name": "Pacific Palace Hotel",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM KEPULAUAN RIAU",
+          "address": "Jl. Duyung Sei Jodoh"
+        },
+        {
+          "code": 703803,
+          "name": "Panbil Residence Apartment Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM ISLAND",
+          "address": "Jl Ahmad Yani Panbil Estate Muka Kuning Sei Beduk"
+        },
+        {
+          "code": 215396,
+          "name": "Planet Holiday",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Jl. Raja Ali Haji Sei Jodoh"
+        },
+        {
+          "code": 549001,
+          "name": "Radisson Golf & Convention Center Batam",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Jl Jendral Sudirman"
+        },
+        {
+          "code": 212518,
+          "name": "Swiss-BelHotel Harbour Bay",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM",
+          "address": "Harbourbay Complex Jln Duyung Sei Jodoh"
+        },
+        {
+          "code": 233347,
+          "name": "The BCC & Residence",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "BATAM ISLAND",
+          "address": "JL Bunga Mawar Baloi Kusuma"
+        },
+        {
+          "code": 1099855,
+          "name": "The Westin Nirup Island Resort Spa",
+          "stars": 4,
+          "category_code": "4EST",
+          "destination_code": "BTH",
+          "destination_name": "",
+          "city": "Nirup Island",
+          "address": "Sekanak Raya Belakang Padang"
+        }
+      ]
+    },
+    {
+      "name": "Bintan",
+      "code": "TNJ",
+      "http_status": 200,
+      "hotel_count": 5,
+      "preferred_matches": [],
+      "shortlist": []
+    }
+  ]
+}
