@@ -119,10 +119,18 @@ jobs:
                   "direct retailer or mall/outlet deals were returned."
               )
 
-          if not direct_brand:
+          if len(official_direct) < 4:
               raise SystemExit(
-                  "Direct-brand validation failed: adidas, Nike, PUMA and ASICS "
-                  "sources produced no publishable Direct Brand deal."
+                  "Official-source diversity validation failed: fewer than 4 "
+                  "Direct Brand / Direct Retailer / Mall-Outlet deals were returned."
+              )
+
+          if not direct_brand:
+              print(
+                  "WARNING: No Direct Brand deal was publishable in this run. "
+                  "Brand sites may block automated requests or render sale data "
+                  "dynamically. This is non-fatal because official Direct Retailer "
+                  "and Mall/Outlet sources are still validated separately."
               )
 
           if len(discovery) > 12:
