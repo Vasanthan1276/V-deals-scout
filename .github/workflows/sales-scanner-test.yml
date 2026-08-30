@@ -64,6 +64,16 @@ jobs:
 
           demo_items = [item for item in items if item.get("is_demo")]
           live_items = [item for item in items if not item.get("is_demo")]
+          deal_types = sorted({
+              item.get("deal_type", "other")
+              for item in live_items
+          })
+          official_direct = [
+              item for item in live_items
+              if item.get("deal_type") in {
+                  "direct_brand", "direct_retailer", "mall_outlet"
+              }
+          ]
 
           print("")
           print("=" * 72)
@@ -72,6 +82,8 @@ jobs:
           print(f"Total items returned: {len(items)}")
           print(f"Live items:           {len(live_items)}")
           print(f"Demo items:           {len(demo_items)}")
+          print(f"Deal/source types:    {deal_types}")
+          print(f"Official direct/mall: {len(official_direct)}")
           print(f"Test output:          {output_path}")
 
           if demo_items:
@@ -83,6 +95,12 @@ jobs:
               raise SystemExit(
                   "Sales scanner returned zero live deals. Inspect the Sales scanner log "
                   "above before publishing anything."
+              )
+
+          if not official_direct:
+              raise SystemExit(
+                  "Official Sales expansion validation failed: no direct brand, "
+                  "direct retailer or mall/outlet deals were returned."
               )
 
           print("")

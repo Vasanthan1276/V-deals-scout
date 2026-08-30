@@ -64,6 +64,14 @@ jobs:
 
           demo_items = [item for item in items if item.get("is_demo")]
           live_items = [item for item in items if not item.get("is_demo")]
+          indian_items = [
+              item for item in live_items
+              if item.get("food_category") == "indian"
+          ]
+          deal_types = sorted({
+              item.get("deal_type", "other")
+              for item in live_items
+          })
 
           print("")
           print("=" * 72)
@@ -72,6 +80,8 @@ jobs:
           print(f"Total items returned: {len(items)}")
           print(f"Live items:           {len(live_items)}")
           print(f"Demo items:           {len(demo_items)}")
+          print(f"Indian food deals:    {len(indian_items)}")
+          print(f"Deal/source types:    {deal_types}")
           print(f"Test output:          {output_path}")
 
           if demo_items:
@@ -83,6 +93,13 @@ jobs:
               raise SystemExit(
                   "Food scanner returned zero live deals. Inspect the Food scanner log "
                   "above before publishing anything."
+              )
+
+          if len(indian_items) < 2:
+              raise SystemExit(
+                  "Indian-source expansion validation failed: fewer than 2 Indian "
+                  "food deals were returned. Inspect which official Indian sources "
+                  "were skipped or blocked."
               )
 
           print("")
