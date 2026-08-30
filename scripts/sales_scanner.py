@@ -20,12 +20,12 @@ from deal_score import promo_score
 # ---------------------------------------------------------------------------
 # V&V Deals Scout - Live Sales Scanner
 #
-# V3 combines discovery feeds with official mall/outlet, direct brand,
+# V4 combines discovery feeds with official mall/outlet, direct brand,
 # direct retailer and card-linked promotion pages. Official sources are
 # validated against live-page markers before a configured offer is published.
 #
-# Current official expansion includes CapitaLand IMM, adidas Singapore and
-# COURTS Singapore in addition to bank/card offers.
+# Direct-brand coverage includes adidas, Nike, PUMA and ASICS Singapore,
+# alongside CapitaLand IMM and COURTS Singapore.
 #
 # This scanner does NOT call Hotelbeds and therefore does not consume the
 # Hotelbeds Evaluation quota.
@@ -97,18 +97,60 @@ OFFICIAL_SALES_INDEX_SOURCES = [
 
 OFFICIAL_SALES_SINGLE_SOURCES = [
     {
-        "name": "adidas Singapore End of Season Sale",
-        "url": "https://www.adidas.com.sg/men-end_of_season_sale",
-        "merchant": "adidas Singapore End of Season Sale",
+        "name": "adidas Singapore Sale Terms",
+        "url": "https://www.adidas.com.sg/help/sea-promotions-and-vouchers/sale-terms-and-condition",
+        "merchant": "adidas Singapore",
         "source": "adidas Singapore",
         "deal_type": "direct_brand",
         "source_confidence": "verified",
-        "access_requirement": "Direct brand sale; selected items and exclusions apply",
+        "access_requirement": "Direct brand promotion; selected products and exclusions apply",
+        "hint": "sportswear",
+        "subcategory": "sportswear_footwear",
+        "location": "Online / selected Singapore stores",
+        "offer_text_override": "30% off full-priced items and extra 30% off current markdown prices on outlet/sale items",
+        "required_terms": ["30% off their RRP", "extra 30% off their current markdown price"],
+    },
+    {
+        "name": "Nike Singapore Sale",
+        "url": "https://www.nike.com/sg/w/sale-3yaepz5k5r2z6fvtl",
+        "merchant": "Nike Singapore Sale",
+        "source": "Nike Singapore",
+        "deal_type": "direct_brand",
+        "source_confidence": "verified",
+        "access_requirement": "Direct brand sale; selected styles, sizes and stock availability apply",
         "hint": "sportswear",
         "subcategory": "sportswear_footwear",
         "location": "Online / Singapore",
-        "offer_text_override": "Extra 30% off selected sale items at cart",
-        "required_terms": ["EXTRA 30% OFF IN CART", "Sale price"],
+        "offer_text_override": "Selected Nike sale items up to 40% off",
+        "required_terms": ["Sale", "40% off"],
+    },
+    {
+        "name": "PUMA Singapore Men's Sale",
+        "url": "https://sg.puma.com/sg/en/men/sale",
+        "merchant": "PUMA Singapore Sale",
+        "source": "PUMA Singapore",
+        "deal_type": "direct_brand",
+        "source_confidence": "verified",
+        "access_requirement": "Direct brand sale; selected styles and stock availability apply",
+        "hint": "sportswear",
+        "subcategory": "sportswear_footwear",
+        "location": "Online / Singapore",
+        "offer_text_override": "Selected PUMA sportswear and footwear from 20% off",
+        "required_terms": ["PUMA", "20% OFF"],
+    },
+    {
+        "name": "ASICS Singapore 30% Off and Up",
+        "url": "https://www.asics.com/sg/en-sg/sale-30-off-above/",
+        "merchant": "ASICS Singapore Sale",
+        "source": "ASICS Singapore",
+        "deal_type": "direct_brand",
+        "source_confidence": "verified",
+        "access_requirement": "Direct brand sale; selected products, colours and sizes apply",
+        "hint": "sportswear",
+        "subcategory": "sportswear_footwear",
+        "location": "Online / Singapore",
+        "offer_text_override": "Selected ASICS footwear and apparel 30% off and up",
+        "required_terms": ["Sale 30% Off And Up", "30%"],
     },
     {
         "name": "Under Armour Outlet IMM",
@@ -1039,12 +1081,14 @@ def enrich_discovery_item(item):
 
 
 def select_diverse_sales(items, max_items):
+    # These are hard publication caps, not just first-pass targets. Discovery
+    # is deliberately limited so official/direct sources cannot be crowded out.
     quotas = {
         "discovery": 12,
-        "card_deal": 9,
+        "card_deal": 8,
         "direct_brand": 6,
-        "direct_retailer": 6,
-        "mall_outlet": 8,
+        "direct_retailer": 5,
+        "mall_outlet": 7,
     }
     for item in items:
         item["deal_score"] = promo_score(item, "sale")
@@ -1073,15 +1117,9 @@ def select_diverse_sales(items, max_items):
         seen.add(key)
         counts[dtype] = counts.get(dtype, 0) + 1
 
-    if len(selected) < max_items:
-        for row in ordered:
-            if len(selected) >= max_items:
-                break
-            key = (clean_text(row.get("name", "")).casefold(), row.get("subcategory"), row.get("deal_type", "discovery"))
-            if key in seen:
-                continue
-            selected.append(row)
-            seen.add(key)
+    # Do not refill beyond source caps just to force the list to exactly
+    # max_items. A shorter, better-balanced Sales list is preferable to
+    # padding the dashboard with aggregator results.
     return selected[:max_items]
 
 

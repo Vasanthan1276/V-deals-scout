@@ -618,6 +618,225 @@ function scoreCaption(
 }
 
 
+function scoreBand(value) {
+  const score = Number(value || 0);
+
+  if (score >= 90) {
+    return "Exceptional";
+  }
+
+  if (score >= 80) {
+    return "Strong";
+  }
+
+  if (score >= 70) {
+    return "Worth a look";
+  }
+
+  if (score >= 60) {
+    return "Moderate";
+  }
+
+  return "Low priority";
+}
+
+
+function scoreBreakdownForItem(item) {
+  const supplied = item.score_breakdown;
+
+  if (
+    supplied
+    && Array.isArray(supplied.components)
+  ) {
+    return supplied;
+  }
+
+  const score = Number(item.deal_score || 0);
+  const notes = [];
+
+  if (item.category === "hotel") {
+    if (item.score_basis === "observed_history") {
+      notes.push(
+        "This hotel is being scored against observed price history for the same hotel and stay dates."
+      );
+    }
+    else if (item.score_basis === "peer_comparison") {
+      notes.push(
+        "This hotel is currently based on same-date peer comparison, not historical pricing. Peer-only hotel scores are intentionally capped below the top deal range."
+      );
+    }
+    else {
+      notes.push(
+        "This hotel score comes from the Hotel engine. Component-level details will appear after the hotel scanner emits a score breakdown on a future successful scan."
+      );
+    }
+  }
+  else if (item.category === "idea") {
+    notes.push(
+      "Ideas inherit the score of the underlying hotel opportunity used to build the suggestion."
+    );
+  }
+  else {
+    notes.push(
+      "This older deal record does not contain a component-level score breakdown. It will gain one the next time its live scanner refreshes it."
+    );
+  }
+
+  return {
+    model: "legacy_or_inherited",
+    total: score,
+    scale_max: 100,
+    band: scoreBand(score),
+    components: [],
+    notes
+  };
+}
+
+
+function scoreHoverText(item) {
+  const details = scoreBreakdownForItem(item);
+  const score = Number(details.total ?? item.deal_score ?? 0);
+  const components = Array.isArray(details.components)
+    ? details.components
+    : [];
+
+  const componentText = components
+    .slice(0, 5)
+    .map(
+      part =>
+        `${part.label}: ${Number(part.points || 0).toFixed(1)}/${Number(part.max_points || 0).toFixed(0)}`
+    )
+    .join(" · ");
+
+  return componentText
+    ? `Score ${Math.round(score)}/100 (${details.band || scoreBand(score)}). ${componentText}. Click for details.`
+    : `Score ${Math.round(score)}/100 (${details.band || scoreBand(score)}). Click for scoring details.`;
+}
+
+
+function ensureScoreDialog() {
+  let dialog = document.querySelector("#scoreExplainDialog");
+
+  if (dialog) {
+    return dialog;
+  }
+
+  dialog = document.createElement("dialog");
+  dialog.id = "scoreExplainDialog";
+  dialog.className = "score-dialog";
+  dialog.innerHTML = `
+    <div class="score-dialog-shell">
+      <button
+        type="button"
+        class="score-dialog-close"
+        aria-label="Close scoring details"
+      >×</button>
+      <div id="scoreExplainContent"></div>
+    </div>
+  `;
+
+  document.body.appendChild(dialog);
+
+  dialog
+    .querySelector(".score-dialog-close")
+    .addEventListener(
+      "click",
+      () => dialog.close()
+    );
+
+  dialog.addEventListener(
+    "click",
+    event => {
+      if (event.target === dialog) {
+        dialog.close();
+      }
+    }
+  );
+
+  return dialog;
+}
+
+
+function openScoreDialog(item) {
+  const dialog = ensureScoreDialog();
+  const root = dialog.querySelector("#scoreExplainContent");
+  const details = scoreBreakdownForItem(item);
+  const score = Number(details.total ?? item.deal_score ?? 0);
+  const scaleMax = Number(details.scale_max || 100);
+  const components = Array.isArray(details.components)
+    ? details.components
+    : [];
+  const notes = Array.isArray(details.notes)
+    ? details.notes
+    : [];
+
+  const rows = components
+    .map(
+      part => {
+        const points = Number(part.points || 0);
+        const maxPoints = Math.max(1, Number(part.max_points || 0));
+        const width = Math.max(0, Math.min(100, points / maxPoints * 100));
+
+        return `
+          <div class="score-component">
+            <div class="score-component-top">
+              <strong>${escapeHtml(part.label || "Score component")}</strong>
+              <span>${points.toFixed(1)} / ${maxPoints.toFixed(0)}</span>
+            </div>
+            <div class="score-bar" aria-hidden="true">
+              <span style="width:${width.toFixed(1)}%"></span>
+            </div>
+            <small>${escapeHtml(part.detail || "")}</small>
+          </div>
+        `;
+      }
+    )
+    .join("");
+
+  const noteHtml = notes
+    .map(
+      note => `<li>${escapeHtml(note)}</li>`
+    )
+    .join("");
+
+  root.innerHTML = `
+    <div class="score-dialog-kicker">Why this score?</div>
+    <h2>${escapeHtml(item.name || "Deal")}</h2>
+
+    <div class="score-dialog-total">
+      <strong>${Math.round(score)}</strong>
+      <span>/ ${Math.round(scaleMax)}</span>
+      <em>${escapeHtml(details.band || scoreBand(score))}</em>
+    </div>
+
+    ${
+      rows
+        ? `<div class="score-components">${rows}</div>`
+        : `<p class="score-no-components">Detailed point components are not yet stored for this record.</p>`
+    }
+
+    ${
+      noteHtml
+        ? `<ul class="score-notes">${noteHtml}</ul>`
+        : ""
+    }
+
+    <div class="score-scale-note">
+      <strong>Score scale:</strong>
+      90–100 Exceptional · 80–89 Strong · 70–79 Worth a look.
+      Scores below 70 normally do not enter 🔥 Best.
+    </div>
+  `;
+
+  if (typeof dialog.showModal === "function") {
+    dialog.showModal();
+  }
+  else {
+    dialog.setAttribute("open", "");
+  }
+}
+
+
 function dataNote(
   item
 ) {
@@ -1176,6 +1395,11 @@ function render() {
         )
       );
 
+    const scoreTitle =
+      escapeHtml(
+        scoreHoverText(item)
+      );
+
     card.innerHTML = `
       <div class="card-top">
 
@@ -1193,7 +1417,12 @@ function render() {
           </div>
         </div>
 
-        <div class="score">
+        <button
+          type="button"
+          class="score score-button"
+          title="${scoreTitle}"
+          aria-label="Explain score ${score} out of 100 for ${safeName}"
+        >
 
           <strong>
             ${score}
@@ -1209,7 +1438,7 @@ function render() {
             }
           </span>
 
-        </div>
+        </button>
 
       </div>
 
@@ -1242,6 +1471,18 @@ function render() {
         )
       }
     `;
+
+    const scoreButton =
+      card.querySelector(
+        ".score-button"
+      );
+
+    if (scoreButton) {
+      scoreButton.addEventListener(
+        "click",
+        () => openScoreDialog(item)
+      );
+    }
 
     root.appendChild(
       card
