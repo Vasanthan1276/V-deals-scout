@@ -1,37 +1,771 @@
+from __future__ import annotations
+
+import hashlib
+import html
+import json
+import os
+import re
+from datetime import date, datetime
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.error import HTTPError, URLError
+from urllib.parse import urljoin, urlparse
+from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
+
 from utils import iso_now_sgt
 from deal_score import promo_score
 
 
-def scan_sales():
-    items = [
-        {
-            "id": "sale-demo-01",
-            "category": "sale",
-            "name": "Outlet Additional Discount",
-            "location": "IMM / Singapore",
-            "description": "Illustrative outlet deal used to test the sales section.",
-            "discount_percent": 40,
-            "quality_score": 8,
-            "relevance_score": 8.5,
-            "source": "Demo data",
-            "url": "",
-            "is_demo": True
+# ---------------------------------------------------------------------------
+# V&V Deals Scout - Live Sales Scanner
+#
+# V1 live discovery source: EverydayOnSales Singapore category / active-sale
+# pages. Results are discovery leads, not authoritative merchant quotes, so
+# every item is explicitly marked for verification before purchase.
+#
+# This scanner does NOT call Hotelbeds and therefore does not consume the
+# Hotelbeds Evaluation quota.
+# ---------------------------------------------------------------------------
+
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/152.0.0.0 Safari/537.36"
+)
+
+SOURCE_PAGES = [
+    {
+        "name": "EverydayOnSales - Sportswear",
+        "url": "https://sg.everydayonsales.com/sales-category/fashion-lifestyle-department-store/sportswear/",
+        "hint": "sportswear",
+    },
+    {
+        "name": "EverydayOnSales - Computers & Electronics",
+        "url": "https://sg.everydayonsales.com/sales-category/computers-electronics/",
+        "hint": "electronics",
+    },
+    {
+        "name": "EverydayOnSales - Sports, Leisure & Travel",
+        "url": "https://sg.everydayonsales.com/sales-category/sports-leisure-travel/",
+        "hint": "travel",
+    },
+    {
+        "name": "EverydayOnSales - Fashion Accessories",
+        "url": "https://sg.everydayonsales.com/sales-category/fashion-lifestyle-department-store/fashion-accessories/",
+        "hint": "fashion",
+    },
+    {
+        "name": "EverydayOnSales - Happening Now",
+        "url": "https://sg.everydayonsales.com/sales-period/sales-happening-now/",
+        "hint": "general",
+    },
+]
+
+DEFAULT_TIMEOUT = 20
+DEFAULT_MIN_DISCOUNT = 30
+DEFAULT_MAX_ITEMS = 30
+MAX_PAGE_BYTES = 2_000_000
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+PREVIOUS_SALES_PATH = REPO_ROOT / "data" / "sales.json"
+SGT = ZoneInfo("Asia/Singapore")
+
+MONTHS = {
+    "january": 1,
+    "february": 2,
+    "march": 3,
+    "april": 4,
+    "may": 5,
+    "june": 6,
+    "july": 7,
+    "august": 8,
+    "september": 9,
+    "october": 10,
+    "november": 11,
+    "december": 12,
+}
+MONTH_PATTERN = "(?:" + "|".join(MONTHS) + ")"
+
+PREFERRED_BRANDS = {
+    "nike",
+    "adidas",
+    "under armour",
+    "new balance",
+    "puma",
+    "skechers",
+    "asics",
+    "timberland",
+    "crocs",
+    "oakley",
+    "wilson",
+    "champion",
+    "fila",
+    "samsonite",
+    "american tourister",
+    "tumi",
+    "rimowa",
+    "challenger",
+    "best denki",
+    "harvey norman",
+    "courts",
+    "dyson",
+    "samsung",
+    "apple",
+    "sony",
+    "lg",
+    "lenovo",
+    "asus",
+    "acer",
+    "dell",
+    "hp",
+}
+
+SPORTS_WORDS = {
+    "sportswear",
+    "running",
+    "running shoes",
+    "sneakers",
+    "footwear",
+    "shoes",
+    "fitness",
+    "compression",
+    "athleisure",
+    "jersey",
+    "sports",
+}
+
+ELECTRONICS_WORDS = {
+    "electronics",
+    "electronic",
+    "laptop",
+    "monitor",
+    "smartphone",
+    "phone",
+    "tablet",
+    "headphone",
+    "earbuds",
+    "audio",
+    "charger",
+    "charging",
+    "power bank",
+    "tech",
+    "gadget",
+    "camera",
+    "television",
+    "tv",
+    "computer",
+}
+
+TRAVEL_WORDS = {
+    "travel",
+    "luggage",
+    "suitcase",
+    "carry-on",
+    "carry on",
+    "backpack",
+    "travel bag",
+    "airline",
+    "flight",
+    "holiday",
+}
+
+OUTLET_WORDS = {
+    "imm",
+    "outlet",
+    "warehouse sale",
+    "clearance",
+    "moving out",
+    "closing down",
+    "atrium sale",
+    "factory outlet",
+}
+
+SALE_WORDS = {
+    "sale",
+    "promotion",
+    "discount",
+    "off",
+    "clearance",
+    "warehouse",
+    "deal",
+    "savings",
+    "save",
+    "buy 1 get 1",
+    "buy 2 get",
+    "free",
+}
+
+IGNORE_WORDS = {
+    "food",
+    "restaurant",
+    "buffet",
+    "cafe",
+    "café",
+    "coffee",
+    "hotpot",
+    "meal",
+    "groceries",
+    "supermarket",
+    "beer",
+    "wine",
+}
+
+KNOWN_LOCATIONS = [
+    "IMM",
+    "Westgate",
+    "JEM",
+    "Jurong Point",
+    "Lot One",
+    "Bukit Panjang Plaza",
+    "Bedok Mall",
+    "Takashimaya",
+    "Changi City Point",
+    "Marina Square",
+    "Suntec City",
+    "VivoCity",
+    "Plaza Singapura",
+    "NEX",
+    "Funan",
+    "Bugis Junction",
+    "Bugis+",
+    "Orchard",
+    "Singapore EXPO",
+]
+
+
+class AnchorExtractor(HTMLParser):
+    """Collect visible link text and href values without third-party packages."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.current_href = None
+        self.current_parts = []
+        self.hidden_depth = 0
+        self.links = []
+
+    def handle_starttag(self, tag, attrs):
+        tag = tag.lower()
+        if tag in {"script", "style", "noscript", "svg"}:
+            self.hidden_depth += 1
+            return
+
+        if self.hidden_depth == 0 and tag == "a":
+            attr_map = dict(attrs)
+            self.current_href = attr_map.get("href")
+            self.current_parts = []
+
+    def handle_endtag(self, tag):
+        tag = tag.lower()
+        if tag in {"script", "style", "noscript", "svg"}:
+            self.hidden_depth = max(0, self.hidden_depth - 1)
+            return
+
+        if self.hidden_depth == 0 and tag == "a" and self.current_href:
+            text = re.sub(r"\s+", " ", " ".join(self.current_parts)).strip()
+            if text:
+                self.links.append((self.current_href, text))
+            self.current_href = None
+            self.current_parts = []
+
+    def handle_data(self, data):
+        if self.hidden_depth == 0 and self.current_href is not None and data:
+            self.current_parts.append(data)
+
+
+def env_int(name, default, minimum, maximum):
+    raw = os.getenv(name, "").strip()
+    if not raw:
+        return default
+
+    try:
+        value = int(raw)
+    except ValueError:
+        print(f"Sales scanner: invalid {name}={raw!r}; using {default}.")
+        return default
+
+    return max(minimum, min(maximum, value))
+
+
+def fetch_html(url, timeout):
+    request = Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-SG,en;q=0.9",
+            "Cache-Control": "no-cache",
         },
-        {
-            "id": "sale-demo-02",
-            "category": "sale",
-            "name": "Travel & Luggage Sale",
-            "location": "Singapore",
-            "description": "Illustrative travel-related sale.",
-            "discount_percent": 35,
-            "quality_score": 7.5,
-            "relevance_score": 8,
-            "source": "Demo data",
-            "url": "",
-            "is_demo": True
-        }
+    )
+
+    with urlopen(request, timeout=timeout) as response:
+        status = getattr(response, "status", 200)
+        if status != 200:
+            raise RuntimeError(f"Unexpected HTTP status {status}")
+        payload = response.read(MAX_PAGE_BYTES + 1)
+        if len(payload) > MAX_PAGE_BYTES:
+            raise RuntimeError("Source page exceeded safe size limit")
+        return payload.decode("utf-8", errors="replace")
+
+
+def clean_text(value):
+    value = html.unescape(value).replace("\xa0", " ")
+    value = re.sub(r"\s+", " ", value)
+    return value.strip(" \t\r\n-|•·")
+
+
+def extract_candidate_links(source, raw_html):
+    parser = AnchorExtractor()
+    parser.feed(raw_html)
+    parser.close()
+
+    output = []
+    seen = set()
+
+    for href, text in parser.links:
+        title = clean_text(text)
+        if len(title) < 28 or len(title) > 260:
+            continue
+
+        lowered = title.casefold()
+        if "2026" not in lowered and "onwards" not in lowered:
+            continue
+        if not any(word in lowered for word in SALE_WORDS):
+            continue
+
+        full_url = urljoin(source["url"], href)
+        parsed = urlparse(full_url)
+        if parsed.scheme not in {"http", "https"}:
+            continue
+        if "everydayonsales.com" not in parsed.netloc.casefold():
+            continue
+
+        key = (full_url.split("#", 1)[0], title.casefold())
+        if key in seen:
+            continue
+        seen.add(key)
+
+        output.append(
+            {
+                "title": title,
+                "url": full_url.split("#", 1)[0],
+                "source_detail": source["name"],
+                "source_hint": source["hint"],
+            }
+        )
+
+    return output
+
+
+def _month_number(name):
+    return MONTHS[name.casefold()]
+
+
+def _safe_date(year, month, day):
+    try:
+        return date(year, month, day)
+    except ValueError:
+        return None
+
+
+def parse_validity(title, today):
+    """
+    Parse the common date prefixes used by Singapore sales listings.
+
+    Returns (start_date, end_date). An end date of None means "onwards".
+    Unknown formats return (None, None); they are accepted only when they
+    clearly contain an "onwards" marker.
+    """
+    text = clean_text(title)
+
+    # Now till 31 August 2026
+    match = re.search(
+        rf"\bnow\s+till\s+(\d{{1,2}})\s+({MONTH_PATTERN})\s+(20\d{{2}})\b",
+        text,
+        re.IGNORECASE,
+    )
+    if match:
+        end = _safe_date(int(match.group(3)), _month_number(match.group(2)), int(match.group(1)))
+        return None, end
+
+    # 19 August-1 September 2026 / 14 August–13 September 2026
+    match = re.search(
+        rf"\b(\d{{1,2}})\s+({MONTH_PATTERN})\s*[-–—]\s*(\d{{1,2}})\s+({MONTH_PATTERN})\s+(20\d{{2}})\b",
+        text,
+        re.IGNORECASE,
+    )
+    if match:
+        year = int(match.group(5))
+        start = _safe_date(year, _month_number(match.group(2)), int(match.group(1)))
+        end = _safe_date(year, _month_number(match.group(4)), int(match.group(3)))
+        return start, end
+
+    # 24-30 August 2026
+    match = re.search(
+        rf"\b(\d{{1,2}})\s*[-–—]\s*(\d{{1,2}})\s+({MONTH_PATTERN})\s+(20\d{{2}})\b",
+        text,
+        re.IGNORECASE,
+    )
+    if match:
+        year = int(match.group(4))
+        month = _month_number(match.group(3))
+        return (
+            _safe_date(year, month, int(match.group(1))),
+            _safe_date(year, month, int(match.group(2))),
+        )
+
+    # 25 August 2026 onwards
+    match = re.search(
+        rf"\b(\d{{1,2}})\s+({MONTH_PATTERN})\s+(20\d{{2}})\s+onwards\b",
+        text,
+        re.IGNORECASE,
+    )
+    if match:
+        start = _safe_date(int(match.group(3)), _month_number(match.group(2)), int(match.group(1)))
+        return start, None
+
+    # 1-31 August 2026 with varying dash placement already handled above.
+    # A single dated promotion such as 30 August 2026 is valid that day only.
+    match = re.search(
+        rf"\b(\d{{1,2}})\s+({MONTH_PATTERN})\s+(20\d{{2}})\b",
+        text,
+        re.IGNORECASE,
+    )
+    if match:
+        one_day = _safe_date(int(match.group(3)), _month_number(match.group(2)), int(match.group(1)))
+        return one_day, one_day
+
+    if "onwards" in text.casefold():
+        return None, None
+
+    return None, None
+
+
+def is_active(start, end, today, title):
+    if start and today < start:
+        return False
+    if end and today > end:
+        return False
+
+    # If no date could be parsed, only allow explicit ongoing wording.
+    if start is None and end is None:
+        lowered = title.casefold()
+        return "onwards" in lowered or "now till" in lowered
+
+    return True
+
+
+def extract_discount_percent(title):
+    text = clean_text(title)
+
+    # Prefer the largest explicitly advertised percentage.
+    percentages = [
+        int(value)
+        for value in re.findall(r"(?<!\d)(\d{1,3})\s*%\s*(?:off|discount|savings?)?", text, re.IGNORECASE)
+        if 0 < int(value) <= 100
     ]
-    for x in items:
-        x["deal_score"] = promo_score(x, "sale")
-        x["observed_at"] = iso_now_sgt()
+
+    # Buy N Get M Free -> equivalent headline saving for an equal-value basket.
+    for buy, free in re.findall(
+        r"buy\s+(\d+)\s+(?:selected\s+\w+\s+)?get\s+(\d+)\s+free",
+        text,
+        re.IGNORECASE,
+    ):
+        buy_n = int(buy)
+        free_n = int(free)
+        if buy_n > 0 and free_n > 0:
+            percentages.append(round(100 * free_n / (buy_n + free_n)))
+
+    # 1-for-1 / 1 for 1 approximates 50% on two equal-value items.
+    if re.search(r"\b1\s*[- ]?for\s*[- ]?1\b", text, re.IGNORECASE):
+        percentages.append(50)
+
+    return max(percentages) if percentages else 0
+
+
+def detect_subcategory(title, hint):
+    lowered = title.casefold()
+
+    if any(word in lowered for word in ELECTRONICS_WORDS):
+        return "electronics"
+    if any(word in lowered for word in TRAVEL_WORDS):
+        return "travel_luggage"
+    if any(word in lowered for word in SPORTS_WORDS):
+        return "sportswear_footwear"
+    if any(word in lowered for word in OUTLET_WORDS):
+        return "outlet_clearance"
+
+    if hint == "electronics":
+        return "electronics"
+    if hint == "travel":
+        return "travel_luggage"
+    if hint == "sportswear":
+        return "sportswear_footwear"
+
+    return "fashion_clearance"
+
+
+def is_relevant(title, hint):
+    lowered = title.casefold()
+
+    if any(word in lowered for word in IGNORE_WORDS) and not any(
+        word in lowered for word in PREFERRED_BRANDS | ELECTRONICS_WORDS | SPORTS_WORDS | TRAVEL_WORDS
+    ):
+        return False
+
+    if any(word in lowered for word in PREFERRED_BRANDS):
+        return True
+    if any(word in lowered for word in SPORTS_WORDS):
+        return True
+    if any(word in lowered for word in ELECTRONICS_WORDS):
+        return True
+    if any(word in lowered for word in TRAVEL_WORDS):
+        return True
+    if any(word in lowered for word in OUTLET_WORDS):
+        return True
+
+    return hint in {"sportswear", "electronics", "travel"}
+
+
+def infer_location(title):
+    lowered = title.casefold()
+    for location in KNOWN_LOCATIONS:
+        if location.casefold() in lowered:
+            return f"{location} / Singapore"
+    return "Singapore"
+
+
+def brand_quality_score(title):
+    lowered = title.casefold()
+    score = 7.2
+
+    if any(brand in lowered for brand in PREFERRED_BRANDS):
+        score += 1.0
+    if any(word in lowered for word in OUTLET_WORDS):
+        score += 0.4
+    if "clearance" in lowered or "warehouse sale" in lowered:
+        score += 0.4
+
+    return round(min(score, 10.0), 1)
+
+
+def relevance_score(title, subcategory, discount):
+    lowered = title.casefold()
+    score = 7.0
+
+    if subcategory in {"sportswear_footwear", "electronics", "travel_luggage"}:
+        score += 0.8
+    if "imm" in lowered:
+        score += 0.7
+    elif any(word in lowered for word in OUTLET_WORDS):
+        score += 0.4
+
+    if any(brand in lowered for brand in PREFERRED_BRANDS):
+        score += 0.5
+
+    if discount >= 60:
+        score += 0.8
+    elif discount >= 50:
+        score += 0.6
+    elif discount >= 40:
+        score += 0.3
+
+    return round(min(score, 10.0), 1)
+
+
+def stable_id(url, title):
+    value = f"sales|{url}|{title.casefold()}".encode("utf-8")
+    return "sale-live-" + hashlib.sha1(value).hexdigest()[:12]
+
+
+def concise_name(title):
+    # Remove the date prefix while preserving the actual promotion wording.
+    value = re.sub(r"^\s*(?:now\s+till\s+)?[^:]{0,70}:\s*", "", title, count=1, flags=re.IGNORECASE)
+    value = clean_text(value)
+    return value if value else clean_text(title)
+
+
+def build_item(candidate, today, min_discount):
+    title = candidate["title"]
+    discount = extract_discount_percent(title)
+    if discount < min_discount:
+        return None
+
+    if not is_relevant(title, candidate["source_hint"]):
+        return None
+
+    start, end = parse_validity(title, today)
+    if not is_active(start, end, today, title):
+        return None
+
+    subcategory = detect_subcategory(title, candidate["source_hint"])
+    location = infer_location(title)
+    item_name = concise_name(title)
+
+    validity_text = ""
+    if end:
+        validity_text = f" Listed as valid through {end.isoformat()}."
+    elif start:
+        validity_text = f" Listed from {start.isoformat()} onwards."
+
+    description = (
+        f"Discovery listing advertising up to {discount}% savings."
+        f"{validity_text} Verify stock, eligible products, membership requirements, "
+        "and final price with the retailer before purchase."
+    )
+
+    return {
+        "id": stable_id(candidate["url"], title),
+        "category": "sale",
+        "subcategory": subcategory,
+        "name": item_name,
+        "location": location,
+        "description": description,
+        "discount_percent": discount,
+        "quality_score": brand_quality_score(title),
+        "relevance_score": relevance_score(title, subcategory, discount),
+        "source": "EverydayOnSales Singapore",
+        "source_detail": candidate["source_detail"],
+        "source_type": "promotion_aggregator",
+        "reference_source": "everydayonsales_live_page",
+        "url": candidate["url"],
+        "valid_from": start.isoformat() if start else None,
+        "valid_until": end.isoformat() if end else None,
+        "verification_required": True,
+        "is_demo": False,
+        "is_live": True,
+        "price_type": "advertised_discount",
+    }
+
+
+def load_previous_live_sales():
+    """Preserve prior live Sales data if every source becomes unusable."""
+    if not PREVIOUS_SALES_PATH.exists():
+        return []
+
+    try:
+        payload = json.loads(PREVIOUS_SALES_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+
+    if isinstance(payload, dict):
+        payload = payload.get("items", [])
+
+    if not isinstance(payload, list):
+        return []
+
+    return [
+        dict(item)
+        for item in payload
+        if isinstance(item, dict)
+        and item.get("category") == "sale"
+        and not item.get("is_demo", False)
+    ]
+
+
+def scan_sales():
+    """
+    Return live Singapore shopping / retail deals relevant to V&V Deals Scout.
+
+    Environment overrides:
+      SALES_SCAN_TIMEOUT_SECONDS  default 20
+      SALES_SCAN_MIN_DISCOUNT     default 30
+      SALES_SCAN_MAX_ITEMS        default 30
+    """
+    timeout = env_int("SALES_SCAN_TIMEOUT_SECONDS", DEFAULT_TIMEOUT, 5, 60)
+    min_discount = env_int("SALES_SCAN_MIN_DISCOUNT", DEFAULT_MIN_DISCOUNT, 0, 100)
+    max_items = env_int("SALES_SCAN_MAX_ITEMS", DEFAULT_MAX_ITEMS, 1, 100)
+    today = datetime.now(SGT).date()
+
+    print("")
+    print("=" * 68)
+    print("SALES LIVE SCAN")
+    print("=" * 68)
+    print(f"Sources planned:       {len(SOURCE_PAGES)}")
+    print(f"Minimum discount:      {min_discount}%")
+    print(f"Maximum published:     {max_items}")
+    print(f"Singapore date:        {today.isoformat()}")
+    print("")
+
+    all_candidates = []
+    succeeded = 0
+    failed = 0
+
+    for source in SOURCE_PAGES:
+        print(f"Sales source: {source['name']}")
+        try:
+            raw_html = fetch_html(source["url"], timeout)
+            candidates = extract_candidate_links(source, raw_html)
+            all_candidates.extend(candidates)
+            succeeded += 1
+            print(f"  OK - candidate listings found: {len(candidates)}")
+        except HTTPError as exc:
+            failed += 1
+            print(f"  FAILED - HTTP {exc.code}: {exc.reason}")
+        except URLError as exc:
+            failed += 1
+            print(f"  FAILED - network error: {exc.reason}")
+        except Exception as exc:
+            failed += 1
+            print(f"  FAILED - {type(exc).__name__}: {exc}")
+
+    if succeeded == 0 and failed > 0:
+        previous = load_previous_live_sales()
+        print("")
+        print("SALES SCAN INTEGRITY CHECK")
+        print(f"Sources succeeded:     {succeeded}")
+        print(f"Sources failed:        {failed}")
+        if previous:
+            print(f"Preserving {len(previous)} previous live Sales result(s).")
+            return previous
+        print("No previous live Sales data exists. Returning no Sales deals.")
+        return []
+
+    # De-duplicate discoveries across category pages before filtering/scoring.
+    unique_candidates = {}
+    for candidate in all_candidates:
+        key = candidate["url"].rstrip("/").casefold()
+        existing = unique_candidates.get(key)
+        if existing is None or len(candidate["title"]) > len(existing["title"]):
+            unique_candidates[key] = candidate
+
+    items = []
+    for candidate in unique_candidates.values():
+        item = build_item(candidate, today, min_discount)
+        if item:
+            items.append(item)
+
+    if not items:
+        previous = load_previous_live_sales()
+        if previous:
+            print("")
+            print("SALES SCAN WARNING")
+            print("Live sources were reachable but produced zero qualified items.")
+            print(f"Preserving {len(previous)} previous live Sales result(s) instead.")
+            return previous
+
+    observed_at = iso_now_sgt()
+    for item in items:
+        item["deal_score"] = promo_score(item, "sale")
+        item["observed_at"] = observed_at
+
+    items.sort(
+        key=lambda item: (
+            item.get("deal_score", 0),
+            item.get("discount_percent", 0),
+            item.get("relevance_score", 0),
+        ),
+        reverse=True,
+    )
+    items = items[:max_items]
+
+    print("")
+    print("SALES SCAN INTEGRITY CHECK")
+    print(f"Sources succeeded:     {succeeded}")
+    print(f"Sources failed:        {failed}")
+    print(f"Unique candidates:     {len(unique_candidates)}")
+    print(f"Qualified live deals:  {len(items)}")
+    print("SALES SCAN COMPLETED")
+    print("")
+
     return items
