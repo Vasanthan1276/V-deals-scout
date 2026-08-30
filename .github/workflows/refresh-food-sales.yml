@@ -1,0 +1,49 @@
+name: Refresh Food & Sales Only
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh Food and Sales only
+        env:
+          FOOD_SCAN_TIMEOUT_SECONDS: "20"
+          FOOD_SCAN_MIN_DISCOUNT: "30"
+          FOOD_SCAN_MAX_ITEMS: "24"
+
+          SALES_SCAN_TIMEOUT_SECONDS: "20"
+          SALES_SCAN_MIN_DISCOUNT: "30"
+          SALES_SCAN_MAX_ITEMS: "30"
+
+        run: python scripts/refresh_food_sales.py
+
+      - name: Commit refreshed Food and Sales data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/food.json data/sales.json data/deals.json
+
+          if git diff --cached --quiet; then
+            echo "No Food/Sales data changes to commit"
+          else
+            git commit -m "Refresh live Food and Sales deals"
+            git push
+          fi
