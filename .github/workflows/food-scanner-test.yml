@@ -72,6 +72,11 @@ jobs:
               item.get("deal_type", "other")
               for item in live_items
           })
+          explained_items = [
+              item for item in live_items
+              if item.get("score_breakdown")
+              and item.get("score_breakdown", {}).get("components")
+          ]
 
           print("")
           print("=" * 72)
@@ -82,6 +87,7 @@ jobs:
           print(f"Demo items:           {len(demo_items)}")
           print(f"Indian food deals:    {len(indian_items)}")
           print(f"Deal/source types:    {deal_types}")
+          print(f"Explained scores:     {len(explained_items)}")
           print(f"Test output:          {output_path}")
 
           if demo_items:
@@ -100,6 +106,12 @@ jobs:
                   "Indian-source expansion validation failed: fewer than 2 Indian "
                   "food deals were returned. Inspect which official Indian sources "
                   "were skipped or blocked."
+              )
+
+          if len(explained_items) != len(live_items):
+              raise SystemExit(
+                  "Explainable-score validation failed: one or more Food deals "
+                  "did not include score_breakdown components."
               )
 
           print("")

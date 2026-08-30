@@ -74,6 +74,19 @@ jobs:
                   "direct_brand", "direct_retailer", "mall_outlet"
               }
           ]
+          direct_brand = [
+              item for item in live_items
+              if item.get("deal_type") == "direct_brand"
+          ]
+          discovery = [
+              item for item in live_items
+              if item.get("deal_type") == "discovery"
+          ]
+          explained_items = [
+              item for item in live_items
+              if item.get("score_breakdown")
+              and item.get("score_breakdown", {}).get("components")
+          ]
 
           print("")
           print("=" * 72)
@@ -84,6 +97,9 @@ jobs:
           print(f"Demo items:           {len(demo_items)}")
           print(f"Deal/source types:    {deal_types}")
           print(f"Official direct/mall: {len(official_direct)}")
+          print(f"Direct-brand deals:   {len(direct_brand)}")
+          print(f"Discovery deals:      {len(discovery)}")
+          print(f"Explained scores:     {len(explained_items)}")
           print(f"Test output:          {output_path}")
 
           if demo_items:
@@ -101,6 +117,24 @@ jobs:
               raise SystemExit(
                   "Official Sales expansion validation failed: no direct brand, "
                   "direct retailer or mall/outlet deals were returned."
+              )
+
+          if not direct_brand:
+              raise SystemExit(
+                  "Direct-brand validation failed: adidas, Nike, PUMA and ASICS "
+                  "sources produced no publishable Direct Brand deal."
+              )
+
+          if len(discovery) > 12:
+              raise SystemExit(
+                  "Sales diversity validation failed: Discovery exceeded the hard "
+                  "publication cap of 12 deals."
+              )
+
+          if len(explained_items) != len(live_items):
+              raise SystemExit(
+                  "Explainable-score validation failed: one or more Sales deals "
+                  "did not include score_breakdown components."
               )
 
           print("")
