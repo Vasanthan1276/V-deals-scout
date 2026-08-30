@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#111827">
   <title>V&V Deals Scout</title>
-  <link rel="stylesheet" href="styles.css?v=20260830-live">
+  <link rel="stylesheet" href="styles.css?v=20260830-categories">
 </head>
 <body>
   <header class="hero">
@@ -32,6 +32,19 @@
       <button class="tab" data-filter="sale">🛍️ Sales</button>
     </nav>
 
+    <section
+      id="subfilters"
+      class="subfilter-panel"
+      aria-label="Category filters"
+      hidden
+    >
+      <div class="subfilter-copy">
+        <strong id="subfilter-title"></strong>
+        <span id="subfilter-note"></span>
+      </div>
+      <div id="subfilter-buttons" class="subfilter-buttons"></div>
+    </section>
+
     <section class="summary" id="summary"></section>
 
     <section
@@ -55,6 +68,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=20260830-live"></script>
+  <script src="app.js?v=20260830-categories"></script>
 </body>
 </html>

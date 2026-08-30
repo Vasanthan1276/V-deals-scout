@@ -1,5 +1,6 @@
 let allDeals = [];
 let activeFilter = "all";
+let activeSubfilter = "all";
 let payloadStats = {};
 
 const categoryLabels = {
@@ -8,6 +9,82 @@ const categoryLabels = {
   sale: "Sale",
   idea: "Idea for us"
 };
+
+const foodGroupLabels = {
+  hotel_dining: "Hotel Dining",
+  japanese: "Japanese",
+  korean: "Korean",
+  indian: "Indian",
+  chinese_hotpot: "Chinese & Hotpot",
+  southeast_asian: "Southeast Asian",
+  western_international: "Western & International",
+  cafe_casual: "Cafe & Casual",
+  other_dining: "Other Dining"
+};
+
+const salesGroupLabels = {
+  electronics: "Electronics",
+  sportswear_footwear: "Sportswear & Footwear",
+  outlet_clearance: "Outlet & Clearance",
+  travel_luggage: "Travel & Luggage",
+  fashion_clearance: "Fashion & Accessories"
+};
+
+const foodGroupOrder = [
+  "hotel_dining",
+  "japanese",
+  "korean",
+  "chinese_hotpot",
+  "indian",
+  "southeast_asian",
+  "western_international",
+  "cafe_casual",
+  "other_dining"
+];
+
+const salesGroupOrder = [
+  "electronics",
+  "sportswear_footwear",
+  "outlet_clearance",
+  "travel_luggage",
+  "fashion_clearance"
+];
+
+
+function groupForItem(item) {
+  if (item.category === "food") {
+    return item.food_category || "other_dining";
+  }
+
+  if (item.category === "sale") {
+    return item.subcategory || "fashion_clearance";
+  }
+
+  return "all";
+}
+
+
+function groupLabel(item) {
+  const group = groupForItem(item);
+
+  if (item.category === "food") {
+    return foodGroupLabels[group] || titleCaseToken(group);
+  }
+
+  if (item.category === "sale") {
+    return salesGroupLabels[group] || titleCaseToken(group);
+  }
+
+  return "";
+}
+
+
+function cardCategoryLabel(item) {
+  const base = categoryLabels[item.category] || item.category || "Deal";
+  const group = groupLabel(item);
+
+  return group ? `${base} · ${group}` : base;
+}
 
 
 function escapeHtml(value) {
@@ -100,6 +177,30 @@ function formatDate(value) {
     {
       day: "numeric",
       month: "short"
+    }
+  );
+}
+
+
+function formatDateTime(value) {
+  if (!value) {
+    return "";
+  }
+
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+
+  return date.toLocaleString(
+    "en-SG",
+    {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+      hour: "numeric",
+      minute: "2-digit"
     }
   );
 }
@@ -301,9 +402,7 @@ function detailPills(
       item.subcategory
     ) {
       parts.push(
-        titleCaseToken(
-          item.subcategory
-        )
+        groupLabel(item)
       );
     }
 
@@ -634,6 +733,131 @@ function renderStatusBadges(
 }
 
 
+function renderSubfilters() {
+  const panel = document.querySelector("#subfilters");
+  const title = document.querySelector("#subfilter-title");
+  const note = document.querySelector("#subfilter-note");
+  const buttons = document.querySelector("#subfilter-buttons");
+
+  if (!panel || !title || !note || !buttons) {
+    return;
+  }
+
+  if (!(["food", "sale"].includes(activeFilter))) {
+    panel.hidden = true;
+    buttons.innerHTML = "";
+    return;
+  }
+
+  const categoryItems = allDeals.filter(
+    item => item.category === activeFilter
+  );
+
+  const counts = new Map();
+  for (const item of categoryItems) {
+    const group = groupForItem(item);
+    counts.set(group, (counts.get(group) || 0) + 1);
+  }
+
+  const labels = activeFilter === "food"
+    ? foodGroupLabels
+    : salesGroupLabels;
+
+  const order = activeFilter === "food"
+    ? foodGroupOrder
+    : salesGroupOrder;
+
+  title.textContent = activeFilter === "food"
+    ? "Browse Food by dining category"
+    : "Browse Sales by category";
+
+  note.textContent = activeFilter === "food"
+    ? "Dining categories are inferred from venue names and are a browsing aid."
+    : "Sales categories are based on the promotion listing and product type.";
+
+  const options = [
+    {
+      key: "all",
+      label: activeFilter === "food" ? "All Food" : "All Sales",
+      count: categoryItems.length
+    },
+    ...order
+      .filter(key => counts.get(key))
+      .map(key => ({
+        key,
+        label: labels[key] || titleCaseToken(key),
+        count: counts.get(key)
+      }))
+  ];
+
+  if (activeSubfilter !== "all" && !counts.get(activeSubfilter)) {
+    activeSubfilter = "all";
+  }
+
+  buttons.innerHTML = options.map(
+    option => `
+      <button
+        class="subfilter ${option.key === activeSubfilter ? "active" : ""}"
+        data-subfilter="${escapeHtml(option.key)}"
+        type="button"
+      >
+        ${escapeHtml(option.label)}
+        <span>${option.count}</span>
+      </button>
+    `
+  ).join("");
+
+  buttons.querySelectorAll(".subfilter").forEach(button => {
+    button.addEventListener("click", () => {
+      activeSubfilter = button.dataset.subfilter || "all";
+      render();
+    });
+  });
+
+  panel.hidden = false;
+}
+
+
+function renderUpdated(payload) {
+  const updated = document.querySelector("#updated");
+  if (!updated) {
+    return;
+  }
+
+  const sourceTimes = payload.source_updated_at || {};
+  const hotelTime = sourceTimes.hotels || payload.updated_at;
+  const foodTime = sourceTimes.food || payload.nonhotel_updated_at || payload.updated_at;
+  const salesTime = sourceTimes.sales || payload.nonhotel_updated_at || payload.updated_at;
+
+  if (hotelTime && foodTime && salesTime) {
+    if (hotelTime === foodTime && foodTime === salesTime) {
+      updated.textContent = `Full scan: ${formatDateTime(hotelTime)}`;
+      return;
+    }
+
+    if (foodTime === salesTime) {
+      updated.textContent =
+        `Hotels: ${formatDateTime(hotelTime)} · ` +
+        `Food/Sales: ${formatDateTime(foodTime)}`;
+      return;
+    }
+
+    updated.textContent =
+      `Hotels: ${formatDateTime(hotelTime)} · ` +
+      `Food: ${formatDateTime(foodTime)} · ` +
+      `Sales: ${formatDateTime(salesTime)}`;
+    return;
+  }
+
+  if (payload.updated_at) {
+    updated.textContent = `Last full scan: ${formatDateTime(payload.updated_at)}`;
+    return;
+  }
+
+  updated.textContent = "Not scanned yet";
+}
+
+
 function updateEmptyMessage() {
   const empty =
     document.querySelector(
@@ -709,6 +933,8 @@ function updateEmptyMessage() {
 function render() {
   let data;
 
+  renderSubfilters();
+
   if (
     activeFilter
     === "all"
@@ -723,12 +949,18 @@ function render() {
   }
 
   else {
-    data =
-      allDeals.filter(
-        item =>
-          item.category
-          === activeFilter
+    data = allDeals.filter(
+      item => item.category === activeFilter
+    );
+
+    if (
+      ["food", "sale"].includes(activeFilter)
+      && activeSubfilter !== "all"
+    ) {
+      data = data.filter(
+        item => groupForItem(item) === activeSubfilter
       );
+    }
   }
 
   const root =
@@ -788,11 +1020,7 @@ function render() {
 
     const safeCategory =
       escapeHtml(
-        categoryLabels[
-          item.category
-        ]
-        ||
-        item.category
+        cardCategoryLabel(item)
       );
 
     const safeName =
@@ -952,6 +1180,10 @@ function render() {
       <span>
         Best deals
       </span>
+
+      <small>
+        Curated shortlist · max ${payloadStats.best_deal_limit || 14}
+      </small>
     </div>
 
     <div class="metric">
@@ -1016,29 +1248,7 @@ async function load() {
     payloadStats =
       payload.stats || {};
 
-    const updated =
-      document.querySelector(
-        "#updated"
-      );
-
-    if (
-      payload.updated_at
-    ) {
-      updated.textContent =
-        `Last scan: ${
-          new Date(
-            payload.updated_at
-          )
-            .toLocaleString(
-              "en-SG"
-            )
-        }`;
-    }
-
-    else {
-      updated.textContent =
-        "Not scanned yet";
-    }
+    renderUpdated(payload);
 
     renderStatusBadges(
       payload
@@ -1095,6 +1305,8 @@ document
 
           activeFilter =
             button.dataset.filter;
+
+          activeSubfilter = "all";
 
           render();
         }

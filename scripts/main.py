@@ -17,6 +17,11 @@ from sales_scanner import (
 )
 
 
+from deal_score import (
+    curate_best_items,
+)
+
+
 def update_history(hotels):
     history = read_json(
         "data/history.json",
@@ -176,38 +181,6 @@ def source_mode(items):
     )
 
 
-def apply_best_rules(
-    items,
-    minimum_score,
-):
-    """
-    Keep every item available in its category tab, but only allow live items
-    meeting the configured score threshold into the Best tab.
-    """
-    for item in items:
-        is_demo = bool(
-            item.get(
-                "is_demo",
-                False,
-            )
-        )
-
-        score = float(
-            item.get(
-                "deal_score",
-                0,
-            )
-            or 0
-        )
-
-        item["exclude_from_best"] = (
-            is_demo
-            or score < minimum_score
-        )
-
-    return items
-
-
 def main():
     #
     # IMPORTANT HOTELBEDS INTEGRITY RULE:
@@ -223,11 +196,7 @@ def main():
     #
     hotels = scan_hotels()
 
-    #
-    # Food and Sales are live/beta scanners. They do not call Hotelbeds.
-    # Their scanners independently preserve previous live category data when
-    # their external sources are completely unavailable.
-    #
+    # Food and Sales are live/beta scanners and do not call Hotelbeds.
     food = scan_food()
     sales = scan_sales()
 
@@ -255,28 +224,8 @@ def main():
     food_items = food[:maximum]
     sales_items = sales[:maximum]
 
-    apply_best_rules(
-        hotel_items,
-        minimum,
-    )
-
-    apply_best_rules(
-        food_items,
-        minimum,
-    )
-
-    apply_best_rules(
-        sales_items,
-        minimum,
-    )
-
     ideas = build_ideas(
         hotels,
-        minimum,
-    )
-
-    apply_best_rules(
-        ideas,
         minimum,
     )
 
@@ -288,11 +237,18 @@ def main():
     )
 
     visible.sort(
-        key=lambda item: item.get(
-            "deal_score",
-            0,
+        key=lambda item: float(
+            item.get("deal_score", 0) or 0
         ),
         reverse=True,
+    )
+
+    # Best is a curated front-page shortlist, not every item over threshold.
+    # Default balance: up to 3 Hotels, 5 Food, 5 Sales and 1 Idea.
+    best_items = curate_best_items(
+        visible,
+        minimum_score=minimum,
+        total_limit=14,
     )
 
     history_ready = sum(
@@ -307,28 +263,15 @@ def main():
         if hotel.get("score_basis") == "peer_comparison"
     )
 
-    best_deals = sum(
-        1
-        for item in visible
-        if (
-            not item.get(
-                "exclude_from_best",
-                False,
-            )
-            and not item.get(
-                "is_demo",
-                False,
-            )
-        )
-    )
-
+    best_deals = len(best_items)
     food_mode = source_mode(food)
     sales_mode = source_mode(sales)
+    scan_time = iso_now_sgt()
 
     write_json(
         "data/hotels.json",
         {
-            "updated_at": iso_now_sgt(),
+            "updated_at": scan_time,
             "provider": "hotelbeds",
             "environment": "evaluation",
             "availability_results": len(hotels),
@@ -339,7 +282,7 @@ def main():
     write_json(
         "data/food.json",
         {
-            "updated_at": iso_now_sgt(),
+            "updated_at": scan_time,
             "mode": food_mode,
             "items": food,
         },
@@ -348,7 +291,7 @@ def main():
     write_json(
         "data/sales.json",
         {
-            "updated_at": iso_now_sgt(),
+            "updated_at": scan_time,
             "mode": sales_mode,
             "items": sales,
         },
@@ -357,7 +300,14 @@ def main():
     write_json(
         "data/deals.json",
         {
-            "updated_at": iso_now_sgt(),
+            "updated_at": scan_time,
+            "nonhotel_updated_at": scan_time,
+            "refresh_scope": "full",
+            "source_updated_at": {
+                "hotels": scan_time,
+                "food": scan_time,
+                "sales": scan_time,
+            },
             "demo_mode": False,
             "status": {
                 "hotels": "evaluation",
@@ -372,60 +322,29 @@ def main():
 
                 "food_results": len(food_items),
                 "sales_results": len(sales_items),
-                "live_promos": (
-                    len(food_items)
-                    + len(sales_items)
-                ),
+                "live_promos": len(food_items) + len(sales_items),
                 "history_ready": history_ready,
                 "peer_comparison": peer_only,
                 "best_deals": best_deals,
+                "best_deal_limit": 14,
             },
             "items": visible,
         },
     )
 
-    update_history(
-        hotels
-    )
+    update_history(hotels)
 
     print()
-    print(
-        "=" * 70
-    )
-    print(
-        "V&V DEALS SCOUT UPDATE COMPLETE"
-    )
-    print(
-        "=" * 70
-    )
-    print(
-        "Hotel availability: "
-        f"{len(hotels)}"
-    )
-    print(
-        "Food live deals:     "
-        f"{len(food_items)}"
-    )
-    print(
-        "Sales live deals:    "
-        f"{len(sales_items)}"
-    )
-    print(
-        "History-ready:       "
-        f"{history_ready}"
-    )
-    print(
-        "Peer-comparison:      "
-        f"{peer_only}"
-    )
-    print(
-        "Best deals:           "
-        f"{best_deals}"
-    )
-    print(
-        "Dashboard items:      "
-        f"{len(visible)}"
-    )
+    print("=" * 70)
+    print("V&V DEALS SCOUT UPDATE COMPLETE")
+    print("=" * 70)
+    print(f"Hotel availability: {len(hotels)}")
+    print(f"Food live deals:     {len(food_items)}")
+    print(f"Sales live deals:    {len(sales_items)}")
+    print(f"History-ready:       {history_ready}")
+    print(f"Peer-comparison:      {peer_only}")
+    print(f"Best shortlist:       {best_deals} / 14 max")
+    print(f"Dashboard items:      {len(visible)}")
 
 
 if __name__ == "__main__":

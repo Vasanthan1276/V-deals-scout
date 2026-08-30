@@ -37,16 +37,112 @@ def hotel_score(item):
     date_points = 5 if item.get("convenient_date") else 2
 
     total = (
-        price_points + quality_points + room_points + extras_points +
-        getaway_points + location_points + cancel_points + date_points
+        price_points
+        + quality_points
+        + room_points
+        + extras_points
+        + getaway_points
+        + location_points
+        + cancel_points
+        + date_points
     )
     return round(clamp(total), 1)
 
 
 def promo_score(item, kind="food"):
+    """
+    Category score used inside Food and Sales tabs.
+
+    The Best tab is separately curated by curate_best_items(), so a strong
+    category score does not automatically mean every promotion appears in the
+    Best shortlist.
+    """
     discount = float(item.get("discount_percent", 0) or 0)
-    # 50% discount = 60 base points.
+
+    # 50% discount = 60 base points. This preserves the scoring behaviour
+    # already validated by the live Food and Sales scanner tests.
     base = min(60, discount / 50 * 60)
     quality = float(item.get("quality_score", 7) or 7) / 10 * 20
     relevance = float(item.get("relevance_score", 7) or 7) / 10 * 20
+
     return round(clamp(base + quality + relevance), 1)
+
+
+DEFAULT_BEST_LIMITS = {
+    "hotel": 3,
+    "food": 5,
+    "sale": 5,
+    "idea": 1,
+}
+
+
+def curate_best_items(
+    items,
+    minimum_score=70,
+    category_limits=None,
+    total_limit=14,
+):
+    """
+    Mark a deliberately small, balanced Best shortlist.
+
+    Every item remains visible in its own category tab. The Best tab is capped
+    so Food or Sales cannot flood the front page simply because many entries
+    have similar high promotion scores.
+
+    Default maximums:
+      Hotels 3
+      Food   5
+      Sales  5
+      Ideas  1
+      Total 14
+    """
+    limits = dict(DEFAULT_BEST_LIMITS)
+    if category_limits:
+        limits.update(category_limits)
+
+    for item in items:
+        item["exclude_from_best"] = True
+        item.pop("best_rank", None)
+
+    grouped = {}
+
+    for item in items:
+        if item.get("is_demo", False):
+            continue
+
+        score = float(item.get("deal_score", 0) or 0)
+        if score < float(minimum_score or 0):
+            continue
+
+        category = item.get("category", "other")
+        grouped.setdefault(category, []).append(item)
+
+    selected = []
+
+    for category, candidates in grouped.items():
+        candidates.sort(
+            key=lambda item: (
+                float(item.get("deal_score", 0) or 0),
+                float(item.get("discount_percent", 0) or 0),
+            ),
+            reverse=True,
+        )
+
+        limit = limits.get(category, 2)
+        selected.extend(candidates[:limit])
+
+    selected.sort(
+        key=lambda item: (
+            float(item.get("deal_score", 0) or 0),
+            float(item.get("discount_percent", 0) or 0),
+        ),
+        reverse=True,
+    )
+
+    selected = selected[: max(1, int(total_limit))]
+
+    for rank, item in enumerate(selected, start=1):
+        item["exclude_from_best"] = False
+        item["best_rank"] = rank
+
+    return selected

@@ -205,6 +205,77 @@ a.action:hover{text-decoration:underline}
   .cards{grid-template-columns:1fr}
 }
 
+/* Food and Sales browsing categories */
+.subfilter-panel{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:14px 16px;
+  margin:0 0 18px;
+}
+
+.subfilter-copy{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px 12px;
+  align-items:baseline;
+  margin-bottom:10px;
+}
+
+.subfilter-copy strong{
+  font-size:.9rem;
+}
+
+.subfilter-copy span{
+  font-size:.78rem;
+  color:var(--muted);
+}
+
+.subfilter-buttons{
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding-bottom:2px;
+}
+
+.subfilter{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  border:1px solid var(--line);
+  background:#f9fafb;
+  color:#374151;
+  border-radius:999px;
+  padding:8px 11px;
+  font-size:.8rem;
+  font-weight:750;
+  white-space:nowrap;
+  cursor:pointer;
+}
+
+.subfilter span{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:20px;
+  height:20px;
+  padding:0 6px;
+  border-radius:999px;
+  background:#e5e7eb;
+  font-size:.7rem;
+}
+
+.subfilter.active{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:white;
+}
+
+.subfilter.active span{
+  background:rgba(255,255,255,.18);
+  color:white;
+}
+
 [hidden]{
   display:none !important;
 }

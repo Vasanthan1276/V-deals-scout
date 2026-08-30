@@ -49,6 +49,69 @@ DEFAULT_TIMEOUT = 20
 DEFAULT_MIN_DISCOUNT = 30
 DEFAULT_MAX_ITEMS = 24
 
+
+
+FOOD_CATEGORY_RULES = [
+    (
+        "japanese",
+        (
+            "japanese", "sushi", "sashimi", "yakitori", "ramen",
+            "izakaya", "tempura", "omakase", "teppan", "yakiniku",
+            "udon", "soba",
+        ),
+    ),
+    (
+        "korean",
+        (
+            "korean", "seorae", "kimchi", "jjigae", "samgyeopsal",
+            "k-bbq", "k bbq",
+        ),
+    ),
+    (
+        "indian",
+        (
+            "indian", "biryani", "tandoor", "masala", "dosa",
+            "naan", "prata",
+        ),
+    ),
+    (
+        "chinese_hotpot",
+        (
+            "chinese", "hot pot", "hotpot", "sichuan", "szechuan",
+            "mala", "dim sum", "cantonese", "grilled fish", "wok",
+        ),
+    ),
+    (
+        "southeast_asian",
+        (
+            "thai", "vietnamese", "pho", "peranakan", "nyonya",
+            "indonesian", "malay", "nasi", "laksa", "ayam",
+        ),
+    ),
+    (
+        "western_international",
+        (
+            "italian", "pizza", "pasta", "steak", "steakhouse",
+            "bistro", "french", "mediterranean", "spanish", "tapas",
+            "mexican", "burger", "western", "grill",
+        ),
+    ),
+    (
+        "cafe_casual",
+        (
+            "cafe", "café", "bakery", "coffee", "dessert",
+            "patisserie",
+        ),
+    ),
+]
+
+HOTEL_DINING_WORDS = (
+    "hotel", "marriott", "shangri-la", "shangri la", "pan pacific",
+    "fullerton", "dusit", "jen singapore", "grand pacific",
+    "holiday inn", "copthorne", "mercure", "novotel", "hilton",
+    "conrad", "intercontinental", "parkroyal", "raffles",
+)
+
 DATE_NIGHT_WORDS = (
     "hotel",
     "marriott",
@@ -367,6 +430,28 @@ def relevance_score(name, meal_period, rating, discount):
     return round(min(score, 10.0), 1)
 
 
+
+
+def infer_food_category(name):
+    """
+    Infer a broad browsing category from the venue name.
+
+    Eatigo theme pages do not currently expose a reliable cuisine field to this
+    lightweight parser, so the category is intentionally broad and explicitly
+    marked as inferred. It is a browsing aid, not an authoritative cuisine tag.
+    """
+    lowered = clean_name(name).casefold()
+
+    for category, keywords in FOOD_CATEGORY_RULES:
+        if any(keyword in lowered for keyword in keywords):
+            return category
+
+    if any(keyword in lowered for keyword in HOTEL_DINING_WORDS):
+        return "hotel_dining"
+
+    return "other_dining"
+
+
 def parse_eatigo(source, raw_html, min_discount):
     lines = html_to_lines(raw_html)
     restaurants = find_restaurants(lines)
@@ -432,6 +517,8 @@ def parse_eatigo(source, raw_html, min_discount):
             "rating": rating,
             "reservation_count": restaurant["reservation_count"],
             "meal_period": meal,
+            "food_category": infer_food_category(restaurant["name"]),
+            "food_category_inferred": True,
             "best_discount_times": best_times[:8],
             "source": "Eatigo Singapore",
             "source_detail": source["name"],
@@ -467,13 +554,25 @@ def load_previous_live_food():
     if not isinstance(payload, list):
         return []
 
-    return [
-        dict(item)
-        for item in payload
-        if isinstance(item, dict)
-        and item.get("category") == "food"
-        and not item.get("is_demo", False)
-    ]
+    preserved = []
+
+    for item in payload:
+        if (
+            not isinstance(item, dict)
+            or item.get("category") != "food"
+            or item.get("is_demo", False)
+        ):
+            continue
+
+        row = dict(item)
+        if not row.get("food_category"):
+            row["food_category"] = infer_food_category(
+                row.get("restaurant_name") or row.get("name", "")
+            )
+            row["food_category_inferred"] = True
+        preserved.append(row)
+
+    return preserved
 
 
 def scan_food():
