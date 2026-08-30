@@ -10,13 +10,58 @@ const categoryLabels = {
 };
 
 
+function escapeHtml(value) {
+  return String(
+    value ?? ""
+  )
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+
+function safeExternalUrl(value) {
+  if (!value) {
+    return "";
+  }
+
+  try {
+    const url = new URL(
+      value,
+      window.location.href
+    );
+
+    if (
+      url.protocol === "https:"
+      ||
+      url.protocol === "http:"
+    ) {
+      return url.href;
+    }
+  }
+
+  catch (error) {
+    console.warn(
+      "Ignoring invalid deal URL",
+      error
+    );
+  }
+
+  return "";
+}
+
+
 function money(
   value,
   currency = "SGD"
 ) {
   if (
-    value === undefined ||
-    value === null ||
+    value === undefined
+    ||
+    value === null
+    ||
     value === ""
   ) {
     return "";
@@ -42,6 +87,14 @@ function formatDate(value) {
     value + "T12:00:00"
   );
 
+  if (
+    Number.isNaN(
+      date.getTime()
+    )
+  ) {
+    return value;
+  }
+
   return date.toLocaleDateString(
     "en-SG",
     {
@@ -65,9 +118,12 @@ function pctBelow(
   );
 
   if (
-    !current ||
-    !reference ||
-    reference <= 0 ||
+    !current
+    ||
+    !reference
+    ||
+    reference <= 0
+    ||
     current >= reference
   ) {
     return 0;
@@ -86,93 +142,195 @@ function pctBelow(
 }
 
 
+function titleCaseToken(value) {
+  return String(
+    value || ""
+  )
+    .replaceAll("_", " ")
+    .replaceAll("-", " ")
+    .replace(
+      /\b\w/g,
+      character =>
+        character.toUpperCase()
+    );
+}
+
+
 function detailPills(
   item
 ) {
   const parts = [];
 
   if (
-    item.current_price
+    item.category === "hotel"
   ) {
-    parts.push(
-      `Nightly ${
-        money(
-          item.current_price,
-          item.currency
-        )
-      }`
-    );
+    if (
+      item.current_price
+    ) {
+      parts.push(
+        `Nightly ${
+          money(
+            item.current_price,
+            item.currency
+          )
+        }`
+      );
+    }
+
+    if (
+      item.reference_source
+      === "observed price history"
+      &&
+      item.historical_median
+    ) {
+      parts.push(
+        `Observed median ${
+          money(
+            item.historical_median,
+            item.currency
+          )
+        }`
+      );
+    }
+
+    else if (
+      item.reference_source
+      === "same-date peer comparison"
+      &&
+      item.peer_median
+    ) {
+      parts.push(
+        `Peer median ${
+          money(
+            item.peer_median,
+            item.currency
+          )
+        }`
+      );
+    }
+
+    if (
+      item.check_in
+    ) {
+      parts.push(
+        `${
+          formatDate(
+            item.check_in
+          )
+        } → ${
+          formatDate(
+            item.check_out
+          )
+        }`
+      );
+    }
+
+    if (
+      item.nights
+    ) {
+      parts.push(
+        `${item.nights} night${
+          item.nights > 1
+            ? "s"
+            : ""
+        }`
+      );
+    }
   }
 
   if (
-    item.reference_source
-    === "observed price history"
+    item.category === "food"
+  ) {
+    if (
+      item.discount_percent
+    ) {
+      parts.push(
+        `${item.discount_percent}% off`
+      );
+    }
+
+    if (
+      item.meal_period
+    ) {
+      parts.push(
+        titleCaseToken(
+          item.meal_period
+        )
+      );
+    }
+
+    if (
+      item.rating
+    ) {
+      parts.push(
+        `${Number(
+          item.rating
+        ).toFixed(1)} ★`
+      );
+    }
+
+    if (
+      Array.isArray(
+        item.best_discount_times
+      )
+      &&
+      item.best_discount_times.length
+    ) {
+      parts.push(
+        `Best slots ${
+          item.best_discount_times
+            .slice(0, 2)
+            .join(", ")
+        }`
+      );
+    }
+  }
+
+  if (
+    item.category === "sale"
+  ) {
+    if (
+      item.discount_percent
+    ) {
+      parts.push(
+        `${item.discount_percent}% off`
+      );
+    }
+
+    if (
+      item.subcategory
+    ) {
+      parts.push(
+        titleCaseToken(
+          item.subcategory
+        )
+      );
+    }
+
+    if (
+      item.valid_until
+    ) {
+      parts.push(
+        `Until ${
+          formatDate(
+            item.valid_until
+          )
+        }`
+      );
+    }
+
+    if (
+      item.source
+    ) {
+      parts.push(
+        item.source
+      );
+    }
+  }
+
+  if (
+    item.category === "idea"
     &&
-    item.historical_median
-  ) {
-    parts.push(
-      `Observed median ${
-        money(
-          item.historical_median,
-          item.currency
-        )
-      }`
-    );
-  }
-
-  else if (
-    item.reference_source
-    === "same-date peer comparison"
-    &&
-    item.peer_median
-  ) {
-    parts.push(
-      `Peer median ${
-        money(
-          item.peer_median,
-          item.currency
-        )
-      }`
-    );
-  }
-
-  if (
-    item.check_in
-  ) {
-    parts.push(
-      `${
-        formatDate(
-          item.check_in
-        )
-      } → ${
-        formatDate(
-          item.check_out
-        )
-      }`
-    );
-  }
-
-  if (
-    item.nights
-  ) {
-    parts.push(
-      `${item.nights} night${
-        item.nights > 1
-          ? "s"
-          : ""
-      }`
-    );
-  }
-
-  if (
-    item.discount_percent
-  ) {
-    parts.push(
-      `${item.discount_percent}% off`
-    );
-  }
-
-  if (
     item.estimated_cost
   ) {
     parts.push(
@@ -308,24 +466,47 @@ function dataNote(
     item.is_demo
   ) {
     return (
-      `<div class="demo-note">` +
-      `Illustrative demo entry — ` +
-      `not a live quoted price or promotion.` +
+      `<div class="data-note note-warning">` +
+      `Illustrative demo entry — not a live quoted price or promotion.` +
       `</div>`
     );
   }
 
   if (
-    item.category
-    === "hotel"
+    item.category === "hotel"
     &&
     item.is_evaluation
   ) {
     return (
-      `<div class="demo-note">` +
-      `Hotelbeds Evaluation/net rate. ` +
-      `Useful for testing and price trends, ` +
+      `<div class="data-note note-warning">` +
+      `Hotelbeds Evaluation/net rate. Useful for testing and price trends, ` +
       `but not yet a consumer booking quote.` +
+      `</div>`
+    );
+  }
+
+  if (
+    item.category === "food"
+    &&
+    item.is_live
+  ) {
+    return (
+      `<div class="data-note note-live">` +
+      `Live/beta dining promotion. Time-slot discounts and availability can change; ` +
+      `confirm the offer on Eatigo before booking.` +
+      `</div>`
+    );
+  }
+
+  if (
+    item.category === "sale"
+    &&
+    item.verification_required
+  ) {
+    return (
+      `<div class="data-note note-warning">` +
+      `Live/beta promotion discovery. Verify eligible products, stock, dates and final ` +
+      `price with the retailer before purchase.` +
       `</div>`
     );
   }
@@ -342,15 +523,20 @@ function renderStatusBadges(
       ".status-row"
     );
 
-  const old =
-    row.querySelectorAll(
-      ".data-status-badge"
-    );
+  if (
+    !row
+  ) {
+    return;
+  }
 
-  old.forEach(
-    node =>
-      node.remove()
-  );
+  row
+    .querySelectorAll(
+      ".data-status-badge"
+    )
+    .forEach(
+      node =>
+        node.remove()
+    );
 
   const legacy =
     document.querySelector(
@@ -367,7 +553,8 @@ function renderStatusBadges(
     payload.status || {};
 
   function addBadge(
-    text
+    text,
+    tone = "warning"
   ) {
     const badge =
       document.createElement(
@@ -375,7 +562,7 @@ function renderStatusBadges(
       );
 
     badge.className =
-      "badge warning data-status-badge";
+      `badge ${tone} data-status-badge`;
 
     badge.textContent =
       text;
@@ -390,25 +577,58 @@ function renderStatusBadges(
     === "evaluation"
   ) {
     addBadge(
-      "HOTELS: EVALUATION"
+      "HOTELS: EVALUATION",
+      "warning"
+    );
+  }
+
+  else if (
+    status.hotels
+    === "live"
+  ) {
+    addBadge(
+      "HOTELS: LIVE",
+      "live"
     );
   }
 
   if (
     status.food
+    === "live"
+  ) {
+    addBadge(
+      "FOOD: LIVE/BETA",
+      "live"
+    );
+  }
+
+  else if (
+    status.food
     === "demo"
   ) {
     addBadge(
-      "FOOD: DEMO"
+      "FOOD: DEMO",
+      "warning"
     );
   }
 
   if (
     status.sales
+    === "live"
+  ) {
+    addBadge(
+      "SALES: LIVE/BETA",
+      "live"
+    );
+  }
+
+  else if (
+    status.sales
     === "demo"
   ) {
     addBadge(
-      "SALES: DEMO"
+      "SALES: DEMO",
+      "warning"
     );
   }
 }
@@ -437,19 +657,17 @@ function updateEmptyMessage() {
     );
 
   if (
-    activeFilter
-    === "all"
+    activeFilter === "all"
   ) {
     heading.textContent =
       "No Best deals above your threshold yet.";
 
     text.textContent =
-      "Current monitored availability is still available under the Hotels tab.";
+      "Check the Hotels, Food and Sales tabs for all currently monitored results.";
   }
 
   else if (
-    activeFilter
-    === "hotel"
+    activeFilter === "hotel"
   ) {
     heading.textContent =
       "No hotel availability in this view.";
@@ -458,12 +676,32 @@ function updateEmptyMessage() {
       "The next successful daily scan will check again.";
   }
 
-  else {
+  else if (
+    activeFilter === "food"
+  ) {
     heading.textContent =
-      "No deals in this category yet.";
+      "No qualifying live Food deals right now.";
 
     text.textContent =
-      "This section will update as live sources are added.";
+      "The next scan will check Eatigo again.";
+  }
+
+  else if (
+    activeFilter === "sale"
+  ) {
+    heading.textContent =
+      "No qualifying live Sales deals right now.";
+
+    text.textContent =
+      "The next scan will check current Singapore promotions again.";
+  }
+
+  else {
+    heading.textContent =
+      "No ideas in this view yet.";
+
+    text.textContent =
+      "Ideas will expand as more live sources are combined.";
   }
 }
 
@@ -533,57 +771,84 @@ function render() {
       detailPills(
         item
       )
-      .map(
-        text =>
-          `<div class="pill">` +
-          `${text}` +
-          `</div>`
-      )
-      .join("");
+        .map(
+          text =>
+            `<div class="pill">` +
+            `${escapeHtml(text)}` +
+            `</div>`
+        )
+        .join("");
 
     const action =
-      item.booking_url
-      ||
-      item.url;
+      safeExternalUrl(
+        item.booking_url
+        ||
+        item.url
+      );
+
+    const safeCategory =
+      escapeHtml(
+        categoryLabels[
+          item.category
+        ]
+        ||
+        item.category
+      );
+
+    const safeName =
+      escapeHtml(
+        item.name
+      );
+
+    const safeWhere =
+      escapeHtml(
+        where
+      );
+
+    const safeDescription =
+      escapeHtml(
+        description(
+          item
+        )
+      );
+
+    const score =
+      Math.round(
+        Number(
+          item.deal_score
+          || 0
+        )
+      );
 
     card.innerHTML = `
       <div class="card-top">
 
         <div>
           <div class="kind">
-            ${
-              categoryLabels[
-                item.category
-              ]
-              ||
-              item.category
-            }
+            ${safeCategory}
           </div>
 
           <h2>
-            ${item.name}
+            ${safeName}
           </h2>
 
           <div class="location">
-            ${where}
+            ${safeWhere}
           </div>
         </div>
 
         <div class="score">
 
           <strong>
-            ${
-              Math.round(
-                item.deal_score
-                || 0
-              )
-            }
+            ${score}
           </strong>
 
           <span>
             ${
-              scoreCaption(
-                item
+              escapeHtml(
+                scoreCaption(
+                  item
+                )
               )
             }
           </span>
@@ -597,11 +862,7 @@ function render() {
       </div>
 
       <div class="desc">
-        ${
-          description(
-            item
-          )
-        }
+        ${safeDescription}
       </div>
 
       ${
@@ -609,9 +870,9 @@ function render() {
           ? `
             <a
               class="action"
-              href="${action}"
+              href="${escapeHtml(action)}"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               View deal →
             </a>
@@ -661,6 +922,24 @@ function render() {
         === "observed_history"
     ).length;
 
+  const foodCount =
+    payloadStats.food_results
+    ??
+    allDeals.filter(
+      item =>
+        item.category
+        === "food"
+    ).length;
+
+  const salesCount =
+    payloadStats.sales_results
+    ??
+    allDeals.filter(
+      item =>
+        item.category
+        === "sale"
+    ).length;
+
   document.querySelector(
     "#summary"
   ).innerHTML = `
@@ -677,21 +956,35 @@ function render() {
 
     <div class="metric">
       <b>
-        ${historyReady}
+        ${availabilityCount}
       </b>
 
       <span>
-        History-ready
+        Hotel availability
+      </span>
+
+      <small>
+        ${historyReady} history-ready
+      </small>
+    </div>
+
+    <div class="metric">
+      <b>
+        ${foodCount}
+      </b>
+
+      <span>
+        Live Food deals
       </span>
     </div>
 
     <div class="metric">
       <b>
-        ${availabilityCount}
+        ${salesCount}
       </b>
 
       <span>
-        Availability results
+        Live Sales deals
       </span>
     </div>
 
@@ -705,6 +998,14 @@ async function load() {
       await fetch(
         `data/deals.json?v=${Date.now()}`
       );
+
+    if (
+      !response.ok
+    ) {
+      throw new Error(
+        `Deals data HTTP ${response.status}`
+      );
+    }
 
     const payload =
       await response.json();
@@ -728,9 +1029,9 @@ async function load() {
           new Date(
             payload.updated_at
           )
-          .toLocaleString(
-            "en-SG"
-          )
+            .toLocaleString(
+              "en-SG"
+            )
         }`;
     }
 

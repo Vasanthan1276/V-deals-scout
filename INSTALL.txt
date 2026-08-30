@@ -1,0 +1,31 @@
+V&V Deals Scout — Live Food + Sales Integration
+
+Replace these repository files with the files in this ZIP:
+
+1. /scripts/main.py
+2. /scripts/deal_score.py
+3. /app.js
+4. /index.html
+5. /styles.css
+6. /.github/workflows/daily-scan.yml
+
+Important:
+- food_scanner.py and sales_scanner.py are NOT included because they were already
+  installed and independently tested successfully.
+- Hotelbeds behaviour is intentionally unchanged:
+  scan_hotels() still runs first and any Hotelbeds integrity/quota failure stops
+  the main run before JSON is published.
+- The 7:00 AM Singapore daily schedule is intentionally unchanged pending the
+  next fresh-quota Hotelbeds validation.
+- Food production settings: minimum 30% discount, max 24 items.
+- Sales production settings: minimum 30% discount, max 30 items.
+- Food and Sales live items now enter Best only when they meet the configured
+  minimum_deal_score.
+- Dashboard status displays FOOD: LIVE/BETA and SALES: LIVE/BETA.
+- Dashboard summary now shows Best deals, Hotel availability, Live Food deals,
+  and Live Sales deals.
+- Live external text/links are escaped/validated before display.
+
+After replacing and committing the files:
+Do NOT manually run Daily Deals Scan today.
+Wait for the next scheduled Daily Deals Scan, then inspect the result.

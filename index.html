@@ -5,17 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#111827">
   <title>V&V Deals Scout</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260830-live">
 </head>
 <body>
   <header class="hero">
     <div class="wrap">
       <div class="eyebrow">V & V</div>
       <h1>Deals Scout</h1>
-      <p class="subtitle">Staycations, regional escapes, food and sales — ranked by how worthwhile they look.</p>
+      <p class="subtitle">
+        Staycations, regional escapes, live dining promotions and sales —
+        ranked by how worthwhile they look.
+      </p>
+
       <div class="status-row">
         <span id="updated">Loading latest scan…</span>
-        <span id="demoBadge" class="badge warning" hidden>DEMO DATA</span>
       </div>
     </div>
   </header>
@@ -30,7 +33,12 @@
     </nav>
 
     <section class="summary" id="summary"></section>
-    <section id="deals" class="cards"></section>
+
+    <section
+      id="deals"
+      class="cards"
+      aria-live="polite"
+    ></section>
 
     <section class="empty" id="empty" hidden>
       <h2>No deals above your threshold yet.</h2>
@@ -40,10 +48,13 @@
 
   <footer>
     <div class="wrap">
-      <p>V&V Deals Scout · Deal scores are decision aids, not price guarantees.</p>
+      <p>
+        V&V Deals Scout · Deal scores are decision aids, not price guarantees.
+        Live/beta promotions can change; verify final terms before booking or buying.
+      </p>
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=20260830-live"></script>
 </body>
 </html>

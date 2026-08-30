@@ -25,128 +25,45 @@ def update_history(hotels):
         },
     )
 
-    observations = (
-        history.setdefault(
-            "observations",
-            [],
-        )
+    observations = history.setdefault(
+        "observations",
+        [],
     )
 
     for hotel in hotels:
         observations.append(
             {
-                "id": (
-                    hotel.get("id")
+                "id": hotel.get("id"),
+                "provider": hotel.get("provider"),
+                "hotelbeds_code": hotel.get("hotelbeds_code"),
+                "name": hotel.get("name"),
+                "destination": hotel.get("destination"),
+                "check_in": hotel.get("check_in"),
+                "check_out": hotel.get("check_out"),
+                "nights": hotel.get("nights"),
+                "price": hotel.get("current_price"),
+                "total_price": hotel.get("total_price"),
+                "currency": hotel.get(
+                    "currency",
+                    "SGD",
                 ),
-
-                "provider": (
-                    hotel.get(
-                        "provider"
-                    )
+                "score_basis": hotel.get("score_basis"),
+                "reference_source": hotel.get("reference_source"),
+                "price_type": hotel.get("price_type"),
+                "observed_at": hotel.get("observed_at"),
+                "is_demo": hotel.get(
+                    "is_demo",
+                    False,
                 ),
-
-                "hotelbeds_code": (
-                    hotel.get(
-                        "hotelbeds_code"
-                    )
-                ),
-
-                "name": (
-                    hotel.get("name")
-                ),
-
-                "destination": (
-                    hotel.get(
-                        "destination"
-                    )
-                ),
-
-                "check_in": (
-                    hotel.get(
-                        "check_in"
-                    )
-                ),
-
-                "check_out": (
-                    hotel.get(
-                        "check_out"
-                    )
-                ),
-
-                "nights": (
-                    hotel.get(
-                        "nights"
-                    )
-                ),
-
-                "price": (
-                    hotel.get(
-                        "current_price"
-                    )
-                ),
-
-                "total_price": (
-                    hotel.get(
-                        "total_price"
-                    )
-                ),
-
-                "currency": (
-                    hotel.get(
-                        "currency",
-                        "SGD",
-                    )
-                ),
-
-                "score_basis": (
-                    hotel.get(
-                        "score_basis"
-                    )
-                ),
-
-                "reference_source": (
-                    hotel.get(
-                        "reference_source"
-                    )
-                ),
-
-                "price_type": (
-                    hotel.get(
-                        "price_type"
-                    )
-                ),
-
-                "observed_at": (
-                    hotel.get(
-                        "observed_at"
-                    )
-                ),
-
-                "is_demo": (
-                    hotel.get(
-                        "is_demo",
-                        False,
-                    )
-                ),
-
-                "is_evaluation": (
-                    hotel.get(
-                        "is_evaluation",
-                        False,
-                    )
+                "is_evaluation": hotel.get(
+                    "is_evaluation",
+                    False,
                 ),
             }
         )
 
-    history[
-        "observations"
-    ] = observations[
-        -5000:
-    ]
-
-    history[
-        "updated_at"
-    ] = iso_now_sgt()
+    history["observations"] = observations[-5000:]
+    history["updated_at"] = iso_now_sgt()
 
     write_json(
         "data/history.json",
@@ -162,183 +79,79 @@ def build_ideas(
 
     eligible = [
         hotel
-
-        for hotel
-        in hotels
-
+        for hotel in hotels
         if hotel.get(
             "deal_score",
             0,
-        )
-        >= minimum_score
+        ) >= minimum_score
     ]
 
     regional = [
         hotel
-
-        for hotel
-        in eligible
-
-        if hotel.get(
-            "sub_category"
-        )
-        == "regional"
+        for hotel in eligible
+        if hotel.get("sub_category") == "regional"
     ]
 
     staycations = [
         hotel
-
-        for hotel
-        in eligible
-
-        if hotel.get(
-            "sub_category"
-        )
-        == "staycation"
+        for hotel in eligible
+        if hotel.get("sub_category") == "staycation"
     ]
 
     if regional:
-        hotel = (
-            regional[0]
-        )
+        hotel = regional[0]
 
         ideas.append(
             {
-                "id": (
-                    "idea-regional-01"
-                ),
-
-                "category": (
-                    "idea"
-                ),
-
-                "name": (
-                    f"{hotel['destination']} "
-                    "getaway"
-                ),
-
+                "id": "idea-regional-01",
+                "category": "idea",
+                "name": f"{hotel['destination']} getaway",
                 "description": (
-                    f"{hotel['nights']}-night "
-                    f"stay at "
+                    f"{hotel['nights']}-night stay at "
                     f"{hotel['name']}"
                 ),
-
-                "deal_score": (
-                    hotel[
-                        "deal_score"
-                    ]
-                ),
-
-                "estimated_cost": (
-                    hotel.get(
-                        "total_price"
-                    )
-                ),
-
-                "currency": (
-                    hotel[
-                        "currency"
-                    ]
-                ),
-
+                "deal_score": hotel["deal_score"],
+                "estimated_cost": hotel.get("total_price"),
+                "currency": hotel["currency"],
                 "why": (
-                    "Highest-scoring "
-                    "regional hotel "
-                    "opportunity in the "
-                    "current scan."
+                    "Highest-scoring regional hotel "
+                    "opportunity in the current scan."
                 ),
-
-                "score_basis": (
-                    hotel.get(
-                        "score_basis"
-                    )
-                ),
-
-                "reference_source": (
-                    hotel.get(
-                        "reference_source"
-                    )
-                ),
-
+                "score_basis": hotel.get("score_basis"),
+                "reference_source": hotel.get("reference_source"),
                 "is_demo": False,
-
-                "is_evaluation": (
-                    hotel.get(
-                        "is_evaluation",
-                        False,
-                    )
+                "is_evaluation": hotel.get(
+                    "is_evaluation",
+                    False,
                 ),
             }
         )
 
     if staycations:
-        hotel = (
-            staycations[0]
-        )
+        hotel = staycations[0]
 
         ideas.append(
             {
-                "id": (
-                    "idea-staycation-01"
-                ),
-
-                "category": (
-                    "idea"
-                ),
-
-                "name": (
-                    "Singapore staycation"
-                ),
-
+                "id": "idea-staycation-01",
+                "category": "idea",
+                "name": "Singapore staycation",
                 "description": (
                     f"{hotel['name']} — "
                     f"{hotel['nights']} night"
                 ),
-
-                "deal_score": (
-                    hotel[
-                        "deal_score"
-                    ]
-                ),
-
-                "estimated_cost": (
-                    hotel.get(
-                        "total_price"
-                    )
-                ),
-
-                "currency": (
-                    hotel[
-                        "currency"
-                    ]
-                ),
-
+                "deal_score": hotel["deal_score"],
+                "estimated_cost": hotel.get("total_price"),
+                "currency": hotel["currency"],
                 "why": (
-                    "Highest-scoring "
-                    "Singapore hotel "
-                    "opportunity in the "
-                    "current scan."
+                    "Highest-scoring Singapore hotel "
+                    "opportunity in the current scan."
                 ),
-
-                "score_basis": (
-                    hotel.get(
-                        "score_basis"
-                    )
-                ),
-
-                "reference_source": (
-                    hotel.get(
-                        "reference_source"
-                    )
-                ),
-
+                "score_basis": hotel.get("score_basis"),
+                "reference_source": hotel.get("reference_source"),
                 "is_demo": False,
-
-                "is_evaluation": (
-                    hotel.get(
-                        "is_evaluation",
-                        False,
-                    )
+                "is_evaluation": hotel.get(
+                    "is_evaluation",
+                    False,
                 ),
             }
         )
@@ -346,44 +159,77 @@ def build_ideas(
     return ideas
 
 
-def mark_demo_items(
+def source_mode(items):
+    """
+    Report whether a category still contains demo content.
+
+    An empty live scan is still a live source; it simply means there were no
+    qualifying deals in that scan.
+    """
+    return (
+        "demo"
+        if any(
+            item.get("is_demo")
+            for item in items
+        )
+        else "live"
+    )
+
+
+def apply_best_rules(
     items,
+    minimum_score,
 ):
+    """
+    Keep every item available in its category tab, but only allow live items
+    meeting the configured score threshold into the Best tab.
+    """
     for item in items:
-        if item.get(
-            "is_demo"
-        ):
-            item[
-                "exclude_from_best"
-            ] = True
+        is_demo = bool(
+            item.get(
+                "is_demo",
+                False,
+            )
+        )
+
+        score = float(
+            item.get(
+                "deal_score",
+                0,
+            )
+            or 0
+        )
+
+        item["exclude_from_best"] = (
+            is_demo
+            or score < minimum_score
+        )
 
     return items
 
 
 def main():
     #
-    # IMPORTANT:
+    # IMPORTANT HOTELBEDS INTEGRITY RULE:
     #
-    # scan_hotels() runs BEFORE any
-    # JSON output is written.
+    # scan_hotels() runs BEFORE any JSON output is written.
     #
-    # If Hotelbeds is incomplete,
-    # quota-limited, or errors out,
-    # hotel_scanner.py raises here.
+    # If Hotelbeds is incomplete, quota-limited, or errors out,
+    # hotel_scanner.py raises here. The program exits and the previous
+    # published data remains intact.
     #
-    # The program exits and yesterday's
-    # existing data files remain intact.
+    # Do not catch that exception here until the fresh-quota Hotelbeds
+    # integrity validation has been completed.
     #
-
     hotels = scan_hotels()
 
-    food = mark_demo_items(
-        scan_food()
-    )
-
-    sales = mark_demo_items(
-        scan_sales()
-    )
+    #
+    # Food and Sales are live/beta scanners. They do not call Hotelbeds.
+    # Their scanners independently preserve previous live category data when
+    # their external sources are completely unavailable.
+    #
+    food = scan_food()
+    sales = scan_sales()
 
     prefs = read_json(
         "config/preferences.json",
@@ -405,37 +251,32 @@ def main():
         20,
     )
 
-    hotel_items = (
-        hotels[
-            :maximum
-        ]
+    hotel_items = hotels[:maximum]
+    food_items = food[:maximum]
+    sales_items = sales[:maximum]
+
+    apply_best_rules(
+        hotel_items,
+        minimum,
     )
 
-    for hotel in hotel_items:
-        hotel[
-            "exclude_from_best"
-        ] = (
-            hotel.get(
-                "deal_score",
-                0,
-            )
-            < minimum
-        )
-
-    food_items = (
-        food[
-            :maximum
-        ]
+    apply_best_rules(
+        food_items,
+        minimum,
     )
 
-    sales_items = (
-        sales[
-            :maximum
-        ]
+    apply_best_rules(
+        sales_items,
+        minimum,
     )
 
     ideas = build_ideas(
         hotels,
+        minimum,
+    )
+
+    apply_best_rules(
+        ideas,
         minimum,
     )
 
@@ -447,8 +288,7 @@ def main():
     )
 
     visible.sort(
-        key=lambda item:
-        item.get(
+        key=lambda item: item.get(
             "deal_score",
             0,
         ),
@@ -457,40 +297,24 @@ def main():
 
     history_ready = sum(
         1
-
-        for hotel
-        in hotels
-
-        if hotel.get(
-            "score_basis"
-        )
-        == "observed_history"
+        for hotel in hotels
+        if hotel.get("score_basis") == "observed_history"
     )
 
     peer_only = sum(
         1
-
-        for hotel
-        in hotels
-
-        if hotel.get(
-            "score_basis"
-        )
-        == "peer_comparison"
+        for hotel in hotels
+        if hotel.get("score_basis") == "peer_comparison"
     )
 
     best_deals = sum(
         1
-
-        for item
-        in visible
-
+        for item in visible
         if (
             not item.get(
                 "exclude_from_best",
                 False,
             )
-
             and not item.get(
                 "is_demo",
                 False,
@@ -498,153 +322,65 @@ def main():
         )
     )
 
+    food_mode = source_mode(food)
+    sales_mode = source_mode(sales)
+
     write_json(
         "data/hotels.json",
         {
-            "updated_at": (
-                iso_now_sgt()
-            ),
-
-            "provider": (
-                "hotelbeds"
-            ),
-
-            "environment": (
-                "evaluation"
-            ),
-
-            "availability_results": (
-                len(hotels)
-            ),
-
-            "items": (
-                hotels
-            ),
+            "updated_at": iso_now_sgt(),
+            "provider": "hotelbeds",
+            "environment": "evaluation",
+            "availability_results": len(hotels),
+            "items": hotels,
         },
     )
 
     write_json(
         "data/food.json",
         {
-            "updated_at": (
-                iso_now_sgt()
-            ),
-
-            "mode": (
-                "demo"
-                if any(
-                    item.get(
-                        "is_demo"
-                    )
-
-                    for item
-                    in food
-                )
-                else "live"
-            ),
-
-            "items": (
-                food
-            ),
+            "updated_at": iso_now_sgt(),
+            "mode": food_mode,
+            "items": food,
         },
     )
 
     write_json(
         "data/sales.json",
         {
-            "updated_at": (
-                iso_now_sgt()
-            ),
-
-            "mode": (
-                "demo"
-                if any(
-                    item.get(
-                        "is_demo"
-                    )
-
-                    for item
-                    in sales
-                )
-                else "live"
-            ),
-
-            "items": (
-                sales
-            ),
+            "updated_at": iso_now_sgt(),
+            "mode": sales_mode,
+            "items": sales,
         },
     )
 
     write_json(
         "data/deals.json",
         {
-            "updated_at": (
-                iso_now_sgt()
-            ),
-
-            "demo_mode": (
-                False
-            ),
-
+            "updated_at": iso_now_sgt(),
+            "demo_mode": False,
             "status": {
-                "hotels": (
-                    "evaluation"
-                ),
-
-                "food": (
-                    "demo"
-                    if any(
-                        item.get(
-                            "is_demo"
-                        )
-
-                        for item
-                        in food
-                    )
-                    else "live"
-                ),
-
-                "sales": (
-                    "demo"
-                    if any(
-                        item.get(
-                            "is_demo"
-                        )
-
-                        for item
-                        in sales
-                    )
-                    else "live"
-                ),
+                "hotels": "evaluation",
+                "food": food_mode,
+                "sales": sales_mode,
             },
-
             "stats": {
-                "availability_results": (
-                    len(hotels)
-                ),
+                "availability_results": len(hotels),
 
-                # Retained for compatibility
-                # with older app.js versions.
-                "hotel_results": (
-                    len(hotels)
-                ),
+                # Retained for compatibility with older app.js versions.
+                "hotel_results": len(hotels),
 
-                "history_ready": (
-                    history_ready
+                "food_results": len(food_items),
+                "sales_results": len(sales_items),
+                "live_promos": (
+                    len(food_items)
+                    + len(sales_items)
                 ),
-
-                "peer_comparison": (
-                    peer_only
-                ),
-
-                "best_deals": (
-                    best_deals
-                ),
+                "history_ready": history_ready,
+                "peer_comparison": peer_only,
+                "best_deals": best_deals,
             },
-
-            "items": (
-                visible
-            ),
+            "items": visible,
         },
     )
 
@@ -656,37 +392,38 @@ def main():
     print(
         "=" * 70
     )
-
     print(
         "V&V DEALS SCOUT UPDATE COMPLETE"
     )
-
     print(
         "=" * 70
     )
-
     print(
-        "Availability results: "
+        "Hotel availability: "
         f"{len(hotels)}"
     )
-
     print(
-        "History-ready: "
+        "Food live deals:     "
+        f"{len(food_items)}"
+    )
+    print(
+        "Sales live deals:    "
+        f"{len(sales_items)}"
+    )
+    print(
+        "History-ready:       "
         f"{history_ready}"
     )
-
     print(
-        "Peer-comparison: "
+        "Peer-comparison:      "
         f"{peer_only}"
     )
-
     print(
-        "Best deals: "
+        "Best deals:           "
         f"{best_deals}"
     )
-
     print(
-        "Dashboard items: "
+        "Dashboard items:      "
         f"{len(visible)}"
     )
 
