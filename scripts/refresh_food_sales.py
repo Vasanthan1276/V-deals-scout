@@ -33,12 +33,14 @@ def main():
     settings = prefs.get("search_settings", {})
     minimum = settings.get("minimum_deal_score", 70)
     maximum = settings.get("maximum_results_per_category", 20)
+    food_maximum = settings.get("maximum_food_results", 30)
+    sales_maximum = settings.get("maximum_sales_results", 30)
 
     food = scan_food()
     sales = scan_sales()
 
-    food_items = food[:maximum]
-    sales_items = sales[:maximum]
+    food_items = food[:food_maximum]
+    sales_items = sales[:sales_maximum]
 
     # Preserve the last successfully published Hotel/Idea cards exactly as-is.
     # This refresh intentionally does not call Hotelbeds, rewrite hotels.json,
@@ -80,6 +82,9 @@ def main():
     best_deals = len(best_items)
     food_mode = source_mode(food)
     sales_mode = source_mode(sales)
+    food_source_types = len({item.get("deal_type", "other") for item in food_items})
+    sales_source_types = len({item.get("deal_type", "other") for item in sales_items})
+    indian_food_deals = sum(1 for item in food_items if item.get("food_category") == "indian")
     refresh_time = iso_now_sgt()
 
     write_json(
@@ -142,6 +147,9 @@ def main():
                 ),
                 "food_results": len(food_items),
                 "sales_results": len(sales_items),
+                "food_source_types": food_source_types,
+                "sales_source_types": sales_source_types,
+                "indian_food_deals": indian_food_deals,
                 "live_promos": len(food_items) + len(sales_items),
                 "history_ready": existing_stats.get(
                     "history_ready",
@@ -160,8 +168,9 @@ def main():
 
     print()
     print("FOOD + SALES REFRESH COMPLETE")
-    print(f"Food live deals:  {len(food_items)}")
-    print(f"Sales live deals: {len(sales_items)}")
+    print(f"Food live deals:  {len(food_items)} across {food_source_types} deal types")
+    print(f"Indian food deals: {indian_food_deals}")
+    print(f"Sales live deals: {len(sales_items)} across {sales_source_types} deal types")
     print(f"Best shortlist:   {best_deals} / 14 max")
     print(
         "Hotel cards kept: "

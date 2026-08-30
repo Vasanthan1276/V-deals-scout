@@ -63,9 +63,70 @@ SOURCE_PAGES = [
 ]
 
 DEFAULT_TIMEOUT = 20
-DEFAULT_MIN_DISCOUNT = 30
+DEFAULT_MIN_DISCOUNT = 15
 DEFAULT_MAX_ITEMS = 30
 MAX_PAGE_BYTES = 2_000_000
+
+
+# Additional official/direct sources used by Sales V2.
+OFFICIAL_SALES_INDEX_SOURCES = [
+    {
+        "name": "American Express Shopping",
+        "url": "https://www.americanexpress.com/en-sg/benefits/promotions/shopping/",
+        "source": "American Express Shopping",
+        "deal_type": "card_deal",
+        "source_confidence": "verified",
+        "access_requirement": "Eligible American Express card required",
+        "hint": "general",
+        "max_results": 8,
+    },
+    {
+        "name": "DBS Home & Electronics",
+        "url": "https://www.dbs.com.sg/personal/promotion/cards-home-owners-privileges",
+        "source": "DBS/POSB Shopping",
+        "deal_type": "card_deal",
+        "source_confidence": "verified",
+        "access_requirement": "DBS/POSB card or instalment plan may be required",
+        "hint": "electronics",
+        "max_results": 8,
+    },
+]
+
+OFFICIAL_SALES_SINGLE_SOURCES = [
+    {
+        "name": "adidas Singapore Season Sale",
+        "url": "https://www.adidas.com.sg/season_sale-outlet",
+        "merchant": "adidas Singapore Season Sale · Outlet",
+        "source": "adidas Singapore",
+        "deal_type": "direct_brand",
+        "source_confidence": "verified",
+        "access_requirement": "Direct brand sale",
+        "hint": "sportswear",
+        "location": "Online / Singapore",
+    },
+    {
+        "name": "CLUB21.com - DBS/POSB",
+        "url": "https://www.dbs.com.sg/personal/promotion/cards-privileges-ylclub21",
+        "merchant": "CLUB21.com",
+        "source": "DBS/POSB Shopping",
+        "deal_type": "card_deal",
+        "source_confidence": "verified",
+        "access_requirement": "DBS/POSB card required",
+        "hint": "fashion",
+        "location": "Online / Singapore",
+    },
+    {
+        "name": "ZALORA - DBS/POSB",
+        "url": "https://www.dbs.com.sg/personal/promotion/cards-zalora",
+        "merchant": "ZALORA",
+        "source": "DBS/POSB Shopping",
+        "deal_type": "card_deal",
+        "source_confidence": "verified",
+        "access_requirement": "DBS/POSB card and promotion code required",
+        "hint": "fashion",
+        "location": "Online / Singapore",
+    },
+]
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PREVIOUS_SALES_PATH = REPO_ROOT / "data" / "sales.json"
@@ -663,13 +724,251 @@ def load_previous_live_sales():
     ]
 
 
+class VisibleTextExtractor(HTMLParser):
+    BLOCK_TAGS = {
+        "article", "aside", "blockquote", "br", "div", "footer", "h1", "h2", "h3",
+        "h4", "h5", "h6", "header", "li", "main", "p", "section", "table", "td",
+        "th", "tr", "ul",
+    }
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts = []
+        self.hidden_depth = 0
+
+    def handle_starttag(self, tag, attrs):
+        tag = tag.lower()
+        if tag in {"script", "style", "noscript", "svg"}:
+            self.hidden_depth += 1
+        elif self.hidden_depth == 0 and tag in self.BLOCK_TAGS:
+            self.parts.append("\n")
+
+    def handle_endtag(self, tag):
+        tag = tag.lower()
+        if tag in {"script", "style", "noscript", "svg"}:
+            self.hidden_depth = max(0, self.hidden_depth - 1)
+        elif self.hidden_depth == 0 and tag in self.BLOCK_TAGS:
+            self.parts.append("\n")
+
+    def handle_data(self, data):
+        if self.hidden_depth == 0 and data:
+            self.parts.append(" " + data + " ")
+
+    def get_text(self):
+        return "".join(self.parts)
+
+
+def html_to_lines(raw_html):
+    parser = VisibleTextExtractor()
+    parser.feed(raw_html)
+    parser.close()
+    text = html.unescape(parser.get_text()).replace("\xa0", " ")
+    output = []
+    for raw in text.splitlines():
+        line = clean_text(raw)
+        if line:
+            output.append(line)
+    return output
+
+
+def extract_effective_discount(text):
+    values = [extract_discount_percent(text)]
+    lowered = clean_text(text).casefold()
+    dollar = re.search(
+        r"(?:s\$|\$)\s*(\d+(?:\.\d+)?)\s*off[^.]{0,90}min(?:imum)?\.?\s*(?:spend|charge)(?:\s+of)?\s*(?:s\$|\$)\s*(\d+(?:\.\d+)?)",
+        lowered,
+    )
+    if dollar:
+        amount = float(dollar.group(1))
+        minimum = float(dollar.group(2))
+        if minimum > 0:
+            values.append(round(amount / minimum * 100))
+    return max(values)
+
+
+def official_deal_signal(text):
+    lowered = clean_text(text).casefold()
+    return (
+        "% off" in lowered
+        or "% savings" in lowered
+        or "% discount" in lowered
+        or "1-for-1" in lowered
+        or "buy 1 get 1" in lowered
+        or re.search(r"(?:s\$|\$)\s*\d+\s*off", lowered) is not None
+    )
+
+
+def find_official_merchant(lines, index):
+    generic = {
+        "shopping promotions", "view offer details", "limited time offers", "shopping",
+        "offer detail", "promotion period", "terms and conditions", "learn more",
+        "view all offers", "image",
+    }
+    for offset in range(1, 6):
+        pos = index - offset
+        if pos < 0:
+            break
+        candidate = clean_text(lines[pos])
+        lowered = candidate.casefold()
+        if not candidate or len(candidate) > 120 or lowered in generic:
+            continue
+        if official_deal_signal(candidate):
+            continue
+        if any(token in lowered for token in ("validity", "promotion period", "terms", "from now", "click here")):
+            continue
+        if any(ch.isalpha() for ch in candidate):
+            return candidate
+    return ""
+
+
+def official_quality_score(text, confidence):
+    base = brand_quality_score(text)
+    if confidence == "verified":
+        base += 0.5
+    return round(min(base, 10.0), 1)
+
+
+def build_official_sales_item(source, merchant, offer_text, min_discount):
+    discount = extract_effective_discount(offer_text)
+    if discount < min_discount:
+        return None
+
+    combined = f"{merchant} {offer_text}"
+    subcategory = detect_subcategory(combined, source.get("hint", "general"))
+    location = source.get("location") or infer_location(combined)
+    confidence = source.get("source_confidence", "verified")
+    deal_type = source.get("deal_type", "card_deal")
+
+    description = (
+        f"Official promotion: {clean_text(offer_text)}. "
+        f"{source.get('access_requirement', 'Check source terms')}. "
+        "Verify current exclusions, eligible products, stock and final checkout price before purchase."
+    )
+
+    return {
+        "id": stable_id(source["url"], f"{merchant}|{offer_text}"),
+        "category": "sale",
+        "subcategory": subcategory,
+        "name": merchant,
+        "location": location,
+        "description": description,
+        "discount_percent": discount,
+        "quality_score": official_quality_score(combined, confidence),
+        "relevance_score": relevance_score(combined, subcategory, discount),
+        "source": source.get("source", source["name"]),
+        "source_detail": source["name"],
+        "source_type": "official_promotion_page",
+        "reference_source": source["url"],
+        "source_confidence": confidence,
+        "deal_type": deal_type,
+        "access_requirement": source.get("access_requirement", "Check source terms"),
+        "url": source["url"],
+        "verification_required": True,
+        "is_demo": False,
+        "is_live": True,
+        "price_type": "advertised_discount",
+    }
+
+
+def parse_official_index(source, raw_html, min_discount):
+    lines = html_to_lines(raw_html)
+    items, seen = [], set()
+    for index, line in enumerate(lines):
+        if not official_deal_signal(line):
+            continue
+        merchant = find_official_merchant(lines, index)
+        if not merchant:
+            continue
+        key = (merchant.casefold(), clean_text(line).casefold())
+        if key in seen:
+            continue
+        seen.add(key)
+        item = build_official_sales_item(source, merchant, line, min_discount)
+        if item:
+            items.append(item)
+    items.sort(key=lambda row: (row["discount_percent"], row["relevance_score"]), reverse=True)
+    return items[: source.get("max_results", 8)]
+
+
+def parse_official_single(source, raw_html, min_discount):
+    lines = html_to_lines(raw_html)
+    candidates = []
+    # Direct brand pages may include discount filters deep in the page. Prefer
+    # the first real promotional headline by using position as a tie-breaker.
+    for index, line in enumerate(lines[:450]):
+        if not official_deal_signal(line):
+            continue
+        discount = extract_effective_discount(line)
+        if discount < min_discount:
+            continue
+        candidates.append((-index, discount, clean_text(line)))
+    if not candidates:
+        return []
+    candidates.sort(reverse=True)
+    _, _, offer = candidates[0]
+    item = build_official_sales_item(source, source["merchant"], offer, min_discount)
+    return [item] if item else []
+
+
+def enrich_discovery_item(item):
+    item.setdefault("deal_type", "discovery")
+    item.setdefault("source_confidence", "discovered")
+    item.setdefault("access_requirement", "Verify directly with retailer")
+    return item
+
+
+def select_diverse_sales(items, max_items):
+    quotas = {
+        "discovery": 14,
+        "card_deal": 10,
+        "direct_brand": 6,
+        "mall_outlet": 6,
+    }
+    for item in items:
+        item["deal_score"] = promo_score(item, "sale")
+
+    ordered = sorted(
+        items,
+        key=lambda row: (
+            row.get("deal_score", 0),
+            row.get("source_confidence") == "verified",
+            row.get("discount_percent", 0),
+        ),
+        reverse=True,
+    )
+    selected, seen = [], set()
+    counts = {}
+    for row in ordered:
+        if len(selected) >= max_items:
+            break
+        dtype = row.get("deal_type", "discovery")
+        if counts.get(dtype, 0) >= quotas.get(dtype, 5):
+            continue
+        key = (clean_text(row.get("name", "")).casefold(), row.get("subcategory"), dtype)
+        if key in seen:
+            continue
+        selected.append(row)
+        seen.add(key)
+        counts[dtype] = counts.get(dtype, 0) + 1
+
+    if len(selected) < max_items:
+        for row in ordered:
+            if len(selected) >= max_items:
+                break
+            key = (clean_text(row.get("name", "")).casefold(), row.get("subcategory"), row.get("deal_type", "discovery"))
+            if key in seen:
+                continue
+            selected.append(row)
+            seen.add(key)
+    return selected[:max_items]
+
+
 def scan_sales():
-    """
-    Return live Singapore shopping / retail deals relevant to V&V Deals Scout.
+    """Return multi-source live Singapore shopping / retail deals.
 
     Environment overrides:
       SALES_SCAN_TIMEOUT_SECONDS  default 20
-      SALES_SCAN_MIN_DISCOUNT     default 30
+      SALES_SCAN_MIN_DISCOUNT     default 15
       SALES_SCAN_MAX_ITEMS        default 30
     """
     timeout = env_int("SALES_SCAN_TIMEOUT_SECONDS", DEFAULT_TIMEOUT, 5, 60)
@@ -678,19 +977,23 @@ def scan_sales():
     today = datetime.now(SGT).date()
 
     print("")
-    print("=" * 68)
-    print("SALES LIVE SCAN")
-    print("=" * 68)
-    print(f"Sources planned:       {len(SOURCE_PAGES)}")
+    print("=" * 72)
+    print("SALES MULTI-SOURCE LIVE SCAN")
+    print("=" * 72)
+    print(f"Discovery pages:       {len(SOURCE_PAGES)}")
+    print(f"Official index pages:  {len(OFFICIAL_SALES_INDEX_SOURCES)}")
+    print(f"Official direct pages: {len(OFFICIAL_SALES_SINGLE_SOURCES)}")
     print(f"Minimum discount:      {min_discount}%")
     print(f"Maximum published:     {max_items}")
     print(f"Singapore date:        {today.isoformat()}")
     print("")
 
+    all_items = []
     all_candidates = []
     succeeded = 0
     failed = 0
 
+    # Existing EverydayOnSales discovery feed.
     for source in SOURCE_PAGES:
         print(f"Sales source: {source['name']}")
         try:
@@ -699,13 +1002,45 @@ def scan_sales():
             all_candidates.extend(candidates)
             succeeded += 1
             print(f"  OK - candidate listings found: {len(candidates)}")
-        except HTTPError as exc:
+        except (HTTPError, URLError, Exception) as exc:
             failed += 1
-            print(f"  FAILED - HTTP {exc.code}: {exc.reason}")
-        except URLError as exc:
+            print(f"  FAILED - {type(exc).__name__}: {exc}")
+
+    unique_candidates = {}
+    for candidate in all_candidates:
+        key = candidate["url"].rstrip("/").casefold()
+        existing = unique_candidates.get(key)
+        if existing is None or len(candidate["title"]) > len(existing["title"]):
+            unique_candidates[key] = candidate
+
+    for candidate in unique_candidates.values():
+        item = build_item(candidate, today, min_discount)
+        if item:
+            all_items.append(enrich_discovery_item(item))
+
+    # Official card / retailer index pages.
+    for source in OFFICIAL_SALES_INDEX_SOURCES:
+        print(f"Sales source: {source['name']}")
+        try:
+            raw_html = fetch_html(source["url"], timeout)
+            items = parse_official_index(source, raw_html, min_discount)
+            all_items.extend(items)
+            succeeded += 1
+            print(f"  OK - qualified deals found: {len(items)}")
+        except (HTTPError, URLError, Exception) as exc:
             failed += 1
-            print(f"  FAILED - network error: {exc.reason}")
-        except Exception as exc:
+            print(f"  FAILED - {type(exc).__name__}: {exc}")
+
+    # Dedicated direct / official pages.
+    for source in OFFICIAL_SALES_SINGLE_SOURCES:
+        print(f"Sales source: {source['name']}")
+        try:
+            raw_html = fetch_html(source["url"], timeout)
+            items = parse_official_single(source, raw_html, min_discount)
+            all_items.extend(items)
+            succeeded += 1
+            print(f"  OK - qualified deals found: {len(items)}")
+        except (HTTPError, URLError, Exception) as exc:
             failed += 1
             print(f"  FAILED - {type(exc).__name__}: {exc}")
 
@@ -721,50 +1056,29 @@ def scan_sales():
         print("No previous live Sales data exists. Returning no Sales deals.")
         return []
 
-    # De-duplicate discoveries across category pages before filtering/scoring.
-    unique_candidates = {}
-    for candidate in all_candidates:
-        key = candidate["url"].rstrip("/").casefold()
-        existing = unique_candidates.get(key)
-        if existing is None or len(candidate["title"]) > len(existing["title"]):
-            unique_candidates[key] = candidate
-
-    items = []
-    for candidate in unique_candidates.values():
-        item = build_item(candidate, today, min_discount)
-        if item:
-            items.append(item)
-
-    if not items:
+    if not all_items:
         previous = load_previous_live_sales()
         if previous:
-            print("")
-            print("SALES SCAN WARNING")
-            print("Live sources were reachable but produced zero qualified items.")
-            print(f"Preserving {len(previous)} previous live Sales result(s) instead.")
+            print("Live sources produced zero qualified items; preserving previous Sales data.")
             return previous
 
     observed_at = iso_now_sgt()
+    items = select_diverse_sales(all_items, max_items)
     for item in items:
-        item["deal_score"] = promo_score(item, "sale")
         item["observed_at"] = observed_at
 
-    items.sort(
-        key=lambda item: (
-            item.get("deal_score", 0),
-            item.get("discount_percent", 0),
-            item.get("relevance_score", 0),
-        ),
-        reverse=True,
-    )
-    items = items[:max_items]
+    mix = {}
+    for item in items:
+        dtype = item.get("deal_type", "other")
+        mix[dtype] = mix.get(dtype, 0) + 1
 
     print("")
     print("SALES SCAN INTEGRITY CHECK")
     print(f"Sources succeeded:     {succeeded}")
     print(f"Sources failed:        {failed}")
-    print(f"Unique candidates:     {len(unique_candidates)}")
-    print(f"Qualified live deals:  {len(items)}")
+    print(f"Discovery candidates:  {len(unique_candidates)}")
+    print(f"Published live deals:  {len(items)}")
+    print(f"Deal type mix:         {mix}")
     print("SALES SCAN COMPLETED")
     print("")
 

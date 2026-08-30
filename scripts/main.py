@@ -220,9 +220,14 @@ def main():
         20,
     )
 
+    # Food and Sales now have useful sub-filters and multiple source families,
+    # so keep a larger browseable pool while preserving the existing Hotel cap.
+    food_maximum = settings.get("maximum_food_results", 30)
+    sales_maximum = settings.get("maximum_sales_results", 30)
+
     hotel_items = hotels[:maximum]
-    food_items = food[:maximum]
-    sales_items = sales[:maximum]
+    food_items = food[:food_maximum]
+    sales_items = sales[:sales_maximum]
 
     ideas = build_ideas(
         hotels,
@@ -266,6 +271,9 @@ def main():
     best_deals = len(best_items)
     food_mode = source_mode(food)
     sales_mode = source_mode(sales)
+    food_source_types = len({item.get("deal_type", "other") for item in food_items})
+    sales_source_types = len({item.get("deal_type", "other") for item in sales_items})
+    indian_food_deals = sum(1 for item in food_items if item.get("food_category") == "indian")
     scan_time = iso_now_sgt()
 
     write_json(
@@ -322,6 +330,9 @@ def main():
 
                 "food_results": len(food_items),
                 "sales_results": len(sales_items),
+                "food_source_types": food_source_types,
+                "sales_source_types": sales_source_types,
+                "indian_food_deals": indian_food_deals,
                 "live_promos": len(food_items) + len(sales_items),
                 "history_ready": history_ready,
                 "peer_comparison": peer_only,
@@ -339,8 +350,9 @@ def main():
     print("V&V DEALS SCOUT UPDATE COMPLETE")
     print("=" * 70)
     print(f"Hotel availability: {len(hotels)}")
-    print(f"Food live deals:     {len(food_items)}")
-    print(f"Sales live deals:    {len(sales_items)}")
+    print(f"Food live deals:     {len(food_items)} across {food_source_types} deal types")
+    print(f"Indian food deals:   {indian_food_deals}")
+    print(f"Sales live deals:    {len(sales_items)} across {sales_source_types} deal types")
     print(f"History-ready:       {history_ready}")
     print(f"Peer-comparison:      {peer_only}")
     print(f"Best shortlist:       {best_deals} / 14 max")

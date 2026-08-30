@@ -279,3 +279,24 @@ a.action:hover{text-decoration:underline}
 [hidden]{
   display:none !important;
 }
+
+/* Multi-source V2 */
+.filter-group + .filter-group{
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+}
+
+.compact-copy{
+  margin-bottom:8px;
+}
+
+.source-filter{
+  background:#f8fafc;
+}
+
+.note-preference{
+  color:#92400e;
+  background:#fff7ed;
+  border:1px solid #fed7aa;
+}

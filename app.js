@@ -1,6 +1,7 @@
 let allDeals = [];
 let activeFilter = "all";
 let activeSubfilter = "all";
+let activeDealTypeFilter = "all";
 let payloadStats = {};
 
 const categoryLabels = {
@@ -31,11 +32,11 @@ const salesGroupLabels = {
 };
 
 const foodGroupOrder = [
+  "indian",
   "hotel_dining",
   "japanese",
   "korean",
   "chinese_hotpot",
-  "indian",
   "southeast_asian",
   "western_international",
   "cafe_casual",
@@ -48,6 +49,37 @@ const salesGroupOrder = [
   "outlet_clearance",
   "travel_luggage",
   "fashion_clearance"
+];
+
+
+const foodDealTypeLabels = {
+  app_deal: "Eatigo / App",
+  card_deal: "Card Deals",
+  direct: "Direct",
+  membership_deal: "Member Deals",
+  discovery: "Discovery"
+};
+
+const salesDealTypeLabels = {
+  direct_brand: "Direct Brand",
+  card_deal: "Card Deals",
+  mall_outlet: "Mall / Outlet",
+  discovery: "Discovery"
+};
+
+const foodDealTypeOrder = [
+  "direct",
+  "card_deal",
+  "app_deal",
+  "membership_deal",
+  "discovery"
+];
+
+const salesDealTypeOrder = [
+  "direct_brand",
+  "mall_outlet",
+  "card_deal",
+  "discovery"
 ];
 
 
@@ -78,6 +110,24 @@ function groupLabel(item) {
   return "";
 }
 
+
+
+function dealTypeForItem(item) {
+  return item.deal_type || (
+    item.category === "food" && String(item.source || "").toLowerCase().includes("eatigo")
+      ? "app_deal"
+      : "discovery"
+  );
+}
+
+
+function dealTypeLabel(item) {
+  const key = dealTypeForItem(item);
+  const labels = item.category === "food"
+    ? foodDealTypeLabels
+    : salesDealTypeLabels;
+  return labels[key] || titleCaseToken(key);
+}
 
 function cardCategoryLabel(item) {
   const base = categoryLabels[item.category] || item.category || "Deal";
@@ -385,6 +435,14 @@ function detailPills(
         }`
       );
     }
+
+    if (item.deal_type) {
+      parts.push(dealTypeLabel(item));
+    }
+
+    if (item.source) {
+      parts.push(item.source);
+    }
   }
 
   if (
@@ -561,9 +619,7 @@ function scoreCaption(
 function dataNote(
   item
 ) {
-  if (
-    item.is_demo
-  ) {
+  if (item.is_demo) {
     return (
       `<div class="data-note note-warning">` +
       `Illustrative demo entry — not a live quoted price or promotion.` +
@@ -571,11 +627,7 @@ function dataNote(
     );
   }
 
-  if (
-    item.category === "hotel"
-    &&
-    item.is_evaluation
-  ) {
+  if (item.category === "hotel" && item.is_evaluation) {
     return (
       `<div class="data-note note-warning">` +
       `Hotelbeds Evaluation/net rate. Useful for testing and price trends, ` +
@@ -584,28 +636,49 @@ function dataNote(
     );
   }
 
-  if (
-    item.category === "food"
-    &&
-    item.is_live
-  ) {
-    return (
-      `<div class="data-note note-live">` +
-      `Live/beta dining promotion. Time-slot discounts and availability can change; ` +
-      `confirm the offer on Eatigo before booking.` +
-      `</div>`
-    );
+  if (item.category === "food") {
+    const requirement = escapeHtml(item.access_requirement || "Verify current conditions before booking");
+    const source = escapeHtml(item.source || "live source");
+    const type = dealTypeForItem(item);
+    const preference = item.food_category === "indian"
+      ? `<div class="data-note note-preference">⭐ Preferred cuisine: Indian</div>`
+      : "";
+
+    let message;
+    let noteClass = "note-live";
+
+    if (type === "app_deal") {
+      message = `Live app promotion from ${source}. ${requirement}. Time slots and availability can change.`;
+    } else if (type === "direct") {
+      message = `Verified direct merchant/hotel promotion from ${source}. ${requirement}.`;
+    } else if (type === "card_deal" || type === "membership_deal") {
+      message = `Verified official promotion from ${source}. ${requirement}.`;
+    } else {
+      noteClass = "note-warning";
+      message = `Promotion discovered via ${source}. Verify the current offer directly with the restaurant before booking.`;
+    }
+
+    return `${preference}<div class="data-note ${noteClass}">${message}</div>`;
   }
 
-  if (
-    item.category === "sale"
-    &&
-    item.verification_required
-  ) {
+  if (item.category === "sale") {
+    const requirement = escapeHtml(item.access_requirement || "Verify current conditions before purchase");
+    const source = escapeHtml(item.source || "live source");
+    const type = dealTypeForItem(item);
+
+    if (item.source_confidence === "verified") {
+      return (
+        `<div class="data-note note-live">` +
+        `Verified official promotion from ${source}. ${requirement}. ` +
+        `Confirm eligible products, stock and final price before purchase.` +
+        `</div>`
+      );
+    }
+
     return (
       `<div class="data-note note-warning">` +
-      `Live/beta promotion discovery. Verify eligible products, stock, dates and final ` +
-      `price with the retailer before purchase.` +
+      `Live/beta promotion discovery via ${source} (${escapeHtml(dealTypeLabel(item))}). ` +
+      `Verify eligible products, stock, dates and final price with the retailer.` +
       `</div>`
     );
   }
@@ -738,14 +811,17 @@ function renderSubfilters() {
   const title = document.querySelector("#subfilter-title");
   const note = document.querySelector("#subfilter-note");
   const buttons = document.querySelector("#subfilter-buttons");
+  const dealTitle = document.querySelector("#dealtype-title");
+  const dealButtons = document.querySelector("#dealtype-buttons");
 
-  if (!panel || !title || !note || !buttons) {
+  if (!panel || !title || !note || !buttons || !dealTitle || !dealButtons) {
     return;
   }
 
-  if (!(["food", "sale"].includes(activeFilter))) {
+  if (!( ["food", "sale"].includes(activeFilter) )) {
     panel.hidden = true;
     buttons.innerHTML = "";
+    dealButtons.innerHTML = "";
     return;
   }
 
@@ -754,26 +830,32 @@ function renderSubfilters() {
   );
 
   const counts = new Map();
+  const dealCounts = new Map();
+
   for (const item of categoryItems) {
     const group = groupForItem(item);
     counts.set(group, (counts.get(group) || 0) + 1);
+
+    const dtype = dealTypeForItem(item);
+    dealCounts.set(dtype, (dealCounts.get(dtype) || 0) + 1);
   }
 
-  const labels = activeFilter === "food"
-    ? foodGroupLabels
-    : salesGroupLabels;
-
-  const order = activeFilter === "food"
-    ? foodGroupOrder
-    : salesGroupOrder;
+  const labels = activeFilter === "food" ? foodGroupLabels : salesGroupLabels;
+  const order = activeFilter === "food" ? foodGroupOrder : salesGroupOrder;
+  const typeLabels = activeFilter === "food" ? foodDealTypeLabels : salesDealTypeLabels;
+  const typeOrder = activeFilter === "food" ? foodDealTypeOrder : salesDealTypeOrder;
 
   title.textContent = activeFilter === "food"
-    ? "Browse Food by dining category"
+    ? "Browse Food by cuisine / dining category"
     : "Browse Sales by category";
 
   note.textContent = activeFilter === "food"
-    ? "Dining categories are inferred from venue names and are a browsing aid."
-    : "Sales categories are based on the promotion listing and product type.";
+    ? "Indian is prioritised. Some cuisine tags are inferred from the venue or promotion text."
+    : "Categories are based on the promotion listing and product type.";
+
+  dealTitle.textContent = activeFilter === "food"
+    ? "Filter by deal source"
+    : "Filter by sale source";
 
   const options = [
     {
@@ -790,8 +872,23 @@ function renderSubfilters() {
       }))
   ];
 
+  const dealOptions = [
+    { key: "all", label: "All Sources", count: categoryItems.length },
+    ...typeOrder
+      .filter(key => dealCounts.get(key))
+      .map(key => ({
+        key,
+        label: typeLabels[key] || titleCaseToken(key),
+        count: dealCounts.get(key)
+      }))
+  ];
+
   if (activeSubfilter !== "all" && !counts.get(activeSubfilter)) {
     activeSubfilter = "all";
+  }
+
+  if (activeDealTypeFilter !== "all" && !dealCounts.get(activeDealTypeFilter)) {
+    activeDealTypeFilter = "all";
   }
 
   buttons.innerHTML = options.map(
@@ -807,9 +904,29 @@ function renderSubfilters() {
     `
   ).join("");
 
+  dealButtons.innerHTML = dealOptions.map(
+    option => `
+      <button
+        class="subfilter source-filter ${option.key === activeDealTypeFilter ? "active" : ""}"
+        data-dealtype="${escapeHtml(option.key)}"
+        type="button"
+      >
+        ${escapeHtml(option.label)}
+        <span>${option.count}</span>
+      </button>
+    `
+  ).join("");
+
   buttons.querySelectorAll(".subfilter").forEach(button => {
     button.addEventListener("click", () => {
       activeSubfilter = button.dataset.subfilter || "all";
+      render();
+    });
+  });
+
+  dealButtons.querySelectorAll(".subfilter").forEach(button => {
+    button.addEventListener("click", () => {
+      activeDealTypeFilter = button.dataset.dealtype || "all";
       render();
     });
   });
@@ -907,7 +1024,7 @@ function updateEmptyMessage() {
       "No qualifying live Food deals right now.";
 
     text.textContent =
-      "The next scan will check Eatigo again.";
+      "The next scan will check app, card, direct and discovery dining sources again.";
   }
 
   else if (
@@ -959,6 +1076,15 @@ function render() {
     ) {
       data = data.filter(
         item => groupForItem(item) === activeSubfilter
+      );
+    }
+
+    if (
+      ["food", "sale"].includes(activeFilter)
+      && activeDealTypeFilter !== "all"
+    ) {
+      data = data.filter(
+        item => dealTypeForItem(item) === activeDealTypeFilter
       );
     }
   }
@@ -1208,6 +1334,9 @@ function render() {
       <span>
         Live Food deals
       </span>
+      <small>
+        ${payloadStats.food_source_types || 0} source types · ${payloadStats.indian_food_deals || 0} Indian
+      </small>
     </div>
 
     <div class="metric">
@@ -1218,6 +1347,9 @@ function render() {
       <span>
         Live Sales deals
       </span>
+      <small>
+        ${payloadStats.sales_source_types || 0} source types
+      </small>
     </div>
 
   `;
@@ -1307,6 +1439,7 @@ document
             button.dataset.filter;
 
           activeSubfilter = "all";
+          activeDealTypeFilter = "all";
 
           render();
         }
