@@ -33,6 +33,14 @@ jobs:
           HOTELBEDS_CLIENT_CERT_B64: ${{ secrets.HOTELBEDS_CLIENT_CERT_B64 }}
           HOTELBEDS_CLIENT_KEY_B64: ${{ secrets.HOTELBEDS_CLIENT_KEY_B64 }}
           HOTELBEDS_CLIENT_KEY_PASSWORD: ${{ secrets.HOTELBEDS_CLIENT_KEY_PASSWORD }}
+
+          FOOD_SCAN_TIMEOUT_SECONDS: "20"
+          FOOD_SCAN_MIN_DISCOUNT: "15"
+          FOOD_SCAN_MAX_ITEMS: "30"
+
+          SALES_SCAN_TIMEOUT_SECONDS: "20"
+          SALES_SCAN_MIN_DISCOUNT: "15"
+          SALES_SCAN_MAX_ITEMS: "30"
         run: python scripts/main.py
 
       - name: Commit refreshed deal data
