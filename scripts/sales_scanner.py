@@ -20,9 +20,12 @@ from deal_score import promo_score
 # ---------------------------------------------------------------------------
 # V&V Deals Scout - Live Sales Scanner
 #
-# V1 live discovery source: EverydayOnSales Singapore category / active-sale
-# pages. Results are discovery leads, not authoritative merchant quotes, so
-# every item is explicitly marked for verification before purchase.
+# V3 combines discovery feeds with official mall/outlet, direct brand,
+# direct retailer and card-linked promotion pages. Official sources are
+# validated against live-page markers before a configured offer is published.
+#
+# Current official expansion includes CapitaLand IMM, adidas Singapore and
+# COURTS Singapore in addition to bank/card offers.
 #
 # This scanner does NOT call Hotelbeds and therefore does not consume the
 # Hotelbeds Evaluation quota.
@@ -94,15 +97,103 @@ OFFICIAL_SALES_INDEX_SOURCES = [
 
 OFFICIAL_SALES_SINGLE_SOURCES = [
     {
-        "name": "adidas Singapore Season Sale",
-        "url": "https://www.adidas.com.sg/season_sale-outlet",
-        "merchant": "adidas Singapore Season Sale · Outlet",
+        "name": "adidas Singapore End of Season Sale",
+        "url": "https://www.adidas.com.sg/men-end_of_season_sale",
+        "merchant": "adidas Singapore End of Season Sale",
         "source": "adidas Singapore",
         "deal_type": "direct_brand",
         "source_confidence": "verified",
-        "access_requirement": "Direct brand sale",
+        "access_requirement": "Direct brand sale; selected items and exclusions apply",
         "hint": "sportswear",
+        "subcategory": "sportswear_footwear",
         "location": "Online / Singapore",
+        "offer_text_override": "Extra 30% off selected sale items at cart",
+        "required_terms": ["EXTRA 30% OFF IN CART", "Sale price"],
+    },
+    {
+        "name": "Under Armour Outlet IMM",
+        "url": "https://www.capitaland.com/sg/malls/imm/en/stores/under-armour-outlet.html",
+        "merchant": "Under Armour Outlet @ IMM",
+        "source": "CapitaLand IMM",
+        "deal_type": "mall_outlet",
+        "source_confidence": "verified",
+        "access_requirement": "Official IMM outlet offer; stock and exclusions apply",
+        "hint": "sportswear",
+        "subcategory": "sportswear_footwear",
+        "location": "IMM / Singapore",
+        "offer_text_override": "Up to 70% discount all year round at Under Armour Outlet at IMM",
+        "required_terms": ["Under Armour Outlet", "up to 70% discount all year round"],
+    },
+    {
+        "name": "PUMA Outlet IMM",
+        "url": "https://www.capitaland.com/sg/malls/imm/en/deals/puma-buy-2-get1freebuy3get3free.html",
+        "merchant": "PUMA Outlet @ IMM",
+        "source": "CapitaLand IMM",
+        "deal_type": "mall_outlet",
+        "source_confidence": "verified",
+        "access_requirement": "Official IMM outlet deal; exclusions and T&Cs apply",
+        "hint": "sportswear",
+        "subcategory": "sportswear_footwear",
+        "location": "IMM / Singapore",
+        "offer_text_override": "Up to 70% off; buy 2 items get 1 free or buy 3 items get 3 free",
+        "required_terms": ["Up to 70% off", "Buy 2 items get 1 free"],
+    },
+    {
+        "name": "IMM Outlet Mall",
+        "url": "https://www.capitaland.com/sg/malls/imm/en.html",
+        "merchant": "IMM Outlet Mall",
+        "source": "CapitaLand IMM",
+        "deal_type": "mall_outlet",
+        "source_confidence": "verified",
+        "access_requirement": "Official mall-wide outlet positioning; individual store offers vary",
+        "hint": "outlet",
+        "subcategory": "outlet_clearance",
+        "location": "IMM / Singapore",
+        "offer_text_override": "Up to 80% savings all year round across more than 90 outlet stores",
+        "required_terms": ["offering up to 80% discount all year round", "outlet stores"],
+    },
+    {
+        "name": "TUMI Outlet August multi-buy",
+        "url": "https://www.capitaland.com/sg/en/shop/malls/discover/WestTheSale2026.html",
+        "merchant": "TUMI Outlet @ IMM",
+        "source": "CapitaLand IMM",
+        "deal_type": "mall_outlet",
+        "source_confidence": "verified",
+        "access_requirement": "Official IMM August multi-buy; exclusions and stock limits apply",
+        "hint": "travel",
+        "subcategory": "travel_luggage",
+        "location": "IMM / Singapore",
+        "offer_text_override": "Storewide 30% off with additional multi-buy savings up to 20% through 31 August 2026",
+        "required_terms": ["TUMI Outlet", "Storewide 30% Off", "1–31 August 2026"],
+        "valid_until": "2026-08-31",
+    },
+    {
+        "name": "COURTS Home Office online promotion",
+        "url": "https://www.courts.com.sg/promocode.html",
+        "merchant": "COURTS Home Office Online",
+        "source": "COURTS Singapore",
+        "deal_type": "direct_retailer",
+        "source_confidence": "verified",
+        "access_requirement": "Online promo code OFFICE20; exclusions apply",
+        "hint": "electronics",
+        "subcategory": "electronics",
+        "location": "Online / Singapore",
+        "offer_text_override": "20% off selected Home Office products with no minimum spend",
+        "required_terms": ["Home Office", "20% off", "OFFICE20"],
+    },
+    {
+        "name": "COURTS SONA appliance deals",
+        "url": "https://www.courts.com.sg/sona",
+        "merchant": "COURTS · SONA appliance deals",
+        "source": "COURTS Singapore",
+        "deal_type": "direct_retailer",
+        "source_confidence": "verified",
+        "access_requirement": "Direct retailer prices; selected models and stock availability apply",
+        "hint": "electronics",
+        "subcategory": "electronics",
+        "location": "Online / Singapore",
+        "offer_text_override": "Selected SONA appliances up to 50% off",
+        "required_terms": ["SONA", "50% off"],
     },
     {
         "name": "CLUB21.com - DBS/POSB",
@@ -830,11 +921,12 @@ def official_quality_score(text, confidence):
 
 def build_official_sales_item(source, merchant, offer_text, min_discount):
     discount = extract_effective_discount(offer_text)
-    if discount < min_discount:
+    floor = source.get("min_discount", min_discount)
+    if discount < floor:
         return None
 
     combined = f"{merchant} {offer_text}"
-    subcategory = detect_subcategory(combined, source.get("hint", "general"))
+    subcategory = source.get("subcategory") or detect_subcategory(combined, source.get("hint", "general"))
     location = source.get("location") or infer_location(combined)
     confidence = source.get("source_confidence", "verified")
     deal_type = source.get("deal_type", "card_deal")
@@ -890,16 +982,42 @@ def parse_official_index(source, raw_html, min_discount):
     return items[: source.get("max_results", 8)]
 
 
-def parse_official_single(source, raw_html, min_discount):
+def parse_official_single(source, raw_html, min_discount, today):
+    valid_from = source.get("valid_from")
+    valid_until = source.get("valid_until")
+    if valid_from and today < date.fromisoformat(valid_from):
+        return []
+    if valid_until and today > date.fromisoformat(valid_until):
+        return []
+
+    page_text = html.unescape(raw_html).replace("\xa0", " ").casefold()
+    for required in source.get("required_terms", []):
+        if required.casefold() not in page_text:
+            print(f"  SKIP - expected live-page marker not found: {required!r}")
+            return []
+
+    override = source.get("offer_text_override")
+    if override:
+        item = build_official_sales_item(
+            source,
+            source["merchant"],
+            override,
+            min_discount,
+        )
+        if item:
+            item["valid_from"] = valid_from
+            item["valid_until"] = valid_until
+        return [item] if item else []
+
     lines = html_to_lines(raw_html)
     candidates = []
-    # Direct brand pages may include discount filters deep in the page. Prefer
-    # the first real promotional headline by using position as a tie-breaker.
+    # Direct brand/retailer pages may include discount filters deep in the page.
+    # Prefer an early live promotional headline, but only after page validation.
     for index, line in enumerate(lines[:450]):
         if not official_deal_signal(line):
             continue
         discount = extract_effective_discount(line)
-        if discount < min_discount:
+        if discount < source.get("min_discount", min_discount):
             continue
         candidates.append((-index, discount, clean_text(line)))
     if not candidates:
@@ -907,6 +1025,9 @@ def parse_official_single(source, raw_html, min_discount):
     candidates.sort(reverse=True)
     _, _, offer = candidates[0]
     item = build_official_sales_item(source, source["merchant"], offer, min_discount)
+    if item:
+        item["valid_from"] = valid_from
+        item["valid_until"] = valid_until
     return [item] if item else []
 
 
@@ -919,10 +1040,11 @@ def enrich_discovery_item(item):
 
 def select_diverse_sales(items, max_items):
     quotas = {
-        "discovery": 14,
-        "card_deal": 10,
+        "discovery": 12,
+        "card_deal": 9,
         "direct_brand": 6,
-        "mall_outlet": 6,
+        "direct_retailer": 6,
+        "mall_outlet": 8,
     }
     for item in items:
         item["deal_score"] = promo_score(item, "sale")
@@ -1036,7 +1158,7 @@ def scan_sales():
         print(f"Sales source: {source['name']}")
         try:
             raw_html = fetch_html(source["url"], timeout)
-            items = parse_official_single(source, raw_html, min_discount)
+            items = parse_official_single(source, raw_html, min_discount, today)
             all_items.extend(items)
             succeeded += 1
             print(f"  OK - qualified deals found: {len(items)}")

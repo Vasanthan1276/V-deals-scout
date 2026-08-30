@@ -62,6 +62,7 @@ const foodDealTypeLabels = {
 
 const salesDealTypeLabels = {
   direct_brand: "Direct Brand",
+  direct_retailer: "Direct Retailer",
   card_deal: "Card Deals",
   mall_outlet: "Mall / Outlet",
   discovery: "Discovery"
@@ -77,6 +78,7 @@ const foodDealTypeOrder = [
 
 const salesDealTypeOrder = [
   "direct_brand",
+  "direct_retailer",
   "mall_outlet",
   "card_deal",
   "discovery"

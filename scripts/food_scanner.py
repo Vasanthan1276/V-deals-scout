@@ -17,14 +17,17 @@ from deal_score import promo_score
 
 
 # ---------------------------------------------------------------------------
-# V&V Deals Scout - Multi-source Food Scanner V2
+# V&V Deals Scout - Multi-source Food Scanner V3
 #
 # Sources:
 #   1. Eatigo Singapore live time-slot promotions (app-based)
-#   2. DBS/POSB official dining promotion pages (card-linked, no dining app)
-#   3. American Express official dining promotions (card-linked, no dining app)
-#   4. Direct hotel/restaurant promotion pages (no card/app where available)
+#   2. DBS/POSB and Visa official dining promotions
+#   3. American Express dining / Love Dining partners
+#   4. Direct restaurant and hotel promotion pages
 #   5. Eatbook monthly deal roundup (discovery only; requires verification)
+#
+# V3 expands Indian dining coverage with Nalan, Gupshup, Maharani Table,
+# Our Village Curry Hut, Chinatown Teh Tarik, Maharani Heritage and ammākase.
 #
 # Indian cuisine is a user preference. Indian deals are allowed through at a
 # lower discount floor, are tagged as preferred, and are kept visible in the
@@ -106,6 +109,92 @@ OFFICIAL_SINGLE_SOURCES = [
         "location": "Capitol Singapore",
         "food_category": "indian",
         "min_discount": INDIAN_MIN_DISCOUNT,
+        "offer_text_override": "10% off total bill",
+        "required_terms": ["Nalan Restaurant", "10% off total bill"],
+    },
+    {
+        "name": "Gupshup - Amex Love Dining",
+        "url": "https://www.americanexpress.com/sg/benefits/love-dining/love-restaurants.html",
+        "merchant": "Gupshup @ The Serangoon House",
+        "source": "American Express Love Dining",
+        "deal_type": "membership_deal",
+        "source_confidence": "verified",
+        "access_requirement": "Eligible American Express Love Dining card required; advance reservation required",
+        "location": "The Serangoon House, Little India",
+        "food_category": "indian",
+        "min_discount": INDIAN_MIN_DISCOUNT,
+        "offer_text_override": "Up to 50% off total food bill with Love Dining privileges",
+        "required_terms": ["Gupshup", "Cuisine: Indian", "up to 50%"],
+    },
+    {
+        "name": "Maharani Table - Visa Dine & Save",
+        "url": "https://dineandsave.visa.com/outlets/maharani-table/",
+        "merchant": "Maharani Table",
+        "source": "Visa Dine & Save",
+        "deal_type": "card_deal",
+        "source_confidence": "verified",
+        "access_requirement": "Eligible Visa card required; quote Dine and Save with Visa",
+        "location": "Boat Quay",
+        "food_category": "indian",
+        "min_discount": INDIAN_MIN_DISCOUNT,
+        "offer_text_override": "20% off food bill",
+        "required_terms": ["Maharani Table", "20% off on Food Bill"],
+    },
+    {
+        "name": "Our Village Curry Hut - Visa Dine & Save",
+        "url": "https://dineandsave.visa.com/outlets/our-village-curry-hut/",
+        "merchant": "Our Village Curry Hut",
+        "source": "Visa Dine & Save",
+        "deal_type": "card_deal",
+        "source_confidence": "verified",
+        "access_requirement": "Eligible Visa card required; quote Dine and Save with Visa",
+        "location": "Boat Quay",
+        "food_category": "indian",
+        "min_discount": INDIAN_MIN_DISCOUNT,
+        "offer_text_override": "20% off food bill",
+        "required_terms": ["Our Village Curry Hut", "20% off on Food Bill"],
+    },
+    {
+        "name": "Chinatown Teh Tarik - Visa Dine & Save",
+        "url": "https://dineandsave.visa.com/outlets/chinatown-teh-tarik/",
+        "merchant": "Chinatown Teh Tarik",
+        "source": "Visa Dine & Save",
+        "deal_type": "card_deal",
+        "source_confidence": "verified",
+        "access_requirement": "Eligible Visa card required; quote Dine and Save with Visa",
+        "location": "Chinatown",
+        "food_category": "indian",
+        "min_discount": INDIAN_MIN_DISCOUNT,
+        "offer_text_override": "20% off food bill",
+        "required_terms": ["Chinatown Teh Tarik", "20% off on Food Bill"],
+    },
+    {
+        "name": "Maharani Heritage direct promotion",
+        "url": "https://www.maharaniheritage.com/",
+        "merchant": "Maharani Heritage",
+        "source": "Maharani Heritage",
+        "deal_type": "direct",
+        "source_confidence": "verified",
+        "access_requirement": "Online reservation required for advertised opening promotion",
+        "location": "Singapore",
+        "food_category": "indian",
+        "min_discount": INDIAN_MIN_DISCOUNT,
+        "offer_text_override": "20% off dining menu for online reservations Monday to Thursday; 10% Friday to Sunday",
+        "required_terms": ["Opening Promotion", "20% OFF", "Monday"],
+    },
+    {
+        "name": "ammakase weekday dinner promotion",
+        "url": "https://www.ammakase.com/promo-now",
+        "merchant": "ammakase",
+        "source": "ammakase",
+        "deal_type": "direct",
+        "source_confidence": "verified",
+        "access_requirement": "Direct reservation required; Wednesday/Thursday 10-course promotion",
+        "location": "Singapore",
+        "food_category": "indian",
+        "min_discount": INDIAN_MIN_DISCOUNT,
+        "offer_text_override": "1-for-1 10-course experience on Wednesdays and Thursdays",
+        "required_terms": ["1-for-1", "10-course", "Wednesday"],
     },
     {
         "name": "Seasonal Tastes - DBS/POSB",
@@ -161,6 +250,19 @@ OFFICIAL_SINGLE_SOURCES = [
         "access_requirement": "Direct hotel offer",
         "location": "PARKROYAL on Beach Road",
         "food_category": "hotel_dining",
+    },
+    {
+        "name": "Crossroads Buffet direct promotion",
+        "url": "https://www.crossroadssg.com/",
+        "merchant": "Crossroads Buffet @ Singapore Marriott Tang Plaza Hotel",
+        "source": "Singapore Marriott Tang Plaza Hotel",
+        "deal_type": "direct",
+        "source_confidence": "verified",
+        "access_requirement": "Quote CR20OFF when reserving; blackout dates apply",
+        "location": "Singapore Marriott Tang Plaza Hotel",
+        "food_category": "hotel_dining",
+        "offer_text_override": "20% off adult buffet price from 6 July to 30 September 2026",
+        "required_terms": ["20% off", "CR20OFF", "30 September 2026"],
     },
     {
         "name": "Estate direct dining page",
@@ -541,12 +643,27 @@ def parse_index_source(source, raw_html, min_discount):
 
 
 def parse_single_source(source, raw_html, min_discount):
-    lines = html_to_lines(raw_html)
     merchant = source["merchant"]
+    page_text = html.unescape(raw_html).replace("\xa0", " ").casefold()
+
+    # Curated official/direct sources can define live-page markers. We only use
+    # the configured offer while those markers are still present on the page.
+    # If the merchant removes or changes the promotion, the deal disappears
+    # automatically instead of becoming stale.
+    for required in source.get("required_terms", []):
+        if required.casefold() not in page_text:
+            print(f"  SKIP - expected live-page marker not found: {required!r}")
+            return []
+
+    override = source.get("offer_text_override")
+    if override:
+        item = build_generic_food_item(source, merchant, override, min_discount)
+        return [item] if item else []
+
+    lines = html_to_lines(raw_html)
     candidates = []
 
-    # Prefer concise offer lines near the top, but scan enough of the page to find
-    # Dine 4 Pay 3 / membership offers on direct hotel pages.
+    # Prefer the strongest concise offer line found on the current live page.
     for index, line in enumerate(lines[:500]):
         if not deal_signal(line):
             continue
@@ -769,10 +886,10 @@ def dedupe_food(items):
 def select_diverse_food(items, max_items):
     """Keep Indian preference visible and prevent one source from flooding the tab."""
     quotas = {
-        "app_deal": 12,
-        "card_deal": 10,
-        "direct": 5,
-        "membership_deal": 4,
+        "app_deal": 10,
+        "card_deal": 12,
+        "direct": 7,
+        "membership_deal": 5,
         "discovery": 5,
     }
 
@@ -796,14 +913,14 @@ def select_diverse_food(items, max_items):
 
     selected, seen_ids, used = [], set(), {}
 
-    # Reserve up to four Indian food deals when available.
-    for row in indian[:4]:
+    # Reserve up to six Indian food deals when available.
+    for row in indian[:6]:
         selected.append(row)
         seen_ids.add(row["id"])
         used[row.get("deal_type", "discovery")] = used.get(row.get("deal_type", "discovery"), 0) + 1
 
     # Then fill with best remaining deals subject to source-type quotas.
-    for row in remaining + indian[4:]:
+    for row in remaining + indian[6:]:
         if len(selected) >= max_items:
             break
         if row["id"] in seen_ids:
