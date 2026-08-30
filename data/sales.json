@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T10:06:18+08:00",
+  "updated_at": "2026-08-30T10:18:07+08:00",
   "mode": "live",
   "items": [
     {
@@ -24,8 +24,9 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 96.4,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": false,
+      "best_rank": 6
     },
     {
       "id": "sale-live-9a3c281999eb",
@@ -49,8 +50,9 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 94.8,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": false,
+      "best_rank": 7
     },
     {
       "id": "sale-live-3a9331e05bf1",
@@ -74,8 +76,9 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 94.6,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": false,
+      "best_rank": 8
     },
     {
       "id": "sale-live-30d0f9a8a865",
@@ -99,8 +102,9 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 94.6,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": false,
+      "best_rank": 9
     },
     {
       "id": "sale-live-61e51fa97f4a",
@@ -124,8 +128,9 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 94.6,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": false,
+      "best_rank": 10
     },
     {
       "id": "sale-live-8de64ba95e43",
@@ -149,8 +154,8 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 94.6,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-a981ad4ff002",
@@ -174,8 +179,8 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 94.2,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-52d29add001b",
@@ -199,8 +204,8 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 94.2,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-b08db49cdae3",
@@ -224,8 +229,8 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 94.2,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-ea87523f2140",
@@ -249,8 +254,8 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 94.0,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-bccea5d11683",
@@ -274,8 +279,8 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 94.0,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-7809fd1b55fe",
@@ -299,8 +304,8 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 94.0,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-830befed8d0c",
@@ -324,8 +329,8 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 92.6,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-d0748835cd52",
@@ -349,8 +354,8 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 92.4,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-25fb99792a54",
@@ -374,8 +379,8 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 92.4,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-5993f2a13507",
@@ -399,8 +404,8 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 81.6,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-a94aad898c61",
@@ -424,8 +429,8 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 78.6,
-      "observed_at": "2026-08-30T10:06:18+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:07+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-20497ea550de",
@@ -449,7 +454,7 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 69.0,
-      "observed_at": "2026-08-30T10:06:18+08:00",
+      "observed_at": "2026-08-30T10:18:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -474,7 +479,7 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 69.0,
-      "observed_at": "2026-08-30T10:06:18+08:00",
+      "observed_at": "2026-08-30T10:18:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -499,7 +504,7 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 67.4,
-      "observed_at": "2026-08-30T10:06:18+08:00",
+      "observed_at": "2026-08-30T10:18:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -524,7 +529,7 @@
       "is_live": true,
       "price_type": "advertised_discount",
       "deal_score": 66.8,
-      "observed_at": "2026-08-30T10:06:18+08:00"
+      "observed_at": "2026-08-30T10:18:07+08:00"
     }
   ]
 }

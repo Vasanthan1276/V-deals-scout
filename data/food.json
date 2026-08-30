@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T10:06:18+08:00",
+  "updated_at": "2026-08-30T10:18:07+08:00",
   "mode": "live",
   "items": [
     {
@@ -15,6 +15,8 @@
       "rating": 4.9,
       "reservation_count": 2800,
       "meal_period": "dinner",
+      "food_category": "chinese_hotpot",
+      "food_category_inferred": true,
       "best_discount_times": [
         "17:30",
         "18:30",
@@ -30,8 +32,9 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 97.6,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": false,
+      "best_rank": 1
     },
     {
       "id": "food-eatigo-24768da3ee5d",
@@ -46,6 +49,8 @@
       "rating": 4.8,
       "reservation_count": 3400,
       "meal_period": "lunch",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "13:30",
         "14:30"
@@ -59,8 +64,9 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 97.6,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": false,
+      "best_rank": 2
     },
     {
       "id": "food-eatigo-6c3deb009e76",
@@ -75,6 +81,8 @@
       "rating": 4.8,
       "reservation_count": 7900,
       "meal_period": "lunch",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "12:30",
         "13:00",
@@ -89,8 +97,9 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 97.6,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": false,
+      "best_rank": 3
     },
     {
       "id": "food-eatigo-15536c5a4fdf",
@@ -105,6 +114,8 @@
       "rating": 4.7,
       "reservation_count": 1500,
       "meal_period": "dinner",
+      "food_category": "japanese",
+      "food_category_inferred": true,
       "best_discount_times": [
         "17:30",
         "18:00",
@@ -124,8 +135,9 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 96.8,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": false,
+      "best_rank": 4
     },
     {
       "id": "food-eatigo-223c373585ed",
@@ -140,6 +152,8 @@
       "rating": 4.9,
       "reservation_count": 2800,
       "meal_period": "lunch",
+      "food_category": "chinese_hotpot",
+      "food_category_inferred": true,
       "best_discount_times": [
         "11:30",
         "12:30",
@@ -155,8 +169,9 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 96.6,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": false,
+      "best_rank": 5
     },
     {
       "id": "food-eatigo-670502eec322",
@@ -171,6 +186,8 @@
       "rating": 4.4,
       "reservation_count": 19400,
       "meal_period": "dinner",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "18:00",
         "19:00",
@@ -187,8 +204,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 96.6,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-d470f5edc48b",
@@ -203,6 +220,8 @@
       "rating": 4.4,
       "reservation_count": 18200,
       "meal_period": "dinner",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "20:00",
         "20:30"
@@ -216,8 +235,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 96.6,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-68a24c2ba937",
@@ -232,6 +251,8 @@
       "rating": 4.6,
       "reservation_count": 8300,
       "meal_period": "dinner",
+      "food_category": "korean",
+      "food_category_inferred": true,
       "best_discount_times": [
         "17:30",
         "20:00",
@@ -246,8 +267,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 96.4,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-d42b0aae612e",
@@ -262,6 +283,8 @@
       "rating": 4.5,
       "reservation_count": 9400,
       "meal_period": "lunch",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "12:00",
         "12:30",
@@ -277,8 +300,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 96.4,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-52e6407431a4",
@@ -293,6 +316,8 @@
       "rating": 4.3,
       "reservation_count": 14900,
       "meal_period": "dinner",
+      "food_category": "cafe_casual",
+      "food_category_inferred": true,
       "best_discount_times": [
         "19:30",
         "20:00",
@@ -307,8 +332,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 96.2,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-d377218932da",
@@ -323,6 +348,8 @@
       "rating": 4.3,
       "reservation_count": 42900,
       "meal_period": "dinner",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "18:00",
         "18:30",
@@ -340,8 +367,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 96.2,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-793c2b674d79",
@@ -356,6 +383,8 @@
       "rating": 4.3,
       "reservation_count": 42600,
       "meal_period": "dinner",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "18:00",
         "18:30",
@@ -371,8 +400,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 96.2,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-9b999f1251eb",
@@ -387,6 +416,8 @@
       "rating": 4.3,
       "reservation_count": 9800,
       "meal_period": "dinner",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "18:00",
         "18:30",
@@ -402,8 +433,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 96.2,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-8239d0e89017",
@@ -418,6 +449,8 @@
       "rating": 4.7,
       "reservation_count": 8100,
       "meal_period": "lunch",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "13:30"
       ],
@@ -430,8 +463,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 95.8,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-68c520d7f599",
@@ -446,6 +479,8 @@
       "rating": 4.2,
       "reservation_count": 19200,
       "meal_period": "dinner",
+      "food_category": "cafe_casual",
+      "food_category_inferred": true,
       "best_discount_times": [
         "19:00",
         "19:30",
@@ -460,8 +495,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 95.8,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-bce24a58cc10",
@@ -476,6 +511,8 @@
       "rating": 4.4,
       "reservation_count": 19400,
       "meal_period": "lunch",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "12:00",
         "12:30",
@@ -492,8 +529,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 95.6,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-2d1897a25296",
@@ -508,6 +545,8 @@
       "rating": 4.6,
       "reservation_count": 8300,
       "meal_period": "lunch",
+      "food_category": "korean",
+      "food_category_inferred": true,
       "best_discount_times": [
         "11:30",
         "12:30",
@@ -524,8 +563,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 95.4,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-98a143aa56ca",
@@ -540,6 +579,8 @@
       "rating": 4.3,
       "reservation_count": 14900,
       "meal_period": "lunch",
+      "food_category": "cafe_casual",
+      "food_category_inferred": true,
       "best_discount_times": [
         "13:00",
         "13:30"
@@ -553,8 +594,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 95.2,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-a49ac79a6e0e",
@@ -569,6 +610,8 @@
       "rating": 4.3,
       "reservation_count": 42900,
       "meal_period": "lunch",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "12:00",
         "12:30",
@@ -584,8 +627,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 95.2,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-576539dade79",
@@ -600,6 +643,8 @@
       "rating": 4.3,
       "reservation_count": 42600,
       "meal_period": "lunch",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "12:00",
         "12:30"
@@ -613,8 +658,8 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 95.2,
-      "observed_at": "2026-08-30T10:06:09+08:00",
-      "exclude_from_best": false
+      "observed_at": "2026-08-30T10:18:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-b781fa5f9a80",
@@ -629,6 +674,8 @@
       "rating": 4.3,
       "reservation_count": 9800,
       "meal_period": "lunch",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "12:00",
         "12:30",
@@ -643,7 +690,7 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 95.2,
-      "observed_at": "2026-08-30T10:06:09+08:00"
+      "observed_at": "2026-08-30T10:18:00+08:00"
     },
     {
       "id": "food-eatigo-f3fec54723de",
@@ -658,6 +705,8 @@
       "rating": 4.5,
       "reservation_count": 6700,
       "meal_period": "lunch",
+      "food_category": "korean",
+      "food_category_inferred": true,
       "best_discount_times": [
         "11:30",
         "12:00",
@@ -672,7 +721,7 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 95.0,
-      "observed_at": "2026-08-30T10:06:09+08:00"
+      "observed_at": "2026-08-30T10:18:00+08:00"
     },
     {
       "id": "food-eatigo-e55086c0518d",
@@ -687,6 +736,8 @@
       "rating": 4.2,
       "reservation_count": 2700,
       "meal_period": "lunch",
+      "food_category": "cafe_casual",
+      "food_category_inferred": true,
       "best_discount_times": [
         "14:00"
       ],
@@ -699,7 +750,7 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 94.8,
-      "observed_at": "2026-08-30T10:06:09+08:00"
+      "observed_at": "2026-08-30T10:18:00+08:00"
     },
     {
       "id": "food-eatigo-6e2d6cc4bece",
@@ -714,6 +765,8 @@
       "rating": 4.3,
       "reservation_count": 8900,
       "meal_period": "dinner",
+      "food_category": "other_dining",
+      "food_category_inferred": true,
       "best_discount_times": [
         "18:00",
         "18:30",
@@ -731,7 +784,7 @@
       "is_live": true,
       "price_type": "time_slot_discount",
       "deal_score": 94.8,
-      "observed_at": "2026-08-30T10:06:09+08:00"
+      "observed_at": "2026-08-30T10:18:00+08:00"
     }
   ]
 }
