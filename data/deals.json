@@ -1,11 +1,11 @@
 {
   "updated_at": "2026-08-29T17:39:40+08:00",
-  "nonhotel_updated_at": "2026-08-30T10:51:36+08:00",
+  "nonhotel_updated_at": "2026-08-30T11:11:07+08:00",
   "refresh_scope": "food_sales_only",
   "source_updated_at": {
     "hotels": "2026-08-29T17:39:40+08:00",
-    "food": "2026-08-30T10:51:36+08:00",
-    "sales": "2026-08-30T10:51:36+08:00"
+    "food": "2026-08-30T11:11:07+08:00",
+    "sales": "2026-08-30T11:11:07+08:00"
   },
   "demo_mode": false,
   "status": {
@@ -17,11 +17,11 @@
     "availability_results": 4,
     "hotel_results": 4,
     "food_results": 30,
-    "sales_results": 30,
+    "sales_results": 24,
     "food_source_types": 4,
     "sales_source_types": 4,
     "indian_food_deals": 6,
-    "live_promos": 60,
+    "live_promos": 54,
     "history_ready": 0,
     "peer_comparison": 4,
     "best_deals": 10,
@@ -54,8 +54,55 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": true,
       "preference_priority": 1,
-      "deal_score": 100,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 98.0,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 14.8,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.9/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Direct merchant"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability.",
+          "Indian cuisine is prioritised in the Best shortlist, but no extra points are added to the /100 score."
+        ]
+      },
+      "deal_score": 98.0,
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": false,
       "best_rank": 1
     },
@@ -83,8 +130,54 @@
       "price_type": "advertised_discount",
       "valid_from": null,
       "valid_until": null,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 97.9,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.1/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 14.7,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.8/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.5,
+            "max_points": 5,
+            "detail": "Mall / outlet"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 97.9,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -112,10 +205,131 @@
       "price_type": "advertised_discount",
       "valid_from": null,
       "valid_until": null,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 97.9,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.1/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 14.7,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.8/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.5,
+            "max_points": 5,
+            "detail": "Mall / outlet"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 97.9,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": false,
       "best_rank": 3
+    },
+    {
+      "id": "sale-live-4bbbe6eddbc7",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "COURTS · SONA appliance deals",
+      "location": "Online / Singapore",
+      "description": "Official promotion: Selected SONA appliances up to 50% off. Direct retailer prices; selected models and stock availability apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "discount_percent": 50,
+      "quality_score": 8.7,
+      "relevance_score": 8.9,
+      "source": "COURTS Singapore",
+      "source_detail": "COURTS SONA appliance deals",
+      "source_type": "official_promotion_page",
+      "reference_source": "https://www.courts.com.sg/sona",
+      "source_confidence": "verified",
+      "deal_type": "direct_retailer",
+      "access_requirement": "Direct retailer prices; selected models and stock availability apply",
+      "url": "https://www.courts.com.sg/sona",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "valid_from": null,
+      "valid_until": null,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 96.4,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.0,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.7/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.9/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Direct retailer"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 96.4,
+      "observed_at": "2026-08-30T11:11:07+08:00",
+      "exclude_from_best": false,
+      "best_rank": 4
     },
     {
       "id": "food-multi-1946bf268162",
@@ -143,10 +357,56 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 94.7,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 94.7,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": false,
-      "best_rank": 4
+      "best_rank": 5
     },
     {
       "id": "food-multi-02461bfa6795",
@@ -174,10 +434,56 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 94.7,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 94.7,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": false,
-      "best_rank": 5
+      "best_rank": 6
     },
     {
       "id": "food-multi-98b758028582",
@@ -205,8 +511,54 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 94.7,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 94.7,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -235,8 +587,54 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 94.7,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 94.7,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -265,8 +663,54 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 94.7,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 94.7,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -295,8 +739,54 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 94.7,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 94.7,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -325,8 +815,54 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 94.7,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 94.7,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -353,38 +889,55 @@
       "price_type": "advertised_discount",
       "valid_from": null,
       "valid_until": null,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 94.4,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.1/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.8,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.5/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.5,
+            "max_points": 5,
+            "detail": "Mall / outlet"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 94.4,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-4bbbe6eddbc7",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "COURTS · SONA appliance deals",
-      "location": "Online / Singapore",
-      "description": "Official promotion: Selected SONA appliances up to 50% off. Direct retailer prices; selected models and stock availability apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
-      "discount_percent": 50,
-      "quality_score": 8.7,
-      "relevance_score": 8.9,
-      "source": "COURTS Singapore",
-      "source_detail": "COURTS SONA appliance deals",
-      "source_type": "official_promotion_page",
-      "reference_source": "https://www.courts.com.sg/sona",
-      "source_confidence": "verified",
-      "deal_type": "direct_retailer",
-      "access_requirement": "Direct retailer prices; selected models and stock availability apply",
-      "url": "https://www.courts.com.sg/sona",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "valid_from": null,
-      "valid_until": null,
-      "deal_score": 94.4,
-      "observed_at": "2026-08-30T10:51:36+08:00",
-      "exclude_from_best": false,
-      "best_rank": 6
     },
     {
       "id": "food-multi-811b11859166",
@@ -412,8 +965,54 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 93.9,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.7,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.8/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 93.9,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -449,8 +1048,54 @@
       "price_type": "time_slot_discount",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 93.5,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 14.4,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.7/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 93.5,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": false,
       "best_rank": 7
     },
@@ -488,8 +1133,54 @@
       "price_type": "time_slot_discount",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 93.5,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 14.4,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.7/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 93.5,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": false,
       "best_rank": 8
     },
@@ -528,8 +1219,54 @@
       "price_type": "time_slot_discount",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 93.0,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 14.7,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 93.0,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -567,8 +1304,54 @@
       "price_type": "time_slot_discount",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 92.5,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.5,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.0/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.7/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 92.5,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -610,8 +1393,54 @@
       "price_type": "time_slot_discount",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 92.4,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 14.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 92.4,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -646,8 +1475,54 @@
       "price_type": "time_slot_discount",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 92.4,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 14.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 92.4,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -684,8 +1559,54 @@
       "price_type": "time_slot_discount",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 92.1,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 92.1,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -724,8 +1645,54 @@
       "price_type": "time_slot_discount",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.8,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 91.8,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -761,8 +1728,54 @@
       "price_type": "time_slot_discount",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.8,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 91.8,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -799,8 +1812,54 @@
       "price_type": "time_slot_discount",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.5,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "55% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 91.5,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -827,8 +1886,54 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 89.3,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 14.4,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 89.3,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -856,8 +1961,54 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 88.1,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.8/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 88.1,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": false,
       "best_rank": 10
     },
@@ -885,8 +2036,54 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 88.0,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.7/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 88.0,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -913,8 +2110,54 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 88.0,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.7/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 88.0,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -941,8 +2184,54 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 87.9,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -969,8 +2258,54 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "60% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 87.9,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -997,8 +2332,54 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.6,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "55% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.9/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 87.6,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1025,8 +2406,54 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.6,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "51% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.9/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 87.6,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1053,8 +2480,54 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.6,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.9/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 87.6,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1081,8 +2554,54 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.5,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.0/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 87.5,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1109,8 +2628,54 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.5,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.0/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 87.5,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1137,92 +2702,54 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.5,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "60% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.0/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 87.5,
-      "observed_at": "2026-08-30T10:51:36+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-830befed8d0c",
-      "category": "sale",
-      "subcategory": "fashion_clearance",
-      "name": "Champion Singapore: Promotion on 1-for-1 Innerwear Singlets and Round Neck Tees Mix & Match Deal at $2 for $19",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-08-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 50,
-      "quality_score": 8.2,
-      "relevance_score": 8.1,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Fashion Accessories",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/now-till-31-august-2026-champion-singapore-promotion-on-1-for-1-innerwear-singlets-and-round-neck-tees-mix-match-deal-at-2-for-19/",
-      "valid_from": null,
-      "valid_until": "2026-08-31",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "deal_score": 86.4,
-      "observed_at": "2026-08-30T10:51:36+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-d0748835cd52",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "FJ Benjamin: Up to 90% Off ezpz, Superdry and Cole Haan at BHG Bugis Clearance Sale Promotion",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 90% savings. Listed from 2026-08-13 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 90,
-      "quality_score": 8.0,
-      "relevance_score": 8.2,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Fashion Accessories",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/13-august-2026-onwards-fj-benjamin-up-to-90-off-ezpz-superdry-and-cole-haan-at-bhg-bugis-clearance-sale-promotion/",
-      "valid_from": "2026-08-13",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "deal_score": 86.3,
-      "observed_at": "2026-08-30T10:51:36+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-25fb99792a54",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "HOOGA: Seasonal Haul Warehouse Sale with Up to 80% OFF at NEX Serangoon",
-      "location": "NEX / Singapore",
-      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-09-03. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 80,
-      "quality_score": 8.0,
-      "relevance_score": 8.2,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Happening Now",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/28-august-3-september-2026-hooga-seasonal-haul-warehouse-sale-with-up-to-80-off-at-nex-serangoon/",
-      "valid_from": "2026-08-28",
-      "valid_until": "2026-09-03",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "deal_score": 86.3,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1251,8 +2778,54 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.1,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 85.1,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1281,8 +2854,54 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.1,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 85.1,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1311,8 +2930,54 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.1,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 85.1,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1341,8 +3006,54 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.1,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 85.1,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1371,36 +3082,54 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.1,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 85.1,
-      "observed_at": "2026-08-30T10:51:12+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-5993f2a13507",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Samsung-SAFRA EPP: Up to 40% Off Smartphones, Home Entertainment and More – Exclusive Member Promotion",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 40% savings. Listed as valid through 2026-08-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 40,
-      "quality_score": 8.2,
-      "relevance_score": 8.6,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/1-31-august-2026-samsung-safra-epp-up-to-40-off-smartphones-home-entertainment-and-more-exclusive-member-promotion/",
-      "valid_from": "2026-08-01",
-      "valid_until": "2026-08-31",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "deal_score": 76.2,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1427,36 +3156,54 @@
       "price_type": "advertised_discount",
       "valid_from": null,
       "valid_until": "2026-08-31",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 74.7,
+        "scale_max": 100,
+        "band": "Worth a look",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 33.0,
+            "max_points": 55,
+            "detail": "30% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.1/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.5,
+            "max_points": 5,
+            "detail": "Mall / outlet"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 74.7,
-      "observed_at": "2026-08-30T10:51:36+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-a94aad898c61",
-      "category": "sale",
-      "subcategory": "travel_luggage",
-      "name": "Metro Singapore: DELSEY PARIS Trade-In Promotion Up to 40% Off at Metro Paragon & Metro Causeway Point",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 40% savings. Listed as valid through 2026-09-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 40,
-      "quality_score": 7.2,
-      "relevance_score": 8.1,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/19-august-30-september-2026-metro-singapore-delsey-paris-trade-in-promotion-up-to-40-off-at-metro-paragon-metro-causeway-point/",
-      "valid_from": "2026-08-19",
-      "valid_until": "2026-09-30",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "deal_score": 73.9,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1526,8 +3273,55 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": true,
       "preference_priority": 1,
-      "deal_score": 66.3,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 64.3,
+        "scale_max": 100,
+        "band": "Moderate",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 22.0,
+            "max_points": 55,
+            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 14.1,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Direct merchant"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability.",
+          "Indian cuisine is prioritised in the Best shortlist, but no extra points are added to the /100 score."
+        ]
+      },
+      "deal_score": 64.3,
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1556,8 +3350,55 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": true,
       "preference_priority": 1,
-      "deal_score": 65.0,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 63.0,
+        "scale_max": 100,
+        "band": "Moderate",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 22.0,
+            "max_points": 55,
+            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.8,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability.",
+          "Indian cuisine is prioritised in the Best shortlist, but no extra points are added to the /100 score."
+        ]
+      },
+      "deal_score": 63.0,
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1586,8 +3427,55 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": true,
       "preference_priority": 1,
-      "deal_score": 65.0,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 63.0,
+        "scale_max": 100,
+        "band": "Moderate",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 22.0,
+            "max_points": 55,
+            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.8,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability.",
+          "Indian cuisine is prioritised in the Best shortlist, but no extra points are added to the /100 score."
+        ]
+      },
+      "deal_score": 63.0,
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1616,36 +3504,129 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": true,
       "preference_priority": 1,
-      "deal_score": 65.0,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 63.0,
+        "scale_max": 100,
+        "band": "Moderate",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 22.0,
+            "max_points": 55,
+            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.8,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability.",
+          "Indian cuisine is prioritised in the Best shortlist, but no extra points are added to the /100 score."
+        ]
+      },
+      "deal_score": 63.0,
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-20497ea550de",
+      "id": "sale-live-eddda977c16a",
       "category": "sale",
-      "subcategory": "sportswear_footwear",
-      "name": "PUMA Singapore Promotion – Up to 30% Off Selected Sneakers, Sportswear, Bags and More from $17.50",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 30% savings. Listed from 2026-07-21 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 30,
-      "quality_score": 8.2,
+      "subcategory": "electronics",
+      "name": "COURTS Home Office Online",
+      "location": "Online / Singapore",
+      "description": "Official promotion: 20% off selected Home Office products with no minimum spend. Online promo code OFFICE20; exclusions apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "discount_percent": 20,
+      "quality_score": 8.7,
       "relevance_score": 8.3,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sportswear",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/21-july-2026-onwards-puma-singapore-promotion-up-to-30-off-selected-sneakers-sportswear-bags-and-more-from-17-50/",
-      "valid_from": "2026-07-21",
-      "valid_until": null,
+      "source": "COURTS Singapore",
+      "source_detail": "COURTS Home Office online promotion",
+      "source_type": "official_promotion_page",
+      "reference_source": "https://www.courts.com.sg/promocode.html",
+      "source_confidence": "verified",
+      "deal_type": "direct_retailer",
+      "access_requirement": "Online promo code OFFICE20; exclusions apply",
+      "url": "https://www.courts.com.sg/promocode.html",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
       "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "deal_score": 64.8,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "valid_from": null,
+      "valid_until": null,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 62.5,
+        "scale_max": 100,
+        "band": "Moderate",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 22.0,
+            "max_points": 55,
+            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.0,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.7/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Direct retailer"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 62.5,
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1674,36 +3655,54 @@
       "price_type": "advertised_promotion",
       "preferred_cuisine": false,
       "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 62.4,
+        "scale_max": 100,
+        "band": "Moderate",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 22.0,
+            "max_points": 55,
+            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.1,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Direct merchant"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 62.4,
-      "observed_at": "2026-08-30T10:51:12+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-eddda977c16a",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "COURTS Home Office Online",
-      "location": "Online / Singapore",
-      "description": "Official promotion: 20% off selected Home Office products with no minimum spend. Online promo code OFFICE20; exclusions apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
-      "discount_percent": 20,
-      "quality_score": 8.7,
-      "relevance_score": 8.3,
-      "source": "COURTS Singapore",
-      "source_detail": "COURTS Home Office online promotion",
-      "source_type": "official_promotion_page",
-      "reference_source": "https://www.courts.com.sg/promocode.html",
-      "source_confidence": "verified",
-      "deal_type": "direct_retailer",
-      "access_requirement": "Online promo code OFFICE20; exclusions apply",
-      "url": "https://www.courts.com.sg/promocode.html",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "valid_from": null,
-      "valid_until": null,
-      "deal_score": 60.5,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1728,8 +3727,54 @@
       "is_demo": false,
       "is_live": true,
       "price_type": "advertised_discount",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 58.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 22.0,
+            "max_points": 55,
+            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.6,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.7/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 10.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 58.0,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1756,8 +3801,54 @@
       "price_type": "advertised_discount",
       "valid_from": null,
       "valid_until": null,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 58.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 22.0,
+            "max_points": 55,
+            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.6,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.7/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 10.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 58.0,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1782,38 +3873,54 @@
       "is_demo": false,
       "is_live": true,
       "price_type": "advertised_discount",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 54.2,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 16.5,
+            "max_points": 55,
+            "detail": "15% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.1/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.7/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 54.2,
-      "observed_at": "2026-08-30T10:51:36+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-579ba56aa5c4",
-      "category": "food",
-      "name": "Nalan Restaurant @ Capitol Singapore",
-      "restaurant_name": "Nalan Restaurant @ Capitol Singapore",
-      "location": "Capitol Singapore",
-      "description": "10% off total bill. Source: DBS/POSB Dining. DBS/POSB card required. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 10,
-      "quality_score": 8.8,
-      "relevance_score": 9.2,
-      "food_category": "indian",
-      "food_category_inferred": false,
-      "deal_type": "card_deal",
-      "source": "DBS/POSB Dining",
-      "source_detail": "Nalan Restaurant - DBS/POSB",
-      "source_type": "official_promotion_page",
-      "source_confidence": "verified",
-      "access_requirement": "DBS/POSB card required",
-      "reference_source": "https://www.dbs.com.sg/personal/promotion/card-privileges-ylnalan",
-      "url": "https://www.dbs.com.sg/personal/promotion/card-privileges-ylnalan",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": true,
-      "preference_priority": 1,
-      "deal_score": 54.0,
-      "observed_at": "2026-08-30T10:51:12+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1879,8 +3986,54 @@
       "is_demo": false,
       "is_live": true,
       "price_type": "advertised_discount",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 52.5,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 16.5,
+            "max_points": 55,
+            "detail": "15% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.6,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.7/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 10.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 52.5,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1905,8 +4058,54 @@
       "is_demo": false,
       "is_live": true,
       "price_type": "advertised_discount",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 52.5,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 16.5,
+            "max_points": 55,
+            "detail": "15% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.6,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.7/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 10.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 52.5,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1933,8 +4132,131 @@
       "price_type": "advertised_discount",
       "valid_from": null,
       "valid_until": null,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 52.5,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 16.5,
+            "max_points": 55,
+            "detail": "15% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.6,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.7/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 10.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
       "deal_score": 52.5,
-      "observed_at": "2026-08-30T10:51:36+08:00",
+      "observed_at": "2026-08-30T11:11:07+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-579ba56aa5c4",
+      "category": "food",
+      "name": "Nalan Restaurant @ Capitol Singapore",
+      "restaurant_name": "Nalan Restaurant @ Capitol Singapore",
+      "location": "Capitol Singapore",
+      "description": "10% off total bill. Source: DBS/POSB Dining. DBS/POSB card required. Verify current dates, blackout periods and booking conditions before dining.",
+      "discount_percent": 10,
+      "quality_score": 8.8,
+      "relevance_score": 9.2,
+      "food_category": "indian",
+      "food_category_inferred": false,
+      "deal_type": "card_deal",
+      "source": "DBS/POSB Dining",
+      "source_detail": "Nalan Restaurant - DBS/POSB",
+      "source_type": "official_promotion_page",
+      "source_confidence": "verified",
+      "access_requirement": "DBS/POSB card required",
+      "reference_source": "https://www.dbs.com.sg/personal/promotion/card-privileges-ylnalan",
+      "url": "https://www.dbs.com.sg/personal/promotion/card-privileges-ylnalan",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": true,
+      "preference_priority": 1,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 52.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 11.0,
+            "max_points": 55,
+            "detail": "10% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.8,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability.",
+          "Indian cuisine is prioritised in the Best shortlist, but no extra points are added to the /100 score."
+        ]
+      },
+      "deal_score": 52.0,
+      "observed_at": "2026-08-30T11:10:48+08:00",
       "exclude_from_best": true
     },
     {
