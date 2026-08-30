@@ -1,0 +1,109 @@
+name: Food Scanner Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-food-scanner:
+    name: Test live Food scanner only
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      - name: Run Food scanner only
+        env:
+          FOOD_SCAN_TIMEOUT_SECONDS: "20"
+          FOOD_SCAN_MIN_DISCOUNT: "30"
+          FOOD_SCAN_MAX_ITEMS: "24"
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          repo_root = Path.cwd()
+          scripts_dir = repo_root / "scripts"
+          sys.path.insert(0, str(scripts_dir))
+
+          from food_scanner import scan_food
+
+          print("=" * 72)
+          print("V&V DEALS SCOUT - FOOD-ONLY TEST")
+          print("This workflow does NOT import or run the Hotelbeds scanner.")
+          print("=" * 72)
+
+          items = scan_food()
+
+          output_path = repo_root / "data" / "food-test.json"
+          output_path.parent.mkdir(parents=True, exist_ok=True)
+          output_path.write_text(
+              json.dumps(items, indent=2, ensure_ascii=False),
+              encoding="utf-8",
+          )
+
+          demo_items = [item for item in items if item.get("is_demo")]
+          live_items = [item for item in items if not item.get("is_demo")]
+
+          print("")
+          print("=" * 72)
+          print("FOOD-ONLY TEST SUMMARY")
+          print("=" * 72)
+          print(f"Total items returned: {len(items)}")
+          print(f"Live items:           {len(live_items)}")
+          print(f"Demo items:           {len(demo_items)}")
+          print(f"Test output:          {output_path}")
+
+          if demo_items:
+              raise SystemExit(
+                  "Food scanner returned demo entries. Live scanner validation failed."
+              )
+
+          if not live_items:
+              raise SystemExit(
+                  "Food scanner returned zero live deals. Inspect the Food scanner log "
+                  "above before publishing anything."
+              )
+
+          print("")
+          print("Top live Food deals:")
+          for index, item in enumerate(live_items[:10], start=1):
+              print(
+                  f"{index:>2}. {item.get('name', 'Unknown')} | "
+                  f"{item.get('discount_percent', 0)}% off | "
+                  f"score {item.get('deal_score', 0)} | "
+                  f"{item.get('source', 'Unknown source')}"
+              )
+
+          print("")
+          print("FOOD SCANNER LIVE TEST PASSED")
+          PY
+
+      - name: Upload Food test output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: food-scanner-test-output
+          path: data/food-test.json
+          if-no-files-found: ignore
+          retention-days: 7
