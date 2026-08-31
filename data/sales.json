@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T11:11:07+08:00",
+  "updated_at": "2026-08-31T09:11:47+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 96.4,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -298,7 +298,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -372,7 +372,7 @@
         ]
       },
       "deal_score": 89.3,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -447,83 +447,9 @@
         ]
       },
       "deal_score": 88.1,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": false,
       "best_rank": 10
-    },
-    {
-      "id": "sale-live-30d0f9a8a865",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "LINK Outlet Store Singapore: Up to 70% Off Adidas, Under Armour, Puma, Waveline and Crocs at Bukit Panjang Plaza Atrium Sale",
-      "location": "Bukit Panjang Plaza / Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-08-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 70,
-      "quality_score": 8.6,
-      "relevance_score": 8.7,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Fashion Accessories",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/24-30-august-2026-link-outlet-store-singapore-up-to-70-off-adidas-under-armour-puma-waveline-and-crocs-at-bukit-panjang-plaza-atrium-sale/",
-      "valid_from": "2026-08-24",
-      "valid_until": "2026-08-30",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 88.0,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.9,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.7/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 88.0,
-      "observed_at": "2026-08-30T11:11:07+08:00",
-      "exclude_from_best": true
     },
     {
       "id": "sale-live-61e51fa97f4a",
@@ -596,7 +522,81 @@
         ]
       },
       "deal_score": 88.0,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-94dfaed492ea",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "COURTS Singapore National Day Super Sale Promotion: Up to 80% OFF Storewide Deals on Appliances, Electronics, Furniture and More",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-08-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 80,
+      "quality_score": 8.2,
+      "relevance_score": 9.1,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/1-31-august-2026-courts-singapore-national-day-super-sale-promotion-up-to-80-off-storewide-deals-on-appliances-electronics-furniture-and-more/",
+      "valid_from": "2026-08-01",
+      "valid_until": "2026-08-31",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.9,
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,7 +670,81 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-8125df07f5a1",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "BEST Denki Singapore Online Exclusive Lucky 8.8 Savings Promotion With Up To 70% OFF, Free Delivery And $8 OFF Every $88 Spent",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed from 2026-08-01 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 70,
+      "quality_score": 8.2,
+      "relevance_score": 9.1,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/1-august-2026-onwards-best-denki-singapore-online-exclusive-lucky-8-8-savings-promotion-with-up-to-70-off-free-delivery-and-8-off-every-88-spent/",
+      "valid_from": "2026-08-01",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.9,
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +818,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,7 +892,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,7 +966,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -966,26 +1040,26 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-ea87523f2140",
+      "id": "sale-live-830befed8d0c",
       "category": "sale",
-      "subcategory": "electronics",
-      "name": "Audio House Singapore Electronics Overstock Clearance Sale: Up to 80% OFF with eCashback and NEA Climate Voucher Deals",
+      "subcategory": "fashion_clearance",
+      "name": "Champion Singapore: Promotion on 1-for-1 Innerwear Singlets and Round Neck Tees Mix & Match Deal at $2 for $19",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-08-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 80,
-      "quality_score": 8.0,
-      "relevance_score": 9.0,
+      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-08-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 50,
+      "quality_score": 8.2,
+      "relevance_score": 8.1,
       "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_detail": "EverydayOnSales - Fashion Accessories",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/21-30-august-2026-audio-house-singapore-electronics-overstock-clearance-sale-up-to-80-off-with-ecashback-and-nea-climate-voucher-deals/",
-      "valid_from": "2026-08-21",
-      "valid_until": "2026-08-30",
+      "url": "https://sg.everydayonsales.com/now-till-31-august-2026-champion-singapore-promotion-on-1-for-1-innerwear-singlets-and-round-neck-tees-mix-match-deal-at-2-for-19/",
+      "valid_from": null,
+      "valid_until": "2026-08-31",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -995,7 +1069,7 @@
       "access_requirement": "Verify directly with retailer",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 87.5,
+        "total": 86.4,
         "scale_max": 100,
         "band": "Strong",
         "components": [
@@ -1004,21 +1078,21 @@
             "label": "Discount strength",
             "points": 55.0,
             "max_points": 55,
-            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 12.0,
+            "points": 12.3,
             "max_points": 15,
-            "detail": "Scanner quality estimate 8.0/10"
+            "detail": "Scanner quality estimate 8.2/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 13.5,
+            "points": 12.1,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 9.0/10"
+            "detail": "Scanner relevance estimate 8.1/10"
           },
           {
             "key": "confidence",
@@ -1039,27 +1113,27 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 87.5,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "deal_score": 86.4,
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-bccea5d11683",
+      "id": "sale-live-d0748835cd52",
       "category": "sale",
-      "subcategory": "electronics",
-      "name": "Audio House: Electronics Overstock Clearance Sale – Up to 80% Off, Free $300 eCashback and NEA Climate Voucher Bonus",
+      "subcategory": "outlet_clearance",
+      "name": "FJ Benjamin: Up to 90% Off ezpz, Superdry and Cole Haan at BHG Bugis Clearance Sale Promotion",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-08-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 80,
+      "description": "Discovery listing advertising up to 90% savings. Listed from 2026-08-13 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 90,
       "quality_score": 8.0,
-      "relevance_score": 9.0,
+      "relevance_score": 8.2,
       "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_detail": "EverydayOnSales - Fashion Accessories",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/21-30-august-2026-audio-house-electronics-overstock-clearance-sale-up-to-80-off-free-300-ecashback-and-nea-climate-voucher-bonus/",
-      "valid_from": "2026-08-21",
-      "valid_until": "2026-08-30",
+      "url": "https://sg.everydayonsales.com/13-august-2026-onwards-fj-benjamin-up-to-90-off-ezpz-superdry-and-cole-haan-at-bhg-bugis-clearance-sale-promotion/",
+      "valid_from": "2026-08-13",
+      "valid_until": null,
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -1069,7 +1143,7 @@
       "access_requirement": "Verify directly with retailer",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 87.5,
+        "total": 86.3,
         "scale_max": 100,
         "band": "Strong",
         "components": [
@@ -1078,7 +1152,7 @@
             "label": "Discount strength",
             "points": 55.0,
             "max_points": 55,
-            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+            "detail": "90% advertised saving; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -1090,9 +1164,9 @@
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 13.5,
+            "points": 12.3,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 9.0/10"
+            "detail": "Scanner relevance estimate 8.2/10"
           },
           {
             "key": "confidence",
@@ -1113,82 +1187,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 87.5,
-      "observed_at": "2026-08-30T11:11:07+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-7809fd1b55fe",
-      "category": "sale",
-      "subcategory": "sportswear_footwear",
-      "name": "Key Power Sports Warehouse Sale: Up to 60% Off Sportswear, Running Shoes, Compression Gear and Buy 1 Get 1 Free Deals",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-08-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 60,
-      "quality_score": 8.0,
-      "relevance_score": 9.0,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sportswear",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/25-30-august-2026-key-power-sports-warehouse-sale-up-to-60-off-sportswear-running-shoes-compression-gear-and-buy-1-get-1-free-deals/",
-      "valid_from": "2026-08-25",
-      "valid_until": "2026-08-30",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.5,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "60% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.0/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.5,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.0/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.5,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "deal_score": 86.3,
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -1262,7 +1262,7 @@
         ]
       },
       "deal_score": 74.7,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -1336,7 +1336,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -1482,7 +1482,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -1554,7 +1554,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -1626,7 +1626,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -1698,7 +1698,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     },
     {
@@ -1772,7 +1772,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-08-30T11:11:07+08:00",
+      "observed_at": "2026-08-31T09:11:47+08:00",
       "exclude_from_best": true
     }
   ]
