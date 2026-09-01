@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T09:11:47+08:00",
+  "updated_at": "2026-09-01T09:43:55+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 96.4,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -298,7 +298,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -372,7 +372,7 @@
         ]
       },
       "deal_score": 89.3,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -447,7 +447,7 @@
         ]
       },
       "deal_score": 88.1,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": false,
       "best_rank": 10
     },
@@ -522,81 +522,7 @@
         ]
       },
       "deal_score": 88.0,
-      "observed_at": "2026-08-31T09:11:47+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-94dfaed492ea",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "COURTS Singapore National Day Super Sale Promotion: Up to 80% OFF Storewide Deals on Appliances, Electronics, Furniture and More",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-08-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 80,
-      "quality_score": 8.2,
-      "relevance_score": 9.1,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/1-31-august-2026-courts-singapore-national-day-super-sale-promotion-up-to-80-off-storewide-deals-on-appliances-electronics-furniture-and-more/",
-      "valid_from": "2026-08-01",
-      "valid_until": "2026-08-31",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.9,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "80% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.1/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.9,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,7 +596,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +670,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,155 +744,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-08-31T09:11:47+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-a981ad4ff002",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Challenger Singapore, CYGNETT August Promotion With Up To 55% OFF Tech Accessories Deals",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 55% savings. Listed as valid through 2026-08-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 55,
-      "quality_score": 8.2,
-      "relevance_score": 8.9,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/5-31-august-2026-challenger-singapore-cygnett-august-promotion-with-up-to-55-off-tech-accessories-deals/",
-      "valid_from": "2026-08-05",
-      "valid_until": "2026-08-31",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.6,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "55% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.9/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.6,
-      "observed_at": "2026-08-31T09:11:47+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-52d29add001b",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Challenger Singapore: Up to 51% OFF Samsung & SanDisk Storage Online Exclusive Promotion",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 51% savings. Listed as valid through 2026-08-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 51,
-      "quality_score": 8.2,
-      "relevance_score": 8.9,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/now-till-31-august-2026-challenger-singapore-up-to-51-off-samsung-sandisk-storage-online-exclusive-promotion/",
-      "valid_from": null,
-      "valid_until": "2026-08-31",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.6,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "51% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.9/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.6,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,26 +818,26 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-830befed8d0c",
+      "id": "sale-live-b39f01af2970",
       "category": "sale",
-      "subcategory": "fashion_clearance",
-      "name": "Champion Singapore: Promotion on 1-for-1 Innerwear Singlets and Round Neck Tees Mix & Match Deal at $2 for $19",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-08-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "subcategory": "electronics",
+      "name": "JF Elite: Atrium Sale at Westgate with Crazy Tech Deals and Extra 50% OFF Selected Items",
+      "location": "Westgate / Singapore",
+      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-09-06. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
       "discount_percent": 50,
-      "quality_score": 8.2,
-      "relevance_score": 8.1,
+      "quality_score": 7.6,
+      "relevance_score": 8.8,
       "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Fashion Accessories",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/now-till-31-august-2026-champion-singapore-promotion-on-1-for-1-innerwear-singlets-and-round-neck-tees-mix-match-deal-at-2-for-19/",
-      "valid_from": null,
-      "valid_until": "2026-08-31",
+      "url": "https://sg.everydayonsales.com/31-august-6-september-2026-jf-elite-atrium-sale-at-westgate-with-crazy-tech-deals-and-extra-50-off-selected-items/",
+      "valid_from": "2026-08-31",
+      "valid_until": "2026-09-06",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -1069,7 +847,7 @@
       "access_requirement": "Verify directly with retailer",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 86.4,
+        "total": 86.6,
         "scale_max": 100,
         "band": "Strong",
         "components": [
@@ -1083,16 +861,16 @@
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 12.3,
+            "points": 11.4,
             "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
+            "detail": "Scanner quality estimate 7.6/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 12.1,
+            "points": 13.2,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.1/10"
+            "detail": "Scanner relevance estimate 8.8/10"
           },
           {
             "key": "confidence",
@@ -1113,8 +891,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 86.4,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "deal_score": 86.6,
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -1188,81 +966,229 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-57993871d8e4",
+      "id": "sale-live-3f0fedc9675e",
       "category": "sale",
-      "subcategory": "travel_luggage",
-      "name": "TUMI Outlet @ IMM",
-      "location": "IMM / Singapore",
-      "description": "Official promotion: Storewide 30% off with additional multi-buy savings up to 20% through 31 August 2026. Official IMM August multi-buy; exclusions and stock limits apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
-      "discount_percent": 30,
-      "quality_score": 9.1,
-      "relevance_score": 9.0,
-      "source": "CapitaLand IMM",
-      "source_detail": "TUMI Outlet August multi-buy",
-      "source_type": "official_promotion_page",
-      "reference_source": "https://www.capitaland.com/sg/en/shop/malls/discover/WestTheSale2026.html",
-      "source_confidence": "verified",
-      "deal_type": "mall_outlet",
-      "access_requirement": "Official IMM August multi-buy; exclusions and stock limits apply",
-      "url": "https://www.capitaland.com/sg/en/shop/malls/discover/WestTheSale2026.html",
+      "subcategory": "outlet_clearance",
+      "name": "TYR Singapore: Relocation Clearance Sale with Up to 80% Off, Bundle Deals and Free Gifts",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-10-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 80,
+      "quality_score": 8.0,
+      "relevance_score": 8.2,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/1-september-31-october-2026-tyr-singapore-relocation-clearance-sale-with-up-to-80-off-bundle-deals-and-free-gifts/",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-10-31",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
       "price_type": "advertised_discount",
-      "valid_from": null,
-      "valid_until": "2026-08-31",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 74.7,
+        "total": 86.3,
         "scale_max": 100,
-        "band": "Worth a look",
+        "band": "Strong",
         "components": [
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 33.0,
+            "points": 55.0,
             "max_points": 55,
-            "detail": "30% advertised saving; 50%+ earns the full 55 points"
+            "detail": "80% advertised saving; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 13.6,
+            "points": 12.0,
             "max_points": 15,
-            "detail": "Scanner quality estimate 9.1/10"
+            "detail": "Scanner quality estimate 8.0/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 13.5,
+            "points": 12.3,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 9.0/10"
+            "detail": "Scanner relevance estimate 8.2/10"
           },
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 5.0,
             "max_points": 10,
-            "detail": "Verified official/direct source"
+            "detail": "Discovery source; verify with merchant"
           },
           {
             "key": "convenience",
             "label": "Convenience / restrictions",
-            "points": 4.5,
+            "points": 2.0,
             "max_points": 5,
-            "detail": "Mall / outlet"
+            "detail": "Discovery listing"
           }
         ],
         "notes": [
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 74.7,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "deal_score": 86.3,
+      "observed_at": "2026-09-01T09:43:55+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-f0da780379f4",
+      "category": "sale",
+      "subcategory": "outlet_clearance",
+      "name": "MLB Singapore: Lowest Price Clearance Sale Up to 70% OFF from $15 at Changi City Point Atrium",
+      "location": "Changi City Point / Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-09-06. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 70,
+      "quality_score": 8.0,
+      "relevance_score": 8.2,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Fashion Accessories",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/31-august-6-september-2026-mlb-singapore-lowest-price-clearance-sale-up-to-70-off-from-15-at-changi-city-point-atrium/",
+      "valid_from": "2026-08-31",
+      "valid_until": "2026-09-06",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 86.3,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.0/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 86.3,
+      "observed_at": "2026-09-01T09:43:55+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-4cc3d1ac477a",
+      "category": "sale",
+      "subcategory": "outlet_clearance",
+      "name": "Yakiniku Like Singapore: Student Deal from $8.90 with Up to 40% OFF Yakiniku Sets – Selected Outlets, Times and Details",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 40% savings. Listed from 2026-08-31 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 40,
+      "quality_score": 7.6,
+      "relevance_score": 7.7,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Happening Now",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/31-august-2026-onwards-yakiniku-like-singapore-student-deal-from-8-90-with-up-to-40-off-yakiniku-sets-selected-outlets-times-and-details/",
+      "valid_from": "2026-08-31",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 74.0,
+        "scale_max": 100,
+        "band": "Worth a look",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 44.0,
+            "max_points": 55,
+            "detail": "40% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.4,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.7/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 74.0,
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -1336,7 +1262,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -1482,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -1554,7 +1480,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -1626,7 +1552,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -1698,7 +1624,79 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-2fff712b0f56",
+      "category": "sale",
+      "subcategory": "fashion_clearance",
+      "name": "NARS",
+      "location": "Singapore",
+      "description": "Official promotion: Enjoy 15% savings storewide.. Eligible American Express card required. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "discount_percent": 15,
+      "quality_score": 7.7,
+      "relevance_score": 7.0,
+      "source": "American Express Shopping",
+      "source_detail": "American Express Shopping",
+      "source_type": "official_promotion_page",
+      "reference_source": "https://www.americanexpress.com/en-sg/benefits/promotions/shopping/",
+      "source_confidence": "verified",
+      "deal_type": "card_deal",
+      "access_requirement": "Eligible American Express card required",
+      "url": "https://www.americanexpress.com/en-sg/benefits/promotions/shopping/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 52.5,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 16.5,
+            "max_points": 55,
+            "detail": "15% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.6,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.7/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 10.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 52.5,
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     },
     {
@@ -1772,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-08-31T09:11:47+08:00",
+      "observed_at": "2026-09-01T09:43:55+08:00",
       "exclude_from_best": true
     }
   ]
