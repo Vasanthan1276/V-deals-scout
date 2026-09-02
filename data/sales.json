@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T09:43:55+08:00",
+  "updated_at": "2026-09-02T08:54:02+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,84 +148,9 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": false,
       "best_rank": 3
-    },
-    {
-      "id": "sale-live-4bbbe6eddbc7",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "COURTS · SONA appliance deals",
-      "location": "Online / Singapore",
-      "description": "Official promotion: Selected SONA appliances up to 50% off. Direct retailer prices; selected models and stock availability apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
-      "discount_percent": 50,
-      "quality_score": 8.7,
-      "relevance_score": 8.9,
-      "source": "COURTS Singapore",
-      "source_detail": "COURTS SONA appliance deals",
-      "source_type": "official_promotion_page",
-      "reference_source": "https://www.courts.com.sg/sona",
-      "source_confidence": "verified",
-      "deal_type": "direct_retailer",
-      "access_requirement": "Direct retailer prices; selected models and stock availability apply",
-      "url": "https://www.courts.com.sg/sona",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "valid_from": null,
-      "valid_until": null,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 96.4,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.0,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.7/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.9/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Verified official/direct source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Direct retailer"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 96.4,
-      "observed_at": "2026-09-01T09:43:55+08:00",
-      "exclude_from_best": false,
-      "best_rank": 4
     },
     {
       "id": "sale-live-4d7b1696e4bb",
@@ -298,8 +223,9 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-09-01T09:43:55+08:00",
-      "exclude_from_best": true
+      "observed_at": "2026-09-02T08:54:02+08:00",
+      "exclude_from_best": false,
+      "best_rank": 6
     },
     {
       "id": "sale-live-db2cc6b99c3a",
@@ -372,7 +298,7 @@
         ]
       },
       "deal_score": 89.3,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -447,83 +373,9 @@
         ]
       },
       "deal_score": 88.1,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": false,
       "best_rank": 10
-    },
-    {
-      "id": "sale-live-61e51fa97f4a",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "LINK Outlet Store Singapore: Up to 70% Off Adidas, Under Armour, New Balance, Mizuno, Waveline and More at Bedok Mall Sale Promotion",
-      "location": "Bedok Mall / Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-09-01. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 70,
-      "quality_score": 8.6,
-      "relevance_score": 8.7,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Fashion Accessories",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/19-august-1-september-2026-link-outlet-store-singapore-up-to-70-off-adidas-under-armour-new-balance-mizuno-waveline-and-more-at-bedok-mall-sale-promotion/",
-      "valid_from": "2026-08-19",
-      "valid_until": "2026-09-01",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 88.0,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.9,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.7/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 88.0,
-      "observed_at": "2026-09-01T09:43:55+08:00",
-      "exclude_from_best": true
     },
     {
       "id": "sale-live-3a9331e05bf1",
@@ -596,7 +448,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,7 +522,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +596,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,7 +670,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,7 +744,7 @@
         ]
       },
       "deal_score": 86.6,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -966,7 +818,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,7 +892,81 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-327dc19f9a99",
+      "category": "sale",
+      "subcategory": "outlet_clearance",
+      "name": "MLB Singapore: Clearance Sale with Up to 70% OFF from $15 at Changi City Point",
+      "location": "Changi City Point / Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-09-06. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 70,
+      "quality_score": 8.0,
+      "relevance_score": 8.2,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sportswear",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/31-august-6-september-2026-mlb-singapore-clearance-sale-with-up-to-70-off-from-15-at-changi-city-point/",
+      "valid_from": "2026-08-31",
+      "valid_until": "2026-09-06",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 86.3,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.0/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 86.3,
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -1114,26 +1040,26 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-4cc3d1ac477a",
+      "id": "sale-live-0d39d21f69fa",
       "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "Yakiniku Like Singapore: Student Deal from $8.90 with Up to 40% OFF Yakiniku Sets – Selected Outlets, Times and Details",
+      "subcategory": "travel_luggage",
+      "name": "BHG Singapore: September Purchase-with-Purchase Promotion with Up to 67% OFF Selected Deals, Travel Time Luggage and More",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 40% savings. Listed from 2026-08-31 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 40,
-      "quality_score": 7.6,
-      "relevance_score": 7.7,
+      "description": "Discovery listing advertising up to 67% savings. Listed as valid through 2026-09-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 67,
+      "quality_score": 7.2,
+      "relevance_score": 8.6,
       "source": "EverydayOnSales Singapore",
       "source_detail": "EverydayOnSales - Happening Now",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/31-august-2026-onwards-yakiniku-like-singapore-student-deal-from-8-90-with-up-to-40-off-yakiniku-sets-selected-outlets-times-and-details/",
-      "valid_from": "2026-08-31",
-      "valid_until": null,
+      "url": "https://sg.everydayonsales.com/1-30-september-2026-bhg-singapore-september-purchase-with-purchase-promotion-with-up-to-67-off-selected-deals-travel-time-luggage-and-more/",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-09-30",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -1143,30 +1069,30 @@
       "access_requirement": "Verify directly with retailer",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 74.0,
+        "total": 85.7,
         "scale_max": 100,
-        "band": "Worth a look",
+        "band": "Strong",
         "components": [
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 44.0,
+            "points": 55.0,
             "max_points": 55,
-            "detail": "40% advertised saving; 50%+ earns the full 55 points"
+            "detail": "67% advertised saving; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 11.4,
+            "points": 10.8,
             "max_points": 15,
-            "detail": "Scanner quality estimate 7.6/10"
+            "detail": "Scanner quality estimate 7.2/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 11.6,
+            "points": 12.9,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 7.7/10"
+            "detail": "Scanner relevance estimate 8.6/10"
           },
           {
             "key": "confidence",
@@ -1187,8 +1113,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 74.0,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "deal_score": 85.7,
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -1262,7 +1188,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1260,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -1480,7 +1406,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -1552,7 +1478,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -1624,7 +1550,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1622,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-01T09:43:55+08:00",
+      "observed_at": "2026-09-02T08:54:02+08:00",
       "exclude_from_best": true
     }
   ]
