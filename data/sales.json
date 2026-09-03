@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T08:54:02+08:00",
+  "updated_at": "2026-09-03T09:01:16+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,9 +223,8 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-09-02T08:54:02+08:00",
-      "exclude_from_best": false,
-      "best_rank": 6
+      "observed_at": "2026-09-03T09:01:16+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-db2cc6b99c3a",
@@ -298,9 +297,9 @@
         ]
       },
       "deal_score": 89.3,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": false,
-      "best_rank": 9
+      "best_rank": 8
     },
     {
       "id": "sale-live-9a3c281999eb",
@@ -373,9 +372,9 @@
         ]
       },
       "deal_score": 88.1,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": false,
-      "best_rank": 10
+      "best_rank": 9
     },
     {
       "id": "sale-live-3a9331e05bf1",
@@ -448,7 +447,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -522,7 +521,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -596,7 +595,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,7 +669,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +743,7 @@
         ]
       },
       "deal_score": 86.6,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,7 +817,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,7 +891,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -966,7 +965,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,7 +1039,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1114,8 +1113,83 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-8012b92db4bf",
+      "category": "sale",
+      "subcategory": "sportswear_footwear",
+      "name": "Nike Singapore Sale",
+      "location": "Online / Singapore",
+      "description": "Official promotion: Selected Nike sale items up to 40% off. Direct brand sale; selected styles, sizes and stock availability apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "discount_percent": 40,
+      "quality_score": 8.7,
+      "relevance_score": 8.6,
+      "source": "Nike Singapore",
+      "source_detail": "Nike Singapore Sale",
+      "source_type": "official_promotion_page",
+      "reference_source": "https://www.nike.com/sg/w/sale-3yaepz5k5r2z6fvtl",
+      "source_confidence": "verified",
+      "deal_type": "direct_brand",
+      "access_requirement": "Direct brand sale; selected styles, sizes and stock availability apply",
+      "url": "https://www.nike.com/sg/w/sale-3yaepz5k5r2z6fvtl",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "valid_from": null,
+      "valid_until": null,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.0,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 44.0,
+            "max_points": 55,
+            "detail": "40% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.0,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.7/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Direct brand"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.0,
+      "observed_at": "2026-09-03T09:01:16+08:00",
+      "exclude_from_best": false,
+      "best_rank": 10
     },
     {
       "id": "sale-live-eddda977c16a",
@@ -1188,7 +1262,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1260,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1406,7 +1480,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1478,7 +1552,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1550,7 +1624,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1622,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-02T08:54:02+08:00",
+      "observed_at": "2026-09-03T09:01:16+08:00",
       "exclude_from_best": true
     }
   ]
