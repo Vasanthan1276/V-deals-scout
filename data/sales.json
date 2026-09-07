@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T08:42:47+08:00",
+  "updated_at": "2026-09-07T08:45:57+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 96.4,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -298,83 +298,8 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-7287389ab16e",
-      "category": "sale",
-      "subcategory": "sportswear_footwear",
-      "name": "Running Lab: Warehouse Sale with Up to 60% OFF HOKA, ASICS, Saucony & More – Running Shoes, Apparel and Sportswear Deals",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-09-06. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 60,
-      "quality_score": 9.0,
-      "relevance_score": 9.5,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sportswear",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/3-6-september-2026-running-lab-warehouse-sale-with-up-to-60-off-hoka-asics-saucony-more-running-shoes-apparel-and-sportswear-deals/",
-      "valid_from": "2026-09-03",
-      "valid_until": "2026-09-06",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 89.8,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "60% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.5,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 9.0/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 14.2,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.5/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 89.8,
-      "observed_at": "2026-09-06T08:42:47+08:00",
-      "exclude_from_best": false,
-      "best_rank": 9
     },
     {
       "id": "sale-live-db2cc6b99c3a",
@@ -447,9 +372,9 @@
         ]
       },
       "deal_score": 89.3,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": false,
-      "best_rank": 10
+      "best_rank": 9
     },
     {
       "id": "sale-live-9a3c281999eb",
@@ -522,8 +447,9 @@
         ]
       },
       "deal_score": 88.1,
-      "observed_at": "2026-09-06T08:42:47+08:00",
-      "exclude_from_best": true
+      "observed_at": "2026-09-07T08:45:57+08:00",
+      "exclude_from_best": false,
+      "best_rank": 10
     },
     {
       "id": "sale-live-3a9331e05bf1",
@@ -596,7 +522,81 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-8125df07f5a1",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "BEST Denki Singapore Online Exclusive Lucky 8.8 Savings Promotion With Up To 70% OFF, Free Delivery And $8 OFF Every $88 Spent",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed from 2026-08-01 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 70,
+      "quality_score": 8.2,
+      "relevance_score": 9.1,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/1-august-2026-onwards-best-denki-singapore-online-exclusive-lucky-8-8-savings-promotion-with-up-to-70-off-free-delivery-and-8-off-every-88-spent/",
+      "valid_from": "2026-08-01",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.9,
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,7 +670,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +744,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,155 +818,7 @@
         ]
       },
       "deal_score": 87.5,
-      "observed_at": "2026-09-06T08:42:47+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-5f30c1b35aea",
-      "category": "sale",
-      "subcategory": "sportswear_footwear",
-      "name": "Link Outlet Store: Warehouse Sale with Up to 80% OFF Sportswear, Shoes & Lifestyle Essentials",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-09-06. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 80,
-      "quality_score": 8.0,
-      "relevance_score": 9.0,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sportswear",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/4-6-september-2026-link-outlet-store-warehouse-sale-with-up-to-80-off-sportswear-shoes-lifestyle-essentials/",
-      "valid_from": "2026-09-04",
-      "valid_until": "2026-09-06",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.5,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "80% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.0/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.5,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.0/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.5,
-      "observed_at": "2026-09-06T08:42:47+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-b39f01af2970",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "JF Elite: Atrium Sale at Westgate with Crazy Tech Deals and Extra 50% OFF Selected Items",
-      "location": "Westgate / Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-09-06. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 50,
-      "quality_score": 7.6,
-      "relevance_score": 8.8,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/31-august-6-september-2026-jf-elite-atrium-sale-at-westgate-with-crazy-tech-deals-and-extra-50-off-selected-items/",
-      "valid_from": "2026-08-31",
-      "valid_until": "2026-09-06",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 86.6,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.4,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.2,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.8/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 86.6,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,26 +892,26 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-327dc19f9a99",
+      "id": "sale-live-3f0fedc9675e",
       "category": "sale",
       "subcategory": "outlet_clearance",
-      "name": "MLB Singapore: Clearance Sale with Up to 70% OFF from $15 at Changi City Point",
-      "location": "Changi City Point / Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-09-06. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 70,
+      "name": "TYR Singapore: Relocation Clearance Sale with Up to 80% Off, Bundle Deals and Free Gifts",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-10-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 80,
       "quality_score": 8.0,
       "relevance_score": 8.2,
       "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sportswear",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/31-august-6-september-2026-mlb-singapore-clearance-sale-with-up-to-70-off-from-15-at-changi-city-point/",
-      "valid_from": "2026-08-31",
-      "valid_until": "2026-09-06",
+      "url": "https://sg.everydayonsales.com/1-september-31-october-2026-tyr-singapore-relocation-clearance-sale-with-up-to-80-off-bundle-deals-and-free-gifts/",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-10-31",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -1078,7 +930,7 @@
             "label": "Discount strength",
             "points": 55.0,
             "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+            "detail": "80% advertised saving; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -1114,26 +966,26 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-f0da780379f4",
+      "id": "sale-live-696523672f85",
       "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "MLB Singapore: Lowest Price Clearance Sale Up to 70% OFF from $15 at Changi City Point Atrium",
-      "location": "Changi City Point / Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-09-06. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "subcategory": "electronics",
+      "name": "POPULAR Singapore: Tech-Tastic Sale Promotion with Up to 70% Off Gadgets, Laptops, Tablets, Audio Gear and IT Essentials",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-09-13. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
       "discount_percent": 70,
-      "quality_score": 8.0,
-      "relevance_score": 8.2,
+      "quality_score": 7.2,
+      "relevance_score": 8.6,
       "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Fashion Accessories",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/31-august-6-september-2026-mlb-singapore-lowest-price-clearance-sale-up-to-70-off-from-15-at-changi-city-point-atrium/",
-      "valid_from": "2026-08-31",
-      "valid_until": "2026-09-06",
+      "url": "https://sg.everydayonsales.com/4-13-september-2026-popular-singapore-tech-tastic-sale-promotion-with-up-to-70-off-gadgets-laptops-tablets-audio-gear-and-it-essentials/",
+      "valid_from": "2026-09-04",
+      "valid_until": "2026-09-13",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -1143,7 +995,7 @@
       "access_requirement": "Verify directly with retailer",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 86.3,
+        "total": 85.7,
         "scale_max": 100,
         "band": "Strong",
         "components": [
@@ -1157,16 +1009,16 @@
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 12.0,
+            "points": 10.8,
             "max_points": 15,
-            "detail": "Scanner quality estimate 8.0/10"
+            "detail": "Scanner quality estimate 7.2/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 12.3,
+            "points": 12.9,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
+            "detail": "Scanner relevance estimate 8.6/10"
           },
           {
             "key": "confidence",
@@ -1187,8 +1039,82 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 86.3,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "deal_score": 85.7,
+      "observed_at": "2026-09-07T08:45:57+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-bdc869277537",
+      "category": "sale",
+      "subcategory": "travel_luggage",
+      "name": "Kiztopia: 50% Off 2nd Admission Ticket Promotion for Kiztopia Friends Club Members",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-09-13. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 50,
+      "quality_score": 7.2,
+      "relevance_score": 8.4,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/1-13-september-2026-kiztopia-50-off-2nd-admission-ticket-promotion-for-kiztopia-friends-club-members/",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-09-13",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.4,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.4,
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -1262,7 +1188,81 @@
         ]
       },
       "deal_score": 85.0,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-1a94c4dc0cf0",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "Dyson Singapore 30% Off Regular-Priced Products Promotion – Upgrade Your Home Tech for Less with Exclusive Code, Online Deal, Singapore",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 30% savings. Listed as valid through 2026-12-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 30,
+      "quality_score": 8.2,
+      "relevance_score": 8.3,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/1-january-31-december-2026-dyson-singapore-30-off-regular-priced-products-promotion-upgrade-your-home-tech-for-less-with-exclusive-code-online-deal-singapore/",
+      "valid_from": "2026-01-01",
+      "valid_until": "2026-12-31",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 64.8,
+        "scale_max": 100,
+        "band": "Moderate",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 33.0,
+            "max_points": 55,
+            "detail": "30% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 64.8,
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -1336,7 +1336,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -1482,7 +1482,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -1554,7 +1554,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -1626,7 +1626,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -1698,7 +1698,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     },
     {
@@ -1844,7 +1844,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-06T08:42:47+08:00",
+      "observed_at": "2026-09-07T08:45:57+08:00",
       "exclude_from_best": true
     }
   ]
