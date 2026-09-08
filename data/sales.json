@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T08:45:57+08:00",
+  "updated_at": "2026-09-08T09:00:44+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 96.4,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -298,7 +298,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -372,7 +372,7 @@
         ]
       },
       "deal_score": 89.3,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -447,7 +447,7 @@
         ]
       },
       "deal_score": 88.1,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": false,
       "best_rank": 10
     },
@@ -522,7 +522,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -596,7 +596,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,7 +670,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +744,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,7 +818,7 @@
         ]
       },
       "deal_score": 87.5,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,14 +892,14 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-3f0fedc9675e",
+      "id": "sale-live-6b95dd5c4139",
       "category": "sale",
       "subcategory": "outlet_clearance",
-      "name": "TYR Singapore: Relocation Clearance Sale with Up to 80% Off, Bundle Deals and Free Gifts",
+      "name": "TYR Singapore: Massive Relocation Clearance Sale with Up to 80% OFF Swimwear, Apparel and Accessories",
       "location": "Singapore",
       "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-10-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
       "discount_percent": 80,
@@ -909,7 +909,7 @@
       "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/1-september-31-october-2026-tyr-singapore-relocation-clearance-sale-with-up-to-80-off-bundle-deals-and-free-gifts/",
+      "url": "https://sg.everydayonsales.com/1-september-31-october-2026-tyr-singapore-massive-relocation-clearance-sale-with-up-to-80-off-swimwear-apparel-and-accessories/",
       "valid_from": "2026-09-01",
       "valid_until": "2026-10-31",
       "verification_required": true,
@@ -966,7 +966,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,7 +1040,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -1114,7 +1114,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -1188,7 +1188,7 @@
         ]
       },
       "deal_score": 85.0,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -1262,7 +1262,7 @@
         ]
       },
       "deal_score": 64.8,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -1336,7 +1336,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -1482,7 +1482,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -1554,7 +1554,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -1626,7 +1626,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -1698,7 +1698,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     },
     {
@@ -1844,7 +1844,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-07T08:45:57+08:00",
+      "observed_at": "2026-09-08T09:00:44+08:00",
       "exclude_from_best": true
     }
   ]
