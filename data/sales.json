@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T09:00:44+08:00",
+  "updated_at": "2026-09-09T09:06:00+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 96.4,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -298,8 +298,83 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-c9c9fde9730d",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "Best Denki Singapore: Massive Clearance Sale with Up to 80% OFF Selected TV & Computer Display Sets at Funan",
+      "location": "Funan / Singapore",
+      "description": "Discovery listing advertising up to 80% savings. Listed from 2026-09-08 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 80,
+      "quality_score": 9.0,
+      "relevance_score": 9.5,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/8-september-2026-onwards-best-denki-singapore-massive-clearance-sale-with-up-to-80-off-selected-tv-computer-display-sets-at-funan/",
+      "valid_from": "2026-09-08",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 89.8,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.5,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.0/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 14.2,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.5/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 89.8,
+      "observed_at": "2026-09-09T09:06:00+08:00",
+      "exclude_from_best": false,
+      "best_rank": 9
     },
     {
       "id": "sale-live-db2cc6b99c3a",
@@ -372,9 +447,9 @@
         ]
       },
       "deal_score": 89.3,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": false,
-      "best_rank": 9
+      "best_rank": 10
     },
     {
       "id": "sale-live-9a3c281999eb",
@@ -447,9 +522,8 @@
         ]
       },
       "deal_score": 88.1,
-      "observed_at": "2026-09-08T09:00:44+08:00",
-      "exclude_from_best": false,
-      "best_rank": 10
+      "observed_at": "2026-09-09T09:06:00+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-3a9331e05bf1",
@@ -522,7 +596,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -596,7 +670,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,7 +744,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +818,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,7 +892,7 @@
         ]
       },
       "deal_score": 87.5,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,7 +966,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -966,7 +1040,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,16 +1114,16 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-bdc869277537",
+      "id": "sale-live-872c408b543a",
       "category": "sale",
       "subcategory": "travel_luggage",
-      "name": "Kiztopia: 50% Off 2nd Admission Ticket Promotion for Kiztopia Friends Club Members",
+      "name": "Shopee, Trip.com, Klook, Traveloka & Pelago 9.9 Travel Sale 2026 – $39 JB Hotels, Buy 1 Get 1 Free Attractions & Up to $199 Off",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-09-13. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-09-17. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
       "discount_percent": 50,
       "quality_score": 7.2,
       "relevance_score": 8.4,
@@ -1057,9 +1131,9 @@
       "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/1-13-september-2026-kiztopia-50-off-2nd-admission-ticket-promotion-for-kiztopia-friends-club-members/",
-      "valid_from": "2026-09-01",
-      "valid_until": "2026-09-13",
+      "url": "https://sg.everydayonsales.com/7-17-september-2026-shopee-trip-com-klook-traveloka-pelago-9-9-travel-sale-2026-39-jb-hotels-buy-1-get-1-free-attractions-up-to-199-off/",
+      "valid_from": "2026-09-07",
+      "valid_until": "2026-09-17",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -1114,7 +1188,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1188,81 +1262,7 @@
         ]
       },
       "deal_score": 85.0,
-      "observed_at": "2026-09-08T09:00:44+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-1a94c4dc0cf0",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Dyson Singapore 30% Off Regular-Priced Products Promotion – Upgrade Your Home Tech for Less with Exclusive Code, Online Deal, Singapore",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 30% savings. Listed as valid through 2026-12-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 30,
-      "quality_score": 8.2,
-      "relevance_score": 8.3,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/1-january-31-december-2026-dyson-singapore-30-off-regular-priced-products-promotion-upgrade-your-home-tech-for-less-with-exclusive-code-online-deal-singapore/",
-      "valid_from": "2026-01-01",
-      "valid_until": "2026-12-31",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 64.8,
-        "scale_max": 100,
-        "band": "Moderate",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 33.0,
-            "max_points": 55,
-            "detail": "30% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.5,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.3/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 64.8,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1336,7 +1336,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1482,7 +1482,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1554,7 +1554,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1626,7 +1626,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1698,7 +1698,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1844,7 +1844,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-08T09:00:44+08:00",
+      "observed_at": "2026-09-09T09:06:00+08:00",
       "exclude_from_best": true
     }
   ]
