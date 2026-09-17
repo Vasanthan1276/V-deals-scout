@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T09:10:30+08:00",
+  "updated_at": "2026-09-17T09:09:54+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 96.4,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -298,7 +298,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -372,9 +372,9 @@
         ]
       },
       "deal_score": 89.8,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": false,
-      "best_rank": 9
+      "best_rank": 12
     },
     {
       "id": "sale-live-db2cc6b99c3a",
@@ -447,9 +447,9 @@
         ]
       },
       "deal_score": 89.3,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": false,
-      "best_rank": 10
+      "best_rank": 13
     },
     {
       "id": "sale-live-9a3c281999eb",
@@ -522,7 +522,7 @@
         ]
       },
       "deal_score": 88.1,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -596,7 +596,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,7 +670,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +744,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,7 +818,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,7 +892,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -966,7 +966,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,7 +1040,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -1114,7 +1114,7 @@
         ]
       },
       "deal_score": 64.8,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -1188,7 +1188,7 @@
         ]
       },
       "deal_score": 63.5,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -1262,7 +1262,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -1480,7 +1480,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -1552,7 +1552,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -1624,7 +1624,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-16T09:10:30+08:00",
+      "observed_at": "2026-09-17T09:09:54+08:00",
       "exclude_from_best": true
     }
   ]
