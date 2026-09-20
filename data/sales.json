@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T09:02:23+08:00",
+  "updated_at": "2026-09-20T08:48:29+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 96.4,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -298,7 +298,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -372,7 +372,7 @@
         ]
       },
       "deal_score": 89.8,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": false,
       "best_rank": 12
     },
@@ -447,7 +447,7 @@
         ]
       },
       "deal_score": 89.3,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": false,
       "best_rank": 13
     },
@@ -522,25 +522,25 @@
         ]
       },
       "deal_score": 88.1,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-3a9331e05bf1",
+      "id": "sale-live-bcd73782bf4a",
       "category": "sale",
       "subcategory": "electronics",
-      "name": "BEST Denki Singapore: Up to 70% Off Online Exclusive Sale with Extra $250 Off Power Deals",
+      "name": "BEST Denki Singapore: Mid-Autumn Kitchen & Beauty Sale – Up to 50% Off Online, Extra Cashback Up to $30, Selected Kitchen Appliances & Beauty Essentials",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed from 2026-08-14 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 70,
+      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-09-18 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 50,
       "quality_score": 8.2,
-      "relevance_score": 9.1,
+      "relevance_score": 8.9,
       "source": "EverydayOnSales Singapore",
       "source_detail": "EverydayOnSales - Computers & Electronics",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/14-august-2026-onwards-best-denki-singapore-up-to-70-off-online-exclusive-sale-with-extra-250-off-power-deals/",
-      "valid_from": "2026-08-14",
+      "url": "https://sg.everydayonsales.com/18-september-2026-onwards-best-denki-singapore-mid-autumn-kitchen-beauty-sale-up-to-50-off-online-extra-cashback-up-to-30-selected-kitchen-appliances-beauty-essentials/",
+      "valid_from": "2026-09-18",
       "valid_until": null,
       "verification_required": true,
       "is_demo": false,
@@ -551,7 +551,7 @@
       "access_requirement": "Verify directly with retailer",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 87.9,
+        "total": 87.6,
         "scale_max": 100,
         "band": "Strong",
         "components": [
@@ -560,7 +560,7 @@
             "label": "Discount strength",
             "points": 55.0,
             "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -572,9 +572,9 @@
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 13.6,
+            "points": 13.3,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 9.1/10"
+            "detail": "Scanner relevance estimate 8.9/10"
           },
           {
             "key": "confidence",
@@ -595,27 +595,27 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 87.9,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "deal_score": 87.6,
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-8125df07f5a1",
+      "id": "sale-live-8485b37b08ce",
       "category": "sale",
       "subcategory": "electronics",
-      "name": "BEST Denki Singapore Online Exclusive Lucky 8.8 Savings Promotion With Up To 70% OFF, Free Delivery And $8 OFF Every $88 Spent",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed from 2026-08-01 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 70,
+      "name": "Harvey Norman: JBL Over 50% OFF Sale Promotion at Westgate Mall, B1 Atrium",
+      "location": "Westgate / Singapore",
+      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-09-20. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 50,
       "quality_score": 8.2,
-      "relevance_score": 9.1,
+      "relevance_score": 8.9,
       "source": "EverydayOnSales Singapore",
       "source_detail": "EverydayOnSales - Computers & Electronics",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/1-august-2026-onwards-best-denki-singapore-online-exclusive-lucky-8-8-savings-promotion-with-up-to-70-off-free-delivery-and-8-off-every-88-spent/",
-      "valid_from": "2026-08-01",
-      "valid_until": null,
+      "url": "https://sg.everydayonsales.com/14-20-september-2026-harvey-norman-jbl-over-50-off-sale-promotion-at-westgate-mall-b1-atrium/",
+      "valid_from": "2026-09-14",
+      "valid_until": "2026-09-20",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -625,7 +625,7 @@
       "access_requirement": "Verify directly with retailer",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 87.9,
+        "total": 87.6,
         "scale_max": 100,
         "band": "Strong",
         "components": [
@@ -634,7 +634,7 @@
             "label": "Discount strength",
             "points": 55.0,
             "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -646,9 +646,9 @@
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 13.6,
+            "points": 13.3,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 9.1/10"
+            "detail": "Scanner relevance estimate 8.9/10"
           },
           {
             "key": "confidence",
@@ -669,82 +669,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 87.9,
-      "observed_at": "2026-09-19T09:02:23+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-8de64ba95e43",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "BEST Denki Singapore: Online Exclusive Up to 60% OFF Kitchen & Beauty Essentials Sale Promotion with Extra 10% OFF",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 60% savings. Listed from 2026-08-21 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 60,
-      "quality_score": 8.2,
-      "relevance_score": 9.1,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/21-august-2026-onwards-best-denki-singapore-online-exclusive-up-to-60-off-kitchen-beauty-essentials-sale-promotion-with-extra-10-off/",
-      "valid_from": "2026-08-21",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.9,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "60% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.1/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.9,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "deal_score": 87.6,
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,7 +744,81 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-f1a0ae4212ab",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "Audio House Singapore: 9.9 Storewide Sale and Rewards Promotion with 9.9% Off, 99% eCashback and $990 Cash, Available at Audio House Outlets",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 99% savings. Listed from 2026-09-18 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 99,
+      "quality_score": 7.6,
+      "relevance_score": 9.0,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/18-september-2026-onwards-audio-house-singapore-9-9-storewide-sale-and-rewards-promotion-with-9-9-off-99-ecashback-and-990-cash-available-at-audio-house-outlets/",
+      "valid_from": "2026-09-18",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 86.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "99% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.4,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 86.9,
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,7 +892,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -966,7 +966,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,7 +1040,81 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-494b630da6d4",
+      "category": "sale",
+      "subcategory": "outlet_clearance",
+      "name": "LINK Outlet Store Singapore: Up to 70% Off Atrium Sale",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-09-20. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 70,
+      "quality_score": 7.6,
+      "relevance_score": 8.2,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Fashion Accessories",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/14-20-september-2026-link-outlet-store-singapore-up-to-70-off-atrium-sale/",
+      "valid_from": "2026-09-14",
+      "valid_until": "2026-09-20",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.7,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.4,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.7,
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -1114,81 +1188,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-09-19T09:02:23+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-402cab160dc2",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "SMEG: Up to 50% Off Selected Appliances",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-09-20. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 50,
-      "quality_score": 7.2,
-      "relevance_score": 8.4,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/18-20-september-2026-smeg-up-to-50-off-selected-appliances/",
-      "valid_from": "2026-09-18",
-      "valid_until": "2026-09-20",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.4,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.4/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.4,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -1262,7 +1262,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -1480,7 +1480,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -1552,7 +1552,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -1624,7 +1624,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-19T09:02:23+08:00",
+      "observed_at": "2026-09-20T08:48:29+08:00",
       "exclude_from_best": true
     }
   ]
