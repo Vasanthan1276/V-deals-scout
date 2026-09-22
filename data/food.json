@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T08:56:08+08:00",
+  "updated_at": "2026-09-22T09:30:12+08:00",
   "mode": "live",
   "items": [
     {
@@ -76,100 +76,9 @@
         ]
       },
       "deal_score": 98.0,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": false,
       "best_rank": 1
-    },
-    {
-      "id": "food-eatigo-62290b1b44e8",
-      "category": "food",
-      "name": "Tandoori Khazana @ Bugis — Dinner",
-      "restaurant_name": "Tandoori Khazana @ Bugis",
-      "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.2/5. Best observed slot(s): 17:30, 18:00, 18:30, 19:00. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 8.4,
-      "relevance_score": 9.7,
-      "rating": 4.2,
-      "reservation_count": 736,
-      "meal_period": "dinner",
-      "food_category": "indian",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "17:30",
-        "18:00",
-        "18:30",
-        "19:00",
-        "19:30",
-        "20:00",
-        "20:30",
-        "21:00"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Dinner",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15504",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": true,
-      "preference_priority": 1,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 93.1,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.6,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 14.5,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.7/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability.",
-          "Indian cuisine is prioritised in the Best shortlist, but no extra points are added to the /100 score."
-        ]
-      },
-      "deal_score": 93.1,
-      "observed_at": "2026-09-21T08:55:39+08:00",
-      "exclude_from_best": false,
-      "best_rank": 8
     },
     {
       "id": "food-multi-77b5b6da8d93",
@@ -245,7 +154,7 @@
         ]
       },
       "deal_score": 64.3,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -322,7 +231,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -399,7 +308,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -476,7 +385,84 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-579ba56aa5c4",
+      "category": "food",
+      "name": "Nalan Restaurant @ Capitol Singapore",
+      "restaurant_name": "Nalan Restaurant @ Capitol Singapore",
+      "location": "Capitol Singapore",
+      "description": "10% off total bill. Source: DBS/POSB Dining. DBS/POSB card required. Verify current dates, blackout periods and booking conditions before dining.",
+      "discount_percent": 10,
+      "quality_score": 8.8,
+      "relevance_score": 9.2,
+      "food_category": "indian",
+      "food_category_inferred": false,
+      "deal_type": "card_deal",
+      "source": "DBS/POSB Dining",
+      "source_detail": "Nalan Restaurant - DBS/POSB",
+      "source_type": "official_promotion_page",
+      "source_confidence": "verified",
+      "access_requirement": "DBS/POSB card required",
+      "reference_source": "https://www.dbs.com.sg/personal/promotion/card-privileges-ylnalan",
+      "url": "https://www.dbs.com.sg/personal/promotion/card-privileges-ylnalan",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": true,
+      "preference_priority": 1,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 52.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 11.0,
+            "max_points": 55,
+            "detail": "10% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.8,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability.",
+          "Indian cuisine is prioritised in the Best shortlist, but no extra points are added to the /100 score."
+        ]
+      },
+      "deal_score": 52.0,
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -552,7 +538,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": false,
       "best_rank": 5
     },
@@ -629,7 +615,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": false,
       "best_rank": 6
     },
@@ -706,7 +692,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -782,7 +768,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -858,7 +844,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -934,7 +920,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -1010,7 +996,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -1086,118 +1072,35 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "food-multi-2feb14226b27",
+      "id": "food-eatigo-a8ccf1dd3c42",
       "category": "food",
-      "name": "Opus Bar and Grill (voco Orchard Singapore)",
-      "restaurant_name": "Opus Bar and Grill (voco Orchard Singapore)",
+      "name": "Edge @ Pan Pacific Singapore — Lunch",
+      "restaurant_name": "Edge @ Pan Pacific Singapore",
       "location": "Singapore",
-      "description": "1-for-1 Local High Tea (Semi-Buffet). Source: DBS/POSB Dining. DBS/POSB card required. Verify current dates, blackout periods and booking conditions before dining.",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 13:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
-      "quality_score": 8.8,
-      "relevance_score": 7.8,
-      "food_category": "western_international",
-      "food_category_inferred": true,
-      "deal_type": "card_deal",
-      "source": "DBS/POSB Dining",
-      "source_detail": "DBS/POSB Dining",
-      "source_type": "official_promotion_page",
-      "source_confidence": "verified",
-      "access_requirement": "DBS/POSB card required",
-      "reference_source": "https://www.dbs.com.sg/personal/promotion/cards-wonderful-dining",
-      "url": "https://www.dbs.com.sg/personal/promotion/cards-wonderful-dining",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 93.9,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.2,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.8/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.7,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.8/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Verified official/direct source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 4.0,
-            "max_points": 5,
-            "detail": "Card-linked deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 93.9,
-      "observed_at": "2026-09-21T08:55:39+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-eatigo-e0f95b329d1c",
-      "category": "food",
-      "name": "Maharani Table @ Boat Quay — Dinner",
-      "restaurant_name": "Maharani Table @ Boat Quay",
-      "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 5.0/5. Best observed slot(s): 17:30, 18:00, 18:30, 19:00. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 10.0,
-      "relevance_score": 8.2,
-      "rating": 5.0,
-      "reservation_count": 560,
-      "meal_period": "dinner",
-      "food_category": "other_dining",
+      "quality_score": 9.6,
+      "relevance_score": 8.7,
+      "rating": 4.8,
+      "reservation_count": 4100,
+      "meal_period": "lunch",
+      "food_category": "hotel_dining",
       "food_category_inferred": true,
       "best_discount_times": [
-        "17:30",
-        "18:00",
-        "18:30",
-        "19:00",
-        "19:30",
-        "20:00",
-        "20:30",
-        "21:00"
+        "13:30"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Dinner",
+      "source_detail": "Eatigo Singapore - Lunch",
       "source_type": "official_promotion_page",
       "source_confidence": "app_live",
       "access_requirement": "Eatigo booking required",
       "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "url": "https://eatigo.com/en/regions/27/themes/15505",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -1206,7 +1109,7 @@
       "preference_priority": 0,
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 93.3,
+        "total": 93.5,
         "scale_max": 100,
         "band": "Exceptional",
         "components": [
@@ -1220,16 +1123,16 @@
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 15.0,
+            "points": 14.4,
             "max_points": 15,
-            "detail": "Scanner quality estimate 10.0/10"
+            "detail": "Scanner quality estimate 9.6/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 12.3,
+            "points": 13.0,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
+            "detail": "Scanner relevance estimate 8.7/10"
           },
           {
             "key": "confidence",
@@ -1250,8 +1153,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 93.3,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "deal_score": 93.5,
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": false,
       "best_rank": 7
     },
@@ -1338,38 +1241,39 @@
         ]
       },
       "deal_score": 93.0,
-      "observed_at": "2026-09-21T08:55:39+08:00",
-      "exclude_from_best": true
+      "observed_at": "2026-09-22T09:29:46+08:00",
+      "exclude_from_best": false,
+      "best_rank": 8
     },
     {
-      "id": "food-eatigo-ea61fc0e3b6b",
+      "id": "food-eatigo-3213d074d350",
       "category": "food",
-      "name": "New Moon Thai Bar @ Beach Road (Bugis) — Dinner",
-      "restaurant_name": "New Moon Thai Bar @ Beach Road (Bugis)",
+      "name": "Greenhouse @ Dusit Thani Laguna Singapore — Lunch",
+      "restaurant_name": "Greenhouse @ Dusit Thani Laguna Singapore",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.9/5. Best observed slot(s): 18:00, 18:30, 21:00, 21:30. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 12:00, 12:30, 13:00, 13:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
-      "quality_score": 9.8,
-      "relevance_score": 8.2,
-      "rating": 4.9,
-      "reservation_count": 231,
-      "meal_period": "dinner",
-      "food_category": "southeast_asian",
+      "quality_score": 9.0,
+      "relevance_score": 8.7,
+      "rating": 4.5,
+      "reservation_count": 9800,
+      "meal_period": "lunch",
+      "food_category": "hotel_dining",
       "food_category_inferred": true,
       "best_discount_times": [
-        "18:00",
-        "18:30",
-        "21:00",
-        "21:30"
+        "12:00",
+        "12:30",
+        "13:00",
+        "13:30"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Dinner",
+      "source_detail": "Eatigo Singapore - Lunch",
       "source_type": "official_promotion_page",
       "source_confidence": "app_live",
       "access_requirement": "Eatigo booking required",
       "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "url": "https://eatigo.com/en/regions/27/themes/15505",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -1378,7 +1282,7 @@
       "preference_priority": 0,
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 93.0,
+        "total": 92.5,
         "scale_max": 100,
         "band": "Exceptional",
         "components": [
@@ -1392,16 +1296,16 @@
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 14.7,
+            "points": 13.5,
             "max_points": 15,
-            "detail": "Scanner quality estimate 9.8/10"
+            "detail": "Scanner quality estimate 9.0/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 12.3,
+            "points": 13.0,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
+            "detail": "Scanner relevance estimate 8.7/10"
           },
           {
             "key": "confidence",
@@ -1422,8 +1326,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 93.0,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "deal_score": 92.5,
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -1432,7 +1336,7 @@
       "name": "Q-WA Bar & Yakitori @ Boat Quay — Dinner",
       "restaurant_name": "Q-WA Bar & Yakitori @ Boat Quay",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.7/5. Best observed slot(s): 17:30, 18:00, 18:30, 19:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.7/5. Best observed slot(s): 17:30, 18:00, 18:30, 21:00. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.4,
       "relevance_score": 8.2,
@@ -1445,11 +1349,8 @@
         "17:30",
         "18:00",
         "18:30",
-        "19:00",
-        "19:30",
-        "20:00",
-        "20:30",
-        "21:00"
+        "21:00",
+        "21:30"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
@@ -1512,7 +1413,7 @@
         ]
       },
       "deal_score": 92.4,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -1594,29 +1495,27 @@
         ]
       },
       "deal_score": 92.4,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "food-eatigo-698c695dcd71",
+      "id": "food-eatigo-02e3145e5cfc",
       "category": "food",
-      "name": "JAG WINE @ East Coast Road — Dinner",
-      "restaurant_name": "JAG WINE @ East Coast Road",
+      "name": "Sanctuary Tearoom @ Amara Sanctuary Sentosa — Dinner",
+      "restaurant_name": "Sanctuary Tearoom @ Amara Sanctuary Sentosa",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 17:30, 18:00, 18:30, 19:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 17:30, 18:00. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.2,
       "relevance_score": 8.2,
       "rating": 4.6,
-      "reservation_count": 2800,
+      "reservation_count": 2700,
       "meal_period": "dinner",
       "food_category": "other_dining",
       "food_category_inferred": true,
       "best_discount_times": [
         "17:30",
-        "18:00",
-        "18:30",
-        "19:00"
+        "18:00"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
@@ -1679,26 +1578,26 @@
         ]
       },
       "deal_score": 92.1,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "food-eatigo-ed703102a72e",
+      "id": "food-eatigo-a50afb4b3e21",
       "category": "food",
-      "name": "Sanctuary Tearoom @ Amara Sanctuary Sentosa — Lunch",
-      "restaurant_name": "Sanctuary Tearoom @ Amara Sanctuary Sentosa",
+      "name": "Ginger @ PARKROYAL on Beach Road — Lunch",
+      "restaurant_name": "Ginger @ PARKROYAL on Beach Road",
       "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 14:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 13:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.2,
       "relevance_score": 8.2,
       "rating": 4.6,
-      "reservation_count": 2700,
+      "reservation_count": 7500,
       "meal_period": "lunch",
-      "food_category": "other_dining",
+      "food_category": "hotel_dining",
       "food_category_inferred": true,
       "best_discount_times": [
-        "14:00"
+        "13:30"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
@@ -1761,7 +1660,179 @@
         ]
       },
       "deal_score": 92.1,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-7da1f8b40e7d",
+      "category": "food",
+      "name": "Chicken Hotpot @ Singpost Centre — Lunch",
+      "restaurant_name": "Chicken Hotpot @ Singpost Centre",
+      "location": "Singapore",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 11:30, 12:00, 14:30. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 9.2,
+      "relevance_score": 8.2,
+      "rating": 4.6,
+      "reservation_count": 3100,
+      "meal_period": "lunch",
+      "food_category": "chinese_hotpot",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "11:30",
+        "12:00",
+        "14:30"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Lunch",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15505",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 92.1,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 92.1,
+      "observed_at": "2026-09-22T09:29:46+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-ab41e8d02f16",
+      "category": "food",
+      "name": "J65 @ JEN Singapore Tanglin by Shangri-La — Dinner",
+      "restaurant_name": "J65 @ JEN Singapore Tanglin by Shangri-La",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.4/5. Best observed slot(s): 18:00, 18:30, 19:00, 19:30. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 8.8,
+      "relevance_score": 8.4,
+      "rating": 4.4,
+      "reservation_count": 20400,
+      "meal_period": "dinner",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "18:00",
+        "18:30",
+        "19:00",
+        "19:30",
+        "20:00",
+        "20:30",
+        "21:00"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.8,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 91.8,
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -1850,93 +1921,7 @@
         ]
       },
       "deal_score": 91.8,
-      "observed_at": "2026-09-21T08:55:39+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-eatigo-036686e0a50c",
-      "category": "food",
-      "name": "J65 @ JEN Singapore Tanglin by Shangri-La — Lunch",
-      "restaurant_name": "J65 @ JEN Singapore Tanglin by Shangri-La",
-      "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.4/5. Best observed slot(s): 12:00, 12:30, 13:00, 13:30. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 8.8,
-      "relevance_score": 8.4,
-      "rating": 4.4,
-      "reservation_count": 20400,
-      "meal_period": "lunch",
-      "food_category": "hotel_dining",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "12:00",
-        "12:30",
-        "13:00",
-        "13:30",
-        "14:00"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Lunch",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15505",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 91.8,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.2,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.8/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.4/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 91.8,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -2012,7 +1997,7 @@
         ]
       },
       "deal_score": 85.1,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -2088,7 +2073,7 @@
         ]
       },
       "deal_score": 84.3,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -2164,29 +2149,29 @@
         ]
       },
       "deal_score": 84.3,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "food-multi-20a56b8d1c99",
+      "id": "food-multi-2feb14226b27",
       "category": "food",
-      "name": "Crossroads Buffet @ Singapore Marriott Tang Plaza Hotel",
-      "restaurant_name": "Crossroads Buffet @ Singapore Marriott Tang Plaza Hotel",
-      "location": "Singapore Marriott Tang Plaza Hotel",
-      "description": "20% off adult buffet price from 6 July to 30 September 2026. Source: Singapore Marriott Tang Plaza Hotel. Quote CR20OFF when reserving; blackout dates apply. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 20,
+      "name": "Opus Bar and Grill (voco Orchard Singapore)",
+      "restaurant_name": "Opus Bar and Grill (voco Orchard Singapore)",
+      "location": "Singapore",
+      "description": "1-for-1 Local High Tea (Semi-Buffet). Source: DBS/POSB Dining. DBS/POSB card required. Verify current dates, blackout periods and booking conditions before dining.",
+      "discount_percent": 50,
       "quality_score": 8.8,
-      "relevance_score": 8.1,
-      "food_category": "hotel_dining",
-      "food_category_inferred": false,
-      "deal_type": "direct",
-      "source": "Singapore Marriott Tang Plaza Hotel",
-      "source_detail": "Crossroads Buffet direct promotion",
+      "relevance_score": 7.8,
+      "food_category": "western_international",
+      "food_category_inferred": true,
+      "deal_type": "card_deal",
+      "source": "DBS/POSB Dining",
+      "source_detail": "DBS/POSB Dining",
       "source_type": "official_promotion_page",
       "source_confidence": "verified",
-      "access_requirement": "Quote CR20OFF when reserving; blackout dates apply",
-      "reference_source": "https://www.crossroadssg.com/",
-      "url": "https://www.crossroadssg.com/",
+      "access_requirement": "DBS/POSB card required",
+      "reference_source": "https://www.dbs.com.sg/personal/promotion/cards-wonderful-dining",
+      "url": "https://www.dbs.com.sg/personal/promotion/cards-wonderful-dining",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -2195,16 +2180,16 @@
       "preference_priority": 0,
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 62.4,
+        "total": 93.9,
         "scale_max": 100,
-        "band": "Moderate",
+        "band": "Exceptional",
         "components": [
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 22.0,
+            "points": 55.0,
             "max_points": 55,
-            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -2216,9 +2201,9 @@
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 12.1,
+            "points": 11.7,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.1/10"
+            "detail": "Scanner relevance estimate 7.8/10"
           },
           {
             "key": "confidence",
@@ -2230,17 +2215,17 @@
           {
             "key": "convenience",
             "label": "Convenience / restrictions",
-            "points": 5.0,
+            "points": 4.0,
             "max_points": 5,
-            "detail": "Direct merchant"
+            "detail": "Card-linked deal"
           }
         ],
         "notes": [
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 62.4,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "deal_score": 93.9,
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
@@ -2316,27 +2301,30 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "food-eatigo-4a6b11062fa0",
+      "id": "food-eatigo-e08e8d0d705d",
       "category": "food",
-      "name": "Seorae Korean Charcoal BBQ @ Tampines Mall — Lunch",
-      "restaurant_name": "Seorae Korean Charcoal BBQ @ Tampines Mall",
+      "name": "Seorae Korean Charcoal BBQ @ NEX — Lunch",
+      "restaurant_name": "Seorae Korean Charcoal BBQ @ NEX",
       "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 11:30, 13:00, 14:00, 14:30. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 11:30, 12:00, 12:30, 13:00. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.0,
       "relevance_score": 8.2,
       "rating": 4.5,
-      "reservation_count": 7600,
+      "reservation_count": 7000,
       "meal_period": "lunch",
       "food_category": "korean",
       "food_category_inferred": true,
       "best_discount_times": [
         "11:30",
+        "12:00",
+        "12:30",
         "13:00",
+        "13:30",
         "14:00",
         "14:30"
       ],
@@ -2401,7 +2389,7 @@
         ]
       },
       "deal_score": 91.8,
-      "observed_at": "2026-09-21T08:55:39+08:00",
+      "observed_at": "2026-09-22T09:29:46+08:00",
       "exclude_from_best": true
     }
   ]

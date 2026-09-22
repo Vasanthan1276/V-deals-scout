@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T08:56:08+08:00",
+  "updated_at": "2026-09-22T09:30:12+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 96.4,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -298,7 +298,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -372,9 +372,9 @@
         ]
       },
       "deal_score": 89.8,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": false,
-      "best_rank": 12
+      "best_rank": 11
     },
     {
       "id": "sale-live-db2cc6b99c3a",
@@ -447,9 +447,9 @@
         ]
       },
       "deal_score": 89.3,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": false,
-      "best_rank": 13
+      "best_rank": 12
     },
     {
       "id": "sale-live-9a3c281999eb",
@@ -522,155 +522,7 @@
         ]
       },
       "deal_score": 88.1,
-      "observed_at": "2026-09-21T08:56:08+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-3a9331e05bf1",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "BEST Denki Singapore: Up to 70% Off Online Exclusive Sale with Extra $250 Off Power Deals",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed from 2026-08-14 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 70,
-      "quality_score": 8.2,
-      "relevance_score": 9.1,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/14-august-2026-onwards-best-denki-singapore-up-to-70-off-online-exclusive-sale-with-extra-250-off-power-deals/",
-      "valid_from": "2026-08-14",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.9,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.1/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.9,
-      "observed_at": "2026-09-21T08:56:08+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-8de64ba95e43",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "BEST Denki Singapore: Online Exclusive Up to 60% OFF Kitchen & Beauty Essentials Sale Promotion with Extra 10% OFF",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 60% savings. Listed from 2026-08-21 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 60,
-      "quality_score": 8.2,
-      "relevance_score": 9.1,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/21-august-2026-onwards-best-denki-singapore-online-exclusive-up-to-60-off-kitchen-beauty-essentials-sale-promotion-with-extra-10-off/",
-      "valid_from": "2026-08-21",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.9,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "60% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.1/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.9,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,81 +596,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-09-21T08:56:08+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-b08db49cdae3",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "BEST Denki Singapore Online TV Promotion – Up to 50% Off Selected TVs, Free Delivery and Extra $300 Off",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-08-21 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 50,
-      "quality_score": 8.2,
-      "relevance_score": 8.9,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/21-august-2026-onwards-best-denki-singapore-online-tv-promotion-up-to-50-off-selected-tvs-free-delivery-and-extra-300-off/",
-      "valid_from": "2026-08-21",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.6,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.9/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.6,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,7 +670,7 @@
         ]
       },
       "deal_score": 86.9,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -966,7 +744,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,7 +818,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1114,81 +892,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-09-21T08:56:08+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-c1213eb784ca",
-      "category": "sale",
-      "subcategory": "fashion_clearance",
-      "name": "Timberland Birthday Month Promotion: Up to 30% Off for Green & Gold Members",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 30% savings. Listed as valid through 2026-12-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 30,
-      "quality_score": 8.2,
-      "relevance_score": 7.5,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Fashion Accessories",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/1-january-31-december-2026-timberland-birthday-month-promotion-up-to-30-off-for-green-gold-members/",
-      "valid_from": "2026-01-01",
-      "valid_until": "2026-12-31",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 63.5,
-        "scale_max": 100,
-        "band": "Moderate",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 33.0,
-            "max_points": 55,
-            "detail": "30% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.2,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.5/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 63.5,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1262,7 +966,81 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-5edcf7d4014c",
+      "category": "sale",
+      "subcategory": "travel_luggage",
+      "name": "Singapore Airlines: KrisFlyer Spontaneous Escapes 30% Off Saver Award Rates Promotion, October Travel Deals",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 30% savings. Listed as valid through 2026-09-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 30,
+      "quality_score": 7.2,
+      "relevance_score": 7.8,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/16-30-september-2026-singapore-airlines-krisflyer-spontaneous-escapes-30-off-saver-award-rates-promotion-october-travel-deals/",
+      "valid_from": "2026-09-16",
+      "valid_until": "2026-09-30",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 62.5,
+        "scale_max": 100,
+        "band": "Moderate",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 33.0,
+            "max_points": 55,
+            "detail": "30% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.7,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.8/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 62.5,
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1112,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1186,155 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-5cdaea679e7a",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "BEST Denki Singapore, LG Home Fair Promotion with Up to 23% Off Home Appliances and Up to $200 Grocery Vouchers",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 23% savings. Listed as valid through 2026-09-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 23,
+      "quality_score": 8.2,
+      "relevance_score": 8.3,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/1-30-september-2026-best-denki-singapore-lg-home-fair-promotion-with-up-to-23-off-home-appliances-and-up-to-200-grocery-vouchers/",
+      "valid_from": "2026-09-01",
+      "valid_until": "2026-09-30",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 57.1,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 25.3,
+            "max_points": 55,
+            "detail": "23% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 57.1,
+      "observed_at": "2026-09-22T09:30:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-602ced2274ac",
+      "category": "sale",
+      "subcategory": "travel_luggage",
+      "name": "International Golf Institute: Up to 25% Off Group Golf Lessons Promotion for SAFRA Members, Servicemen, Family and Friends in Singapore",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 25% savings. Listed as valid through 2026-12-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 25,
+      "quality_score": 7.2,
+      "relevance_score": 7.8,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/1-may-31-december-2026-international-golf-institute-up-to-25-off-group-golf-lessons-promotion-for-safra-members-servicemen-family-and-friends-in-singapore/",
+      "valid_from": "2026-05-01",
+      "valid_until": "2026-12-31",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 57.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 27.5,
+            "max_points": 55,
+            "detail": "25% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.7,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.8/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 57.0,
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1480,7 +1406,81 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-0e194584f69c",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "COURTS Megastore: 20th Anniversary Sale with 20% Off Selected Furniture & Bedding at COURTS Megastore",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 20% savings. Listed as valid through 2026-09-27. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 20,
+      "quality_score": 8.2,
+      "relevance_score": 8.3,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/21-27-september-2026-courts-megastore-20th-anniversary-sale-with-20-off-selected-furniture-bedding-at-courts-megastore/",
+      "valid_from": "2026-09-21",
+      "valid_until": "2026-09-27",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 53.8,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 22.0,
+            "max_points": 55,
+            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 53.8,
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1552,7 +1552,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1624,7 +1624,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-21T08:56:08+08:00",
+      "observed_at": "2026-09-22T09:30:12+08:00",
       "exclude_from_best": true
     }
   ]
