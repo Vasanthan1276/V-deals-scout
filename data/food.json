@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T09:30:12+08:00",
+  "updated_at": "2026-09-23T09:19:57+08:00",
   "mode": "live",
   "items": [
     {
@@ -76,7 +76,7 @@
         ]
       },
       "deal_score": 98.0,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": false,
       "best_rank": 1
     },
@@ -154,7 +154,7 @@
         ]
       },
       "deal_score": 64.3,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -231,7 +231,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -308,7 +308,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -385,7 +385,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -462,7 +462,7 @@
         ]
       },
       "deal_score": 52.0,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -538,7 +538,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": false,
       "best_rank": 5
     },
@@ -615,7 +615,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": false,
       "best_rank": 6
     },
@@ -692,7 +692,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -768,7 +768,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -844,7 +844,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -920,7 +920,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -996,7 +996,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -1072,7 +1072,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -1154,7 +1154,7 @@
         ]
       },
       "deal_score": 93.5,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": false,
       "best_rank": 7
     },
@@ -1164,7 +1164,7 @@
       "name": "WIKEDO Self-service Grilled Fish Hot Pot @ Dhoby Ghaut — Dinner",
       "restaurant_name": "WIKEDO Self-service Grilled Fish Hot Pot @ Dhoby Ghaut",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.9/5. Best observed slot(s): 17:30, 18:30, 19:00, 20:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.9/5. Best observed slot(s): 17:30, 20:00, 20:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.8,
       "relevance_score": 8.2,
@@ -1175,8 +1175,6 @@
       "food_category_inferred": true,
       "best_discount_times": [
         "17:30",
-        "18:30",
-        "19:00",
         "20:00",
         "20:30"
       ],
@@ -1241,7 +1239,7 @@
         ]
       },
       "deal_score": 93.0,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": false,
       "best_rank": 8
     },
@@ -1327,7 +1325,7 @@
         ]
       },
       "deal_score": 92.5,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -1413,7 +1411,7 @@
         ]
       },
       "deal_score": 92.4,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -1427,7 +1425,7 @@
       "quality_score": 9.4,
       "relevance_score": 8.2,
       "rating": 4.7,
-      "reservation_count": 8800,
+      "reservation_count": 8900,
       "meal_period": "lunch",
       "food_category": "hotel_dining",
       "food_category_inferred": true,
@@ -1495,27 +1493,26 @@
         ]
       },
       "deal_score": 92.4,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "food-eatigo-02e3145e5cfc",
+      "id": "food-eatigo-80998da3524b",
       "category": "food",
-      "name": "Sanctuary Tearoom @ Amara Sanctuary Sentosa — Dinner",
-      "restaurant_name": "Sanctuary Tearoom @ Amara Sanctuary Sentosa",
+      "name": "Seorae Korean Charcoal BBQ @ Compass One — Dinner",
+      "restaurant_name": "Seorae Korean Charcoal BBQ @ Compass One",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 17:30, 18:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 17:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.2,
       "relevance_score": 8.2,
       "rating": 4.6,
-      "reservation_count": 2700,
+      "reservation_count": 8500,
       "meal_period": "dinner",
-      "food_category": "other_dining",
+      "food_category": "korean",
       "food_category_inferred": true,
       "best_discount_times": [
-        "17:30",
-        "18:00"
+        "17:30"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
@@ -1578,7 +1575,7 @@
         ]
       },
       "deal_score": 92.1,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -1660,7 +1657,7 @@
         ]
       },
       "deal_score": 92.1,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -1669,7 +1666,7 @@
       "name": "Chicken Hotpot @ Singpost Centre — Lunch",
       "restaurant_name": "Chicken Hotpot @ Singpost Centre",
       "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 11:30, 12:00, 14:30. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 14:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.2,
       "relevance_score": 8.2,
@@ -1679,8 +1676,6 @@
       "food_category": "chinese_hotpot",
       "food_category_inferred": true,
       "best_discount_times": [
-        "11:30",
-        "12:00",
         "14:30"
       ],
       "deal_type": "app_deal",
@@ -1744,7 +1739,7 @@
         ]
       },
       "deal_score": 92.1,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -1758,7 +1753,7 @@
       "quality_score": 8.8,
       "relevance_score": 8.4,
       "rating": 4.4,
-      "reservation_count": 20400,
+      "reservation_count": 20500,
       "meal_period": "dinner",
       "food_category": "hotel_dining",
       "food_category_inferred": true,
@@ -1832,33 +1827,27 @@
         ]
       },
       "deal_score": 91.8,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "food-eatigo-4d0594f403f7",
+      "id": "food-eatigo-4a8e3406693b",
       "category": "food",
-      "name": "Pica Pica Spanish Tapas Bar @ Iskandar Puteri — Dinner",
-      "restaurant_name": "Pica Pica Spanish Tapas Bar @ Iskandar Puteri",
+      "name": "Town Restaurant @ The Fullerton Hotel Singapore — Dinner",
+      "restaurant_name": "Town Restaurant @ The Fullerton Hotel Singapore",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 17:30, 18:00, 18:30, 19:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.4/5. Best observed slot(s): 20:00, 20:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
-      "quality_score": 9.0,
-      "relevance_score": 8.2,
-      "rating": 4.5,
-      "reservation_count": 228,
+      "quality_score": 8.8,
+      "relevance_score": 8.4,
+      "rating": 4.4,
+      "reservation_count": 18700,
       "meal_period": "dinner",
-      "food_category": "western_international",
+      "food_category": "hotel_dining",
       "food_category_inferred": true,
       "best_discount_times": [
-        "17:30",
-        "18:00",
-        "18:30",
-        "19:00",
-        "19:30",
         "20:00",
-        "20:30",
-        "21:00"
+        "20:30"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
@@ -1890,16 +1879,16 @@
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 13.5,
+            "points": 13.2,
             "max_points": 15,
-            "detail": "Scanner quality estimate 9.0/10"
+            "detail": "Scanner quality estimate 8.8/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 12.3,
+            "points": 12.6,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
+            "detail": "Scanner relevance estimate 8.4/10"
           },
           {
             "key": "confidence",
@@ -1921,7 +1910,7 @@
         ]
       },
       "deal_score": 91.8,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -1997,7 +1986,7 @@
         ]
       },
       "deal_score": 85.1,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -2073,7 +2062,7 @@
         ]
       },
       "deal_score": 84.3,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -2149,7 +2138,7 @@
         ]
       },
       "deal_score": 84.3,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -2225,7 +2214,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
@@ -2301,41 +2290,37 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "food-eatigo-e08e8d0d705d",
+      "id": "food-eatigo-9b465131eac7",
       "category": "food",
-      "name": "Seorae Korean Charcoal BBQ @ NEX — Lunch",
-      "restaurant_name": "Seorae Korean Charcoal BBQ @ NEX",
+      "name": "Crossroads Buffet @ Singapore Marriott Tang Plaza Hotel — Dinner",
+      "restaurant_name": "Crossroads Buffet @ Singapore Marriott Tang Plaza Hotel",
       "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 11:30, 12:00, 12:30, 13:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.3/5. Best observed slot(s): 19:30, 20:00, 20:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
-      "quality_score": 9.0,
-      "relevance_score": 8.2,
-      "rating": 4.5,
-      "reservation_count": 7000,
-      "meal_period": "lunch",
-      "food_category": "korean",
+      "quality_score": 8.6,
+      "relevance_score": 8.4,
+      "rating": 4.3,
+      "reservation_count": 44400,
+      "meal_period": "dinner",
+      "food_category": "hotel_dining",
       "food_category_inferred": true,
       "best_discount_times": [
-        "11:30",
-        "12:00",
-        "12:30",
-        "13:00",
-        "13:30",
-        "14:00",
-        "14:30"
+        "19:30",
+        "20:00",
+        "20:30"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Lunch",
+      "source_detail": "Eatigo Singapore - Dinner",
       "source_type": "official_promotion_page",
       "source_confidence": "app_live",
       "access_requirement": "Eatigo booking required",
       "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15505",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -2344,7 +2329,7 @@
       "preference_priority": 0,
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 91.8,
+        "total": 91.5,
         "scale_max": 100,
         "band": "Exceptional",
         "components": [
@@ -2358,16 +2343,16 @@
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 13.5,
+            "points": 12.9,
             "max_points": 15,
-            "detail": "Scanner quality estimate 9.0/10"
+            "detail": "Scanner quality estimate 8.6/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 12.3,
+            "points": 12.6,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
+            "detail": "Scanner relevance estimate 8.4/10"
           },
           {
             "key": "confidence",
@@ -2388,8 +2373,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 91.8,
-      "observed_at": "2026-09-22T09:29:46+08:00",
+      "deal_score": 91.5,
+      "observed_at": "2026-09-23T09:19:32+08:00",
       "exclude_from_best": true
     }
   ]
