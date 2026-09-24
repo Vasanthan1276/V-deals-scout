@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T09:19:57+08:00",
+  "updated_at": "2026-09-24T09:14:00+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 96.4,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -298,7 +298,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -372,9 +372,9 @@
         ]
       },
       "deal_score": 89.8,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": false,
-      "best_rank": 11
+      "best_rank": 9
     },
     {
       "id": "sale-live-db2cc6b99c3a",
@@ -447,9 +447,9 @@
         ]
       },
       "deal_score": 89.3,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": false,
-      "best_rank": 12
+      "best_rank": 10
     },
     {
       "id": "sale-live-9a3c281999eb",
@@ -522,7 +522,7 @@
         ]
       },
       "deal_score": 88.1,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -596,7 +596,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,7 +670,7 @@
         ]
       },
       "deal_score": 86.9,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +744,7 @@
         ]
       },
       "deal_score": 86.9,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,81 +818,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-23T09:19:57+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-601be5a6cf8c",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "Epitex Mega Warehouse Sale at City Square Mall – Up to 90% Off, $5 Towels, $6 Pillows & Buy 1 Get 1 Free Promotion",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 90% savings. Listed as valid through 2026-09-27. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 90,
-      "quality_score": 8.0,
-      "relevance_score": 8.2,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Happening Now",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/21-27-september-2026-epitex-mega-warehouse-sale-at-city-square-mall-up-to-90-off-5-towels-6-pillows-buy-1-get-1-free-promotion/",
-      "valid_from": "2026-09-21",
-      "valid_until": "2026-09-27",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 86.3,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "90% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.0/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 86.3,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -966,7 +892,81 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-a79fde315e00",
+      "category": "sale",
+      "subcategory": "outlet_clearance",
+      "name": "Popular Bookstore Singapore: Popular Atrium Sale Promotion with Up to 70% Off",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-09-27. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 70,
+      "quality_score": 7.6,
+      "relevance_score": 8.2,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/23-27-september-2026-popular-bookstore-singapore-popular-atrium-sale-promotion-with-up-to-70-off/",
+      "valid_from": "2026-09-23",
+      "valid_until": "2026-09-27",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.7,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.4,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.7,
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,7 +1040,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1114,16 +1114,16 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-cc0b62776acd",
+      "id": "sale-live-50a93180195c",
       "category": "sale",
       "subcategory": "outlet_clearance",
-      "name": "Shake Shack Singapore: 1-for-1 Summer Greek Burgers, Chicken Bites & Fries Promotion at Participating Outlets",
+      "name": "TamJai SamGor Singapore: 1-for-1 Guo Qiao Mixian Promotion at Selected Outlets, Takeaway Only",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-09-25. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-09-23 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
       "discount_percent": 50,
       "quality_score": 7.6,
       "relevance_score": 8.0,
@@ -1131,9 +1131,9 @@
       "source_detail": "EverydayOnSales - Happening Now",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/21-25-september-2026-shake-shack-singapore-1-for-1-summer-greek-burgers-chicken-bites-fries-promotion-at-participating-outlets/",
-      "valid_from": "2026-09-21",
-      "valid_until": "2026-09-25",
+      "url": "https://sg.everydayonsales.com/23-september-2026-onwards-tamjai-samgor-singapore-1-for-1-guo-qiao-mixian-promotion-at-selected-outlets-takeaway-only/",
+      "valid_from": "2026-09-23",
+      "valid_until": null,
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -1188,7 +1188,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1262,7 +1262,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1480,7 +1480,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1552,7 +1552,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1624,7 +1624,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-09-23T09:19:57+08:00",
+      "observed_at": "2026-09-24T09:14:00+08:00",
       "exclude_from_best": true
     }
   ]
