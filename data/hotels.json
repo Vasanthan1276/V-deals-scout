@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-09-24T09:14:00+08:00",
+  "updated_at": "2026-09-25T09:14:31+08:00",
   "provider": "hotelbeds",
   "environment": "evaluation",
-  "availability_results": 82,
+  "availability_results": 85,
   "items": [
     {
-      "id": "hotelbeds-74248-2026-09-25",
+      "id": "hotelbeds-552121-2026-11-20",
       "category": "hotel",
       "sub_category": "regional",
       "provider": "hotelbeds",
       "provider_environment": "evaluation",
-      "hotelbeds_code": 74248,
-      "name": "Eastern and Oriental Hotel Penang",
-      "destination": "Penang",
-      "destination_code": "PEN",
-      "check_in": "2026-09-25",
-      "check_out": "2026-09-28",
+      "hotelbeds_code": 552121,
+      "name": "137 Pillars Residences Bangkok",
+      "destination": "Bangkok",
+      "destination_code": "BKK",
+      "check_in": "2026-11-20",
+      "check_out": "2026-11-23",
       "nights": 3,
       "stars": 5,
-      "current_price": 453.78,
-      "total_price": 1361.35,
+      "current_price": 137.4,
+      "total_price": 412.2,
       "currency": "SGD",
-      "room_name": "Premier Suite King Ground Floor",
+      "room_name": "THE PILLARS EXECUTIVE STUDIO RESIDENCES",
       "board_name": "BED AND BREAKFAST",
       "breakfast": true,
       "lounge": false,
@@ -36,133 +36,24 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:13+08:00",
-      "history_observations": 26,
-      "historical_median": 615.04,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
+      "observed_at": "2026-09-25T09:13:47+08:00",
+      "history_observations": 0,
+      "historical_median": 137.4,
+      "peer_median": 281.94,
+      "reference_source": "same-date peer comparison",
+      "score_basis": "peer_comparison",
       "score_breakdown": {
         "model": "hotel_v1",
-        "total": 81.0,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 30.0,
-            "max_points": 40,
-            "detail": "26.2% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 81.0,
-      "exclude_from_best": false,
-      "best_rank": 11
-    },
-    {
-      "id": "hotelbeds-745684-2026-09-26",
-      "category": "hotel",
-      "sub_category": "staycation",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 745684,
-      "name": "Dusit Thani Laguna Singapore",
-      "destination": "Singapore",
-      "destination_code": "SIN",
-      "check_in": "2026-09-26",
-      "check_out": "2026-09-27",
-      "nights": 1,
-      "stars": 5,
-      "current_price": 190.64,
-      "total_price": 190.64,
-      "currency": "SGD",
-      "room_name": "DELUXE LAGUNA TWIN",
-      "board_name": "ROOM ONLY",
-      "breakfast": false,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:02+08:00",
-      "history_observations": 26,
-      "historical_median": 215.04,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 309.22,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 59.0,
+        "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
           {
             "key": "price",
             "label": "Price saving",
-            "points": 13.0,
+            "points": 0.0,
             "max_points": 40,
-            "detail": "11.3% below the available reference price"
+            "detail": "0.0% below the available reference price"
           },
           {
             "key": "quality",
@@ -181,7 +72,7 @@
           {
             "key": "extras",
             "label": "Included extras",
-            "points": 0.0,
+            "points": 5.0,
             "max_points": 10,
             "detail": "Breakfast and lounge attributes"
           },
@@ -218,8 +109,9 @@
           "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
         ]
       },
-      "deal_score": 59.0,
-      "exclude_from_best": true
+      "deal_score": 76.0,
+      "exclude_from_best": false,
+      "best_rank": 11
     },
     {
       "id": "hotelbeds-74318-2026-11-14",
@@ -253,8 +145,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:07+08:00",
-      "history_observations": 5,
+      "observed_at": "2026-09-25T09:13:35+08:00",
+      "history_observations": 6,
       "historical_median": 336.6,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -330,654 +222,6 @@
       "exclude_from_best": true
     },
     {
-      "id": "hotelbeds-745684-2026-10-03",
-      "category": "hotel",
-      "sub_category": "staycation",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 745684,
-      "name": "Dusit Thani Laguna Singapore",
-      "destination": "Singapore",
-      "destination_code": "SIN",
-      "check_in": "2026-10-03",
-      "check_out": "2026-10-04",
-      "nights": 1,
-      "stars": 5,
-      "current_price": 209.82,
-      "total_price": 209.82,
-      "currency": "SGD",
-      "room_name": "DELUXE LAGUNA KING",
-      "board_name": "ROOM ONLY",
-      "breakfast": false,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": false,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:03+08:00",
-      "history_observations": 26,
-      "historical_median": 236.85,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 373.43,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 55.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 13.0,
-            "max_points": 40,
-            "detail": "11.4% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 0.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 1.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 55.0,
-      "exclude_from_best": true
-    },
-    {
-      "id": "hotelbeds-76449-2026-10-02",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 76449,
-      "name": "Banyan Tree Bintan",
-      "destination": "Bintan",
-      "destination_code": "BIN",
-      "check_in": "2026-10-02",
-      "check_out": "2026-10-04",
-      "nights": 2,
-      "stars": 5,
-      "current_price": 365.77,
-      "total_price": 731.54,
-      "currency": "SGD",
-      "room_name": "RAINFOREST SEAVIEW VILLA",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:08+08:00",
-      "history_observations": 26,
-      "historical_median": 378.41,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 54.8,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 3.8,
-            "max_points": 40,
-            "detail": "3.3% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 54.8,
-      "exclude_from_best": true
-    },
-    {
-      "id": "hotelbeds-745684-2026-10-31",
-      "category": "hotel",
-      "sub_category": "staycation",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 745684,
-      "name": "Dusit Thani Laguna Singapore",
-      "destination": "Singapore",
-      "destination_code": "SIN",
-      "check_in": "2026-10-31",
-      "check_out": "2026-11-01",
-      "nights": 1,
-      "stars": 5,
-      "current_price": 160.46,
-      "total_price": 160.46,
-      "currency": "SGD",
-      "room_name": "DELUXE LAGUNA KING",
-      "board_name": "ROOM ONLY",
-      "breakfast": false,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": false,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:06+08:00",
-      "history_observations": 19,
-      "historical_median": 178.89,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 295.74,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 53.8,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 11.8,
-            "max_points": 40,
-            "detail": "10.3% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 0.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 1.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 53.8,
-      "exclude_from_best": true
-    },
-    {
-      "id": "hotelbeds-76449-2026-10-23",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 76449,
-      "name": "Banyan Tree Bintan",
-      "destination": "Bintan",
-      "destination_code": "BIN",
-      "check_in": "2026-10-23",
-      "check_out": "2026-10-25",
-      "nights": 2,
-      "stars": 5,
-      "current_price": 366.18,
-      "total_price": 732.36,
-      "currency": "SGD",
-      "room_name": "RAINFOREST SEAVIEW VILLA",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:10+08:00",
-      "history_observations": 26,
-      "historical_median": 372.81,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 53.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 2.0,
-            "max_points": 40,
-            "detail": "1.8% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 53.0,
-      "exclude_from_best": true
-    },
-    {
-      "id": "hotelbeds-76449-2026-10-16",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 76449,
-      "name": "Banyan Tree Bintan",
-      "destination": "Bintan",
-      "destination_code": "BIN",
-      "check_in": "2026-10-16",
-      "check_out": "2026-10-18",
-      "nights": 2,
-      "stars": 5,
-      "current_price": 365.77,
-      "total_price": 731.54,
-      "currency": "SGD",
-      "room_name": "RAINFOREST SEAVIEW VILLA",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:10+08:00",
-      "history_observations": 26,
-      "historical_median": 369.02,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 52.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 1.0,
-            "max_points": 40,
-            "detail": "0.9% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 52.0,
-      "exclude_from_best": true
-    },
-    {
-      "id": "hotelbeds-623303-2026-10-09",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 623303,
-      "name": "Banyan Tree Kuala Lumpur",
-      "destination": "Kuala Lumpur",
-      "destination_code": "KUL",
-      "check_in": "2026-10-09",
-      "check_out": "2026-10-11",
-      "nights": 2,
-      "stars": 5,
-      "current_price": 235.39,
-      "total_price": 470.78,
-      "currency": "SGD",
-      "room_name": "Banyan Retreat",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:09+08:00",
-      "history_observations": 26,
-      "historical_median": 236.18,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 51.4,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.4,
-            "max_points": 40,
-            "detail": "0.3% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 51.4,
-      "exclude_from_best": true
-    },
-    {
       "id": "hotelbeds-552121-2026-10-02",
       "category": "hotel",
       "sub_category": "regional",
@@ -1009,9 +253,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:14+08:00",
-      "history_observations": 26,
-      "historical_median": 122.34,
+      "observed_at": "2026-09-25T09:13:42+08:00",
+      "history_observations": 27,
+      "historical_median": 122.61,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 320.45,
@@ -1117,9 +361,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:16+08:00",
-      "history_observations": 20,
-      "historical_median": 127.25,
+      "observed_at": "2026-09-25T09:13:44+08:00",
+      "history_observations": 21,
+      "historical_median": 127.54,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 275.04,
@@ -1225,12 +469,120 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:18+08:00",
-      "history_observations": 6,
+      "observed_at": "2026-09-25T09:13:46+08:00",
+      "history_observations": 7,
       "historical_median": 137.4,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 273.3,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 51.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 51.0,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-623303-2026-10-09",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 623303,
+      "name": "Banyan Tree Kuala Lumpur",
+      "destination": "Kuala Lumpur",
+      "destination_code": "KUL",
+      "check_in": "2026-10-09",
+      "check_out": "2026-10-11",
+      "nights": 2,
+      "stars": 5,
+      "current_price": 235.39,
+      "total_price": 470.78,
+      "currency": "SGD",
+      "room_name": "Banyan Retreat",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:37+08:00",
+      "history_observations": 27,
+      "historical_median": 235.39,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": null,
       "score_breakdown": {
         "model": "hotel_v1",
         "total": 51.0,
@@ -1333,8 +685,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:12+08:00",
-      "history_observations": 13,
+      "observed_at": "2026-09-25T09:13:40+08:00",
+      "history_observations": 14,
       "historical_median": 235.39,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -1441,12 +793,228 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:12+08:00",
-      "history_observations": 6,
+      "observed_at": "2026-09-25T09:13:40+08:00",
+      "history_observations": 7,
       "historical_median": 235.39,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 51.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 51.0,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-623303-2026-11-20",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 623303,
+      "name": "Banyan Tree Kuala Lumpur",
+      "destination": "Kuala Lumpur",
+      "destination_code": "KUL",
+      "check_in": "2026-11-20",
+      "check_out": "2026-11-22",
+      "nights": 2,
+      "stars": 5,
+      "current_price": 235.39,
+      "total_price": 470.78,
+      "currency": "SGD",
+      "room_name": "Banyan Retreat",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:41+08:00",
+      "history_observations": 0,
+      "historical_median": 235.39,
+      "peer_median": null,
+      "reference_source": "current observation only",
+      "score_basis": "current_only",
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 51.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 51.0,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-636394-2026-11-20",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 636394,
+      "name": "The Apurva Kempinski Bali",
+      "destination": "Bali",
+      "destination_code": "BAI",
+      "check_in": "2026-11-20",
+      "check_out": "2026-11-23",
+      "nights": 3,
+      "stars": 5,
+      "current_price": 235.53,
+      "total_price": 706.59,
+      "currency": "SGD",
+      "room_name": "GRAND DELUXE ROOM",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:47+08:00",
+      "history_observations": 0,
+      "historical_median": 235.53,
+      "peer_median": 226.36,
+      "reference_source": "same-date peer comparison",
+      "score_basis": "peer_comparison",
       "score_breakdown": {
         "model": "hotel_v1",
         "total": 51.0,
@@ -1531,8 +1099,8 @@
       "check_out": "2026-10-19",
       "nights": 3,
       "stars": 5,
-      "current_price": 256.71,
-      "total_price": 770.13,
+      "current_price": 248.73,
+      "total_price": 746.19,
       "currency": "SGD",
       "room_name": "Double or Twin DELUXE RESORT VIEW",
       "board_name": "BED AND BREAKFAST",
@@ -1549,8 +1117,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:15+08:00",
-      "history_observations": 21,
+      "observed_at": "2026-09-25T09:13:43+08:00",
+      "history_observations": 22,
       "historical_median": 248.71,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -1657,120 +1225,12 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:18+08:00",
-      "history_observations": 6,
+      "observed_at": "2026-09-25T09:13:46+08:00",
+      "history_observations": 7,
       "historical_median": 256.71,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 236.95,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 51.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.0,
-            "max_points": 40,
-            "detail": "0.0% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 51.0,
-      "exclude_from_best": true
-    },
-    {
-      "id": "hotelbeds-623303-2026-09-25",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 623303,
-      "name": "Banyan Tree Kuala Lumpur",
-      "destination": "Kuala Lumpur",
-      "destination_code": "KUL",
-      "check_in": "2026-09-25",
-      "check_out": "2026-09-27",
-      "nights": 2,
-      "stars": 5,
-      "current_price": 260.94,
-      "total_price": 521.88,
-      "currency": "SGD",
-      "room_name": "Banyan Retreat Twin",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:08+08:00",
-      "history_observations": 26,
-      "historical_median": 247.92,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
       "score_breakdown": {
         "model": "hotel_v1",
         "total": 51.0,
@@ -1873,9 +1333,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:16+08:00",
-      "history_observations": 20,
-      "historical_median": 252.71,
+      "observed_at": "2026-09-25T09:13:44+08:00",
+      "history_observations": 21,
+      "historical_median": 256.71,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
@@ -1981,9 +1441,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:16+08:00",
-      "history_observations": 20,
-      "historical_median": 321.26,
+      "observed_at": "2026-09-25T09:13:44+08:00",
+      "history_observations": 21,
+      "historical_median": 321.98,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 275.04,
@@ -2089,8 +1549,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:17+08:00",
-      "history_observations": 13,
+      "observed_at": "2026-09-25T09:13:45+08:00",
+      "history_observations": 14,
       "historical_median": 334.91,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -2197,8 +1657,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:18+08:00",
-      "history_observations": 6,
+      "observed_at": "2026-09-25T09:13:46+08:00",
+      "history_observations": 7,
       "historical_median": 334.91,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -2270,7 +1730,116 @@
           "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
         ]
       },
-      "deal_score": 51.0
+      "deal_score": 51.0,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-133164-2026-11-20",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 133164,
+      "name": "Siam Kempinski Hotel Bangkok",
+      "destination": "Bangkok",
+      "destination_code": "BKK",
+      "check_in": "2026-11-20",
+      "check_out": "2026-11-23",
+      "nights": 3,
+      "stars": 5,
+      "current_price": 334.91,
+      "total_price": 1004.73,
+      "currency": "SGD",
+      "room_name": "PREMIER ROOM",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:47+08:00",
+      "history_observations": 0,
+      "historical_median": 334.91,
+      "peer_median": 281.94,
+      "reference_source": "same-date peer comparison",
+      "score_basis": "peer_comparison",
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 51.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 51.0,
+      "exclude_from_best": true
     },
     {
       "id": "hotelbeds-133164-2026-10-23",
@@ -2304,9 +1873,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:16+08:00",
-      "history_observations": 26,
-      "historical_median": 314.81,
+      "observed_at": "2026-09-25T09:13:44+08:00",
+      "history_observations": 27,
+      "historical_median": 315.51,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 240.43,
@@ -2377,7 +1946,224 @@
           "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
         ]
       },
-      "deal_score": 51.0
+      "deal_score": 51.0,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-76449-2026-11-20",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 76449,
+      "name": "Banyan Tree Bintan",
+      "destination": "Bintan",
+      "destination_code": "BIN",
+      "check_in": "2026-11-20",
+      "check_out": "2026-11-22",
+      "nights": 2,
+      "stars": 5,
+      "current_price": 365.36,
+      "total_price": 730.72,
+      "currency": "SGD",
+      "room_name": "RAINFOREST SEAVIEW VILLA",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:41+08:00",
+      "history_observations": 0,
+      "historical_median": 365.36,
+      "peer_median": null,
+      "reference_source": "current observation only",
+      "score_basis": "current_only",
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 51.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 51.0,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-76449-2026-10-02",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 76449,
+      "name": "Banyan Tree Bintan",
+      "destination": "Bintan",
+      "destination_code": "BIN",
+      "check_in": "2026-10-02",
+      "check_out": "2026-10-04",
+      "nights": 2,
+      "stars": 5,
+      "current_price": 365.77,
+      "total_price": 731.54,
+      "currency": "SGD",
+      "room_name": "RAINFOREST SEAVIEW VILLA",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:36+08:00",
+      "history_observations": 27,
+      "historical_median": 365.77,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": null,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 51.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 51.0,
+      "exclude_from_best": true
     },
     {
       "id": "hotelbeds-76449-2026-10-09",
@@ -2411,9 +2197,116 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:09+08:00",
-      "history_observations": 26,
-      "historical_median": 364.62,
+      "observed_at": "2026-09-25T09:13:37+08:00",
+      "history_observations": 27,
+      "historical_median": 365.77,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": null,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 51.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 51.0
+    },
+    {
+      "id": "hotelbeds-76449-2026-10-16",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 76449,
+      "name": "Banyan Tree Bintan",
+      "destination": "Bintan",
+      "destination_code": "BIN",
+      "check_in": "2026-10-16",
+      "check_out": "2026-10-18",
+      "nights": 2,
+      "stars": 5,
+      "current_price": 365.77,
+      "total_price": 731.54,
+      "currency": "SGD",
+      "room_name": "RAINFOREST SEAVIEW VILLA",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:37+08:00",
+      "history_observations": 27,
+      "historical_median": 365.77,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
@@ -2518,9 +2411,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:11+08:00",
-      "history_observations": 20,
-      "historical_median": 361.52,
+      "observed_at": "2026-09-25T09:13:39+08:00",
+      "history_observations": 21,
+      "historical_median": 365.77,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
@@ -2625,8 +2518,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:12+08:00",
-      "history_observations": 13,
+      "observed_at": "2026-09-25T09:13:40+08:00",
+      "history_observations": 14,
       "historical_median": 365.77,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -2732,8 +2625,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:12+08:00",
-      "history_observations": 6,
+      "observed_at": "2026-09-25T09:13:40+08:00",
+      "history_observations": 7,
       "historical_median": 365.81,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -2808,7 +2701,7 @@
       "deal_score": 51.0
     },
     {
-      "id": "hotelbeds-76449-2026-09-25",
+      "id": "hotelbeds-76449-2026-10-23",
       "category": "hotel",
       "sub_category": "regional",
       "provider": "hotelbeds",
@@ -2817,12 +2710,12 @@
       "name": "Banyan Tree Bintan",
       "destination": "Bintan",
       "destination_code": "BIN",
-      "check_in": "2026-09-25",
-      "check_out": "2026-09-27",
+      "check_in": "2026-10-23",
+      "check_out": "2026-10-25",
       "nights": 2,
       "stars": 5,
-      "current_price": 380.71,
-      "total_price": 761.42,
+      "current_price": 366.18,
+      "total_price": 732.36,
       "currency": "SGD",
       "room_name": "RAINFOREST SEAVIEW VILLA",
       "board_name": "BED AND BREAKFAST",
@@ -2839,9 +2732,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:08+08:00",
-      "history_observations": 26,
-      "historical_median": 368.64,
+      "observed_at": "2026-09-25T09:13:38+08:00",
+      "history_observations": 27,
+      "historical_median": 366.18,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
@@ -2946,8 +2839,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:17+08:00",
-      "history_observations": 13,
+      "observed_at": "2026-09-25T09:13:45+08:00",
+      "history_observations": 14,
       "historical_median": 423.08,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -3053,9 +2946,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:14+08:00",
-      "history_observations": 26,
-      "historical_median": 449.78,
+      "observed_at": "2026-09-25T09:13:42+08:00",
+      "history_observations": 27,
+      "historical_median": 450.78,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 320.45,
@@ -3160,9 +3053,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:16+08:00",
-      "history_observations": 26,
-      "historical_median": 508.02,
+      "observed_at": "2026-09-25T09:13:44+08:00",
+      "history_observations": 27,
+      "historical_median": 516.05,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
@@ -3267,9 +3160,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:14+08:00",
-      "history_observations": 26,
-      "historical_median": 530.77,
+      "observed_at": "2026-09-25T09:13:42+08:00",
+      "history_observations": 27,
+      "historical_median": 530.78,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
@@ -3343,23 +3236,130 @@
       "deal_score": 51.0
     },
     {
-      "id": "hotelbeds-74304-2026-10-17",
+      "id": "hotelbeds-553643-2026-11-20",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 553643,
+      "name": "Adiwana Resort Jembawan",
+      "destination": "Bali",
+      "destination_code": "BAI",
+      "check_in": "2026-11-20",
+      "check_out": "2026-11-23",
+      "nights": 3,
+      "stars": 5,
+      "current_price": 217.19,
+      "total_price": 651.57,
+      "currency": "SGD",
+      "room_name": "Premier Suite Room",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": false,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:47+08:00",
+      "history_observations": 0,
+      "historical_median": 217.19,
+      "peer_median": 226.36,
+      "reference_source": "same-date peer comparison",
+      "score_basis": "peer_comparison",
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 47.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 1.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 50.4
+    },
+    {
+      "id": "hotelbeds-745684-2026-10-03",
       "category": "hotel",
       "sub_category": "staycation",
       "provider": "hotelbeds",
       "provider_environment": "evaluation",
-      "hotelbeds_code": 74304,
-      "name": "PARKROYAL COLLECTION Marina Bay, Singapore",
+      "hotelbeds_code": 745684,
+      "name": "Dusit Thani Laguna Singapore",
       "destination": "Singapore",
       "destination_code": "SIN",
-      "check_in": "2026-10-17",
-      "check_out": "2026-10-18",
+      "check_in": "2026-10-03",
+      "check_out": "2026-10-04",
       "nights": 1,
       "stars": 5,
-      "current_price": 315.92,
-      "total_price": 315.92,
+      "current_price": 209.82,
+      "total_price": 209.82,
       "currency": "SGD",
-      "room_name": "URBAN DELUXE",
+      "room_name": "DELUXE LAGUNA KING",
       "board_name": "ROOM ONLY",
       "breakfast": false,
       "lounge": false,
@@ -3367,31 +3367,31 @@
       "quiet_relaxing": true,
       "couples_friendly": true,
       "good_location": true,
-      "flexible_cancellation": true,
+      "flexible_cancellation": false,
       "convenient_date": true,
       "booking_url": "",
       "source": "Hotelbeds Evaluation API",
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:04+08:00",
-      "history_observations": 26,
-      "historical_median": 329.02,
+      "observed_at": "2026-09-25T09:13:31+08:00",
+      "history_observations": 27,
+      "historical_median": 223.33,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
-      "peer_median": 295.06,
+      "peer_median": 373.43,
       "score_breakdown": {
         "model": "hotel_v1",
-        "total": 50.6,
+        "total": 48.9,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
           {
             "key": "price",
             "label": "Price saving",
-            "points": 4.6,
+            "points": 6.9,
             "max_points": 40,
-            "detail": "4.0% below the available reference price"
+            "detail": "6.0% below the available reference price"
           },
           {
             "key": "quality",
@@ -3431,7 +3431,7 @@
           {
             "key": "cancellation",
             "label": "Cancellation flexibility",
-            "points": 5.0,
+            "points": 1.0,
             "max_points": 5,
             "detail": "Flexibility of cancellation terms"
           },
@@ -3447,26 +3447,26 @@
           "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
         ]
       },
-      "deal_score": 50.6
+      "deal_score": 48.9
     },
     {
-      "id": "hotelbeds-74304-2026-10-31",
+      "id": "hotelbeds-745684-2026-10-31",
       "category": "hotel",
       "sub_category": "staycation",
       "provider": "hotelbeds",
       "provider_environment": "evaluation",
-      "hotelbeds_code": 74304,
-      "name": "PARKROYAL COLLECTION Marina Bay, Singapore",
+      "hotelbeds_code": 745684,
+      "name": "Dusit Thani Laguna Singapore",
       "destination": "Singapore",
       "destination_code": "SIN",
       "check_in": "2026-10-31",
       "check_out": "2026-11-01",
       "nights": 1,
       "stars": 5,
-      "current_price": 341.2,
-      "total_price": 341.2,
+      "current_price": 160.46,
+      "total_price": 160.46,
       "currency": "SGD",
-      "room_name": "URBAN DELUXE",
+      "room_name": "DELUXE LAGUNA KING",
       "board_name": "ROOM ONLY",
       "breakfast": false,
       "lounge": false,
@@ -3474,31 +3474,31 @@
       "quiet_relaxing": true,
       "couples_friendly": true,
       "good_location": true,
-      "flexible_cancellation": true,
+      "flexible_cancellation": false,
       "convenient_date": true,
       "booking_url": "",
       "source": "Hotelbeds Evaluation API",
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:06+08:00",
-      "history_observations": 19,
-      "historical_median": 354.32,
+      "observed_at": "2026-09-25T09:13:34+08:00",
+      "history_observations": 20,
+      "historical_median": 168.34,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 295.74,
       "score_breakdown": {
         "model": "hotel_v1",
-        "total": 50.2,
+        "total": 47.3,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
           {
             "key": "price",
             "label": "Price saving",
-            "points": 4.2,
+            "points": 5.3,
             "max_points": 40,
-            "detail": "3.7% below the available reference price"
+            "detail": "4.7% below the available reference price"
           },
           {
             "key": "quality",
@@ -3538,113 +3538,6 @@
           {
             "key": "cancellation",
             "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 50.2
-    },
-    {
-      "id": "hotelbeds-623303-2026-10-30",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 623303,
-      "name": "Banyan Tree Kuala Lumpur",
-      "destination": "Kuala Lumpur",
-      "destination_code": "KUL",
-      "check_in": "2026-10-30",
-      "check_out": "2026-11-01",
-      "nights": 2,
-      "stars": 5,
-      "current_price": 245.59,
-      "total_price": 491.18,
-      "currency": "SGD",
-      "room_name": "Banyan Retreat King",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": false,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:11+08:00",
-      "history_observations": 20,
-      "historical_median": 252.21,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 50.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 3.0,
-            "max_points": 40,
-            "detail": "2.6% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
             "points": 1.0,
             "max_points": 5,
             "detail": "Flexibility of cancellation terms"
@@ -3661,114 +3554,7 @@
           "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
         ]
       },
-      "deal_score": 50.0
-    },
-    {
-      "id": "hotelbeds-74248-2026-10-30",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 74248,
-      "name": "Eastern and Oriental Hotel Penang",
-      "destination": "Penang",
-      "destination_code": "PEN",
-      "check_in": "2026-10-30",
-      "check_out": "2026-11-02",
-      "nights": 3,
-      "stars": 5,
-      "current_price": 197.11,
-      "total_price": 591.34,
-      "currency": "SGD",
-      "room_name": "Studio Suite  King",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": false,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:16+08:00",
-      "history_observations": 20,
-      "historical_median": 199.51,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 48.4,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 1.4,
-            "max_points": 40,
-            "detail": "1.2% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 1.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 48.4
+      "deal_score": 47.3
     },
     {
       "id": "hotelbeds-74248-2026-10-09",
@@ -3802,24 +3588,24 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:14+08:00",
-      "history_observations": 26,
-      "historical_median": 196.52,
+      "observed_at": "2026-09-25T09:13:42+08:00",
+      "history_observations": 27,
+      "historical_median": 194.29,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
         "model": "hotel_v1",
-        "total": 48.3,
+        "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
           {
             "key": "price",
             "label": "Price saving",
-            "points": 1.3,
+            "points": 0.0,
             "max_points": 40,
-            "detail": "1.1% below the available reference price"
+            "detail": "0.0% below the available reference price"
           },
           {
             "key": "quality",
@@ -3875,7 +3661,114 @@
           "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
         ]
       },
-      "deal_score": 48.3
+      "deal_score": 47.0
+    },
+    {
+      "id": "hotelbeds-74248-2026-10-30",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 74248,
+      "name": "Eastern and Oriental Hotel Penang",
+      "destination": "Penang",
+      "destination_code": "PEN",
+      "check_in": "2026-10-30",
+      "check_out": "2026-11-02",
+      "nights": 3,
+      "stars": 5,
+      "current_price": 197.11,
+      "total_price": 591.34,
+      "currency": "SGD",
+      "room_name": "Studio Suite  King",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": false,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:44+08:00",
+      "history_observations": 21,
+      "historical_median": 197.11,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": null,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 47.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 1.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 47.0
     },
     {
       "id": "hotelbeds-74248-2026-10-23",
@@ -3909,24 +3802,24 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:16+08:00",
-      "history_observations": 26,
-      "historical_median": 201.08,
+      "observed_at": "2026-09-25T09:13:44+08:00",
+      "history_observations": 27,
+      "historical_median": 198.99,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
         "model": "hotel_v1",
-        "total": 48.2,
+        "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
           {
             "key": "price",
             "label": "Price saving",
-            "points": 1.2,
+            "points": 0.0,
             "max_points": 40,
-            "detail": "1.0% below the available reference price"
+            "detail": "0.0% below the available reference price"
           },
           {
             "key": "quality",
@@ -3982,328 +3875,7 @@
           "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
         ]
       },
-      "deal_score": 48.2
-    },
-    {
-      "id": "hotelbeds-623303-2026-10-23",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 623303,
-      "name": "Banyan Tree Kuala Lumpur",
-      "destination": "Kuala Lumpur",
-      "destination_code": "KUL",
-      "check_in": "2026-10-23",
-      "check_out": "2026-10-25",
-      "nights": 2,
-      "stars": 5,
-      "current_price": 224.49,
-      "total_price": 448.98,
-      "currency": "SGD",
-      "room_name": "Banyan Retreat King",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": false,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:10+08:00",
-      "history_observations": 26,
-      "historical_median": 225.25,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 47.4,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.4,
-            "max_points": 40,
-            "detail": "0.3% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 1.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 47.4
-    },
-    {
-      "id": "hotelbeds-623303-2026-10-16",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 623303,
-      "name": "Banyan Tree Kuala Lumpur",
-      "destination": "Kuala Lumpur",
-      "destination_code": "KUL",
-      "check_in": "2026-10-16",
-      "check_out": "2026-10-18",
-      "nights": 2,
-      "stars": 5,
-      "current_price": 239.84,
-      "total_price": 479.68,
-      "currency": "SGD",
-      "room_name": "Banyan Retreat King",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": false,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:10+08:00",
-      "history_observations": 26,
-      "historical_median": 240.64,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 47.4,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.4,
-            "max_points": 40,
-            "detail": "0.3% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 1.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 47.4
-    },
-    {
-      "id": "hotelbeds-74248-2026-10-02",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 74248,
-      "name": "Eastern and Oriental Hotel Penang",
-      "destination": "Penang",
-      "destination_code": "PEN",
-      "check_in": "2026-10-02",
-      "check_out": "2026-10-05",
-      "nights": 3,
-      "stars": 5,
-      "current_price": 812.66,
-      "total_price": 2437.98,
-      "currency": "SGD",
-      "room_name": "Corner Suite",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": false,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:14+08:00",
-      "history_observations": 26,
-      "historical_median": 815.4,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 47.4,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.4,
-            "max_points": 40,
-            "detail": "0.3% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 1.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 47.4
+      "deal_score": 47.0
     },
     {
       "id": "hotelbeds-553643-2026-11-13",
@@ -4337,12 +3909,119 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:18+08:00",
-      "history_observations": 6,
+      "observed_at": "2026-09-25T09:13:46+08:00",
+      "history_observations": 7,
       "historical_median": 217.19,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 236.95,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 47.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 1.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 47.0
+    },
+    {
+      "id": "hotelbeds-623303-2026-10-23",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 623303,
+      "name": "Banyan Tree Kuala Lumpur",
+      "destination": "Kuala Lumpur",
+      "destination_code": "KUL",
+      "check_in": "2026-10-23",
+      "check_out": "2026-10-25",
+      "nights": 2,
+      "stars": 5,
+      "current_price": 224.49,
+      "total_price": 448.98,
+      "currency": "SGD",
+      "room_name": "Banyan Retreat King",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": false,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:38+08:00",
+      "history_observations": 27,
+      "historical_median": 224.49,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": null,
       "score_breakdown": {
         "model": "hotel_v1",
         "total": 47.0,
@@ -4444,9 +4123,116 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:15+08:00",
-      "history_observations": 26,
-      "historical_median": 223.86,
+      "observed_at": "2026-09-25T09:13:43+08:00",
+      "history_observations": 27,
+      "historical_median": 226.25,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": null,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 47.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 1.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 47.0
+    },
+    {
+      "id": "hotelbeds-623303-2026-10-16",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 623303,
+      "name": "Banyan Tree Kuala Lumpur",
+      "destination": "Kuala Lumpur",
+      "destination_code": "KUL",
+      "check_in": "2026-10-16",
+      "check_out": "2026-10-18",
+      "nights": 2,
+      "stars": 5,
+      "current_price": 239.84,
+      "total_price": 479.68,
+      "currency": "SGD",
+      "room_name": "Banyan Retreat King",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": false,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:37+08:00",
+      "history_observations": 27,
+      "historical_median": 239.84,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
@@ -4551,8 +4337,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:17+08:00",
-      "history_observations": 13,
+      "observed_at": "2026-09-25T09:13:45+08:00",
+      "history_observations": 14,
       "historical_median": 241.3,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -4658,8 +4444,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:18+08:00",
-      "history_observations": 6,
+      "observed_at": "2026-09-25T09:13:46+08:00",
+      "history_observations": 7,
       "historical_median": 245.06,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -4734,153 +4520,46 @@
       "deal_score": 47.0
     },
     {
-      "id": "hotelbeds-74304-2026-10-03",
-      "category": "hotel",
-      "sub_category": "staycation",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 74304,
-      "name": "PARKROYAL COLLECTION Marina Bay, Singapore",
-      "destination": "Singapore",
-      "destination_code": "SIN",
-      "check_in": "2026-10-03",
-      "check_out": "2026-10-04",
-      "nights": 1,
-      "stars": 5,
-      "current_price": 467.56,
-      "total_price": 467.56,
-      "currency": "SGD",
-      "room_name": "LIFESTYLE PREMIER",
-      "board_name": "ROOM ONLY",
-      "breakfast": false,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:03+08:00",
-      "history_observations": 26,
-      "historical_median": 469.6,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 373.43,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 46.5,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.5,
-            "max_points": 40,
-            "detail": "0.4% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 0.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 46.5
-    },
-    {
-      "id": "hotelbeds-552121-2026-09-25",
+      "id": "hotelbeds-623303-2026-10-30",
       "category": "hotel",
       "sub_category": "regional",
       "provider": "hotelbeds",
       "provider_environment": "evaluation",
-      "hotelbeds_code": 552121,
-      "name": "137 Pillars Residences Bangkok",
-      "destination": "Bangkok",
-      "destination_code": "BKK",
-      "check_in": "2026-09-25",
-      "check_out": "2026-09-28",
-      "nights": 3,
+      "hotelbeds_code": 623303,
+      "name": "Banyan Tree Kuala Lumpur",
+      "destination": "Kuala Lumpur",
+      "destination_code": "KUL",
+      "check_in": "2026-10-30",
+      "check_out": "2026-11-01",
+      "nights": 2,
       "stars": 5,
-      "current_price": 108.99,
-      "total_price": 326.97,
+      "current_price": 245.59,
+      "total_price": 491.18,
       "currency": "SGD",
-      "room_name": "THE PILLARS EXECUTIVE STUDIO RESIDENCES",
-      "board_name": "ROOM ONLY",
-      "breakfast": false,
+      "room_name": "Banyan Retreat King",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
       "lounge": false,
       "bathtub": false,
       "quiet_relaxing": true,
       "couples_friendly": true,
       "good_location": true,
-      "flexible_cancellation": true,
+      "flexible_cancellation": false,
       "convenient_date": true,
       "booking_url": "",
       "source": "Hotelbeds Evaluation API",
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:13+08:00",
-      "history_observations": 26,
-      "historical_median": 108.75,
+      "observed_at": "2026-09-25T09:13:39+08:00",
+      "history_observations": 21,
+      "historical_median": 245.59,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
-      "peer_median": 201.22,
+      "peer_median": null,
       "score_breakdown": {
         "model": "hotel_v1",
-        "total": 46.0,
+        "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
@@ -4908,7 +4587,7 @@
           {
             "key": "extras",
             "label": "Included extras",
-            "points": 0.0,
+            "points": 5.0,
             "max_points": 10,
             "detail": "Breakfast and lounge attributes"
           },
@@ -4929,7 +4608,7 @@
           {
             "key": "cancellation",
             "label": "Cancellation flexibility",
-            "points": 5.0,
+            "points": 1.0,
             "max_points": 5,
             "detail": "Flexibility of cancellation terms"
           },
@@ -4945,7 +4624,221 @@
           "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
         ]
       },
-      "deal_score": 46.0
+      "deal_score": 47.0
+    },
+    {
+      "id": "hotelbeds-74248-2026-11-20",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 74248,
+      "name": "Eastern and Oriental Hotel Penang",
+      "destination": "Penang",
+      "destination_code": "PEN",
+      "check_in": "2026-11-20",
+      "check_out": "2026-11-23",
+      "nights": 3,
+      "stars": 5,
+      "current_price": 254.46,
+      "total_price": 763.38,
+      "currency": "SGD",
+      "room_name": "Studio Suite  King",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": false,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:47+08:00",
+      "history_observations": 0,
+      "historical_median": 254.46,
+      "peer_median": null,
+      "reference_source": "current observation only",
+      "score_basis": "current_only",
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 47.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 1.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 47.0
+    },
+    {
+      "id": "hotelbeds-74248-2026-10-02",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 74248,
+      "name": "Eastern and Oriental Hotel Penang",
+      "destination": "Penang",
+      "destination_code": "PEN",
+      "check_in": "2026-10-02",
+      "check_out": "2026-10-05",
+      "nights": 3,
+      "stars": 5,
+      "current_price": 812.66,
+      "total_price": 2437.98,
+      "currency": "SGD",
+      "room_name": "Corner Suite",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": false,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:42+08:00",
+      "history_observations": 27,
+      "historical_median": 812.66,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": null,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 47.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 1.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 47.0
     },
     {
       "id": "hotelbeds-552121-2026-10-09",
@@ -4979,9 +4872,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:14+08:00",
-      "history_observations": 26,
-      "historical_median": 108.75,
+      "observed_at": "2026-09-25T09:13:42+08:00",
+      "history_observations": 27,
+      "historical_median": 108.99,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 188.47,
@@ -5086,9 +4979,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:15+08:00",
-      "history_observations": 26,
-      "historical_median": 108.75,
+      "observed_at": "2026-09-25T09:13:43+08:00",
+      "history_observations": 27,
+      "historical_median": 108.99,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 174.71,
@@ -5193,9 +5086,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:16+08:00",
-      "history_observations": 26,
-      "historical_median": 108.75,
+      "observed_at": "2026-09-25T09:13:44+08:00",
+      "history_observations": 27,
+      "historical_median": 108.99,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 240.43,
@@ -5300,8 +5193,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:07+08:00",
-      "history_observations": 5,
+      "observed_at": "2026-09-25T09:13:35+08:00",
+      "history_observations": 6,
       "historical_median": 154.28,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -5407,12 +5300,119 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:06+08:00",
-      "history_observations": 12,
+      "observed_at": "2026-09-25T09:13:35+08:00",
+      "history_observations": 13,
       "historical_median": 162.5,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 297.68,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 46.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 0.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 46.0
+    },
+    {
+      "id": "hotelbeds-745684-2026-09-26",
+      "category": "hotel",
+      "sub_category": "staycation",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 745684,
+      "name": "Dusit Thani Laguna Singapore",
+      "destination": "Singapore",
+      "destination_code": "SIN",
+      "check_in": "2026-09-26",
+      "check_out": "2026-09-27",
+      "nights": 1,
+      "stars": 5,
+      "current_price": 190.64,
+      "total_price": 190.64,
+      "currency": "SGD",
+      "room_name": "DELUXE LAGUNA TWIN",
+      "board_name": "ROOM ONLY",
+      "breakfast": false,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:31+08:00",
+      "history_observations": 27,
+      "historical_median": 190.64,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": 309.22,
       "score_breakdown": {
         "model": "hotel_v1",
         "total": 46.0,
@@ -5514,9 +5514,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:15+08:00",
-      "history_observations": 26,
-      "historical_median": 239.89,
+      "observed_at": "2026-09-25T09:13:43+08:00",
+      "history_observations": 27,
+      "historical_median": 240.43,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 174.71,
@@ -5621,9 +5621,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:16+08:00",
-      "history_observations": 26,
-      "historical_median": 239.89,
+      "observed_at": "2026-09-25T09:13:44+08:00",
+      "history_observations": 27,
+      "historical_median": 240.43,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 240.43,
@@ -5728,9 +5728,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:14+08:00",
-      "history_observations": 26,
-      "historical_median": 253.65,
+      "observed_at": "2026-09-25T09:13:42+08:00",
+      "history_observations": 27,
+      "historical_median": 267.96,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 188.47,
@@ -5835,8 +5835,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:06+08:00",
-      "history_observations": 12,
+      "observed_at": "2026-09-25T09:13:35+08:00",
+      "history_observations": 13,
       "historical_median": 270.78,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -5942,9 +5942,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:04+08:00",
-      "history_observations": 26,
-      "historical_median": 273.58,
+      "observed_at": "2026-09-25T09:13:33+08:00",
+      "history_observations": 27,
+      "historical_median": 274.2,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 295.06,
@@ -6049,9 +6049,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:05+08:00",
-      "history_observations": 26,
-      "historical_median": 273.58,
+      "observed_at": "2026-09-25T09:13:33+08:00",
+      "history_observations": 27,
+      "historical_median": 274.2,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 310.36,
@@ -6156,9 +6156,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:06+08:00",
-      "history_observations": 19,
-      "historical_median": 280.41,
+      "observed_at": "2026-09-25T09:13:34+08:00",
+      "history_observations": 20,
+      "historical_median": 281.05,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 295.74,
@@ -6263,12 +6263,119 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:07+08:00",
-      "history_observations": 5,
+      "observed_at": "2026-09-25T09:13:35+08:00",
+      "history_observations": 6,
       "historical_median": 308.47,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 301.67,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 46.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 0.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 46.0
+    },
+    {
+      "id": "hotelbeds-74304-2026-10-17",
+      "category": "hotel",
+      "sub_category": "staycation",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 74304,
+      "name": "PARKROYAL COLLECTION Marina Bay, Singapore",
+      "destination": "Singapore",
+      "destination_code": "SIN",
+      "check_in": "2026-10-17",
+      "check_out": "2026-10-18",
+      "nights": 1,
+      "stars": 5,
+      "current_price": 315.92,
+      "total_price": 315.92,
+      "currency": "SGD",
+      "room_name": "URBAN DELUXE",
+      "board_name": "ROOM ONLY",
+      "breakfast": false,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:33+08:00",
+      "history_observations": 27,
+      "historical_median": 315.92,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": 295.06,
       "score_breakdown": {
         "model": "hotel_v1",
         "total": 46.0,
@@ -6370,9 +6477,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:02+08:00",
-      "history_observations": 26,
-      "historical_median": 326.11,
+      "observed_at": "2026-09-25T09:13:31+08:00",
+      "history_observations": 27,
+      "historical_median": 326.85,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 309.22,
@@ -6477,8 +6584,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:06+08:00",
-      "history_observations": 12,
+      "observed_at": "2026-09-25T09:13:35+08:00",
+      "history_observations": 13,
       "historical_median": 328.56,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -6584,12 +6691,119 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:07+08:00",
-      "history_observations": 5,
+      "observed_at": "2026-09-25T09:13:35+08:00",
+      "history_observations": 6,
       "historical_median": 328.56,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 301.67,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 46.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 0.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 46.0
+    },
+    {
+      "id": "hotelbeds-74304-2026-10-31",
+      "category": "hotel",
+      "sub_category": "staycation",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 74304,
+      "name": "PARKROYAL COLLECTION Marina Bay, Singapore",
+      "destination": "Singapore",
+      "destination_code": "SIN",
+      "check_in": "2026-10-31",
+      "check_out": "2026-11-01",
+      "nights": 1,
+      "stars": 5,
+      "current_price": 341.2,
+      "total_price": 341.2,
+      "currency": "SGD",
+      "room_name": "URBAN DELUXE",
+      "board_name": "ROOM ONLY",
+      "breakfast": false,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:34+08:00",
+      "history_observations": 20,
+      "historical_median": 341.2,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": 295.74,
       "score_breakdown": {
         "model": "hotel_v1",
         "total": 46.0,
@@ -6691,9 +6905,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:03+08:00",
-      "history_observations": 26,
-      "historical_median": 350.25,
+      "observed_at": "2026-09-25T09:13:31+08:00",
+      "history_observations": 27,
+      "historical_median": 357.92,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 373.43,
@@ -6798,9 +7012,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:05+08:00",
-      "history_observations": 26,
-      "historical_median": 376.44,
+      "observed_at": "2026-09-25T09:13:33+08:00",
+      "history_observations": 27,
+      "historical_median": 379.09,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 310.36,
@@ -6905,9 +7119,116 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:03+08:00",
-      "history_observations": 26,
+      "observed_at": "2026-09-25T09:13:31+08:00",
+      "history_observations": 27,
       "historical_median": 377.62,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": 373.43,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 46.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 0.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 46.0
+    },
+    {
+      "id": "hotelbeds-74304-2026-10-03",
+      "category": "hotel",
+      "sub_category": "staycation",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 74304,
+      "name": "PARKROYAL COLLECTION Marina Bay, Singapore",
+      "destination": "Singapore",
+      "destination_code": "SIN",
+      "check_in": "2026-10-03",
+      "check_out": "2026-10-04",
+      "nights": 1,
+      "stars": 5,
+      "current_price": 467.56,
+      "total_price": 467.56,
+      "currency": "SGD",
+      "room_name": "LIFESTYLE PREMIER",
+      "board_name": "ROOM ONLY",
+      "breakfast": false,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:31+08:00",
+      "history_observations": 27,
+      "historical_median": 467.56,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 373.43,
@@ -7012,8 +7333,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:02+08:00",
-      "history_observations": 12,
+      "observed_at": "2026-09-25T09:13:31+08:00",
+      "history_observations": 13,
       "historical_median": 537.07,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -7119,9 +7440,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:04+08:00",
-      "history_observations": 25,
-      "historical_median": 977.18,
+      "observed_at": "2026-09-25T09:13:32+08:00",
+      "history_observations": 26,
+      "historical_median": 979.4,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 987.52,
@@ -7195,113 +7516,6 @@
       "deal_score": 46.0
     },
     {
-      "id": "hotelbeds-637617-2026-10-30",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 637617,
-      "name": "137 Pillars Suites Bangkok",
-      "destination": "Bangkok",
-      "destination_code": "BKK",
-      "check_in": "2026-10-30",
-      "check_out": "2026-11-02",
-      "nights": 3,
-      "stars": 5,
-      "current_price": 275.04,
-      "total_price": 825.12,
-      "currency": "SGD",
-      "room_name": "Sukhothai Suite",
-      "board_name": "ROOM ONLY",
-      "breakfast": false,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": false,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:16+08:00",
-      "history_observations": 20,
-      "historical_median": 276.25,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 275.04,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 42.5,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.5,
-            "max_points": 40,
-            "detail": "0.4% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 0.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 1.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 42.5
-    },
-    {
       "id": "hotelbeds-74318-2026-10-31",
       "category": "hotel",
       "sub_category": "staycation",
@@ -7333,8 +7547,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:06+08:00",
-      "history_observations": 19,
+      "observed_at": "2026-09-25T09:13:34+08:00",
+      "history_observations": 20,
       "historical_median": 311.14,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -7351,113 +7565,6 @@
             "points": 0.3,
             "max_points": 40,
             "detail": "0.2% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 0.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 1.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 42.3
-    },
-    {
-      "id": "hotelbeds-637617-2026-10-02",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 637617,
-      "name": "137 Pillars Suites Bangkok",
-      "destination": "Bangkok",
-      "destination_code": "BKK",
-      "check_in": "2026-10-02",
-      "check_out": "2026-10-05",
-      "nights": 3,
-      "stars": 5,
-      "current_price": 320.45,
-      "total_price": 961.35,
-      "currency": "SGD",
-      "room_name": "Sukhothai Suite",
-      "board_name": "ROOM ONLY",
-      "breakfast": false,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": false,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:14+08:00",
-      "history_observations": 26,
-      "historical_median": 321.39,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 320.45,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 42.3,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.3,
-            "max_points": 40,
-            "detail": "0.3% below the available reference price"
           },
           {
             "key": "quality",
@@ -7547,8 +7654,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:04+08:00",
-      "history_observations": 26,
+      "observed_at": "2026-09-25T09:13:32+08:00",
+      "history_observations": 27,
       "historical_median": 2518.45,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -7654,8 +7761,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:17+08:00",
-      "history_observations": 13,
+      "observed_at": "2026-09-25T09:13:45+08:00",
+      "history_observations": 14,
       "historical_median": 150.17,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -7761,9 +7868,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:05+08:00",
-      "history_observations": 26,
-      "historical_median": 165.87,
+      "observed_at": "2026-09-25T09:13:33+08:00",
+      "history_observations": 27,
+      "historical_median": 166.25,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 310.36,
@@ -7868,9 +7975,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:04+08:00",
-      "history_observations": 26,
-      "historical_median": 184.71,
+      "observed_at": "2026-09-25T09:13:33+08:00",
+      "history_observations": 27,
+      "historical_median": 185.13,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 295.06,
@@ -7975,12 +8082,226 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:18+08:00",
-      "history_observations": 6,
+      "observed_at": "2026-09-25T09:13:46+08:00",
+      "history_observations": 7,
       "historical_median": 273.3,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 273.3,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 42.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 0.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 1.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 42.0
+    },
+    {
+      "id": "hotelbeds-637617-2026-10-30",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 637617,
+      "name": "137 Pillars Suites Bangkok",
+      "destination": "Bangkok",
+      "destination_code": "BKK",
+      "check_in": "2026-10-30",
+      "check_out": "2026-11-02",
+      "nights": 3,
+      "stars": 5,
+      "current_price": 275.04,
+      "total_price": 825.12,
+      "currency": "SGD",
+      "room_name": "Sukhothai Suite",
+      "board_name": "ROOM ONLY",
+      "breakfast": false,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": false,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:44+08:00",
+      "history_observations": 21,
+      "historical_median": 275.04,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": 275.04,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 42.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 0.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 1.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 42.0
+    },
+    {
+      "id": "hotelbeds-637617-2026-11-20",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 637617,
+      "name": "137 Pillars Suites Bangkok",
+      "destination": "Bangkok",
+      "destination_code": "BKK",
+      "check_in": "2026-11-20",
+      "check_out": "2026-11-23",
+      "nights": 3,
+      "stars": 5,
+      "current_price": 281.94,
+      "total_price": 845.83,
+      "currency": "SGD",
+      "room_name": "Sukhothai Suite",
+      "board_name": "ROOM ONLY",
+      "breakfast": false,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": false,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-09-25T09:13:47+08:00",
+      "history_observations": 0,
+      "historical_median": 281.94,
+      "peer_median": 281.94,
+      "reference_source": "same-date peer comparison",
+      "score_basis": "peer_comparison",
       "score_breakdown": {
         "model": "hotel_v1",
         "total": 42.0,
@@ -8082,8 +8403,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:17+08:00",
-      "history_observations": 13,
+      "observed_at": "2026-09-25T09:13:45+08:00",
+      "history_observations": 14,
       "historical_median": 286.86,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -8189,9 +8510,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:02+08:00",
-      "history_observations": 26,
-      "historical_median": 290.92,
+      "observed_at": "2026-09-25T09:13:31+08:00",
+      "history_observations": 27,
+      "historical_median": 291.59,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 309.22,
@@ -8265,7 +8586,7 @@
       "deal_score": 42.0
     },
     {
-      "id": "hotelbeds-637617-2026-09-25",
+      "id": "hotelbeds-637617-2026-10-02",
       "category": "hotel",
       "sub_category": "regional",
       "provider": "hotelbeds",
@@ -8274,12 +8595,12 @@
       "name": "137 Pillars Suites Bangkok",
       "destination": "Bangkok",
       "destination_code": "BKK",
-      "check_in": "2026-09-25",
-      "check_out": "2026-09-28",
+      "check_in": "2026-10-02",
+      "check_out": "2026-10-05",
       "nights": 3,
       "stars": 5,
-      "current_price": 293.46,
-      "total_price": 880.38,
+      "current_price": 320.45,
+      "total_price": 961.35,
       "currency": "SGD",
       "room_name": "Sukhothai Suite",
       "board_name": "ROOM ONLY",
@@ -8296,12 +8617,12 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:13+08:00",
-      "history_observations": 26,
-      "historical_median": 266.4,
+      "observed_at": "2026-09-25T09:13:42+08:00",
+      "history_observations": 27,
+      "historical_median": 320.45,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
-      "peer_median": 201.22,
+      "peer_median": 320.45,
       "score_breakdown": {
         "model": "hotel_v1",
         "total": 42.0,
@@ -8403,9 +8724,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:06+08:00",
-      "history_observations": 12,
-      "historical_median": 312.89,
+      "observed_at": "2026-09-25T09:13:35+08:00",
+      "history_observations": 13,
+      "historical_median": 317.47,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 297.68,
@@ -8510,9 +8831,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:05+08:00",
-      "history_observations": 26,
-      "historical_median": 345.72,
+      "observed_at": "2026-09-25T09:13:33+08:00",
+      "history_observations": 27,
+      "historical_median": 346.51,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 310.36,
@@ -8617,9 +8938,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:04+08:00",
-      "history_observations": 26,
-      "historical_median": 348.54,
+      "observed_at": "2026-09-25T09:13:33+08:00",
+      "history_observations": 27,
+      "historical_median": 349.34,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 295.06,
@@ -8724,9 +9045,9 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-09-24T09:13:04+08:00",
-      "history_observations": 26,
-      "historical_median": 361.42,
+      "observed_at": "2026-09-25T09:13:32+08:00",
+      "history_observations": 27,
+      "historical_median": 381.26,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 987.52,
