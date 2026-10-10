@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T10:51:29+08:00",
+  "updated_at": "2026-10-10T10:11:22+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 96.4,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -298,8 +298,158 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-bcd73782bf4a",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "BEST Denki Singapore: Mid-Autumn Kitchen & Beauty Sale – Up to 50% Off Online, Extra Cashback Up to $30, Selected Kitchen Appliances & Beauty Essentials",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-09-18 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 50,
+      "quality_score": 8.2,
+      "relevance_score": 8.9,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/18-september-2026-onwards-best-denki-singapore-mid-autumn-kitchen-beauty-sale-up-to-50-off-online-extra-cashback-up-to-30-selected-kitchen-appliances-beauty-essentials/",
+      "valid_from": "2026-09-18",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.6,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.9/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.6,
+      "observed_at": "2026-10-10T10:11:22+08:00",
+      "exclude_from_best": false,
+      "best_rank": 9
+    },
+    {
+      "id": "sale-live-f1a0ae4212ab",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "Audio House Singapore: 9.9 Storewide Sale and Rewards Promotion with 9.9% Off, 99% eCashback and $990 Cash, Available at Audio House Outlets",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 99% savings. Listed from 2026-09-18 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 99,
+      "quality_score": 7.6,
+      "relevance_score": 9.0,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/18-september-2026-onwards-audio-house-singapore-9-9-storewide-sale-and-rewards-promotion-with-9-9-off-99-ecashback-and-990-cash-available-at-audio-house-outlets/",
+      "valid_from": "2026-09-18",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 86.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "99% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.4,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 86.9,
+      "observed_at": "2026-10-10T10:11:22+08:00",
+      "exclude_from_best": false,
+      "best_rank": 10
     },
     {
       "id": "sale-live-29af5f34b622",
@@ -372,9 +522,8 @@
         ]
       },
       "deal_score": 86.9,
-      "observed_at": "2026-10-09T10:51:29+08:00",
-      "exclude_from_best": false,
-      "best_rank": 9
+      "observed_at": "2026-10-10T10:11:22+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-fbb1af2e1d98",
@@ -447,9 +596,82 @@
         ]
       },
       "deal_score": 86.0,
-      "observed_at": "2026-10-09T10:51:29+08:00",
-      "exclude_from_best": false,
-      "best_rank": 10
+      "observed_at": "2026-10-10T10:11:22+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-a600a6a722c3",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "Mayer Singapore: Beat the Heat & Haze Sale – Up to 70% OFF Storewide, Vouchers Up to $48 OFF & Free Water Filter Jug Online",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-10-18. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 70,
+      "quality_score": 7.2,
+      "relevance_score": 8.6,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/now-till-18-october-2026-mayer-singapore-beat-the-heat-haze-sale-up-to-70-off-storewide-vouchers-up-to-48-off-free-water-filter-jug-online/",
+      "valid_from": null,
+      "valid_until": "2026-10-18",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.7,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.7,
+      "observed_at": "2026-10-10T10:11:22+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-93c33ebdfb21",
@@ -522,7 +744,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -596,7 +818,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,81 +892,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-10-09T10:51:29+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-5f0ab2d0a14b",
-      "category": "sale",
-      "subcategory": "travel_luggage",
-      "name": "Trip.com: China Travel Promotion with 50% OFF Flights up to S$100, S$25 OFF Flights and S$25 OFF Hotels",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-09-22 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 50,
-      "quality_score": 7.2,
-      "relevance_score": 8.4,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/22-september-2026-onwards-trip-com-china-travel-promotion-with-50-off-flights-up-to-s100-s25-off-flights-and-s25-off-hotels/",
-      "valid_from": "2026-09-22",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.4,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.4/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.4,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,7 +966,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,7 +1040,7 @@
         ]
       },
       "deal_score": 68.5,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -966,7 +1114,7 @@
         ]
       },
       "deal_score": 68.5,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,7 +1188,7 @@
         ]
       },
       "deal_score": 63.5,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -1114,7 +1262,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -1186,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -1260,81 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-09T10:51:29+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-9814c56e187d",
-      "category": "sale",
-      "subcategory": "travel_luggage",
-      "name": "YouTrip Mega Travel Day Promotion: Enjoy Up to S$120 Off and Up to 25% Uncapped Cashback on Hotels, Flights, Car Rentals and Travel Experiences",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 25% savings. Listed as valid through 2026-12-01. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 25,
-      "quality_score": 7.2,
-      "relevance_score": 7.8,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/1-october-1-december-2026-youtrip-mega-travel-day-promotion-enjoy-up-to-s120-off-and-up-to-25-uncapped-cashback-on-hotels-flights-car-rentals-and-travel-experiences/",
-      "valid_from": "2026-10-01",
-      "valid_until": "2026-12-01",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 57.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 27.5,
-            "max_points": 55,
-            "detail": "25% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.7,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.8/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 57.0,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -1406,7 +1480,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -1478,7 +1552,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -1550,7 +1624,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -1622,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,81 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-09T10:51:29+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-6aaa24633dbd",
-      "category": "sale",
-      "subcategory": "travel_luggage",
-      "name": "OG Department Stores: 10.10 Sale – 20% Off Storewide Plus Extra 5% for OG Gold Members on Fashion, Luggage, Cookware & Home Essentials",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 20% savings. Listed as valid through 2026-10-11. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 20,
-      "quality_score": 7.2,
-      "relevance_score": 7.8,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/8-11-october-2026-og-department-stores-10-10-sale-20-off-storewide-plus-extra-5-for-og-gold-members-on-fashion-luggage-cookware-home-essentials/",
-      "valid_from": "2026-10-08",
-      "valid_until": "2026-10-11",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 51.5,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 22.0,
-            "max_points": 55,
-            "detail": "20% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.7,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.8/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 51.5,
-      "observed_at": "2026-10-09T10:51:29+08:00",
+      "observed_at": "2026-10-10T10:11:22+08:00",
       "exclude_from_best": true
     }
   ]
