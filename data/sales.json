@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T09:18:39+08:00",
+  "updated_at": "2026-10-16T09:03:37+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 96.4,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -298,7 +298,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -372,7 +372,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -447,7 +447,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": false,
       "best_rank": 10
     },
@@ -522,7 +522,81 @@
         ]
       },
       "deal_score": 87.5,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-de49c1f65d17",
+      "category": "sale",
+      "subcategory": "sportswear_footwear",
+      "name": "LINK Outlet Store Singapore: Up to 70% Off Sportswear, Footwear and Lifestyle Essentials + Extra 10% Discount for SAFRA Members – 3-Day-Left Outlet Atrium Sale at SAFRA Toa Payoh",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-10-18. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 70,
+      "quality_score": 7.6,
+      "relevance_score": 9.0,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sportswear",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/12-18-october-2026-link-outlet-store-singapore-up-to-70-off-sportswear-footwear-and-lifestyle-essentials-extra-10-discount-for-safra-members-3-day-left-outlet-atrium-sale-at-safra-toa-p/",
+      "valid_from": "2026-10-12",
+      "valid_until": "2026-10-18",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 86.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.4,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 86.9,
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -596,7 +670,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,7 +744,81 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-b94c303396cc",
+      "category": "sale",
+      "subcategory": "travel_luggage",
+      "name": "Mandai Wildlife Reserve: Up to 60% Off 6 Attractions Destination Pass – Explore Singapore Zoo, Night Safari, Bird Paradise and More in One Day",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 60% savings. Listed from 2026-10-14 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 60,
+      "quality_score": 7.2,
+      "relevance_score": 8.6,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/14-october-2026-onwards-mandai-wildlife-reserve-up-to-60-off-6-attractions-destination-pass-explore-singapore-zoo-night-safari-bird-paradise-and-more-in-one-day/",
+      "valid_from": "2026-10-14",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.7,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "60% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.7,
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,81 +892,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-10-15T09:18:39+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-de15f97ab892",
-      "category": "sale",
-      "subcategory": "sportswear_footwear",
-      "name": "Metro Singapore: Enjoy Up to 50% OFF Selected Footwear at Causeway Point Level 2",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-10-14 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 50,
-      "quality_score": 7.2,
-      "relevance_score": 8.4,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Happening Now",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/14-october-2026-onwards-metro-singapore-enjoy-up-to-50-off-selected-footwear-at-causeway-point-level-2/",
-      "valid_from": "2026-10-14",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.4,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.4/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.4,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,81 +966,7 @@
         ]
       },
       "deal_score": 63.5,
-      "observed_at": "2026-10-15T09:18:39+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-f5b0d1d1b660",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "Gift Boutique at SAFRA Punggol: Warehouse Clearance Promotion with 20%–30% Off Clearance Goods, New Daily Bargains and Mystery Deals",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 30% savings. Listed as valid through 2026-10-18. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 30,
-      "quality_score": 8.0,
-      "relevance_score": 7.4,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Happening Now",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/now-till-18-october-2026-gift-boutique-at-safra-punggol-warehouse-clearance-promotion-with-20-30-off-clearance-goods-new-daily-bargains-and-mystery-deals/",
-      "valid_from": null,
-      "valid_until": "2026-10-18",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 63.1,
-        "scale_max": 100,
-        "band": "Moderate",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 33.0,
-            "max_points": 55,
-            "detail": "30% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.0/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.4/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 63.1,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,7 +1040,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -1114,7 +1114,7 @@
         ]
       },
       "deal_score": 59.2,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -1186,7 +1186,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -1260,7 +1260,81 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-9814c56e187d",
+      "category": "sale",
+      "subcategory": "travel_luggage",
+      "name": "YouTrip Mega Travel Day Promotion: Enjoy Up to S$120 Off and Up to 25% Uncapped Cashback on Hotels, Flights, Car Rentals and Travel Experiences",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 25% savings. Listed as valid through 2026-12-01. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 25,
+      "quality_score": 7.2,
+      "relevance_score": 7.8,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/1-october-1-december-2026-youtrip-mega-travel-day-promotion-enjoy-up-to-s120-off-and-up-to-25-uncapped-cashback-on-hotels-flights-car-rentals-and-travel-experiences/",
+      "valid_from": "2026-10-01",
+      "valid_until": "2026-12-01",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 57.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 27.5,
+            "max_points": 55,
+            "detail": "25% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.7,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.8/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 57.0,
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -1332,7 +1406,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -1404,7 +1478,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -1476,7 +1550,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -1548,7 +1622,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -1622,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,81 +1770,7 @@
         ]
       },
       "deal_score": 48.2,
-      "observed_at": "2026-10-15T09:18:39+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-86c6088918f4",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "BEST Denki Singapore: 15% Off All Jug Blenders Deepavali Promotion at BEST Denki Retail Outlets",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 15% savings. Listed from 2026-10-05 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 15,
-      "quality_score": 8.6,
-      "relevance_score": 7.9,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/5-october-2026-onwards-best-denki-singapore-15-off-all-jug-blenders-deepavali-promotion-at-best-denki-retail-outlets/",
-      "valid_from": "2026-10-05",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 48.2,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 16.5,
-            "max_points": 55,
-            "detail": "15% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.9,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.9,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.9/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 48.2,
-      "observed_at": "2026-10-15T09:18:39+08:00",
+      "observed_at": "2026-10-16T09:03:37+08:00",
       "exclude_from_best": true
     }
   ]
