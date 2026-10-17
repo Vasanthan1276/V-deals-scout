@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T09:03:37+08:00",
+  "updated_at": "2026-10-17T09:10:56+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,84 +148,9 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": false,
       "best_rank": 3
-    },
-    {
-      "id": "sale-live-4bbbe6eddbc7",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "COURTS · SONA appliance deals",
-      "location": "Online / Singapore",
-      "description": "Official promotion: Selected SONA appliances up to 50% off. Direct retailer prices; selected models and stock availability apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
-      "discount_percent": 50,
-      "quality_score": 8.7,
-      "relevance_score": 8.9,
-      "source": "COURTS Singapore",
-      "source_detail": "COURTS SONA appliance deals",
-      "source_type": "official_promotion_page",
-      "reference_source": "https://www.courts.com.sg/sona",
-      "source_confidence": "verified",
-      "deal_type": "direct_retailer",
-      "access_requirement": "Direct retailer prices; selected models and stock availability apply",
-      "url": "https://www.courts.com.sg/sona",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "valid_from": null,
-      "valid_until": null,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 96.4,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.0,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.7/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.9/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Verified official/direct source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Direct retailer"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 96.4,
-      "observed_at": "2026-10-16T09:03:37+08:00",
-      "exclude_from_best": false,
-      "best_rank": 4
     },
     {
       "id": "sale-live-4d7b1696e4bb",
@@ -298,8 +223,9 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-10-16T09:03:37+08:00",
-      "exclude_from_best": true
+      "observed_at": "2026-10-17T09:10:56+08:00",
+      "exclude_from_best": false,
+      "best_rank": 6
     },
     {
       "id": "sale-live-94a3b4fad57a",
@@ -372,7 +298,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -447,7 +373,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": false,
       "best_rank": 10
     },
@@ -522,7 +448,7 @@
         ]
       },
       "deal_score": 87.5,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -596,81 +522,7 @@
         ]
       },
       "deal_score": 86.9,
-      "observed_at": "2026-10-16T09:03:37+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-a600a6a722c3",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Mayer Singapore: Beat the Heat & Haze Sale – Up to 70% OFF Storewide, Vouchers Up to $48 OFF & Free Water Filter Jug Online",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-10-18. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 70,
-      "quality_score": 7.2,
-      "relevance_score": 8.6,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/now-till-18-october-2026-mayer-singapore-beat-the-heat-haze-sale-up-to-70-off-storewide-vouchers-up-to-48-off-free-water-filter-jug-online/",
-      "valid_from": null,
-      "valid_until": "2026-10-18",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.7,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.9,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.6/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.7,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +596,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,7 +670,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,7 +744,81 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-f48ad5cbd20f",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "BEST Denki Singapore: OCTOBEST Super Sale Promotion – Up to 40% Off TVs, $600 Off Computers, $128 Off Mobile Devices and a Chance to Win Up to 1 Million BEST DENKI Points",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 40% savings. Listed as valid through 2026-10-18. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 40,
+      "quality_score": 8.2,
+      "relevance_score": 8.6,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/17-18-october-2026-best-denki-singapore-octobest-super-sale-promotion-up-to-40-off-tvs-600-off-computers-128-off-mobile-devices-and-a-chance-to-win-up-to-1-million-best-denki-points/",
+      "valid_from": "2026-10-17",
+      "valid_until": "2026-10-18",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 76.2,
+        "scale_max": 100,
+        "band": "Worth a look",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 44.0,
+            "max_points": 55,
+            "detail": "40% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 76.2,
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -966,7 +892,7 @@
         ]
       },
       "deal_score": 63.5,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,7 +966,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -1114,7 +1040,7 @@
         ]
       },
       "deal_score": 59.2,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -1186,7 +1112,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -1260,16 +1186,16 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-9814c56e187d",
+      "id": "sale-live-111b035fa0b6",
       "category": "sale",
       "subcategory": "travel_luggage",
-      "name": "YouTrip Mega Travel Day Promotion: Enjoy Up to S$120 Off and Up to 25% Uncapped Cashback on Hotels, Flights, Car Rentals and Travel Experiences",
+      "name": "Pan Pacific Singapore: Up to 25% Off Dining Experiences for Pan Pacific DISCOVERY Members – Exclusive Dining Promotion",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 25% savings. Listed as valid through 2026-12-01. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "description": "Discovery listing advertising up to 25% savings. Listed from 2026-10-16 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
       "discount_percent": 25,
       "quality_score": 7.2,
       "relevance_score": 7.8,
@@ -1277,9 +1203,9 @@
       "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/1-october-1-december-2026-youtrip-mega-travel-day-promotion-enjoy-up-to-s120-off-and-up-to-25-uncapped-cashback-on-hotels-flights-car-rentals-and-travel-experiences/",
-      "valid_from": "2026-10-01",
-      "valid_until": "2026-12-01",
+      "url": "https://sg.everydayonsales.com/16-october-2026-onwards-pan-pacific-singapore-up-to-25-off-dining-experiences-for-pan-pacific-discovery-members-exclusive-dining-promotion/",
+      "valid_from": "2026-10-16",
+      "valid_until": null,
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -1334,7 +1260,7 @@
         ]
       },
       "deal_score": 57.0,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -1406,7 +1332,81 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-31353a9b5e06",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "COURTS: Toa Payoh Anniversary Sale – Up to $240 Off TVs, 20% Off Furniture and Bedding, Air-Conditioner Deals, Laptop Discounts and Exclusive HomeClub Rewards",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 20% savings. Listed as valid through 2026-10-18. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 20,
+      "quality_score": 8.2,
+      "relevance_score": 8.3,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/17-18-october-2026-courts-toa-payoh-anniversary-sale-up-to-240-off-tvs-20-off-furniture-and-bedding-air-conditioner-deals-laptop-discounts-and-exclusive-homeclub-rewards/",
+      "valid_from": "2026-10-17",
+      "valid_until": "2026-10-18",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 53.8,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 22.0,
+            "max_points": 55,
+            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 53.8,
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -1478,7 +1478,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -1550,7 +1550,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -1622,7 +1622,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,81 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-16T09:03:37+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-d66c7e7e0881",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "BEST Denki Singapore: Lenovo Tablet Promotion with Up to 15% Off and Free Gifts Worth Up to $198",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 15% savings. Listed as valid through 2026-10-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 15,
-      "quality_score": 8.2,
-      "relevance_score": 8.3,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/1-31-october-2026-best-denki-singapore-lenovo-tablet-promotion-with-up-to-15-off-and-free-gifts-worth-up-to-198/",
-      "valid_from": "2026-10-01",
-      "valid_until": "2026-10-31",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 48.2,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 16.5,
-            "max_points": 55,
-            "detail": "15% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.5,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.3/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 48.2,
-      "observed_at": "2026-10-16T09:03:37+08:00",
+      "observed_at": "2026-10-17T09:10:56+08:00",
       "exclude_from_best": true
     }
   ]
