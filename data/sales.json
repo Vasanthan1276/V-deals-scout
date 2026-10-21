@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T09:38:59+08:00",
+  "updated_at": "2026-10-21T09:23:52+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": false,
       "best_rank": 6
     },
@@ -298,7 +298,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -373,9 +373,83 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": false,
       "best_rank": 10
+    },
+    {
+      "id": "sale-live-3573077693c5",
+      "category": "sale",
+      "subcategory": "travel_luggage",
+      "name": "Universal Traveller Singapore Winter Wear & Luggage Sale – Enjoy Up to 80% Off Winter Jackets, Down-Feather Jackets, Thermal Wear, Luggage and Travel Accessories at Suntec City Atrium Convention Centre",
+      "location": "Suntec City / Singapore",
+      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-10-25. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 80,
+      "quality_score": 7.2,
+      "relevance_score": 8.6,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/19-25-october-2026-universal-traveller-singapore-winter-wear-luggage-sale-enjoy-up-to-80-off-winter-jackets-down-feather-jackets-thermal-wear-luggage-and-travel-accessories/",
+      "valid_from": "2026-10-19",
+      "valid_until": "2026-10-25",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.7,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.7,
+      "observed_at": "2026-10-21T09:23:52+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-db12101ec01b",
@@ -448,26 +522,26 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-a35d4652168a",
+      "id": "sale-live-4af545e4dc3a",
       "category": "sale",
-      "subcategory": "electronics",
-      "name": "Gain City Deepavali Deals – Enjoy Up to 60% OFF Home Appliances and Electronics in Singapore",
+      "subcategory": "outlet_clearance",
+      "name": "Popular Bookstore Singapore Atrium Sale at Waterway Point – Up to 70% Off Books, Stationery and More at B1 Atrium",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 60% savings. Listed from 2026-10-13 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 60,
-      "quality_score": 7.2,
-      "relevance_score": 8.6,
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-10-25. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 70,
+      "quality_score": 7.6,
+      "relevance_score": 8.2,
       "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_detail": "EverydayOnSales - Happening Now",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/13-october-2026-onwards-gain-city-deepavali-deals-enjoy-up-to-60-off-home-appliances-and-electronics-in-singapore/",
-      "valid_from": "2026-10-13",
-      "valid_until": null,
+      "url": "https://sg.everydayonsales.com/now-till-25-october-2026-popular-bookstore-singapore-atrium-sale-at-waterway-point-up-to-70-off-books-stationery-and-more-at-b1-atrium/",
+      "valid_from": null,
+      "valid_until": "2026-10-25",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -486,21 +560,21 @@
             "label": "Discount strength",
             "points": 55.0,
             "max_points": 55,
-            "detail": "60% advertised saving; 50%+ earns the full 55 points"
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 10.8,
+            "points": 11.4,
             "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
+            "detail": "Scanner quality estimate 7.6/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 12.9,
+            "points": 12.3,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.6/10"
+            "detail": "Scanner relevance estimate 8.2/10"
           },
           {
             "key": "confidence",
@@ -522,7 +596,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -596,7 +670,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,7 +744,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +818,7 @@
         ]
       },
       "deal_score": 68.1,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,7 +892,7 @@
         ]
       },
       "deal_score": 63.5,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,7 +966,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -966,81 +1040,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-10-20T09:38:59+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-b5f5f202e163",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "COURTS Singapore: Diwali Promotion – Enjoy Up to 25% Off Selected Food Preparation Appliances, While Stocks Last",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 25% savings. Listed from 2026-10-13 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 25,
-      "quality_score": 8.2,
-      "relevance_score": 8.3,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/13-october-2026-onwards-courts-singapore-diwali-promotion-enjoy-up-to-25-off-selected-food-preparation-appliances-while-stocks-last/",
-      "valid_from": "2026-10-13",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 59.2,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 27.5,
-            "max_points": 55,
-            "detail": "25% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.5,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.3/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 59.2,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -1112,7 +1112,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -1186,7 +1186,81 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-cd846d6b47a7",
+      "category": "sale",
+      "subcategory": "fashion_clearance",
+      "name": "KFC Singapore 25% OFF Selected Healthier Choice Breakfast Promotion with HPB Healthpoints Rewards",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 25% savings. Listed from 2026-10-20 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 25,
+      "quality_score": 8.2,
+      "relevance_score": 7.5,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Happening Now",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/20-october-2026-onwards-kfc-singapore-25-off-selected-healthier-choice-breakfast-promotion-with-hpb-healthpoints-rewards/",
+      "valid_from": "2026-10-20",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 58.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 27.5,
+            "max_points": 55,
+            "detail": "25% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.2,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.5/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 58.0,
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -1260,7 +1334,7 @@
         ]
       },
       "deal_score": 57.0,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -1332,7 +1406,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -1404,7 +1478,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -1476,7 +1550,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -1548,7 +1622,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     },
     {
@@ -1622,81 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-20T09:38:59+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-22a47888935d",
-      "category": "sale",
-      "subcategory": "travel_luggage",
-      "name": "METRO Singapore: Braun Büffel Travel Collection Promotion – Enjoy 15% Off Selected Regular-Priced Travel Styles at METRO",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 15% savings. Listed as valid through 2026-10-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 15,
-      "quality_score": 7.2,
-      "relevance_score": 7.8,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Fashion Accessories",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/12-31-october-2026-metro-singapore-braun-buffel-travel-collection-promotion-enjoy-15-off-selected-regular-priced-travel-styles-at-metro/",
-      "valid_from": "2026-10-12",
-      "valid_until": "2026-10-31",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 46.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 16.5,
-            "max_points": 55,
-            "detail": "15% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.7,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.8/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 46.0,
-      "observed_at": "2026-10-20T09:38:59+08:00",
+      "observed_at": "2026-10-21T09:23:52+08:00",
       "exclude_from_best": true
     }
   ]
