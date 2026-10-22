@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T09:23:52+08:00",
+  "updated_at": "2026-10-22T09:21:42+08:00",
   "mode": "live",
   "items": [
     {
@@ -76,7 +76,7 @@
         ]
       },
       "deal_score": 98.0,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": false,
       "best_rank": 1
     },
@@ -154,7 +154,7 @@
         ]
       },
       "deal_score": 64.3,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -231,7 +231,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -308,7 +308,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -385,7 +385,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -462,7 +462,7 @@
         ]
       },
       "deal_score": 52.0,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -538,7 +538,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -615,7 +615,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": false,
       "best_rank": 5
     },
@@ -692,7 +692,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -768,7 +768,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -844,7 +844,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -920,35 +920,35 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "food-eatigo-0f94891f24f2",
+      "id": "food-eatigo-34830c52a6d7",
       "category": "food",
-      "name": "Beach Road Kitchen @ JW Marriott Singapore South Beach — Dinner",
-      "restaurant_name": "Beach Road Kitchen @ JW Marriott Singapore South Beach",
+      "name": "Luce, Frasers House, a Luxury Collection Hotel Singapore — Lunch",
+      "restaurant_name": "Luce, Frasers House, a Luxury Collection Hotel Singapore",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 20:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 13:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.6,
       "relevance_score": 8.7,
       "rating": 4.8,
-      "reservation_count": 1000,
-      "meal_period": "dinner",
+      "reservation_count": 4200,
+      "meal_period": "lunch",
       "food_category": "hotel_dining",
       "food_category_inferred": true,
       "best_discount_times": [
-        "20:00"
+        "13:30"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Dinner",
+      "source_detail": "Eatigo Singapore - Lunch",
       "source_type": "official_promotion_page",
       "source_confidence": "app_live",
       "access_requirement": "Eatigo booking required",
       "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "url": "https://eatigo.com/en/regions/27/themes/15505",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -1002,7 +1002,7 @@
         ]
       },
       "deal_score": 93.5,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": false,
       "best_rank": 7
     },
@@ -1089,7 +1089,7 @@
         ]
       },
       "deal_score": 92.8,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": false,
       "best_rank": 8
     },
@@ -1176,7 +1176,7 @@
         ]
       },
       "deal_score": 92.7,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1262,7 +1262,90 @@
         ]
       },
       "deal_score": 92.7,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-02e3145e5cfc",
+      "category": "food",
+      "name": "Sanctuary Tearoom @ Amara Sanctuary Sentosa — Dinner",
+      "restaurant_name": "Sanctuary Tearoom @ Amara Sanctuary Sentosa",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.7/5. Best observed slot(s): 17:30, 18:00. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 9.4,
+      "relevance_score": 8.2,
+      "rating": 4.7,
+      "reservation_count": 2800,
+      "meal_period": "dinner",
+      "food_category": "other_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "17:30",
+        "18:00"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 92.4,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 14.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 92.4,
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1276,7 +1359,7 @@
       "quality_score": 9.2,
       "relevance_score": 8.2,
       "rating": 4.6,
-      "reservation_count": 298,
+      "reservation_count": 299,
       "meal_period": "dinner",
       "food_category": "western_international",
       "food_category_inferred": true,
@@ -1351,7 +1434,7 @@
         ]
       },
       "deal_score": 92.1,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1433,89 +1516,7 @@
         ]
       },
       "deal_score": 92.1,
-      "observed_at": "2026-10-21T09:23:31+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-eatigo-a50afb4b3e21",
-      "category": "food",
-      "name": "Ginger @ PARKROYAL on Beach Road — Lunch",
-      "restaurant_name": "Ginger @ PARKROYAL on Beach Road",
-      "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 13:30. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 9.2,
-      "relevance_score": 8.2,
-      "rating": 4.6,
-      "reservation_count": 7800,
-      "meal_period": "lunch",
-      "food_category": "hotel_dining",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "13:30"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Lunch",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15505",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 92.1,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 9.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 92.1,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1597,7 +1598,7 @@
         ]
       },
       "deal_score": 91.8,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1606,7 +1607,7 @@
       "name": "J65 @ JEN Singapore Tanglin by Shangri-La — Dinner",
       "restaurant_name": "J65 @ JEN Singapore Tanglin by Shangri-La",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.4/5. Best observed slot(s): 18:00, 18:30, 19:00, 19:30. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.4/5. Best observed slot(s): 18:00, 18:30, 19:30, 20:00. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 8.8,
       "relevance_score": 8.4,
@@ -1618,7 +1619,6 @@
       "best_discount_times": [
         "18:00",
         "18:30",
-        "19:00",
         "19:30",
         "20:00",
         "20:30",
@@ -1685,7 +1685,621 @@
         ]
       },
       "deal_score": 91.8,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-4a8e3406693b",
+      "category": "food",
+      "name": "Town Restaurant @ The Fullerton Hotel Singapore — Dinner",
+      "restaurant_name": "Town Restaurant @ The Fullerton Hotel Singapore",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.4/5. Best observed slot(s): 20:00. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 8.8,
+      "relevance_score": 8.4,
+      "rating": 4.4,
+      "reservation_count": 19300,
+      "meal_period": "dinner",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "20:00"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.8,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 91.8,
+      "observed_at": "2026-10-22T09:21:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-f5419dbcad9e",
+      "category": "food",
+      "name": "1. Vincenzo Capuano: $28++ pizza and pasta buffet",
+      "restaurant_name": "1. Vincenzo Capuano: $28++ pizza and pasta buffet",
+      "location": "Singapore",
+      "description": "2. CLOVE: 50% off Korean buffet. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
+      "discount_percent": 50,
+      "quality_score": 7.4,
+      "relevance_score": 8.0,
+      "food_category": "korean",
+      "food_category_inferred": true,
+      "deal_type": "discovery",
+      "source": "Eatbook Singapore",
+      "source_detail": "Eatbook Singapore food deals - October 2026",
+      "source_type": "promotion_aggregator",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with the restaurant before booking",
+      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
+      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.1,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.1,
+      "observed_at": "2026-10-22T09:21:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-9aa7fbc90588",
+      "category": "food",
+      "name": "9. KFC: $25.95 Gen B Buffet",
+      "restaurant_name": "9. KFC: $25.95 Gen B Buffet",
+      "location": "Singapore",
+      "description": "10. Cat & the Fiddle: 1-for-1 whole cheesecakes. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
+      "discount_percent": 50,
+      "quality_score": 7.4,
+      "relevance_score": 8.0,
+      "food_category": "other_dining",
+      "food_category_inferred": true,
+      "deal_type": "discovery",
+      "source": "Eatbook Singapore",
+      "source_detail": "Eatbook Singapore food deals - October 2026",
+      "source_type": "promotion_aggregator",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with the restaurant before booking",
+      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
+      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.1,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.1,
+      "observed_at": "2026-10-22T09:21:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-c6bb4df7f05e",
+      "category": "food",
+      "name": "We Tried A $28++ Pizza And Pasta Buffet By The World’s 13th Best Pizzeria",
+      "restaurant_name": "We Tried A $28++ Pizza And Pasta Buffet By The World’s 13th Best Pizzeria",
+      "location": "Singapore",
+      "description": "2. CLOVE: 50% off Korean buffet. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
+      "discount_percent": 50,
+      "quality_score": 7.4,
+      "relevance_score": 8.0,
+      "food_category": "korean",
+      "food_category_inferred": true,
+      "deal_type": "discovery",
+      "source": "Eatbook Singapore",
+      "source_detail": "Eatbook Singapore food deals - October 2026",
+      "source_type": "promotion_aggregator",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with the restaurant before booking",
+      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
+      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.1,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.1,
+      "observed_at": "2026-10-22T09:21:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-8b860781561f",
+      "category": "food",
+      "name": "KFC Has $25.95 One-Day Buffet At SCAPE: Unlimited Tenders, Bites And Sauces",
+      "restaurant_name": "KFC Has $25.95 One-Day Buffet At SCAPE: Unlimited Tenders, Bites And Sauces",
+      "location": "Singapore",
+      "description": "10. Cat & the Fiddle: 1-for-1 whole cheesecakes. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
+      "discount_percent": 50,
+      "quality_score": 7.4,
+      "relevance_score": 8.0,
+      "food_category": "other_dining",
+      "food_category_inferred": true,
+      "deal_type": "discovery",
+      "source": "Eatbook Singapore",
+      "source_detail": "Eatbook Singapore food deals - October 2026",
+      "source_type": "promotion_aggregator",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with the restaurant before booking",
+      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
+      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.1,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.1,
+      "observed_at": "2026-10-22T09:21:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-094ffbc38f44",
+      "category": "food",
+      "name": "Food By Themes Food Guides",
+      "restaurant_name": "Food By Themes Food Guides",
+      "location": "Singapore",
+      "description": "10 Best Food Deals In Oct 2026: 50% Off Korean Buffet, 1-For-1 Bubble Tea And More. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
+      "discount_percent": 50,
+      "quality_score": 7.4,
+      "relevance_score": 7.5,
+      "food_category": "korean",
+      "food_category_inferred": true,
+      "deal_type": "discovery",
+      "source": "Eatbook Singapore",
+      "source_detail": "Eatbook Singapore food deals - October 2026",
+      "source_type": "promotion_aggregator",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with the restaurant before booking",
+      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
+      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 84.3,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.2,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.5/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 84.3,
+      "observed_at": "2026-10-22T09:21:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-60aea5c5cd75",
+      "category": "food",
+      "name": "Cook & Brew @ The Westin Singapore",
+      "restaurant_name": "Cook & Brew @ The Westin Singapore",
+      "location": "The Westin Singapore",
+      "description": "Enjoy 30% off à la carte menu. Source: American Express Dining. Eligible American Express card required. Verify current dates, blackout periods and booking conditions before dining.",
+      "discount_percent": 30,
+      "quality_score": 8.8,
+      "relevance_score": 8.1,
+      "food_category": "hotel_dining",
+      "food_category_inferred": false,
+      "deal_type": "card_deal",
+      "source": "American Express Dining",
+      "source_detail": "Cook & Brew - American Express",
+      "source_type": "official_promotion_page",
+      "source_confidence": "verified",
+      "access_requirement": "Eligible American Express card required",
+      "reference_source": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/cook-and-brew/",
+      "url": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/cook-and-brew/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 72.3,
+        "scale_max": 100,
+        "band": "Worth a look",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 33.0,
+            "max_points": 55,
+            "detail": "30% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.1,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 72.3,
+      "observed_at": "2026-10-22T09:21:12+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-2eb0dbd90593",
+      "category": "food",
+      "name": "Estate",
+      "restaurant_name": "Estate",
+      "location": "Singapore",
+      "description": "Enjoy up to 25% savings on Estate buffets.. Source: American Express Dining. Eligible American Express card required. Verify current dates, blackout periods and booking conditions before dining.",
+      "discount_percent": 25,
+      "quality_score": 8.8,
+      "relevance_score": 7.3,
+      "food_category": "other_dining",
+      "food_category_inferred": true,
+      "deal_type": "card_deal",
+      "source": "American Express Dining",
+      "source_detail": "American Express Dining",
+      "source_type": "official_promotion_page",
+      "source_confidence": "verified",
+      "access_requirement": "Eligible American Express card required",
+      "reference_source": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/",
+      "url": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 65.7,
+        "scale_max": 100,
+        "band": "Moderate",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 27.5,
+            "max_points": 55,
+            "detail": "25% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 10.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 65.7,
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1773,623 +2387,7 @@
         ]
       },
       "deal_score": 91.8,
-      "observed_at": "2026-10-21T09:23:31+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-f5419dbcad9e",
-      "category": "food",
-      "name": "1. Vincenzo Capuano: $28++ pizza and pasta buffet",
-      "restaurant_name": "1. Vincenzo Capuano: $28++ pizza and pasta buffet",
-      "location": "Singapore",
-      "description": "2. CLOVE: 50% off Korean buffet. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 8.0,
-      "food_category": "korean",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - October 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.1,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.0/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.1,
-      "observed_at": "2026-10-21T09:23:31+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-9aa7fbc90588",
-      "category": "food",
-      "name": "9. KFC: $25.95 Gen B Buffet",
-      "restaurant_name": "9. KFC: $25.95 Gen B Buffet",
-      "location": "Singapore",
-      "description": "10. Cat & the Fiddle: 1-for-1 whole cheesecakes. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 8.0,
-      "food_category": "other_dining",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - October 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.1,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.0/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.1,
-      "observed_at": "2026-10-21T09:23:31+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-c6bb4df7f05e",
-      "category": "food",
-      "name": "We Tried A $28++ Pizza And Pasta Buffet By The World’s 13th Best Pizzeria",
-      "restaurant_name": "We Tried A $28++ Pizza And Pasta Buffet By The World’s 13th Best Pizzeria",
-      "location": "Singapore",
-      "description": "2. CLOVE: 50% off Korean buffet. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 8.0,
-      "food_category": "korean",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - October 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.1,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.0/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.1,
-      "observed_at": "2026-10-21T09:23:31+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-8b860781561f",
-      "category": "food",
-      "name": "KFC Has $25.95 One-Day Buffet At SCAPE: Unlimited Tenders, Bites And Sauces",
-      "restaurant_name": "KFC Has $25.95 One-Day Buffet At SCAPE: Unlimited Tenders, Bites And Sauces",
-      "location": "Singapore",
-      "description": "10. Cat & the Fiddle: 1-for-1 whole cheesecakes. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 8.0,
-      "food_category": "other_dining",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - October 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.1,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.0/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.1,
-      "observed_at": "2026-10-21T09:23:31+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-094ffbc38f44",
-      "category": "food",
-      "name": "Food By Themes Food Guides",
-      "restaurant_name": "Food By Themes Food Guides",
-      "location": "Singapore",
-      "description": "10 Best Food Deals In Oct 2026: 50% Off Korean Buffet, 1-For-1 Bubble Tea And More. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 7.5,
-      "food_category": "korean",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - October 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 84.3,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.2,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.5/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 84.3,
-      "observed_at": "2026-10-21T09:23:31+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-60aea5c5cd75",
-      "category": "food",
-      "name": "Cook & Brew @ The Westin Singapore",
-      "restaurant_name": "Cook & Brew @ The Westin Singapore",
-      "location": "The Westin Singapore",
-      "description": "Enjoy 30% off à la carte menu. Source: American Express Dining. Eligible American Express card required. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 30,
-      "quality_score": 8.8,
-      "relevance_score": 8.1,
-      "food_category": "hotel_dining",
-      "food_category_inferred": false,
-      "deal_type": "card_deal",
-      "source": "American Express Dining",
-      "source_detail": "Cook & Brew - American Express",
-      "source_type": "official_promotion_page",
-      "source_confidence": "verified",
-      "access_requirement": "Eligible American Express card required",
-      "reference_source": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/cook-and-brew/",
-      "url": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/cook-and-brew/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 72.3,
-        "scale_max": 100,
-        "band": "Worth a look",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 33.0,
-            "max_points": 55,
-            "detail": "30% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.2,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.8/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.1,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.1/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Verified official/direct source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 4.0,
-            "max_points": 5,
-            "detail": "Card-linked deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 72.3,
-      "observed_at": "2026-10-21T09:23:31+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-2eb0dbd90593",
-      "category": "food",
-      "name": "Estate",
-      "restaurant_name": "Estate",
-      "location": "Singapore",
-      "description": "Enjoy up to 25% savings on Estate buffets.. Source: American Express Dining. Eligible American Express card required. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 25,
-      "quality_score": 8.8,
-      "relevance_score": 7.3,
-      "food_category": "other_dining",
-      "food_category_inferred": true,
-      "deal_type": "card_deal",
-      "source": "American Express Dining",
-      "source_detail": "American Express Dining",
-      "source_type": "official_promotion_page",
-      "source_confidence": "verified",
-      "access_requirement": "Eligible American Express card required",
-      "reference_source": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/",
-      "url": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 65.7,
-        "scale_max": 100,
-        "band": "Moderate",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 27.5,
-            "max_points": 55,
-            "detail": "25% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.2,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.8/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 10.9,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.3/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Verified official/direct source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 4.0,
-            "max_points": 5,
-            "detail": "Card-linked deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 65.7,
-      "observed_at": "2026-10-21T09:23:31+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-eatigo-3981275fe2eb",
-      "category": "food",
-      "name": "Food Capital @ Grand Copthorne Waterfront Hotel — Dinner",
-      "restaurant_name": "Food Capital @ Grand Copthorne Waterfront Hotel",
-      "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.3/5. Best observed slot(s): 18:00, 18:30, 21:00. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 8.6,
-      "relevance_score": 8.4,
-      "rating": 4.3,
-      "reservation_count": 46500,
-      "meal_period": "dinner",
-      "food_category": "hotel_dining",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "18:00",
-        "18:30",
-        "21:00"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Dinner",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15504",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 91.5,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.9,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.4/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 91.5,
-      "observed_at": "2026-10-21T09:23:31+08:00",
+      "observed_at": "2026-10-22T09:21:12+08:00",
       "exclude_from_best": true
     }
   ]
