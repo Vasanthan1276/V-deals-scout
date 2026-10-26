@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T08:55:06+08:00",
+  "updated_at": "2026-10-26T09:03:16+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": false,
       "best_rank": 6
     },
@@ -298,7 +298,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -373,83 +373,9 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": false,
       "best_rank": 10
-    },
-    {
-      "id": "sale-live-87d69232a10f",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Challenger Singapore Stay-in Specials Sale – Up to 63% OFF Selected Tech and Home Essentials, $6 OFF $150, $12 OFF $300 and Free Delivery",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 63% savings. Listed as valid through 2026-10-25. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 63,
-      "quality_score": 8.2,
-      "relevance_score": 9.1,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/21-25-october-2026-challenger-singapore-stay-in-specials-sale-up-to-63-off-selected-tech-and-home-essentials-6-off-150-12-off-300-and-free-delivery/",
-      "valid_from": "2026-10-21",
-      "valid_until": "2026-10-25",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.9,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "63% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.1/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.9,
-      "observed_at": "2026-10-25T08:55:06+08:00",
-      "exclude_from_best": true
     },
     {
       "id": "sale-live-53aa1a2a3455",
@@ -522,7 +448,81 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-9a6bc186bcdf",
+      "category": "sale",
+      "subcategory": "outlet_clearance",
+      "name": "OSIM Great World Display Set Clearance Sale – Enjoy Up to 70% OFF Massage Chairs, Massage Sofas, Eye Massagers and Wellness Essentials at Great World",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-11-09. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 70,
+      "quality_score": 8.0,
+      "relevance_score": 8.2,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Happening Now",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/now-till-9-november-2026-osim-great-world-display-set-clearance-sale-enjoy-up-to-70-off-massage-chairs-massage-sofas-eye-massagers-and-wellness-essentials-at-great-world/",
+      "valid_from": null,
+      "valid_until": "2026-11-09",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 86.3,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.0/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 86.3,
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -596,81 +596,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-10-25T08:55:06+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-3573077693c5",
-      "category": "sale",
-      "subcategory": "travel_luggage",
-      "name": "Universal Traveller Singapore Winter Wear & Luggage Sale – Enjoy Up to 80% Off Winter Jackets, Down-Feather Jackets, Thermal Wear, Luggage and Travel Accessories at Suntec City Atrium Convention Centre",
-      "location": "Suntec City / Singapore",
-      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-10-25. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 80,
-      "quality_score": 7.2,
-      "relevance_score": 8.6,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/19-25-october-2026-universal-traveller-singapore-winter-wear-luggage-sale-enjoy-up-to-80-off-winter-jackets-down-feather-jackets-thermal-wear-luggage-and-travel-accessories/",
-      "valid_from": "2026-10-19",
-      "valid_until": "2026-10-25",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.7,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "80% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.9,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.6/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.7,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +670,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,7 +744,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,7 +818,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -966,7 +892,81 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-35b5e21a3444",
+      "category": "sale",
+      "subcategory": "outlet_clearance",
+      "name": "Nan Yang Dao Promotion – Enjoy 50% OFF Your Second Kaya Toast Set on Weekdays from 3pm to 6pm at Selected Outlets in Singapore",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-10-21 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 50,
+      "quality_score": 7.6,
+      "relevance_score": 8.0,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Happening Now",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/21-october-2026-onwards-nan-yang-dao-promotion-enjoy-50-off-your-second-kaya-toast-set-on-weekdays-from-3pm-to-6pm-at-selected-outlets-in-singapore/",
+      "valid_from": "2026-10-21",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.4,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.4,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.4,
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,7 +1040,7 @@
         ]
       },
       "deal_score": 68.1,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1114,7 +1114,7 @@
         ]
       },
       "deal_score": 63.5,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1188,7 +1188,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1260,7 +1260,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1406,7 +1406,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1478,7 +1478,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1550,7 +1550,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1622,7 +1622,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-25T08:55:06+08:00",
+      "observed_at": "2026-10-26T09:03:16+08:00",
       "exclude_from_best": true
     }
   ]
