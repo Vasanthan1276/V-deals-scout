@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T09:03:16+08:00",
+  "updated_at": "2026-10-27T09:52:50+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,159 +223,9 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": false,
       "best_rank": 6
-    },
-    {
-      "id": "sale-live-95b4457d5e88",
-      "category": "sale",
-      "subcategory": "sportswear_footwear",
-      "name": "FILA & ANTA Sale at Takashimaya Singapore – Up to 70% OFF Sportswear, Shoes and Apparel, Plus Extra Multi-Buy Discounts",
-      "location": "Takashimaya / Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-10-26. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 70,
-      "quality_score": 8.2,
-      "relevance_score": 9.1,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sportswear",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/14-26-october-2026-fila-anta-sale-at-takashimaya-singapore-up-to-70-off-sportswear-shoes-and-apparel-plus-extra-multi-buy-discounts/",
-      "valid_from": "2026-10-14",
-      "valid_until": "2026-10-26",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.9,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.1/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.9,
-      "observed_at": "2026-10-26T09:03:16+08:00",
-      "exclude_from_best": false,
-      "best_rank": 9
-    },
-    {
-      "id": "sale-live-94a3b4fad57a",
-      "category": "sale",
-      "subcategory": "sportswear_footwear",
-      "name": "Takashimaya Department Store: Fila and Anta Fair in Singapore – Enjoy Up to 70% Off Sportswear, Footwear and More at Talking Hall, B1",
-      "location": "Takashimaya / Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-10-26. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 70,
-      "quality_score": 8.2,
-      "relevance_score": 9.1,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Fashion Accessories",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/now-till-26-october-2026-takashimaya-department-store-fila-and-anta-fair-in-singapore-enjoy-up-to-70-off-sportswear-footwear-and-more-at-talking-hall-b1/",
-      "valid_from": null,
-      "valid_until": "2026-10-26",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.9,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.1/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.9,
-      "observed_at": "2026-10-26T09:03:16+08:00",
-      "exclude_from_best": false,
-      "best_rank": 10
     },
     {
       "id": "sale-live-53aa1a2a3455",
@@ -448,156 +298,9 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-10-26T09:03:16+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-9a6bc186bcdf",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "OSIM Great World Display Set Clearance Sale – Enjoy Up to 70% OFF Massage Chairs, Massage Sofas, Eye Massagers and Wellness Essentials at Great World",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-11-09. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 70,
-      "quality_score": 8.0,
-      "relevance_score": 8.2,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Happening Now",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/now-till-9-november-2026-osim-great-world-display-set-clearance-sale-enjoy-up-to-70-off-massage-chairs-massage-sofas-eye-massagers-and-wellness-essentials-at-great-world/",
-      "valid_from": null,
-      "valid_until": "2026-11-09",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 86.3,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.0/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 86.3,
-      "observed_at": "2026-10-26T09:03:16+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-f381e5093ba2",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "Watsons Singapore GNC Clearance Sale – Buy 2 Get 50% OFF, Buy 3 Get 60% OFF Selected Supplements Plus Extra S$100 OFF on S$1,000 Spend",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-12-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 60,
-      "quality_score": 8.0,
-      "relevance_score": 8.2,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Happening Now",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/16-october-31-december-2026-watsons-singapore-gnc-clearance-sale-buy-2-get-50-off-buy-3-get-60-off-selected-supplements-plus-extra-s100-off-on-s1000-spend/",
-      "valid_from": "2026-10-16",
-      "valid_until": "2026-12-31",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 86.3,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "60% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.0/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 86.3,
-      "observed_at": "2026-10-26T09:03:16+08:00",
-      "exclude_from_best": true
+      "observed_at": "2026-10-27T09:52:50+08:00",
+      "exclude_from_best": false,
+      "best_rank": 9
     },
     {
       "id": "sale-live-db12101ec01b",
@@ -670,7 +373,156 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
+      "exclude_from_best": false,
+      "best_rank": 10
+    },
+    {
+      "id": "sale-live-c79f4a122cc5",
+      "category": "sale",
+      "subcategory": "travel_luggage",
+      "name": "Suntec City Hottest Luggage Fair Singapore – Up to 70% OFF Luggage, Backpacks and Travel Essentials",
+      "location": "Suntec City / Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-11-08. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 70,
+      "quality_score": 7.2,
+      "relevance_score": 8.6,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/now-till-8-november-2026-suntec-city-hottest-luggage-fair-singapore-up-to-70-off-luggage-backpacks-and-travel-essentials/",
+      "valid_from": null,
+      "valid_until": "2026-11-08",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.7,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.7,
+      "observed_at": "2026-10-27T09:52:50+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-54af3cb7c862",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "Audio House Singapore 6th Anniversary Sale – Extra 12% Off Storewide, 60% eCashback, Appliance Discounts and Grocery Vouchers at Ubi",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-04. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 60,
+      "quality_score": 7.2,
+      "relevance_score": 8.6,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/23-october-4-november-2026-audio-house-singapore-6th-anniversary-sale-extra-12-off-storewide-60-ecashback-appliance-discounts-and-grocery-vouchers-at-ubi/",
+      "valid_from": "2026-10-23",
+      "valid_until": "2026-11-04",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.7,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "60% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.7,
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,7 +596,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -818,7 +670,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,26 +744,26 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-35b5e21a3444",
+      "id": "sale-live-c1210390b0a6",
       "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "Nan Yang Dao Promotion – Enjoy 50% OFF Your Second Kaya Toast Set on Weekdays from 3pm to 6pm at Selected Outlets in Singapore",
+      "subcategory": "fashion_clearance",
+      "name": "Zenyum Singapore All Bundles Promotion – Enjoy 35% Off Electric Toothbrushes, Water Flossers, Toothpaste and Smile Care Essentials",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-10-21 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 50,
-      "quality_score": 7.6,
-      "relevance_score": 8.0,
+      "description": "Discovery listing advertising up to 35% savings. Listed as valid through 2026-10-29. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 35,
+      "quality_score": 8.2,
+      "relevance_score": 7.5,
       "source": "EverydayOnSales Singapore",
       "source_detail": "EverydayOnSales - Happening Now",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/21-october-2026-onwards-nan-yang-dao-promotion-enjoy-50-off-your-second-kaya-toast-set-on-weekdays-from-3pm-to-6pm-at-selected-outlets-in-singapore/",
-      "valid_from": "2026-10-21",
-      "valid_until": null,
+      "url": "https://sg.everydayonsales.com/23-29-october-2026-zenyum-singapore-all-bundles-promotion-enjoy-35-off-electric-toothbrushes-water-flossers-toothpaste-and-smile-care-essentials/",
+      "valid_from": "2026-10-23",
+      "valid_until": "2026-10-29",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -921,30 +773,30 @@
       "access_requirement": "Verify directly with retailer",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 85.4,
+        "total": 69.0,
         "scale_max": 100,
-        "band": "Strong",
+        "band": "Moderate",
         "components": [
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 38.5,
             "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+            "detail": "35% advertised saving; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 11.4,
+            "points": 12.3,
             "max_points": 15,
-            "detail": "Scanner quality estimate 7.6/10"
+            "detail": "Scanner quality estimate 8.2/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 12.0,
+            "points": 11.2,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.0/10"
+            "detail": "Scanner relevance estimate 7.5/10"
           },
           {
             "key": "confidence",
@@ -965,8 +817,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 85.4,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "deal_score": 69.0,
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,7 +892,7 @@
         ]
       },
       "deal_score": 68.1,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1114,7 +966,7 @@
         ]
       },
       "deal_score": 63.5,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1188,7 +1040,81 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-349a6dcae0c4",
+      "category": "sale",
+      "subcategory": "travel_luggage",
+      "name": "Singapore Airlines KrisFlyer Spontaneous Escapes – 30% Off Award Flights to Bali from 5,600 Miles and London from 30,800 Miles",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 30% savings. Listed as valid through 2026-10-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 30,
+      "quality_score": 7.2,
+      "relevance_score": 7.8,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/now-till-31-october-2026-singapore-airlines-krisflyer-spontaneous-escapes-30-off-award-flights-to-bali-from-5600-miles-and-london-from-30800-miles/",
+      "valid_from": null,
+      "valid_until": "2026-10-31",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 62.5,
+        "scale_max": 100,
+        "band": "Moderate",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 33.0,
+            "max_points": 55,
+            "detail": "30% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.7,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.8/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 62.5,
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1260,7 +1186,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1260,81 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-111b035fa0b6",
+      "category": "sale",
+      "subcategory": "travel_luggage",
+      "name": "Pan Pacific Singapore: Up to 25% Off Dining Experiences for Pan Pacific DISCOVERY Members – Exclusive Dining Promotion",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 25% savings. Listed from 2026-10-16 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 25,
+      "quality_score": 7.2,
+      "relevance_score": 7.8,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/16-october-2026-onwards-pan-pacific-singapore-up-to-25-off-dining-experiences-for-pan-pacific-discovery-members-exclusive-dining-promotion/",
+      "valid_from": "2026-10-16",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 57.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 27.5,
+            "max_points": 55,
+            "detail": "25% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.7,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.8/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 57.0,
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1406,7 +1406,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1478,7 +1478,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1550,7 +1550,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1622,7 +1622,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-26T09:03:16+08:00",
+      "observed_at": "2026-10-27T09:52:50+08:00",
       "exclude_from_best": true
     }
   ]
