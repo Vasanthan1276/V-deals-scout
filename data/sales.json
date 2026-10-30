@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T10:14:09+08:00",
+  "updated_at": "2026-10-30T10:27:50+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,9 +223,8 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-10-29T10:14:09+08:00",
-      "exclude_from_best": false,
-      "best_rank": 6
+      "observed_at": "2026-10-30T10:27:50+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-53aa1a2a3455",
@@ -298,15 +297,90 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
+      "exclude_from_best": false,
+      "best_rank": 8
+    },
+    {
+      "id": "sale-live-b296b55414d6",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "Mayer Singapore Biggest Warehouse Home Sale 2026 – Up to 85% OFF Appliances, Daily Deals from $9 at Bedok Town Square",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 85% savings. Listed as valid through 2026-11-01. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 85,
+      "quality_score": 7.2,
+      "relevance_score": 8.6,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/30-october-1-november-2026-mayer-singapore-biggest-warehouse-home-sale-2026-up-to-85-off-appliances-daily-deals-from-9-at-bedok-town-square/",
+      "valid_from": "2026-10-30",
+      "valid_until": "2026-11-01",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.7,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "85% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.7,
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
     {
-      "id": "sale-live-db12101ec01b",
+      "id": "sale-live-3a7fb00b0c0d",
       "category": "sale",
       "subcategory": "travel_luggage",
-      "name": "Metro Singapore Great Getaway Sale – Up to 80% OFF Luggage, Travel Accessories and K/Woods Fashion at Paragon",
+      "name": "METRO Singapore Great Getaway Sale – Up to 80% Off Luggage, Suitcases from $59 and Exclusive Delsey Paris Bag Deal",
       "location": "Singapore",
       "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-11-16. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
       "discount_percent": 80,
@@ -316,8 +390,8 @@
       "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/19-october-16-november-2026-metro-singapore-great-getaway-sale-up-to-80-off-luggage-travel-accessories-and-k-woods-fashion-at-paragon/",
-      "valid_from": "2026-10-19",
+      "url": "https://sg.everydayonsales.com/29-october-16-november-2026-metro-singapore-great-getaway-sale-up-to-80-off-luggage-suitcases-from-59-and-exclusive-delsey-paris-bag-deal/",
+      "valid_from": "2026-10-29",
       "valid_until": "2026-11-16",
       "verification_required": true,
       "is_demo": false,
@@ -373,9 +447,8 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-29T10:14:09+08:00",
-      "exclude_from_best": false,
-      "best_rank": 10
+      "observed_at": "2026-10-30T10:27:50+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-c79f4a122cc5",
@@ -448,7 +521,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -522,7 +595,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -596,7 +669,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -670,7 +743,81 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-d0107ce814aa",
+      "category": "sale",
+      "subcategory": "travel_luggage",
+      "name": "Universal Studios Singapore 1-for-1 Adult Ticket Promotion, Plus Child Tickets at $59 Each for SAFRA Members – Ticket Prices, Booking Link and Venue Details",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-12-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 50,
+      "quality_score": 7.2,
+      "relevance_score": 8.4,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/now-till-31-december-2026-universal-studios-singapore-1-for-1-adult-ticket-promotion-plus-child-tickets-at-59-each-for-safra-members-ticket-prices-booking-link-and-venue-details/",
+      "valid_from": null,
+      "valid_until": "2026-12-31",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.4,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.4,
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -744,8 +891,157 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-809345ad3160",
+      "category": "sale",
+      "subcategory": "outlet_clearance",
+      "name": "La Pizzaiola 50% Off Second Dish Promotion & 1-for-1 Pizza or Pasta Lunch Deals at 3 Singapore Outlets",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-10-28 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 50,
+      "quality_score": 7.6,
+      "relevance_score": 8.0,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Happening Now",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/28-october-2026-onwards-la-pizzaiola-50-off-second-dish-promotion-1-for-1-pizza-or-pasta-lunch-deals-at-3-singapore-outlets/",
+      "valid_from": "2026-10-28",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.4,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.4,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.4,
+      "observed_at": "2026-10-30T10:27:50+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-8012b92db4bf",
+      "category": "sale",
+      "subcategory": "sportswear_footwear",
+      "name": "Nike Singapore Sale",
+      "location": "Online / Singapore",
+      "description": "Official promotion: Selected Nike sale items up to 40% off. Direct brand sale; selected styles, sizes and stock availability apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "discount_percent": 40,
+      "quality_score": 8.7,
+      "relevance_score": 8.6,
+      "source": "Nike Singapore",
+      "source_detail": "Nike Singapore Sale",
+      "source_type": "official_promotion_page",
+      "reference_source": "https://www.nike.com/sg/w/sale-3yaepz5k5r2z6fvtl",
+      "source_confidence": "verified",
+      "deal_type": "direct_brand",
+      "access_requirement": "Direct brand sale; selected styles, sizes and stock availability apply",
+      "url": "https://www.nike.com/sg/w/sale-3yaepz5k5r2z6fvtl",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "valid_from": null,
+      "valid_until": null,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.0,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 44.0,
+            "max_points": 55,
+            "detail": "40% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.0,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.7/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Direct brand"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.0,
+      "observed_at": "2026-10-30T10:27:50+08:00",
+      "exclude_from_best": false,
+      "best_rank": 10
     },
     {
       "id": "sale-live-76a31c725de0",
@@ -818,7 +1114,7 @@
         ]
       },
       "deal_score": 73.5,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -892,81 +1188,7 @@
         ]
       },
       "deal_score": 68.1,
-      "observed_at": "2026-10-29T10:14:09+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-c2a7d9c5ec7e",
-      "category": "sale",
-      "subcategory": "fashion_clearance",
-      "name": "Timberland Singapore: Birthday Month Promotion with Up to 30% Off for Green and Gold Members",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 30% savings. Listed as valid through 2026-12-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 30,
-      "quality_score": 8.2,
-      "relevance_score": 7.5,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Fashion Accessories",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/now-till-31-december-2026-timberland-singapore-birthday-month-promotion-with-up-to-30-off-for-green-and-gold-members/",
-      "valid_from": null,
-      "valid_until": "2026-12-31",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 63.5,
-        "scale_max": 100,
-        "band": "Moderate",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 33.0,
-            "max_points": 55,
-            "detail": "30% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.2,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.5/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 63.5,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1040,155 +1262,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-10-29T10:14:09+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-349a6dcae0c4",
-      "category": "sale",
-      "subcategory": "travel_luggage",
-      "name": "Singapore Airlines KrisFlyer Spontaneous Escapes – 30% Off Award Flights to Bali from 5,600 Miles and London from 30,800 Miles",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 30% savings. Listed as valid through 2026-10-31. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 30,
-      "quality_score": 7.2,
-      "relevance_score": 7.8,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/now-till-31-october-2026-singapore-airlines-krisflyer-spontaneous-escapes-30-off-award-flights-to-bali-from-5600-miles-and-london-from-30800-miles/",
-      "valid_from": null,
-      "valid_until": "2026-10-31",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 62.5,
-        "scale_max": 100,
-        "band": "Moderate",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 33.0,
-            "max_points": 55,
-            "detail": "30% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.7,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.8/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 62.5,
-      "observed_at": "2026-10-29T10:14:09+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-2f50efbf6d5f",
-      "category": "sale",
-      "subcategory": "travel_luggage",
-      "name": "MUJI Singapore Limited-Time Sale – Apparel from $14.90, Fleece Wear, 30% Off Towels & Suitcase Deals",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 30% savings. Listed as valid through 2026-11-01. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 30,
-      "quality_score": 7.2,
-      "relevance_score": 7.8,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Fashion Accessories",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/23-october-1-november-2026-muji-singapore-limited-time-sale-apparel-from-14-90-fleece-wear-30-off-towels-suitcase-deals/",
-      "valid_from": "2026-10-23",
-      "valid_until": "2026-11-01",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 62.5,
-        "scale_max": 100,
-        "band": "Moderate",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 33.0,
-            "max_points": 55,
-            "detail": "30% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.7,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.8/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 62.5,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1260,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1406,7 +1480,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1478,7 +1552,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1550,7 +1624,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1622,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-29T10:14:09+08:00",
+      "observed_at": "2026-10-30T10:27:50+08:00",
       "exclude_from_best": true
     }
   ]
