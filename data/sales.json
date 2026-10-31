@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T10:27:50+08:00",
+  "updated_at": "2026-10-31T10:07:13+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,8 +223,158 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-744e687e04eb",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "COURTS PlayStation 11.11 Power Deals, Up to 74% OFF Selected Controllers, Games & Gaming Accessories in Singapore",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 74% savings. Listed as valid through 2026-11-12. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 74,
+      "quality_score": 8.2,
+      "relevance_score": 9.1,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/30-october-12-november-2026-courts-playstation-11-11-power-deals-up-to-74-off-selected-controllers-games-gaming-accessories-in-singapore/",
+      "valid_from": "2026-10-30",
+      "valid_until": "2026-11-12",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "74% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.9,
+      "observed_at": "2026-10-31T10:07:13+08:00",
+      "exclude_from_best": false,
+      "best_rank": 8
+    },
+    {
+      "id": "sale-live-00f04ada4654",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "Audio House Singapore Hub 6th Anniversary Sale – Enjoy 12% Storewide Discount, 60% eCashback, Kris+ Miles & Up to $500 Grocery Vouchers on LG and Samsung Smart TVs",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-04. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 60,
+      "quality_score": 8.2,
+      "relevance_score": 9.1,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/23-october-4-november-2026-audio-house-singapore-hub-6th-anniversary-sale-enjoy-12-storewide-discount-60-ecashback-kris-miles-up-to-500-grocery-vouchers-on-lg-and-samsung/",
+      "valid_from": "2026-10-23",
+      "valid_until": "2026-11-04",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "60% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.9,
+      "observed_at": "2026-10-31T10:07:13+08:00",
+      "exclude_from_best": false,
+      "best_rank": 9
     },
     {
       "id": "sale-live-53aa1a2a3455",
@@ -297,9 +447,8 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-10-30T10:27:50+08:00",
-      "exclude_from_best": false,
-      "best_rank": 8
+      "observed_at": "2026-10-31T10:07:13+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-b296b55414d6",
@@ -372,9 +521,8 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-30T10:27:50+08:00",
-      "exclude_from_best": false,
-      "best_rank": 9
+      "observed_at": "2026-10-31T10:07:13+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-3a7fb00b0c0d",
@@ -447,7 +595,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -521,7 +669,81 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-07ab9193d5eb",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "Audio House Singapore 6th Anniversary Sale – Extra 12% Off Storewide, 60% eCashback, Up to $500 Grocery Vouchers & Exclusive Home Appliance Deals at Ubi",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-04. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 60,
+      "quality_score": 7.2,
+      "relevance_score": 8.6,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/23-october-4-november-2026-audio-house-singapore-6th-anniversary-sale-extra-12-off-storewide-60-ecashback-up-to-500-grocery-vouchers-exclusive-home-appliance-deals-at-ubi/",
+      "valid_from": "2026-10-23",
+      "valid_until": "2026-11-04",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.7,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "60% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.7,
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -595,7 +817,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -669,7 +891,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -743,7 +965,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -817,7 +1039,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -891,81 +1113,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-10-30T10:27:50+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-809345ad3160",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "La Pizzaiola 50% Off Second Dish Promotion & 1-for-1 Pizza or Pasta Lunch Deals at 3 Singapore Outlets",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-10-28 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 50,
-      "quality_score": 7.6,
-      "relevance_score": 8.0,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Happening Now",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/28-october-2026-onwards-la-pizzaiola-50-off-second-dish-promotion-1-for-1-pizza-or-pasta-lunch-deals-at-3-singapore-outlets/",
-      "valid_from": "2026-10-28",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.4,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.4,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.0/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.4,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -1039,157 +1187,9 @@
         ]
       },
       "deal_score": 85.0,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": false,
       "best_rank": 10
-    },
-    {
-      "id": "sale-live-76a31c725de0",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Challenger Singapore Spooky Good Notebook Promotion – Up to 38% OFF, 2% Cashback, Free Gifts Worth $145 and Exclusive Software Deals Online",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 38% savings. Listed as valid through 2026-10-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 38,
-      "quality_score": 8.2,
-      "relevance_score": 8.3,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/23-30-october-2026-challenger-singapore-spooky-good-notebook-promotion-up-to-38-off-2-cashback-free-gifts-worth-145-and-exclusive-software-deals-online/",
-      "valid_from": "2026-10-23",
-      "valid_until": "2026-10-30",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 73.5,
-        "scale_max": 100,
-        "band": "Worth a look",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 41.8,
-            "max_points": 55,
-            "detail": "38% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.5,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.3/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 73.5,
-      "observed_at": "2026-10-30T10:27:50+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-86c8b4e07001",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Challenger Singapore Valore Tech Promotion – 2.5K QHD Security Cameras from $49.90 and PD45W Fast-Charging Power Banks from $69.90, Up to 33% Off",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 33% savings. Listed from 2026-10-19 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 33,
-      "quality_score": 8.2,
-      "relevance_score": 8.3,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/19-october-2026-onwards-challenger-singapore-valore-tech-promotion-2-5k-qhd-security-cameras-from-49-90-and-pd45w-fast-charging-power-banks-from-69-90-up-to-33-off/",
-      "valid_from": "2026-10-19",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 68.1,
-        "scale_max": 100,
-        "band": "Moderate",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 36.3,
-            "max_points": 55,
-            "detail": "33% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.5,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.3/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 68.1,
-      "observed_at": "2026-10-30T10:27:50+08:00",
-      "exclude_from_best": true
     },
     {
       "id": "sale-live-eddda977c16a",
@@ -1262,7 +1262,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -1480,7 +1480,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -1552,7 +1552,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -1624,7 +1624,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-30T10:27:50+08:00",
+      "observed_at": "2026-10-31T10:07:13+08:00",
       "exclude_from_best": true
     }
   ]
