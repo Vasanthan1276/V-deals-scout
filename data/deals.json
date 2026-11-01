@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-31T10:07:13+08:00",
-  "nonhotel_updated_at": "2026-10-31T10:07:13+08:00",
+  "updated_at": "2026-11-01T09:58:33+08:00",
+  "nonhotel_updated_at": "2026-11-01T09:58:33+08:00",
   "refresh_scope": "full",
   "source_updated_at": {
-    "hotels": "2026-10-31T10:07:13+08:00",
-    "food": "2026-10-31T10:07:13+08:00",
-    "sales": "2026-10-31T10:07:13+08:00"
+    "hotels": "2026-11-01T09:58:33+08:00",
+    "food": "2026-11-01T09:58:33+08:00",
+    "sales": "2026-11-01T09:58:33+08:00"
   },
   "demo_mode": false,
   "status": {
@@ -18,13 +18,13 @@
     "hotel_results": 93,
     "food_results": 30,
     "sales_results": 24,
-    "food_source_types": 4,
+    "food_source_types": 3,
     "sales_source_types": 5,
     "indian_food_deals": 6,
     "live_promos": 54,
     "history_ready": 81,
     "peer_comparison": 9,
-    "best_deals": 13,
+    "best_deals": 12,
     "best_deal_limit": 14
   },
   "items": [
@@ -102,7 +102,7 @@
         ]
       },
       "deal_score": 98.0,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": false,
       "best_rank": 1
     },
@@ -177,7 +177,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -252,7 +252,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -329,7 +329,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -406,7 +406,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": false,
       "best_rank": 5
     },
@@ -481,7 +481,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -557,7 +557,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -633,7 +633,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -709,7 +709,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -785,258 +785,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-10-31T10:06:45+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-eatigo-a8ccf1dd3c42",
-      "category": "food",
-      "name": "Edge @ Pan Pacific Singapore — Lunch",
-      "restaurant_name": "Edge @ Pan Pacific Singapore",
-      "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 14:00, 14:30. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 9.6,
-      "relevance_score": 8.7,
-      "rating": 4.8,
-      "reservation_count": 5000,
-      "meal_period": "lunch",
-      "food_category": "hotel_dining",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "14:00",
-        "14:30"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Lunch",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15505",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 93.5,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 14.4,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 9.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.7/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 93.5,
-      "observed_at": "2026-10-31T10:06:45+08:00",
-      "exclude_from_best": false,
-      "best_rank": 6
-    },
-    {
-      "id": "food-eatigo-9526739666b0",
-      "category": "food",
-      "name": "Mosella @ Pan Pacific Orchard Singapore — Lunch",
-      "restaurant_name": "Mosella @ Pan Pacific Orchard Singapore",
-      "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 12:30, 13:30. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 9.6,
-      "relevance_score": 8.7,
-      "rating": 4.8,
-      "reservation_count": 8600,
-      "meal_period": "lunch",
-      "food_category": "hotel_dining",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "12:30",
-        "13:30"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Lunch",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15505",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 93.5,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 14.4,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 9.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.7/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 93.5,
-      "observed_at": "2026-10-31T10:06:45+08:00",
-      "exclude_from_best": false,
-      "best_rank": 7
-    },
-    {
-      "id": "food-eatigo-34830c52a6d7",
-      "category": "food",
-      "name": "Luce, Frasers House, a Luxury Collection Hotel Singapore — Lunch",
-      "restaurant_name": "Luce, Frasers House, a Luxury Collection Hotel Singapore",
-      "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 13:30, 14:00. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 9.6,
-      "relevance_score": 8.7,
-      "rating": 4.8,
-      "reservation_count": 4300,
-      "meal_period": "lunch",
-      "food_category": "hotel_dining",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "13:30",
-        "14:00"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Lunch",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15505",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 93.5,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 14.4,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 9.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.7/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 93.5,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -1118,179 +867,9 @@
         ]
       },
       "deal_score": 93.1,
-      "observed_at": "2026-10-31T10:06:45+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-eatigo-3213d074d350",
-      "category": "food",
-      "name": "Greenhouse @ Dusit Thani Laguna Singapore — Lunch",
-      "restaurant_name": "Greenhouse @ Dusit Thani Laguna Singapore",
-      "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 12:00, 12:30, 13:00, 13:30. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 9.2,
-      "relevance_score": 8.7,
-      "rating": 4.6,
-      "reservation_count": 10300,
-      "meal_period": "lunch",
-      "food_category": "hotel_dining",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "12:00",
-        "12:30",
-        "13:00",
-        "13:30"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Lunch",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15505",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 92.8,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 9.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.7/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 92.8,
-      "observed_at": "2026-10-31T10:06:45+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-eatigo-aed3dc7564ba",
-      "category": "food",
-      "name": "PALETTE @ Hotel Royal Queens Singapore — Lunch",
-      "restaurant_name": "PALETTE @ Hotel Royal Queens Singapore",
-      "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 12:00, 12:30, 13:00, 13:30. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 9.2,
-      "relevance_score": 8.7,
-      "rating": 4.6,
-      "reservation_count": 419,
-      "meal_period": "lunch",
-      "food_category": "hotel_dining",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "12:00",
-        "12:30",
-        "13:00",
-        "13:30",
-        "14:00"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Lunch",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15505",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 92.8,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 9.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.7/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 92.8,
-      "observed_at": "2026-10-31T10:06:45+08:00",
-      "exclude_from_best": true
+      "observed_at": "2026-11-01T09:58:09+08:00",
+      "exclude_from_best": false,
+      "best_rank": 6
     },
     {
       "id": "food-eatigo-160eb6d788fa",
@@ -1298,18 +877,19 @@
       "name": "WIKEDO Self-service Grilled Fish Hot Pot @ Dhoby Ghaut — Dinner",
       "restaurant_name": "WIKEDO Self-service Grilled Fish Hot Pot @ Dhoby Ghaut",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 17:30, 18:30, 20:00, 20:30. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 17:30, 18:30, 19:00, 20:00. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.6,
       "relevance_score": 8.2,
       "rating": 4.8,
-      "reservation_count": 4000,
+      "reservation_count": 4100,
       "meal_period": "dinner",
       "food_category": "chinese_hotpot",
       "food_category_inferred": true,
       "best_discount_times": [
         "17:30",
         "18:30",
+        "19:00",
         "20:00",
         "20:30"
       ],
@@ -1374,23 +954,24 @@
         ]
       },
       "deal_score": 92.7,
-      "observed_at": "2026-10-31T10:06:45+08:00",
-      "exclude_from_best": true
+      "observed_at": "2026-11-01T09:58:09+08:00",
+      "exclude_from_best": false,
+      "best_rank": 7
     },
     {
-      "id": "food-eatigo-e0f95b329d1c",
+      "id": "food-eatigo-e5b4a86e3da9",
       "category": "food",
-      "name": "Maharani Table @ Boat Quay — Dinner",
-      "restaurant_name": "Maharani Table @ Boat Quay",
+      "name": "Q-WA Bar & Yakitori @ Boat Quay — Dinner",
+      "restaurant_name": "Q-WA Bar & Yakitori @ Boat Quay",
       "location": "Singapore",
       "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 17:30, 18:00, 18:30, 19:00. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.6,
       "relevance_score": 8.2,
       "rating": 4.8,
-      "reservation_count": 672,
+      "reservation_count": 1900,
       "meal_period": "dinner",
-      "food_category": "other_dining",
+      "food_category": "japanese",
       "food_category_inferred": true,
       "best_discount_times": [
         "17:30",
@@ -1463,7 +1044,90 @@
         ]
       },
       "deal_score": 92.7,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-edb49e90a3c3",
+      "category": "food",
+      "name": "Town Restaurant @ The Fullerton Hotel Singapore — Lunch",
+      "restaurant_name": "Town Restaurant @ The Fullerton Hotel Singapore",
+      "location": "Singapore",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 13:00, 13:30. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 9.0,
+      "relevance_score": 8.7,
+      "rating": 4.5,
+      "reservation_count": 19500,
+      "meal_period": "lunch",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "13:00",
+        "13:30"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Lunch",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15505",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 92.5,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.5,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.0/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.7/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 92.5,
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -1545,7 +1209,92 @@
         ]
       },
       "deal_score": 91.8,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-ab41e8d02f16",
+      "category": "food",
+      "name": "J65 @ JEN Singapore Tanglin by Shangri-La — Dinner",
+      "restaurant_name": "J65 @ JEN Singapore Tanglin by Shangri-La",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.4/5. Best observed slot(s): 19:30, 20:00, 20:30, 21:00. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 8.8,
+      "relevance_score": 8.4,
+      "rating": 4.4,
+      "reservation_count": 22500,
+      "meal_period": "dinner",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "19:30",
+        "20:00",
+        "20:30",
+        "21:00"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.8,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 91.8,
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -1554,7 +1303,7 @@
       "name": "Seorae Korean Charcoal BBQ @ NEX — Lunch",
       "restaurant_name": "Seorae Korean Charcoal BBQ @ NEX",
       "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 11:30, 12:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 11:30, 12:30, 13:00, 14:00. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.0,
       "relevance_score": 8.2,
@@ -1565,7 +1314,10 @@
       "food_category_inferred": true,
       "best_discount_times": [
         "11:30",
-        "12:00"
+        "12:30",
+        "13:00",
+        "14:00",
+        "14:30"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
@@ -1628,25 +1380,195 @@
         ]
       },
       "deal_score": 91.8,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "food-eatigo-9b465131eac7",
+      "id": "food-eatigo-b21ae6d67eb6",
       "category": "food",
-      "name": "Crossroads Buffet @ Singapore Marriott Tang Plaza Hotel — Dinner",
-      "restaurant_name": "Crossroads Buffet @ Singapore Marriott Tang Plaza Hotel",
+      "name": "Sun's Cafe @ Hotel Grand Pacific — Lunch",
+      "restaurant_name": "Sun's Cafe @ Hotel Grand Pacific",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.3/5. Best observed slot(s): 20:30. Verify the live slot and conditions before booking.",
+      "description": "Up to 55% off lunch time slots on Eatigo. Rating 4.3/5. Best observed slot(s): 13:00, 13:30. Verify the live slot and conditions before booking.",
+      "discount_percent": 55,
+      "quality_score": 8.6,
+      "relevance_score": 8.4,
+      "rating": 4.3,
+      "reservation_count": 15900,
+      "meal_period": "lunch",
+      "food_category": "cafe_casual",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "13:00",
+        "13:30"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Lunch",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15505",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.5,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "55% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 91.5,
+      "observed_at": "2026-11-01T09:58:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-3981275fe2eb",
+      "category": "food",
+      "name": "Food Capital @ Grand Copthorne Waterfront Hotel — Dinner",
+      "restaurant_name": "Food Capital @ Grand Copthorne Waterfront Hotel",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.3/5. Best observed slot(s): 18:00, 18:30, 19:00, 20:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 8.6,
       "relevance_score": 8.4,
       "rating": 4.3,
-      "reservation_count": 46200,
+      "reservation_count": 47300,
       "meal_period": "dinner",
       "food_category": "hotel_dining",
       "food_category_inferred": true,
       "best_discount_times": [
+        "18:00",
+        "18:30",
+        "19:00",
+        "20:30",
+        "21:00"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.5,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 91.5,
+      "observed_at": "2026-11-01T09:58:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-713b10ccfe75",
+      "category": "food",
+      "name": "Princess Terrace @ Copthorne Kings Hotel — Dinner",
+      "restaurant_name": "Princess Terrace @ Copthorne Kings Hotel",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.3/5. Best observed slot(s): 20:00, 20:30. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 8.6,
+      "relevance_score": 8.4,
+      "rating": 4.3,
+      "reservation_count": 10700,
+      "meal_period": "dinner",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "20:00",
         "20:30"
       ],
       "deal_type": "app_deal",
@@ -1710,7 +1632,526 @@
         ]
       },
       "deal_score": 91.5,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-e445902f86a2",
+      "category": "food",
+      "name": "Crossroads Buffet @ Singapore Marriott Tang Plaza Hotel — Lunch",
+      "restaurant_name": "Crossroads Buffet @ Singapore Marriott Tang Plaza Hotel",
+      "location": "Singapore",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.3/5. Best observed slot(s): 13:00, 13:30. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 8.6,
+      "relevance_score": 8.4,
+      "rating": 4.3,
+      "reservation_count": 46200,
+      "meal_period": "lunch",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "13:00",
+        "13:30"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Lunch",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15505",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.5,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 91.5,
+      "observed_at": "2026-11-01T09:58:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-68cec427d533",
+      "category": "food",
+      "name": "The Orchard Cafe @ Orchard Hotel — Lunch",
+      "restaurant_name": "The Orchard Cafe @ Orchard Hotel",
+      "location": "Singapore",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.3/5. Best observed slot(s): 12:00, 12:30, 13:00. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 8.6,
+      "relevance_score": 8.4,
+      "rating": 4.3,
+      "reservation_count": 20900,
+      "meal_period": "lunch",
+      "food_category": "cafe_casual",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "12:00",
+        "12:30",
+        "13:00"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Lunch",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15505",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.5,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 91.5,
+      "observed_at": "2026-11-01T09:58:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-96ca3f74bf5e",
+      "category": "food",
+      "name": "Element @ Amara Singapore — Dinner",
+      "restaurant_name": "Element @ Amara Singapore",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.4/5. Best observed slot(s): 18:30, 19:00, 19:30, 20:00. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 8.8,
+      "relevance_score": 7.9,
+      "rating": 4.4,
+      "reservation_count": 11300,
+      "meal_period": "dinner",
+      "food_category": "other_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "18:30",
+        "19:00",
+        "19:30",
+        "20:00",
+        "20:30"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.1,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.9/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 91.1,
+      "observed_at": "2026-11-01T09:58:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-4d0594f403f7",
+      "category": "food",
+      "name": "Pica Pica Spanish Tapas Bar @ Iskandar Puteri — Dinner",
+      "restaurant_name": "Pica Pica Spanish Tapas Bar @ Iskandar Puteri",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.4/5. Best observed slot(s): 17:30, 18:00, 18:30, 19:00. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 8.8,
+      "relevance_score": 7.9,
+      "rating": 4.4,
+      "reservation_count": 322,
+      "meal_period": "dinner",
+      "food_category": "western_international",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "17:30",
+        "18:00",
+        "18:30",
+        "19:00",
+        "19:30",
+        "20:00",
+        "20:30",
+        "21:00"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.1,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.9/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 91.1,
+      "observed_at": "2026-11-01T09:58:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-e0f95b329d1c",
+      "category": "food",
+      "name": "Maharani Table @ Boat Quay — Dinner",
+      "restaurant_name": "Maharani Table @ Boat Quay",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.4/5. Best observed slot(s): 17:30, 18:00, 18:30, 19:00. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 8.8,
+      "relevance_score": 7.9,
+      "rating": 4.4,
+      "reservation_count": 674,
+      "meal_period": "dinner",
+      "food_category": "other_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "17:30",
+        "18:00",
+        "18:30",
+        "19:00",
+        "19:30",
+        "20:00",
+        "20:30",
+        "21:00"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 91.1,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.9/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 91.1,
+      "observed_at": "2026-11-01T09:58:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-75a429030c02",
+      "category": "food",
+      "name": "Tabbouleh Lebanese Restaurant @ Bussorah Street — Dinner",
+      "restaurant_name": "Tabbouleh Lebanese Restaurant @ Bussorah Street",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.3/5. Best observed slot(s): 17:30, 18:00, 18:30, 19:00. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 8.6,
+      "relevance_score": 7.9,
+      "rating": 4.3,
+      "reservation_count": 3300,
+      "meal_period": "dinner",
+      "food_category": "other_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "17:30",
+        "18:00",
+        "18:30",
+        "19:00",
+        "19:30",
+        "20:00",
+        "20:30"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 90.8,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.9/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 90.8,
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -1784,7 +2225,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": false,
       "best_rank": 8
     },
@@ -1859,7 +2300,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -1934,7 +2375,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -2008,7 +2449,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -2082,7 +2523,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -2156,7 +2597,81 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-1c0d3550dbdd",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "Audio House Singapore Hub 6th Anniversary Sale – 12% Storewide Discount, 60% eCashback, Up to $500 Grocery Vouchers & More at Ubi Road 4, 12.30pm–9pm Daily",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-04. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 60,
+      "quality_score": 7.2,
+      "relevance_score": 8.6,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/now-till-4-november-2026-audio-house-singapore-hub-6th-anniversary-sale-12-storewide-discount-60-ecashback-up-to-500-grocery-vouchers-more-at-ubi-road-4-12-30pm-9pm-daily/",
+      "valid_from": null,
+      "valid_until": "2026-11-04",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.7,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "60% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.7,
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -2230,7 +2745,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -2304,7 +2819,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -2378,81 +2893,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-10-31T10:07:13+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-1d91bcae870e",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Audio House Singapore 6th Anniversary Sale – Extra 12% Off Storewide, 60% eCashback, Up to $500 TV Savings and More | 12.30pm–9pm at Audio House Hub, Ubi",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-04. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 60,
-      "quality_score": 7.2,
-      "relevance_score": 8.6,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/23-october-4-november-2026-audio-house-singapore-6th-anniversary-sale-extra-12-off-storewide-60-ecashback-up-to-500-tv-savings-and-more-12-30pm-9pm-at-audio-house-hub/",
-      "valid_from": "2026-10-23",
-      "valid_until": "2026-11-04",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.7,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "60% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.9,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.6/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.7,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -2526,16 +2967,16 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-36f4b06f2e0b",
+      "id": "sale-live-34072547bed6",
       "category": "sale",
-      "subcategory": "sportswear_footwear",
-      "name": "JD Sports: Mid-Season Sale Promotion with Up to 50% OFF on Selected Styles Across Singapore",
+      "subcategory": "electronics",
+      "name": "YISHION Compass One Promotion – Get 50% OFF Any Keychain or Phone Chain With Every Regular-Priced Bag Purchase",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-09-18 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-10-31 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
       "discount_percent": 50,
       "quality_score": 7.2,
       "relevance_score": 8.4,
@@ -2543,8 +2984,8 @@
       "source_detail": "EverydayOnSales - Fashion Accessories",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/18-september-2026-onwards-jd-sports-mid-season-sale-promotion-with-up-to-50-off-on-selected-styles-across-singapore/",
-      "valid_from": "2026-09-18",
+      "url": "https://sg.everydayonsales.com/31-october-2026-onwards-yishion-compass-one-promotion-get-50-off-any-keychain-or-phone-chain-with-every-regular-priced-bag-purchase/",
+      "valid_from": "2026-10-31",
       "valid_until": null,
       "verification_required": true,
       "is_demo": false,
@@ -2600,311 +3041,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-10-31T10:07:13+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-f5419dbcad9e",
-      "category": "food",
-      "name": "1. Vincenzo Capuano: $28++ pizza and pasta buffet",
-      "restaurant_name": "1. Vincenzo Capuano: $28++ pizza and pasta buffet",
-      "location": "Singapore",
-      "description": "2. CLOVE: 50% off Korean buffet. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 8.0,
-      "food_category": "korean",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - October 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.1,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.0/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.1,
-      "observed_at": "2026-10-31T10:06:45+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-9aa7fbc90588",
-      "category": "food",
-      "name": "9. KFC: $25.95 Gen B Buffet",
-      "restaurant_name": "9. KFC: $25.95 Gen B Buffet",
-      "location": "Singapore",
-      "description": "10. Cat & the Fiddle: 1-for-1 whole cheesecakes. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 8.0,
-      "food_category": "other_dining",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - October 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.1,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.0/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.1,
-      "observed_at": "2026-10-31T10:06:45+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-c6bb4df7f05e",
-      "category": "food",
-      "name": "We Tried A $28++ Pizza And Pasta Buffet By The World’s 13th Best Pizzeria",
-      "restaurant_name": "We Tried A $28++ Pizza And Pasta Buffet By The World’s 13th Best Pizzeria",
-      "location": "Singapore",
-      "description": "2. CLOVE: 50% off Korean buffet. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 8.0,
-      "food_category": "korean",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - October 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.1,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.0/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.1,
-      "observed_at": "2026-10-31T10:06:45+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-8b860781561f",
-      "category": "food",
-      "name": "KFC Has $25.95 One-Day Buffet At SCAPE: Unlimited Tenders, Bites And Sauces",
-      "restaurant_name": "KFC Has $25.95 One-Day Buffet At SCAPE: Unlimited Tenders, Bites And Sauces",
-      "location": "Singapore",
-      "description": "10. Cat & the Fiddle: 1-for-1 whole cheesecakes. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 8.0,
-      "food_category": "other_dining",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - October 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.1,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.0/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.1,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -2978,210 +3115,9 @@
         ]
       },
       "deal_score": 85.0,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": false,
       "best_rank": 10
-    },
-    {
-      "id": "food-multi-094ffbc38f44",
-      "category": "food",
-      "name": "Food By Themes Food Guides",
-      "restaurant_name": "Food By Themes Food Guides",
-      "location": "Singapore",
-      "description": "10 Best Food Deals In Oct 2026: 50% Off Korean Buffet, 1-For-1 Bubble Tea And More. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 7.5,
-      "food_category": "korean",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - October 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-october-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 84.3,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.2,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.5/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 84.3,
-      "observed_at": "2026-10-31T10:06:45+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "hotelbeds-552121-2026-12-25",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 552121,
-      "name": "137 Pillars Residences Bangkok",
-      "destination": "Bangkok",
-      "destination_code": "BKK",
-      "check_in": "2026-12-25",
-      "check_out": "2026-12-28",
-      "nights": 3,
-      "stars": 5,
-      "current_price": 167.1,
-      "total_price": 501.3,
-      "currency": "SGD",
-      "room_name": "THE PILLARS EXECUTIVE STUDIO RESIDENCES",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:24+08:00",
-      "history_observations": 1,
-      "historical_median": 167.1,
-      "peer_median": 358.43,
-      "reference_source": "same-date peer comparison",
-      "score_basis": "peer_comparison",
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 51.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.0,
-            "max_points": 40,
-            "detail": "0.0% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 76.0,
-      "exclude_from_best": false,
-      "best_rank": 11
-    },
-    {
-      "id": "idea-regional-01",
-      "category": "idea",
-      "name": "Bangkok getaway",
-      "description": "3-night stay at 137 Pillars Residences Bangkok",
-      "deal_score": 76.0,
-      "estimated_cost": 501.3,
-      "currency": "SGD",
-      "why": "Highest-scoring regional hotel opportunity in the current scan.",
-      "score_basis": "peer_comparison",
-      "reference_source": "same-date peer comparison",
-      "is_demo": false,
-      "is_evaluation": true,
-      "exclude_from_best": false,
-      "best_rank": 12
     },
     {
       "id": "food-multi-60aea5c5cd75",
@@ -3256,7 +3192,7 @@
         ]
       },
       "deal_score": 72.3,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -3291,8 +3227,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:24+08:00",
-      "history_observations": 1,
+      "observed_at": "2026-11-01T09:57:49+08:00",
+      "history_observations": 2,
       "historical_median": 182.13,
       "peer_median": 283.34,
       "reference_source": "same-date peer comparison",
@@ -3366,7 +3302,23 @@
       },
       "deal_score": 72.0,
       "exclude_from_best": false,
-      "best_rank": 13
+      "best_rank": 11
+    },
+    {
+      "id": "idea-regional-01",
+      "category": "idea",
+      "name": "Bali getaway",
+      "description": "3-night stay at Adiwana Resort Jembawan",
+      "deal_score": 72.0,
+      "estimated_cost": 546.39,
+      "currency": "SGD",
+      "why": "Highest-scoring regional hotel opportunity in the current scan.",
+      "score_basis": "peer_comparison",
+      "reference_source": "same-date peer comparison",
+      "is_demo": false,
+      "is_evaluation": true,
+      "exclude_from_best": false,
+      "best_rank": 12
     },
     {
       "id": "hotelbeds-745684-2026-12-26",
@@ -3400,10 +3352,118 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:14+08:00",
-      "history_observations": 0,
+      "observed_at": "2026-11-01T09:57:38+08:00",
+      "history_observations": 1,
       "historical_median": 145.28,
       "peer_median": 378.76,
+      "reference_source": "same-date peer comparison",
+      "score_basis": "peer_comparison",
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 42.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 0.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 1.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 67.0,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-552121-2026-12-25",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 552121,
+      "name": "137 Pillars Residences Bangkok",
+      "destination": "Bangkok",
+      "destination_code": "BKK",
+      "check_in": "2026-12-25",
+      "check_out": "2026-12-28",
+      "nights": 3,
+      "stars": 5,
+      "current_price": 183.11,
+      "total_price": 549.34,
+      "currency": "SGD",
+      "room_name": "THE PILLARS EXECUTIVE STUDIO RESIDENCES",
+      "board_name": "ROOM ONLY",
+      "breakfast": false,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": false,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-11-01T09:57:49+08:00",
+      "history_observations": 2,
+      "historical_median": 183.11,
+      "peer_median": 358.43,
       "reference_source": "same-date peer comparison",
       "score_basis": "peer_comparison",
       "score_breakdown": {
@@ -3549,7 +3609,7 @@
         ]
       },
       "deal_score": 65.7,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -3626,7 +3686,7 @@
         ]
       },
       "deal_score": 64.3,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -3661,8 +3721,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:24+08:00",
-      "history_observations": 8,
+      "observed_at": "2026-11-01T09:57:49+08:00",
+      "history_observations": 9,
       "historical_median": 260.84,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -3811,7 +3871,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -3888,7 +3948,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -3965,7 +4025,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-10-31T10:06:45+08:00",
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -4039,7 +4099,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -4111,7 +4171,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -4185,7 +4245,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -4220,8 +4280,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:23+08:00",
-      "history_observations": 15,
+      "observed_at": "2026-11-01T09:57:48+08:00",
+      "history_observations": 16,
       "historical_median": 260.84,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -4365,7 +4425,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -4400,8 +4460,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:10+08:00",
-      "history_observations": 35,
+      "observed_at": "2026-11-01T09:57:35+08:00",
+      "history_observations": 36,
       "historical_median": 154.41,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -4508,8 +4568,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:10+08:00",
-      "history_observations": 42,
+      "observed_at": "2026-11-01T09:57:34+08:00",
+      "history_observations": 43,
       "historical_median": 161.43,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -4585,114 +4645,6 @@
       "exclude_from_best": true
     },
     {
-      "id": "hotelbeds-552121-2026-12-18",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 552121,
-      "name": "137 Pillars Residences Bangkok",
-      "destination": "Bangkok",
-      "destination_code": "BKK",
-      "check_in": "2026-12-18",
-      "check_out": "2026-12-21",
-      "nights": 3,
-      "stars": 5,
-      "current_price": 136.92,
-      "total_price": 410.76,
-      "currency": "SGD",
-      "room_name": "THE PILLARS EXECUTIVE STUDIO RESIDENCES",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:24+08:00",
-      "history_observations": 8,
-      "historical_median": 139.77,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 311.7,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 53.3,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 2.3,
-            "max_points": 40,
-            "detail": "2.0% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 53.3,
-      "exclude_from_best": true
-    },
-    {
       "id": "hotelbeds-745684-2026-12-05",
       "category": "hotel",
       "sub_category": "staycation",
@@ -4724,8 +4676,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:12+08:00",
-      "history_observations": 21,
+      "observed_at": "2026-11-01T09:57:36+08:00",
+      "history_observations": 22,
       "historical_median": 157.92,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -4869,7 +4821,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -4941,7 +4893,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -5013,7 +4965,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-31T10:07:13+08:00",
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -5087,223 +5039,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-10-31T10:07:13+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "hotelbeds-552121-2026-11-13",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 552121,
-      "name": "137 Pillars Residences Bangkok",
-      "destination": "Bangkok",
-      "destination_code": "BKK",
-      "check_in": "2026-11-13",
-      "check_out": "2026-11-16",
-      "nights": 3,
-      "stars": 5,
-      "current_price": 153.7,
-      "total_price": 461.1,
-      "currency": "SGD",
-      "room_name": "THE PILLARS EXECUTIVE STUDIO RESIDENCES",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:20+08:00",
-      "history_observations": 43,
-      "historical_median": 155.3,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 337.8,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 52.2,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 1.2,
-            "max_points": 40,
-            "detail": "1.0% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 52.2,
-      "exclude_from_best": true
-    },
-    {
-      "id": "hotelbeds-552121-2026-11-20",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 552121,
-      "name": "137 Pillars Residences Bangkok",
-      "destination": "Bangkok",
-      "destination_code": "BKK",
-      "check_in": "2026-11-20",
-      "check_out": "2026-11-23",
-      "nights": 3,
-      "stars": 5,
-      "current_price": 153.7,
-      "total_price": 461.1,
-      "currency": "SGD",
-      "room_name": "THE PILLARS EXECUTIVE STUDIO RESIDENCES",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:21+08:00",
-      "history_observations": 36,
-      "historical_median": 155.3,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 369.03,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 52.2,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 1.2,
-            "max_points": 40,
-            "detail": "1.0% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 52.2,
+      "observed_at": "2026-11-01T09:58:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -5338,8 +5074,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:09+08:00",
-      "history_observations": 49,
+      "observed_at": "2026-11-01T09:57:33+08:00",
+      "history_observations": 50,
       "historical_median": 332.24,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -5488,115 +5224,7 @@
         ]
       },
       "deal_score": 52.0,
-      "observed_at": "2026-10-31T10:06:45+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "hotelbeds-552121-2026-11-27",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 552121,
-      "name": "137 Pillars Residences Bangkok",
-      "destination": "Bangkok",
-      "destination_code": "BKK",
-      "check_in": "2026-11-27",
-      "check_out": "2026-11-30",
-      "nights": 3,
-      "stars": 5,
-      "current_price": 152.13,
-      "total_price": 456.39,
-      "currency": "SGD",
-      "room_name": "THE PILLARS EXECUTIVE STUDIO RESIDENCES",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:22+08:00",
-      "history_observations": 29,
-      "historical_median": 139.77,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 370.08,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 51.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.0,
-            "max_points": 40,
-            "detail": "0.0% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 51.0,
+      "observed_at": "2026-11-01T09:58:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -5631,8 +5259,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:15+08:00",
-      "history_observations": 43,
+      "observed_at": "2026-11-01T09:57:40+08:00",
+      "history_observations": 44,
       "historical_median": 242.28,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -5739,8 +5367,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:16+08:00",
-      "history_observations": 36,
+      "observed_at": "2026-11-01T09:57:40+08:00",
+      "history_observations": 37,
       "historical_median": 242.28,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -5847,8 +5475,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:16+08:00",
-      "history_observations": 29,
+      "observed_at": "2026-11-01T09:57:41+08:00",
+      "history_observations": 30,
       "historical_median": 242.28,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -5955,8 +5583,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:20+08:00",
-      "history_observations": 43,
+      "observed_at": "2026-11-01T09:57:45+08:00",
+      "history_observations": 44,
       "historical_median": 252.74,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -6063,8 +5691,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:21+08:00",
-      "history_observations": 36,
+      "observed_at": "2026-11-01T09:57:46+08:00",
+      "history_observations": 37,
       "historical_median": 239.34,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -6171,8 +5799,8 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:22+08:00",
-      "history_observations": 29,
+      "observed_at": "2026-11-01T09:57:47+08:00",
+      "history_observations": 30,
       "historical_median": 239.34,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
@@ -6279,12 +5907,444 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-10-31T10:06:22+08:00",
-      "history_observations": 22,
+      "observed_at": "2026-11-01T09:57:47+08:00",
+      "history_observations": 23,
       "historical_median": 239.34,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 175.74,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 51.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 51.0,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-623303-2026-12-04",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 623303,
+      "name": "Banyan Tree Kuala Lumpur",
+      "destination": "Kuala Lumpur",
+      "destination_code": "KUL",
+      "check_in": "2026-12-04",
+      "check_out": "2026-12-06",
+      "nights": 2,
+      "stars": 5,
+      "current_price": 267.99,
+      "total_price": 535.98,
+      "currency": "SGD",
+      "room_name": "Signature Banyan Retreat",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-11-01T09:57:42+08:00",
+      "history_observations": 23,
+      "historical_median": 259.7,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": null,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 51.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 51.0,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-636394-2026-12-25",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 636394,
+      "name": "The Apurva Kempinski Bali",
+      "destination": "Bali",
+      "destination_code": "BAI",
+      "check_in": "2026-12-25",
+      "check_out": "2026-12-28",
+      "nights": 3,
+      "stars": 5,
+      "current_price": 384.55,
+      "total_price": 1153.65,
+      "currency": "SGD",
+      "room_name": "Double or Twin DELUXE RESORT VIEW",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-11-01T09:57:49+08:00",
+      "history_observations": 2,
+      "historical_median": 384.55,
+      "peer_median": 283.34,
+      "reference_source": "same-date peer comparison",
+      "score_basis": "peer_comparison",
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 51.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 51.0,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-133164-2026-11-06",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 133164,
+      "name": "Siam Kempinski Hotel Bangkok",
+      "destination": "Bangkok",
+      "destination_code": "BKK",
+      "check_in": "2026-11-06",
+      "check_out": "2026-11-09",
+      "nights": 3,
+      "stars": 5,
+      "current_price": 390.65,
+      "total_price": 1171.95,
+      "currency": "SGD",
+      "room_name": "PREMIER ROOM",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-11-01T09:57:44+08:00",
+      "history_observations": 51,
+      "historical_median": 390.65,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": 371.14,
+      "score_breakdown": {
+        "model": "hotel_v1",
+        "total": 51.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        ]
+      },
+      "deal_score": 51.0,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-133164-2026-11-13",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 133164,
+      "name": "Siam Kempinski Hotel Bangkok",
+      "destination": "Bangkok",
+      "destination_code": "BKK",
+      "check_in": "2026-11-13",
+      "check_out": "2026-11-16",
+      "nights": 3,
+      "stars": 5,
+      "current_price": 390.65,
+      "total_price": 1171.95,
+      "currency": "SGD",
+      "room_name": "PREMIER ROOM",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-11-01T09:57:45+08:00",
+      "history_observations": 44,
+      "historical_median": 390.65,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": 337.8,
       "score_breakdown": {
         "model": "hotel_v1",
         "total": 51.0,
