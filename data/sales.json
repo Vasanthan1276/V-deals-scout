@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T11:52:35+08:00",
+  "updated_at": "2026-11-04T10:57:12+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -297,7 +297,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": false,
       "best_rank": 8
     },
@@ -372,7 +372,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -447,7 +447,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -521,7 +521,7 @@
         ]
       },
       "deal_score": 86.0,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -595,7 +595,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -669,7 +669,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -743,7 +743,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -817,7 +817,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -891,7 +891,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -965,7 +965,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1039,81 +1039,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-11-03T11:52:35+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-fcb73d9854fe",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "Sushi Express & Sushi Plus 1-for-1 Sushi Promotion – Daily Sushi Deals from $2++ at All Singapore Outlets",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-11-23. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 50,
-      "quality_score": 7.6,
-      "relevance_score": 8.0,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Happening Now",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/1-23-november-2026-sushi-express-sushi-plus-1-for-1-sushi-promotion-daily-sushi-deals-from-2-at-all-singapore-outlets/",
-      "valid_from": "2026-11-01",
-      "valid_until": "2026-11-23",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.4,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.4,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.0/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.4,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1187,9 +1113,83 @@
         ]
       },
       "deal_score": 85.0,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": false,
       "best_rank": 10
+    },
+    {
+      "id": "sale-live-d5454ade9eb9",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "Challenger Singapore Tech Power Up Sale – Enjoy Up to 43% Off Gadgets, Computing Essentials & Tech Accessories at Causeway Point Atrium",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 43% savings. Listed as valid through 2026-11-08. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 43,
+      "quality_score": 8.2,
+      "relevance_score": 8.6,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/2-8-november-2026-challenger-singapore-tech-power-up-sale-enjoy-up-to-43-off-gadgets-computing-essentials-tech-accessories-at-causeway-point-atrium/",
+      "valid_from": "2026-11-02",
+      "valid_until": "2026-11-08",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 79.5,
+        "scale_max": 100,
+        "band": "Worth a look",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 47.3,
+            "max_points": 55,
+            "detail": "43% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 79.5,
+      "observed_at": "2026-11-04T10:57:12+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-eddda977c16a",
@@ -1262,7 +1262,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1480,7 +1480,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1552,7 +1552,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1624,7 +1624,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-11-03T11:52:35+08:00",
+      "observed_at": "2026-11-04T10:57:12+08:00",
       "exclude_from_best": true
     }
   ]
