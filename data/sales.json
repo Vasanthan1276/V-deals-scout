@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T11:17:20+08:00",
+  "updated_at": "2026-11-07T10:37:07+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,7 +223,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -297,7 +297,7 @@
         ]
       },
       "deal_score": 89.8,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": false,
       "best_rank": 8
     },
@@ -372,7 +372,7 @@
         ]
       },
       "deal_score": 89.2,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -447,7 +447,81 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-afac5bcdeb1b",
+      "category": "sale",
+      "subcategory": "sportswear_footwear",
+      "name": "Vogue & Sports Sale Singapore – Up to 70% OFF Nike, adidas, ASICS, HOKA, Brooks, New Balance & More at Takashimaya Square, Basement 2",
+      "location": "Takashimaya / Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 70,
+      "quality_score": 8.2,
+      "relevance_score": 9.1,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sportswear",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/28-october-15-november-2026-vogue-sports-sale-singapore-up-to-70-off-nike-adidas-asics-hoka-brooks-new-balance-more-at-takashimaya-square-basement-2/",
+      "valid_from": "2026-10-28",
+      "valid_until": "2026-11-15",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.9,
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -521,7 +595,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -595,7 +669,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -669,7 +743,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -743,7 +817,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -817,7 +891,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -891,7 +965,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -965,7 +1039,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1039,81 +1113,7 @@
         ]
       },
       "deal_score": 87.5,
-      "observed_at": "2026-11-06T11:17:20+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-9111f4e5e0a1",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "BHG Warehouse Sale at HomeTeamNS Khatib – Enjoy Up to 80% Off Meyer, Horgen, Goldlion, Home Essentials, Fashion & More, Plus Free Gifts and Exclusive Member Deals from 10am to 8pm",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-11-09. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 80,
-      "quality_score": 8.0,
-      "relevance_score": 8.2,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/6-9-november-2026-bhg-warehouse-sale-at-hometeamns-khatib-enjoy-up-to-80-off-meyer-horgen-goldlion-home-essentials-fashion-more-plus-free-gifts-and-exclusive-member-deals-from-10/",
-      "valid_from": "2026-11-06",
-      "valid_until": "2026-11-09",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 86.3,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "80% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.0,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.0/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 86.3,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1187,7 +1187,7 @@
         ]
       },
       "deal_score": 85.0,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": false,
       "best_rank": 10
     },
@@ -1262,7 +1262,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1408,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1480,7 +1480,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1552,7 +1552,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1624,7 +1624,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1770,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-11-06T11:17:20+08:00",
+      "observed_at": "2026-11-07T10:37:07+08:00",
       "exclude_from_best": true
     }
   ]
