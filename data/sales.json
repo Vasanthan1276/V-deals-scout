@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T10:36:31+08:00",
+  "updated_at": "2026-11-12T11:40:33+08:00",
   "mode": "live",
   "items": [
     {
@@ -73,7 +73,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -148,7 +148,7 @@
         ]
       },
       "deal_score": 97.9,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -223,25 +223,26 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-11-11T10:36:31+08:00",
-      "exclude_from_best": true
+      "observed_at": "2026-11-12T11:40:33+08:00",
+      "exclude_from_best": false,
+      "best_rank": 6
     },
     {
-      "id": "sale-live-abda56373f28",
+      "id": "sale-live-48cc2d7ac4dd",
       "category": "sale",
       "subcategory": "electronics",
-      "name": "Challenger Singapore 11.11 Deals Fest – Up to 72% Off Electronics, 11% Online Discounts, $11 Deals & Free Delivery",
+      "name": "COURTS Tech Sale at Causeway Point – Enjoy Up to 80% Off Hitachi, LG, Philips TVs & Home Appliances",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 72% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 72,
+      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 80,
       "quality_score": 8.2,
       "relevance_score": 9.1,
       "source": "EverydayOnSales Singapore",
       "source_detail": "EverydayOnSales - Computers & Electronics",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/4-15-november-2026-challenger-singapore-11-11-deals-fest-up-to-72-off-electronics-11-online-discounts-11-deals-free-delivery/",
-      "valid_from": "2026-11-04",
+      "url": "https://sg.everydayonsales.com/12-15-november-2026-courts-tech-sale-at-causeway-point-enjoy-up-to-80-off-hitachi-lg-philips-tvs-home-appliances/",
+      "valid_from": "2026-11-12",
       "valid_until": "2026-11-15",
       "verification_required": true,
       "is_demo": false,
@@ -261,7 +262,7 @@
             "label": "Discount strength",
             "points": 55.0,
             "max_points": 55,
-            "detail": "72% advertised saving; 50%+ earns the full 55 points"
+            "detail": "80% advertised saving; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -297,9 +298,9 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": false,
-      "best_rank": 8
+      "best_rank": 9
     },
     {
       "id": "sale-live-afac5bcdeb1b",
@@ -372,9 +373,9 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": false,
-      "best_rank": 9
+      "best_rank": 10
     },
     {
       "id": "sale-live-f633f63cb6fb",
@@ -447,174 +448,26 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-2df246234301",
-      "category": "sale",
-      "subcategory": "sportswear_footwear",
-      "name": "Crocs Singapore 11.11 Sale 2026 – Up to 60% OFF Selected Shoes, Jibbitz™ Charms From S$1.11 & Footwear From S$35.95 | Online & In-Store Deals",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-11. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 60,
-      "quality_score": 8.2,
-      "relevance_score": 9.1,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Happening Now",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/11-november-2026-crocs-singapore-11-11-sale-2026-up-to-60-off-selected-shoes-jibbitz-charms-from-s1-11-footwear-from-s35-95-online-in-store-deals/",
-      "valid_from": "2026-11-11",
-      "valid_until": "2026-11-11",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.9,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "60% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.1/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.9,
-      "observed_at": "2026-11-11T10:36:31+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-9405b7a9f965",
+      "id": "sale-live-876d6f498476",
       "category": "sale",
       "subcategory": "electronics",
-      "name": "Challenger Singapore – Cygnett November Tech Accessories Promotion with Up to 55% Off Apple Watch Bands, Charging Cables, iPad Cases & Travel Essentials at All Stores",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 55% savings. Listed from 2026-11-03 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 55,
+      "name": "Takashimaya Department Store Gadgets Galore Sale – Enjoy Up to 50% OFF JBL, Sony, JisuLife & More at Talking Hall, B1",
+      "location": "Takashimaya / Singapore",
+      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-11-22. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 50,
       "quality_score": 8.2,
       "relevance_score": 8.9,
       "source": "EverydayOnSales Singapore",
       "source_detail": "EverydayOnSales - Computers & Electronics",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/3-november-2026-onwards-challenger-singapore-cygnett-november-tech-accessories-promotion-with-up-to-55-off-apple-watch-bands-charging-cables-ipad-cases-travel-essentials-at-all-stor/",
-      "valid_from": "2026-11-03",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.6,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "55% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.9/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.6,
-      "observed_at": "2026-11-11T10:36:31+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-641dfb2ed646",
-      "category": "sale",
-      "subcategory": "sportswear_footwear",
-      "name": "Nike Singapore 11.11 Sale 2026 – Up to 50% OFF Selected Sneakers & Sportswear + Extra 20% OFF with GAMEON Promo Code Online",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-11-11. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 50,
-      "quality_score": 8.2,
-      "relevance_score": 8.9,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sportswear",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/7-11-november-2026-nike-singapore-11-11-sale-2026-up-to-50-off-selected-sneakers-sportswear-extra-20-off-with-gameon-promo-code-online/",
-      "valid_from": "2026-11-07",
-      "valid_until": "2026-11-11",
+      "url": "https://sg.everydayonsales.com/now-till-22-november-2026-takashimaya-department-store-gadgets-galore-sale-enjoy-up-to-50-off-jbl-sony-jisulife-more-at-talking-hall-b1/",
+      "valid_from": null,
+      "valid_until": "2026-11-22",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -669,81 +522,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-11T10:36:31+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-de045076fd31",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "COURTS x XPENG Exclusive Deals Singapore – Enjoy Up to 50% OFF Home & Car Essentials at COURTS Stores",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-11-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 50,
-      "quality_score": 8.2,
-      "relevance_score": 8.9,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/1-30-november-2026-courts-x-xpeng-exclusive-deals-singapore-enjoy-up-to-50-off-home-car-essentials-at-courts-stores/",
-      "valid_from": "2026-11-01",
-      "valid_until": "2026-11-30",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 87.6,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.9/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 87.6,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -817,7 +596,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -891,14 +670,14 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-491f7be3d6da",
+      "id": "sale-live-8f6834a1cac8",
       "category": "sale",
       "subcategory": "outlet_clearance",
-      "name": "Four Star Singapore Warehouse Clearance Sale – Up to 90% OFF Mattresses, Sofas, Bedding & Linen at Boon Leat Terrace, Plus TikTok LIVE Deals",
+      "name": "Four Star Mattress Warehouse Display Set Clearance Sale – Up to 90% Off Mattresses, Bedframes, Sofas & Bedding",
       "location": "Singapore",
       "description": "Discovery listing advertising up to 90% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
       "discount_percent": 90,
@@ -908,7 +687,7 @@
       "source_detail": "EverydayOnSales - Happening Now",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/11-15-november-2026-four-star-singapore-warehouse-clearance-sale-up-to-90-off-mattresses-sofas-bedding-linen-at-boon-leat-terrace-plus-tiktok-live-deals/",
+      "url": "https://sg.everydayonsales.com/11-15-november-2026-four-star-mattress-warehouse-display-set-clearance-sale-up-to-90-off-mattresses-bedframes-sofas-bedding/",
       "valid_from": "2026-11-11",
       "valid_until": "2026-11-15",
       "verification_required": true,
@@ -965,7 +744,7 @@
         ]
       },
       "deal_score": 86.3,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -1039,26 +818,100 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-78d2913da354",
+      "id": "sale-live-529ea7e9b8b7",
       "category": "sale",
-      "subcategory": "travel_luggage",
-      "name": "HL Assurance Travel Insurance Promotion – Enjoy Up to 60% OFF Single Trip Plans, 50% OFF Annual Plans, FREE eSIM Data and Airport Lounge Access in Singapore",
+      "subcategory": "electronics",
+      "name": "Mayer & Mistral Lazada 11.11 Biggest Sale – Up to 80% Off, $50 Vouchers & Extra Discounts When You Buy More",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-11-13. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 80,
+      "quality_score": 7.2,
+      "relevance_score": 8.6,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/10-13-november-2026-mayer-mistral-lazada-11-11-biggest-sale-up-to-80-off-50-vouchers-extra-discounts-when-you-buy-more/",
+      "valid_from": "2026-11-10",
+      "valid_until": "2026-11-13",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.7,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.7,
+      "observed_at": "2026-11-12T11:40:33+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-182036948272",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "POPULAR Bookstore Singapore 11.11 Online Sale – Up to 60% Off Books, Stationery, Gadgets & More, Free Shipping and Free Collapsible Mug with S$120 Spend",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-16. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
       "discount_percent": 60,
       "quality_score": 7.2,
       "relevance_score": 8.6,
       "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/now-till-30-november-2026-hl-assurance-travel-insurance-promotion-enjoy-up-to-60-off-single-trip-plans-50-off-annual-plans-free-esim-data-and-airport-lounge-access-in-singapore/",
-      "valid_from": null,
-      "valid_until": "2026-11-30",
+      "url": "https://sg.everydayonsales.com/11-16-november-2026-popular-bookstore-singapore-11-11-online-sale-up-to-60-off-books-stationery-gadgets-more-free-shipping-and-free-collapsible-mug-with-s120-spend/",
+      "valid_from": "2026-11-11",
+      "valid_until": "2026-11-16",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -1113,83 +966,156 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-8012b92db4bf",
+      "id": "sale-live-2794a2a9d925",
       "category": "sale",
-      "subcategory": "sportswear_footwear",
-      "name": "Nike Singapore Sale",
-      "location": "Online / Singapore",
-      "description": "Official promotion: Selected Nike sale items up to 40% off. Direct brand sale; selected styles, sizes and stock availability apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
-      "discount_percent": 40,
-      "quality_score": 8.7,
-      "relevance_score": 8.6,
-      "source": "Nike Singapore",
-      "source_detail": "Nike Singapore Sale",
-      "source_type": "official_promotion_page",
-      "reference_source": "https://www.nike.com/sg/w/sale-3yaepz5k5r2z6fvtl",
-      "source_confidence": "verified",
-      "deal_type": "direct_brand",
-      "access_requirement": "Direct brand sale; selected styles, sizes and stock availability apply",
-      "url": "https://www.nike.com/sg/w/sale-3yaepz5k5r2z6fvtl",
+      "subcategory": "travel_luggage",
+      "name": "Pelago PelaGO Day 2026 Flash Sale – 1-for-1 Singapore Oceanarium Tickets at S$35 & Universal Studios Singapore Tickets from S$45 Per Person",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-11-12. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 50,
+      "quality_score": 7.2,
+      "relevance_score": 8.4,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Sports, Leisure & Travel",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/10-12-november-2026-pelago-pelago-day-2026-flash-sale-1-for-1-singapore-oceanarium-tickets-at-s35-universal-studios-singapore-tickets-from-s45-per-person/",
+      "valid_from": "2026-11-10",
+      "valid_until": "2026-11-12",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
       "price_type": "advertised_discount",
-      "valid_from": null,
-      "valid_until": null,
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 85.0,
+        "total": 85.4,
         "scale_max": 100,
         "band": "Strong",
         "components": [
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 44.0,
+            "points": 55.0,
             "max_points": 55,
-            "detail": "40% advertised saving; 50%+ earns the full 55 points"
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 13.0,
+            "points": 10.8,
             "max_points": 15,
-            "detail": "Scanner quality estimate 8.7/10"
+            "detail": "Scanner quality estimate 7.2/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 12.9,
+            "points": 12.6,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.6/10"
+            "detail": "Scanner relevance estimate 8.4/10"
           },
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 5.0,
             "max_points": 10,
-            "detail": "Verified official/direct source"
+            "detail": "Discovery source; verify with merchant"
           },
           {
             "key": "convenience",
             "label": "Convenience / restrictions",
-            "points": 5.0,
+            "points": 2.0,
             "max_points": 5,
-            "detail": "Direct brand"
+            "detail": "Discovery listing"
           }
         ],
         "notes": [
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 85.0,
-      "observed_at": "2026-11-11T10:36:31+08:00",
-      "exclude_from_best": false,
-      "best_rank": 10
+      "deal_score": 85.4,
+      "observed_at": "2026-11-12T11:40:33+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-34072547bed6",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "YISHION Compass One Promotion – Get 50% OFF Any Keychain or Phone Chain With Every Regular-Priced Bag Purchase",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-10-31 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 50,
+      "quality_score": 7.2,
+      "relevance_score": 8.4,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Fashion Accessories",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/31-october-2026-onwards-yishion-compass-one-promotion-get-50-off-any-keychain-or-phone-chain-with-every-regular-priced-bag-purchase/",
+      "valid_from": "2026-10-31",
+      "valid_until": null,
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 85.4,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 10.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.4/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 85.4,
+      "observed_at": "2026-11-12T11:40:33+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-eddda977c16a",
@@ -1262,7 +1188,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -1334,7 +1260,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -1408,7 +1334,7 @@
         ]
       },
       "deal_score": 58.0,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -1480,7 +1406,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -1552,7 +1478,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -1624,7 +1550,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -1696,7 +1622,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1696,7 @@
         ]
       },
       "deal_score": 52.5,
-      "observed_at": "2026-11-11T10:36:31+08:00",
+      "observed_at": "2026-11-12T11:40:33+08:00",
       "exclude_from_best": true
     }
   ]
