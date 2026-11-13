@@ -1,3 +1,4 @@
+from scan_health import record_scan, data_time
 from utils import read_json, write_json, iso_now_sgt
 from food_scanner import scan_food
 from sales_scanner import scan_sales
@@ -9,6 +10,7 @@ def source_mode(items):
 
 
 def main():
+    previous_payloads = {c: read_json(f"data/{c}.json", {}) for c in ("hotels", "food", "sales")}
     print("=" * 70)
     print("V&V DEALS SCOUT — FOOD + SALES REFRESH ONLY")
     print("NO HOTELBEDS API CALLS WILL BE MADE")
@@ -36,8 +38,16 @@ def main():
     food_maximum = settings.get("maximum_food_results", 30)
     sales_maximum = settings.get("maximum_sales_results", 30)
 
-    food = scan_food()
-    sales = scan_sales()
+    try:
+        food = scan_food()
+    except Exception:
+        record_scan("food", state="failed_retained")
+        raise
+    try:
+        sales = scan_sales()
+    except Exception:
+        record_scan("sales", state="failed_retained")
+        raise
 
     food_items = food[:food_maximum]
     sales_items = sales[:sales_maximum]
@@ -86,11 +96,13 @@ def main():
     sales_source_types = len({item.get("deal_type", "other") for item in sales_items})
     indian_food_deals = sum(1 for item in food_items if item.get("food_category") == "indian")
     refresh_time = iso_now_sgt()
+    food_time = data_time(food, read_json("data/food.json", {}).get("updated_at"), refresh_time)
+    sales_time = data_time(sales, read_json("data/sales.json", {}).get("updated_at"), refresh_time)
 
     write_json(
         "data/food.json",
         {
-            "updated_at": refresh_time,
+            "updated_at": food_time,
             "mode": food_mode,
             "items": food,
         },
@@ -99,7 +111,7 @@ def main():
     write_json(
         "data/sales.json",
         {
-            "updated_at": refresh_time,
+            "updated_at": sales_time,
             "mode": sales_mode,
             "items": sales,
         },
@@ -127,8 +139,8 @@ def main():
             "refresh_scope": "food_sales_only",
             "source_updated_at": {
                 "hotels": hotel_updated_at,
-                "food": refresh_time,
-                "sales": refresh_time,
+                "food": food_time,
+                "sales": sales_time,
             },
             "demo_mode": False,
             "status": {
@@ -165,6 +177,9 @@ def main():
             "items": visible,
         },
     )
+
+    record_scan("food", food, previous_payload=previous_payloads["food"])
+    record_scan("sales", sales, previous_payload=previous_payloads["sales"])
 
     print()
     print("FOOD + SALES REFRESH COMPLETE")
