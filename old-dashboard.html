@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111827" />
+    <title>V&V Deals Scout</title>
+    <link rel="stylesheet" href="styles.css?v=20261113-review" />
+  </head>
+  <body class="legacy-layout">
+    <a class="skip-link" href="#deals">Skip to recommendations</a>
+    <header class="hero">
+      <div class="wrap">
+        <div class="eyebrow">V & V · OLD DASHBOARD LAYOUT</div>
+        <a class="layout-link" href="index.html">New dashboard layout →</a>
+        <h1>Deals Scout</h1>
+        <p class="subtitle">
+          Staycations, regional escapes, dining and sales.
+          Useful leads, with the details to judge them.
+        </p>
+
+        <div class="status-row">
+          <span id="updated">Loading latest scan…</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <nav class="tabs" aria-label="Deal categories">
+        <button class="tab active" aria-pressed="true" data-filter="all">
+          🔥 Best
+        </button>
+        <button class="tab" aria-pressed="false" data-filter="idea">
+          ❤️ Ideas
+        </button>
+        <button class="tab" aria-pressed="false" data-filter="hotel">
+          🏨 Hotels
+        </button>
+        <button class="tab" aria-pressed="false" data-filter="food">
+          🍽️ Food
+        </button>
+        <button class="tab" aria-pressed="false" data-filter="sale">
+          🛍️ Sales
+        </button>
+      </nav>
+
+      <section class="discovery" aria-label="Search and discovery">
+        <div class="search-row">
+          <label class="search-field"
+            >Search
+            <input
+              id="search"
+              type="search"
+              placeholder="Hotel, restaurant, destination or source"
+          /></label>
+          <label
+            >List
+            <select id="list-mode">
+              <option value="browse">Browse</option>
+              <option value="saved">Saved</option>
+              <option value="dismissed">Dismissed</option>
+            </select></label
+          >
+          <label
+            >Sort
+            <select id="sort">
+              <option value="score">Highest score</option>
+              <option value="fresh">Recently observed</option>
+              <option value="expiry">Expiry / stay date</option>
+              <option value="price">SGD nightly rate</option>
+            </select></label
+          >
+        </div>
+        <details class="filter-details">
+          <summary>Destination, dates, budget & offer type</summary>
+          <div class="filter-fields">
+            <label
+              >Destination / location
+              <select id="destination">
+                <option value="">All locations</option>
+              </select></label
+            >
+            <label>Known start from <input id="date-from" type="date" /></label>
+            <label>Known start to <input id="date-to" type="date" /></label>
+            <label
+              >Max SGD / hotel night
+              <input
+                id="budget"
+                type="number"
+                min="1"
+                step="1"
+                placeholder="Any"
+            /></label>
+            <label
+              >Offer type
+              <select id="offer-kind">
+                <option value="">All types</option>
+                <option value="specific_offer">Specific offers</option>
+                <option value="ongoing_promotion">Ongoing promotions</option>
+                <option value="promotion_lead">Promotion leads</option>
+                <option value="evaluation_rate">Evaluation hotel rates</option>
+                <option value="inspiration">Inspiration</option>
+              </select></label
+            >
+            <label
+              >Validity
+              <select id="expiry">
+                <option value="active">Hide expired / past stays</option>
+                <option value="all">Include expired / past stays</option>
+                <option value="expired">Only expired / past stays</option>
+              </select></label
+            >
+          </div>
+          <p class="hint">
+            Dates match a recorded check-in or offer start, not live
+            availability. Date and budget filters exclude unknown values. Hotel
+            budgets use evaluation/net rates where labelled.
+          </p>
+        </details>
+        <div class="filter-footer">
+          <p id="storage-note">
+            Saved and dismissed items stay in this browser only. They do not
+            sync across devices.
+          </p>
+          <button id="reset-filters" type="button">Reset filters</button>
+        </div>
+      </section>
+      <details class="health-panel">
+        <summary id="health-summary">Source health & refresh times</summary>
+        <div id="source-health"></div>
+      </details>
+      <div id="view-status" class="view-status" role="status"></div>
+      <section
+        id="subfilters"
+        class="subfilter-panel"
+        aria-label="Category filters"
+        hidden
+      >
+        <div class="filter-group">
+          <div class="subfilter-copy">
+            <strong id="subfilter-title"></strong>
+            <span id="subfilter-note"></span>
+          </div>
+          <div id="subfilter-buttons" class="subfilter-buttons"></div>
+        </div>
+
+        <div class="filter-group source-group">
+          <div class="subfilter-copy compact-copy">
+            <strong id="dealtype-title"></strong>
+          </div>
+          <div id="dealtype-buttons" class="subfilter-buttons"></div>
+        </div>
+      </section>
+
+      <section class="summary" id="summary"></section>
+
+      <section id="deals" class="cards" aria-live="polite"></section>
+
+      <section class="empty" id="empty" hidden>
+        <h2>No deals above your threshold yet.</h2>
+        <p>The next scheduled scan will check again.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>
+          V&V Deals Scout · Deal scores are decision aids, not price guarantees.
+          Live/beta promotions can change; verify final terms before booking or
+          buying.
+        </p>
+      </div>
+    </footer>
+
+    <script src="scout-core.js?v=20261113-review"></script>
+    <script src="app.js?v=20261113-review"></script>
+  </body>
+</html>
