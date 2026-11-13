@@ -3,6 +3,10 @@ name: Refresh Food & Sales Only
 on:
   workflow_dispatch:
 
+concurrency:
+  group: scout-data-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -34,12 +38,25 @@ jobs:
 
         run: python scripts/refresh_food_sales.py
 
+      - name: Commit refresh health after a failed scan
+        if: failure()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -f data/scan-status.json ]; then
+            git add data/scan-status.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Record failed scan; retain published offers"
+              git push
+            fi
+          fi
+
       - name: Commit refreshed Food and Sales data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/food.json data/sales.json data/deals.json
+          git add data/food.json data/sales.json data/deals.json data/scan-status.json
 
           if git diff --cached --quiet; then
             echo "No Food/Sales data changes to commit"
