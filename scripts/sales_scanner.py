@@ -1,4 +1,6 @@
 from __future__ import annotations
+from scan_health import ScanResult, source_record
+from offer_metadata import offer_identity, enrich_offer
 
 import hashlib
 import html
@@ -592,7 +594,7 @@ def parse_validity(title, today):
         year = int(match.group(5))
         start = _safe_date(year, _month_number(match.group(2)), int(match.group(1)))
         end = _safe_date(year, _month_number(match.group(4)), int(match.group(3)))
-        return start, end
+        return (start, end) if start and end and start <= end else (None, None)
 
     # 24-30 August 2026
     match = re.search(
@@ -618,12 +620,11 @@ def parse_validity(title, today):
         start = _safe_date(int(match.group(3)), _month_number(match.group(2)), int(match.group(1)))
         return start, None
 
-    # 1-31 August 2026 with varying dash placement already handled above.
-    # A single dated promotion such as 30 August 2026 is valid that day only.
+    # A bare date can be a publication/start date. Do not invent a one-day
+    # expiry unless the title explicitly describes a one-day offer.
     match = re.search(
-        rf"\b(\d{{1,2}})\s+({MONTH_PATTERN})\s+(20\d{{2}})\b",
-        text,
-        re.IGNORECASE,
+        rf"\b(\d{{1,2}})\s+({MONTH_PATTERN})\s+(20\d{{2}})\s+only\b",
+        text, re.IGNORECASE,
     )
     if match:
         one_day = _safe_date(int(match.group(3)), _month_number(match.group(2)), int(match.group(1)))
@@ -815,6 +816,7 @@ def build_item(candidate, today, min_discount):
         "name": item_name,
         "location": location,
         "description": description,
+        "offer_text": offer_text,
         "discount_percent": discount,
         "quality_score": brand_quality_score(title),
         "relevance_score": relevance_score(title, subcategory, discount),
@@ -986,6 +988,7 @@ def build_official_sales_item(source, merchant, offer_text, min_discount):
         "name": merchant,
         "location": location,
         "description": description,
+        "offer_text": offer_text,
         "discount_percent": discount,
         "quality_score": official_quality_score(combined, confidence),
         "relevance_score": relevance_score(combined, subcategory, discount),
@@ -1110,7 +1113,7 @@ def select_diverse_sales(items, max_items):
         dtype = row.get("deal_type", "discovery")
         if counts.get(dtype, 0) >= quotas.get(dtype, 5):
             continue
-        key = (clean_text(row.get("name", "")).casefold(), row.get("subcategory"), dtype)
+        key = offer_identity(row)
         if key in seen:
             continue
         selected.append(row)
@@ -1148,6 +1151,7 @@ def scan_sales():
     print(f"Singapore date:        {today.isoformat()}")
     print("")
 
+    sources = []
     all_items = []
     all_candidates = []
     succeeded = 0
@@ -1160,9 +1164,11 @@ def scan_sales():
             raw_html = fetch_html(source["url"], timeout)
             candidates = extract_candidate_links(source, raw_html)
             all_candidates.extend(candidates)
+            sources.append(source_record(source, len(candidates)))
             succeeded += 1
             print(f"  OK - candidate listings found: {len(candidates)}")
         except (HTTPError, URLError, Exception) as exc:
+            sources.append(source_record(source, failed=True))
             failed += 1
             print(f"  FAILED - {type(exc).__name__}: {exc}")
 
@@ -1185,9 +1191,11 @@ def scan_sales():
             raw_html = fetch_html(source["url"], timeout)
             items = parse_official_index(source, raw_html, min_discount)
             all_items.extend(items)
+            sources.append(source_record(source, len(items)))
             succeeded += 1
             print(f"  OK - qualified deals found: {len(items)}")
         except (HTTPError, URLError, Exception) as exc:
+            sources.append(source_record(source, failed=True))
             failed += 1
             print(f"  FAILED - {type(exc).__name__}: {exc}")
 
@@ -1198,9 +1206,11 @@ def scan_sales():
             raw_html = fetch_html(source["url"], timeout)
             items = parse_official_single(source, raw_html, min_discount, today)
             all_items.extend(items)
+            sources.append(source_record(source, len(items)))
             succeeded += 1
             print(f"  OK - qualified deals found: {len(items)}")
         except (HTTPError, URLError, Exception) as exc:
+            sources.append(source_record(source, failed=True))
             failed += 1
             print(f"  FAILED - {type(exc).__name__}: {exc}")
 
@@ -1212,20 +1222,15 @@ def scan_sales():
         print(f"Sources failed:        {failed}")
         if previous:
             print(f"Preserving {len(previous)} previous live Sales result(s).")
-            return previous
+            return ScanResult(previous, sources, retained=True)
         print("No previous live Sales data exists. Returning no Sales deals.")
-        return []
-
-    if not all_items:
-        previous = load_previous_live_sales()
-        if previous:
-            print("Live sources produced zero qualified items; preserving previous Sales data.")
-            return previous
+        return ScanResult([], sources, retained=True)
 
     observed_at = iso_now_sgt()
     items = select_diverse_sales(all_items, max_items)
     for item in items:
         item["observed_at"] = observed_at
+        enrich_offer(item)
 
     mix = {}
     for item in items:
@@ -1242,4 +1247,4 @@ def scan_sales():
     print("SALES SCAN COMPLETED")
     print("")
 
-    return items
+    return ScanResult(items, sources)
