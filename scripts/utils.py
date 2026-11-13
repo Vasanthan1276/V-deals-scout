@@ -16,7 +16,9 @@ def read_json(relative_path, default=None):
 def write_json(relative_path, data):
     p = ROOT / relative_path
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    temporary = p.with_suffix(p.suffix + ".tmp")
+    temporary.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    temporary.replace(p)
 
 
 def now_sgt():

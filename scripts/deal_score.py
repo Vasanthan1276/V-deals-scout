@@ -124,6 +124,8 @@ def hotel_score_details(item):
             "Hotel scoring may also be constrained by the hotel engine's peer/history rules.",
         ],
     }
+    details["total"] = round(clamp(sum(part["points"] for part in details["components"])), 1)
+    details["band"] = score_band(details["total"])
     return details
 
 
@@ -133,6 +135,39 @@ def hotel_score(item):
     if isinstance(item, dict):
         item["score_breakdown"] = details
     return details["total"]
+
+
+def final_hotel_score(item):
+    """One ledger for base points, peer bonus, cap and the displayed total."""
+    details = hotel_score_details(item)
+    base = details["total"]
+    basis = item.get("score_basis")
+    bonus, cap = 0.0, 100
+    if basis == "peer_comparison":
+        current = float(item.get("current_price", 0) or 0)
+        peer = float(item.get("peer_median", 0) or 0)
+        saving = max(0, (peer - current) / peer * 100) if peer > 0 and current > 0 else 0
+        bonus = round(min(25, saving / 30 * 25), 1)
+        cap = 84
+    elif basis != "observed_history":
+        cap = 69
+    subtotal = round(base + bonus, 1)
+    total = round(min(cap, subtotal), 1)
+    details.update(model="hotel_v2", base_total=base, bonus=bonus, cap=cap,
+                   cap_adjustment=round(total - subtotal, 1), total=total,
+                   band=score_band(total))
+    details["adjustments"] = [
+        {"label": "Same-date peer bonus", "points": bonus},
+        {"label": f"Score cap ({cap})", "points": round(total - subtotal, 1)},
+    ]
+    details["notes"] = [
+        "Base components + peer bonus + cap adjustment = final score.",
+        "Peer scores are capped at 84; current-observation-only scores at 69.",
+        "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+        "A high score does not make an evaluation/net rate consumer-bookable.",
+    ]
+    item["score_breakdown"] = details
+    return total
 
 
 SOURCE_CONFIDENCE_POINTS = {
@@ -185,7 +220,9 @@ def promo_score_details(item, kind="food"):
     Indian cuisine preference is intentionally handled by Best-list curation
     and scanner relevance rather than adding bonus points above 100.
     """
-    discount = float(item.get("discount_percent", 0) or 0)
+    from offer_metadata import enrich_offer
+    enrich_offer(item)
+    discount = clamp(float(item.get("discount_percent", 0) or 0))
     discount_points = min(55.0, discount / 50.0 * 55.0)
 
     quality_input = float(item.get("quality_score", 7) or 7)
@@ -200,6 +237,10 @@ def promo_score_details(item, kind="food"):
     deal_type = item.get("deal_type") or "unknown"
     convenience_points = DEAL_TYPE_CONVENIENCE_POINTS.get(deal_type, 3.0)
 
+    discount_points, quality_points, relevance_points, confidence_points, convenience_points = [
+        round(clamp(value, 0, maximum), 1) for value, maximum in zip(
+            (discount_points, quality_points, relevance_points, confidence_points, convenience_points),
+            (55, 15, 15, 10, 5))]
     total = round(
         clamp(
             discount_points
@@ -230,7 +271,7 @@ def promo_score_details(item, kind="food"):
                 "label": "Discount strength",
                 "points": round(discount_points, 1),
                 "max_points": 55,
-                "detail": f"{discount:g}% advertised saving; 50%+ earns the full 55 points",
+                "detail": f"{'Up to ' if item.get('discount_qualifier') == 'up_to' else 'Equivalent ' if item.get('discount_qualifier') == 'equivalent' else 'Advertised '}{discount:g}% saving; conditions apply; 50%+ earns the full 55 points",
             },
             {
                 "key": "quality",
@@ -341,8 +382,9 @@ def curate_best_items(
         item.pop("best_rank", None)
 
     grouped = {}
+    from offer_metadata import is_expired
     for item in items:
-        if item.get("is_demo", False):
+        if is_expired(item) or item.get("is_demo", False):
             continue
         score = float(item.get("deal_score", 0) or 0)
         if score < float(minimum_score or 0):

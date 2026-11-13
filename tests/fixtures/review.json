@@ -1,0 +1,558 @@
+{
+  "hotel_peer": {
+    "id": "hotelbeds-553643-2027-01-08",
+    "category": "hotel",
+    "sub_category": "regional",
+    "provider": "hotelbeds",
+    "provider_environment": "evaluation",
+    "hotelbeds_code": 553643,
+    "name": "Adiwana Resort Jembawan",
+    "destination": "Bali",
+    "destination_code": "BAI",
+    "check_in": "2027-01-08",
+    "check_out": "2027-01-11",
+    "nights": 3,
+    "stars": 5,
+    "current_price": 98.73,
+    "total_price": 296.19,
+    "currency": "SGD",
+    "room_name": "Premier Room",
+    "board_name": "BED AND BREAKFAST",
+    "breakfast": true,
+    "lounge": false,
+    "bathtub": false,
+    "quiet_relaxing": true,
+    "couples_friendly": true,
+    "good_location": true,
+    "flexible_cancellation": false,
+    "convenient_date": true,
+    "booking_url": "",
+    "source": "Hotelbeds Evaluation API",
+    "price_type": "Hotelbeds evaluation/net rate",
+    "is_demo": false,
+    "is_evaluation": true,
+    "observed_at": "2026-11-13T11:15:14+08:00",
+    "history_observations": 0,
+    "historical_median": 98.73,
+    "peer_median": 166.62,
+    "reference_source": "same-date peer comparison",
+    "score_basis": "peer_comparison",
+    "score_breakdown": {
+      "model": "hotel_v1",
+      "total": 47.0,
+      "scale_max": 100,
+      "band": "Low priority",
+      "components": [
+        {
+          "key": "price",
+          "label": "Price saving",
+          "points": 0.0,
+          "max_points": 40,
+          "detail": "0.0% below the available reference price"
+        },
+        {
+          "key": "quality",
+          "label": "Hotel quality",
+          "points": 15,
+          "max_points": 15,
+          "detail": "5.0-star quality input"
+        },
+        {
+          "key": "room",
+          "label": "Room suitability",
+          "points": 6.0,
+          "max_points": 10,
+          "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+        },
+        {
+          "key": "extras",
+          "label": "Included extras",
+          "points": 5.0,
+          "max_points": 10,
+          "detail": "Breakfast and lounge attributes"
+        },
+        {
+          "key": "getaway",
+          "label": "Getaway fit",
+          "points": 10.0,
+          "max_points": 10,
+          "detail": "Suitability as a couple getaway"
+        },
+        {
+          "key": "location",
+          "label": "Location",
+          "points": 5.0,
+          "max_points": 5,
+          "detail": "Convenience of the hotel location"
+        },
+        {
+          "key": "cancellation",
+          "label": "Cancellation flexibility",
+          "points": 1.0,
+          "max_points": 5,
+          "detail": "Flexibility of cancellation terms"
+        },
+        {
+          "key": "date",
+          "label": "Date convenience",
+          "points": 5.0,
+          "max_points": 5,
+          "detail": "Convenience of the stay dates"
+        }
+      ],
+      "notes": [
+        "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+      ]
+    },
+    "deal_score": 72.0,
+    "exclude_from_best": false,
+    "best_rank": 13
+  },
+  "hotel_history": {
+    "id": "hotelbeds-745684-2027-01-02",
+    "category": "hotel",
+    "sub_category": "staycation",
+    "provider": "hotelbeds",
+    "provider_environment": "evaluation",
+    "hotelbeds_code": 745684,
+    "name": "Dusit Thani Laguna Singapore",
+    "destination": "Singapore",
+    "destination_code": "SIN",
+    "check_in": "2027-01-02",
+    "check_out": "2027-01-03",
+    "nights": 1,
+    "stars": 5,
+    "current_price": 151.6,
+    "total_price": 151.6,
+    "currency": "SGD",
+    "room_name": "DELUXE LAGUNA TWIN",
+    "board_name": "ROOM ONLY",
+    "breakfast": false,
+    "lounge": false,
+    "bathtub": false,
+    "quiet_relaxing": true,
+    "couples_friendly": true,
+    "good_location": true,
+    "flexible_cancellation": false,
+    "convenient_date": true,
+    "booking_url": "",
+    "source": "Hotelbeds Evaluation API",
+    "price_type": "Hotelbeds evaluation/net rate",
+    "is_demo": false,
+    "is_evaluation": true,
+    "observed_at": "2026-11-13T11:15:02+08:00",
+    "history_observations": 6,
+    "historical_median": 237.23,
+    "reference_source": "observed price history",
+    "score_basis": "observed_history",
+    "peer_median": 376.98,
+    "score_breakdown": {
+      "model": "hotel_v1",
+      "total": 82.0,
+      "scale_max": 100,
+      "band": "Strong",
+      "components": [
+        {
+          "key": "price",
+          "label": "Price saving",
+          "points": 40.0,
+          "max_points": 40,
+          "detail": "36.1% below the available reference price"
+        },
+        {
+          "key": "quality",
+          "label": "Hotel quality",
+          "points": 15,
+          "max_points": 15,
+          "detail": "5.0-star quality input"
+        },
+        {
+          "key": "room",
+          "label": "Room suitability",
+          "points": 6.0,
+          "max_points": 10,
+          "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+        },
+        {
+          "key": "extras",
+          "label": "Included extras",
+          "points": 0.0,
+          "max_points": 10,
+          "detail": "Breakfast and lounge attributes"
+        },
+        {
+          "key": "getaway",
+          "label": "Getaway fit",
+          "points": 10.0,
+          "max_points": 10,
+          "detail": "Suitability as a couple getaway"
+        },
+        {
+          "key": "location",
+          "label": "Location",
+          "points": 5.0,
+          "max_points": 5,
+          "detail": "Convenience of the hotel location"
+        },
+        {
+          "key": "cancellation",
+          "label": "Cancellation flexibility",
+          "points": 1.0,
+          "max_points": 5,
+          "detail": "Flexibility of cancellation terms"
+        },
+        {
+          "key": "date",
+          "label": "Date convenience",
+          "points": 5.0,
+          "max_points": 5,
+          "detail": "Convenience of the stay dates"
+        }
+      ],
+      "notes": [
+        "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+      ]
+    },
+    "deal_score": 82.0,
+    "exclude_from_best": false,
+    "best_rank": 11
+  },
+  "up_to": {
+    "id": "sale-live-67601f96d700",
+    "category": "sale",
+    "subcategory": "sportswear_footwear",
+    "name": "Under Armour Outlet @ IMM",
+    "location": "IMM / Singapore",
+    "description": "Official promotion: Up to 70% discount all year round at Under Armour Outlet at IMM. Official IMM outlet offer; stock and exclusions apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+    "discount_percent": 70,
+    "quality_score": 9.1,
+    "relevance_score": 9.8,
+    "source": "CapitaLand IMM",
+    "source_detail": "Under Armour Outlet IMM",
+    "source_type": "official_promotion_page",
+    "reference_source": "https://www.capitaland.com/sg/malls/imm/en/stores/under-armour-outlet.html",
+    "source_confidence": "verified",
+    "deal_type": "mall_outlet",
+    "access_requirement": "Official IMM outlet offer; stock and exclusions apply",
+    "url": "https://www.capitaland.com/sg/malls/imm/en/stores/under-armour-outlet.html",
+    "verification_required": true,
+    "is_demo": false,
+    "is_live": true,
+    "price_type": "advertised_discount",
+    "valid_from": null,
+    "valid_until": null,
+    "score_breakdown": {
+      "model": "promotion_v4",
+      "total": 97.9,
+      "scale_max": 100,
+      "band": "Exceptional",
+      "components": [
+        {
+          "key": "discount",
+          "label": "Discount strength",
+          "points": 55.0,
+          "max_points": 55,
+          "detail": "70% advertised saving; 50%+ earns the full 55 points"
+        },
+        {
+          "key": "quality",
+          "label": "Venue / brand quality",
+          "points": 13.6,
+          "max_points": 15,
+          "detail": "Scanner quality estimate 9.1/10"
+        },
+        {
+          "key": "relevance",
+          "label": "Relevance / usefulness",
+          "points": 14.7,
+          "max_points": 15,
+          "detail": "Scanner relevance estimate 9.8/10"
+        },
+        {
+          "key": "confidence",
+          "label": "Source confidence",
+          "points": 10.0,
+          "max_points": 10,
+          "detail": "Verified official/direct source"
+        },
+        {
+          "key": "convenience",
+          "label": "Convenience / restrictions",
+          "points": 4.5,
+          "max_points": 5,
+          "detail": "Mall / outlet"
+        }
+      ],
+      "notes": [
+        "The score is a ranking aid, not a guarantee of final value or availability."
+      ]
+    },
+    "deal_score": 97.9,
+    "observed_at": "2026-11-13T11:16:05+08:00",
+    "exclude_from_best": false,
+    "best_rank": 2
+  },
+  "one_for_one": {
+    "id": "food-multi-6256f723e4d9",
+    "category": "food",
+    "name": "ammakase",
+    "restaurant_name": "ammakase",
+    "location": "Singapore",
+    "description": "1-for-1 10-course experience on Wednesdays and Thursdays. Source: ammakase. Direct reservation required; Wednesday/Thursday 10-course promotion. Verify current dates, blackout periods and booking conditions before dining.",
+    "discount_percent": 50,
+    "quality_score": 8.8,
+    "relevance_score": 9.9,
+    "food_category": "indian",
+    "food_category_inferred": false,
+    "deal_type": "direct",
+    "source": "ammakase",
+    "source_detail": "ammakase weekday dinner promotion",
+    "source_type": "official_promotion_page",
+    "source_confidence": "verified",
+    "access_requirement": "Direct reservation required; Wednesday/Thursday 10-course promotion",
+    "reference_source": "https://www.ammakase.com/promo-now",
+    "url": "https://www.ammakase.com/promo-now",
+    "verification_required": true,
+    "is_demo": false,
+    "is_live": true,
+    "price_type": "advertised_promotion",
+    "preferred_cuisine": true,
+    "preference_priority": 1,
+    "score_breakdown": {
+      "model": "promotion_v4",
+      "total": 98.0,
+      "scale_max": 100,
+      "band": "Exceptional",
+      "components": [
+        {
+          "key": "discount",
+          "label": "Discount strength",
+          "points": 55.0,
+          "max_points": 55,
+          "detail": "50% advertised saving; 50%+ earns the full 55 points"
+        },
+        {
+          "key": "quality",
+          "label": "Venue / brand quality",
+          "points": 13.2,
+          "max_points": 15,
+          "detail": "Scanner quality estimate 8.8/10"
+        },
+        {
+          "key": "relevance",
+          "label": "Relevance / usefulness",
+          "points": 14.8,
+          "max_points": 15,
+          "detail": "Scanner relevance estimate 9.9/10"
+        },
+        {
+          "key": "confidence",
+          "label": "Source confidence",
+          "points": 10.0,
+          "max_points": 10,
+          "detail": "Verified official/direct source"
+        },
+        {
+          "key": "convenience",
+          "label": "Convenience / restrictions",
+          "points": 5.0,
+          "max_points": 5,
+          "detail": "Direct merchant"
+        }
+      ],
+      "notes": [
+        "The score is a ranking aid, not a guarantee of final value or availability.",
+        "Indian cuisine is prioritised in the Best shortlist, but no extra points are added to the /100 score."
+      ]
+    },
+    "deal_score": 98.0,
+    "observed_at": "2026-11-13T11:15:33+08:00",
+    "exclude_from_best": false,
+    "best_rank": 1
+  },
+  "ideas": [
+    {
+      "id": "idea-staycation-01",
+      "category": "idea",
+      "name": "Singapore staycation",
+      "description": "Dusit Thani Laguna Singapore \u2014 1 night",
+      "deal_score": 82.0,
+      "estimated_cost": 151.6,
+      "currency": "SGD",
+      "why": "Highest-scoring Singapore hotel opportunity in the current scan.",
+      "score_basis": "observed_history",
+      "reference_source": "observed price history",
+      "is_demo": false,
+      "is_evaluation": true,
+      "exclude_from_best": false,
+      "best_rank": 12
+    },
+    {
+      "id": "idea-regional-01",
+      "category": "idea",
+      "name": "Bali getaway",
+      "description": "3-night stay at Adiwana Resort Jembawan",
+      "deal_score": 72.0,
+      "estimated_cost": 296.19,
+      "currency": "SGD",
+      "why": "Highest-scoring regional hotel opportunity in the current scan.",
+      "score_basis": "peer_comparison",
+      "reference_source": "same-date peer comparison",
+      "is_demo": false,
+      "is_evaluation": true,
+      "exclude_from_best": true
+    }
+  ],
+  "duplicates": [
+    {
+      "id": "sale-live-b5bbcf6c6613",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "COURTS Tech Sale at Causeway Point Atrium \u2013 Up to 80% OFF Electronics, Home Appliances, TVs & More",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 80,
+      "quality_score": 8.2,
+      "relevance_score": 9.1,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/now-till-15-november-2026-courts-tech-sale-at-causeway-point-atrium-up-to-80-off-electronics-home-appliances-tvs-more/",
+      "valid_from": null,
+      "valid_until": "2026-11-15",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.9,
+      "observed_at": "2026-11-13T11:16:05+08:00",
+      "exclude_from_best": false,
+      "best_rank": 9
+    },
+    {
+      "id": "sale-live-48cc2d7ac4dd",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "COURTS Tech Sale at Causeway Point \u2013 Enjoy Up to 80% Off Hitachi, LG, Philips TVs & Home Appliances",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "discount_percent": 80,
+      "quality_score": 8.2,
+      "relevance_score": 9.1,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/12-15-november-2026-courts-tech-sale-at-causeway-point-enjoy-up-to-80-off-hitachi-lg-philips-tvs-home-appliances/",
+      "valid_from": "2026-11-12",
+      "valid_until": "2026-11-15",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55.0,
+            "max_points": 55,
+            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.9,
+      "observed_at": "2026-11-13T11:16:05+08:00",
+      "exclude_from_best": false,
+      "best_rank": 10
+    }
+  ]
+}

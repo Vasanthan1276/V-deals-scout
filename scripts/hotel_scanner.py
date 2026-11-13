@@ -13,7 +13,8 @@ from datetime import timedelta
 from pathlib import Path
 
 from utils import read_json, iso_now_sgt, now_sgt
-from deal_score import hotel_score
+from scan_health import EmptyHotelScan
+from deal_score import final_hotel_score
 
 
 API_URL = (
@@ -775,87 +776,8 @@ def _apply_reference_prices(
                 )
 
 
-def _score_hotel(
-    item,
-):
-    basis = item.get(
-        "score_basis"
-    )
-
-    if (
-        basis
-        == "observed_history"
-    ):
-        return hotel_score(
-            item
-        )
-
-    base_score = hotel_score(
-        item
-    )
-
-    if (
-        basis
-        == "peer_comparison"
-    ):
-        current = float(
-            item.get(
-                "current_price",
-                0,
-            )
-            or 0
-        )
-
-        peer = float(
-            item.get(
-                "peer_median",
-                current,
-            )
-            or current
-        )
-
-        saving_pct = 0
-
-        if peer > 0:
-            saving_pct = max(
-                0,
-                (
-                    peer
-                    - current
-                )
-                / peer
-                * 100,
-            )
-
-        peer_bonus = min(
-            25,
-            (
-                saving_pct
-                / 30
-            )
-            * 25,
-        )
-
-        score = (
-            base_score
-            + peer_bonus
-        )
-
-        return round(
-            min(
-                score,
-                84,
-            ),
-            1,
-        )
-
-    return round(
-        min(
-            base_score,
-            69,
-        ),
-        1,
-    )
+def _score_hotel(item):
+    return final_hotel_score(item)
 
 
 def _planned_request_count(
@@ -1440,7 +1362,7 @@ def _scan_live():
         planned_requests > 0
         and len(results) == 0
     ):
-        raise RuntimeError(
+        raise EmptyHotelScan(
             "Hotelbeds completed all "
             "requests but returned zero "
             "availability across the "

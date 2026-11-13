@@ -1,4 +1,6 @@
 from __future__ import annotations
+from scan_health import ScanResult, source_record
+from offer_metadata import offer_identity, enrich_offer
 
 import hashlib
 import html
@@ -595,6 +597,9 @@ def build_generic_food_item(source, merchant, offer_text, min_discount):
         "restaurant_name": merchant,
         "location": source.get("location", "Singapore"),
         "description": description,
+        "offer_text": offer_text,
+        "valid_from": source.get("valid_from"),
+        "valid_until": source.get("valid_until"),
         "discount_percent": discount,
         "quality_score": quality_for_source(confidence),
         "relevance_score": food_relevance(merchant, category, discount, deal_type),
@@ -857,30 +862,8 @@ def load_previous_live_food():
 
 
 def dedupe_food(items):
-    deduped = {}
-    for item in items:
-        restaurant = clean_name(item.get("restaurant_name") or item.get("name", ""))
-        restaurant = re.split(r"\s*(?:@|\()", restaurant, maxsplit=1)[0].casefold()
-        deal_type = item.get("deal_type", "")
-        key = (restaurant, deal_type)
-        existing = deduped.get(key)
-        if existing is None:
-            deduped[key] = item
-            continue
-        # Prefer the stronger discount; on ties prefer verified source.
-        current_rank = (
-            item.get("discount_percent", 0),
-            item.get("source_confidence") == "verified",
-            not item.get("food_category_inferred", True),
-        )
-        existing_rank = (
-            existing.get("discount_percent", 0),
-            existing.get("source_confidence") == "verified",
-            not existing.get("food_category_inferred", True),
-        )
-        if current_rank > existing_rank:
-            deduped[key] = item
-    return list(deduped.values())
+    # Exact repeated offers only. Meal periods, venues and eligibility stay separate.
+    return list({offer_identity(item): item for item in items}.values())
 
 
 def select_diverse_food(items, max_items):
@@ -962,6 +945,7 @@ def scan_food():
     print(f"Maximum published:     {max_items}")
     print("")
 
+    sources = []
     all_items = []
     succeeded = 0
     failed = 0
@@ -972,9 +956,11 @@ def scan_food():
             raw_html = fetch_html(source["url"], timeout)
             items = parse_eatigo(source, raw_html, min_discount)
             all_items.extend(items)
+            sources.append(source_record(source, len(items)))
             succeeded += 1
             print(f"  OK - qualified deals found: {len(items)}")
         except (HTTPError, URLError, Exception) as exc:
+            sources.append(source_record(source, failed=True))
             failed += 1
             label = f"HTTP {getattr(exc, 'code', '')}" if isinstance(exc, HTTPError) else type(exc).__name__
             print(f"  FAILED - {label}: {exc}")
@@ -985,9 +971,11 @@ def scan_food():
             raw_html = fetch_html(source["url"], timeout)
             items = parse_index_source(source, raw_html, min_discount)
             all_items.extend(items)
+            sources.append(source_record(source, len(items)))
             succeeded += 1
             print(f"  OK - qualified deals found: {len(items)}")
         except (HTTPError, URLError, Exception) as exc:
+            sources.append(source_record(source, failed=True))
             failed += 1
             print(f"  FAILED - {type(exc).__name__}: {exc}")
 
@@ -997,9 +985,11 @@ def scan_food():
             raw_html = fetch_html(source["url"], timeout)
             items = parse_single_source(source, raw_html, min_discount)
             all_items.extend(items)
+            sources.append(source_record(source, len(items)))
             succeeded += 1
             print(f"  OK - qualified deals found: {len(items)}")
         except (HTTPError, URLError, Exception) as exc:
+            sources.append(source_record(source, failed=True))
             failed += 1
             print(f"  FAILED - {type(exc).__name__}: {exc}")
 
@@ -1010,9 +1000,11 @@ def scan_food():
         raw_html = fetch_html(discovery["url"], timeout)
         items = parse_index_source(discovery, raw_html, max(min_discount, 25))
         all_items.extend(items)
+        sources.append(source_record(discovery, len(items)))
         succeeded += 1
         print(f"  OK - discovery deals found: {len(items)}")
     except (HTTPError, URLError, Exception) as exc:
+        sources.append(source_record(discovery, failed=True))
         failed += 1
         print(f"  FAILED - {type(exc).__name__}: {exc}")
 
@@ -1024,15 +1016,16 @@ def scan_food():
         print(f"Sources failed:        {failed}")
         if previous:
             print(f"Preserving {len(previous)} previous live Food result(s).")
-            return previous
+            return ScanResult(previous, sources, retained=True)
         print("No previous live Food data exists. Returning no Food deals.")
-        return []
+        return ScanResult([], sources, retained=True)
 
     unique = dedupe_food(all_items)
     observed_at = iso_now_sgt()
     selected = select_diverse_food(unique, max_items)
     for item in selected:
         item["observed_at"] = observed_at
+        enrich_offer(item)
 
     counts = {}
     for item in selected:
@@ -1050,4 +1043,4 @@ def scan_food():
     print("FOOD SCAN COMPLETED")
     print("")
 
-    return selected
+    return ScanResult(selected, sources)

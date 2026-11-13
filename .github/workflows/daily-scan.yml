@@ -7,6 +7,10 @@ on:
     - cron: "0 7 * * *"
       timezone: "Asia/Singapore"
 
+concurrency:
+  group: scout-data-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -42,6 +46,19 @@ jobs:
           SALES_SCAN_MIN_DISCOUNT: "15"
           SALES_SCAN_MAX_ITEMS: "30"
         run: python scripts/main.py
+
+      - name: Commit refresh health after a failed scan
+        if: failure()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -f data/scan-status.json ]; then
+            git add data/scan-status.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Record failed scan; retain published offers"
+              git push
+            fi
+          fi
 
       - name: Commit refreshed deal data
         run: |

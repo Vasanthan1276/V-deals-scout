@@ -1,3 +1,4 @@
+from scan_health import record_scan, EmptyHotelScan, data_time
 from utils import (
     read_json,
     write_json,
@@ -76,91 +77,30 @@ def update_history(hotels):
     )
 
 
-def build_ideas(
-    hotels,
-    minimum_score,
-):
+def build_ideas(hotels, minimum_score):
+    """Keep the complete underlying offer context; no new availability inferred."""
+    from copy import deepcopy
     ideas = []
-
-    eligible = [
-        hotel
-        for hotel in hotels
-        if hotel.get(
-            "deal_score",
-            0,
-        ) >= minimum_score
-    ]
-
-    regional = [
-        hotel
-        for hotel in eligible
-        if hotel.get("sub_category") == "regional"
-    ]
-
-    staycations = [
-        hotel
-        for hotel in eligible
-        if hotel.get("sub_category") == "staycation"
-    ]
-
-    if regional:
-        hotel = regional[0]
-
-        ideas.append(
-            {
-                "id": "idea-regional-01",
-                "category": "idea",
-                "name": f"{hotel['destination']} getaway",
-                "description": (
-                    f"{hotel['nights']}-night stay at "
-                    f"{hotel['name']}"
-                ),
-                "deal_score": hotel["deal_score"],
-                "estimated_cost": hotel.get("total_price"),
-                "currency": hotel["currency"],
-                "why": (
-                    "Highest-scoring regional hotel "
-                    "opportunity in the current scan."
-                ),
-                "score_basis": hotel.get("score_basis"),
-                "reference_source": hotel.get("reference_source"),
-                "is_demo": False,
-                "is_evaluation": hotel.get(
-                    "is_evaluation",
-                    False,
-                ),
-            }
-        )
-
-    if staycations:
-        hotel = staycations[0]
-
-        ideas.append(
-            {
-                "id": "idea-staycation-01",
-                "category": "idea",
-                "name": "Singapore staycation",
-                "description": (
-                    f"{hotel['name']} — "
-                    f"{hotel['nights']} night"
-                ),
-                "deal_score": hotel["deal_score"],
-                "estimated_cost": hotel.get("total_price"),
-                "currency": hotel["currency"],
-                "why": (
-                    "Highest-scoring Singapore hotel "
-                    "opportunity in the current scan."
-                ),
-                "score_basis": hotel.get("score_basis"),
-                "reference_source": hotel.get("reference_source"),
-                "is_demo": False,
-                "is_evaluation": hotel.get(
-                    "is_evaluation",
-                    False,
-                ),
-            }
-        )
-
+    for group in ("regional", "staycation"):
+        eligible = [h for h in hotels if h.get("sub_category") == group
+                    and h.get("deal_score", 0) >= minimum_score]
+        if not eligible:
+            continue
+        hotel = max(eligible, key=lambda h: h.get("deal_score", 0))
+        idea = deepcopy(hotel)
+        idea.update({
+            "id": "idea-" + hotel["id"],
+            "hotel_id": hotel["id"],
+            "hotel_name": hotel["name"],
+            "category": "idea",
+            "offer_kind": "inspiration",
+            "name": f"{hotel['destination']} · {hotel['name']}",
+            "description": f"{hotel['nights']}-night hotel idea; transport and other costs excluded.",
+            "estimated_cost": hotel.get("total_price"),
+            "cost_scope": "Hotel stay only; transport, meals and other costs excluded. Taxes/fees not confirmed.",
+            "why": "Highest-scoring hotel in this group. An idea to research; availability and consumer pricing require verification.",
+        })
+        ideas.append(idea)
     return ideas
 
 
@@ -182,6 +122,7 @@ def source_mode(items):
 
 
 def main():
+    previous_payloads = {c: read_json(f"data/{c}.json", {}) for c in ("hotels", "food", "sales")}
     #
     # IMPORTANT HOTELBEDS INTEGRITY RULE:
     #
@@ -191,14 +132,27 @@ def main():
     # hotel_scanner.py raises here. The program exits and the previous
     # published data remains intact.
     #
-    # Do not catch that exception here until the fresh-quota Hotelbeds
-    # integrity validation has been completed.
+    # A catch may update scan-status.json only, then must re-raise.
+    # Never publish partial hotel/deal/history data from this path.
     #
-    hotels = scan_hotels()
+    try:
+        hotels = scan_hotels()
+    except Exception as exc:
+        # Only the health sidecar changes; good hotel/deal/history data stays intact.
+        record_scan("hotels", state="empty_retained" if isinstance(exc, EmptyHotelScan) else "failed_retained")
+        raise
 
     # Food and Sales are live/beta scanners and do not call Hotelbeds.
-    food = scan_food()
-    sales = scan_sales()
+    try:
+        food = scan_food()
+    except Exception:
+        record_scan("food", state="failed_retained")
+        raise
+    try:
+        sales = scan_sales()
+    except Exception:
+        record_scan("sales", state="failed_retained")
+        raise
 
     prefs = read_json(
         "config/preferences.json",
@@ -275,6 +229,8 @@ def main():
     sales_source_types = len({item.get("deal_type", "other") for item in sales_items})
     indian_food_deals = sum(1 for item in food_items if item.get("food_category") == "indian")
     scan_time = iso_now_sgt()
+    food_time = data_time(food, read_json("data/food.json", {}).get("updated_at"), scan_time)
+    sales_time = data_time(sales, read_json("data/sales.json", {}).get("updated_at"), scan_time)
 
     write_json(
         "data/hotels.json",
@@ -290,7 +246,7 @@ def main():
     write_json(
         "data/food.json",
         {
-            "updated_at": scan_time,
+            "updated_at": food_time,
             "mode": food_mode,
             "items": food,
         },
@@ -299,7 +255,7 @@ def main():
     write_json(
         "data/sales.json",
         {
-            "updated_at": scan_time,
+            "updated_at": sales_time,
             "mode": sales_mode,
             "items": sales,
         },
@@ -313,8 +269,8 @@ def main():
             "refresh_scope": "full",
             "source_updated_at": {
                 "hotels": scan_time,
-                "food": scan_time,
-                "sales": scan_time,
+                "food": food_time,
+                "sales": sales_time,
             },
             "demo_mode": False,
             "status": {
@@ -324,6 +280,7 @@ def main():
             },
             "stats": {
                 "availability_results": len(hotels),
+                "hotel_displayed": len(hotel_items),
 
                 # Retained for compatibility with older app.js versions.
                 "hotel_results": len(hotels),
@@ -342,6 +299,10 @@ def main():
             "items": visible,
         },
     )
+
+    record_scan("food", food, previous_payload=previous_payloads["food"])
+    record_scan("sales", sales, previous_payload=previous_payloads["sales"])
+    record_scan("hotels", hotels, previous_payload=previous_payloads["hotels"])
 
     update_history(hotels)
 
