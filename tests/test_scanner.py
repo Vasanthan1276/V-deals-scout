@@ -54,6 +54,37 @@ class ScoringTests(unittest.TestCase):
         self.assertTrue(is_expired({'valid_until':'2026-11-12'},date(2026,11,13)))
         self.assertFalse(is_expired({'valid_until':'unknown'},date(2026,11,13)))
 
+class SalesCandidateTests(unittest.TestCase):
+    def test_accepted_candidate_retains_qualifiers(self):
+        candidate = {
+            'title': '14-30 November 2026: Nike Sale Up to 70% Off Selected Shoes',
+            'url': 'https://sg.everydayonsales.com/fixture-nike-sale/',
+            'source_detail': 'Fixture sportswear listing',
+            'source_hint': 'sportswear',
+        }
+        item = sales_scanner.build_item(candidate, date(2026, 11, 14), 15)
+        self.assertIsNotNone(item)
+        self.assertEqual(item['offer_text'], 'Nike Sale Up to 70% Off Selected Shoes')
+        self.assertEqual(item['discount_percent'], 70)
+        self.assertEqual(enrich_offer(item)['discount_qualifier'], 'up_to')
+        self.assertTrue(item['verification_required'])
+        self.assertEqual(item['valid_until'], '2026-11-30')
+
+    def test_discovery_html_through_scan_without_network(self):
+        source = {'name': 'Fixture sportswear', 'url': 'https://sg.everydayonsales.com/', 'hint': 'sportswear'}
+        html = '<a href="/fixture-nike-sale/">2026 onwards: Nike Sale Up to 70% Off Selected Shoes</a>'
+        with patch.object(sales_scanner, 'SOURCE_PAGES', [source]), \
+             patch.object(sales_scanner, 'OFFICIAL_SALES_INDEX_SOURCES', []), \
+             patch.object(sales_scanner, 'OFFICIAL_SALES_SINGLE_SOURCES', []), \
+             patch.object(sales_scanner, 'fetch_html', return_value=html) as fetch:
+            result = sales_scanner.scan_sales()
+        fetch.assert_called_once()
+        self.assertEqual(len(result), 1)
+        self.assertIn('Up to 70%', result[0]['offer_text'])
+        self.assertEqual(result[0]['discount_qualifier'], 'up_to')
+        self.assertEqual(result[0]['source_type'], 'promotion_aggregator')
+        self.assertTrue(result[0]['observed_at'])
+
 class ReliabilityTests(unittest.TestCase):
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory();self.root=Path(self.tmp.name)
