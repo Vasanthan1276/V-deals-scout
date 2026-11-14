@@ -816,7 +816,7 @@ def build_item(candidate, today, min_discount):
         "name": item_name,
         "location": location,
         "description": description,
-        "offer_text": offer_text,
+        "offer_text": item_name,
         "discount_percent": discount,
         "quality_score": brand_quality_score(title),
         "relevance_score": relevance_score(title, subcategory, discount),
