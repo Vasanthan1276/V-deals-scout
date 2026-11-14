@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Run offline regression tests before provider calls
+        run: python -m unittest discover -s tests
+
       - name: Refresh Food and Sales only
         env:
           FOOD_SCAN_TIMEOUT_SECONDS: "20"
