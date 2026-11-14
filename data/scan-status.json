@@ -1,16 +1,333 @@
 {
   "sources": {
     "sales": {
-      "state": "failed_retained",
-      "last_attempt": "2026-11-14T10:56:50+08:00",
+      "state": "partial",
+      "last_attempt": "2026-11-14T13:58:36+08:00",
       "last_success": "2026-11-13T11:16:05+08:00",
-      "last_partial": null,
-      "data_updated_at": "2026-11-13T11:16:05+08:00",
-      "retained_data": true,
-      "result_count": null,
-      "sources": [],
-      "message": "Refresh failed or was incomplete; previous data retained where available."
+      "last_partial": "2026-11-14T13:58:36+08:00",
+      "data_updated_at": "2026-11-14T13:58:36+08:00",
+      "retained_data": false,
+      "result_count": 23,
+      "sources": [
+        {
+          "name": "EverydayOnSales - Sportswear",
+          "url": "https://sg.everydayonsales.com/sales-category/fashion-lifestyle-department-store/sportswear/",
+          "status": "success",
+          "results": 6,
+          "last_attempt": "2026-11-14T13:58:04+08:00",
+          "last_success": "2026-11-14T13:58:04+08:00"
+        },
+        {
+          "name": "EverydayOnSales - Computers & Electronics",
+          "url": "https://sg.everydayonsales.com/sales-category/computers-electronics/",
+          "status": "success",
+          "results": 30,
+          "last_attempt": "2026-11-14T13:58:08+08:00",
+          "last_success": "2026-11-14T13:58:08+08:00"
+        },
+        {
+          "name": "EverydayOnSales - Sports, Leisure & Travel",
+          "url": "https://sg.everydayonsales.com/sales-category/sports-leisure-travel/",
+          "status": "success",
+          "results": 24,
+          "last_attempt": "2026-11-14T13:58:14+08:00",
+          "last_success": "2026-11-14T13:58:14+08:00"
+        },
+        {
+          "name": "EverydayOnSales - Fashion Accessories",
+          "url": "https://sg.everydayonsales.com/sales-category/fashion-lifestyle-department-store/fashion-accessories/",
+          "status": "success",
+          "results": 28,
+          "last_attempt": "2026-11-14T13:58:22+08:00",
+          "last_success": "2026-11-14T13:58:22+08:00"
+        },
+        {
+          "name": "EverydayOnSales - Happening Now",
+          "url": "https://sg.everydayonsales.com/sales-period/sales-happening-now/",
+          "status": "success",
+          "results": 30,
+          "last_attempt": "2026-11-14T13:58:24+08:00",
+          "last_success": "2026-11-14T13:58:24+08:00"
+        },
+        {
+          "name": "American Express Shopping",
+          "url": "https://www.americanexpress.com/en-sg/benefits/promotions/shopping/",
+          "status": "success",
+          "results": 5,
+          "last_attempt": "2026-11-14T13:58:24+08:00",
+          "last_success": "2026-11-14T13:58:24+08:00"
+        },
+        {
+          "name": "DBS Home & Electronics",
+          "url": "https://www.dbs.com.sg/personal/promotion/cards-home-owners-privileges",
+          "status": "empty",
+          "results": 0,
+          "last_attempt": "2026-11-14T13:58:25+08:00",
+          "last_success": "2026-11-14T13:58:25+08:00"
+        },
+        {
+          "name": "adidas Singapore Sale Terms",
+          "url": "https://www.adidas.com.sg/help/sea-promotions-and-vouchers/sale-terms-and-condition",
+          "status": "failed",
+          "results": null,
+          "last_attempt": "2026-11-14T13:58:25+08:00",
+          "last_success": null
+        },
+        {
+          "name": "Nike Singapore Sale",
+          "url": "https://www.nike.com/sg/w/sale-3yaepz5k5r2z6fvtl",
+          "status": "empty",
+          "results": 0,
+          "last_attempt": "2026-11-14T13:58:26+08:00",
+          "last_success": "2026-11-14T13:58:26+08:00"
+        },
+        {
+          "name": "PUMA Singapore Men's Sale",
+          "url": "https://sg.puma.com/sg/en/men/sale",
+          "status": "failed",
+          "results": null,
+          "last_attempt": "2026-11-14T13:58:28+08:00",
+          "last_success": null
+        },
+        {
+          "name": "ASICS Singapore 30% Off and Up",
+          "url": "https://www.asics.com/sg/en-sg/sale-30-off-above/",
+          "status": "failed",
+          "results": null,
+          "last_attempt": "2026-11-14T13:58:28+08:00",
+          "last_success": null
+        },
+        {
+          "name": "Under Armour Outlet IMM",
+          "url": "https://www.capitaland.com/sg/malls/imm/en/stores/under-armour-outlet.html",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:58:29+08:00",
+          "last_success": "2026-11-14T13:58:29+08:00"
+        },
+        {
+          "name": "PUMA Outlet IMM",
+          "url": "https://www.capitaland.com/sg/malls/imm/en/deals/puma-buy-2-get1freebuy3get3free.html",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:58:30+08:00",
+          "last_success": "2026-11-14T13:58:30+08:00"
+        },
+        {
+          "name": "IMM Outlet Mall",
+          "url": "https://www.capitaland.com/sg/malls/imm/en.html",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:58:32+08:00",
+          "last_success": "2026-11-14T13:58:32+08:00"
+        },
+        {
+          "name": "TUMI Outlet August multi-buy",
+          "url": "https://www.capitaland.com/sg/en/shop/malls/discover/WestTheSale2026.html",
+          "status": "empty",
+          "results": 0,
+          "last_attempt": "2026-11-14T13:58:33+08:00",
+          "last_success": "2026-11-14T13:58:33+08:00"
+        },
+        {
+          "name": "COURTS Home Office online promotion",
+          "url": "https://www.courts.com.sg/promocode.html",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:58:34+08:00",
+          "last_success": "2026-11-14T13:58:34+08:00"
+        },
+        {
+          "name": "COURTS SONA appliance deals",
+          "url": "https://www.courts.com.sg/sona",
+          "status": "empty",
+          "results": 0,
+          "last_attempt": "2026-11-14T13:58:35+08:00",
+          "last_success": "2026-11-14T13:58:35+08:00"
+        },
+        {
+          "name": "CLUB21.com - DBS/POSB",
+          "url": "https://www.dbs.com.sg/personal/promotion/cards-privileges-ylclub21",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:58:36+08:00",
+          "last_success": "2026-11-14T13:58:36+08:00"
+        },
+        {
+          "name": "ZALORA - DBS/POSB",
+          "url": "https://www.dbs.com.sg/personal/promotion/cards-zalora",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:58:36+08:00",
+          "last_success": "2026-11-14T13:58:36+08:00"
+        }
+      ],
+      "message": "Some sources failed. Results cover successful sources only."
+    },
+    "food": {
+      "state": "partial",
+      "last_attempt": "2026-11-14T13:58:36+08:00",
+      "last_success": "2026-11-13T11:16:05+08:00",
+      "last_partial": "2026-11-14T13:58:36+08:00",
+      "data_updated_at": "2026-11-14T13:58:36+08:00",
+      "retained_data": false,
+      "result_count": 30,
+      "sources": [
+        {
+          "name": "Eatigo Singapore - Dinner",
+          "url": "https://eatigo.com/en/regions/27/themes/15504",
+          "status": "success",
+          "results": 19,
+          "last_attempt": "2026-11-14T13:57:51+08:00",
+          "last_success": "2026-11-14T13:57:51+08:00"
+        },
+        {
+          "name": "Eatigo Singapore - Lunch",
+          "url": "https://eatigo.com/en/regions/27/themes/15505",
+          "status": "success",
+          "results": 18,
+          "last_attempt": "2026-11-14T13:57:54+08:00",
+          "last_success": "2026-11-14T13:57:54+08:00"
+        },
+        {
+          "name": "DBS/POSB Dining",
+          "url": "https://www.dbs.com.sg/personal/promotion/cards-wonderful-dining",
+          "status": "success",
+          "results": 3,
+          "last_attempt": "2026-11-14T13:57:54+08:00",
+          "last_success": "2026-11-14T13:57:54+08:00"
+        },
+        {
+          "name": "American Express Dining",
+          "url": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/",
+          "status": "success",
+          "results": 6,
+          "last_attempt": "2026-11-14T13:57:54+08:00",
+          "last_success": "2026-11-14T13:57:54+08:00"
+        },
+        {
+          "name": "Nalan Restaurant - DBS/POSB",
+          "url": "https://www.dbs.com.sg/personal/promotion/card-privileges-ylnalan",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:57:55+08:00",
+          "last_success": "2026-11-14T13:57:55+08:00"
+        },
+        {
+          "name": "Gupshup - Amex Love Dining",
+          "url": "https://www.americanexpress.com/sg/benefits/love-dining/love-restaurants.html",
+          "status": "empty",
+          "results": 0,
+          "last_attempt": "2026-11-14T13:57:55+08:00",
+          "last_success": "2026-11-14T13:57:55+08:00"
+        },
+        {
+          "name": "Maharani Table - Visa Dine & Save",
+          "url": "https://dineandsave.visa.com/outlets/maharani-table/",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:57:56+08:00",
+          "last_success": "2026-11-14T13:57:56+08:00"
+        },
+        {
+          "name": "Our Village Curry Hut - Visa Dine & Save",
+          "url": "https://dineandsave.visa.com/outlets/our-village-curry-hut/",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:57:57+08:00",
+          "last_success": "2026-11-14T13:57:57+08:00"
+        },
+        {
+          "name": "Chinatown Teh Tarik - Visa Dine & Save",
+          "url": "https://dineandsave.visa.com/outlets/chinatown-teh-tarik/",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:57:57+08:00",
+          "last_success": "2026-11-14T13:57:57+08:00"
+        },
+        {
+          "name": "Maharani Heritage direct promotion",
+          "url": "https://www.maharaniheritage.com/",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:58:00+08:00",
+          "last_success": "2026-11-14T13:58:00+08:00"
+        },
+        {
+          "name": "ammakase weekday dinner promotion",
+          "url": "https://www.ammakase.com/promo-now",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:58:00+08:00",
+          "last_success": "2026-11-14T13:58:00+08:00"
+        },
+        {
+          "name": "Seasonal Tastes - DBS/POSB",
+          "url": "https://www.dbs.com.sg/personal/promotion/card-privileges-seasonaltastes",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:58:00+08:00",
+          "last_success": "2026-11-14T13:58:00+08:00"
+        },
+        {
+          "name": "Atrium Restaurant - DBS/POSB",
+          "url": "https://www.dbs.com.sg/personal/promotion/card-privileges-hisaatrium",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:58:00+08:00",
+          "last_success": "2026-11-14T13:58:00+08:00"
+        },
+        {
+          "name": "Royale - DBS/POSB",
+          "url": "https://www.dbs.com.sg/personal/promotion/card-privileges-royale",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:58:00+08:00",
+          "last_success": "2026-11-14T13:58:00+08:00"
+        },
+        {
+          "name": "Cook & Brew - American Express",
+          "url": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/cook-and-brew/",
+          "status": "success",
+          "results": 1,
+          "last_attempt": "2026-11-14T13:58:00+08:00",
+          "last_success": "2026-11-14T13:58:00+08:00"
+        },
+        {
+          "name": "Ginger direct dining page",
+          "url": "https://www.panpacific.com/en/hotels-and-resorts/pr-beach-road/eat/ginger.html",
+          "status": "empty",
+          "results": 0,
+          "last_attempt": "2026-11-14T13:58:02+08:00",
+          "last_success": "2026-11-14T13:58:02+08:00"
+        },
+        {
+          "name": "Crossroads Buffet direct promotion",
+          "url": "https://www.crossroadssg.com/",
+          "status": "empty",
+          "results": 0,
+          "last_attempt": "2026-11-14T13:58:02+08:00",
+          "last_success": "2026-11-14T13:58:02+08:00"
+        },
+        {
+          "name": "Estate direct dining page",
+          "url": "https://www.hilton.com/en/hotels/sinorhi-hilton-singapore-orchard/dining/estate/",
+          "status": "failed",
+          "results": null,
+          "last_attempt": "2026-11-14T13:58:02+08:00",
+          "last_success": null
+        },
+        {
+          "name": "Eatbook Singapore food deals - November 2026",
+          "url": "https://eatbook.sg/food-deals-singapore-november-2026/",
+          "status": "success",
+          "results": 5,
+          "last_attempt": "2026-11-14T13:58:03+08:00",
+          "last_success": "2026-11-14T13:58:03+08:00"
+        }
+      ],
+      "message": "Some sources failed. Results cover successful sources only."
     }
   },
-  "updated_at": "2026-11-14T10:56:50+08:00"
+  "updated_at": "2026-11-14T13:58:36+08:00"
 }

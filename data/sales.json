@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T11:16:05+08:00",
+  "updated_at": "2026-11-14T13:58:36+08:00",
   "mode": "live",
   "items": [
     {
@@ -9,6 +9,7 @@
       "name": "Under Armour Outlet @ IMM",
       "location": "IMM / Singapore",
       "description": "Official promotion: Up to 70% discount all year round at Under Armour Outlet at IMM. Official IMM outlet offer; stock and exclusions apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "offer_text": "Up to 70% discount all year round at Under Armour Outlet at IMM",
       "discount_percent": 70,
       "quality_score": 9.1,
       "relevance_score": 9.8,
@@ -26,18 +27,21 @@
       "price_type": "advertised_discount",
       "valid_from": null,
       "valid_until": null,
+      "discount_qualifier": "up_to",
+      "offer_kind": "ongoing_promotion",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 97.9,
+        "total": 97.8,
         "scale_max": 100,
         "band": "Exceptional",
         "components": [
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 70% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -56,7 +60,7 @@
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 10,
             "max_points": 10,
             "detail": "Verified official/direct source"
           },
@@ -72,8 +76,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 97.9,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "deal_score": 97.8,
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -84,6 +88,7 @@
       "name": "PUMA Outlet @ IMM",
       "location": "IMM / Singapore",
       "description": "Official promotion: Up to 70% off; buy 2 items get 1 free or buy 3 items get 3 free. Official IMM outlet deal; exclusions and T&Cs apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "offer_text": "Up to 70% off; buy 2 items get 1 free or buy 3 items get 3 free",
       "discount_percent": 70,
       "quality_score": 9.1,
       "relevance_score": 9.8,
@@ -101,18 +106,21 @@
       "price_type": "advertised_discount",
       "valid_from": null,
       "valid_until": null,
+      "discount_qualifier": "up_to",
+      "offer_kind": "promotion_lead",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 97.9,
+        "total": 97.8,
         "scale_max": 100,
         "band": "Exceptional",
         "components": [
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 70% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -131,7 +139,7 @@
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 10,
             "max_points": 10,
             "detail": "Verified official/direct source"
           },
@@ -147,8 +155,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 97.9,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "deal_score": 97.8,
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -159,6 +167,7 @@
       "name": "IMM Outlet Mall",
       "location": "IMM / Singapore",
       "description": "Official promotion: Up to 80% savings all year round across more than 90 outlet stores. Official mall-wide outlet positioning; individual store offers vary. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "offer_text": "Up to 80% savings all year round across more than 90 outlet stores",
       "discount_percent": 80,
       "quality_score": 8.1,
       "relevance_score": 8.5,
@@ -176,6 +185,9 @@
       "price_type": "advertised_discount",
       "valid_from": null,
       "valid_until": null,
+      "discount_qualifier": "up_to",
+      "offer_kind": "ongoing_promotion",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 94.4,
@@ -185,9 +197,9 @@
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 80% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -206,7 +218,7 @@
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 10,
             "max_points": 10,
             "detail": "Verified official/direct source"
           },
@@ -223,7 +235,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": false,
       "best_rank": 6
     },
@@ -234,6 +246,7 @@
       "name": "COURTS Tech Sale at Causeway Point Atrium – Up to 80% OFF Electronics, Home Appliances, TVs & More",
       "location": "Singapore",
       "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "COURTS Tech Sale at Causeway Point Atrium – Up to 80% OFF Electronics, Home Appliances, TVs & More",
       "discount_percent": 80,
       "quality_score": 8.2,
       "relevance_score": 9.1,
@@ -251,6 +264,9 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 87.9,
@@ -260,9 +276,9 @@
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 80% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -298,7 +314,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -309,6 +325,7 @@
       "name": "COURTS Tech Sale at Causeway Point – Enjoy Up to 80% Off Hitachi, LG, Philips TVs & Home Appliances",
       "location": "Singapore",
       "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "COURTS Tech Sale at Causeway Point – Enjoy Up to 80% Off Hitachi, LG, Philips TVs & Home Appliances",
       "discount_percent": 80,
       "quality_score": 8.2,
       "relevance_score": 9.1,
@@ -326,6 +343,9 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 87.9,
@@ -335,9 +355,9 @@
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "80% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 80% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -373,7 +393,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": false,
       "best_rank": 10
     },
@@ -384,6 +404,7 @@
       "name": "Vogue & Sports Sale Singapore – Up to 70% OFF Nike, adidas, ASICS, HOKA, Brooks, New Balance & More at Takashimaya Square, Basement 2",
       "location": "Takashimaya / Singapore",
       "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "Vogue & Sports Sale Singapore – Up to 70% OFF Nike, adidas, ASICS, HOKA, Brooks, New Balance & More at Takashimaya Square, Basement 2",
       "discount_percent": 70,
       "quality_score": 8.2,
       "relevance_score": 9.1,
@@ -401,6 +422,9 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 87.9,
@@ -410,9 +434,9 @@
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 70% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -448,7 +472,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -458,6 +482,7 @@
       "name": "iRUN Singapore 11.11 Biggest Running Sale – More Than 60% Off Storewide & Huge adidas Running Shoe Discounts",
       "location": "Singapore",
       "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "iRUN Singapore 11.11 Biggest Running Sale – More Than 60% Off Storewide & Huge adidas Running Shoe Discounts",
       "discount_percent": 60,
       "quality_score": 8.2,
       "relevance_score": 9.1,
@@ -475,6 +500,9 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 87.9,
@@ -484,9 +512,9 @@
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "60% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 60% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -522,7 +550,163 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-3bdb972aabe5",
+      "category": "sale",
+      "subcategory": "sportswear_footwear",
+      "name": "I Run New Balance Sale – More Than 60% OFF Running Shoes In-Store & Online Singapore",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "I Run New Balance Sale – More Than 60% OFF Running Shoes In-Store & Online Singapore",
+      "discount_percent": 60,
+      "quality_score": 8.2,
+      "relevance_score": 9.1,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Happening Now",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/7-15-november-2026-i-run-new-balance-sale-more-than-60-off-running-shoes-in-store-online-singapore/",
+      "valid_from": "2026-11-07",
+      "valid_until": "2026-11-15",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Up to 60% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.9,
+      "observed_at": "2026-11-14T13:58:36+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-e59638bc6919",
+      "category": "sale",
+      "subcategory": "sportswear_footwear",
+      "name": "Crocs Singapore Flash Sale – Up to 60% Off, $39.95 Footwear, $1.11 Jibbitz & Exclusive Doorbuster Deals",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-16. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "Crocs Singapore Flash Sale – Up to 60% Off, $39.95 Footwear, $1.11 Jibbitz & Exclusive Doorbuster Deals",
+      "discount_percent": 60,
+      "quality_score": 8.2,
+      "relevance_score": 9.1,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Happening Now",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/13-16-november-2026-crocs-singapore-flash-sale-up-to-60-off-39-95-footwear-1-11-jibbitz-exclusive-doorbuster-deals/",
+      "valid_from": "2026-11-13",
+      "valid_until": "2026-11-16",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Up to 60% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.6,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.9,
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -532,6 +716,7 @@
       "name": "Takashimaya Department Store Gadgets Galore Sale – Enjoy Up to 50% OFF JBL, Sony, JisuLife & More at Talking Hall, B1",
       "location": "Takashimaya / Singapore",
       "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-11-22. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "Takashimaya Department Store Gadgets Galore Sale – Enjoy Up to 50% OFF JBL, Sony, JisuLife & More at Talking Hall, B1",
       "discount_percent": 50,
       "quality_score": 8.2,
       "relevance_score": 8.9,
@@ -549,6 +734,9 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 87.6,
@@ -558,9 +746,9 @@
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -596,7 +784,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -606,6 +794,7 @@
       "name": "OG Singapore: Get 50% Off Your 2nd Pair of Selected Skechers Footwear at OG Albert & OG People’s Park – 11.11 Promotion",
       "location": "Singapore",
       "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "OG Singapore: Get 50% Off Your 2nd Pair of Selected Skechers Footwear at OG Albert & OG People’s Park – 11.11 Promotion",
       "discount_percent": 50,
       "quality_score": 8.2,
       "relevance_score": 8.9,
@@ -623,6 +812,9 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 87.6,
@@ -632,9 +824,9 @@
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -670,7 +862,7 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -680,6 +872,7 @@
       "name": "METRO Singapore Footwear Promotion – Enjoy Up to 50% OFF Selected Nike, Adidas, New Balance, ASICS and More at Causeway Point, Level 2",
       "location": "Singapore",
       "description": "Discovery listing advertising up to 50% savings. Listed from 2026-10-21 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "METRO Singapore Footwear Promotion – Enjoy Up to 50% OFF Selected Nike, Adidas, New Balance, ASICS and More at Causeway Point, Level 2",
       "discount_percent": 50,
       "quality_score": 8.2,
       "relevance_score": 8.9,
@@ -697,6 +890,9 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "promotion_lead",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 87.6,
@@ -706,9 +902,9 @@
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "50% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -744,173 +940,26 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "sale-live-3839c10360d2",
+      "id": "sale-live-b1f0a67c5260",
       "category": "sale",
-      "subcategory": "electronics",
-      "name": "GamePro Singapore 11.11 Big Sale – Up to 82% Off AI Laptops, Monitors, Gaming Gear & Accessories with Extra 15% Store Vouchers, Free Gifts and Free Delivery",
+      "subcategory": "sportswear_footwear",
+      "name": "Robinsons Singapore November New Arrivals Sale – Enjoy Up to 77% OFF Designer Bags, Shoes, Home Essentials & Gifts Online",
       "location": "Singapore",
-      "description": "Discovery listing advertising up to 82% savings. Listed as valid through 2026-11-17. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 82,
+      "description": "Discovery listing advertising up to 77% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "Robinsons Singapore November New Arrivals Sale – Enjoy Up to 77% OFF Designer Bags, Shoes, Home Essentials & Gifts Online",
+      "discount_percent": 77,
       "quality_score": 7.2,
       "relevance_score": 8.6,
       "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
+      "source_detail": "EverydayOnSales - Fashion Accessories",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/7-17-november-2026-gamepro-singapore-11-11-big-sale-up-to-82-off-ai-laptops-monitors-gaming-gear-accessories-with-extra-15-store-vouchers-free-gifts-and-free-delivery/",
-      "valid_from": "2026-11-07",
-      "valid_until": "2026-11-17",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.7,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "82% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.9,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.6/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.7,
-      "observed_at": "2026-11-13T11:16:05+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-529ea7e9b8b7",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Mayer & Mistral Lazada 11.11 Biggest Sale – Up to 80% Off, $50 Vouchers & Extra Discounts When You Buy More",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 80% savings. Listed as valid through 2026-11-13. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 80,
-      "quality_score": 7.2,
-      "relevance_score": 8.6,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/10-13-november-2026-mayer-mistral-lazada-11-11-biggest-sale-up-to-80-off-50-vouchers-extra-discounts-when-you-buy-more/",
-      "valid_from": "2026-11-10",
-      "valid_until": "2026-11-13",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.7,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55.0,
-            "max_points": 55,
-            "detail": "80% advertised saving; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.9,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.6/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.7,
-      "observed_at": "2026-11-13T11:16:05+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-a8d9d899b09a",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "POPULAR Bookstore Atrium Sale at United Square Singapore – Enjoy Up to 70% OFF Books, Stationery and More at Basement 1",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-11-15. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "discount_percent": 70,
-      "quality_score": 7.6,
-      "relevance_score": 8.2,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Happening Now",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/9-15-november-2026-popular-bookstore-atrium-sale-at-united-square-singapore-enjoy-up-to-70-off-books-stationery-and-more-at-basement-1/",
-      "valid_from": "2026-11-09",
+      "url": "https://sg.everydayonsales.com/8-15-november-2026-robinsons-singapore-november-new-arrivals-sale-enjoy-up-to-77-off-designer-bags-shoes-home-essentials-gifts-online/",
+      "valid_from": "2026-11-08",
       "valid_until": "2026-11-15",
       "verification_required": true,
       "is_demo": false,
@@ -919,6 +968,9 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 85.7,
@@ -928,23 +980,23 @@
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "70% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 77% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 11.4,
+            "points": 10.8,
             "max_points": 15,
-            "detail": "Scanner quality estimate 7.6/10"
+            "detail": "Scanner quality estimate 7.2/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 12.3,
+            "points": 12.9,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
+            "detail": "Scanner relevance estimate 8.6/10"
           },
           {
             "key": "confidence",
@@ -966,7 +1018,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -976,6 +1028,7 @@
       "name": "Gain City 11.11 Singles’ Day Sale 2026 – Up to 60% Off Home Appliances, Extra 15% Off Bedding & Furniture, Free Mattress Worth $2,299 and Chance to Win a BYD ATTO 3 EVO at Sungei Kadut Megastore",
       "location": "Singapore",
       "description": "Discovery listing advertising up to 60% savings. Listed from 2026-11-11 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "Gain City 11.11 Singles’ Day Sale 2026 – Up to 60% Off Home Appliances, Extra 15% Off Bedding & Furniture, Free Mattress Worth $2,299 and Chance to Win a BYD ATTO 3 EVO at Sungei Kadut Megastore",
       "discount_percent": 60,
       "quality_score": 7.2,
       "relevance_score": 8.6,
@@ -993,6 +1046,9 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "promotion_lead",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 85.7,
@@ -1002,9 +1058,9 @@
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "60% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 60% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -1040,7 +1096,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -1050,6 +1106,7 @@
       "name": "POPULAR Bookstore Singapore 11.11 Online Sale – Up to 60% Off Books, Stationery, Gadgets & More, Free Shipping and Free Collapsible Mug with S$120 Spend",
       "location": "Singapore",
       "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-16. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "POPULAR Bookstore Singapore 11.11 Online Sale – Up to 60% Off Books, Stationery, Gadgets & More, Free Shipping and Free Collapsible Mug with S$120 Spend",
       "discount_percent": 60,
       "quality_score": 7.2,
       "relevance_score": 8.6,
@@ -1067,6 +1124,9 @@
       "deal_type": "discovery",
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 85.7,
@@ -1076,9 +1136,9 @@
           {
             "key": "discount",
             "label": "Discount strength",
-            "points": 55.0,
+            "points": 55,
             "max_points": 55,
-            "detail": "60% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Up to 60% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -1114,7 +1174,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -1124,6 +1184,7 @@
       "name": "COURTS Home Office Online",
       "location": "Online / Singapore",
       "description": "Official promotion: 20% off selected Home Office products with no minimum spend. Online promo code OFFICE20; exclusions apply. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "offer_text": "20% off selected Home Office products with no minimum spend",
       "discount_percent": 20,
       "quality_score": 8.7,
       "relevance_score": 8.3,
@@ -1141,6 +1202,9 @@
       "price_type": "advertised_discount",
       "valid_from": null,
       "valid_until": null,
+      "discount_qualifier": "advertised",
+      "offer_kind": "promotion_lead",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 62.5,
@@ -1152,7 +1216,7 @@
             "label": "Discount strength",
             "points": 22.0,
             "max_points": 55,
-            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Advertised 20% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -1171,14 +1235,14 @@
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 10,
             "max_points": 10,
             "detail": "Verified official/direct source"
           },
           {
             "key": "convenience",
             "label": "Convenience / restrictions",
-            "points": 5.0,
+            "points": 5,
             "max_points": 5,
             "detail": "Direct retailer"
           }
@@ -1188,7 +1252,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -1198,6 +1262,7 @@
       "name": "Mandarin Gift & Reptile House",
       "location": "Singapore",
       "description": "Official promotion: Enjoy 20% savings on all exotic leather bags.. Eligible American Express card required. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "offer_text": "Enjoy 20% savings on all exotic leather bags.",
       "discount_percent": 20,
       "quality_score": 7.7,
       "relevance_score": 7.0,
@@ -1213,9 +1278,12 @@
       "is_demo": false,
       "is_live": true,
       "price_type": "advertised_discount",
+      "discount_qualifier": "advertised",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 58.0,
+        "total": 58.1,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
@@ -1224,7 +1292,7 @@
             "label": "Discount strength",
             "points": 22.0,
             "max_points": 55,
-            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Advertised 20% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -1243,7 +1311,7 @@
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 10,
             "max_points": 10,
             "detail": "Verified official/direct source"
           },
@@ -1259,8 +1327,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 58.0,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "deal_score": 58.1,
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -1270,6 +1338,7 @@
       "name": "CLUB21.com",
       "location": "Online / Singapore",
       "description": "Official promotion: 20% off regular-priced items with CLUB21.com | DBS Singapore. DBS/POSB card required. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "offer_text": "20% off regular-priced items with CLUB21.com | DBS Singapore",
       "discount_percent": 20,
       "quality_score": 7.7,
       "relevance_score": 7.0,
@@ -1287,9 +1356,12 @@
       "price_type": "advertised_discount",
       "valid_from": null,
       "valid_until": null,
+      "discount_qualifier": "advertised",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 58.0,
+        "total": 58.1,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
@@ -1298,7 +1370,7 @@
             "label": "Discount strength",
             "points": 22.0,
             "max_points": 55,
-            "detail": "20% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Advertised 20% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -1317,7 +1389,7 @@
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 10,
             "max_points": 10,
             "detail": "Verified official/direct source"
           },
@@ -1333,8 +1405,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 58.0,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "deal_score": 58.1,
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -1344,6 +1416,7 @@
       "name": "Simmons",
       "location": "IMM / Singapore",
       "description": "Official promotion: Enjoy 15% savings on Beautyrest Ultimate and Beautyrest Black Collection.. Eligible American Express card required. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "offer_text": "Enjoy 15% savings on Beautyrest Ultimate and Beautyrest Black Collection.",
       "discount_percent": 15,
       "quality_score": 8.1,
       "relevance_score": 7.7,
@@ -1359,6 +1432,9 @@
       "is_demo": false,
       "is_live": true,
       "price_type": "advertised_discount",
+      "discount_qualifier": "advertised",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
         "total": 54.2,
@@ -1370,7 +1446,7 @@
             "label": "Discount strength",
             "points": 16.5,
             "max_points": 55,
-            "detail": "15% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Advertised 15% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -1389,7 +1465,7 @@
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 10,
             "max_points": 10,
             "detail": "Verified official/direct source"
           },
@@ -1406,7 +1482,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -1416,6 +1492,7 @@
       "name": "Apaiser",
       "location": "Singapore",
       "description": "Official promotion: Enjoy 15% savings storewide.. Eligible American Express card required. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "offer_text": "Enjoy 15% savings storewide.",
       "discount_percent": 15,
       "quality_score": 7.7,
       "relevance_score": 7.0,
@@ -1431,9 +1508,12 @@
       "is_demo": false,
       "is_live": true,
       "price_type": "advertised_discount",
+      "discount_qualifier": "advertised",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 52.5,
+        "total": 52.6,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
@@ -1442,7 +1522,7 @@
             "label": "Discount strength",
             "points": 16.5,
             "max_points": 55,
-            "detail": "15% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Advertised 15% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -1461,7 +1541,7 @@
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 10,
             "max_points": 10,
             "detail": "Verified official/direct source"
           },
@@ -1477,8 +1557,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 52.5,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "deal_score": 52.6,
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -1488,6 +1568,7 @@
       "name": "Arch",
       "location": "Singapore",
       "description": "Official promotion: Enjoy 15% savings storewide.. Eligible American Express card required. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "offer_text": "Enjoy 15% savings storewide.",
       "discount_percent": 15,
       "quality_score": 7.7,
       "relevance_score": 7.0,
@@ -1503,9 +1584,12 @@
       "is_demo": false,
       "is_live": true,
       "price_type": "advertised_discount",
+      "discount_qualifier": "advertised",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 52.5,
+        "total": 52.6,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
@@ -1514,7 +1598,7 @@
             "label": "Discount strength",
             "points": 16.5,
             "max_points": 55,
-            "detail": "15% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Advertised 15% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -1533,7 +1617,7 @@
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 10,
             "max_points": 10,
             "detail": "Verified official/direct source"
           },
@@ -1549,8 +1633,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 52.5,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "deal_score": 52.6,
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -1560,6 +1644,7 @@
       "name": "NARS",
       "location": "Singapore",
       "description": "Official promotion: Enjoy 15% savings storewide.. Eligible American Express card required. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "offer_text": "Enjoy 15% savings storewide.",
       "discount_percent": 15,
       "quality_score": 7.7,
       "relevance_score": 7.0,
@@ -1575,9 +1660,12 @@
       "is_demo": false,
       "is_live": true,
       "price_type": "advertised_discount",
+      "discount_qualifier": "advertised",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 52.5,
+        "total": 52.6,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
@@ -1586,7 +1674,7 @@
             "label": "Discount strength",
             "points": 16.5,
             "max_points": 55,
-            "detail": "15% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Advertised 15% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -1605,7 +1693,7 @@
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 10,
             "max_points": 10,
             "detail": "Verified official/direct source"
           },
@@ -1621,8 +1709,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 52.5,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "deal_score": 52.6,
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     },
     {
@@ -1632,6 +1720,7 @@
       "name": "ZALORA",
       "location": "Online / Singapore",
       "description": "Official promotion: 15% off sitewide and more on Zalora | DBS Singapore. DBS/POSB card and promotion code required. Verify current exclusions, eligible products, stock and final checkout price before purchase.",
+      "offer_text": "15% off sitewide and more on Zalora | DBS Singapore",
       "discount_percent": 15,
       "quality_score": 7.7,
       "relevance_score": 7.0,
@@ -1649,9 +1738,12 @@
       "price_type": "advertised_discount",
       "valid_from": null,
       "valid_until": null,
+      "discount_qualifier": "advertised",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 52.5,
+        "total": 52.6,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
@@ -1660,7 +1752,7 @@
             "label": "Discount strength",
             "points": 16.5,
             "max_points": 55,
-            "detail": "15% advertised saving; 50%+ earns the full 55 points"
+            "detail": "Advertised 15% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
@@ -1679,7 +1771,7 @@
           {
             "key": "confidence",
             "label": "Source confidence",
-            "points": 10.0,
+            "points": 10,
             "max_points": 10,
             "detail": "Verified official/direct source"
           },
@@ -1695,8 +1787,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 52.5,
-      "observed_at": "2026-11-13T11:16:05+08:00",
+      "deal_score": 52.6,
+      "observed_at": "2026-11-14T13:58:36+08:00",
       "exclude_from_best": true
     }
   ]
