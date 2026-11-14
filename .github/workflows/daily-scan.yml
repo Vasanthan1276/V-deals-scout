@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Run offline regression tests before provider calls
+        run: python -m unittest discover -s tests
+
       - name: Run V&V Deals Scout
         env:
           HOTELBEDS_API_KEY: ${{ secrets.HOTELBEDS_API_KEY }}
