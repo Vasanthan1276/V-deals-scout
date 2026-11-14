@@ -1,0 +1,16 @@
+{
+  "sources": {
+    "sales": {
+      "state": "failed_retained",
+      "last_attempt": "2026-11-14T10:56:50+08:00",
+      "last_success": "2026-11-13T11:16:05+08:00",
+      "last_partial": null,
+      "data_updated_at": "2026-11-13T11:16:05+08:00",
+      "retained_data": true,
+      "result_count": null,
+      "sources": [],
+      "message": "Refresh failed or was incomplete; previous data retained where available."
+    }
+  },
+  "updated_at": "2026-11-14T10:56:50+08:00"
+}
