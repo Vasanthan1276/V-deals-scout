@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T13:58:36+08:00",
+  "updated_at": "2026-11-15T10:28:12+08:00",
   "mode": "live",
   "items": [
     {
@@ -82,9 +82,103 @@
         ]
       },
       "deal_score": 98.0,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": false,
       "best_rank": 1
+    },
+    {
+      "id": "food-eatigo-62290b1b44e8",
+      "category": "food",
+      "name": "Tandoori Khazana @ Bugis — Dinner",
+      "restaurant_name": "Tandoori Khazana @ Bugis",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.2/5. Best observed slot(s): 17:30, 18:00, 18:30, 19:00. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 8.4,
+      "relevance_score": 9.7,
+      "rating": 4.2,
+      "reservation_count": 891,
+      "meal_period": "dinner",
+      "food_category": "indian",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "17:30",
+        "18:00",
+        "18:30",
+        "19:00",
+        "19:30",
+        "20:00",
+        "20:30",
+        "21:00"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": true,
+      "preference_priority": 1,
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 93.1,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.6,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 14.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.7/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability.",
+          "Indian cuisine is prioritised in the Best shortlist, but no extra points are added to the /100 score."
+        ]
+      },
+      "deal_score": 93.1,
+      "observed_at": "2026-11-15T10:27:48+08:00",
+      "exclude_from_best": false,
+      "best_rank": 8
     },
     {
       "id": "food-multi-fe8aac169df9",
@@ -166,7 +260,7 @@
         ]
       },
       "deal_score": 87.1,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -249,7 +343,7 @@
         ]
       },
       "deal_score": 64.3,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -332,7 +426,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -415,90 +509,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-11-14T13:58:03+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-4bae3cf4b749",
-      "category": "food",
-      "name": "Chinatown Teh Tarik",
-      "restaurant_name": "Chinatown Teh Tarik",
-      "location": "Chinatown",
-      "description": "20% off food bill. Source: Visa Dine & Save. Eligible Visa card required; quote Dine and Save with Visa. Verify current dates, blackout periods and booking conditions before dining.",
-      "offer_text": "20% off food bill",
-      "valid_from": null,
-      "valid_until": null,
-      "discount_percent": 20,
-      "quality_score": 8.8,
-      "relevance_score": 9.2,
-      "food_category": "indian",
-      "food_category_inferred": false,
-      "deal_type": "card_deal",
-      "source": "Visa Dine & Save",
-      "source_detail": "Chinatown Teh Tarik - Visa Dine & Save",
-      "source_type": "official_promotion_page",
-      "source_confidence": "verified",
-      "access_requirement": "Eligible Visa card required; quote Dine and Save with Visa",
-      "reference_source": "https://dineandsave.visa.com/outlets/chinatown-teh-tarik/",
-      "url": "https://dineandsave.visa.com/outlets/chinatown-teh-tarik/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": true,
-      "preference_priority": 1,
-      "discount_qualifier": "advertised",
-      "offer_kind": "specific_offer",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 63.0,
-        "scale_max": 100,
-        "band": "Moderate",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 22.0,
-            "max_points": 55,
-            "detail": "Advertised 20% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.2,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.8/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.8,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 9.2/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 10,
-            "max_points": 10,
-            "detail": "Verified official/direct source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 4.0,
-            "max_points": 5,
-            "detail": "Card-linked deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability.",
-          "Indian cuisine is prioritised in the Best shortlist, but no extra points are added to the /100 score."
-        ]
-      },
-      "deal_score": 63.0,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -580,7 +591,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -663,7 +674,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": false,
       "best_rank": 5
     },
@@ -746,7 +757,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -828,7 +839,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -910,7 +921,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -992,7 +1003,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1074,7 +1085,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1156,7 +1167,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1165,7 +1176,7 @@
       "name": "Luce, Frasers House, a Luxury Collection Hotel Singapore — Lunch",
       "restaurant_name": "Luce, Frasers House, a Luxury Collection Hotel Singapore",
       "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 14:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 13:30, 14:00. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.6,
       "relevance_score": 8.7,
@@ -1175,6 +1186,7 @@
       "food_category": "hotel_dining",
       "food_category_inferred": true,
       "best_discount_times": [
+        "13:30",
         "14:00"
       ],
       "deal_type": "app_deal",
@@ -1241,9 +1253,98 @@
         ]
       },
       "deal_score": 93.4,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": false,
       "best_rank": 7
+    },
+    {
+      "id": "food-eatigo-aed3dc7564ba",
+      "category": "food",
+      "name": "PALETTE @ Hotel Royal Queens Singapore — Lunch",
+      "restaurant_name": "PALETTE @ Hotel Royal Queens Singapore",
+      "location": "Singapore",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 12:00, 12:30, 13:00, 13:30. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 9.2,
+      "relevance_score": 8.7,
+      "rating": 4.6,
+      "reservation_count": 581,
+      "meal_period": "lunch",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "12:00",
+        "12:30",
+        "13:00",
+        "13:30",
+        "14:00"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Lunch",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15505",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 92.8,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.7/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 92.8,
+      "observed_at": "2026-11-15T10:27:48+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-160eb6d788fa",
@@ -1251,7 +1352,7 @@
       "name": "WIKEDO Self-service Grilled Fish Hot Pot @ Dhoby Ghaut — Dinner",
       "restaurant_name": "WIKEDO Self-service Grilled Fish Hot Pot @ Dhoby Ghaut",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 19:00, 20:00, 20:30, 21:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 17:30, 18:30, 19:00, 20:00. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.6,
       "relevance_score": 8.2,
@@ -1261,11 +1362,12 @@
       "food_category": "chinese_hotpot",
       "food_category_inferred": true,
       "best_discount_times": [
+        "17:30",
+        "18:30",
         "19:00",
         "20:00",
         "20:30",
-        "21:00",
-        "21:30"
+        "21:00"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
@@ -1331,9 +1433,8 @@
         ]
       },
       "deal_score": 92.7,
-      "observed_at": "2026-11-14T13:58:03+08:00",
-      "exclude_from_best": false,
-      "best_rank": 8
+      "observed_at": "2026-11-15T10:27:48+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "food-eatigo-8809dbb1e61a",
@@ -1420,7 +1521,7 @@
         ]
       },
       "deal_score": 92.7,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1429,7 +1530,7 @@
       "name": "J65 @ JEN Singapore Tanglin by Shangri-La — Dinner",
       "restaurant_name": "J65 @ JEN Singapore Tanglin by Shangri-La",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 18:30, 19:00, 19:30, 20:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 18:30, 19:00, 20:00, 20:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.0,
       "relevance_score": 8.7,
@@ -1441,7 +1542,6 @@
       "best_discount_times": [
         "18:30",
         "19:00",
-        "19:30",
         "20:00",
         "20:30",
         "21:00"
@@ -1510,7 +1610,7 @@
         ]
       },
       "deal_score": 92.5,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1519,7 +1619,7 @@
       "name": "J65 @ JEN Singapore Tanglin by Shangri-La — Lunch",
       "restaurant_name": "J65 @ JEN Singapore Tanglin by Shangri-La",
       "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 12:30, 14:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 12:00, 12:30, 13:00, 13:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.0,
       "relevance_score": 8.7,
@@ -1529,7 +1629,10 @@
       "food_category": "hotel_dining",
       "food_category_inferred": true,
       "best_discount_times": [
+        "12:00",
         "12:30",
+        "13:00",
+        "13:30",
         "14:00"
       ],
       "deal_type": "app_deal",
@@ -1596,7 +1699,7 @@
         ]
       },
       "deal_score": 92.5,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1605,7 +1708,7 @@
       "name": "Town Restaurant @ The Fullerton Hotel Singapore — Lunch",
       "restaurant_name": "Town Restaurant @ The Fullerton Hotel Singapore",
       "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 13:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 13:00, 13:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.0,
       "relevance_score": 8.7,
@@ -1615,7 +1718,8 @@
       "food_category": "hotel_dining",
       "food_category_inferred": true,
       "best_discount_times": [
-        "13:00"
+        "13:00",
+        "13:30"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
@@ -1681,7 +1785,679 @@
         ]
       },
       "deal_score": 92.5,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-e5b4a86e3da9",
+      "category": "food",
+      "name": "Q-WA Bar & Yakitori @ Boat Quay — Dinner",
+      "restaurant_name": "Q-WA Bar & Yakitori @ Boat Quay",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.7/5. Best observed slot(s): 17:30, 18:00, 18:30, 19:00. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 9.4,
+      "relevance_score": 8.2,
+      "rating": 4.7,
+      "reservation_count": 2000,
+      "meal_period": "dinner",
+      "food_category": "japanese",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "17:30",
+        "18:00",
+        "18:30",
+        "19:00",
+        "19:30",
+        "20:00",
+        "20:30",
+        "21:00"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 92.4,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 14.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 92.4,
+      "observed_at": "2026-11-15T10:27:48+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-698c695dcd71",
+      "category": "food",
+      "name": "JAG WINE @ East Coast Road — Dinner",
+      "restaurant_name": "JAG WINE @ East Coast Road",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.6/5. Best observed slot(s): 17:30, 18:00, 18:30, 19:00. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 9.2,
+      "relevance_score": 8.2,
+      "rating": 4.6,
+      "reservation_count": 3100,
+      "meal_period": "dinner",
+      "food_category": "other_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "17:30",
+        "18:00",
+        "18:30",
+        "19:00"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 92.1,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.8,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.2/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 92.1,
+      "observed_at": "2026-11-15T10:27:48+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-b5b53d52b77e",
+      "category": "food",
+      "name": "Food By Themes Food Guides",
+      "restaurant_name": "Food By Themes Food Guides",
+      "location": "Singapore",
+      "description": "11 Best Food Deals In Nov 2026: 1-For-1 Hotel Buffet, $12++ Wagyu Steak And More. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
+      "offer_text": "11 Best Food Deals In Nov 2026: 1-For-1 Hotel Buffet, $12++ Wagyu Steak And More",
+      "valid_from": null,
+      "valid_until": null,
+      "discount_percent": 50,
+      "quality_score": 7.4,
+      "relevance_score": 7.5,
+      "food_category": "western_international",
+      "food_category_inferred": true,
+      "deal_type": "discovery",
+      "source": "Eatbook Singapore",
+      "source_detail": "Eatbook Singapore food deals - November 2026",
+      "source_type": "promotion_aggregator",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with the restaurant before booking",
+      "reference_source": "https://eatbook.sg/food-deals-singapore-november-2026/",
+      "url": "https://eatbook.sg/food-deals-singapore-november-2026/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "discount_qualifier": "equivalent",
+      "offer_kind": "promotion_lead",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 84.3,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Equivalent 50% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.2,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.5/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 84.3,
+      "observed_at": "2026-11-15T10:27:48+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-f133fe838a43",
+      "category": "food",
+      "name": "Best food deals in Singapore for November 2026",
+      "restaurant_name": "Best food deals in Singapore for November 2026",
+      "location": "Singapore",
+      "description": "November is a tricky month for the wallet. 11.11 sales are already filling your cart, Christmas pre-orders are popping up in your feed, and year-end dinners haven’t even been booked yet. The good news is that dining deals are working just as hard as the online sales this month, from $11 steaks to a 1-for-1 buffet with Old Chang Kee. Here are the best food deals in Singapore for November 2026 .. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
+      "offer_text": "November is a tricky month for the wallet. 11.11 sales are already filling your cart, Christmas pre-orders are popping up in your feed, and year-end dinners haven’t even been booked yet. The good news is that dining deals are working just as hard as the online sales this month, from $11 steaks to a 1-for-1 buffet with Old Chang Kee. Here are the best food deals in Singapore for November 2026 .",
+      "valid_from": null,
+      "valid_until": null,
+      "discount_percent": 50,
+      "quality_score": 7.4,
+      "relevance_score": 7.5,
+      "food_category": "western_international",
+      "food_category_inferred": true,
+      "deal_type": "discovery",
+      "source": "Eatbook Singapore",
+      "source_detail": "Eatbook Singapore food deals - November 2026",
+      "source_type": "promotion_aggregator",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with the restaurant before booking",
+      "reference_source": "https://eatbook.sg/food-deals-singapore-november-2026/",
+      "url": "https://eatbook.sg/food-deals-singapore-november-2026/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "discount_qualifier": "equivalent",
+      "offer_kind": "promotion_lead",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 84.3,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Equivalent 50% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.2,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.5/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 84.3,
+      "observed_at": "2026-11-15T10:27:48+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-486ff6c676b5",
+      "category": "food",
+      "name": "3. SUSHIRO: Opening sushi deals at Bukit Panjang Plaza",
+      "restaurant_name": "3. SUSHIRO: Opening sushi deals at Bukit Panjang Plaza",
+      "location": "Singapore",
+      "description": "4. Opus Bar & Grill: 1-for-1 Old Chang Kee lunch buffet. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
+      "offer_text": "4. Opus Bar & Grill: 1-for-1 Old Chang Kee lunch buffet",
+      "valid_from": null,
+      "valid_until": null,
+      "discount_percent": 50,
+      "quality_score": 7.4,
+      "relevance_score": 7.5,
+      "food_category": "japanese",
+      "food_category_inferred": true,
+      "deal_type": "discovery",
+      "source": "Eatbook Singapore",
+      "source_detail": "Eatbook Singapore food deals - November 2026",
+      "source_type": "promotion_aggregator",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with the restaurant before booking",
+      "reference_source": "https://eatbook.sg/food-deals-singapore-november-2026/",
+      "url": "https://eatbook.sg/food-deals-singapore-november-2026/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "discount_qualifier": "equivalent",
+      "offer_kind": "promotion_lead",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 84.3,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Equivalent 50% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.2,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.5/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 84.3,
+      "observed_at": "2026-11-15T10:27:48+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-53c6c9257309",
+      "category": "food",
+      "name": "10. Skippy: Free peanut butter socks",
+      "restaurant_name": "10. Skippy: Free peanut butter socks",
+      "location": "Singapore",
+      "description": "11. Shin Katsu: 1-for-1 Hirata pork katsu on Mondays. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
+      "offer_text": "11. Shin Katsu: 1-for-1 Hirata pork katsu on Mondays",
+      "valid_from": null,
+      "valid_until": null,
+      "discount_percent": 50,
+      "quality_score": 7.4,
+      "relevance_score": 7.5,
+      "food_category": "other_dining",
+      "food_category_inferred": true,
+      "deal_type": "discovery",
+      "source": "Eatbook Singapore",
+      "source_detail": "Eatbook Singapore food deals - November 2026",
+      "source_type": "promotion_aggregator",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with the restaurant before booking",
+      "reference_source": "https://eatbook.sg/food-deals-singapore-november-2026/",
+      "url": "https://eatbook.sg/food-deals-singapore-november-2026/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "discount_qualifier": "equivalent",
+      "offer_kind": "promotion_lead",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 84.3,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Equivalent 50% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.1,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.4/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.2,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.5/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 84.3,
+      "observed_at": "2026-11-15T10:27:48+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-60aea5c5cd75",
+      "category": "food",
+      "name": "Cook & Brew @ The Westin Singapore",
+      "restaurant_name": "Cook & Brew @ The Westin Singapore",
+      "location": "The Westin Singapore",
+      "description": "Enjoy 30% off à la carte menu. Source: American Express Dining. Eligible American Express card required. Verify current dates, blackout periods and booking conditions before dining.",
+      "offer_text": "Enjoy 30% off à la carte menu",
+      "valid_from": null,
+      "valid_until": null,
+      "discount_percent": 30,
+      "quality_score": 8.8,
+      "relevance_score": 8.1,
+      "food_category": "hotel_dining",
+      "food_category_inferred": false,
+      "deal_type": "card_deal",
+      "source": "American Express Dining",
+      "source_detail": "Cook & Brew - American Express",
+      "source_type": "official_promotion_page",
+      "source_confidence": "verified",
+      "access_requirement": "Eligible American Express card required",
+      "reference_source": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/cook-and-brew/",
+      "url": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/cook-and-brew/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "discount_qualifier": "advertised",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 72.3,
+        "scale_max": 100,
+        "band": "Worth a look",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 33.0,
+            "max_points": 55,
+            "detail": "Advertised 30% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.1,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.1/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 72.3,
+      "observed_at": "2026-11-15T10:27:48+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-multi-7989f1253f63",
+      "category": "food",
+      "name": "Cook & Brew",
+      "restaurant_name": "Cook & Brew",
+      "location": "Singapore",
+      "description": "Enjoy 30% off à la carte menu.. Source: American Express Dining. Eligible American Express card required. Verify current dates, blackout periods and booking conditions before dining.",
+      "offer_text": "Enjoy 30% off à la carte menu.",
+      "valid_from": null,
+      "valid_until": null,
+      "discount_percent": 30,
+      "quality_score": 8.8,
+      "relevance_score": 7.6,
+      "food_category": "other_dining",
+      "food_category_inferred": true,
+      "deal_type": "card_deal",
+      "source": "American Express Dining",
+      "source_detail": "American Express Dining",
+      "source_type": "official_promotion_page",
+      "source_confidence": "verified",
+      "access_requirement": "Eligible American Express card required",
+      "reference_source": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/",
+      "url": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_promotion",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "discount_qualifier": "advertised",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 71.6,
+        "scale_max": 100,
+        "band": "Worth a look",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 33.0,
+            "max_points": 55,
+            "detail": "Advertised 30% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.2,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.8/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 11.4,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 7.6/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 10,
+            "max_points": 10,
+            "detail": "Verified official/direct source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 4.0,
+            "max_points": 5,
+            "detail": "Card-linked deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 71.6,
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     },
     {
@@ -1766,762 +2542,7 @@
         ]
       },
       "deal_score": 91.8,
-      "observed_at": "2026-11-14T13:58:03+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-eatigo-4254599b6082",
-      "category": "food",
-      "name": "Trishaw Coffee House @ Hotel Royal Singapore — Lunch",
-      "restaurant_name": "Trishaw Coffee House @ Hotel Royal Singapore",
-      "location": "Singapore",
-      "description": "Up to 60% off lunch time slots on Eatigo. Rating 4.4/5. Best observed slot(s): 14:00. Verify the live slot and conditions before booking.",
-      "discount_percent": 60,
-      "quality_score": 8.8,
-      "relevance_score": 8.4,
-      "rating": 4.4,
-      "reservation_count": 3700,
-      "meal_period": "lunch",
-      "food_category": "cafe_casual",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "14:00"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Lunch",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15505",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "discount_qualifier": "up_to",
-      "offer_kind": "specific_offer",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 91.8,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55,
-            "max_points": 55,
-            "detail": "Up to 60% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.2,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.8/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.4/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 91.8,
-      "observed_at": "2026-11-14T13:58:03+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-eatigo-4a6b11062fa0",
-      "category": "food",
-      "name": "Seorae Korean Charcoal BBQ @ Tampines Mall — Lunch",
-      "restaurant_name": "Seorae Korean Charcoal BBQ @ Tampines Mall",
-      "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 13:30, 14:00. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 9.0,
-      "relevance_score": 8.2,
-      "rating": 4.5,
-      "reservation_count": 8000,
-      "meal_period": "lunch",
-      "food_category": "korean",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "13:30",
-        "14:00"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Lunch",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15505",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "discount_qualifier": "up_to",
-      "offer_kind": "specific_offer",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 91.8,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55,
-            "max_points": 55,
-            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.5,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 9.0/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 91.8,
-      "observed_at": "2026-11-14T13:58:03+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-eatigo-abf8371257f7",
-      "category": "food",
-      "name": "Sun's Cafe @ Hotel Grand Pacific — Dinner",
-      "restaurant_name": "Sun's Cafe @ Hotel Grand Pacific",
-      "location": "Singapore",
-      "description": "Up to 55% off dinner time slots on Eatigo. Rating 4.3/5. Best observed slot(s): 19:30, 20:00, 20:30. Verify the live slot and conditions before booking.",
-      "discount_percent": 55,
-      "quality_score": 8.6,
-      "relevance_score": 8.4,
-      "rating": 4.3,
-      "reservation_count": 16100,
-      "meal_period": "dinner",
-      "food_category": "cafe_casual",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "19:30",
-        "20:00",
-        "20:30"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Dinner",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15504",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "discount_qualifier": "up_to",
-      "offer_kind": "specific_offer",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 91.5,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55,
-            "max_points": 55,
-            "detail": "Up to 55% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.9,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.4/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 91.5,
-      "observed_at": "2026-11-14T13:58:03+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-b5b53d52b77e",
-      "category": "food",
-      "name": "Food By Themes Food Guides",
-      "restaurant_name": "Food By Themes Food Guides",
-      "location": "Singapore",
-      "description": "11 Best Food Deals In Nov 2026: 1-For-1 Hotel Buffet, $12++ Wagyu Steak And More. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "offer_text": "11 Best Food Deals In Nov 2026: 1-For-1 Hotel Buffet, $12++ Wagyu Steak And More",
-      "valid_from": null,
-      "valid_until": null,
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 7.5,
-      "food_category": "western_international",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - November 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-november-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-november-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "discount_qualifier": "equivalent",
-      "offer_kind": "promotion_lead",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 84.3,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55,
-            "max_points": 55,
-            "detail": "Equivalent 50% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.2,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.5/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 84.3,
-      "observed_at": "2026-11-14T13:58:03+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-f133fe838a43",
-      "category": "food",
-      "name": "Best food deals in Singapore for November 2026",
-      "restaurant_name": "Best food deals in Singapore for November 2026",
-      "location": "Singapore",
-      "description": "November is a tricky month for the wallet. 11.11 sales are already filling your cart, Christmas pre-orders are popping up in your feed, and year-end dinners haven’t even been booked yet. The good news is that dining deals are working just as hard as the online sales this month, from $11 steaks to a 1-for-1 buffet with Old Chang Kee. Here are the best food deals in Singapore for November 2026 .. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "offer_text": "November is a tricky month for the wallet. 11.11 sales are already filling your cart, Christmas pre-orders are popping up in your feed, and year-end dinners haven’t even been booked yet. The good news is that dining deals are working just as hard as the online sales this month, from $11 steaks to a 1-for-1 buffet with Old Chang Kee. Here are the best food deals in Singapore for November 2026 .",
-      "valid_from": null,
-      "valid_until": null,
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 7.5,
-      "food_category": "western_international",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - November 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-november-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-november-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "discount_qualifier": "equivalent",
-      "offer_kind": "promotion_lead",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 84.3,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55,
-            "max_points": 55,
-            "detail": "Equivalent 50% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.2,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.5/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 84.3,
-      "observed_at": "2026-11-14T13:58:03+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-486ff6c676b5",
-      "category": "food",
-      "name": "3. SUSHIRO: Opening sushi deals at Bukit Panjang Plaza",
-      "restaurant_name": "3. SUSHIRO: Opening sushi deals at Bukit Panjang Plaza",
-      "location": "Singapore",
-      "description": "4. Opus Bar & Grill: 1-for-1 Old Chang Kee lunch buffet. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "offer_text": "4. Opus Bar & Grill: 1-for-1 Old Chang Kee lunch buffet",
-      "valid_from": null,
-      "valid_until": null,
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 7.5,
-      "food_category": "japanese",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - November 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-november-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-november-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "discount_qualifier": "equivalent",
-      "offer_kind": "promotion_lead",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 84.3,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55,
-            "max_points": 55,
-            "detail": "Equivalent 50% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.2,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.5/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 84.3,
-      "observed_at": "2026-11-14T13:58:03+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-53c6c9257309",
-      "category": "food",
-      "name": "10. Skippy: Free peanut butter socks",
-      "restaurant_name": "10. Skippy: Free peanut butter socks",
-      "location": "Singapore",
-      "description": "11. Shin Katsu: 1-for-1 Hirata pork katsu on Mondays. Source: Eatbook Singapore. Verify directly with the restaurant before booking. Verify current dates, blackout periods and booking conditions before dining.",
-      "offer_text": "11. Shin Katsu: 1-for-1 Hirata pork katsu on Mondays",
-      "valid_from": null,
-      "valid_until": null,
-      "discount_percent": 50,
-      "quality_score": 7.4,
-      "relevance_score": 7.5,
-      "food_category": "other_dining",
-      "food_category_inferred": true,
-      "deal_type": "discovery",
-      "source": "Eatbook Singapore",
-      "source_detail": "Eatbook Singapore food deals - November 2026",
-      "source_type": "promotion_aggregator",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with the restaurant before booking",
-      "reference_source": "https://eatbook.sg/food-deals-singapore-november-2026/",
-      "url": "https://eatbook.sg/food-deals-singapore-november-2026/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "discount_qualifier": "equivalent",
-      "offer_kind": "promotion_lead",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 84.3,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55,
-            "max_points": 55,
-            "detail": "Equivalent 50% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.1,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.4/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 11.2,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 7.5/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 84.3,
-      "observed_at": "2026-11-14T13:58:03+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-multi-60aea5c5cd75",
-      "category": "food",
-      "name": "Cook & Brew @ The Westin Singapore",
-      "restaurant_name": "Cook & Brew @ The Westin Singapore",
-      "location": "The Westin Singapore",
-      "description": "Enjoy 30% off à la carte menu. Source: American Express Dining. Eligible American Express card required. Verify current dates, blackout periods and booking conditions before dining.",
-      "offer_text": "Enjoy 30% off à la carte menu",
-      "valid_from": null,
-      "valid_until": null,
-      "discount_percent": 30,
-      "quality_score": 8.8,
-      "relevance_score": 8.1,
-      "food_category": "hotel_dining",
-      "food_category_inferred": false,
-      "deal_type": "card_deal",
-      "source": "American Express Dining",
-      "source_detail": "Cook & Brew - American Express",
-      "source_type": "official_promotion_page",
-      "source_confidence": "verified",
-      "access_requirement": "Eligible American Express card required",
-      "reference_source": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/cook-and-brew/",
-      "url": "https://www.americanexpress.com/en-sg/benefits/promotions/dining/cook-and-brew/",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_promotion",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "discount_qualifier": "advertised",
-      "offer_kind": "specific_offer",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 72.3,
-        "scale_max": 100,
-        "band": "Worth a look",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 33.0,
-            "max_points": 55,
-            "detail": "Advertised 30% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.2,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.8/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.1,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.1/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 10,
-            "max_points": 10,
-            "detail": "Verified official/direct source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 4.0,
-            "max_points": 5,
-            "detail": "Card-linked deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 72.3,
-      "observed_at": "2026-11-14T13:58:03+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "food-eatigo-9b465131eac7",
-      "category": "food",
-      "name": "Crossroads Buffet @ Singapore Marriott Tang Plaza Hotel — Dinner",
-      "restaurant_name": "Crossroads Buffet @ Singapore Marriott Tang Plaza Hotel",
-      "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.3/5. Best observed slot(s): 19:30, 20:00, 20:30. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 8.6,
-      "relevance_score": 8.4,
-      "rating": 4.3,
-      "reservation_count": 46800,
-      "meal_period": "dinner",
-      "food_category": "hotel_dining",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "19:30",
-        "20:00",
-        "20:30"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Dinner",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15504",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "discount_qualifier": "up_to",
-      "offer_kind": "specific_offer",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 91.5,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55,
-            "max_points": 55,
-            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.9,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.4/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 91.5,
-      "observed_at": "2026-11-14T13:58:03+08:00",
+      "observed_at": "2026-11-15T10:27:48+08:00",
       "exclude_from_best": true
     }
   ]

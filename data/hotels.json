@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T11:16:05+08:00",
+  "updated_at": "2026-11-15T10:28:12+08:00",
   "provider": "hotelbeds",
   "environment": "evaluation",
   "availability_results": 93,
@@ -36,14 +36,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:02+08:00",
-      "history_observations": 6,
+      "observed_at": "2026-11-15T10:27:00+08:00",
+      "history_observations": 7,
       "historical_median": 237.23,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 376.98,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 82.0,
         "scale_max": 100,
         "band": "Strong",
@@ -106,7 +106,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 82.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 82.0,
@@ -145,17 +162,17 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:14+08:00",
-      "history_observations": 0,
+      "observed_at": "2026-11-15T10:27:12+08:00",
+      "history_observations": 1,
       "historical_median": 98.73,
       "peer_median": 166.62,
       "reference_source": "same-date peer comparison",
       "score_basis": "peer_comparison",
       "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 47.0,
+        "model": "hotel_v2",
+        "total": 72.0,
         "scale_max": 100,
-        "band": "Low priority",
+        "band": "Worth a look",
         "components": [
           {
             "key": "price",
@@ -215,7 +232,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 25,
+        "cap": 84,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 25
+          },
+          {
+            "label": "Score cap (84)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 72.0,
@@ -254,17 +288,17 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:14+08:00",
-      "history_observations": 0,
+      "observed_at": "2026-11-15T10:27:12+08:00",
+      "history_observations": 1,
       "historical_median": 148.11,
       "peer_median": 311.7,
       "reference_source": "same-date peer comparison",
       "score_basis": "peer_comparison",
       "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 42.0,
+        "model": "hotel_v2",
+        "total": 67.0,
         "scale_max": 100,
-        "band": "Low priority",
+        "band": "Moderate",
         "components": [
           {
             "key": "price",
@@ -324,7 +358,149 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 25,
+        "cap": 84,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 25
+          },
+          {
+            "label": "Score cap (84)",
+            "points": 0.0
+          }
+        ]
+      },
+      "deal_score": 67.0,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-745684-2027-01-09",
+      "category": "hotel",
+      "sub_category": "staycation",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 745684,
+      "name": "Dusit Thani Laguna Singapore",
+      "destination": "Singapore",
+      "destination_code": "SIN",
+      "check_in": "2027-01-09",
+      "check_out": "2027-01-10",
+      "nights": 1,
+      "stars": 5,
+      "current_price": 151.6,
+      "total_price": 151.6,
+      "currency": "SGD",
+      "room_name": "DELUXE LAGUNA TWIN",
+      "board_name": "ROOM ONLY",
+      "breakfast": false,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": false,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-11-15T10:27:01+08:00",
+      "history_observations": 0,
+      "historical_median": 151.6,
+      "peer_median": 293.04,
+      "reference_source": "same-date peer comparison",
+      "score_basis": "peer_comparison",
+      "score_breakdown": {
+        "model": "hotel_v2",
+        "total": 67.0,
+        "scale_max": 100,
+        "band": "Moderate",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 0.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 1.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 25,
+        "cap": 84,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 25
+          },
+          {
+            "label": "Score cap (84)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 67.0,
@@ -344,8 +520,8 @@
       "check_out": "2026-12-13",
       "nights": 2,
       "stars": 5,
-      "current_price": 292.15,
-      "total_price": 584.31,
+      "current_price": 254.86,
+      "total_price": 509.72,
       "currency": "SGD",
       "room_name": "Banyan Retreat King",
       "board_name": "BED AND BREAKFAST",
@@ -355,31 +531,31 @@
       "quiet_relaxing": true,
       "couples_friendly": true,
       "good_location": true,
-      "flexible_cancellation": true,
+      "flexible_cancellation": false,
       "convenient_date": true,
       "booking_url": "",
       "source": "Hotelbeds Evaluation API",
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:05+08:00",
-      "history_observations": 28,
-      "historical_median": 313.91,
+      "observed_at": "2026-11-15T10:27:04+08:00",
+      "history_observations": 29,
+      "historical_median": 292.15,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 58.9,
+        "model": "hotel_v2",
+        "total": 61.6,
         "scale_max": 100,
-        "band": "Low priority",
+        "band": "Moderate",
         "components": [
           {
             "key": "price",
             "label": "Price saving",
-            "points": 7.9,
+            "points": 14.6,
             "max_points": 40,
-            "detail": "6.9% below the available reference price"
+            "detail": "12.8% below the available reference price"
           },
           {
             "key": "quality",
@@ -419,7 +595,7 @@
           {
             "key": "cancellation",
             "label": "Cancellation flexibility",
-            "points": 5.0,
+            "points": 1.0,
             "max_points": 5,
             "detail": "Flexibility of cancellation terms"
           },
@@ -432,10 +608,152 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 61.6,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
-      "deal_score": 58.9,
+      "deal_score": 61.6,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-623303-2026-12-25",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 623303,
+      "name": "Banyan Tree Kuala Lumpur",
+      "destination": "Kuala Lumpur",
+      "destination_code": "KUL",
+      "check_in": "2026-12-25",
+      "check_out": "2026-12-27",
+      "nights": 2,
+      "stars": 5,
+      "current_price": 330.26,
+      "total_price": 660.52,
+      "currency": "SGD",
+      "room_name": "Banyan Retreat King",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": false,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-11-15T10:27:05+08:00",
+      "history_observations": 15,
+      "historical_median": 375.11,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": null,
+      "score_breakdown": {
+        "model": "hotel_v2",
+        "total": 60.7,
+        "scale_max": 100,
+        "band": "Moderate",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 13.7,
+            "max_points": 40,
+            "detail": "12.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 1.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 60.7,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
+        ]
+      },
+      "deal_score": 60.7,
       "exclude_from_best": true
     },
     {
@@ -452,10 +770,10 @@
       "check_out": "2026-12-06",
       "nights": 2,
       "stars": 5,
-      "current_price": 259.7,
-      "total_price": 519.4,
+      "current_price": 242.91,
+      "total_price": 485.82,
       "currency": "SGD",
-      "room_name": "Signature Banyan Retreat",
+      "room_name": "Banyan Retreat King",
       "board_name": "BED AND BREAKFAST",
       "breakfast": true,
       "lounge": false,
@@ -463,31 +781,31 @@
       "quiet_relaxing": true,
       "couples_friendly": true,
       "good_location": true,
-      "flexible_cancellation": true,
+      "flexible_cancellation": false,
       "convenient_date": true,
       "booking_url": "",
       "source": "Hotelbeds Evaluation API",
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:05+08:00",
-      "history_observations": 35,
+      "observed_at": "2026-11-15T10:27:03+08:00",
+      "history_observations": 36,
       "historical_median": 267.99,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 54.5,
+        "model": "hotel_v2",
+        "total": 57.7,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
           {
             "key": "price",
             "label": "Price saving",
-            "points": 3.5,
+            "points": 10.7,
             "max_points": 40,
-            "detail": "3.1% below the available reference price"
+            "detail": "9.4% below the available reference price"
           },
           {
             "key": "quality",
@@ -527,7 +845,7 @@
           {
             "key": "cancellation",
             "label": "Cancellation flexibility",
-            "points": 5.0,
+            "points": 1.0,
             "max_points": 5,
             "detail": "Flexibility of cancellation terms"
           },
@@ -540,10 +858,152 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 57.7,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
-      "deal_score": 54.5,
+      "deal_score": 57.7,
+      "exclude_from_best": true
+    },
+    {
+      "id": "hotelbeds-623303-2026-12-18",
+      "category": "hotel",
+      "sub_category": "regional",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 623303,
+      "name": "Banyan Tree Kuala Lumpur",
+      "destination": "Kuala Lumpur",
+      "destination_code": "KUL",
+      "check_in": "2026-12-18",
+      "check_out": "2026-12-20",
+      "nights": 2,
+      "stars": 5,
+      "current_price": 250.75,
+      "total_price": 501.5,
+      "currency": "SGD",
+      "room_name": "Banyan Retreat King",
+      "board_name": "BED AND BREAKFAST",
+      "breakfast": true,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": false,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-11-15T10:27:04+08:00",
+      "history_observations": 22,
+      "historical_median": 274.19,
+      "reference_source": "observed price history",
+      "score_basis": "observed_history",
+      "peer_median": null,
+      "score_breakdown": {
+        "model": "hotel_v2",
+        "total": 56.8,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 9.8,
+            "max_points": 40,
+            "detail": "8.5% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 1.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 56.8,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
+        ]
+      },
+      "deal_score": 56.8,
       "exclude_from_best": true
     },
     {
@@ -578,14 +1038,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:13+08:00",
-      "history_observations": 7,
+      "observed_at": "2026-11-15T10:27:11+08:00",
+      "history_observations": 8,
       "historical_median": 450.24,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 309.6,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 54.3,
         "scale_max": 100,
         "band": "Low priority",
@@ -648,14 +1108,31 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 54.3,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 54.3,
       "exclude_from_best": true
     },
     {
-      "id": "hotelbeds-623303-2026-11-27",
+      "id": "hotelbeds-623303-2026-11-20",
       "category": "hotel",
       "sub_category": "regional",
       "provider": "hotelbeds",
@@ -664,14 +1141,14 @@
       "name": "Banyan Tree Kuala Lumpur",
       "destination": "Kuala Lumpur",
       "destination_code": "KUL",
-      "check_in": "2026-11-27",
-      "check_out": "2026-11-29",
+      "check_in": "2026-11-20",
+      "check_out": "2026-11-22",
       "nights": 2,
       "stars": 5,
-      "current_price": 242.28,
-      "total_price": 484.56,
+      "current_price": 233.04,
+      "total_price": 466.08,
       "currency": "SGD",
-      "room_name": "Banyan Retreat",
+      "room_name": "Banyan Retreat King",
       "board_name": "BED AND BREAKFAST",
       "breakfast": true,
       "lounge": false,
@@ -679,31 +1156,31 @@
       "quiet_relaxing": true,
       "couples_friendly": true,
       "good_location": true,
-      "flexible_cancellation": true,
+      "flexible_cancellation": false,
       "convenient_date": true,
       "booking_url": "",
       "source": "Hotelbeds Evaluation API",
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:04+08:00",
-      "history_observations": 42,
-      "historical_median": 246.14,
+      "observed_at": "2026-11-15T10:27:01+08:00",
+      "history_observations": 50,
+      "historical_median": 242.28,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 52.8,
+        "model": "hotel_v2",
+        "total": 51.4,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
           {
             "key": "price",
             "label": "Price saving",
-            "points": 1.8,
+            "points": 4.4,
             "max_points": 40,
-            "detail": "1.6% below the available reference price"
+            "detail": "3.8% below the available reference price"
           },
           {
             "key": "quality",
@@ -743,7 +1220,7 @@
           {
             "key": "cancellation",
             "label": "Cancellation flexibility",
-            "points": 5.0,
+            "points": 1.0,
             "max_points": 5,
             "detail": "Flexibility of cancellation terms"
           },
@@ -756,10 +1233,27 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.4,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
-      "deal_score": 52.8,
+      "deal_score": 51.4,
       "exclude_from_best": true
     },
     {
@@ -794,14 +1288,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:14+08:00",
-      "history_observations": 0,
+      "observed_at": "2026-11-15T10:27:12+08:00",
+      "history_observations": 1,
       "historical_median": 213.15,
       "peer_median": null,
       "reference_source": "current observation only",
       "score_basis": "current_only",
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -864,7 +1358,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 69,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (69)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0,
@@ -902,14 +1413,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:10+08:00",
-      "history_observations": 35,
+      "observed_at": "2026-11-15T10:27:08+08:00",
+      "history_observations": 36,
       "historical_median": 220.62,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -972,7 +1483,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0,
@@ -1010,14 +1538,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:14+08:00",
-      "history_observations": 0,
+      "observed_at": "2026-11-15T10:27:12+08:00",
+      "history_observations": 1,
       "historical_median": 234.5,
       "peer_median": 166.62,
       "reference_source": "same-date peer comparison",
       "score_basis": "peer_comparison",
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -1080,7 +1608,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 84,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (84)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0,
@@ -1118,14 +1663,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:11+08:00",
-      "history_observations": 28,
+      "observed_at": "2026-11-15T10:27:09+08:00",
+      "history_observations": 29,
       "historical_median": 236.75,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -1188,7 +1733,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0,
@@ -1226,14 +1788,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:09+08:00",
-      "history_observations": 42,
+      "observed_at": "2026-11-15T10:27:08+08:00",
+      "history_observations": 43,
       "historical_median": 240.62,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -1296,14 +1858,31 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0,
       "exclude_from_best": true
     },
     {
-      "id": "hotelbeds-623303-2026-11-20",
+      "id": "hotelbeds-623303-2026-11-27",
       "category": "hotel",
       "sub_category": "regional",
       "provider": "hotelbeds",
@@ -1312,8 +1891,8 @@
       "name": "Banyan Tree Kuala Lumpur",
       "destination": "Kuala Lumpur",
       "destination_code": "KUL",
-      "check_in": "2026-11-20",
-      "check_out": "2026-11-22",
+      "check_in": "2026-11-27",
+      "check_out": "2026-11-29",
       "nights": 2,
       "stars": 5,
       "current_price": 242.28,
@@ -1334,14 +1913,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:03+08:00",
-      "history_observations": 49,
+      "observed_at": "2026-11-15T10:27:02+08:00",
+      "history_observations": 43,
       "historical_median": 242.28,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -1404,7 +1983,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0,
@@ -1442,14 +2038,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:09+08:00",
-      "history_observations": 42,
+      "observed_at": "2026-11-15T10:27:08+08:00",
+      "history_observations": 43,
       "historical_median": 252.74,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -1512,7 +2108,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0,
@@ -1550,14 +2163,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:11+08:00",
-      "history_observations": 28,
+      "observed_at": "2026-11-15T10:27:09+08:00",
+      "history_observations": 29,
       "historical_median": 252.74,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 175.74,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -1620,7 +2233,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0,
@@ -1658,14 +2288,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:09+08:00",
-      "history_observations": 49,
+      "observed_at": "2026-11-15T10:27:07+08:00",
+      "history_observations": 50,
       "historical_median": 261.91,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -1728,7 +2358,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0,
@@ -1766,14 +2413,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:12+08:00",
-      "history_observations": 21,
+      "observed_at": "2026-11-15T10:27:10+08:00",
+      "history_observations": 22,
       "historical_median": 263.81,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -1836,7 +2483,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0,
@@ -1874,14 +2538,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:13+08:00",
-      "history_observations": 7,
+      "observed_at": "2026-11-15T10:27:11+08:00",
+      "history_observations": 8,
       "historical_median": 266.61,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -1944,11 +2608,27 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
-      "deal_score": 51.0,
-      "exclude_from_best": true
+      "deal_score": 51.0
     },
     {
       "id": "hotelbeds-133164-2027-01-08",
@@ -1982,14 +2662,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:14+08:00",
-      "history_observations": 0,
+      "observed_at": "2026-11-15T10:27:12+08:00",
+      "history_observations": 1,
       "historical_median": 340.71,
       "peer_median": 311.7,
       "reference_source": "same-date peer comparison",
       "score_basis": "peer_comparison",
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -2052,119 +2732,27 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 51.0,
-      "exclude_from_best": true
-    },
-    {
-      "id": "hotelbeds-74305-2026-11-14",
-      "category": "hotel",
-      "sub_category": "staycation",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 74305,
-      "name": "Pan Pacific Orchard",
-      "destination": "Singapore",
-      "destination_code": "SIN",
-      "check_in": "2026-11-14",
-      "check_out": "2026-11-15",
-      "nights": 1,
-      "stars": 5,
-      "current_price": 347.45,
-      "total_price": 347.45,
-      "currency": "SGD",
-      "room_name": "PREMIER BALCONY ROOM",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": true,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-11-13T11:14:57+08:00",
-      "history_observations": 55,
-      "historical_median": 347.45,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 332.52,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 51.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.0,
-            "max_points": 40,
-            "detail": "0.0% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
         ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 84,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (84)",
+            "points": 0.0
+          }
         ]
       },
-      "deal_score": 51.0,
-      "exclude_from_best": true
+      "deal_score": 51.0
     },
     {
       "id": "hotelbeds-133164-2026-11-20",
@@ -2198,14 +2786,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:09+08:00",
-      "history_observations": 49,
+      "observed_at": "2026-11-15T10:27:07+08:00",
+      "history_observations": 50,
       "historical_median": 390.65,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 369.03,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -2268,7 +2856,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0
@@ -2305,14 +2910,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:12+08:00",
-      "history_observations": 21,
+      "observed_at": "2026-11-15T10:27:10+08:00",
+      "history_observations": 22,
       "historical_median": 404.91,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 311.7,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -2375,7 +2980,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0
@@ -2412,14 +3034,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:12+08:00",
-      "history_observations": 21,
+      "observed_at": "2026-11-15T10:27:10+08:00",
+      "history_observations": 22,
       "historical_median": 286.61,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 270.73,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -2482,7 +3104,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0
@@ -2519,14 +3158,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:11+08:00",
-      "history_observations": 28,
+      "observed_at": "2026-11-15T10:27:09+08:00",
+      "history_observations": 29,
       "historical_median": 404.91,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 367.97,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -2589,7 +3228,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0
@@ -2626,14 +3282,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:13+08:00",
-      "history_observations": 7,
+      "observed_at": "2026-11-15T10:27:11+08:00",
+      "history_observations": 8,
       "historical_median": 454.1,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 401.25,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -2696,7 +3352,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0
@@ -2733,14 +3406,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:09+08:00",
-      "history_observations": 49,
+      "observed_at": "2026-11-15T10:27:07+08:00",
+      "history_observations": 50,
       "historical_median": 315.27,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 343.53,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -2803,7 +3476,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0
@@ -2840,14 +3530,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:09+08:00",
-      "history_observations": 42,
-      "historical_median": 457.08,
+      "observed_at": "2026-11-15T10:27:08+08:00",
+      "history_observations": 43,
+      "historical_median": 464.26,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 370.08,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -2910,7 +3600,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0
@@ -2947,14 +3654,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:10+08:00",
-      "history_observations": 35,
+      "observed_at": "2026-11-15T10:27:08+08:00",
+      "history_observations": 36,
       "historical_median": 456.96,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 434.51,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -3017,7 +3724,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0
@@ -3054,14 +3778,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:12+08:00",
-      "history_observations": 14,
+      "observed_at": "2026-11-15T10:27:11+08:00",
+      "history_observations": 15,
       "historical_median": 473.67,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 358.43,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -3124,7 +3848,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0
@@ -3161,14 +3902,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:07+08:00",
-      "history_observations": 7,
+      "observed_at": "2026-11-15T10:27:06+08:00",
+      "history_observations": 8,
       "historical_median": 478.94,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -3231,7 +3972,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0
@@ -3268,14 +4026,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:12+08:00",
-      "history_observations": 14,
+      "observed_at": "2026-11-15T10:27:11+08:00",
+      "history_observations": 15,
       "historical_median": 507.18,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -3338,7 +4096,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0
@@ -3375,14 +4150,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:10+08:00",
-      "history_observations": 35,
+      "observed_at": "2026-11-15T10:27:08+08:00",
+      "history_observations": 36,
       "historical_median": 315.27,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 303.4,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 51.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -3445,7 +4220,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 51.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 51.0
@@ -3482,14 +4274,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:10+08:00",
-      "history_observations": 35,
+      "observed_at": "2026-11-15T10:27:08+08:00",
+      "history_observations": 36,
       "historical_median": 98.73,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 303.4,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -3552,7 +4344,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -3589,14 +4398,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:11+08:00",
-      "history_observations": 28,
+      "observed_at": "2026-11-15T10:27:09+08:00",
+      "history_observations": 29,
       "historical_median": 98.73,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 175.74,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -3659,7 +4468,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -3696,14 +4522,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:12+08:00",
-      "history_observations": 21,
+      "observed_at": "2026-11-15T10:27:10+08:00",
+      "history_observations": 22,
       "historical_median": 111.53,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 270.73,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -3766,7 +4592,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -3803,14 +4646,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:12+08:00",
-      "history_observations": 14,
+      "observed_at": "2026-11-15T10:27:11+08:00",
+      "history_observations": 15,
       "historical_median": 182.13,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -3873,7 +4716,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -3910,14 +4770,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:13+08:00",
-      "history_observations": 7,
+      "observed_at": "2026-11-15T10:27:11+08:00",
+      "history_observations": 8,
       "historical_median": 182.13,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 309.6,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -3980,7 +4840,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -4017,14 +4894,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:09+08:00",
-      "history_observations": 49,
+      "observed_at": "2026-11-15T10:27:07+08:00",
+      "history_observations": 50,
       "historical_median": 225.89,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 343.53,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -4087,7 +4964,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -4124,14 +5018,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:08+08:00",
-      "history_observations": 0,
+      "observed_at": "2026-11-15T10:27:06+08:00",
+      "history_observations": 1,
       "historical_median": 273.17,
       "peer_median": null,
       "reference_source": "current observation only",
       "score_basis": "current_only",
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -4194,221 +5088,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 47.0
-    },
-    {
-      "id": "hotelbeds-623303-2026-12-18",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 623303,
-      "name": "Banyan Tree Kuala Lumpur",
-      "destination": "Kuala Lumpur",
-      "destination_code": "KUL",
-      "check_in": "2026-12-18",
-      "check_out": "2026-12-20",
-      "nights": 2,
-      "stars": 5,
-      "current_price": 274.19,
-      "total_price": 548.39,
-      "currency": "SGD",
-      "room_name": "Banyan Retreat King",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": false,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:06+08:00",
-      "history_observations": 21,
-      "historical_median": 274.19,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 47.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.0,
-            "max_points": 40,
-            "detail": "0.0% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 1.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
         ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 47.0
-    },
-    {
-      "id": "hotelbeds-623303-2026-12-25",
-      "category": "hotel",
-      "sub_category": "regional",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 623303,
-      "name": "Banyan Tree Kuala Lumpur",
-      "destination": "Kuala Lumpur",
-      "destination_code": "KUL",
-      "check_in": "2026-12-25",
-      "check_out": "2026-12-27",
-      "nights": 2,
-      "stars": 5,
-      "current_price": 375.11,
-      "total_price": 750.21,
-      "currency": "SGD",
-      "room_name": "Banyan Retreat King",
-      "board_name": "BED AND BREAKFAST",
-      "breakfast": true,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": false,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:07+08:00",
-      "history_observations": 14,
-      "historical_median": 375.11,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": null,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 47.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 69,
+        "cap_adjustment": 0.0,
+        "adjustments": [
           {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.0,
-            "max_points": 40,
-            "detail": "0.0% below the available reference price"
+            "label": "Same-date peer bonus",
+            "points": 0.0
           },
           {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 1.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
+            "label": "Score cap (69)",
+            "points": 0.0
           }
-        ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
         ]
       },
       "deal_score": 47.0
@@ -4445,14 +5142,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:07+08:00",
-      "history_observations": 7,
+      "observed_at": "2026-11-15T10:27:06+08:00",
+      "history_observations": 8,
       "historical_median": 378.25,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -4515,7 +5212,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -4552,14 +5266,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:04+08:00",
-      "history_observations": 42,
-      "historical_median": 375.59,
+      "observed_at": "2026-11-15T10:27:02+08:00",
+      "history_observations": 43,
+      "historical_median": 379.79,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -4622,7 +5336,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -4659,14 +5390,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:05+08:00",
-      "history_observations": 28,
+      "observed_at": "2026-11-15T10:27:04+08:00",
+      "history_observations": 29,
       "historical_median": 384.78,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -4729,7 +5460,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -4766,14 +5514,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:08+08:00",
-      "history_observations": 0,
+      "observed_at": "2026-11-15T10:27:06+08:00",
+      "history_observations": 1,
       "historical_median": 384.78,
       "peer_median": null,
       "reference_source": "current observation only",
       "score_basis": "current_only",
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -4836,7 +5584,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 69,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (69)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -4873,14 +5638,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:06+08:00",
-      "history_observations": 21,
+      "observed_at": "2026-11-15T10:27:04+08:00",
+      "history_observations": 22,
       "historical_median": 385.02,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -4943,7 +5708,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -4980,14 +5762,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:03+08:00",
-      "history_observations": 49,
+      "observed_at": "2026-11-15T10:27:01+08:00",
+      "history_observations": 50,
       "historical_median": 385.23,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -5050,7 +5832,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -5087,14 +5886,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:05+08:00",
-      "history_observations": 35,
+      "observed_at": "2026-11-15T10:27:03+08:00",
+      "history_observations": 36,
       "historical_median": 384.78,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -5157,7 +5956,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -5194,14 +6010,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:07+08:00",
-      "history_observations": 14,
+      "observed_at": "2026-11-15T10:27:05+08:00",
+      "history_observations": 15,
       "historical_median": 462.8,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": null,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 47.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -5264,7 +6080,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 47.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 47.0
@@ -5301,14 +6134,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:14:58+08:00",
-      "history_observations": 48,
+      "observed_at": "2026-11-15T10:26:56+08:00",
+      "history_observations": 49,
       "historical_median": 138.97,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 309.08,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -5371,7 +6204,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
@@ -5408,14 +6258,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:02+08:00",
-      "history_observations": 13,
+      "observed_at": "2026-11-15T10:26:59+08:00",
+      "history_observations": 14,
       "historical_median": 145.28,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 378.76,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -5478,7 +6328,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
@@ -5515,14 +6382,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:14:59+08:00",
-      "history_observations": 41,
+      "observed_at": "2026-11-15T10:26:57+08:00",
+      "history_observations": 42,
       "historical_median": 291.06,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 295.37,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -5585,7 +6452,148 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
+        ]
+      },
+      "deal_score": 46.0
+    },
+    {
+      "id": "hotelbeds-74305-2027-01-09",
+      "category": "hotel",
+      "sub_category": "staycation",
+      "provider": "hotelbeds",
+      "provider_environment": "evaluation",
+      "hotelbeds_code": 74305,
+      "name": "Pan Pacific Orchard",
+      "destination": "Singapore",
+      "destination_code": "SIN",
+      "check_in": "2027-01-09",
+      "check_out": "2027-01-10",
+      "nights": 1,
+      "stars": 5,
+      "current_price": 304.02,
+      "total_price": 304.02,
+      "currency": "SGD",
+      "room_name": "Deluxe Twin",
+      "board_name": "ROOM ONLY",
+      "breakfast": false,
+      "lounge": false,
+      "bathtub": false,
+      "quiet_relaxing": true,
+      "couples_friendly": true,
+      "good_location": true,
+      "flexible_cancellation": true,
+      "convenient_date": true,
+      "booking_url": "",
+      "source": "Hotelbeds Evaluation API",
+      "price_type": "Hotelbeds evaluation/net rate",
+      "is_demo": false,
+      "is_evaluation": true,
+      "observed_at": "2026-11-15T10:27:01+08:00",
+      "history_observations": 0,
+      "historical_median": 304.02,
+      "peer_median": 293.04,
+      "reference_source": "same-date peer comparison",
+      "score_basis": "peer_comparison",
+      "score_breakdown": {
+        "model": "hotel_v2",
+        "total": 46.0,
+        "scale_max": 100,
+        "band": "Low priority",
+        "components": [
+          {
+            "key": "price",
+            "label": "Price saving",
+            "points": 0.0,
+            "max_points": 40,
+            "detail": "0.0% below the available reference price"
+          },
+          {
+            "key": "quality",
+            "label": "Hotel quality",
+            "points": 15,
+            "max_points": 15,
+            "detail": "5.0-star quality input"
+          },
+          {
+            "key": "room",
+            "label": "Room suitability",
+            "points": 6.0,
+            "max_points": 10,
+            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
+          },
+          {
+            "key": "extras",
+            "label": "Included extras",
+            "points": 0.0,
+            "max_points": 10,
+            "detail": "Breakfast and lounge attributes"
+          },
+          {
+            "key": "getaway",
+            "label": "Getaway fit",
+            "points": 10.0,
+            "max_points": 10,
+            "detail": "Suitability as a couple getaway"
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the hotel location"
+          },
+          {
+            "key": "cancellation",
+            "label": "Cancellation flexibility",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Flexibility of cancellation terms"
+          },
+          {
+            "key": "date",
+            "label": "Date convenience",
+            "points": 5.0,
+            "max_points": 5,
+            "detail": "Convenience of the stay dates"
+          }
+        ],
+        "notes": [
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 84,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (84)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
@@ -5622,14 +6630,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:00+08:00",
-      "history_observations": 27,
+      "observed_at": "2026-11-15T10:26:58+08:00",
+      "history_observations": 28,
       "historical_median": 316.91,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 317.7,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -5692,7 +6700,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
@@ -5729,14 +6754,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:14:58+08:00",
-      "history_observations": 48,
+      "observed_at": "2026-11-15T10:26:56+08:00",
+      "history_observations": 49,
       "historical_median": 318.49,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 309.08,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -5799,7 +6824,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
@@ -5836,14 +6878,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:14:59+08:00",
-      "history_observations": 41,
+      "observed_at": "2026-11-15T10:26:57+08:00",
+      "history_observations": 42,
       "historical_median": 318.49,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 295.37,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -5906,7 +6948,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
@@ -5943,14 +7002,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:00+08:00",
-      "history_observations": 34,
+      "observed_at": "2026-11-15T10:26:57+08:00",
+      "history_observations": 35,
       "historical_median": 318.49,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
-      "peer_median": 410.6,
+      "peer_median": 414.04,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -6013,7 +7072,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
@@ -6050,14 +7126,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:00+08:00",
-      "history_observations": 27,
+      "observed_at": "2026-11-15T10:26:58+08:00",
+      "history_observations": 28,
       "historical_median": 318.49,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 317.7,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -6120,13 +7196,30 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
     },
     {
-      "id": "hotelbeds-74304-2026-11-14",
+      "id": "hotelbeds-74304-2027-01-09",
       "category": "hotel",
       "sub_category": "staycation",
       "provider": "hotelbeds",
@@ -6135,12 +7228,12 @@
       "name": "PARKROYAL COLLECTION Marina Bay, Singapore",
       "destination": "Singapore",
       "destination_code": "SIN",
-      "check_in": "2026-11-14",
-      "check_out": "2026-11-15",
+      "check_in": "2027-01-09",
+      "check_out": "2027-01-10",
       "nights": 1,
       "stars": 5,
-      "current_price": 323.39,
-      "total_price": 323.39,
+      "current_price": 336.32,
+      "total_price": 336.32,
       "currency": "SGD",
       "room_name": "URBAN DELUXE",
       "board_name": "ROOM ONLY",
@@ -6157,14 +7250,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:14:57+08:00",
-      "history_observations": 55,
-      "historical_median": 323.39,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 332.52,
+      "observed_at": "2026-11-15T10:27:01+08:00",
+      "history_observations": 0,
+      "historical_median": 336.32,
+      "peer_median": 293.04,
+      "reference_source": "same-date peer comparison",
+      "score_basis": "peer_comparison",
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -6227,7 +7320,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 84,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (84)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
@@ -6264,14 +7374,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:02+08:00",
-      "history_observations": 13,
+      "observed_at": "2026-11-15T10:26:59+08:00",
+      "history_observations": 14,
       "historical_median": 361.93,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 378.76,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -6334,7 +7444,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
@@ -6371,14 +7498,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:02+08:00",
-      "history_observations": 6,
+      "observed_at": "2026-11-15T10:27:00+08:00",
+      "history_observations": 7,
       "historical_median": 361.93,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 376.98,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -6441,7 +7568,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
@@ -6478,14 +7622,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:01+08:00",
-      "history_observations": 20,
+      "observed_at": "2026-11-15T10:26:59+08:00",
+      "history_observations": 21,
       "historical_median": 380.4,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 417.13,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -6548,7 +7692,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
@@ -6585,14 +7746,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:14:58+08:00",
-      "history_observations": 48,
+      "observed_at": "2026-11-15T10:26:56+08:00",
+      "history_observations": 49,
       "historical_median": 420.4,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 309.08,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 46.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -6655,29 +7816,46 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 46.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 46.0
     },
     {
-      "id": "hotelbeds-745684-2026-11-14",
+      "id": "hotelbeds-74318-2027-01-09",
       "category": "hotel",
       "sub_category": "staycation",
       "provider": "hotelbeds",
       "provider_environment": "evaluation",
-      "hotelbeds_code": 745684,
-      "name": "Dusit Thani Laguna Singapore",
+      "hotelbeds_code": 74318,
+      "name": "Pan Pacific Singapore",
       "destination": "Singapore",
       "destination_code": "SIN",
-      "check_in": "2026-11-14",
-      "check_out": "2026-11-15",
+      "check_in": "2027-01-09",
+      "check_out": "2027-01-10",
       "nights": 1,
       "stars": 5,
-      "current_price": 145.28,
-      "total_price": 145.28,
+      "current_price": 282.07,
+      "total_price": 282.07,
       "currency": "SGD",
-      "room_name": "DELUXE LAGUNA TWIN",
+      "room_name": "Deluxe Room",
       "board_name": "ROOM ONLY",
       "breakfast": false,
       "lounge": false,
@@ -6692,15 +7870,15 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:14:57+08:00",
-      "history_observations": 55,
-      "historical_median": 145.28,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 332.52,
+      "observed_at": "2026-11-15T10:27:01+08:00",
+      "history_observations": 0,
+      "historical_median": 282.07,
+      "peer_median": 293.04,
+      "reference_source": "same-date peer comparison",
+      "score_basis": "peer_comparison",
       "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 42.0,
+        "model": "hotel_v2",
+        "total": 45.1,
         "scale_max": 100,
         "band": "Low priority",
         "components": [
@@ -6762,10 +7940,27 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 3.1,
+        "cap": 84,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 3.1
+          },
+          {
+            "label": "Score cap (84)",
+            "points": 0.0
+          }
         ]
       },
-      "deal_score": 42.0
+      "deal_score": 45.1
     },
     {
       "id": "hotelbeds-552121-2026-12-18",
@@ -6799,14 +7994,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:12+08:00",
-      "history_observations": 21,
+      "observed_at": "2026-11-15T10:27:10+08:00",
+      "history_observations": 22,
       "historical_median": 148.11,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 311.7,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -6869,7 +8064,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -6906,14 +8118,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:00+08:00",
-      "history_observations": 34,
+      "observed_at": "2026-11-15T10:26:57+08:00",
+      "history_observations": 35,
       "historical_median": 142.48,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
-      "peer_median": 410.6,
+      "peer_median": 414.04,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -6976,7 +8188,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -7013,14 +8242,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:00+08:00",
-      "history_observations": 27,
+      "observed_at": "2026-11-15T10:26:58+08:00",
+      "history_observations": 28,
       "historical_median": 142.48,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 317.7,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -7083,7 +8312,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -7120,14 +8366,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:09+08:00",
-      "history_observations": 42,
-      "historical_median": 160.44,
+      "observed_at": "2026-11-15T10:27:08+08:00",
+      "history_observations": 43,
+      "historical_median": 162.09,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 370.08,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -7190,7 +8436,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -7227,14 +8490,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:14:59+08:00",
-      "history_observations": 41,
+      "observed_at": "2026-11-15T10:26:57+08:00",
+      "history_observations": 42,
       "historical_median": 157.92,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 295.37,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -7297,7 +8560,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -7334,14 +8614,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:11+08:00",
-      "history_observations": 28,
+      "observed_at": "2026-11-15T10:27:09+08:00",
+      "history_observations": 29,
       "historical_median": 148.11,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 367.97,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -7404,7 +8684,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -7441,14 +8738,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:13+08:00",
-      "history_observations": 7,
+      "observed_at": "2026-11-15T10:27:11+08:00",
+      "history_observations": 8,
       "historical_median": 175.36,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 401.25,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -7511,7 +8808,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -7548,14 +8862,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:09+08:00",
-      "history_observations": 49,
+      "observed_at": "2026-11-15T10:27:07+08:00",
+      "history_observations": 50,
       "historical_median": 177.87,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 369.03,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -7618,7 +8932,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -7655,14 +8986,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:12+08:00",
-      "history_observations": 14,
+      "observed_at": "2026-11-15T10:27:11+08:00",
+      "history_observations": 15,
       "historical_median": 183.11,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 358.43,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -7725,7 +9056,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -7762,14 +9110,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:01+08:00",
-      "history_observations": 20,
+      "observed_at": "2026-11-15T10:26:59+08:00",
+      "history_observations": 21,
       "historical_median": 239.84,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 417.13,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -7832,7 +9180,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -7869,14 +9234,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:14:58+08:00",
-      "history_observations": 48,
+      "observed_at": "2026-11-15T10:26:56+08:00",
+      "history_observations": 49,
       "historical_median": 299.67,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 309.08,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -7939,7 +9304,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -7976,14 +9358,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:14:59+08:00",
-      "history_observations": 41,
-      "historical_median": 295.63,
+      "observed_at": "2026-11-15T10:26:57+08:00",
+      "history_observations": 42,
+      "historical_median": 297.65,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 295.37,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -8046,7 +9428,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -8083,14 +9482,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:12+08:00",
-      "history_observations": 21,
+      "observed_at": "2026-11-15T10:27:10+08:00",
+      "history_observations": 22,
       "historical_median": 311.7,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 311.7,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -8153,7 +9552,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -8190,14 +9606,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:14+08:00",
-      "history_observations": 0,
+      "observed_at": "2026-11-15T10:27:12+08:00",
+      "history_observations": 1,
       "historical_median": 311.7,
       "peer_median": 311.7,
       "reference_source": "same-date peer comparison",
       "score_basis": "peer_comparison",
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -8260,7 +9676,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 84,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (84)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -8297,14 +9730,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:00+08:00",
-      "history_observations": 27,
+      "observed_at": "2026-11-15T10:26:58+08:00",
+      "history_observations": 28,
       "historical_median": 322.05,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 317.7,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -8367,114 +9800,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
-        ]
-      },
-      "deal_score": 42.0
-    },
-    {
-      "id": "hotelbeds-74318-2026-11-14",
-      "category": "hotel",
-      "sub_category": "staycation",
-      "provider": "hotelbeds",
-      "provider_environment": "evaluation",
-      "hotelbeds_code": 74318,
-      "name": "Pan Pacific Singapore",
-      "destination": "Singapore",
-      "destination_code": "SIN",
-      "check_in": "2026-11-14",
-      "check_out": "2026-11-15",
-      "nights": 1,
-      "stars": 5,
-      "current_price": 341.66,
-      "total_price": 341.66,
-      "currency": "SGD",
-      "room_name": "Deluxe Room",
-      "board_name": "ROOM ONLY",
-      "breakfast": false,
-      "lounge": false,
-      "bathtub": false,
-      "quiet_relaxing": true,
-      "couples_friendly": true,
-      "good_location": true,
-      "flexible_cancellation": false,
-      "convenient_date": true,
-      "booking_url": "",
-      "source": "Hotelbeds Evaluation API",
-      "price_type": "Hotelbeds evaluation/net rate",
-      "is_demo": false,
-      "is_evaluation": true,
-      "observed_at": "2026-11-13T11:14:57+08:00",
-      "history_observations": 55,
-      "historical_median": 341.66,
-      "reference_source": "observed price history",
-      "score_basis": "observed_history",
-      "peer_median": 332.52,
-      "score_breakdown": {
-        "model": "hotel_v1",
-        "total": 42.0,
-        "scale_max": 100,
-        "band": "Low priority",
-        "components": [
-          {
-            "key": "price",
-            "label": "Price saving",
-            "points": 0.0,
-            "max_points": 40,
-            "detail": "0.0% below the available reference price"
-          },
-          {
-            "key": "quality",
-            "label": "Hotel quality",
-            "points": 15,
-            "max_points": 15,
-            "detail": "5.0-star quality input"
-          },
-          {
-            "key": "room",
-            "label": "Room suitability",
-            "points": 6.0,
-            "max_points": 10,
-            "detail": "Bathtub, quiet/relaxing and couple-friendly attributes"
-          },
-          {
-            "key": "extras",
-            "label": "Included extras",
-            "points": 0.0,
-            "max_points": 10,
-            "detail": "Breakfast and lounge attributes"
-          },
-          {
-            "key": "getaway",
-            "label": "Getaway fit",
-            "points": 10.0,
-            "max_points": 10,
-            "detail": "Suitability as a couple getaway"
-          },
-          {
-            "key": "location",
-            "label": "Location",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the hotel location"
-          },
-          {
-            "key": "cancellation",
-            "label": "Cancellation flexibility",
-            "points": 1.0,
-            "max_points": 5,
-            "detail": "Flexibility of cancellation terms"
-          },
-          {
-            "key": "date",
-            "label": "Date convenience",
-            "points": 5.0,
-            "max_points": 5,
-            "detail": "Convenience of the stay dates"
-          }
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
         ],
-        "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -8511,14 +9854,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:12+08:00",
-      "history_observations": 14,
+      "observed_at": "2026-11-15T10:27:11+08:00",
+      "history_observations": 15,
       "historical_median": 358.43,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 358.43,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -8581,7 +9924,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -8618,14 +9978,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:11+08:00",
-      "history_observations": 28,
+      "observed_at": "2026-11-15T10:27:09+08:00",
+      "history_observations": 29,
       "historical_median": 309.04,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 367.97,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -8688,7 +10048,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -8725,14 +10102,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:09+08:00",
-      "history_observations": 49,
+      "observed_at": "2026-11-15T10:27:07+08:00",
+      "history_observations": 50,
       "historical_median": 369.03,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 369.03,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -8795,7 +10172,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -8832,14 +10226,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:09+08:00",
-      "history_observations": 42,
+      "observed_at": "2026-11-15T10:27:08+08:00",
+      "history_observations": 43,
       "historical_median": 370.08,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 370.08,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -8902,7 +10296,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -8939,14 +10350,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:02+08:00",
-      "history_observations": 6,
+      "observed_at": "2026-11-15T10:27:00+08:00",
+      "history_observations": 7,
       "historical_median": 392.02,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 376.98,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -9009,7 +10420,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -9046,14 +10474,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:02+08:00",
-      "history_observations": 13,
+      "observed_at": "2026-11-15T10:26:59+08:00",
+      "history_observations": 14,
       "historical_median": 395.6,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 378.76,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -9116,7 +10544,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -9153,14 +10598,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:10+08:00",
-      "history_observations": 35,
+      "observed_at": "2026-11-15T10:27:08+08:00",
+      "history_observations": 36,
       "historical_median": 397.25,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 434.51,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -9223,7 +10668,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -9260,14 +10722,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:02+08:00",
-      "history_observations": 6,
+      "observed_at": "2026-11-15T10:27:00+08:00",
+      "history_observations": 7,
       "historical_median": 401.0,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 376.98,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -9330,7 +10792,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -9367,14 +10846,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:13+08:00",
-      "history_observations": 7,
+      "observed_at": "2026-11-15T10:27:11+08:00",
+      "history_observations": 8,
       "historical_median": 401.25,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 401.25,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -9437,7 +10916,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -9474,14 +10970,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:02+08:00",
-      "history_observations": 13,
+      "observed_at": "2026-11-15T10:26:59+08:00",
+      "history_observations": 14,
       "historical_median": 407.46,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 378.76,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -9544,7 +11040,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -9581,14 +11094,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:01+08:00",
-      "history_observations": 20,
+      "observed_at": "2026-11-15T10:26:59+08:00",
+      "history_observations": 21,
       "historical_median": 453.87,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 417.13,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -9651,7 +11164,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -9688,14 +11218,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:01+08:00",
-      "history_observations": 20,
+      "observed_at": "2026-11-15T10:26:59+08:00",
+      "history_observations": 21,
       "historical_median": 459.21,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
       "peer_median": 417.13,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -9758,7 +11288,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -9777,8 +11324,8 @@
       "check_out": "2026-12-06",
       "nights": 1,
       "stars": 5,
-      "current_price": 502.71,
-      "total_price": 502.71,
+      "current_price": 509.59,
+      "total_price": 509.59,
       "currency": "SGD",
       "room_name": "PREMIER MARINA BAY",
       "board_name": "ROOM ONLY",
@@ -9795,14 +11342,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:00+08:00",
-      "history_observations": 34,
+      "observed_at": "2026-11-15T10:26:57+08:00",
+      "history_observations": 35,
       "historical_median": 502.71,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
-      "peer_median": 410.6,
+      "peer_median": 414.04,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -9865,7 +11412,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
@@ -9902,14 +11466,14 @@
       "price_type": "Hotelbeds evaluation/net rate",
       "is_demo": false,
       "is_evaluation": true,
-      "observed_at": "2026-11-13T11:15:00+08:00",
-      "history_observations": 34,
+      "observed_at": "2026-11-15T10:26:57+08:00",
+      "history_observations": 35,
       "historical_median": 517.42,
       "reference_source": "observed price history",
       "score_basis": "observed_history",
-      "peer_median": 410.6,
+      "peer_median": 414.04,
       "score_breakdown": {
-        "model": "hotel_v1",
+        "model": "hotel_v2",
         "total": 42.0,
         "scale_max": 100,
         "band": "Low priority",
@@ -9972,7 +11536,24 @@
           }
         ],
         "notes": [
-          "Hotel scoring may also be constrained by the hotel engine's peer/history rules."
+          "Base components + peer bonus + cap adjustment = final score.",
+          "Peer scores are capped at 84; current-observation-only scores at 69.",
+          "Hotel attributes include configured suitability assumptions, not verified room amenities.",
+          "A high score does not make an evaluation/net rate consumer-bookable."
+        ],
+        "base_total": 42.0,
+        "bonus": 0.0,
+        "cap": 100,
+        "cap_adjustment": 0.0,
+        "adjustments": [
+          {
+            "label": "Same-date peer bonus",
+            "points": 0.0
+          },
+          {
+            "label": "Score cap (100)",
+            "points": 0.0
+          }
         ]
       },
       "deal_score": 42.0
