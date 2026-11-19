@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T12:04:32+08:00",
+  "updated_at": "2026-11-19T12:00:51+08:00",
   "mode": "live",
   "items": [
     {
@@ -82,7 +82,7 @@
         ]
       },
       "deal_score": 98.0,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": false,
       "best_rank": 1
     },
@@ -166,7 +166,7 @@
         ]
       },
       "deal_score": 87.1,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -249,7 +249,7 @@
         ]
       },
       "deal_score": 64.3,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -332,7 +332,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -415,7 +415,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -498,7 +498,7 @@
         ]
       },
       "deal_score": 63.0,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -580,7 +580,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": false,
       "best_rank": 4
     },
@@ -663,7 +663,7 @@
         ]
       },
       "deal_score": 94.7,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": false,
       "best_rank": 5
     },
@@ -673,7 +673,7 @@
       "name": "Seasonal Tastes @ The Westin Singapore — Dinner",
       "restaurant_name": "Seasonal Tastes @ The Westin Singapore",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 5.0/5. Best observed slot(s): 18:00, 20:00, 20:30, 21:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 5.0/5. Best observed slot(s): 20:30, 21:00. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 10.0,
       "relevance_score": 8.7,
@@ -683,8 +683,6 @@
       "food_category": "hotel_dining",
       "food_category_inferred": true,
       "best_discount_times": [
-        "18:00",
-        "20:00",
         "20:30",
         "21:00"
       ],
@@ -752,7 +750,7 @@
         ]
       },
       "deal_score": 94.0,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": false,
       "best_rank": 7
     },
@@ -835,7 +833,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -917,7 +915,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -999,7 +997,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -1081,7 +1079,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -1163,7 +1161,7 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -1245,107 +1243,21 @@
         ]
       },
       "deal_score": 93.9,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
-      "id": "food-eatigo-c056edc19201",
+      "id": "food-eatigo-34830c52a6d7",
       "category": "food",
-      "name": "Mosella @ Pan Pacific Orchard Singapore — Dinner",
-      "restaurant_name": "Mosella @ Pan Pacific Orchard Singapore",
-      "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 21:00. Verify the live slot and conditions before booking.",
-      "discount_percent": 50,
-      "quality_score": 9.6,
-      "relevance_score": 8.7,
-      "rating": 4.8,
-      "reservation_count": 8800,
-      "meal_period": "dinner",
-      "food_category": "hotel_dining",
-      "food_category_inferred": true,
-      "best_discount_times": [
-        "21:00"
-      ],
-      "deal_type": "app_deal",
-      "source": "Eatigo Singapore",
-      "source_detail": "Eatigo Singapore - Dinner",
-      "source_type": "official_promotion_page",
-      "source_confidence": "app_live",
-      "access_requirement": "Eatigo booking required",
-      "reference_source": "eatigo_live_page",
-      "url": "https://eatigo.com/en/regions/27/themes/15504",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "time_slot_discount",
-      "preferred_cuisine": false,
-      "preference_priority": 0,
-      "discount_qualifier": "up_to",
-      "offer_kind": "specific_offer",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 93.4,
-        "scale_max": 100,
-        "band": "Exceptional",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55,
-            "max_points": 55,
-            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 14.4,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 9.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 13.0,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.7/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 8.0,
-            "max_points": 10,
-            "detail": "Live app source"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 3.0,
-            "max_points": 5,
-            "detail": "App deal"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 93.4,
-      "observed_at": "2026-11-18T12:04:03+08:00",
-      "exclude_from_best": false,
-      "best_rank": 8
-    },
-    {
-      "id": "food-eatigo-a8ccf1dd3c42",
-      "category": "food",
-      "name": "Edge @ Pan Pacific Singapore — Lunch",
-      "restaurant_name": "Edge @ Pan Pacific Singapore",
+      "name": "Luce, Frasers House, a Luxury Collection Hotel Singapore — Lunch",
+      "restaurant_name": "Luce, Frasers House, a Luxury Collection Hotel Singapore",
       "location": "Singapore",
       "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 13:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.6,
       "relevance_score": 8.7,
       "rating": 4.8,
-      "reservation_count": 5400,
+      "reservation_count": 4400,
       "meal_period": "lunch",
       "food_category": "hotel_dining",
       "food_category_inferred": true,
@@ -1416,28 +1328,31 @@
         ]
       },
       "deal_score": 93.4,
-      "observed_at": "2026-11-18T12:04:03+08:00",
-      "exclude_from_best": true
+      "observed_at": "2026-11-19T12:00:26+08:00",
+      "exclude_from_best": false,
+      "best_rank": 8
     },
     {
-      "id": "food-eatigo-9526739666b0",
+      "id": "food-eatigo-8246ae2aa065",
       "category": "food",
-      "name": "Mosella @ Pan Pacific Orchard Singapore — Lunch",
-      "restaurant_name": "Mosella @ Pan Pacific Orchard Singapore",
+      "name": "Blue Bay Seafood Hotpot蓝湾海鲜火锅@Jalan Besar — Lunch",
+      "restaurant_name": "Blue Bay Seafood Hotpot蓝湾海鲜火锅@Jalan Besar",
       "location": "Singapore",
-      "description": "Up to 50% off lunch time slots on Eatigo. Rating 4.8/5. Best observed slot(s): 12:30, 13:30, 14:00. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off lunch time slots on Eatigo. Rating 5.0/5. Best observed slot(s): 12:30, 13:00, 13:30, 14:00. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
-      "quality_score": 9.6,
-      "relevance_score": 8.7,
-      "rating": 4.8,
-      "reservation_count": 8800,
+      "quality_score": 10.0,
+      "relevance_score": 8.2,
+      "rating": 5.0,
+      "reservation_count": 327,
       "meal_period": "lunch",
-      "food_category": "hotel_dining",
+      "food_category": "chinese_hotpot",
       "food_category_inferred": true,
       "best_discount_times": [
         "12:30",
+        "13:00",
         "13:30",
-        "14:00"
+        "14:00",
+        "14:30"
       ],
       "deal_type": "app_deal",
       "source": "Eatigo Singapore",
@@ -1458,7 +1373,7 @@
       "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 93.4,
+        "total": 93.3,
         "scale_max": 100,
         "band": "Exceptional",
         "components": [
@@ -1472,16 +1387,16 @@
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 14.4,
+            "points": 15,
             "max_points": 15,
-            "detail": "Scanner quality estimate 9.6/10"
+            "detail": "Scanner quality estimate 10.0/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 13.0,
+            "points": 12.3,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.7/10"
+            "detail": "Scanner relevance estimate 8.2/10"
           },
           {
             "key": "confidence",
@@ -1502,8 +1417,8 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 93.4,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "deal_score": 93.3,
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -1517,7 +1432,7 @@
       "quality_score": 9.2,
       "relevance_score": 8.7,
       "rating": 4.6,
-      "reservation_count": 622,
+      "reservation_count": 634,
       "meal_period": "lunch",
       "food_category": "hotel_dining",
       "food_category_inferred": true,
@@ -1591,7 +1506,7 @@
         ]
       },
       "deal_score": 92.8,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -1682,7 +1597,7 @@
         ]
       },
       "deal_score": 92.7,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -1770,7 +1685,7 @@
         ]
       },
       "deal_score": 92.7,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -1855,7 +1770,7 @@
         ]
       },
       "deal_score": 92.5,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -1864,19 +1779,17 @@
       "name": "J65 @ JEN Singapore Tanglin by Shangri-La — Dinner",
       "restaurant_name": "J65 @ JEN Singapore Tanglin by Shangri-La",
       "location": "Singapore",
-      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 18:00, 18:30, 19:00, 19:30. Verify the live slot and conditions before booking.",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 18:30, 19:30, 20:00, 20:30. Verify the live slot and conditions before booking.",
       "discount_percent": 50,
       "quality_score": 9.0,
       "relevance_score": 8.7,
       "rating": 4.5,
-      "reservation_count": 23700,
+      "reservation_count": 23800,
       "meal_period": "dinner",
       "food_category": "hotel_dining",
       "food_category_inferred": true,
       "best_discount_times": [
-        "18:00",
         "18:30",
-        "19:00",
         "19:30",
         "20:00",
         "20:30",
@@ -1946,7 +1859,93 @@
         ]
       },
       "deal_score": 92.5,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "food-eatigo-4a8e3406693b",
+      "category": "food",
+      "name": "Town Restaurant @ The Fullerton Hotel Singapore — Dinner",
+      "restaurant_name": "Town Restaurant @ The Fullerton Hotel Singapore",
+      "location": "Singapore",
+      "description": "Up to 50% off dinner time slots on Eatigo. Rating 4.5/5. Best observed slot(s): 20:00, 20:30. Verify the live slot and conditions before booking.",
+      "discount_percent": 50,
+      "quality_score": 9.0,
+      "relevance_score": 8.7,
+      "rating": 4.5,
+      "reservation_count": 19900,
+      "meal_period": "dinner",
+      "food_category": "hotel_dining",
+      "food_category_inferred": true,
+      "best_discount_times": [
+        "20:00",
+        "20:30"
+      ],
+      "deal_type": "app_deal",
+      "source": "Eatigo Singapore",
+      "source_detail": "Eatigo Singapore - Dinner",
+      "source_type": "official_promotion_page",
+      "source_confidence": "app_live",
+      "access_requirement": "Eatigo booking required",
+      "reference_source": "eatigo_live_page",
+      "url": "https://eatigo.com/en/regions/27/themes/15504",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "time_slot_discount",
+      "preferred_cuisine": false,
+      "preference_priority": 0,
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 92.5,
+        "scale_max": 100,
+        "band": "Exceptional",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 13.5,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 9.0/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.7/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 8.0,
+            "max_points": 10,
+            "detail": "Live app source"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 3.0,
+            "max_points": 5,
+            "detail": "App deal"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 92.5,
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -2031,7 +2030,7 @@
         ]
       },
       "deal_score": 92.5,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -2113,7 +2112,7 @@
         ]
       },
       "deal_score": 84.3,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -2195,7 +2194,7 @@
         ]
       },
       "deal_score": 84.3,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -2277,7 +2276,7 @@
         ]
       },
       "deal_score": 84.3,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -2359,7 +2358,7 @@
         ]
       },
       "deal_score": 84.3,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -2441,7 +2440,7 @@
         ]
       },
       "deal_score": 72.3,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     },
     {
@@ -2533,7 +2532,7 @@
         ]
       },
       "deal_score": 92.4,
-      "observed_at": "2026-11-18T12:04:03+08:00",
+      "observed_at": "2026-11-19T12:00:26+08:00",
       "exclude_from_best": true
     }
   ]
