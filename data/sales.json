@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T12:00:51+08:00",
+  "updated_at": "2026-11-20T11:55:03+08:00",
   "mode": "live",
   "items": [
     {
@@ -77,7 +77,7 @@
         ]
       },
       "deal_score": 97.8,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -156,7 +156,7 @@
         ]
       },
       "deal_score": 97.8,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -235,9 +235,88 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": false,
       "best_rank": 6
+    },
+    {
+      "id": "sale-live-0b57f2536fd8",
+      "category": "sale",
+      "subcategory": "electronics",
+      "name": "Haidilao Singapore 14th Anniversary Promotion – Enjoy S$14++ Buy 1 Get 1 Free Meat Deals, S$14 Seafood Specials & Stand a Chance to Win Apple iMac and iPhones at Participating Outlets",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-11-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "Haidilao Singapore 14th Anniversary Promotion – Enjoy S$14++ Buy 1 Get 1 Free Meat Deals, S$14 Seafood Specials & Stand a Chance to Win Apple iMac and iPhones at Participating Outlets",
+      "discount_percent": 50,
+      "quality_score": 8.6,
+      "relevance_score": 9.3,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Happening Now",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/1-30-november-2026-haidilao-singapore-14th-anniversary-promotion-enjoy-s14-buy-1-get-1-free-meat-deals-s14-seafood-specials-stand-a-chance-to-win-apple-imac-and-iphones-a/",
+      "valid_from": "2026-11-01",
+      "valid_until": "2026-11-30",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 88.9,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 14.0,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 88.9,
+      "observed_at": "2026-11-20T11:55:03+08:00",
+      "exclude_from_best": false,
+      "best_rank": 9
     },
     {
       "id": "sale-live-876d6f498476",
@@ -314,28 +393,28 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": false,
-      "best_rank": 9
+      "best_rank": 10
     },
     {
-      "id": "sale-live-53aa1a2a3455",
+      "id": "sale-live-316fb82e209d",
       "category": "sale",
-      "subcategory": "sportswear_footwear",
-      "name": "METRO Singapore Footwear Promotion – Enjoy Up to 50% OFF Selected Nike, Adidas, New Balance, ASICS and More at Causeway Point, Level 2",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed from 2026-10-21 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "offer_text": "METRO Singapore Footwear Promotion – Enjoy Up to 50% OFF Selected Nike, Adidas, New Balance, ASICS and More at Causeway Point, Level 2",
-      "discount_percent": 50,
-      "quality_score": 8.2,
-      "relevance_score": 8.9,
+      "subcategory": "outlet_clearance",
+      "name": "Crocodile Singapore Year-End Clearance Sale – Up to 70% Off at Lot One Shoppers’ Mall Atrium Level 1",
+      "location": "Lot One / Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-11-22. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "Crocodile Singapore Year-End Clearance Sale – Up to 70% Off at Lot One Shoppers’ Mall Atrium Level 1",
+      "discount_percent": 70,
+      "quality_score": 8.0,
+      "relevance_score": 8.2,
       "source": "EverydayOnSales Singapore",
       "source_detail": "EverydayOnSales - Fashion Accessories",
       "source_type": "promotion_aggregator",
       "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/21-october-2026-onwards-metro-singapore-footwear-promotion-enjoy-up-to-50-off-selected-nike-adidas-new-balance-asics-and-more-at-causeway-point-level-2/",
-      "valid_from": "2026-10-21",
-      "valid_until": null,
+      "url": "https://sg.everydayonsales.com/20-22-november-2026-crocodile-singapore-year-end-clearance-sale-up-to-70-off-at-lot-one-shoppers-mall-atrium-level-1/",
+      "valid_from": "2026-11-20",
+      "valid_until": "2026-11-22",
       "verification_required": true,
       "is_demo": false,
       "is_live": true,
@@ -344,11 +423,11 @@
       "source_confidence": "discovered",
       "access_requirement": "Verify directly with retailer",
       "discount_qualifier": "up_to",
-      "offer_kind": "promotion_lead",
+      "offer_kind": "specific_offer",
       "verification_level": "source_observed_terms_unconfirmed",
       "score_breakdown": {
         "model": "promotion_v4",
-        "total": 87.6,
+        "total": 86.3,
         "scale_max": 100,
         "band": "Strong",
         "components": [
@@ -357,21 +436,21 @@
             "label": "Discount strength",
             "points": 55,
             "max_points": 55,
-            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
+            "detail": "Up to 70% saving; conditions apply; 50%+ earns the full 55 points"
           },
           {
             "key": "quality",
             "label": "Venue / brand quality",
-            "points": 12.3,
+            "points": 12.0,
             "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
+            "detail": "Scanner quality estimate 8.0/10"
           },
           {
             "key": "relevance",
             "label": "Relevance / usefulness",
-            "points": 13.3,
+            "points": 12.3,
             "max_points": 15,
-            "detail": "Scanner relevance estimate 8.9/10"
+            "detail": "Scanner relevance estimate 8.2/10"
           },
           {
             "key": "confidence",
@@ -392,10 +471,9 @@
           "The score is a ranking aid, not a guarantee of final value or availability."
         ]
       },
-      "deal_score": 87.6,
-      "observed_at": "2026-11-19T12:00:51+08:00",
-      "exclude_from_best": false,
-      "best_rank": 10
+      "deal_score": 86.3,
+      "observed_at": "2026-11-20T11:55:03+08:00",
+      "exclude_from_best": true
     },
     {
       "id": "sale-live-7aea803d02d8",
@@ -472,7 +550,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -550,7 +628,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -628,7 +706,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -706,7 +784,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -784,7 +862,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -862,7 +940,7 @@
         ]
       },
       "deal_score": 85.4,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -940,7 +1018,7 @@
         ]
       },
       "deal_score": 82.8,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -1018,7 +1096,7 @@
         ]
       },
       "deal_score": 77.3,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -1096,85 +1174,7 @@
         ]
       },
       "deal_score": 76.2,
-      "observed_at": "2026-11-19T12:00:51+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-113acec5859c",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Challenger Singapore: Up to 40% Off Laptop Deals + Extra 2% Cashback & Free Gift Worth $300 – November Laptop Promotion Online",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 40% savings. Listed as valid through 2026-11-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "offer_text": "Challenger Singapore: Up to 40% Off Laptop Deals + Extra 2% Cashback & Free Gift Worth $300 – November Laptop Promotion Online",
-      "discount_percent": 40,
-      "quality_score": 8.2,
-      "relevance_score": 8.6,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/11-30-november-2026-challenger-singapore-up-to-40-off-laptop-deals-extra-2-cashback-free-gift-worth-300-november-laptop-promotion-online/",
-      "valid_from": "2026-11-11",
-      "valid_until": "2026-11-30",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "discount_qualifier": "up_to",
-      "offer_kind": "specific_offer",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 76.2,
-        "scale_max": 100,
-        "band": "Worth a look",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 44.0,
-            "max_points": 55,
-            "detail": "Up to 40% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 8.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.9,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.6/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 76.2,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -1252,7 +1252,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -1328,7 +1328,7 @@
         ]
       },
       "deal_score": 58.1,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -1406,7 +1406,7 @@
         ]
       },
       "deal_score": 58.1,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -1482,7 +1482,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -1558,7 +1558,7 @@
         ]
       },
       "deal_score": 52.6,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -1634,7 +1634,7 @@
         ]
       },
       "deal_score": 52.6,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -1710,7 +1710,7 @@
         ]
       },
       "deal_score": 52.6,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     },
     {
@@ -1788,7 +1788,7 @@
         ]
       },
       "deal_score": 52.6,
-      "observed_at": "2026-11-19T12:00:51+08:00",
+      "observed_at": "2026-11-20T11:55:03+08:00",
       "exclude_from_best": true
     }
   ]
