@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T13:17:32+08:00",
+  "updated_at": "2026-11-26T12:45:09+08:00",
   "mode": "live",
   "items": [
     {
@@ -77,7 +77,7 @@
         ]
       },
       "deal_score": 97.8,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": false,
       "best_rank": 2
     },
@@ -156,7 +156,7 @@
         ]
       },
       "deal_score": 97.8,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": false,
       "best_rank": 3
     },
@@ -235,7 +235,7 @@
         ]
       },
       "deal_score": 94.4,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": false,
       "best_rank": 6
     },
@@ -314,7 +314,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": false,
       "best_rank": 9
     },
@@ -393,7 +393,7 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": false,
       "best_rank": 10
     },
@@ -472,7 +472,85 @@
         ]
       },
       "deal_score": 87.9,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-edc1dcdc9471",
+      "category": "sale",
+      "subcategory": "outlet_clearance",
+      "name": "adidas Outlet KINEX Singapore Grand Opening Sale – Enjoy Up to 50% OFF Storewide at #01-37/38/39, KINEX",
+      "location": "NEX / Singapore",
+      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-11-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "adidas Outlet KINEX Singapore Grand Opening Sale – Enjoy Up to 50% OFF Storewide at #01-37/38/39, KINEX",
+      "discount_percent": 50,
+      "quality_score": 8.6,
+      "relevance_score": 8.5,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Happening Now",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/25-30-november-2026-adidas-outlet-kinex-singapore-grand-opening-sale-enjoy-up-to-50-off-storewide-at-01-37-38-39-kinex/",
+      "valid_from": "2026-11-25",
+      "valid_until": "2026-11-30",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.7,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.9,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.8,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.5/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.7,
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -550,7 +628,241 @@
         ]
       },
       "deal_score": 87.6,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-24298e1e17fe",
+      "category": "sale",
+      "subcategory": "sportswear_footwear",
+      "name": "LIV ACTIV & Outdoor Venture Sports & Outdoor Warehouse Sale Singapore – Up to 70% OFF, Sports Shoes from S$33, Sandals from S$9 & Outdoor Gear Deals at Kaki Bukit Crescent",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-11-29. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "LIV ACTIV & Outdoor Venture Sports & Outdoor Warehouse Sale Singapore – Up to 70% OFF, Sports Shoes from S$33, Sandals from S$9 & Outdoor Gear Deals at Kaki Bukit Crescent",
+      "discount_percent": 70,
+      "quality_score": 8.0,
+      "relevance_score": 9.0,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Happening Now",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/26-29-november-2026-liv-activ-outdoor-venture-sports-outdoor-warehouse-sale-singapore-up-to-70-off-sports-shoes-from-s33-sandals-from-s9-outdoor-gear-deals-at/",
+      "valid_from": "2026-11-26",
+      "valid_until": "2026-11-29",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 87.5,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Up to 70% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.0,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.0/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 13.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 9.0/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 87.5,
+      "observed_at": "2026-11-26T12:45:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-9c8fd2775b08",
+      "category": "sale",
+      "subcategory": "fashion_clearance",
+      "name": "Hush Puppies Bazaar Singapore Sale at Northpoint City – Up to 70% OFF, Clothing Deals from $5.90, 10.30am-10.30pm",
+      "location": "Singapore",
+      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-11-29. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "Hush Puppies Bazaar Singapore Sale at Northpoint City – Up to 70% OFF, Clothing Deals from $5.90, 10.30am-10.30pm",
+      "discount_percent": 70,
+      "quality_score": 8.2,
+      "relevance_score": 8.3,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Fashion Accessories",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/14-29-november-2026-hush-puppies-bazaar-singapore-sale-at-northpoint-city-up-to-70-off-clothing-deals-from-5-90-10-30am-10-30pm/",
+      "valid_from": "2026-11-14",
+      "valid_until": "2026-11-29",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 86.8,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Up to 70% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 12.3,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 8.2/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.5,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.3/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 86.8,
+      "observed_at": "2026-11-26T12:45:09+08:00",
+      "exclude_from_best": true
+    },
+    {
+      "id": "sale-live-2728d85be53f",
+      "category": "sale",
+      "subcategory": "outlet_clearance",
+      "name": "Marimekko Singapore Opens New IMM Outlet Store – Up to 60% OFF, Extra Discounts & FREE Gifts at Jurong East",
+      "location": "IMM / Singapore",
+      "description": "Discovery listing advertising up to 60% savings. Listed as valid through 2026-11-29. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
+      "offer_text": "Marimekko Singapore Opens New IMM Outlet Store – Up to 60% OFF, Extra Discounts & FREE Gifts at Jurong East",
+      "discount_percent": 60,
+      "quality_score": 7.6,
+      "relevance_score": 8.5,
+      "source": "EverydayOnSales Singapore",
+      "source_detail": "EverydayOnSales - Fashion Accessories",
+      "source_type": "promotion_aggregator",
+      "reference_source": "everydayonsales_live_page",
+      "url": "https://sg.everydayonsales.com/25-29-november-2026-marimekko-singapore-opens-new-imm-outlet-store-up-to-60-off-extra-discounts-free-gifts-at-jurong-east/",
+      "valid_from": "2026-11-25",
+      "valid_until": "2026-11-29",
+      "verification_required": true,
+      "is_demo": false,
+      "is_live": true,
+      "price_type": "advertised_discount",
+      "deal_type": "discovery",
+      "source_confidence": "discovered",
+      "access_requirement": "Verify directly with retailer",
+      "discount_qualifier": "up_to",
+      "offer_kind": "specific_offer",
+      "verification_level": "source_observed_terms_unconfirmed",
+      "score_breakdown": {
+        "model": "promotion_v4",
+        "total": 86.2,
+        "scale_max": 100,
+        "band": "Strong",
+        "components": [
+          {
+            "key": "discount",
+            "label": "Discount strength",
+            "points": 55,
+            "max_points": 55,
+            "detail": "Up to 60% saving; conditions apply; 50%+ earns the full 55 points"
+          },
+          {
+            "key": "quality",
+            "label": "Venue / brand quality",
+            "points": 11.4,
+            "max_points": 15,
+            "detail": "Scanner quality estimate 7.6/10"
+          },
+          {
+            "key": "relevance",
+            "label": "Relevance / usefulness",
+            "points": 12.8,
+            "max_points": 15,
+            "detail": "Scanner relevance estimate 8.5/10"
+          },
+          {
+            "key": "confidence",
+            "label": "Source confidence",
+            "points": 5.0,
+            "max_points": 10,
+            "detail": "Discovery source; verify with merchant"
+          },
+          {
+            "key": "convenience",
+            "label": "Convenience / restrictions",
+            "points": 2.0,
+            "max_points": 5,
+            "detail": "Discovery listing"
+          }
+        ],
+        "notes": [
+          "The score is a ranking aid, not a guarantee of final value or availability."
+        ]
+      },
+      "deal_score": 86.2,
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -628,85 +940,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-25T13:17:32+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-310a2d495d0c",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "POPULAR Bookstore Atrium Sale at Hillion Mall Basement 2 – Enjoy Up to 70% Off Books, Stationery and More",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 70% savings. Listed as valid through 2026-11-25. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "offer_text": "POPULAR Bookstore Atrium Sale at Hillion Mall Basement 2 – Enjoy Up to 70% Off Books, Stationery and More",
-      "discount_percent": 70,
-      "quality_score": 7.6,
-      "relevance_score": 8.2,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/now-till-25-november-2026-popular-bookstore-atrium-sale-at-hillion-mall-basement-2-enjoy-up-to-70-off-books-stationery-and-more/",
-      "valid_from": null,
-      "valid_until": "2026-11-25",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "discount_qualifier": "up_to",
-      "offer_kind": "specific_offer",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.7,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55,
-            "max_points": 55,
-            "detail": "Up to 70% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 11.4,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.6/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.3,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.2/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.7,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -784,7 +1018,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -862,7 +1096,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -940,241 +1174,7 @@
         ]
       },
       "deal_score": 85.7,
-      "observed_at": "2026-11-25T13:17:32+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-e37b507ff7ed",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Adobe Creative Cloud Pro 57% Off Promotion – Subscribe for Just $29.99/Month for 12 Months Instead of $69.99",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 57% savings. Listed as valid through 2026-11-27. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "offer_text": "Adobe Creative Cloud Pro 57% Off Promotion – Subscribe for Just $29.99/Month for 12 Months Instead of $69.99",
-      "discount_percent": 57,
-      "quality_score": 7.2,
-      "relevance_score": 8.4,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/13-27-november-2026-adobe-creative-cloud-pro-57-off-promotion-subscribe-for-just-29-99-month-for-12-months-instead-of-69-99/",
-      "valid_from": "2026-11-13",
-      "valid_until": "2026-11-27",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "discount_qualifier": "up_to",
-      "offer_kind": "specific_offer",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.4,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55,
-            "max_points": 55,
-            "detail": "Up to 57% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.4/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.4,
-      "observed_at": "2026-11-25T13:17:32+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-d1280e587afc",
-      "category": "sale",
-      "subcategory": "electronics",
-      "name": "Shopee Black Friday Cyber Monday Sale – Up to 50% Off Tech & Beauty Deals Online in Singapore",
-      "location": "Singapore",
-      "description": "Discovery listing advertising up to 50% savings. Listed as valid through 2026-11-30. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "offer_text": "Shopee Black Friday Cyber Monday Sale – Up to 50% Off Tech & Beauty Deals Online in Singapore",
-      "discount_percent": 50,
-      "quality_score": 7.2,
-      "relevance_score": 8.4,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Computers & Electronics",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/24-30-november-2026-shopee-black-friday-cyber-monday-sale-up-to-50-off-tech-beauty-deals-online-in-singapore/",
-      "valid_from": "2026-11-24",
-      "valid_until": "2026-11-30",
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "discount_qualifier": "up_to",
-      "offer_kind": "specific_offer",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 85.4,
-        "scale_max": 100,
-        "band": "Strong",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 55,
-            "max_points": 55,
-            "detail": "Up to 50% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 10.8,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 7.2/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.6,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.4/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 85.4,
-      "observed_at": "2026-11-25T13:17:32+08:00",
-      "exclude_from_best": true
-    },
-    {
-      "id": "sale-live-6d31c4bc2457",
-      "category": "sale",
-      "subcategory": "outlet_clearance",
-      "name": "Under Armour Singapore: IMM Outlet Clearance Sale – Enjoy Up to 40% Extra Discount When You Buy 6 Items at IMM Singapore",
-      "location": "IMM / Singapore",
-      "description": "Discovery listing advertising up to 40% savings. Listed from 2026-11-18 onwards. Verify stock, eligible products, membership requirements, and final price with the retailer before purchase.",
-      "offer_text": "Under Armour Singapore: IMM Outlet Clearance Sale – Enjoy Up to 40% Extra Discount When You Buy 6 Items at IMM Singapore",
-      "discount_percent": 40,
-      "quality_score": 9.0,
-      "relevance_score": 8.5,
-      "source": "EverydayOnSales Singapore",
-      "source_detail": "EverydayOnSales - Fashion Accessories",
-      "source_type": "promotion_aggregator",
-      "reference_source": "everydayonsales_live_page",
-      "url": "https://sg.everydayonsales.com/18-november-2026-onwards-under-armour-singapore-imm-outlet-clearance-sale-enjoy-up-to-40-extra-discount-when-you-buy-6-items-at-imm-singapore/",
-      "valid_from": "2026-11-18",
-      "valid_until": null,
-      "verification_required": true,
-      "is_demo": false,
-      "is_live": true,
-      "price_type": "advertised_discount",
-      "deal_type": "discovery",
-      "source_confidence": "discovered",
-      "access_requirement": "Verify directly with retailer",
-      "discount_qualifier": "up_to",
-      "offer_kind": "promotion_lead",
-      "verification_level": "source_observed_terms_unconfirmed",
-      "score_breakdown": {
-        "model": "promotion_v4",
-        "total": 77.3,
-        "scale_max": 100,
-        "band": "Worth a look",
-        "components": [
-          {
-            "key": "discount",
-            "label": "Discount strength",
-            "points": 44.0,
-            "max_points": 55,
-            "detail": "Up to 40% saving; conditions apply; 50%+ earns the full 55 points"
-          },
-          {
-            "key": "quality",
-            "label": "Venue / brand quality",
-            "points": 13.5,
-            "max_points": 15,
-            "detail": "Scanner quality estimate 9.0/10"
-          },
-          {
-            "key": "relevance",
-            "label": "Relevance / usefulness",
-            "points": 12.8,
-            "max_points": 15,
-            "detail": "Scanner relevance estimate 8.5/10"
-          },
-          {
-            "key": "confidence",
-            "label": "Source confidence",
-            "points": 5.0,
-            "max_points": 10,
-            "detail": "Discovery source; verify with merchant"
-          },
-          {
-            "key": "convenience",
-            "label": "Convenience / restrictions",
-            "points": 2.0,
-            "max_points": 5,
-            "detail": "Discovery listing"
-          }
-        ],
-        "notes": [
-          "The score is a ranking aid, not a guarantee of final value or availability."
-        ]
-      },
-      "deal_score": 77.3,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -1252,7 +1252,7 @@
         ]
       },
       "deal_score": 62.5,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -1328,7 +1328,7 @@
         ]
       },
       "deal_score": 58.1,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -1406,7 +1406,7 @@
         ]
       },
       "deal_score": 58.1,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -1482,7 +1482,7 @@
         ]
       },
       "deal_score": 54.2,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -1558,7 +1558,7 @@
         ]
       },
       "deal_score": 52.6,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -1634,7 +1634,7 @@
         ]
       },
       "deal_score": 52.6,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -1710,7 +1710,7 @@
         ]
       },
       "deal_score": 52.6,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     },
     {
@@ -1788,7 +1788,7 @@
         ]
       },
       "deal_score": 52.6,
-      "observed_at": "2026-11-25T13:17:32+08:00",
+      "observed_at": "2026-11-26T12:45:09+08:00",
       "exclude_from_best": true
     }
   ]
